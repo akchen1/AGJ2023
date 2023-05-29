@@ -6,6 +6,7 @@ using UnityEngine;
 [System.Serializable]
 public class InventorySystem 
 {
+	[SerializeField] private List<InventoryItem> inventory = new List<InventoryItem>();
 	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
 	public InventorySystem() 
@@ -21,12 +22,12 @@ public class InventorySystem
 
     private void AddItemHandler(BrokerEvent<InventoryEvents.AddItem> inEvent)
     {
-        throw new NotImplementedException();
+		inventory.Add(inEvent.Payload.Item);
     }
 
 	private void RemoveItemHandler(BrokerEvent<InventoryEvents.RemoveItem> inEvent)
 	{
-		throw new NotImplementedException();
+		
 	}
 
 }
