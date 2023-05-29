@@ -37,16 +37,19 @@ public class DialogueSystem
         // dialogue is of type multi, an dialogue option must be selected.
         if (currentDialogue == null || currentDialogue.DialogueType == DS.Enumerations.DSDialogueType.MultipleChoice) return;
 
-        // There is no next dialogue node
-        if (currentDialogue.Choices[0].NextDialogue == null)
+        // Check if there is an item event
+        if (currentDialogue.Item != null)
         {
-            // Close dialog, end of dialog
-            inEvent.Payload.NextDialogueNode?.Invoke(null);
-            currentDialogue = null;
-            return;
+            eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(currentDialogue.Item));
         }
 
-        // Set next dialogue node to current dialogue
+        // Check if there is a scene transition event
+        if (currentDialogue.NextScene != "")
+        {
+            eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(currentDialogue.NextScene));
+        }
+
+        // Set next dialogue node to current dialogue. If null, that means dialogue is over
         currentDialogue = currentDialogue.Choices[0].NextDialogue;
         // Fire callback
         inEvent.Payload.NextDialogueNode?.Invoke(currentDialogue);
