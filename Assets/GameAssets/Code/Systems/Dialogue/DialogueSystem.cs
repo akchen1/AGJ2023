@@ -29,6 +29,7 @@ public class DialogueSystem
     private void StartDialogueHandler(BrokerEvent<DialogueEvents.StartDialogue> inEvent)
     {
         currentDialogue = inEvent.Payload.StartingDialogue;
+        // TODO: Deactivate Player movement
     }
 
     private void NextDialogueHandler(BrokerEvent<DialogueEvents.NextDialogue> inEvent)
@@ -53,6 +54,8 @@ public class DialogueSystem
         currentDialogue = currentDialogue.Choices[0].NextDialogue;
         // Fire callback
         inEvent.Payload.NextDialogueNode?.Invoke(currentDialogue);
+
+        // TODO: Enable player movment if current dialogue is null
     }
 
     private void SelectDialogueOptionHandler(BrokerEvent<DialogueEvents.SelectDialogueOption> inEvent)
