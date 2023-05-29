@@ -8,7 +8,6 @@ public class Bootstrap : MonoBehaviour
 {
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
-    [SerializeField] private AudioSystem audioSystem;
     [SerializeField] private CutsceneSystem cutsceneSystem;
     [SerializeField] private DialogueSystem dialogueSystem;
     [SerializeField] private InventorySystem inventorySystem;
