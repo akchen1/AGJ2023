@@ -4,20 +4,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class SanitySystem {
+public class SanitySystem 
+{
     [SerializeField] private FloatReference SanityLevel;
 
-    public SanitySystem() 
+	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
+
+	public SanitySystem() 
     {
-        Bootstrap.EventBrokerComponent.Subscribe<Event.AddSanity>(AddSanityHandler);
+        eventBrokerComponent.Subscribe<SanityEvents.ChangeSanity>(ChangeSanityHandler);
     }
 
     ~SanitySystem()
     {
-        Bootstrap.EventBrokerComponent.Unsubscribe<Event.AddSanity>(AddSanityHandler);
+        eventBrokerComponent.Unsubscribe<SanityEvents.ChangeSanity>(ChangeSanityHandler);
     }
 
-    private void AddSanityHandler(BrokerEvent<Event.AddSanity> obj)
+    private void ChangeSanityHandler(BrokerEvent<SanityEvents.ChangeSanity> inEvent)
     {
         throw new NotImplementedException();
     }

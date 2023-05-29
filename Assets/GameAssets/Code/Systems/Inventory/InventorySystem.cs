@@ -4,23 +4,29 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class InventorySystem {
+public class InventorySystem 
+{
+	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
-
-    public InventorySystem() 
+	public InventorySystem() 
     {
-        Bootstrap.EventBrokerComponent.Subscribe<Event.AddItem>(AddItemHandler);
-    }
+        eventBrokerComponent.Subscribe<InventoryEvents.AddItem>(AddItemHandler);
+		eventBrokerComponent.Subscribe<InventoryEvents.RemoveItem>(RemoveItemHandler);
+	}
     ~InventorySystem() 
     {
-        Bootstrap.EventBrokerComponent.Unsubscribe<Event.AddItem>(AddItemHandler);
-    }
+        eventBrokerComponent.Unsubscribe<InventoryEvents.AddItem>(AddItemHandler);
+		eventBrokerComponent.Unsubscribe<InventoryEvents.RemoveItem>(RemoveItemHandler);
+	}
 
-    private void AddItemHandler(BrokerEvent<Event.AddItem> obj)
+    private void AddItemHandler(BrokerEvent<InventoryEvents.AddItem> inEvent)
     {
         throw new NotImplementedException();
     }
 
+	private void RemoveItemHandler(BrokerEvent<InventoryEvents.RemoveItem> inEvent)
+	{
+		throw new NotImplementedException();
+	}
 
-    
 }

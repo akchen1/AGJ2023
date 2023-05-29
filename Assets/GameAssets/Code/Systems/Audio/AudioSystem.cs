@@ -5,25 +5,29 @@ using UnityEngine;
 [System.Serializable]
 public class AudioSystem
 {
-    public AudioSystem()
+	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
+
+	public AudioSystem()
     {
-        Bootstrap.EventBrokerComponent.Subscribe<Event.PlayMusic>(PlayMusicHandler);
-        Bootstrap.EventBrokerComponent.Subscribe<Event.PlaySFX>(PlaySFXHandler);
+        eventBrokerComponent.Subscribe<AudioEvents.PlayMusic>(PlayMusicHandler);
+        eventBrokerComponent.Subscribe<AudioEvents.PlaySFX>(PlaySFXHandler);
     }
 
     ~AudioSystem()
     {
-        Bootstrap.EventBrokerComponent.Unsubscribe<Event.PlayMusic>(PlayMusicHandler);
-        Bootstrap.EventBrokerComponent.Unsubscribe<Event.PlaySFX>(PlaySFXHandler);
+        eventBrokerComponent.Unsubscribe<AudioEvents.PlayMusic>(PlayMusicHandler);
+        eventBrokerComponent.Unsubscribe<AudioEvents.PlaySFX>(PlaySFXHandler);
     }
 
-    private void PlayMusicHandler(BrokerEvent<Event.PlayMusic> inEvent)
+    private void PlayMusicHandler(BrokerEvent<AudioEvents.PlayMusic> inEvent)
     {
+		// TODO: Play music
         Debug.Log("Play music " + inEvent.Payload.MusicName);
     }
 
-    private void PlaySFXHandler(BrokerEvent<Event.PlaySFX> inEvent)
+    private void PlaySFXHandler(BrokerEvent<AudioEvents.PlaySFX> inEvent)
     {
+		// TODO: Play SFX
         Debug.Log("Play SFX " + inEvent.Payload.SFXName);
     }
 }

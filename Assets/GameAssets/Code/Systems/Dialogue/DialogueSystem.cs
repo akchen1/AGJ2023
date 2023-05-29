@@ -4,18 +4,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class DialogueSystem {
+public class DialogueSystem 
+{
+	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
+
     public DialogueSystem()
     {
-        Bootstrap.EventBrokerComponent.Subscribe<Event.StartDialogue>(StartDialogueHandler);
+		eventBrokerComponent.Subscribe<DialogueEvents.StartDialogue>(StartDialogueHandler);
     }
 
     ~DialogueSystem()
     {
-        Bootstrap.EventBrokerComponent.Unsubscribe<Event.StartDialogue>(StartDialogueHandler);
+        eventBrokerComponent.Unsubscribe<DialogueEvents.StartDialogue>(StartDialogueHandler);
     }
 
-    private void StartDialogueHandler(BrokerEvent<Event.StartDialogue> obj)
+    private void StartDialogueHandler(BrokerEvent<DialogueEvents.StartDialogue> inEvent)
     {
         throw new NotImplementedException();
     }

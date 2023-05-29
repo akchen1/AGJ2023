@@ -13,22 +13,24 @@ public class SceneUtility
     private Bootstrap bootstrap;
     private string currentScene;
 
-    public SceneUtility(Bootstrap bootstrap)
+	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
+
+	public SceneUtility(Bootstrap bootstrap)
     {
         operations = new Queue<AsyncOperation>();
         openedScenes = new HashSet<string>();
         InitializeOpenedScenes();
 
-        Bootstrap.EventBrokerComponent.Subscribe<Event.SceneChange>(SceneChangeHandler);
+        eventBrokerComponent.Subscribe<SceneEvents.SceneChange>(SceneChangeHandler);
         this.bootstrap = bootstrap;
     }
 
     ~SceneUtility() 
     {
-        Bootstrap.EventBrokerComponent.Unsubscribe<Event.SceneChange>(SceneChangeHandler);
+        eventBrokerComponent.Unsubscribe<SceneEvents.SceneChange>(SceneChangeHandler);
     }
 
-    private void SceneChangeHandler(BrokerEvent<Event.SceneChange> inEvent)
+    private void SceneChangeHandler(BrokerEvent<SceneEvents.SceneChange> inEvent)
     {
         string currentActiveScene = SceneManager.GetActiveScene().name;
         if (inEvent.Payload.UnloadPrevious && currentScene != null)
@@ -82,7 +84,7 @@ public class SceneUtility
         }
 
         onLoadFinished?.Invoke();
-        Bootstrap.EventBrokerComponent.Publish<Event.SceneLoaded>(this, new Event.SceneLoaded());
+        eventBrokerComponent.Publish(this, new SceneEvents.SceneLoaded());
     }
 
     private void SetActiveScene(string sceneName)

@@ -6,17 +6,19 @@ using UnityEngine;
 [System.Serializable]
 public class CutsceneSystem
 {
-    public CutsceneSystem()
+	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
+
+	public CutsceneSystem()
     {
-        Bootstrap.EventBrokerComponent.Subscribe<Event.PlayCutscene>(PlayCutsceneHandler);
+        eventBrokerComponent.Subscribe<CutsceneEvents.PlayCutscene>(PlayCutsceneHandler);
     }
 
     ~CutsceneSystem()
     {
-        Bootstrap.EventBrokerComponent.Unsubscribe<Event.PlayCutscene>(PlayCutsceneHandler);
+        eventBrokerComponent.Unsubscribe<CutsceneEvents.PlayCutscene>(PlayCutsceneHandler);
     }
 
-    private void PlayCutsceneHandler(BrokerEvent<Event.PlayCutscene> inEvent)
+    private void PlayCutsceneHandler(BrokerEvent<CutsceneEvents.PlayCutscene> inEvent)
     {
         throw new NotImplementedException();
     }

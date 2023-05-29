@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Bootstrap : MonoBehaviour
 {
-    public static EventBrokerComponent EventBrokerComponent { get; private set; } = new EventBrokerComponent();
+    private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
     [SerializeField] private AudioSystem audioSystem;
     [SerializeField] private CutsceneSystem cutsceneSystem;
@@ -37,6 +37,6 @@ public class Bootstrap : MonoBehaviour
 
     private void LoadMainMenu()
     {
-        EventBrokerComponent.Publish<Event.SceneChange>(this, new Event.SceneChange(Constants.SceneNames.MainMenu, false));
+		eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(Constants.SceneNames.MainMenu, false));
     }
 }
