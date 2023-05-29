@@ -1,34 +1,112 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class AudioSystem
+public class AudioSystem : MonoBehaviour
 {
+	[SerializeField] private AudioSource musicSource;
+	[SerializeField] private AudioSource sfxSource;
+
+	private float musicVolume;
+	private float sfxVolume;
+
+	private Dictionary<string, AudioClip> music = new Dictionary<string, AudioClip>();
+	private Dictionary<string, AudioClip> sfx = new Dictionary<string, AudioClip>();
+
 	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
-	public AudioSystem()
+	private void OnEnable()
     {
         eventBrokerComponent.Subscribe<AudioEvents.PlayMusic>(PlayMusicHandler);
         eventBrokerComponent.Subscribe<AudioEvents.PlaySFX>(PlaySFXHandler);
-    }
+		eventBrokerComponent.Subscribe<AudioEvents.ChangeMusicVolume>(ChangeMusicVolumeHandler);
+		eventBrokerComponent.Subscribe<AudioEvents.ChangeSFXVolume>(ChangeSFXVolumeHandler);
 
-    ~AudioSystem()
+		float musicLevel = PlayerPrefs.GetFloat("MusicVolume", Constants.Audio.DefaultAudioLevel);
+		float sfxLevel = PlayerPrefs.GetFloat("SFXVolume", Constants.Audio.DefaultAudioLevel);
+
+		musicVolume = musicLevel;
+		sfxVolume = sfxLevel;
+		musicSource.volume = musicLevel;
+		sfxSource.volume = sfxLevel;
+	}
+
+    private void OnDisable()
     {
         eventBrokerComponent.Unsubscribe<AudioEvents.PlayMusic>(PlayMusicHandler);
         eventBrokerComponent.Unsubscribe<AudioEvents.PlaySFX>(PlaySFXHandler);
-    }
+		eventBrokerComponent.Unsubscribe<AudioEvents.ChangeMusicVolume>(ChangeMusicVolumeHandler);
+		eventBrokerComponent.Unsubscribe<AudioEvents.ChangeSFXVolume>(ChangeSFXVolumeHandler);
+	}
 
-    private void PlayMusicHandler(BrokerEvent<AudioEvents.PlayMusic> inEvent)
+	private void ChangeMusicVolumeHandler(BrokerEvent<AudioEvents.ChangeMusicVolume> inEvent)
+	{
+		musicVolume = inEvent.Payload.NewVolume;
+		musicSource.volume = musicVolume;
+	}
+
+	private void ChangeSFXVolumeHandler(BrokerEvent<AudioEvents.ChangeSFXVolume> inEvent)
+	{
+		sfxVolume = inEvent.Payload.NewVolume;
+		sfxSource.volume = sfxVolume;
+	}
+
+	private void PlayMusicHandler(BrokerEvent<AudioEvents.PlayMusic> inEvent)
     {
-		// TODO: Play music
-        Debug.Log("Play music " + inEvent.Payload.MusicName);
+		if (inEvent.Payload.Transition)
+		{
+			StartCoroutine(FadeToSong(inEvent.Payload.MusicName));
+		}
+		else
+		{
+			PlayMusic(inEvent.Payload.MusicName);
+		}
     }
 
     private void PlaySFXHandler(BrokerEvent<AudioEvents.PlaySFX> inEvent)
     {
-		// TODO: Play SFX
-        Debug.Log("Play SFX " + inEvent.Payload.SFXName);
+		if (sfx.ContainsKey(inEvent.Payload.SFXName))
+		{
+			sfxSource.PlayOneShot(sfx[inEvent.Payload.SFXName]);
+		}
+		else
+		{
+			Debug.LogError("Cannot find sfx named " + inEvent.Payload.SFXName);
+		}
     }
+
+	private void PlayMusic(string song)
+	{
+		if (music.ContainsKey(song))
+		{
+			musicSource.Stop();
+			musicSource.clip = music[song];
+			musicSource.loop = true;
+			musicSource.Play();
+		}
+		else
+		{
+			Debug.LogError("Cannot find music named " + song);
+		}
+	}
+
+	private IEnumerator FadeToSong(string song)
+	{
+		while (musicSource.volume > 0)
+		{
+			musicSource.volume -= Constants.Audio.MusicFadeSpeed * Time.deltaTime;
+			yield return null;
+		}
+
+		PlayMusic(song);
+
+		while (musicSource.volume < musicVolume)
+		{
+			musicSource.volume += Constants.Audio.MusicFadeSpeed * Time.deltaTime;
+			yield return null;
+		}
+	}
 }
 
