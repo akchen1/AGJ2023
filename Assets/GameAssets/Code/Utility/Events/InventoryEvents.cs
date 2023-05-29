@@ -6,9 +6,10 @@ public class InventoryEvents
 {
 	public class AddItem
 	{
-		public AddItem()
+		public readonly InventoryItem Item;
+		public AddItem(InventoryItem item)
 		{
-			// TODO: Implement
+			Item = item;
 		}
 	}
 
