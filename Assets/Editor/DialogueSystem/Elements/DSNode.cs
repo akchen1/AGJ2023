@@ -21,7 +21,7 @@ namespace DS.Elements
         public List<DSChoiceSaveData> Choices { get; set; }
         public string Text { get; set; }
         public Character Character { get; set; }
-        //public Item Item { get; set; }
+        public InventoryItem Item { get; set; }
         public string NextScene { get; set; }
         public DSDialogueType DialogueType { get; set; }
         public DSGroup Group { get; set; }
@@ -132,10 +132,10 @@ namespace DS.Elements
             });
 
 
-            //ObjectField item = DSElementUtility.CreateObjectField<Item>(Item, "Item", callback =>
-            //{
-            //    Item = (Item)callback.newValue;
-            //});
+            ObjectField itemField = DSElementUtility.CreateObjectField<InventoryItem>(Item, "Item", callback =>
+            {
+                Item = (InventoryItem)callback.newValue;
+            });
 
             TextField nextSceneTextField = DSElementUtility.CreateTextArea(NextScene, "Next Scene", callback =>
             {
@@ -147,7 +147,7 @@ namespace DS.Elements
             );
 
             customDataContainer.Add(characterField);
-            //customDataContainer.Add(item);
+            customDataContainer.Add(itemField);
             customDataContainer.Add(nextSceneTextField);
 
             customDataContainer.Add(textFoldout);

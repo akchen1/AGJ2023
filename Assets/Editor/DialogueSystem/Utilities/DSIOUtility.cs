@@ -164,7 +164,7 @@ namespace DS.Utilities
                 Choices = choices,
                 Text = node.Text,
                 Character = node.Character,
-                //Item = node.Item,
+                Item = node.Item,
                 GroupID = node.Group?.ID,
                 DialogueType = node.DialogueType,
                 Position = node.GetPosition().position
@@ -192,8 +192,8 @@ namespace DS.Utilities
 
             dialogue.Initialize(
                 node.DialogueName,
-                //node.Character,
-                //node.Item,
+                node.Character,
+                node.Item,
                 node.NextScene,
                 node.Text,
                 ConvertNodeChoicesToDialogueChoices(node.Choices),
