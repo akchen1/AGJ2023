@@ -12,6 +12,7 @@ public class Bootstrap : MonoBehaviour
     [SerializeField] private DialogueSystem dialogueSystem;
     [SerializeField] private InventorySystem inventorySystem;
     [SerializeField] private SanitySystem sanitySystem;
+    private DataPersistenceSystem dataPersistenceSystem;
     private SceneUtility sceneUtility;
 
     private void Awake()
@@ -32,6 +33,7 @@ public class Bootstrap : MonoBehaviour
     private void InitializeUtility()
     {
         sceneUtility = new SceneUtility(this);
+        dataPersistenceSystem = new DataPersistenceSystem();
     }
 
     private void LoadMainMenu()
