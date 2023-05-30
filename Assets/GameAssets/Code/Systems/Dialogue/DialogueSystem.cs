@@ -55,7 +55,10 @@ public class DialogueSystem
         // Fire callback
         inEvent.Payload.NextDialogueNode?.Invoke(currentDialogue);
 
-        // TODO: Enable player movment if current dialogue is null
+        if (currentDialogue == null)
+        {
+            eventBrokerComponent.Publish(this, new DialogueEvents.DialogueFinish());
+        }
     }
 
     private void SelectDialogueOptionHandler(BrokerEvent<DialogueEvents.SelectDialogueOption> inEvent)

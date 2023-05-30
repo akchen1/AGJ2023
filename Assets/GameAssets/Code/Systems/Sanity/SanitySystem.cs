@@ -6,8 +6,6 @@ using UnityEngine;
 [System.Serializable]
 public class SanitySystem 
 {
-    [SerializeField] private FloatReference SanityLevel;
-
 	private int currentSanity;
 
 	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();

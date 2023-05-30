@@ -8,15 +8,17 @@ public class Bootstrap : MonoBehaviour
 {
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
-    [SerializeField] private CutsceneSystem cutsceneSystem;
-    [SerializeField] private DialogueSystem dialogueSystem;
-    [SerializeField] private InventorySystem inventorySystem;
-    [SerializeField] private SanitySystem sanitySystem;
+    private CutsceneSystem cutsceneSystem;
+    private InventorySystem inventorySystem;
+    private DialogueSystem dialogueSystem;
+    private SanitySystem sanitySystem;
+    private InteractionSystem interactionSystem;
+
     private SceneUtility sceneUtility;
 
     private void Awake()
     {
-        DontDestroyOnLoad(this);
+        InitializeSystem();
         InitializeUtility();
     }
 
@@ -27,6 +29,15 @@ public class Bootstrap : MonoBehaviour
         // scene than Bootstrap. For production, Main menu will always be loaded.
         LoadMainMenu();
 #endif
+    }
+
+    private void InitializeSystem()
+    {
+        cutsceneSystem = new CutsceneSystem();
+        inventorySystem = new InventorySystem();
+        interactionSystem = new InteractionSystem();
+        sanitySystem = new SanitySystem();
+        dialogueSystem = new DialogueSystem();
     }
 
     private void InitializeUtility()
