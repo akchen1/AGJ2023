@@ -41,4 +41,6 @@ public class DialogueEvents
             NextDialogueNode = nextDialogueNode;
         }
     }
+
+    public class DialogueFinish { }
 }
