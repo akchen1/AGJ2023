@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b024264143c488cbee1d884c720f40, type: 3}
+  m_Name: PrologueScene2
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: PrologueScene2
+  <DialogueGroups>k__BackingField:
+    list:
+    - Key: {fileID: 11400000, guid: 415d210c024caed4188d0a2245613584, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 9027b827cc07ed348acc5339fb26fb9c, type: 2}
+      - {fileID: 11400000, guid: 64744a97a0ff1b3498129d9a47abaee8, type: 2}
+      - {fileID: 11400000, guid: 740b3b4322b9bba4fb281ae54518dd0d, type: 2}
+      - {fileID: 11400000, guid: c73a5faa9b2fc6a46ac9f96b84ec4f49, type: 2}
+      - {fileID: 11400000, guid: 383942b72992fe744b92e1258e4fcf15, type: 2}
+      - {fileID: 11400000, guid: 65fc96a0b7e8d9d448ad263a06bfa0dd, type: 2}
+      - {fileID: 11400000, guid: 007bdbdcd2b3058469bbea8a7cbeeb9a, type: 2}
+      - {fileID: 11400000, guid: a35f8e48d4f1e6b40b4b298346226601, type: 2}
+      - {fileID: 11400000, guid: b45590bf79ab0c14b8454bcdb3c837e1, type: 2}
+      - {fileID: 11400000, guid: ee639b89755ffbd429535cac030d3465, type: 2}
+      - {fileID: 11400000, guid: d600104d355cdaa47bf91f721ab2bb55, type: 2}
+      - {fileID: 11400000, guid: 68cf42fd29a93a748a7b2b84f72d8ae0, type: 2}
+    - Key: {fileID: 11400000, guid: b54e5aa332649a941b224c54fd81f862, type: 2}
+      Value:
+      - {fileID: 11400000, guid: f38ce67d7d4ae794eb13f4f8e91a08b8, type: 2}
+      - {fileID: 11400000, guid: d8852163f017cb94a9c9fb9d73e7802d, type: 2}
+      - {fileID: 11400000, guid: fff90445436c05140a919bd3b4802e72, type: 2}
+      - {fileID: 11400000, guid: fa8198463e89184469d707c3e3289b52, type: 2}
+      - {fileID: 11400000, guid: b18e8344414ecc9448f04c3c03a612b5, type: 2}
+  <UngroupedDialogues>k__BackingField: []

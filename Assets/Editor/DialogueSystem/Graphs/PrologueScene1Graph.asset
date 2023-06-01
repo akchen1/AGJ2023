@@ -16,30 +16,13 @@ MonoBehaviour:
   <Groups>k__BackingField:
   - <ID>k__BackingField: 63e607c1-ca8f-47a1-b02e-26d6dce5cc1b
     <Name>k__BackingField: Part1
-    <Position>k__BackingField: {x: 1, y: -242}
+    <Position>k__BackingField: {x: 1, y: -241.99991}
   - <ID>k__BackingField: 712fc1c4-67df-41dc-a6fc-f284f0f836b3
     <Name>k__BackingField: Part2
-    <Position>k__BackingField: {x: 14, y: 462}
+    <Position>k__BackingField: {x: 14, y: 462.0001}
   <Nodes>k__BackingField:
-  - <ID>k__BackingField: 0b7e14f9-3a75-4459-8033-62d7885b6a53
-    <Name>k__BackingField: 1
-    <Text>k__BackingField: 'For my whole life, I can''t remember ever being alone.
-
-      Maybe
-      lonely, but not alone.'
-    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 2
-    <NextSceneName>k__BackingField: MainMenu
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 8b108021-f409-4961-af5a-7ded38d9c6c3
-    <GroupID>k__BackingField: 63e607c1-ca8f-47a1-b02e-26d6dce5cc1b
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 26, y: -183}
   - <ID>k__BackingField: 8b108021-f409-4961-af5a-7ded38d9c6c3
-    <Name>k__BackingField: 2
+    <Name>k__BackingField: PS1x2
     <Text>k__BackingField: LEIGH! What on earth are you doing?
     <Character>k__BackingField: {fileID: 11400000, guid: 490d5d6ce57886a4c80a8057c06ad4a6, type: 2}
     <Item>k__BackingField: {fileID: 0}
@@ -53,7 +36,7 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 458, y: -183}
   - <ID>k__BackingField: eed920f6-a6dc-4cb3-bac9-53555f867a0f
-    <Name>k__BackingField: 3
+    <Name>k__BackingField: PS1x3
     <Text>k__BackingField: "It wasn\u2019t me, I swear! Badu and I were-\r"
     <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
     <Item>k__BackingField: {fileID: 0}
@@ -67,7 +50,7 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 834, y: -183}
   - <ID>k__BackingField: 4ceed869-5b5c-4a10-aedf-ebe587042c29
-    <Name>k__BackingField: 4
+    <Name>k__BackingField: PS1x4
     <Text>k__BackingField: "Again with Badu? You can\u2019t blame your imaginary
       friend forever, Leigh."
     <Character>k__BackingField: {fileID: 11400000, guid: 490d5d6ce57886a4c80a8057c06ad4a6, type: 2}
@@ -82,7 +65,7 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1224, y: -183}
   - <ID>k__BackingField: 0f04c43d-a5f0-4d31-8d3a-fbb5b1d12f2e
-    <Name>k__BackingField: 5
+    <Name>k__BackingField: PS1x5
     <Text>k__BackingField: I swear, mom, it really was Badu-
     <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
     <Item>k__BackingField: {fileID: 0}
@@ -96,7 +79,7 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1737, y: -183}
   - <ID>k__BackingField: f63688dd-2dab-4177-b5b0-ef7a0d6f8807
-    <Name>k__BackingField: 6
+    <Name>k__BackingField: PS1x6
     <Text>k__BackingField: Enough! Go clean up your mess!
     <Character>k__BackingField: {fileID: 11400000, guid: 490d5d6ce57886a4c80a8057c06ad4a6, type: 2}
     <Item>k__BackingField: {fileID: 0}
@@ -110,7 +93,7 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2145, y: -183}
   - <ID>k__BackingField: 09469d65-bb05-492f-a1c2-ff3ebe41e49c
-    <Name>k__BackingField: 7
+    <Name>k__BackingField: PS1x7
     <Text>k__BackingField: You have to admit, it was pretty fun, right?
     <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
     <Item>k__BackingField: {fileID: 0}
@@ -124,7 +107,7 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 43, y: 137}
   - <ID>k__BackingField: 686adf64-819a-420c-885e-cd765eec2c44
-    <Name>k__BackingField: 8
+    <Name>k__BackingField: PS1x8
     <Text>k__BackingField: "I tried to tell mom it wasn\u2019t me. She never really
       believed me."
     <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
@@ -139,7 +122,7 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 458, y: 137}
   - <ID>k__BackingField: da78aec4-c3cb-468d-bb0b-c35fd27658f2
-    <Name>k__BackingField: 9
+    <Name>k__BackingField: PS1x9
     <Text>k__BackingField: There. Not so bad after all, right, Badu?
     <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
     <Item>k__BackingField: {fileID: 0}
@@ -153,7 +136,7 @@ MonoBehaviour:
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 39, y: 521}
   - <ID>k__BackingField: 2960af3a-22f5-4558-b5da-9de0be1bf762
-    <Name>k__BackingField: 10
+    <Name>k__BackingField: PS1x10
     <Text>k__BackingField: "Not so bad, yes\u2026"
     <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
     <Item>k__BackingField: {fileID: 0}
@@ -166,6 +149,23 @@ MonoBehaviour:
     <GroupID>k__BackingField: 712fc1c4-67df-41dc-a6fc-f284f0f836b3
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 439, y: 521}
+  - <ID>k__BackingField: 0b7e14f9-3a75-4459-8033-62d7885b6a53
+    <Name>k__BackingField: PS1x1
+    <Text>k__BackingField: 'For my whole life, I can''t remember ever being alone.
+
+      Maybe
+      lonely, but not alone.'
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: MainMenu
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 8b108021-f409-4961-af5a-7ded38d9c6c3
+    <GroupID>k__BackingField: 63e607c1-ca8f-47a1-b02e-26d6dce5cc1b
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 26, y: -183}
   <OldGroupNames>k__BackingField:
   - Part1
   - Part2
@@ -174,15 +174,15 @@ MonoBehaviour:
     list:
     - Key: Part1
       Value:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - 6
-      - 7
-      - 8
+      - PS1x2
+      - PS1x3
+      - PS1x4
+      - PS1x5
+      - PS1x6
+      - PS1x7
+      - PS1x8
+      - PS1x1
     - Key: Part2
       Value:
-      - 9
-      - 10
+      - PS1x9
+      - PS1x10

@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/GameAssets/Scenes/Prologue - Scene 2.unity
     guid: 96dcc8177e23ad8468a7babab8207ef3
   - enabled: 1
-    path: Assets/GameAssets/Scenes/Interaction.unity
+    path: Assets/GameAssets/Scenes/Prologue - Scene 3.unity
+    guid: bdfa83869e803fd4daa246a6949821c7
+  - enabled: 1
+    path: Assets/GameAssets/Scenes/Tests/Interaction.unity
     guid: 8d6a9350bbcd0b84e800dca499c87d72
   m_configObjects: {}
