@@ -2,10 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 [System.Serializable]
 public class CutsceneSystem
 {
+    private PlayableDirector director;
+
+    private PlayableAsset currentCutscene;
+
 	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
 	public CutsceneSystem()
@@ -20,6 +25,7 @@ public class CutsceneSystem
 
     private void PlayCutsceneHandler(BrokerEvent<CutsceneEvents.PlayCutscene> inEvent)
     {
-        throw new NotImplementedException();
+        currentCutscene = inEvent.Payload.Cutscene;
+        director.Play(currentCutscene);
     }
 }

@@ -8,9 +8,9 @@ using UnityEngine.SceneManagement;
 
 public class MainSceneLoadedHandler : MonoBehaviour, IMainSceneLoadedHandler
 {
+    private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     public void OnMainSceneLoaded(LoadMainSceneArgs args)
     {
-        Debug.Log($"OnMainSceneLoaded! Now decide what to do with args.SceneSetups...");
         StartCoroutine(LoadDesiredScenes(args));
     }
 
@@ -19,7 +19,8 @@ public class MainSceneLoadedHandler : MonoBehaviour, IMainSceneLoadedHandler
         yield return new WaitForSeconds(.5f);
         foreach (var sceneSetup in args.SceneSetups)
         {
-            SceneManager.LoadScene(sceneSetup.path, LoadSceneMode.Additive);
+            string sceneName = sceneSetup.path.Split("/")[^1].Split(".")[0];
+            eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(sceneName));
         }
 
         // call this to restore previously selected and expanded GameObjects 

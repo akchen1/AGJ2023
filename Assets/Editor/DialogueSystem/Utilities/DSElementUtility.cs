@@ -74,6 +74,36 @@ namespace DS.Utilities
             }
             return objectField;
         }
+
+        public static DropdownField CreateDropDownField(string label = null, List<string> choices = null, int index = 0, EventCallback<ChangeEvent<string>> onValueChanged = null)
+        {
+            DropdownField dropdownField = new DropdownField(label) { 
+                choices = choices,
+                index = index == -1 ? 0 : index,
+                value = choices[index == -1 ? 0 : index]
+            };
+
+            if (onValueChanged != null)
+            {
+                dropdownField.RegisterValueChangedCallback(onValueChanged);
+            }
+
+            return dropdownField;
+        }
+
+        public static Toggle CreateToggle(string label = null, bool value = false, EventCallback<ChangeEvent<bool>> onValueChanged = null)
+        {
+            Toggle toggle = new Toggle(label) { 
+                value = value
+            };
+
+            if (onValueChanged != null)
+            {
+                toggle.RegisterValueChangedCallback(onValueChanged);
+            }
+
+            return toggle;
+        }
     }
 }
 
