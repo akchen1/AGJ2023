@@ -16,5 +16,18 @@ public class PrologueScene1Controller : SceneController
         playableDirector.Play(startingCutscene);
     }
 
-    // TODO: Implement when to switch to endCutscene after fixing vase
+    private void OnEnable()
+    {
+        eventBrokerComponent.Subscribe<MinigameEvents.EndMinigame>(EndMinigameHandler);
+    }
+
+    private void OnDisable()
+    {
+        eventBrokerComponent.Unsubscribe<MinigameEvents.EndMinigame>(EndMinigameHandler);
+    }
+
+    private void EndMinigameHandler(BrokerEvent<MinigameEvents.EndMinigame> inEvent)
+    {
+        playableDirector.Play(endCutscene);
+    }
 }

@@ -13,6 +13,7 @@ namespace DS.Elements
     using Utilities;
     using Windows;
     using Data.Save;
+    using UnityEditor.TestTools.TestRunner.Api;
 
     public class DSNode : Node
     {
@@ -26,8 +27,7 @@ namespace DS.Elements
         [HideInInspector]
         public bool HasSceneTransition { get; set; }
 
-        [HideInInspector]
-        public int NextSceneIndex { get; set; }
+        public string NextSceneName { get; set; }
         public DSDialogueType DialogueType { get; set; }
         public DSGroup Group { get; set; }
 
@@ -40,9 +40,11 @@ namespace DS.Elements
             DialogueName = nodeName;
             Choices = new List<DSChoiceSaveData>();
             Text = "Dialogue text";
+
             Character = null;
             HasSceneTransition = false;
-            NextSceneIndex = 0;
+            NextSceneName = "";
+
             graphView = dSGraphView;
             defaultBackgroundColor = new Color(29f/255f, 29f/255f, 30f/255f);
 
@@ -141,9 +143,9 @@ namespace DS.Elements
                 Item = (InventoryItem)callback.newValue;
             });
 
-            DropdownField nextSceneDropDownField = DSElementUtility.CreateDropDownField("Scene", Constants.SceneNamesArray.ToList(), NextSceneIndex, callback =>
+            DropdownField nextSceneDropDownField = DSElementUtility.CreateDropDownField("Scene", Constants.SceneNamesArray.ToList(), Constants.SceneNamesArray.ToList().IndexOf(NextSceneName), callback =>
             {
-                NextSceneIndex = callback.newValue;
+                NextSceneName = callback.newValue;
             });
 
             Toggle hasSceneTransitionField = DSElementUtility.CreateToggle("Has Scene Transition", HasSceneTransition, callback =>

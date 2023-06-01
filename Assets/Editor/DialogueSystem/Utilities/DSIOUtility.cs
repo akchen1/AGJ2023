@@ -165,7 +165,7 @@ namespace DS.Utilities
                 Text = node.Text,
                 Character = node.Character,
                 HasSceneTransition = node.HasSceneTransition,
-                NextSceneIndex = node.NextSceneIndex,
+                NextSceneName = node.NextSceneName,
                 Item = node.Item,
                 GroupID = node.Group?.ID,
                 DialogueType = node.DialogueType,
@@ -197,7 +197,7 @@ namespace DS.Utilities
                 node.Character,
                 node.Item,
                 node.HasSceneTransition,
-                node.NextSceneIndex,
+                node.NextSceneName,
                 node.Text,
                 ConvertNodeChoicesToDialogueChoices(node.Choices),
                 node.DialogueType,
@@ -333,8 +333,10 @@ namespace DS.Utilities
                 node.ID = nodeData.ID;
                 node.Choices = choices;
                 node.Text = nodeData.Text;
-                //node.Character = nodeData.Character;
-                //node.Item = nodeData.Item;
+                node.HasSceneTransition = nodeData.HasSceneTransition;
+                node.NextSceneName = nodeData.NextSceneName;
+                node.Character = nodeData.Character;
+                node.Item = nodeData.Item;
                 node.Draw();
 
                 graphView.AddElement(node);

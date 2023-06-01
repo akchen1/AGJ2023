@@ -19,6 +19,7 @@ namespace DS.Data.Save
         [field: SerializeField] public InventoryItem Item { get; set; }
         [field: SerializeField] public bool HasSceneTransition { get; set; }
         [field: SerializeField] public int NextSceneIndex { get; set; }
+        [field: SerializeField] public string NextSceneName { get; set; }
         #endregion
         [field: SerializeField] public List<DSChoiceSaveData> Choices { get; set; }
         [field: SerializeField] public string GroupID { get; set; }

@@ -30,7 +30,8 @@ MonoBehaviour:
     <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
     <Item>k__BackingField: {fileID: 0}
     <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 2
+    <NextSceneName>k__BackingField: MainMenu
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 8b108021-f409-4961-af5a-7ded38d9c6c3
@@ -44,6 +45,7 @@ MonoBehaviour:
     <Item>k__BackingField: {fileID: 0}
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: eed920f6-a6dc-4cb3-bac9-53555f867a0f
@@ -57,6 +59,7 @@ MonoBehaviour:
     <Item>k__BackingField: {fileID: 0}
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 4ceed869-5b5c-4a10-aedf-ebe587042c29
@@ -71,6 +74,7 @@ MonoBehaviour:
     <Item>k__BackingField: {fileID: 0}
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 0f04c43d-a5f0-4d31-8d3a-fbb5b1d12f2e
@@ -84,6 +88,7 @@ MonoBehaviour:
     <Item>k__BackingField: {fileID: 0}
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: f63688dd-2dab-4177-b5b0-ef7a0d6f8807
@@ -97,6 +102,7 @@ MonoBehaviour:
     <Item>k__BackingField: {fileID: 0}
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
@@ -110,6 +116,7 @@ MonoBehaviour:
     <Item>k__BackingField: {fileID: 0}
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 686adf64-819a-420c-885e-cd765eec2c44
@@ -124,12 +131,13 @@ MonoBehaviour:
     <Item>k__BackingField: {fileID: 0}
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
     <GroupID>k__BackingField: 63e607c1-ca8f-47a1-b02e-26d6dce5cc1b
     <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 466, y: 137}
+    <Position>k__BackingField: {x: 458, y: 137}
   - <ID>k__BackingField: da78aec4-c3cb-468d-bb0b-c35fd27658f2
     <Name>k__BackingField: 9
     <Text>k__BackingField: There. Not so bad after all, right, Badu?
@@ -137,6 +145,7 @@ MonoBehaviour:
     <Item>k__BackingField: {fileID: 0}
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 2960af3a-22f5-4558-b5da-9de0be1bf762
@@ -150,6 +159,7 @@ MonoBehaviour:
     <Item>k__BackingField: {fileID: 0}
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 

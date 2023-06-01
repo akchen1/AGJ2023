@@ -8,11 +8,12 @@ public class Bootstrap : MonoBehaviour
 {
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
-    private CutsceneSystem cutsceneSystem;
+    //private CutsceneSystem cutsceneSystem;
     private InventorySystem inventorySystem;
     private DialogueSystem dialogueSystem;
     private SanitySystem sanitySystem;
     private InteractionSystem interactionSystem;
+    private PlayerInputSystem playerInputSystem;
 
     private SceneUtility sceneUtility;
 
@@ -33,11 +34,12 @@ public class Bootstrap : MonoBehaviour
 
     private void InitializeSystem()
     {
-        cutsceneSystem = new CutsceneSystem();
+        //cutsceneSystem = new CutsceneSystem();
         inventorySystem = new InventorySystem();
         interactionSystem = new InteractionSystem();
         sanitySystem = new SanitySystem();
         dialogueSystem = new DialogueSystem();
+        playerInputSystem = new PlayerInputSystem();
     }
 
     private void InitializeUtility()
@@ -47,6 +49,6 @@ public class Bootstrap : MonoBehaviour
 
     private void LoadMainMenu()
     {
-		eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(Constants.SceneNames.MainMenu, false));
+        eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(Constants.SceneNames.MainMenu, false));
     }
 }

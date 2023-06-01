@@ -75,17 +75,17 @@ namespace DS.Utilities
             return objectField;
         }
 
-        public static DropdownField CreateDropDownField(string label = null, List<string> choices = null, int index = 0, EventCallback<ChangeEvent<int>> onValueChanged = null)
+        public static DropdownField CreateDropDownField(string label = null, List<string> choices = null, int index = 0, EventCallback<ChangeEvent<string>> onValueChanged = null)
         {
             DropdownField dropdownField = new DropdownField(label) { 
                 choices = choices,
-                index = index,
-                value = choices[index]
+                index = index == -1 ? 0 : index,
+                value = choices[index == -1 ? 0 : index]
             };
 
             if (onValueChanged != null)
             {
-                dropdownField.RegisterCallback(onValueChanged);
+                dropdownField.RegisterValueChangedCallback(onValueChanged);
             }
 
             return dropdownField;

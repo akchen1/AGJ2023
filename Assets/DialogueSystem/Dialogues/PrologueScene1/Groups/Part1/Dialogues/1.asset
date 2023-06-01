@@ -16,7 +16,8 @@ MonoBehaviour:
   <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
-  <NextSceneIndex>k__BackingField: 0
+  <NextSceneIndex>k__BackingField: 2
+  <NextSceneName>k__BackingField: MainMenu
   <Text>k__BackingField: 'For my whole life, I can''t remember ever being alone.
 
     Maybe

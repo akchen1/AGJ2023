@@ -28,7 +28,6 @@ public class MinigameSystem : MonoBehaviour
             Debug.LogError("A minigame is already going on");
             return;
         }
-
         activeMinigame = inEvent.Payload.minigame;
         activeMinigame.Initialize();
     }
@@ -41,19 +40,7 @@ public class MinigameSystem : MonoBehaviour
             return;
         }
 
-        activeMinigame.Finish();
+        //activeMinigame.Finish();
         activeMinigame = null;
-    }
-
-    void Update()
-    {
-        if (activeMinigame == null) return;
-        activeMinigame.Update();
-    }
-
-    private void FixedUpdate()
-    {
-        if (activeMinigame == null) return;
-        activeMinigame.PhysicsUpdate();
     }
 }
