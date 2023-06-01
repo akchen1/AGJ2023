@@ -13,11 +13,12 @@ public static class Constants
 		public const string MainMenu = "MainMenu";
 		public const string PrologueScene1 = "Prologue - Scene 1";
 		public const string PrologueScene2 = "Prologue - Scene 2";
-	}
+		public const string PrologueScene3 = "Prologue - Scene 3";
+    }
 
 	// Used in SceneChangeMarkerEmitter Editor script to select scenes from dropdown
 	public static readonly string[] SceneNamesArray = new string[]
-		{ SceneNames.Bootstrap, SceneNames.MainMenu, SceneNames.PrologueScene1, SceneNames.PrologueScene2 };
+		{ SceneNames.Bootstrap, SceneNames.MainMenu, SceneNames.PrologueScene1, SceneNames.PrologueScene2, SceneNames.PrologueScene3 };
 	#endregion
 
     #region Audio

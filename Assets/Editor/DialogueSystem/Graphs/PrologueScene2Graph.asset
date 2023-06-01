@@ -1,0 +1,298 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce95c50c4663d4a14a54883ccc78975b, type: 3}
+  m_Name: PrologueScene2Graph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: PrologueScene2
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <Name>k__BackingField: Part1
+    <Position>k__BackingField: {x: 208, y: -189}
+  - <ID>k__BackingField: 25892ddf-c434-46c7-9eb5-eda9857882b8
+    <Name>k__BackingField: Part2
+    <Position>k__BackingField: {x: 208, y: 1432}
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 4672fcc9-520e-4c04-956a-b6ab9293361a
+    <Name>k__BackingField: PS2x1
+    <Text>k__BackingField: Badu has always been there for me, through everything.
+      No one else seems to be able to see them, but I really try to make them see.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 233, y: -130}
+  - <ID>k__BackingField: 95e7b8c7-4842-4722-9192-660e9037d246
+    <Name>k__BackingField: PS2x2
+    <Text>k__BackingField: But they never see. All they can see are the messes they
+      think I have made.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 233, y: 174}
+  - <ID>k__BackingField: 76f65242-7233-42cb-b22a-e3ef861ac33e
+    <Name>k__BackingField: PS2x3
+    <Text>k__BackingField: "They don\u2019t understand you like I do, Leigh. They
+      will never understand you."
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: cad34518-6bb1-40a9-88ac-ab4e7baadbdd
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 233, y: 490}
+  - <ID>k__BackingField: cad34518-6bb1-40a9-88ac-ab4e7baadbdd
+    <Name>k__BackingField: PS2x4
+    <Text>k__BackingField: "I\u2019m sure someone will, someday."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 5c9caf8a-519b-412f-82ed-0e7de25a0acd
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 771, y: 490}
+  - <ID>k__BackingField: 5c9caf8a-519b-412f-82ed-0e7de25a0acd
+    <Name>k__BackingField: PS2x5
+    <Text>k__BackingField: "All they do is ignore and hurt you, Leigh. You know I\u2019m
+      here just for you, right?"
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1159, y: 490}
+  - <ID>k__BackingField: 354573e7-5dc8-45c9-8902-841bc70bf7b6
+    <Name>k__BackingField: PS2x6
+    <Text>k__BackingField: "Don\u2019t worry, I know."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1720, y: 490}
+  - <ID>k__BackingField: b33d74ef-a4e7-4f67-b835-f0cd06c7f090
+    <Name>k__BackingField: PS2x7
+    <Text>k__BackingField: What are you doing out there? Get back inside and do your
+      chores!
+    <Character>k__BackingField: {fileID: 11400000, guid: 490d5d6ce57886a4c80a8057c06ad4a6, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: b0e62caa-2c4d-4ec6-8a70-fa4828d8b168
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 233, y: 800}
+  - <ID>k__BackingField: b0e62caa-2c4d-4ec6-8a70-fa4828d8b168
+    <Name>k__BackingField: PS2x8
+    <Text>k__BackingField: "I\u2019m almost done playing, Mom-"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 1264a8bb-5601-41d6-88ac-e57b562c4b91
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 771, y: 800}
+  - <ID>k__BackingField: 1264a8bb-5601-41d6-88ac-e57b562c4b91
+    <Name>k__BackingField: PS2x9
+    <Text>k__BackingField: Get inside NOW!
+    <Character>k__BackingField: {fileID: 11400000, guid: 490d5d6ce57886a4c80a8057c06ad4a6, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1159, y: 800}
+  - <ID>k__BackingField: dbce1552-9aa9-47cf-9aa3-44d9650f6b98
+    <Name>k__BackingField: PS2x10
+    <Text>k__BackingField: What is wrong with you!?
+    <Character>k__BackingField: {fileID: 11400000, guid: 490d5d6ce57886a4c80a8057c06ad4a6, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 64e034b4-094a-45ca-90cb-786a56c12af9
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 233, y: 1110}
+  - <ID>k__BackingField: 64e034b4-094a-45ca-90cb-786a56c12af9
+    <Name>k__BackingField: PS2x11
+    <Text>k__BackingField: "No, it was an accident! Badu didn\u2019t mean it like
+      that-"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 859984cf-2cc0-464c-8fb6-4237e11d7b2f
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 658, y: 1110}
+  - <ID>k__BackingField: 859984cf-2cc0-464c-8fb6-4237e11d7b2f
+    <Name>k__BackingField: PS2x12
+    <Text>k__BackingField: "Badu? Badu did this, really? Badu isn\u2019t real! Get
+      inside this instant, before someone sees what you are, you little monster!
+      You\u2019ll fix this later!"
+    <Character>k__BackingField: {fileID: 11400000, guid: 490d5d6ce57886a4c80a8057c06ad4a6, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1072, y: 1110}
+  - <ID>k__BackingField: d74af2df-e860-4e77-bc01-166c9aabcd44
+    <Name>k__BackingField: PS2x13
+    <Text>k__BackingField: "Don\u2019t worry, Badu I know you never meant to hurt
+      it. You\u2019re just looking out for me."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 74c97a6e-5a75-4ef0-9a26-513247d9c929
+    <GroupID>k__BackingField: 25892ddf-c434-46c7-9eb5-eda9857882b8
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 233, y: 1491}
+  - <ID>k__BackingField: 74c97a6e-5a75-4ef0-9a26-513247d9c929
+    <Name>k__BackingField: PS2x14
+    <Text>k__BackingField: "Your mother simply can\u2019t resist being so cruel,
+      can she?"
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 53a636ab-e4b9-44d4-ad0c-6c308ce00ba5
+    <GroupID>k__BackingField: 25892ddf-c434-46c7-9eb5-eda9857882b8
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 810, y: 1491}
+  - <ID>k__BackingField: 1c56ab34-4c89-49aa-8c23-92157ffb6de3
+    <Name>k__BackingField: PS2x16
+    <Text>k__BackingField: "Don\u2019t worry, LEIGH. I do."
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 25892ddf-c434-46c7-9eb5-eda9857882b8
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1656, y: 1491}
+  - <ID>k__BackingField: 53a636ab-e4b9-44d4-ad0c-6c308ce00ba5
+    <Name>k__BackingField: PS2x15
+    <Text>k__BackingField: I only wish she understood.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 1c56ab34-4c89-49aa-8c23-92157ffb6de3
+    <GroupID>k__BackingField: 25892ddf-c434-46c7-9eb5-eda9857882b8
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1254, y: 1491}
+  - <ID>k__BackingField: 6fe17ede-5eb2-48be-8345-78d8f683bf37
+    <Name>k__BackingField: PS2x17
+    <Text>k__BackingField: "It\u2019s easy to believe that things will never change."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: Prologue - Scene 3
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 25892ddf-c434-46c7-9eb5-eda9857882b8
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 233, y: 1792}
+  <OldGroupNames>k__BackingField:
+  - Part1
+  - Part2
+  <OldUngroupedNodeNames>k__BackingField: []
+  <OldGroupedNodeNames>k__BackingField:
+    list:
+    - Key: Part1
+      Value:
+      - PS2x1
+      - PS2x2
+      - PS2x3
+      - PS2x4
+      - PS2x5
+      - PS2x6
+      - PS2x7
+      - PS2x8
+      - PS2x9
+      - PS2x10
+      - PS2x11
+      - PS2x12
+    - Key: Part2
+      Value:
+      - PS2x13
+      - PS2x14
+      - PS2x16
+      - PS2x15
+      - PS2x17
