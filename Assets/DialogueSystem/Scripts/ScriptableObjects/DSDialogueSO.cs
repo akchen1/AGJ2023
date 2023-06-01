@@ -13,19 +13,21 @@ namespace DS.ScriptableObjects
         [field: SerializeField] public string DialogueName { get; set; }
         [field: SerializeField] public Character Character { get; set; }
         [field: SerializeField] public InventoryItem Item { get; set; }
-        [field: SerializeField] public string NextScene { get; set; }
+        [field: SerializeField] public bool HasSceneTransition { get; set; }
+        [field: SerializeField] public int NextSceneIndex { get; set; }
 
         [field: SerializeField] [field: TextArea()] public string Text { get; set; }
         [field: SerializeField] public List<DSDialogueChoiceData> Choices { get; set; }
         [field: SerializeField] public DSDialogueType DialogueType { get; set; }
         [field: SerializeField] public bool IsStartingDialogue { get; set; }
 
-        public void Initialize(string dialogueName, Character character, InventoryItem item, string nextScene, string text, List<DSDialogueChoiceData> choices, DSDialogueType dialogueType, bool isStartingDialogue)
+        public void Initialize(string dialogueName, Character character, InventoryItem item, bool hasSceneTransition, int nextSceneIndex, string text, List<DSDialogueChoiceData> choices, DSDialogueType dialogueType, bool isStartingDialogue)
         {
             DialogueName = dialogueName;
             Character = character;
             Item = item;
-            NextScene = nextScene;
+            HasSceneTransition = hasSceneTransition;
+            NextSceneIndex = nextSceneIndex;
             Text = text;
             Choices = choices;
             DialogueType = dialogueType;

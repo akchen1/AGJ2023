@@ -22,7 +22,12 @@ namespace DS.Elements
         public string Text { get; set; }
         public Character Character { get; set; }
         public InventoryItem Item { get; set; }
-        public string NextScene { get; set; }
+
+        [HideInInspector]
+        public bool HasSceneTransition { get; set; }
+
+        [HideInInspector]
+        public int NextSceneIndex { get; set; }
         public DSDialogueType DialogueType { get; set; }
         public DSGroup Group { get; set; }
 
@@ -36,9 +41,8 @@ namespace DS.Elements
             Choices = new List<DSChoiceSaveData>();
             Text = "Dialogue text";
             Character = null;
-            //Item = null;
-            NextScene = "";
-
+            HasSceneTransition = false;
+            NextSceneIndex = 0;
             graphView = dSGraphView;
             defaultBackgroundColor = new Color(29f/255f, 29f/255f, 30f/255f);
 
@@ -137,18 +141,23 @@ namespace DS.Elements
                 Item = (InventoryItem)callback.newValue;
             });
 
-            TextField nextSceneTextField = DSElementUtility.CreateTextArea(NextScene, "Next Scene", callback =>
+            DropdownField nextSceneDropDownField = DSElementUtility.CreateDropDownField("Scene", Constants.SceneNamesArray.ToList(), NextSceneIndex, callback =>
             {
-                NextScene = callback.newValue;
+                NextSceneIndex = callback.newValue;
             });
 
-            nextSceneTextField.AddClasses(
-                "ds-node__textfield"
-            );
+            Toggle hasSceneTransitionField = DSElementUtility.CreateToggle("Has Scene Transition", HasSceneTransition, callback =>
+            {
+                HasSceneTransition = callback.newValue;
+                nextSceneDropDownField.visible = HasSceneTransition;
+            });
+
+            nextSceneDropDownField.visible = HasSceneTransition;
 
             customDataContainer.Add(characterField);
             customDataContainer.Add(itemField);
-            customDataContainer.Add(nextSceneTextField);
+            customDataContainer.Add(hasSceneTransitionField);
+            customDataContainer.Add(nextSceneDropDownField);
 
             customDataContainer.Add(textFoldout);
             extensionContainer.Add(customDataContainer);

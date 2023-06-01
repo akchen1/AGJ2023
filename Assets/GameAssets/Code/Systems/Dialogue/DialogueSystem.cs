@@ -45,9 +45,9 @@ public class DialogueSystem
         }
 
         // Check if there is a scene transition event
-        if (currentDialogue.NextScene != "")
+        if (currentDialogue.HasSceneTransition) // Assuming Bootstrap is 0
         {
-            eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(currentDialogue.NextScene));
+            eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(Constants.SceneNamesArray[currentDialogue.NextSceneIndex]));
         }
 
         // Set next dialogue node to current dialogue. If null, that means dialogue is over

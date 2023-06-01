@@ -17,7 +17,8 @@ namespace DS.Data.Save
         #region Case Specific
         [field: SerializeField] public Character Character { get; set; }
         [field: SerializeField] public InventoryItem Item { get; set; }
-        [field: SerializeField] public string NextScene { get; set; }
+        [field: SerializeField] public bool HasSceneTransition { get; set; }
+        [field: SerializeField] public int NextSceneIndex { get; set; }
         #endregion
         [field: SerializeField] public List<DSChoiceSaveData> Choices { get; set; }
         [field: SerializeField] public string GroupID { get; set; }
