@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.EventSystems;
 
 public class VaseMinigame : MonoBehaviour, IMinigame
@@ -53,20 +54,22 @@ public class VaseMinigame : MonoBehaviour, IMinigame
     #region Main Methods
     private bool CheckEndCondition()
     {
+        bool isEnd = true;
         for (int i = 0; i < vasePieces.Count; i++)
         {
-            if (vasePieces[i].Grabbing) return false;
-
             RectTransform target = vaseTargets[i];
-            if (!RectOverlapsPoint(target, vasePieces[i].RectTransform))
+            VasePieceUI piece = vasePieces[i];
+            if (piece.Grabbing || !RectOverlapsPoint(target, piece.RectTransform))
             {
-                return false;
+
+                isEnd = false;
+                continue;
             }
 
             if (snapping)
-                vasePieces[i].RectTransform.position = target.position;
+                piece.RectTransform.position = target.position;
         }
-        return true;
+        return isEnd;
     }
     #endregion
 
