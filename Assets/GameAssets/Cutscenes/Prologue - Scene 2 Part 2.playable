@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b33c080cc27dc78479ee6d73f07d9e52, type: 3}
   m_Name: Scene Change Marker Emitter
   m_EditorClassIdentifier: 
-  m_Time: 3.5833333333333335
+  m_Time: 16
   retroactive: 0
   emiteOnce: 0
   selectedSceneIndex: 4

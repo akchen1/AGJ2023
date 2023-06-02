@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,14 +7,30 @@ public class ShovelMinigame : MonoBehaviour, IMinigame
 {
     private bool active;
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
-    public void Finish()
+
+    [SerializeField] private BarSliderUI barSlider;
+    
+    [SerializeField] private List<ShovelLevels> levels;
+
+    [SerializeField] private int currentLevel;
+    [SerializeField] private float currentProgress;
+
+    private void OnEnable()
     {
-        active = false;
-        eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+        eventBrokerComponent.Subscribe<InputEvents.MouseClick>(MouseClickHandler);
     }
 
+    private void OnDisable()
+    {
+        eventBrokerComponent.Unsubscribe<InputEvents.MouseClick>(MouseClickHandler);
+    }
+
+    #region IMinigame Methods
     public void Initialize()
     {
+        currentLevel = 0;
+        currentProgress = levels[0].levelRequirement;
+        barSlider.gameObject.SetActive(true);
         active = true;
     }
 
@@ -22,11 +39,44 @@ public class ShovelMinigame : MonoBehaviour, IMinigame
         return true;
     }
 
-    private void Update()
+    public void Finish()
+    {
+        barSlider.gameObject.SetActive(false);
+        active = false;
+        eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+    }
+    #endregion
+
+    private void MouseClickHandler(BrokerEvent<InputEvents.MouseClick> obj)
     {
         if (!active) return;
-        // TODO: Implement
+        Vector2 displacement = barSlider.GetSliderDisplacement();
+        float val = levels[currentLevel].levelCurve.Evaluate(displacement.y);
+        currentProgress -= val;
+        
+        if (CheckFinishCondition())
+        {
+            Finish();
+        }
+    }
 
-        Finish();
+    private bool CheckFinishCondition()
+    {
+        if (currentProgress > 0) return false;
+
+        currentLevel++;
+
+        if (currentLevel >= levels.Count) return true;
+
+        currentProgress = levels[currentLevel].levelRequirement;
+
+        return false;
+    }
+
+    [System.Serializable]
+    private class ShovelLevels
+    {
+        public float levelRequirement;
+        public AnimationCurve levelCurve;
     }
 }
