@@ -13,7 +13,11 @@ public class MinigameInteraction : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        // Check first if there's another interaction event happening
+        IMinigame iMinigame = minigame.GetComponent<IMinigame>();
+        // Check if conditions are met
+        if (!iMinigame.StartCondition()) return;
+        
+        // Check if there's another interaction event happening
         eventBrokerComponent.Publish(this, new InteractionEvents.Interact(this, (valid) =>
         {
             if (valid)

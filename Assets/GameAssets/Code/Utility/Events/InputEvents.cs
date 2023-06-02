@@ -13,4 +13,14 @@ public class InputEvents
             MousePosition = mousePosition;
         }
     }
+
+    public class SetInputState
+    {
+        public readonly bool Active;
+
+        public SetInputState(bool active)
+        {
+            Active = active;
+        }
+    }
 }

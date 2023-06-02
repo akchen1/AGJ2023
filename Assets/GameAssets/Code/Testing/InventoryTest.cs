@@ -11,7 +11,7 @@ public class InventoryTest : MonoBehaviour
         for (int i = 0; i < 10; i++)
         {
             InventoryItem inventoryItem = ScriptableObject.CreateInstance<InventoryItem>();
-            inventoryItem.ItemDescription = "Test item " + i;
+            //inventoryItem.ItemDescription = "Test item " + i;
             eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(inventoryItem));
         }
     }

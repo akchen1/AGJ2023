@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class InventoryItem : ScriptableObject
 {
-    public Sprite ItemIcon;
-    public string ItemDescription;
+    [field: SerializeField] public string ItemName { get; private set; }
+    [field: SerializeField] public Sprite ItemIcon { get; private set; }
+    [field: SerializeField] public string ItemDescription { get; private set; }
 }

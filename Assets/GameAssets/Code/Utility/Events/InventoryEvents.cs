@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,9 +16,21 @@ public class InventoryEvents
 
 	public class RemoveItem
 	{
-		public RemoveItem()
+		public readonly InventoryItem Item;
+		public RemoveItem(InventoryItem item)
 		{
-			// TODO: Implement
+			Item = item;
+		}
+	}
+
+	public class HasItem
+	{
+		public readonly InventoryItem Item;
+		public Action<bool> Callback;
+		public HasItem(InventoryItem item, Action<bool> callback) 
+		{
+			Item = item;
+			Callback = callback;
 		}
 	}
 }

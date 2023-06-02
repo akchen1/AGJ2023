@@ -22,6 +22,11 @@ public class ObjectPlacementMinigame : MonoBehaviour, IMinigame
         active = true;
     }
 
+    public bool StartCondition()
+    {
+        return true;
+    }
+
     public void Update()
     {
         if (!active) return;
