@@ -17,7 +17,15 @@ public class TimelineMarkerReciever : MonoBehaviour, INotificationReceiver
         } else if (notification is SceneChangeMarkerEmitter sceneChangeMarker)
         {
             RecieveSceneChangeMarker(sceneChangeMarker);
+        } else if (notification is PlayerInputMarkerEmitter playerInputMarker)
+        {
+            RecievePlayerInputMarker(playerInputMarker);
         }
+    }
+
+    private void RecievePlayerInputMarker(PlayerInputMarkerEmitter playerInputMarker)
+    {
+        eventBrokerComponent.Publish(this, new InputEvents.SetInputState(playerInputMarker.Enable));
     }
 
     private void RecieveSceneChangeMarker(SceneChangeMarkerEmitter sceneChangeMarker)

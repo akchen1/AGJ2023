@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e18dfd5241dd2cb4891eddce17c41aae, type: 3}
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
-  Dialogue: {fileID: 11400000, guid: fdd3863764de3264b8d3d63f04cba3ba, type: 2}
+  Dialogue: {fileID: 11400000, guid: 9a064abc80ef0e749b72399f38a51a59, type: 2}
 --- !u!114 &3415835163046798861
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -469,4 +469,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e18dfd5241dd2cb4891eddce17c41aae, type: 3}
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
-  Dialogue: {fileID: 11400000, guid: 6596e8056dc65174a979970363bd911c, type: 2}
+  Dialogue: {fileID: 11400000, guid: ebbcba5d06475b24089b3dca0c04edbd, type: 2}

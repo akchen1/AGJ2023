@@ -4,6 +4,7 @@ using UnityEngine;
 
 public interface IMinigame
 {
+    public bool StartCondition();
     //// Called once when StartMinigame Event is fired
     public void Initialize();
 

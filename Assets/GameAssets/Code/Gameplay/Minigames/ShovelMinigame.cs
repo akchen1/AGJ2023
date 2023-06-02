@@ -17,6 +17,11 @@ public class ShovelMinigame : MonoBehaviour, IMinigame
         active = true;
     }
 
+    public bool StartCondition()
+    {
+        return true;
+    }
+
     private void Update()
     {
         if (!active) return;

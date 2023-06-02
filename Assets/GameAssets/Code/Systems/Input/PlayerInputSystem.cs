@@ -11,14 +11,27 @@ public class PlayerInputSystem
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     public PlayerInputSystem()
     {
+        eventBrokerComponent.Subscribe<InputEvents.SetInputState>(SetInputStateHandler);
         inputActions.Player.MouseClick.performed += OnMouseClick;
         EnableInput();
     }
 
     ~PlayerInputSystem()
     {
+        eventBrokerComponent.Unsubscribe<InputEvents.SetInputState>(SetInputStateHandler);
         inputActions.Player.MouseClick.performed -= OnMouseClick;
         DisableInput();
+    }
+
+    private void SetInputStateHandler(BrokerEvent<InputEvents.SetInputState> inEvent)
+    {
+        if (inEvent.Payload.Active)
+        {
+            EnableInput();
+        } else
+        {
+            DisableInput();
+        }
     }
 
     private void EnableInput()

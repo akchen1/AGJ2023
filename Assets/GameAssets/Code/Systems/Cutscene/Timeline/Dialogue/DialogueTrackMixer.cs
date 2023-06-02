@@ -10,6 +10,7 @@ public class DialogueTrackMixer : PlayableBehaviour
     {
         TimelineDialogueSystem timelineDialogueSystem = playerData as TimelineDialogueSystem;
         string currentText = "";
+        string currentSpeaker = "";
         float currentAlpha = 0f;
 
         if (!timelineDialogueSystem) return;
@@ -23,10 +24,11 @@ public class DialogueTrackMixer : PlayableBehaviour
                 ScriptPlayable<DialogueClipStartBehaviour> inputPlayable = (ScriptPlayable<DialogueClipStartBehaviour>)playable.GetInput(i);
 
                 DialogueClipStartBehaviour input = inputPlayable.GetBehaviour();
+                currentSpeaker = input.Dialogue.Character.CharacterName;
                 currentText = input.Dialogue.Text;
                 currentAlpha = inputWeight;
             }
         }
-        timelineDialogueSystem.SetDialogue(currentText, new Color(1, 1, 1, currentAlpha));
+        timelineDialogueSystem.SetDialogue(currentSpeaker, currentText, new Color(1, 1, 1, currentAlpha));
     }
 }
