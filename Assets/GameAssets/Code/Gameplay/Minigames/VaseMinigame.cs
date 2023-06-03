@@ -10,6 +10,7 @@ public class VaseMinigame : MonoBehaviour, IMinigame
     [SerializeField] private List<VasePieceUI> vasePieces;
     [SerializeField] private bool snapping;
     [SerializeField] private InventoryItem brokenVasePieces;
+    [SerializeField] private GameObject fixedVase;
     private bool active;
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
@@ -29,6 +30,7 @@ public class VaseMinigame : MonoBehaviour, IMinigame
     {
         active = false;
         vaseUI.SetActive(false);
+        fixedVase.SetActive(true);
         eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
         eventBrokerComponent.Publish(this, new InventoryEvents.RemoveItem(brokenVasePieces));
         eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
