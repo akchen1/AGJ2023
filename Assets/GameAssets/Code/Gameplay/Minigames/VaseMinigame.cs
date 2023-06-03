@@ -8,7 +8,6 @@ public class VaseMinigame : MonoBehaviour, IMinigame
 {
     [SerializeField] private GameObject vaseUI;
     [SerializeField] private List<VasePieceUI> vasePieces;
-    [SerializeField] private List<RectTransform> vaseTargets;
     [SerializeField] private bool snapping;
     [SerializeField] private InventoryItem brokenVasePieces;
     private bool active;
@@ -57,11 +56,10 @@ public class VaseMinigame : MonoBehaviour, IMinigame
         bool isEnd = true;
         for (int i = 0; i < vasePieces.Count; i++)
         {
-            RectTransform target = vaseTargets[i];
             VasePieceUI piece = vasePieces[i];
+            RectTransform target = piece.TargetTransform;
             if (piece.Grabbing || !RectOverlapsPoint(target, piece.RectTransform))
             {
-
                 isEnd = false;
                 continue;
             }
