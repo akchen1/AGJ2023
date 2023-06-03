@@ -1,40 +1,87 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
+using UnityEngine.EventSystems;
 
-[System.Serializable]
 public class ObjectPlacementMinigame : MonoBehaviour, IMinigame
 {
-    // Need some kind of indicator maybe for desired position. Either ghostly silluette of object or arrow indicator
-    [SerializeField] private GameObject placementObject; // Object we want to move
-    [SerializeField] private Collider2D desiredBounds;   // Where we want the object to be
-    private bool active;    // Internal use, to make sure Finishminigame is called only once
-    
+    [SerializeField] private GameObject minigameUI; // UI to set active
+    [SerializeField] private List<ObjectPlacementPieceUI> objectPieces; // Object pieces
+    [SerializeField] private bool snapping; // Snaps to correct position
+    [SerializeField] private InventoryItem requiredItem;    // Start condition
+    [SerializeField] private GameObject finishedObject; // Object to set active after finishing the minigame
+    private bool active;
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
+
+    #region IMinigame Methods
+    public bool StartCondition()
+    {
+        if (requiredItem == null) return true;
+        bool canStart = false;
+        eventBrokerComponent.Publish(this, new InventoryEvents.HasItem(requiredItem, callback =>
+        {
+            canStart = callback;
+        }));
+        
+        return canStart;
+    }
 
     public void Finish()
     {
-        // Cleanup and result
-        Debug.Log("Object placement finished");
+        active = false;
+        minigameUI.SetActive(false);
+        finishedObject.SetActive(true);
+
+        eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+        eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
+        if (requiredItem != null)
+            eventBrokerComponent.Publish(this, new InventoryEvents.RemoveItem(requiredItem));
     }
 
     public void Initialize()
     {
-        Debug.Log("Initializing placement minigame");
         active = true;
+        minigameUI.SetActive(true);
+        eventBrokerComponent.Publish(this, new InputEvents.SetInputState(false));
     }
 
-    public bool StartCondition()
-    {
-        return true;
-    }
+    #endregion
 
-    public void Update()
+    private void Update()
     {
         if (!active) return;
-        Debug.Log("running");
-        if (desiredBounds.OverlapPoint(placementObject.transform.position))
-        {
-            eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
-            active = false;
-        }
+        if (CheckEndCondition())
+            Finish();
     }
+
+    #region Main Methods
+    private bool CheckEndCondition()
+    {
+        bool isEnd = true;
+        for (int i = 0; i < objectPieces.Count; i++)
+        {
+            ObjectPlacementPieceUI piece = objectPieces[i];
+            RectTransform target = piece.TargetTransform;
+            if (piece.Grabbing || !RectOverlapsPoint(target, piece.RectTransform))
+            {
+                isEnd = false;
+                continue;
+            }
+
+            if (snapping)
+                piece.RectTransform.position = target.position;
+        }
+        return isEnd;
+    }
+    #endregion
+
+    #region Utility Methods
+    private bool RectOverlapsPoint(RectTransform rectTrans1, RectTransform rectTrans2)
+    {
+        Rect rect1 = new Rect(rectTrans1.localPosition.x, rectTrans1.localPosition.y, rectTrans1.rect.width, rectTrans1.rect.height);
+        Rect rect2 = new Rect(rectTrans2.localPosition.x, rectTrans2.localPosition.y, rectTrans2.rect.width/2, rectTrans2.rect.height/2);
+        return rect1.Overlaps(rect2);
+    }
+    #endregion
 }
