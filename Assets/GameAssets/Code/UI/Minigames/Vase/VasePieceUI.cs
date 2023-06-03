@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class VasePieceUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public RectTransform RectTransform { get; private set; }
+    [field:SerializeField] public RectTransform TargetTransform { get; private set; }
     public bool Grabbing { get; private set; }
 
     private void Awake()
@@ -18,6 +19,7 @@ public class VasePieceUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     {
         SetDraggedPosition(eventData);
         Grabbing = true;
+        transform.SetAsLastSibling();
     }
 
     public void OnDrag(PointerEventData data)
