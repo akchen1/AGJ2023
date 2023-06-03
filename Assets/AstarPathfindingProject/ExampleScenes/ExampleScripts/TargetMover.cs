@@ -21,12 +21,14 @@ namespace Pathfinding {
 		/// <summary>Determines if the target position should be updated every frame or only on double-click</summary>
 		public bool onlyOnClick;
 		public bool use2D;
+		public bool Player;
 
 		Camera cam;
 
 		public void Start () {
 			//Move target to start on player.
-			this.gameObject.transform.position = GameObject.Find("Player").transform.position;
+			if(Player)
+				this.gameObject.transform.position = GameObject.Find("Player").transform.position;
 
 
 

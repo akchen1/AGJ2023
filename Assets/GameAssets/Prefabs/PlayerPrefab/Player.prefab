@@ -148,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
+  PlayerTarget: 1
 --- !u!114 &3547650620117938414
 MonoBehaviour:
   m_ObjectHideFlags: 0
