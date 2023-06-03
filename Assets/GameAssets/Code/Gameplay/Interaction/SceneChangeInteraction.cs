@@ -13,6 +13,7 @@ public class SceneChangeInteraction : MonoBehaviour, IInteractable, IPointerClic
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
     private bool active;
+
     private void OnEnable()
     {
         active = true;

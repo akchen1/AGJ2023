@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
-public class SearchScene7MainStreetController : SceneController
+public class SearchScene7PlaygroundController : SceneController
 {
 	[SerializeField] private PlayableAsset startingCutscene;
 	[SerializeField] private PlayableAsset endCutscene;
@@ -13,7 +13,7 @@ public class SearchScene7MainStreetController : SceneController
 
 	private void Start()
 	{
-		playableDirector?.Play(startingCutscene);
+		playableDirector.Play(startingCutscene);
 	}
 
 	private void OnEnable()
