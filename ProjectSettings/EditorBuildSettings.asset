@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameAssets/Scenes/Present - Scene 4 - Part 2.unity
     guid: 995cc1ceab303d44682879cc9a9b760a
+  - enabled: 1
+    path: Assets/GameAssets/Scenes/Search - Scene 7 Main Street.unity
+    guid: 130d4e31fec971640838852198f46575
   m_configObjects: {}

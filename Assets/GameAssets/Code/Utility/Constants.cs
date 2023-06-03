@@ -41,6 +41,16 @@ public static class Constants
 			SceneNames.SearchScene7LivingRoom,
 			SceneNames.SearchScene7Playground,
 		};
+
+	public enum Scene7SubScenes
+	{
+		MainStreet = 0,
+		GeneralStore = 1,
+		Basement = 2,
+		Forest = 3,
+		LivingRoom = 4,
+		Playground = 5,
+	}
 	#endregion
 
     #region Audio
