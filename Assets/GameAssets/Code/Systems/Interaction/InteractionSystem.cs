@@ -28,7 +28,7 @@ public class InteractionSystem
     {
         if (currentInteraction != null)
         {
-            Debug.Log("Player is already interacting with an object");
+            Debug.Log("Player is already interacting with an object " + currentInteraction.ToString());
             inEvent.Payload.Response?.Invoke(false);
 
             return;
