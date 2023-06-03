@@ -166,6 +166,7 @@ namespace DS.Utilities
                 Character = node.Character,
                 HasSceneTransition = node.HasSceneTransition,
                 NextSceneName = node.NextSceneName,
+                AudioClip = node.AudioClip,
                 Item = node.Item,
                 GroupID = node.Group?.ID,
                 DialogueType = node.DialogueType,
@@ -198,6 +199,7 @@ namespace DS.Utilities
                 node.Item,
                 node.HasSceneTransition,
                 node.NextSceneName,
+                node.AudioClip,
                 node.Text,
                 ConvertNodeChoicesToDialogueChoices(node.Choices),
                 node.DialogueType,
@@ -217,7 +219,9 @@ namespace DS.Utilities
             {
                 DSDialogueChoiceData choiceData = new DSDialogueChoiceData()
                 {
-                    Text = nodeChoice.Text
+                    Text = nodeChoice.Text,
+                    HasSanityThreshold = nodeChoice.HasSanityThreshold,
+                    SanityThreshold = nodeChoice.SanityThreshold,
                 };
 
                 dialogueChoices.Add(choiceData);
@@ -242,7 +246,7 @@ namespace DS.Utilities
                     }
 
                     dialogue.Choices[choiceIndex].NextDialogue = createdDialogues[nodeChoice.NodeID];
-
+                    
                     SaveAsset(dialogue);
                 }
             }
@@ -337,6 +341,7 @@ namespace DS.Utilities
                 node.NextSceneName = nodeData.NextSceneName;
                 node.Character = nodeData.Character;
                 node.Item = nodeData.Item;
+                node.AudioClip = nodeData.AudioClip;
                 node.Draw();
 
                 graphView.AddElement(node);
@@ -376,7 +381,7 @@ namespace DS.Utilities
                     Edge edge = choicePort.ConnectTo(nextNodeInputPort);
 
                     graphView.AddElement(edge);
-
+                    
                     loadedNode.Value.RefreshPorts();
                 }
             }
@@ -479,7 +484,9 @@ namespace DS.Utilities
                 DSChoiceSaveData choiceData = new DSChoiceSaveData()
                 {
                     Text = choice.Text,
-                    NodeID = choice.NodeID
+                    NodeID = choice.NodeID,
+                    HasSanityThreshold = choice.HasSanityThreshold,
+                    SanityThreshold = choice.SanityThreshold,
                 };
 
                 choices.Add(choiceData);

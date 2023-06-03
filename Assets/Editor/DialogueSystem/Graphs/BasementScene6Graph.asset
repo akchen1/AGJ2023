@@ -1,0 +1,640 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce95c50c4663d4a14a54883ccc78975b, type: 3}
+  m_Name: BasementScene6Graph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: BasementScene6
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <Name>k__BackingField: Part1MainStreet
+    <Position>k__BackingField: {x: -614, y: 1301}
+  - <ID>k__BackingField: 78ec1f62-67da-4874-827d-6806b30a8d15
+    <Name>k__BackingField: Part2Basement
+    <Position>k__BackingField: {x: -611.99994, y: 2113.9998}
+  - <ID>k__BackingField: f97e90b3-c5a9-4109-8a84-0c2b64055295
+    <Name>k__BackingField: Part3Basement
+    <Position>k__BackingField: {x: -607.00006, y: 2515}
+  - <ID>k__BackingField: f16b7db4-0166-45fa-8447-393dd8f67200
+    <Name>k__BackingField: Interactions
+    <Position>k__BackingField: {x: -601, y: 2938}
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 2aafdae5-15c5-427a-957b-dec7a0dd14b0
+    <Name>k__BackingField: BS6x1
+    <Text>k__BackingField: "My Dad is a collector of sorts. Relics, rituals, artifacts;
+      you name it, he\u2019s probably got it."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 4f2a2d05-769a-4144-9965-8befe7d17ceb
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -589, y: 1360}
+  - <ID>k__BackingField: 4f2a2d05-769a-4144-9965-8befe7d17ceb
+    <Name>k__BackingField: BS6x2
+    <Text>k__BackingField: Rituals? Relics?
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 190329d9-15ea-4d28-a2ed-c597b7741d3b
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5, y: 1360}
+  - <ID>k__BackingField: 190329d9-15ea-4d28-a2ed-c597b7741d3b
+    <Name>k__BackingField: BS6x3
+    <Text>k__BackingField: "Ya, he\u2019s got a bunch of stuff! He keeps them in
+      his workshop in the basement. He should be out right now, so it\u2019ll be
+      easy for us to sneak in."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: f323cc2b-3c57-48e0-94b2-e5438a6435c9
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 396, y: 1360}
+  - <ID>k__BackingField: f323cc2b-3c57-48e0-94b2-e5438a6435c9
+    <Name>k__BackingField: BS6x4
+    <Text>k__BackingField: "That\u2019s very\u2026 cool. But what exactly do we need
+      those things for?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: b857dbea-3dcb-4831-bb22-6e3b03b18d11
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1062, y: 1360}
+  - <ID>k__BackingField: b857dbea-3dcb-4831-bb22-6e3b03b18d11
+    <Name>k__BackingField: BS6x5
+    <Text>k__BackingField: "I think it\u2019s about time you and Badu go your separate
+      ways."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: c89446c3-8b5e-4213-a78e-a77b18fa4002
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1538, y: 1360}
+  - <ID>k__BackingField: 9acd9d94-f93a-4c7f-b064-562e3a337ebb
+    <Name>k__BackingField: BS6x7
+    <Text>k__BackingField: "Don\u2019t worry, we won\u2019t hurt them or anything.
+      Just give them a fresh start. Doesn\u2019t that seem reasonable?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: cccdaaed-3053-4019-a2ab-b9e42bbf4b11
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2347, y: 1360}
+  - <ID>k__BackingField: cccdaaed-3053-4019-a2ab-b9e42bbf4b11
+    <Name>k__BackingField: BS6x8
+    <Text>k__BackingField: "I don\u2019t know\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 49e07ed6-f375-4561-a6e7-ec1d0667fda9
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3032, y: 1360}
+  - <ID>k__BackingField: 49e07ed6-f375-4561-a6e7-ec1d0667fda9
+    <Name>k__BackingField: BS6x9
+    <Text>k__BackingField: "Leigh, the older you get, the worse it\u2019s going to
+      get. You told me about the cat situation-"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: f294d577-66ca-4279-bb00-9eea888a7ba1
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3424, y: 1360}
+  - <ID>k__BackingField: c89446c3-8b5e-4213-a78e-a77b18fa4002
+    <Name>k__BackingField: BS6x6
+    <Text>k__BackingField: You mean- get rid of Badu?
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 9acd9d94-f93a-4c7f-b064-562e3a337ebb
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1975, y: 1360}
+  - <ID>k__BackingField: f294d577-66ca-4279-bb00-9eea888a7ba1
+    <Name>k__BackingField: BS6x10
+    <Text>k__BackingField: But that was just an accident!
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 4f6db657-81f4-40d4-b6f4-9d90c7365cfb
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -589, y: 1760}
+  - <ID>k__BackingField: 4f6db657-81f4-40d4-b6f4-9d90c7365cfb
+    <Name>k__BackingField: BS6x11
+    <Text>k__BackingField: Was it? And what about your Mom?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: d9d719e6-8e25-4ba4-a262-319a4d673772
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -212, y: 1760}
+  - <ID>k__BackingField: d9d719e6-8e25-4ba4-a262-319a4d673772
+    <Name>k__BackingField: BS6x12
+    <Text>k__BackingField: "\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 50740d64-5f63-44bf-a658-341a9b1ba0b7
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 169, y: 1760}
+  - <ID>k__BackingField: 50740d64-5f63-44bf-a658-341a9b1ba0b7
+    <Name>k__BackingField: BS6x13
+    <Text>k__BackingField: "Alright, let\u2019s say the cat situation was an accident.
+      That\u2019s one thing, but if Badu hurts other people and you get blamed for
+      it-"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 261946a0-4ca1-4c26-a1fa-1aa87efe6788
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 545, y: 1760}
+  - <ID>k__BackingField: 261946a0-4ca1-4c26-a1fa-1aa87efe6788
+    <Name>k__BackingField: BS6x14
+    <Text>k__BackingField: "They wouldn\u2019t."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 951dc345-53e5-4144-8f54-c695c8654142
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1210, y: 1760}
+  - <ID>k__BackingField: 951dc345-53e5-4144-8f54-c695c8654142
+    <Name>k__BackingField: BS6x15
+    <Text>k__BackingField: But they certainly could. And maybe already did. Do you
+      want to take the blame for all that?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 3300ae5c-91dc-4a4b-8eb5-8253d809b56e
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1592, y: 1760}
+  - <ID>k__BackingField: 3300ae5c-91dc-4a4b-8eb5-8253d809b56e
+    <Name>k__BackingField: BS6x16
+    <Text>k__BackingField: "\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: ac92f459-91cd-45c6-b449-08db421bc093
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2222, y: 1760}
+  - <ID>k__BackingField: ac92f459-91cd-45c6-b449-08db421bc093
+    <Name>k__BackingField: BS6x17
+    <Text>k__BackingField: At least let me show you something first. Then you can
+      decide.
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2603, y: 1760}
+  - <ID>k__BackingField: 74c58f0f-d401-404d-a9bc-0c2dcb4b811b
+    <Name>k__BackingField: BSx1
+    <Text>k__BackingField: Ta-da! Pretty neat, hey?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 479985b9-ee2e-45e0-a6bb-c76e24536148
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 78ec1f62-67da-4874-827d-6806b30a8d15
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -587, y: 2173}
+  - <ID>k__BackingField: 479985b9-ee2e-45e0-a6bb-c76e24536148
+    <Name>k__BackingField: BSx2
+    <Text>k__BackingField: "Wow, that\u2019s a lot."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 8355841f-44f0-4306-a81a-625dabdb7230
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 78ec1f62-67da-4874-827d-6806b30a8d15
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -198, y: 2173}
+  - <ID>k__BackingField: 8355841f-44f0-4306-a81a-625dabdb7230
+    <Name>k__BackingField: BSx3
+    <Text>k__BackingField: "Told ya it would be cool. Now, I think I remember seeing
+      something over here\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 2b55826b-b30a-4370-a2da-8bc7e5211dd8
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 78ec1f62-67da-4874-827d-6806b30a8d15
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 176, y: 2173}
+  - <ID>k__BackingField: 2b55826b-b30a-4370-a2da-8bc7e5211dd8
+    <Name>k__BackingField: BSx4
+    <Text>k__BackingField: Oh no, the scroll is in tatters! Now what?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 78ec1f62-67da-4874-827d-6806b30a8d15
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 732, y: 2173}
+  - <ID>k__BackingField: c9af6c60-2c61-4a23-ab97-71aa3bf684b8
+    <Name>k__BackingField: BSx2
+    <Text>k__BackingField: "Hey, you\u2019re pretty good at this! Now let\u2019s
+      see what we\u2019ve got here."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: f97e90b3-c5a9-4109-8a84-0c2b64055295
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -206, y: 2574}
+  - <ID>k__BackingField: 2a93f54a-6b9d-4bb5-96c2-eb11fd579707
+    <Name>k__BackingField: BSx1
+    <Text>k__BackingField: "There, how\u2019s that?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: c9af6c60-2c61-4a23-ab97-71aa3bf684b8
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: f97e90b3-c5a9-4109-8a84-0c2b64055295
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -582, y: 2574}
+  - <ID>k__BackingField: bbe0742d-b8ba-4c5b-97ed-5d653a2678b6
+    <Name>k__BackingField: BSxScroll1
+    <Text>k__BackingField: "Aha, I knew I remembered seeing this! See, \u2018split
+      demon\u2019. That just means Badu will go their way and you can go yours. That\u2019s
+      not so bad, right?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 346f7c8a-9ae1-4eca-bcd3-91253ea55a05
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: f16b7db4-0166-45fa-8447-393dd8f67200
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -576, y: 2997}
+  - <ID>k__BackingField: 346f7c8a-9ae1-4eca-bcd3-91253ea55a05
+    <Name>k__BackingField: BSxScroll2
+    <Text>k__BackingField: I- Well, I guess-
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: fd6d2f83-abfc-4fc6-9231-974a60df00d7
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: f16b7db4-0166-45fa-8447-393dd8f67200
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 90, y: 2997}
+  - <ID>k__BackingField: fd6d2f83-abfc-4fc6-9231-974a60df00d7
+    <Name>k__BackingField: BSxScroll3
+    <Text>k__BackingField: "You don\u2019t have to use it."
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: aa4fa4ed-3987-4b40-8037-1f15e3d3d1d1
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: f16b7db4-0166-45fa-8447-393dd8f67200
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 473, y: 2997}
+  - <ID>k__BackingField: aa4fa4ed-3987-4b40-8037-1f15e3d3d1d1
+    <Name>k__BackingField: BSxScroll4
+    <Text>k__BackingField: Badu? But if-
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: b24e6709-fcb3-4745-b54e-a47f3d655037
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: f16b7db4-0166-45fa-8447-393dd8f67200
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 844, y: 2997}
+  - <ID>k__BackingField: b24e6709-fcb3-4745-b54e-a47f3d655037
+    <Name>k__BackingField: BSxScroll5
+    <Text>k__BackingField: Is Badu saying something again? I want to know what YOU
+      think.
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: edd0833c-ac18-4bcc-9167-0a49cce1c0f8
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: f16b7db4-0166-45fa-8447-393dd8f67200
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1220, y: 2997}
+  - <ID>k__BackingField: edd0833c-ac18-4bcc-9167-0a49cce1c0f8
+    <Name>k__BackingField: BSxScroll6
+    <Text>k__BackingField: "She clearly won\u2019t give up. You know I just want
+      what\u2019s best for you. You say she\u2019s your friend, why not play along?"
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 639d64e5-f66a-48e1-89a7-64c347aed7c7
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: f16b7db4-0166-45fa-8447-393dd8f67200
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1687, y: 2997}
+  - <ID>k__BackingField: 639d64e5-f66a-48e1-89a7-64c347aed7c7
+    <Name>k__BackingField: BSxScroll7
+    <Text>k__BackingField: "I- Well- Alright, Maeve, we- no, I\u2019ll give it a
+      shot."
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 84accf32-7b7b-4bfd-931d-fa56e7f443e7
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: f16b7db4-0166-45fa-8447-393dd8f67200
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2345, y: 2997}
+  - <ID>k__BackingField: 84accf32-7b7b-4bfd-931d-fa56e7f443e7
+    <Name>k__BackingField: BSxScroll8
+    <Text>k__BackingField: Sweet! I think I can make out some of these, we should
+      have no problem getting what we need.
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 1afe8229-2670-42dc-b07d-003afcbebd92
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: f16b7db4-0166-45fa-8447-393dd8f67200
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2725, y: 2997}
+  - <ID>k__BackingField: 1afe8229-2670-42dc-b07d-003afcbebd92
+    <Name>k__BackingField: BSxScroll9
+    <Text>k__BackingField: "No, we certainly won\u2019t have any problems, will we?"
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: f16b7db4-0166-45fa-8447-393dd8f67200
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3359, y: 2997}
+  <OldGroupNames>k__BackingField:
+  - Part1MainStreet
+  - Part2Basement
+  - Part3Basement
+  - Interactions
+  <OldUngroupedNodeNames>k__BackingField: []
+  <OldGroupedNodeNames>k__BackingField:
+    list:
+    - Key: Part1MainStreet
+      Value:
+      - BS6x1
+      - BS6x2
+      - BS6x3
+      - BS6x4
+      - BS6x5
+      - BS6x7
+      - BS6x8
+      - BS6x9
+      - BS6x6
+      - BS6x10
+      - BS6x11
+      - BS6x12
+      - BS6x13
+      - BS6x14
+      - BS6x15
+      - BS6x16
+      - BS6x17
+    - Key: Part2Basement
+      Value:
+      - BSx1
+      - BSx2
+      - BSx3
+      - BSx4
+    - Key: Part3Basement
+      Value:
+      - BSx2
+      - BSx1
+    - Key: Interactions
+      Value:
+      - BSxScroll1
+      - BSxScroll2
+      - BSxScroll3
+      - BSxScroll4
+      - BSxScroll5
+      - BSxScroll6
+      - BSxScroll7
+      - BSxScroll8
+      - BSxScroll9

@@ -13,12 +13,20 @@ MonoBehaviour:
   m_Name: D3
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: D3
-  <NextScene>k__BackingField: 
+  <Character>k__BackingField: {fileID: 0}
+  <Item>k__BackingField: {fileID: 0}
+  <HasSceneTransition>k__BackingField: 0
+  <NextSceneName>k__BackingField: 
+  <AudioClip>k__BackingField: {fileID: 0}
   <Text>k__BackingField: This is D3
   <Choices>k__BackingField:
   - <Text>k__BackingField: D4
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 53ae1c7bbdfb51d46bc01f1e957cad80, type: 2}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
   - <Text>k__BackingField: D5
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 85c7e559c2e8dfb42b38454721e9bb6d, type: 2}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0

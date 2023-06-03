@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce95c50c4663d4a14a54883ccc78975b, type: 3}
+  m_Name: PrologueScene3Graph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: PrologueScene3
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 8c408d80-9ac2-40b6-8265-f74596a32b3d
+    <Name>k__BackingField: PS3x2
+    <Text>k__BackingField: "Y\u2019know there\u2019s a playground right down the
+      street?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 565, y: 136}
+  - <ID>k__BackingField: f7e17349-a64d-41ba-98bf-11632889f34e
+    <Name>k__BackingField: PS3x3
+    <Text>k__BackingField: "*laughs* What, haven\u2019t you ever talked to somebody
+      before?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 952, y: 136}
+  - <ID>k__BackingField: bedf19b6-5a40-4682-9333-131302fa2e6a
+    <Name>k__BackingField: PS3x4
+    <Text>k__BackingField: "Not really\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1401, y: 136}
+  - <ID>k__BackingField: 88cdc1cb-846f-41cd-9e57-faf4edbdd4e5
+    <Name>k__BackingField: PS3x5
+    <Text>k__BackingField: "*laughs again* Don\u2019t worry, I promise not to bother
+      your moth there. Got a second truck? Scooch over."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1769, y: 136}
+  - <ID>k__BackingField: 2ac2c4fa-dd10-4807-a510-e92b2e82c6d9
+    <Name>k__BackingField: PS3x6
+    <Text>k__BackingField: What are you doing? Get away from him! Get off my property!
+    <Character>k__BackingField: {fileID: 11400000, guid: 490d5d6ce57886a4c80a8057c06ad4a6, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 99, y: 424}
+  - <ID>k__BackingField: 76fafcb4-0ed3-4ba7-964d-e8180d32f016
+    <Name>k__BackingField: PS3x7
+    <Text>k__BackingField: "She\u2019s only being nice. Please, Mom-"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 539, y: 424}
+  - <ID>k__BackingField: 1394e0f4-b1e7-4dc5-b01c-453ab05ad7d3
+    <Name>k__BackingField: PS3x8
+    <Text>k__BackingField: Get away from him before I come down there myself!
+    <Character>k__BackingField: {fileID: 11400000, guid: 490d5d6ce57886a4c80a8057c06ad4a6, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 925, y: 424}
+  - <ID>k__BackingField: 6224a6f8-6b08-4f4b-8eef-56f8f4e22231
+    <Name>k__BackingField: PS3x9
+    <Text>k__BackingField: Catch you some other time, ok?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1319, y: 424}
+  - <ID>k__BackingField: 8b0bcd8e-096e-4041-bba5-840d7f7d3e75
+    <Name>k__BackingField: PS3x10
+    <Text>k__BackingField: How unpleasant.
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 99, y: 710}
+  - <ID>k__BackingField: 47d3f1b2-e946-47a3-a537-cd788dda99b9
+    <Name>k__BackingField: PS3x11
+    <Text>k__BackingField: "She actually talked to me\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 482, y: 710}
+  - <ID>k__BackingField: 4f14229f-a110-42e2-8644-75e831778030
+    <Name>k__BackingField: PS3x12
+    <Text>k__BackingField: I meant your mother.
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 859, y: 710}
+  - <ID>k__BackingField: 76e52686-1b75-40bb-83d7-b12f11c1e6e5
+    <Name>k__BackingField: PS3x13
+    <Text>k__BackingField: Right. I should go inside before she gets angry again.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1226, y: 710}
+  - <ID>k__BackingField: 3cd0faef-8eb4-457c-a217-13a88631a941
+    <Name>k__BackingField: PS3x14
+    <Text>k__BackingField: For the first time, I wondered if maybe someone else could
+      be there for me, just like Badu always was.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 99, y: 1010}
+  - <ID>k__BackingField: 1ec97983-2b3e-4cf6-956a-190e81cac83d
+    <Name>k__BackingField: PS3x1
+    <Text>k__BackingField: "But sometimes, things don\u2019t quite go the way you
+      expect them to."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 99, y: 136}
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - PS3x2
+  - PS3x3
+  - PS3x4
+  - PS3x5
+  - PS3x6
+  - PS3x7
+  - PS3x8
+  - PS3x9
+  - PS3x10
+  - PS3x11
+  - PS3x12
+  - PS3x13
+  - PS3x14
+  - PS3x1
+  <OldGroupedNodeNames>k__BackingField:
+    list: []

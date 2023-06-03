@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class InteractionSystem
 {
     // Only one interaction event can occur at once.
@@ -32,6 +33,7 @@ public class InteractionSystem
 
             return;
         }
+        Debug.Log("interacting with " + inEvent.Sender.ToString());
         currentInteraction = inEvent.Payload.Interactable;
         inEvent.Payload.Response?.Invoke(true);
     }
@@ -39,6 +41,7 @@ public class InteractionSystem
     private void InteractEndHandler(BrokerEvent<InteractionEvents.InteractEnd> obj)
     {
         currentInteraction = null;
+        Debug.Log("interaction over " + obj.Sender.ToString());
     }
 
 }

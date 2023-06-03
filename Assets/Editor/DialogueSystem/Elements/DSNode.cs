@@ -28,6 +28,7 @@ namespace DS.Elements
         public bool HasSceneTransition { get; set; }
 
         public string NextSceneName { get; set; }
+        public AudioClip AudioClip { get; set; }
         public DSDialogueType DialogueType { get; set; }
         public DSGroup Group { get; set; }
 
@@ -44,6 +45,7 @@ namespace DS.Elements
             Character = null;
             HasSceneTransition = false;
             NextSceneName = "";
+            AudioClip = null;
 
             graphView = dSGraphView;
             defaultBackgroundColor = new Color(29f/255f, 29f/255f, 30f/255f);
@@ -141,6 +143,11 @@ namespace DS.Elements
             ObjectField itemField = DSElementUtility.CreateObjectField<InventoryItem>(Item, "Item", callback =>
             {
                 Item = (InventoryItem)callback.newValue;
+            }); 
+            
+            ObjectField audioField = DSElementUtility.CreateObjectField<AudioClip>(AudioClip, "Audio Clip", callback =>
+            {
+                AudioClip = (AudioClip)callback.newValue;
             });
 
             DropdownField nextSceneDropDownField = DSElementUtility.CreateDropDownField("Scene", Constants.SceneNamesArray.ToList(), Constants.SceneNamesArray.ToList().IndexOf(NextSceneName), callback =>
@@ -157,6 +164,7 @@ namespace DS.Elements
             nextSceneDropDownField.visible = HasSceneTransition;
 
             customDataContainer.Add(characterField);
+            customDataContainer.Add(audioField);
             customDataContainer.Add(itemField);
             customDataContainer.Add(hasSceneTransitionField);
             customDataContainer.Add(nextSceneDropDownField);

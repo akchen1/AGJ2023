@@ -30,6 +30,7 @@ public class DialogueSystem
     {
         currentDialogue = inEvent.Payload.StartingDialogue;
         // TODO: Deactivate Player movement
+        eventBrokerComponent.Publish(this, new InputEvents.SetInputState(false));
     }
 
     private void NextDialogueHandler(BrokerEvent<DialogueEvents.NextDialogue> inEvent)
@@ -58,6 +59,7 @@ public class DialogueSystem
         if (currentDialogue == null)
         {
             eventBrokerComponent.Publish(this, new DialogueEvents.DialogueFinish());
+            eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
         }
     }
 

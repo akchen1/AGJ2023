@@ -3,9 +3,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
 
-public class MinigameInteraction : MonoBehaviour, IInteractable
+public class MinigameInteraction : MonoBehaviour, IInteractable, IPointerClickHandler
 {
     [SerializeField] private GameObject minigame;
 
@@ -27,4 +28,8 @@ public class MinigameInteraction : MonoBehaviour, IInteractable
         }));
     }
 
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        Interact();
+    }
 }

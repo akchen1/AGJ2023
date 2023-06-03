@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b024264143c488cbee1d884c720f40, type: 3}
+  m_Name: PrologueScene3
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: PrologueScene3
+  <DialogueGroups>k__BackingField:
+    list: []
+  <UngroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: 1423c1b7d9f510a4cbc8ae6b8a308090, type: 2}
+  - {fileID: 11400000, guid: b3338e20396b0e14c9c21e75f4b2dbeb, type: 2}
+  - {fileID: 11400000, guid: 0c312e1a85ad84a4d8757e0d832aedc5, type: 2}
+  - {fileID: 11400000, guid: 8d0b2470447057645a3752b25fa152db, type: 2}
+  - {fileID: 11400000, guid: da6dbce3f83d263439c89aba9d680b3f, type: 2}
+  - {fileID: 11400000, guid: 29155731bbe9c9c45b9830c18be869dc, type: 2}
+  - {fileID: 11400000, guid: ef20a5f2a366bfc478810ba2eb2d510a, type: 2}
+  - {fileID: 11400000, guid: 6c2a7990bdcd20c48b0105e47aef6952, type: 2}
+  - {fileID: 11400000, guid: 3576cc4796bf1ac499eeae08ad338db0, type: 2}
+  - {fileID: 11400000, guid: 81e69e9f75620e34d8a14125a4c010d4, type: 2}
+  - {fileID: 11400000, guid: ca76e8b61670b4342876c77dd5aa33e1, type: 2}
+  - {fileID: 11400000, guid: a6de970afac771546a28eaa73cd34382, type: 2}
+  - {fileID: 11400000, guid: d2d36883e261ffa43bcb048403fe2feb, type: 2}
+  - {fileID: 11400000, guid: 2a772d5eaee849247870df0ffc60f0ca, type: 2}

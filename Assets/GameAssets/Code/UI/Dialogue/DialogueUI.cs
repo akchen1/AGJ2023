@@ -104,6 +104,5 @@ public class DialogueUI : MonoBehaviour
         ClearDialogueOptions();
         dialoguePanel.SetActive(false);
     }
-
     #endregion
 }

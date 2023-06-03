@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 
 namespace DS.Elements {
     using Data.Save;
+    using UnityEditor.UIElements;
     using Utilities;
     using Windows;
     public class DSMultipleChoiceNode : DSNode
@@ -18,7 +19,7 @@ namespace DS.Elements {
 
             DSChoiceSaveData choiceData = new DSChoiceSaveData()
             {
-                Text = "New Choice"
+                Text = "New Choice",
             };
 
             Choices.Add(choiceData);
@@ -46,9 +47,33 @@ namespace DS.Elements {
             foreach (DSChoiceSaveData choice in Choices)
             {
                 Port choicePort = CreateChoicePort(choice);
+
                 outputContainer.Add(choicePort);
             }
             RefreshExpandedState();
+        }
+
+        private static VisualElement CreateSanityFoldout(DSChoiceSaveData choice)
+        {
+            VisualElement visualElement = new VisualElement();
+            FloatField floatField = DSElementUtility.CreateFloatField(choice.SanityThreshold, null, callback =>
+            {
+                choice.SanityThreshold = callback.newValue;
+            });
+
+            Toggle toggleField = DSElementUtility.CreateToggle("Sanity",choice.HasSanityThreshold, callback =>
+            {
+                choice.HasSanityThreshold = callback.newValue;
+                floatField.style.display = callback.newValue ? DisplayStyle.Flex : DisplayStyle.None;
+            });
+
+            floatField.style.display = choice.HasSanityThreshold ? DisplayStyle.Flex : DisplayStyle.None;
+            visualElement.style.flexDirection = FlexDirection.Row;
+            toggleField.ElementAt(0).style.minWidth = 10;
+
+            visualElement.Add(toggleField);
+            visualElement.Add(floatField);
+            return visualElement;
         }
         #region Elements Creation
         private Port CreateChoicePort(object userData)
@@ -85,7 +110,10 @@ namespace DS.Elements {
                 "ds-node__textfield__hidden"
             );
 
+            VisualElement sanityFoldout = CreateSanityFoldout(choiceData);
+
             choicePort.Add(choiceTextField);
+            choicePort.Add(sanityFoldout);
             choicePort.Add(deleteChoiceButton);
             return choicePort;
         }

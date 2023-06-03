@@ -54,6 +54,22 @@ namespace DS.Utilities
             return textField;
         }
 
+        public static FloatField CreateFloatField(float value = 0f, string label = null, EventCallback<ChangeEvent<float>> onValueChanged = null)
+        {
+            FloatField floatField = new FloatField()
+            {
+                value = value,
+                label = label
+            };
+
+            if (onValueChanged != null)
+            {
+                floatField.RegisterValueChangedCallback(onValueChanged);
+            }
+
+            return floatField;
+        }
+
         public static TextField CreateTextArea(string value = null, string label = null, EventCallback<ChangeEvent<string>> onValueChanged = null)
         {
             TextField textArea = CreateTextField(value, label, onValueChanged);
