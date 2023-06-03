@@ -10,6 +10,9 @@ namespace DS.Data
     {
         [field: SerializeField] public string Text { get; set; }
         [field: SerializeField] public DSDialogueSO NextDialogue { get; set; }
+
+        [field: SerializeField] public bool HasSanityThreshold { get; set; }
+        [field: SerializeField] public float SanityThreshold { get; set; }
     }
 }
 

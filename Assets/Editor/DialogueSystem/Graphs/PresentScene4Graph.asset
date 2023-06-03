@@ -1,0 +1,321 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce95c50c4663d4a14a54883ccc78975b, type: 3}
+  m_Name: PresentScene4Graph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: PresentScene4
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: da71f1ea-4e4d-410f-b60e-904d91f47725
+    <Name>k__BackingField: Interactions
+    <Position>k__BackingField: {x: -668.9999, y: -74.99999}
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: e53229ad-306b-4f4b-a4ad-db67b3662bc4
+    <Name>k__BackingField: PS4xBedroomDoor
+    <Text>k__BackingField: Dad hardly leaves his room. He seems to enjoy playing
+      with his bottles more than he ever does with me.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: da71f1ea-4e4d-410f-b60e-904d91f47725
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -644, y: -16}
+  - <ID>k__BackingField: 28ae3453-7461-4114-9d68-c9767d47c475
+    <Name>k__BackingField: PS4xRecordPlayer
+    <Text>k__BackingField: "My Mom would never let me touch this thing. This song
+      is mine and Badu\u2019s favorite."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: da71f1ea-4e4d-410f-b60e-904d91f47725
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -644, y: 285}
+  - <ID>k__BackingField: 39eda4fa-a92e-48c1-8e52-dabdb35274b7
+    <Name>k__BackingField: PS4xCabinetDrawers
+    <Text>k__BackingField: "Odds and ends my parents have collected. I can\u2019t
+      really remember them ever using any of these."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: da71f1ea-4e4d-410f-b60e-904d91f47725
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -644, y: 602}
+  - <ID>k__BackingField: a5465239-56f6-477f-b3ce-6419f77b8280
+    <Name>k__BackingField: PS4xBadu1
+    <Text>k__BackingField: '*hums* Mmm, I love this song. Shall we stay inside today?'
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 56c4be7b-c2dd-48d7-bcf8-5fd31936e41a
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: da71f1ea-4e4d-410f-b60e-904d91f47725
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -644, y: 916}
+  - <ID>k__BackingField: 56c4be7b-c2dd-48d7-bcf8-5fd31936e41a
+    <Name>k__BackingField: PS4xBadu2
+    <Text>k__BackingField: "Why don\u2019t we see what Maeve is up to?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 2f2b0a26-f418-47b4-92f5-712ac0a95fb5
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: da71f1ea-4e4d-410f-b60e-904d91f47725
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -207, y: 916}
+  - <ID>k__BackingField: 2f2b0a26-f418-47b4-92f5-712ac0a95fb5
+    <Name>k__BackingField: PS4xBadu3
+    <Text>k__BackingField: "Mmm\u2026 Perhaps if she crosses our path\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: a54211a9-85f3-4372-bcd5-e4fbb5f82bee
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: da71f1ea-4e4d-410f-b60e-904d91f47725
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 169, y: 916}
+  - <ID>k__BackingField: d87b937e-eb8f-4f8a-ac6a-f4c3bda49b86
+    <Name>k__BackingField: PS4xBadu5
+    <Text>k__BackingField: '*buzzes*'
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: da71f1ea-4e4d-410f-b60e-904d91f47725
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 923, y: 916}
+  - <ID>k__BackingField: a54211a9-85f3-4372-bcd5-e4fbb5f82bee
+    <Name>k__BackingField: PS4xBadu4
+    <Text>k__BackingField: "I\u2019m sure she\u2019s around here somewhere!"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: d87b937e-eb8f-4f8a-ac6a-f4c3bda49b86
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: da71f1ea-4e4d-410f-b60e-904d91f47725
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 547, y: 916}
+  - <ID>k__BackingField: a78e6bae-058d-476d-91d0-e3f3763088f7
+    <Name>k__BackingField: PS4x1
+    <Text>k__BackingField: Whaddya know, I was just coming to look for you! Fancy
+      a trip to the playground?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: a54eaeab-ea27-4ec0-923d-1cd1bd85c3f3
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -659, y: 1367}
+  - <ID>k__BackingField: a54eaeab-ea27-4ec0-923d-1cd1bd85c3f3
+    <Name>k__BackingField: PS4x2
+    <Text>k__BackingField: Sure, we would like that.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 27341b27-7cdf-4fed-8a81-53cd74189a94
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -103, y: 1367}
+  - <ID>k__BackingField: 27341b27-7cdf-4fed-8a81-53cd74189a94
+    <Name>k__BackingField: PS4x3
+    <Text>k__BackingField: "Right, of course, how could I forget Badu\u2026 Hey,
+      Leigh, do they always have to follow you around?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 8646ad0a-71d9-4c38-b2ab-552e032160d6
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 275, y: 1367}
+  - <ID>k__BackingField: 8646ad0a-71d9-4c38-b2ab-552e032160d6
+    <Name>k__BackingField: PS4x4
+    <Text>k__BackingField: "Well, Badu is my friend. I wouldn\u2019t want them to
+      feel lonely\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: aa14ebc1-033d-43a5-82d0-71ab4a380e9a
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 923, y: 1367}
+  - <ID>k__BackingField: aa14ebc1-033d-43a5-82d0-71ab4a380e9a
+    <Name>k__BackingField: PS4x5
+    <Text>k__BackingField: "*pouts* I\u2019m your friend, too."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: bdeb408a-aaf7-4657-bd59-726fc44c8473
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1364, y: 1367}
+  - <ID>k__BackingField: bdeb408a-aaf7-4657-bd59-726fc44c8473
+    <Name>k__BackingField: PS4x6
+    <Text>k__BackingField: "You\u2019re both my friends!"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 63c8662f-751c-4bdf-b247-56dd39febf07
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1744, y: 1367}
+  - <ID>k__BackingField: 63c8662f-751c-4bdf-b247-56dd39febf07
+    <Name>k__BackingField: PS4x7
+    <Text>k__BackingField: '*hums*'
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: ea03c4e8-8156-4114-9ad0-dcee68bf7ce0
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2134, y: 1367}
+  - <ID>k__BackingField: ea03c4e8-8156-4114-9ad0-dcee68bf7ce0
+    <Name>k__BackingField: PS4x8
+    <Text>k__BackingField: "Hmph, fine. Let\u2019s go!"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2517, y: 1367}
+  <OldGroupNames>k__BackingField:
+  - Interactions
+  <OldUngroupedNodeNames>k__BackingField:
+  - PS4x1
+  - PS4x2
+  - PS4x3
+  - PS4x4
+  - PS4x5
+  - PS4x6
+  - PS4x7
+  - PS4x8
+  <OldGroupedNodeNames>k__BackingField:
+    list:
+    - Key: Interactions
+      Value:
+      - PS4xBedroomDoor
+      - PS4xRecordPlayer
+      - PS4xCabinetDrawers
+      - PS4xBadu1
+      - PS4xBadu2
+      - PS4xBadu3
+      - PS4xBadu5
+      - PS4xBadu4

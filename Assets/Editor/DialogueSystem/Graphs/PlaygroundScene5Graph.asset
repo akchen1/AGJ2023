@@ -1,0 +1,463 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce95c50c4663d4a14a54883ccc78975b, type: 3}
+  m_Name: PlaygroundScene5Graph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: PlaygroundScene5
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 3af32663-233b-4aa5-b8fd-414de5162842
+    <Name>k__BackingField: PS5x2
+    <Text>k__BackingField: "Oh yes, it\u2019s nice. Badu doesn\u2019t like the sun
+      very much, though."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: ba601106-66c4-4ff0-b5ba-5c70fea4031e
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -212, y: 1217}
+  - <ID>k__BackingField: ba601106-66c4-4ff0-b5ba-5c70fea4031e
+    <Name>k__BackingField: PS5x3
+    <Text>k__BackingField: Huh? What about when you play in the yard?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: ed65a653-4d77-43dd-833c-07cf42bfd373
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 241, y: 1217}
+  - <ID>k__BackingField: ed65a653-4d77-43dd-833c-07cf42bfd373
+    <Name>k__BackingField: PS5x4
+    <Text>k__BackingField: "Sometimes we don\u2019t mind it. Mom didn\u2019t let
+      us do it very often, so I guess Badu isn\u2019t used to it."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: baccbd2b-4fe5-4172-829a-cddbd0330e69
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 614, y: 1217}
+  - <ID>k__BackingField: baccbd2b-4fe5-4172-829a-cddbd0330e69
+    <Name>k__BackingField: PS5x5
+    <Text>k__BackingField: "\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 75957830-de06-4f91-9660-16dd9d297826
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1231, y: 1217}
+  - <ID>k__BackingField: 75957830-de06-4f91-9660-16dd9d297826
+    <Name>k__BackingField: PS5x6
+    <Text>k__BackingField: What?
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 8364e079-ea62-45b3-a857-7f2729be3e1a
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1608, y: 1217}
+  - <ID>k__BackingField: 8364e079-ea62-45b3-a857-7f2729be3e1a
+    <Name>k__BackingField: PS5x7
+    <Text>k__BackingField: Do you ever think of what YOU want, Leigh?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 51d44b84-b3ff-47ab-b0d3-5b3c3b4f3c8d
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1983, y: 1217}
+  - <ID>k__BackingField: 51d44b84-b3ff-47ab-b0d3-5b3c3b4f3c8d
+    <Name>k__BackingField: PS5x8
+    <Text>k__BackingField: "Well\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 35d52364-c024-419e-917f-753ecd0b799f
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2370, y: 1217}
+  - <ID>k__BackingField: 740dd3d7-03c8-4df3-b0bc-2db71b266826
+    <Name>k__BackingField: PS5x11
+    <Text>k__BackingField: "Something tells me Badu would be just fine. Don\u2019t
+      you wonder why you weren\u2019t allowed to go out to play? I think Badu has
+      caused you more harm than good."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 5d63f873-553f-4baf-8ca6-54fccbc53898
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3979, y: 1217}
+  - <ID>k__BackingField: 5d63f873-553f-4baf-8ca6-54fccbc53898
+    <Name>k__BackingField: PS5x12
+    <Text>k__BackingField: But Badu is always there for me.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 588a07ab-0254-483c-8183-a4d9972c5903
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4648, y: 1217}
+  - <ID>k__BackingField: 588a07ab-0254-483c-8183-a4d9972c5903
+    <Name>k__BackingField: PS5x13
+    <Text>k__BackingField: "I can be there for you, Leigh. And you can make even
+      more friends! But not if Badu keeps getting you into trouble. Wouldn\u2019t
+      you like that?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 3bd5bea7-8c20-43c1-86d2-3ef8d51f34fc
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5032, y: 1217}
+  - <ID>k__BackingField: 3bd5bea7-8c20-43c1-86d2-3ef8d51f34fc
+    <Name>k__BackingField: PS5x14
+    <Text>k__BackingField: "\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: e66bb439-02eb-45c8-8df5-8c2eb7e0432b
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5719, y: 1217}
+  - <ID>k__BackingField: e66bb439-02eb-45c8-8df5-8c2eb7e0432b
+    <Name>k__BackingField: PS5x15
+    <Text>k__BackingField: "C\u2019mon, I have an idea. Let me show you something."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6111, y: 1217}
+  - <ID>k__BackingField: 4fb48793-a94c-4b3c-b2ee-4fe67fb0e228
+    <Name>k__BackingField: PS5x17
+    <Text>k__BackingField: "\u2026 you wouldn\u2019t do anything to hurt me, would
+      you?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 7efc261a-cdc0-46fb-baf5-20f366c22639
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -285, y: 1551}
+  - <ID>k__BackingField: 6f7ebf71-b6dd-4379-9308-ab5dad295cc6
+    <Name>k__BackingField: PS5x19
+    <Text>k__BackingField: "\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: d2674c5b-288f-4baa-a86d-969c3a0b27e1
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 502, y: 1551}
+  - <ID>k__BackingField: 6ec6db2e-1482-4540-bccb-6f4ac129e943
+    <Name>k__BackingField: PS5x21
+    <Text>k__BackingField: I like having her around.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: ee251faa-fe50-4b14-8fd6-2b9fe8a237ab
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1258, y: 1551}
+  - <ID>k__BackingField: dfec2c76-9c60-46c1-a19a-b865380488d0
+    <Name>k__BackingField: PS5x23
+    <Text>k__BackingField: "\u2026\r\nI\u2019m going after her.\r"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: f94e149d-06b2-4e1a-a868-c5845e2adef3
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2020, y: 1551}
+  - <ID>k__BackingField: f94e149d-06b2-4e1a-a868-c5845e2adef3
+    <Name>k__BackingField: PS5x24
+    <Text>k__BackingField: '*buzzes loudly*'
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2405, y: 1551}
+  - <ID>k__BackingField: ee251faa-fe50-4b14-8fd6-2b9fe8a237ab
+    <Name>k__BackingField: PS5x22
+    <Text>k__BackingField: But I will always be here.
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: dfec2c76-9c60-46c1-a19a-b865380488d0
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1633, y: 1551}
+  - <ID>k__BackingField: d2674c5b-288f-4baa-a86d-969c3a0b27e1
+    <Name>k__BackingField: PS5x20
+    <Text>k__BackingField: Can Maeve really say the same?
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 6ec6db2e-1482-4540-bccb-6f4ac129e943
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 881, y: 1551}
+  - <ID>k__BackingField: 7efc261a-cdc0-46fb-baf5-20f366c22639
+    <Name>k__BackingField: PS5x18
+    <Text>k__BackingField: "Like I say, I\u2019m here just for you."
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 6f7ebf71-b6dd-4379-9308-ab5dad295cc6
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 110, y: 1551}
+  - <ID>k__BackingField: 001b118f-12a8-47d5-9076-3960d8d03e7a
+    <Name>k__BackingField: PS5x16
+    <Text>k__BackingField: "I don\u2019t think that would be such a good idea."
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 4fb48793-a94c-4b3c-b2ee-4fe67fb0e228
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -654, y: 1551}
+  - <ID>k__BackingField: eb4089a4-241c-438f-b9b5-7a669a699d34
+    <Name>k__BackingField: PS5x1
+    <Text>k__BackingField: "*giggles* Isn\u2019t this more fun than sitting in your
+      house all day?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 3af32663-233b-4aa5-b8fd-414de5162842
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -654, y: 1217}
+  - <ID>k__BackingField: 35d52364-c024-419e-917f-753ecd0b799f
+    <Name>k__BackingField: PS5x9
+    <Text>k__BackingField: "When we play together, it\u2019s always Badu this, Badu
+      that, blah, blah. Don\u2019t you want other friends?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 2de36016-e9de-4a52-bb9f-ceb024cda6f2
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2755, y: 1217}
+  - <ID>k__BackingField: 2de36016-e9de-4a52-bb9f-ceb024cda6f2
+    <Name>k__BackingField: PS5x10
+    <Text>k__BackingField: "I said before, Maeve, you\u2019re my friend, too\u2026
+      and what would Badu do without me?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 740dd3d7-03c8-4df3-b0bc-2db71b266826
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3414, y: 1217}
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - PS5x2
+  - PS5x3
+  - PS5x4
+  - PS5x5
+  - PS5x6
+  - PS5x7
+  - PS5x8
+  - PS5x11
+  - PS5x12
+  - PS5x13
+  - PS5x14
+  - PS5x15
+  - PS5x17
+  - PS5x19
+  - PS5x21
+  - PS5x23
+  - PS5x24
+  - PS5x22
+  - PS5x20
+  - PS5x18
+  - PS5x16
+  - PS5x1
+  - PS5x9
+  - PS5x10
+  <OldGroupedNodeNames>k__BackingField:
+    list: []

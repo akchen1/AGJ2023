@@ -9,6 +9,9 @@ namespace DS.Data.Save
     {
         [field: SerializeField] public string Text { get; set; }
         [field: SerializeField] public string NodeID { get; set; }
+
+        [field: SerializeField] public bool HasSanityThreshold { get; set; }
+        [field: SerializeField] public float SanityThreshold { get; set; }
     }
 }
 

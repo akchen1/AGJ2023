@@ -14,7 +14,6 @@ public class DialogueClip : PlayableAsset
 
         DialogueClipStartBehaviour subtitleBehaviour = playable.GetBehaviour();
         subtitleBehaviour.Dialogue = Dialogue;
-
         return playable;
     }
 }
