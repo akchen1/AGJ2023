@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be3251a03a857e14dbea1e7b86c8fdc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingDialogue: {fileID: 11400000, guid: 4ec66ce212bedfc4bbedd243bab7b5ec, type: 2}
+  startingDialogue: {fileID: 11400000, guid: 279f390d41a26834584bcf0b1db44fe9, type: 2}
 --- !u!4 &966496598
 Transform:
   m_ObjectHideFlags: 0
@@ -371,7 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 490ec6b3a25fe8249a940c45df8a0494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 4ed72ae8fcff01b41a77b26942644529, type: 2}
+  dialogue: {fileID: 11400000, guid: 279f390d41a26834584bcf0b1db44fe9, type: 2}
 --- !u!212 &1369449117
 SpriteRenderer:
   m_ObjectHideFlags: 0

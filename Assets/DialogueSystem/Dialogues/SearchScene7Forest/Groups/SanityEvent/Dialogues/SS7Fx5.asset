@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabbddd164ab042e29b24f33ca0c86c0, type: 3}
+  m_Name: SS7Fx5
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: SS7Fx5
+  <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+  <Item>k__BackingField: {fileID: 0}
+  <HasSceneTransition>k__BackingField: 0
+  <NextSceneName>k__BackingField: 
+  <AudioClip>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: "These little eggs will die on their own. Shouldn\u2019t
+    we end their suffering now?"
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Crush the eggs
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: b779c3e9c8d90bd4094f78dbd7062590, type: 2}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
+  - <Text>k__BackingField: Leave the eggs
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 93fd9f863b8b6154e8fa97fc4f6c7b73, type: 2}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
+  - <Text>k__BackingField: Put the nest on a different branch
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 90fea8124adb8d84fbee42c7151fe3a2, type: 2}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
+  <DialogueType>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
