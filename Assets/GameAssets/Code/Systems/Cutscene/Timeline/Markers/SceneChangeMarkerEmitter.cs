@@ -5,5 +5,5 @@ using UnityEngine;
 public class SceneChangeMarkerEmitter : MarkerEmitter
 {
     [HideInInspector]
-    public int selectedSceneIndex = 0;
+    public string selectedSceneName;
 }

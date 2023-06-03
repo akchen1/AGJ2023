@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using System.Reflection;
 using System;
+using System.Linq;
 
 [CustomEditor(typeof(SceneChangeMarkerEmitter))]
 public class SceneChangeMarkerEmitterEditor : Editor
@@ -15,7 +16,11 @@ public class SceneChangeMarkerEmitterEditor : Editor
         SceneChangeMarkerEmitter sceneChangeMarkerEmitter = (SceneChangeMarkerEmitter)target;
 
         GUIContent scenes = new GUIContent("Scene");
-        sceneChangeMarkerEmitter.selectedSceneIndex = EditorGUILayout.Popup(scenes, sceneChangeMarkerEmitter.selectedSceneIndex, Constants.SceneNamesArray);
+
+        int index = Constants.SceneNamesArray.ToList().IndexOf(sceneChangeMarkerEmitter.selectedSceneName);
+        index = index < 0 ? 0 : index;
+        index = EditorGUILayout.Popup(scenes, index, Constants.SceneNamesArray);
+        sceneChangeMarkerEmitter.selectedSceneName = Constants.SceneNamesArray[index];
 
     }
 }
