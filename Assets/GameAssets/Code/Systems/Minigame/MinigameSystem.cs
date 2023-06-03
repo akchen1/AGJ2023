@@ -42,5 +42,6 @@ public class MinigameSystem : MonoBehaviour
 
         //activeMinigame.Finish();
         activeMinigame = null;
+        eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
     }
 }
