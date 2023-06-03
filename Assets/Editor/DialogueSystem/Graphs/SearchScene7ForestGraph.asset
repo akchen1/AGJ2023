@@ -1,0 +1,355 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce95c50c4663d4a14a54883ccc78975b, type: 3}
+  m_Name: SearchScene7ForestGraph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: SearchScene7Forest
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: d27f791a-6431-49b4-94d7-f0d348d07a1b
+    <Name>k__BackingField: SanityEvent
+    <Position>k__BackingField: {x: 2922, y: 3897}
+  - <ID>k__BackingField: d192e016-8897-4d1f-8d22-b718611bc664
+    <Name>k__BackingField: CharacterInteraction
+    <Position>k__BackingField: {x: 2918.9998, y: 3166.9998}
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 92c2a5c9-87a4-4795-8bd4-d4f8ecc6615f
+    <Name>k__BackingField: SS7Fx1
+    <Text>k__BackingField: How about this one?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 36c7f549-65e8-435c-ae3c-4e4020ad6cc8
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d27f791a-6431-49b4-94d7-f0d348d07a1b
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2947, y: 4133}
+  - <ID>k__BackingField: 36c7f549-65e8-435c-ae3c-4e4020ad6cc8
+    <Name>k__BackingField: SS7Fx2
+    <Text>k__BackingField: Maybe we should pick a different one? That one has a nest
+      on it.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 0fc2ba4a-04bf-4d85-8183-f771e5f0e82c
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d27f791a-6431-49b4-94d7-f0d348d07a1b
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3368, y: 4133}
+  - <ID>k__BackingField: 0fc2ba4a-04bf-4d85-8183-f771e5f0e82c
+    <Name>k__BackingField: SS7Fx3
+    <Text>k__BackingField: "It\u2019s the closest one we can find, and it\u2019s
+      getting late. Does it really matter?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Break the branch
+      <NodeID>k__BackingField: ef863254-c44a-4a42-9ee5-b54a3eef3976
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    - <Text>k__BackingField: Pick a different branch
+      <NodeID>k__BackingField: 83630589-9c74-45bc-b45e-b49e6415d157
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d27f791a-6431-49b4-94d7-f0d348d07a1b
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 3865, y: 4121}
+  - <ID>k__BackingField: 4dd09301-1f1f-4fcd-a281-4922ec591d3c
+    <Name>k__BackingField: SS7Fx5
+    <Text>k__BackingField: "These little eggs will die on their own. Shouldn\u2019t
+      we end their suffering now?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Crush the eggs
+      <NodeID>k__BackingField: 28c93d1e-4fb6-46b3-a7a5-66d3d17d9061
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    - <Text>k__BackingField: Leave the eggs
+      <NodeID>k__BackingField: 2cb034dd-6170-4e96-83f1-8fafaed49264
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    - <Text>k__BackingField: Put the nest on a different branch
+      <NodeID>k__BackingField: b4e03c4b-1caa-4e7e-938f-5549021318b3
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d27f791a-6431-49b4-94d7-f0d348d07a1b
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 4883, y: 4121}
+  - <ID>k__BackingField: 28c93d1e-4fb6-46b3-a7a5-66d3d17d9061
+    <Name>k__BackingField: SS7Fx6A
+    <Text>k__BackingField: "Whoa, Leigh, isn\u2019t that a little too far?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 61652d07-4e1d-4088-80e6-73a4ad2a3dd7
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d27f791a-6431-49b4-94d7-f0d348d07a1b
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5453, y: 3956}
+  - <ID>k__BackingField: 61652d07-4e1d-4088-80e6-73a4ad2a3dd7
+    <Name>k__BackingField: SS7Fx7A
+    <Text>k__BackingField: "\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: ca766600-f7a4-4ebe-984f-16abe7fdbffa
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d27f791a-6431-49b4-94d7-f0d348d07a1b
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5840, y: 3956}
+  - <ID>k__BackingField: ca766600-f7a4-4ebe-984f-16abe7fdbffa
+    <Name>k__BackingField: SS7Fx8A
+    <Text>k__BackingField: "\u2026I think we\u2019re done here."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d27f791a-6431-49b4-94d7-f0d348d07a1b
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6210, y: 3956}
+  - <ID>k__BackingField: 2cb034dd-6170-4e96-83f1-8fafaed49264
+    <Name>k__BackingField: SS7Fx6B
+    <Text>k__BackingField: "They\u2019ll probably be fine."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 267296cb-c838-4f78-a9ea-3842d65b6221
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d27f791a-6431-49b4-94d7-f0d348d07a1b
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5453, y: 4257}
+  - <ID>k__BackingField: 267296cb-c838-4f78-a9ea-3842d65b6221
+    <Name>k__BackingField: SS7Fx7B
+    <Text>k__BackingField: '*buzz*'
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d27f791a-6431-49b4-94d7-f0d348d07a1b
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5840, y: 4257}
+  - <ID>k__BackingField: b4e03c4b-1caa-4e7e-938f-5549021318b3
+    <Name>k__BackingField: SS7Fx6C
+    <Text>k__BackingField: "Just to be sure\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 6fd70013-091e-4d1d-bd7d-86718add9c65
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d27f791a-6431-49b4-94d7-f0d348d07a1b
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5453, y: 4564}
+  - <ID>k__BackingField: 6fd70013-091e-4d1d-bd7d-86718add9c65
+    <Name>k__BackingField: SS7Fx7C
+    <Text>k__BackingField: Are we good to go now?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 9f3c0312-5b70-42e4-a1a4-d3c4cca944da
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d27f791a-6431-49b4-94d7-f0d348d07a1b
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5840, y: 4564}
+  - <ID>k__BackingField: 9f3c0312-5b70-42e4-a1a4-d3c4cca944da
+    <Name>k__BackingField: SS7Fx8B
+    <Text>k__BackingField: All good.
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d27f791a-6431-49b4-94d7-f0d348d07a1b
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6228, y: 4564}
+  - <ID>k__BackingField: ef863254-c44a-4a42-9ee5-b54a3eef3976
+    <Name>k__BackingField: SS7Fx4A
+    <Text>k__BackingField: "Ok, we got what we need. Let\u2019s go!"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 4dd09301-1f1f-4fcd-a281-4922ec591d3c
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d27f791a-6431-49b4-94d7-f0d348d07a1b
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4446, y: 4009}
+  - <ID>k__BackingField: 83630589-9c74-45bc-b45e-b49e6415d157
+    <Name>k__BackingField: SS7Fx4B
+    <Text>k__BackingField: "Ok, we got what we need. Let\u2019s go!"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d27f791a-6431-49b4-94d7-f0d348d07a1b
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4446, y: 4338}
+  - <ID>k__BackingField: aba36da1-30e1-42d4-8c95-fa4bced4bcaa
+    <Name>k__BackingField: SS7FxLeigh
+    <Text>k__BackingField: "It\u2019s pretty dark between these trees. I wonder where
+      the paths lead?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d192e016-8897-4d1f-8d22-b718611bc664
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2944, y: 3226}
+  - <ID>k__BackingField: 61be1eff-8c9f-426d-814d-ab169fe7812a
+    <Name>k__BackingField: SS7FxMaeve
+    <Text>k__BackingField: Maybe we can find something we need around here.
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d192e016-8897-4d1f-8d22-b718611bc664
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2944, y: 3524}
+  - <ID>k__BackingField: 46436a7e-574a-42ec-ac17-354feac63c96
+    <Name>k__BackingField: SS7FxBadu
+    <Text>k__BackingField: "*buzz* Cozy\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: d192e016-8897-4d1f-8d22-b718611bc664
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3372, y: 3534}
+  <OldGroupNames>k__BackingField:
+  - SanityEvent
+  - CharacterInteraction
+  <OldUngroupedNodeNames>k__BackingField: []
+  <OldGroupedNodeNames>k__BackingField:
+    list:
+    - Key: SanityEvent
+      Value:
+      - SS7Fx1
+      - SS7Fx2
+      - SS7Fx3
+      - SS7Fx5
+      - SS7Fx6A
+      - SS7Fx7A
+      - SS7Fx8A
+      - SS7Fx6B
+      - SS7Fx7B
+      - SS7Fx6C
+      - SS7Fx7C
+      - SS7Fx8B
+      - SS7Fx4A
+      - SS7Fx4B
+    - Key: CharacterInteraction
+      Value:
+      - SS7FxLeigh
+      - SS7FxMaeve
+      - SS7FxBadu

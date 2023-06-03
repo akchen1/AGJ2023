@@ -1,0 +1,642 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce95c50c4663d4a14a54883ccc78975b, type: 3}
+  m_Name: SearchScene7BasementGraph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: SearchScene7Basement
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
+    <Name>k__BackingField: Interactables
+    <Position>k__BackingField: {x: 3027.0002, y: 3088.0002}
+  - <ID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <Name>k__BackingField: SanityDecision
+    <Position>k__BackingField: {x: 2936, y: 4149}
+  - <ID>k__BackingField: 58565f16-ce22-4e54-a546-794895461c7f
+    <Name>k__BackingField: SanityResult
+    <Position>k__BackingField: {x: 2916, y: 5276}
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 1b630c78-36b3-47d7-aed9-309aaf840eed
+    <Name>k__BackingField: SS7BxWorktable
+    <Text>k__BackingField: "There\u2019s\u2026 a lot of odds and ends here. It seems
+      like Maeve\u2019s Dad puts most of them to good use."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3052, y: 3147}
+  - <ID>k__BackingField: b1238e25-2846-4801-a5b7-ae26db193a0a
+    <Name>k__BackingField: SS7BxGlassVial
+    <Text>k__BackingField: A simple glass vial, useful for holding small amounts
+      of liquid.
+    <Character>k__BackingField: {fileID: 0}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3052, y: 3765}
+  - <ID>k__BackingField: 4487b757-cb92-4049-aeb9-452de0124f56
+    <Name>k__BackingField: SS7Bx7
+    <Text>k__BackingField: "It\u2019s a demonic ritual, Leigh, what do you think
+      it might be?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 483a232c-6a2a-4100-959e-7e6779e6a307
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5721, y: 4449}
+  - <ID>k__BackingField: ff5888d0-6992-45da-898a-09d74d7662f8
+    <Name>k__BackingField: SS7Bx1
+    <Text>k__BackingField: "Interesting\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: fbf85582-30f5-4a20-aa07-67bcf73673ef
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2961, y: 4449}
+  - <ID>k__BackingField: fbf85582-30f5-4a20-aa07-67bcf73673ef
+    <Name>k__BackingField: SS7Bx2
+    <Text>k__BackingField: What is?
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 97f582c0-bce7-4a28-8a00-4e79213b7b87
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3352, y: 4449}
+  - <ID>k__BackingField: 97f582c0-bce7-4a28-8a00-4e79213b7b87
+    <Name>k__BackingField: SS7Bx3
+    <Text>k__BackingField: The scroll seems to indicate that the vial should be filled
+      with something.
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: f9bdbf86-3e96-4368-bf62-eec43ebdf6d3
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3750, y: 4449}
+  - <ID>k__BackingField: f9bdbf86-3e96-4368-bf62-eec43ebdf6d3
+    <Name>k__BackingField: SS7Bx4
+    <Text>k__BackingField: Any ideas?
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 4b1dce8a-502e-45cf-9290-40ae3d3dbb47
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4258, y: 4449}
+  - <ID>k__BackingField: 1af536e4-b8cf-4e75-9de4-d478a1837369
+    <Name>k__BackingField: SS7Bx6
+    <Text>k__BackingField: Oh, Badu was pointing out that the vial in the ritual
+      seems to be filled. What do you think it could be?
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 4487b757-cb92-4049-aeb9-452de0124f56
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5018, y: 4449}
+  - <ID>k__BackingField: 483a232c-6a2a-4100-959e-7e6779e6a307
+    <Name>k__BackingField: SS7Bx8
+    <Text>k__BackingField: "\u2026?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 87913b9f-2596-4c8f-9d86-9db71f39b39f
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6162, y: 4449}
+  - <ID>k__BackingField: 87913b9f-2596-4c8f-9d86-9db71f39b39f
+    <Name>k__BackingField: SS7Bx9
+    <Text>k__BackingField: "*sighs* I\u2019m sure Badu knows as well as I do that
+      it\u2019s blood."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 86e8d71d-06db-4663-a697-2a9598cc985f
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6548, y: 4449}
+  - <ID>k__BackingField: 86e8d71d-06db-4663-a697-2a9598cc985f
+    <Name>k__BackingField: SS7Bx10
+    <Text>k__BackingField: "*snickers* Maybe she\u2019s not so bad after all. That\u2019s
+      useful. You wouldn\u2019t cut yourself and use your own blood, would you, Leigh?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: cb03dd47-9845-4c11-823b-f3e4e6bcb8a7
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6982, y: 4449}
+  - <ID>k__BackingField: cb03dd47-9845-4c11-823b-f3e4e6bcb8a7
+    <Name>k__BackingField: SS7Bx11
+    <Text>k__BackingField: "Well\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: I mean, the ritual was her idea in the first place.
+      <NodeID>k__BackingField: 8db471c2-67ad-4734-9808-5b13d0c912ec
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    - <Text>k__BackingField: "I don\u2019t really know."
+      <NodeID>k__BackingField: 0109a87a-9375-490a-9176-1008292d4feb
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    - <Text>k__BackingField: "No, that doesn\u2019t seem like the right thing to
+        do."
+      <NodeID>k__BackingField: 5f79a130-82c8-440b-91ca-255d34f78a99
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 7657, y: 4449}
+  - <ID>k__BackingField: 8db471c2-67ad-4734-9808-5b13d0c912ec
+    <Name>k__BackingField: SS7Bx12A
+    <Text>k__BackingField: I mean, the ritual was her idea in the first place.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: c4fa2735-4201-4a79-945e-3719e2660c74
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8312, y: 4208}
+  - <ID>k__BackingField: 0109a87a-9375-490a-9176-1008292d4feb
+    <Name>k__BackingField: SS7Bx12B
+    <Text>k__BackingField: "I don\u2019t really know."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 1839dd95-8600-4ec1-b1ee-a973dc4616a3
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8312, y: 4521}
+  - <ID>k__BackingField: 5f79a130-82c8-440b-91ca-255d34f78a99
+    <Name>k__BackingField: SS7Bx12C
+    <Text>k__BackingField: "No, that doesn\u2019t seem like the right thing to do."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 13b3ff6c-8099-4dcd-8687-3b0e8102d391
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8312, y: 4834}
+  - <ID>k__BackingField: c4fa2735-4201-4a79-945e-3719e2660c74
+    <Name>k__BackingField: SS7Bx13
+    <Text>k__BackingField: "Yes, exactly. I\u2019m sure she\u2019ll understand."
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8715, y: 4208}
+  - <ID>k__BackingField: 1839dd95-8600-4ec1-b1ee-a973dc4616a3
+    <Name>k__BackingField: SS7Bx14
+    <Text>k__BackingField: Are you sure?
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: I mean, the ritual was her idea in the first place.
+      <NodeID>k__BackingField: 8db471c2-67ad-4734-9808-5b13d0c912ec
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    - <Text>k__BackingField: "I- I\u2019m not sure."
+      <NodeID>k__BackingField: 6ce89321-05f4-4acc-892b-0187a8a139b8
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    - <Text>k__BackingField: "No, that doesn\u2019t seem like the right thing to
+        do."
+      <NodeID>k__BackingField: 5f79a130-82c8-440b-91ca-255d34f78a99
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 8730, y: 4521}
+  - <ID>k__BackingField: 6ce89321-05f4-4acc-892b-0187a8a139b8
+    <Name>k__BackingField: SS7Bx16
+    <Text>k__BackingField: "I- I\u2019m not sure."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 20ec83cd-266c-48fa-b702-e523a075de76
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9376, y: 4521}
+  - <ID>k__BackingField: 20ec83cd-266c-48fa-b702-e523a075de76
+    <Name>k__BackingField: SS7Bx17
+    <Text>k__BackingField: '*buzz*'
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 9763, y: 4521}
+  - <ID>k__BackingField: 13b3ff6c-8099-4dcd-8687-3b0e8102d391
+    <Name>k__BackingField: SS7Bx15
+    <Text>k__BackingField: "*buzz* As you wish\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 8760, y: 4930}
+  - <ID>k__BackingField: b3a1e2fe-fbe4-49ee-9b18-faaa97f002c7
+    <Name>k__BackingField: SS7BxBookshelf
+    <Text>k__BackingField: Wow, look at all of these books!
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3052, y: 3458}
+  - <ID>k__BackingField: 4b1dce8a-502e-45cf-9290-40ae3d3dbb47
+    <Name>k__BackingField: SS7Bx5
+    <Text>k__BackingField: Any ideas about what?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 1af536e4-b8cf-4e75-9de4-d478a1837369
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4630, y: 4449}
+  - <ID>k__BackingField: 8f1a1dfc-72ba-429a-b469-9eea99b76b24
+    <Name>k__BackingField: SS7BxDisagree2
+    <Text>k__BackingField: Told you.
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 58565f16-ce22-4e54-a546-794895461c7f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3342, y: 5967}
+  - <ID>k__BackingField: a3aa8113-b24e-43da-843a-cf9d54aa5b1c
+    <Name>k__BackingField: SS7BxDiagree1
+    <Text>k__BackingField: Ouch!
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 8f1a1dfc-72ba-429a-b469-9eea99b76b24
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 58565f16-ce22-4e54-a546-794895461c7f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2941, y: 5967}
+  - <ID>k__BackingField: b74d5cd7-b57e-4aed-b5cb-b1603d5b4470
+    <Name>k__BackingField: SS7BxAgree1
+    <Text>k__BackingField: Ow, what the heck?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 64236525-137a-4e05-9209-6c3717edce41
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 58565f16-ce22-4e54-a546-794895461c7f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2948, y: 5335}
+  - <ID>k__BackingField: 5ff7bfbd-8003-4344-8963-8a3b0b79aa3d
+    <Name>k__BackingField: SS7BxIndecisive1
+    <Text>k__BackingField: "Oh fine, I\u2019ll do it."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 9a4a5a40-979d-4188-81d6-82da098010cd
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 58565f16-ce22-4e54-a546-794895461c7f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2948, y: 5653}
+  - <ID>k__BackingField: 64236525-137a-4e05-9209-6c3717edce41
+    <Name>k__BackingField: SS7BxAgree2
+    <Text>k__BackingField: '*snickers*'
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 58565f16-ce22-4e54-a546-794895461c7f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3342, y: 5335}
+  - <ID>k__BackingField: 9a4a5a40-979d-4188-81d6-82da098010cd
+    <Name>k__BackingField: SS7BxIndecisive2
+    <Text>k__BackingField: '*buzz*'
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 58565f16-ce22-4e54-a546-794895461c7f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3342, y: 5653}
+  - <ID>k__BackingField: 53b90723-a47b-4dc7-8a29-37077ca8fff5
+    <Name>k__BackingField: SSBxVialOfBlood
+    <Text>k__BackingField: A simple glass vial filled with brilliant red blood.
+    <Character>k__BackingField: {fileID: 0}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3568, y: 3765}
+  - <ID>k__BackingField: c5d85b8f-8fe0-41b2-97fe-2cd7702fe64f
+    <Name>k__BackingField: SS7BxBabu
+    <Text>k__BackingField: "*buzz* I wonder what\u2019s behind those books."
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4089, y: 3455}
+  - <ID>k__BackingField: 4c6fada9-e590-47b6-83f9-4b0cf07c8c28
+    <Name>k__BackingField: SS7BxLeigh
+    <Text>k__BackingField: "There\u2019s all kinds of equipment here. Surely something
+      might come in handy."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4075, y: 3147}
+  - <ID>k__BackingField: 5cd6faa4-5edb-4d92-9c6b-feeab8dfbbe0
+    <Name>k__BackingField: SS7BxMaeve
+    <Text>k__BackingField: You know, I think my dad hid something precious in here
+      somewhere.
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+    <GroupID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4089, y: 3765}
+  <OldGroupNames>k__BackingField:
+  - Interactables
+  - SanityDecision
+  - SanityResult
+  <OldUngroupedNodeNames>k__BackingField: []
+  <OldGroupedNodeNames>k__BackingField:
+    list:
+    - Key: Interactables
+      Value:
+      - SS7BxWorktable
+      - SS7BxGlassVial
+      - SS7BxBookshelf
+      - SSBxVialOfBlood
+      - SS7BxBabu
+      - SS7BxLeigh
+      - SS7BxMaeve
+    - Key: SanityDecision
+      Value:
+      - SS7Bx7
+      - SS7Bx1
+      - SS7Bx2
+      - SS7Bx3
+      - SS7Bx4
+      - SS7Bx6
+      - SS7Bx8
+      - SS7Bx9
+      - SS7Bx10
+      - SS7Bx11
+      - SS7Bx12A
+      - SS7Bx12B
+      - SS7Bx12C
+      - SS7Bx13
+      - SS7Bx14
+      - SS7Bx16
+      - SS7Bx17
+      - SS7Bx15
+      - SS7Bx5
+    - Key: SanityResult
+      Value:
+      - SS7BxDisagree2
+      - SS7BxDiagree1
+      - SS7BxAgree1
+      - SS7BxIndecisive1
+      - SS7BxAgree2
+      - SS7BxIndecisive2
