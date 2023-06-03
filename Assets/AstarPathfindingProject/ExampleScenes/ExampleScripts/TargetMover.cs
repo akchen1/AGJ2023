@@ -26,10 +26,7 @@ namespace Pathfinding {
 
 		public void Start () {
 			//Move target to start on player.
-			this.gameObject.transform.position = GameObject.Find("Player").transform.position;
-
-
-
+			
 			//Cache the Main Camera
 			cam = Camera.main;
 			// Slightly inefficient way of finding all AIs, but this is just an example script, so it doesn't matter much.
