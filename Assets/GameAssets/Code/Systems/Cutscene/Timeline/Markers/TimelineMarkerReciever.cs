@@ -30,7 +30,7 @@ public class TimelineMarkerReciever : MonoBehaviour, INotificationReceiver
 
     private void RecieveSceneChangeMarker(SceneChangeMarkerEmitter sceneChangeMarker)
     {
-        eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(Constants.SceneNamesArray[sceneChangeMarker.selectedSceneIndex]));
+        eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(sceneChangeMarker.selectedSceneName));
     }
 
     private void RecieveAudioMarker(AudioMarkerEmitter audioMarker)
