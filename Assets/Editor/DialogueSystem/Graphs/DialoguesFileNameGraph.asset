@@ -29,6 +29,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 85a51534-4989-4e6c-83e4-5a284f8bb74e
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 286, y: 214}
@@ -46,6 +47,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: fadcfdc3-43b3-4c60-9ca2-4c6bf2c4d2bb
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 713, y: 289}
@@ -61,12 +63,14 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: D4
       <NodeID>k__BackingField: 22925356-fac1-4d17-86c3-7a731e12237f
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 23
+      <SanityType>k__BackingField: 1
     - <Text>k__BackingField: D5
       <NodeID>k__BackingField: 638906b3-f6d8-454b-a620-275674f9f015
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 1
     <Position>k__BackingField: {x: 1167, y: 289}
@@ -84,6 +88,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1569, y: 176}
@@ -101,6 +106,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1587, y: 434}

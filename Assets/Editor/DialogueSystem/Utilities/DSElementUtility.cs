@@ -107,6 +107,19 @@ namespace DS.Utilities
             return dropdownField;
         }
 
+        public static EnumField CreateEnumField(string label = null, Enum defaultValue = null, EventCallback<ChangeEvent<Enum>> onValueChanged = null)
+        {
+
+            EnumField enumField = new EnumField(label, defaultValue);
+
+            if (onValueChanged != null)
+            {
+                enumField.RegisterValueChangedCallback(onValueChanged);
+            }
+
+            return enumField;
+        }
+
         public static Toggle CreateToggle(string label = null, bool value = false, EventCallback<ChangeEvent<bool>> onValueChanged = null)
         {
             Toggle toggle = new Toggle(label) { 

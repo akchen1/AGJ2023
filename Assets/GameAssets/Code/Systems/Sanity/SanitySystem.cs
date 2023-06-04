@@ -8,6 +8,8 @@ public class SanitySystem
 {
 	private int currentSanity;
 
+	public AnimationCurve sanityCurve;
+
 	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
 	public SanitySystem() 
