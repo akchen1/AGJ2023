@@ -598,6 +598,73 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257c07af25f4bf34aaa406e99a288dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sanitySystem:
+    sanityCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: -15
+        value: -10
+        inSlope: 0.6666667
+        outSlope: 0.6666667
+        tangentMode: 65
+        weightedMode: 2
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2.4191103
+        outSlope: 2.4191103
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.04006042
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 15
+        value: 10
+        inSlope: 0.6666667
+        outSlope: 0.6666667
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  sanityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -15
+      value: -10
+      inSlope: 0.6666667
+      outSlope: 0.6666667
+      tangentMode: 65
+      weightedMode: 2
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2.4191103
+      outSlope: 2.4191103
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.04006042
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 15
+      value: 10
+      inSlope: 0.6666667
+      outSlope: 0.6666667
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &499501586
 GameObject:
   m_ObjectHideFlags: 0

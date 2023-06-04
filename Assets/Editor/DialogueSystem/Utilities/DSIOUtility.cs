@@ -222,6 +222,7 @@ namespace DS.Utilities
                     Text = nodeChoice.Text,
                     HasSanityThreshold = nodeChoice.HasSanityThreshold,
                     SanityThreshold = nodeChoice.SanityThreshold,
+                    SanityType = nodeChoice.SanityType,
                 };
 
                 dialogueChoices.Add(choiceData);
@@ -487,6 +488,7 @@ namespace DS.Utilities
                     NodeID = choice.NodeID,
                     HasSanityThreshold = choice.HasSanityThreshold,
                     SanityThreshold = choice.SanityThreshold,
+                    SanityType = choice.SanityType
                 };
 
                 choices.Add(choiceData);

@@ -11,11 +11,12 @@ public class Bootstrap : MonoBehaviour
     //private CutsceneSystem cutsceneSystem;
     private InventorySystem inventorySystem;
     private DialogueSystem dialogueSystem;
-    private SanitySystem sanitySystem;
+    [SerializeField] private SanitySystem sanitySystem;
     private InteractionSystem interactionSystem;
     private PlayerInputSystem playerInputSystem;
 
     private SceneUtility sceneUtility;
+    public AnimationCurve sanityCurve;
 
     private void Awake()
     {
@@ -37,7 +38,7 @@ public class Bootstrap : MonoBehaviour
         //cutsceneSystem = new CutsceneSystem();
         inventorySystem = new InventorySystem();
         interactionSystem = new InteractionSystem();
-        sanitySystem = new SanitySystem();
+        //sanitySystem = new SanitySystem();
         dialogueSystem = new DialogueSystem();
         playerInputSystem = new PlayerInputSystem();
     }

@@ -65,6 +65,10 @@ public class DialogueSystem
 
     private void SelectDialogueOptionHandler(BrokerEvent<DialogueEvents.SelectDialogueOption> inEvent)
     {
+        if (inEvent.Payload.Option.HasSanityThreshold)
+        {
+            eventBrokerComponent.Publish(this, new SanityEvents.ChangeSanity((int)inEvent.Payload.Option.SanityType));
+        }
         DSDialogueSO nextDialogue = inEvent.Payload.Option.NextDialogue;
         currentDialogue = nextDialogue;
         inEvent.Payload.NextDialogueNode?.Invoke(nextDialogue);

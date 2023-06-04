@@ -55,31 +55,41 @@ namespace DS.Elements {
 
         private static VisualElement CreateSanityFoldout(DSChoiceSaveData choice)
         {
-            VisualElement visualElement = new VisualElement();
-            FloatField floatField = DSElementUtility.CreateFloatField(choice.SanityThreshold, null, callback =>
+            VisualElement visualElement = DSElementUtility.CreateFoldout("Sanity", true);
+            FloatField floatField = DSElementUtility.CreateFloatField(choice.SanityThreshold, "Threshold", callback =>
             {
                 choice.SanityThreshold = callback.newValue;
             });
 
+            EnumField enumField = DSElementUtility.CreateEnumField("SanityType", choice.SanityType, callback =>
+            {
+                choice.SanityType = (Constants.Sanity.SanityType)callback.newValue;
+            });
             Toggle toggleField = DSElementUtility.CreateToggle("Sanity",choice.HasSanityThreshold, callback =>
             {
                 choice.HasSanityThreshold = callback.newValue;
                 floatField.style.display = callback.newValue ? DisplayStyle.Flex : DisplayStyle.None;
+                enumField.style.display = callback.newValue ? DisplayStyle.Flex : DisplayStyle.None;
             });
 
+            floatField.AddToClassList("ds-node__label");
+            enumField.AddToClassList("ds-node__label");
+            toggleField.AddToClassList("ds-node__label");
+            
             floatField.style.display = choice.HasSanityThreshold ? DisplayStyle.Flex : DisplayStyle.None;
+            enumField.style.display = choice.HasSanityThreshold ? DisplayStyle.Flex : DisplayStyle.None;
             visualElement.style.flexDirection = FlexDirection.Row;
-            toggleField.ElementAt(0).style.minWidth = 10;
 
             visualElement.Add(toggleField);
             visualElement.Add(floatField);
+            visualElement.Add(enumField);
             return visualElement;
         }
         #region Elements Creation
         private Port CreateChoicePort(object userData)
         {
             Port choicePort = this.CreatePort();
-
+            choicePort.style.height = new StyleLength(StyleKeyword.Auto);
             choicePort.userData = userData;
             DSChoiceSaveData choiceData = (DSChoiceSaveData)userData;
 

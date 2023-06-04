@@ -18,6 +18,11 @@
 	padding: var(--ds-metrics-window-pixels-8);
 }
 
+.ds-node__label > .unity-base-field__label {
+	min-width: 0px;
+}
+
+
 /* INPUTS */
 
 .ds-node__textfield > .unity-text-field__input
