@@ -10,8 +10,7 @@ public class MatchStick : MonoBehaviour, IEndDragHandler, IBeginDragHandler
     [SerializeField] [Range(0f, 10f)] private float maxAngle = 5f;
     [SerializeField] [Range(1000f, 3000f)] private float minVelocity = 2000f;
 
-    [Header("Match")]
-    [SerializeField] private GameObject matchFire;
+    private Animator animator;
 
     private DateTime timeEntered;
     private Vector3 positionEntered;
@@ -23,6 +22,7 @@ public class MatchStick : MonoBehaviour, IEndDragHandler, IBeginDragHandler
     private void Awake()
     {
         rbody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -62,7 +62,8 @@ public class MatchStick : MonoBehaviour, IEndDragHandler, IBeginDragHandler
         float angle = Vector3.Angle(direction.normalized, desiredAngle);
         if (angle <= maxAngle && velocity >= minVelocity)
         {
-            matchFire.SetActive(true);
+            animator.SetTrigger("Lit");
+            Debug.Log("is ligte");
             isLit = true;
         }
     }

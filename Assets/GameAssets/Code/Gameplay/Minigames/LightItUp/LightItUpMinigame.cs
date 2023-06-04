@@ -40,7 +40,7 @@ public class LightItUpMinigame : MonoBehaviour, IMinigame
 
     private IEnumerator DelayedFinish()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         Finish();
     }
 }
