@@ -6,13 +6,21 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
+    private Animator animator;
     private void OnEnable()
     {
+        eventBrokerComponent.Subscribe<PlayerEvents.GetPlayerPosition>(GetPositionHandler);
         //eventBrokerComponent.Subscribe<InputEvents.MouseClick>(MouseClickHandler);
+    }
+
+    private void GetPositionHandler(BrokerEvent<PlayerEvents.GetPlayerPosition> inEvent)
+    {
+        inEvent.Payload.Position.DynamicInvoke(transform.position);
     }
 
     private void OnDisable()
     {
+        eventBrokerComponent.Unsubscribe<PlayerEvents.GetPlayerPosition>(GetPositionHandler);
         //eventBrokerComponent.Unsubscribe<InputEvents.MouseClick>(MouseClickHandler);
     }
 
