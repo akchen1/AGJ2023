@@ -8,9 +8,17 @@ public class Candle : MonoBehaviour
 
     [SerializeField] private GameObject fire;
     [field: SerializeField][field: Range(0f, 5f)] public float MinTimeToLightCandle { get; private set; } = 3f;
+
+    private Animator animator;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     public void LightCandle()
     {
-        fire.SetActive(true);
+        animator.SetTrigger("Lit");
         IsLit = true;
     }
 }
