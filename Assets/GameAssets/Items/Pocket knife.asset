@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05fd0956a99431b4697b68af31be1afb, type: 3}
-  m_Name: Pocket knife
+  m_Name: Pocket Knife
   m_EditorClassIdentifier: 
   <ItemName>k__BackingField: Pocket Knife
   <ItemIcon>k__BackingField: {fileID: 0}

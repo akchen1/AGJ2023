@@ -1221,6 +1221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 4141ace33f2959f47941774f03b9f727, type: 2}
   destroyOnInteract: 1
+  allowDragClick: 0
 --- !u!4 &1280766432
 Transform:
   m_ObjectHideFlags: 0
@@ -2032,6 +2033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: d711e05907bb9f14884eb035bdf308e8, type: 2}
   destroyOnInteract: 1
+  allowDragClick: 0
 --- !u!212 &2164314320382291856
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2380,6 +2382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: af65f2791408a884784e555394f8ccdd, type: 2}
   destroyOnInteract: 1
+  allowDragClick: 0
 --- !u!212 &4164870328313502707
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2510,6 +2513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 19b530fc151647f4993e263fe086782e, type: 2}
   destroyOnInteract: 1
+  allowDragClick: 0
 --- !u!212 &4164870328910443561
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2821,8 +2825,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f6cdd9c00b5f8a409090091364a9789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: b2fd6d8704af4d04da36c35b2d92d2aa, type: 2}
+  item: {fileID: 11400000, guid: 81adb7114a46c754d8b177107c636103, type: 2}
   destroyOnInteract: 1
+  allowDragClick: 0
 --- !u!114 &5143665101049021374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3001,8 +3006,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f6cdd9c00b5f8a409090091364a9789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 1540c79af41999e4ab906201312626e4, type: 2}
+  item: {fileID: 11400000, guid: 48d9cccea6a175041bd8d4146a3ebbb5, type: 2}
   destroyOnInteract: 1
+  allowDragClick: 0
 --- !u!4 &5251805799546917738
 Transform:
   m_ObjectHideFlags: 0
@@ -3154,6 +3160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 7cd749c20530cae41b181e42e292b871, type: 2}
   destroyOnInteract: 1
+  allowDragClick: 0
 --- !u!1 &5251805800582583192
 GameObject:
   m_ObjectHideFlags: 0
@@ -3379,6 +3386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: b8046a6cad45a604288694aaddee7dde, type: 2}
   destroyOnInteract: 1
+  allowDragClick: 0
 --- !u!58 &5251805800761174663
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3463,6 +3471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 593fad9097013a24b832d439dea7bd4a, type: 2}
   destroyOnInteract: 0
+  allowDragClick: 0
 --- !u!58 &8068671899752543525
 CircleCollider2D:
   m_ObjectHideFlags: 0
