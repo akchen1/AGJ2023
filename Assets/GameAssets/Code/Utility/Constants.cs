@@ -58,6 +58,9 @@ public static class Constants
 	{
 		public const float MusicFadeSpeed = 2.5f;
 		public const float DefaultAudioLevel = 0.25f;
+
+		public const string MusicVolumePP = "MusicVolume";
+		public const string SFXVolumePP = "SFXVolume";
 	}
 	#endregion Audio
 
