@@ -28,12 +28,7 @@ public class SearchScene7Controller : SceneController
 	{
 		Constants.Scene7SubScenes subscene = inEvent.Payload.Subscene;
 
-		mainStreetCam.enabled = subscene == Constants.Scene7SubScenes.MainStreet;
-		basementCam.enabled = subscene == Constants.Scene7SubScenes.Basement;
-		forestCam.enabled = subscene == Constants.Scene7SubScenes.Forest;
-		livingRoomCam.enabled = subscene == Constants.Scene7SubScenes.LivingRoom;
-		generalStoreCam.enabled = subscene == Constants.Scene7SubScenes.GeneralStore;
-		playgroundCam.enabled = subscene == Constants.Scene7SubScenes.Playground;
+		HandleCameras(subscene);
 
 		switch (inEvent.Payload.Subscene)
 		{
@@ -57,9 +52,22 @@ public class SearchScene7Controller : SceneController
 		}
 	}
 
+	private void HandleCameras(Constants.Scene7SubScenes subscene)
+	{
+		mainStreetCam.enabled = subscene == Constants.Scene7SubScenes.MainStreet;
+		basementCam.enabled = subscene == Constants.Scene7SubScenes.Basement;
+		forestCam.enabled = subscene == Constants.Scene7SubScenes.Forest;
+		livingRoomCam.enabled = subscene == Constants.Scene7SubScenes.LivingRoom;
+		generalStoreCam.enabled = subscene == Constants.Scene7SubScenes.GeneralStore;
+		playgroundCam.enabled = subscene == Constants.Scene7SubScenes.Playground;
+	}
+
 	private void Start()
 	{
+		HandleCameras(Constants.Scene7SubScenes.MainStreet);
+
 		playableDirector?.Play(mainStreetStartingCutscene);
+
 	}
 
 	private void OnEnable()
