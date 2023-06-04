@@ -16,7 +16,6 @@ public class SceneChangeInteractionEditor : Editor
 
         GUIContent scenes = new GUIContent("Scene");
         int index = Constants.SceneNamesArray.ToList().IndexOf(sceneChangeInteraction.selectedSceneName);
-        Debug.Log(index);
         index = index < 0 ? 0 : index;
         index = EditorGUILayout.Popup(scenes, index, Constants.SceneNamesArray);
         sceneChangeInteraction.selectedSceneName = Constants.SceneNamesArray[index];

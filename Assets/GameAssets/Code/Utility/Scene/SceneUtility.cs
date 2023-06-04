@@ -50,6 +50,7 @@ public class SceneUtility
         if (openedScenes.Contains(sceneName))
         {
             Debug.LogError($"{sceneName} is opened already");
+			// TODO: Shouldn't return, it should still set the scene as the active scene
             return;
         }
 
