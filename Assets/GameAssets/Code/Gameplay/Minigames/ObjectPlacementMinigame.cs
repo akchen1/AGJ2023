@@ -31,7 +31,8 @@ public class ObjectPlacementMinigame : MonoBehaviour, IMinigame
     {
         active = false;
         minigameUI.SetActive(false);
-        finishedObject.SetActive(true);
+        if (finishedObject != null)
+            finishedObject.SetActive(true);
 
         eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
         eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
@@ -52,7 +53,7 @@ public class ObjectPlacementMinigame : MonoBehaviour, IMinigame
     {
         if (!active) return;
         if (CheckEndCondition())
-            Finish();
+            StartCoroutine(DelayedFinish());
     }
 
     #region Main Methods
@@ -79,9 +80,16 @@ public class ObjectPlacementMinigame : MonoBehaviour, IMinigame
     #region Utility Methods
     private bool RectOverlapsPoint(RectTransform rectTrans1, RectTransform rectTrans2)
     {
-        Rect rect1 = new Rect(rectTrans1.localPosition.x, rectTrans1.localPosition.y, rectTrans1.rect.width, rectTrans1.rect.height);
-        Rect rect2 = new Rect(rectTrans2.localPosition.x, rectTrans2.localPosition.y, rectTrans2.rect.width/2, rectTrans2.rect.height/2);
+        Rect rect1 = new Rect(rectTrans1.localPosition.x - rectTrans1.rect.width/2, rectTrans1.localPosition.y-rectTrans1.rect.height/2, rectTrans1.rect.width, rectTrans1.rect.height);
+        Rect rect2 = new Rect(rectTrans2.localPosition.x, rectTrans2.localPosition.y, 1f, 1f);
         return rect1.Overlaps(rect2);
+    }
+
+    protected virtual IEnumerator DelayedFinish()
+    {
+        active = false;
+        yield return new WaitForSeconds(2f);
+        Finish();
     }
     #endregion
 }
