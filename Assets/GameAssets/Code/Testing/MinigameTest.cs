@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MinigameTest : MonoBehaviour
 {
-    [SerializeField] private ObjectPlacementMinigame minigame;
+    [SerializeField] private ObjectPlacementMinigameTest minigame;
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     void Start()

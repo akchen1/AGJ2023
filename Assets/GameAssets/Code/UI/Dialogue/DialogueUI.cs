@@ -10,8 +10,10 @@ public class DialogueUI : MonoBehaviour
 {
     [SerializeField] private GameObject dialoguePanel;  // Highest level panel that contains Dialogue System UI
     [SerializeField] private TMP_Text dialogueText; // Dialogue text to change
+    [SerializeField] private TMP_Text dialogueName;
     [SerializeField] private Transform dialogueOptionParent;    // Parent to instantiate dialogue options to
     [SerializeField] private DialogueOptionUI dialogueOptionPrefab; // Dialogue option prefab
+    [SerializeField] private GameObject nextDialogueIcon;
 
     private List<DialogueOptionUI> dialogueOptions = new List<DialogueOptionUI>(); // Stores instantiated dialogue options
 
@@ -71,12 +73,17 @@ public class DialogueUI : MonoBehaviour
 
         // Only instantiate dialogue options if of type multichoice
         if (dialogue.DialogueType == DS.Enumerations.DSDialogueType.MultipleChoice)
+        {
             CreateDialogueOptions(dialogue.Choices);
+            
+        }
+        nextDialogueIcon.SetActive(dialogue.DialogueType == DS.Enumerations.DSDialogueType.SingleChoice);
     }
 
     private void SetDialogueText(DSDialogueSO dialogue)
     {
         dialogueText.text = dialogue.Text;
+        dialogueName.text = dialogue.Character.CharacterName;
     }
 
     private void CreateDialogueOptions(List<DSDialogueChoiceData> choices)

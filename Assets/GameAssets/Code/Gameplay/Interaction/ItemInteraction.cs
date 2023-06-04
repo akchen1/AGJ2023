@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandler
+public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandler, IBeginDragHandler, IEndDragHandler
 {
     [SerializeField] private InventoryItem item;
     [SerializeField] private bool destroyOnInteract = false;
+    [SerializeField] private bool allowDragClick = false;
+
+    private bool dragging = false;
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
@@ -17,8 +20,19 @@ public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandle
             Destroy(this.gameObject);
     }
 
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        dragging = true;
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        dragging = false;
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (!allowDragClick && dragging) return;
         Interact();
     }
 }

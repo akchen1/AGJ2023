@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabbddd164ab042e29b24f33ca0c86c0, type: 3}
+  m_Name: SS7LRx8A
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: SS7LRx8A
+  <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+  <Item>k__BackingField: {fileID: 0}
+  <HasSceneTransition>k__BackingField: 0
+  <NextSceneName>k__BackingField: 
+  <AudioClip>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: Just like old times. Not so bad, right, Leigh?
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Agree with Badu
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a6e3e0f0d166a3a4fa16bf997ad18ffe, type: 2}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
+  - <Text>k__BackingField: Be neutral
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 713de0738df7ae240aa65122da940a08, type: 2}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
+  - <Text>k__BackingField: Disagree with Badu
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 25604a7e2662d134eb73a80bd853f9cd, type: 2}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
+  <DialogueType>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0
