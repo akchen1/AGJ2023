@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BarSliderUI : MonoBehaviour
@@ -10,8 +8,10 @@ public class BarSliderUI : MonoBehaviour
     [SerializeField] private bool horizontal;
     [SerializeField] private bool vertical;
 
-    [SerializeField] [Range(0f, 2f)] private float verticalBarSpeed;
-    [SerializeField] [Range(0f, 2f)] private float horizontalBarSpeed;
+    [field: SerializeField] [Range(0f, 2f)] public float VerticalBarSpeed = 1f;
+    [field: SerializeField] [Range(0f, 2f)] public float HorizontalBarSpeed = 1f;
+
+    public bool Active = true;
 
     private float height;
     private float width;
@@ -27,6 +27,7 @@ public class BarSliderUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!Active) return;
         Oscillate();
     }
 
@@ -35,6 +36,7 @@ public class BarSliderUI : MonoBehaviour
         Vector2 scaled01 = sliderDisplacement;
         scaled01.x = (sliderDisplacement.x + width) / (width * 2f);
         scaled01.y = (sliderDisplacement.y + height) / (height * 2f);
+        Debug.Log(scaled01);
         return scaled01;
     }
 
@@ -43,17 +45,17 @@ public class BarSliderUI : MonoBehaviour
         Vector2 displacement = Vector2.zero;
         if (horizontal)
         {
-            float tx = GetOscillationTime(horizontalBarSpeed);
+            float tx = GetOscillationTime(HorizontalBarSpeed);
             displacement.x += GetPositonDisplacement(width, tx);
         }
 
         if (vertical)
         {
-            float ty = GetOscillationTime(verticalBarSpeed);
+            float ty = GetOscillationTime(VerticalBarSpeed);
             displacement.y += GetPositonDisplacement(height, ty);
         }
         sliderDisplacement = displacement;
-        slider.position = bar.rect.position + displacement;
+        slider.localPosition = bar.transform.localPosition + (Vector3)displacement;
     }
 
     private float GetOscillationTime(float speed)
