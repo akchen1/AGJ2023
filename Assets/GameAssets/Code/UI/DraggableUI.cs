@@ -12,6 +12,8 @@ public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     [SerializeField] private Collider2D bounds;
     private Vector3 lastPositionInBounds;
 
+    private Vector3 mouseOffset;
+
     private void Awake()
     {
         RectTransform = GetComponent<RectTransform>();
@@ -25,6 +27,8 @@ public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+
+        mouseOffset = transform.position - (Vector3)eventData.position;
         SetDraggedPosition(eventData);
         Grabbing = true;
         transform.SetAsLastSibling();
@@ -44,7 +48,7 @@ public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         Vector3 globalMousePos;
         if (RectTransformUtility.ScreenPointToWorldPointInRectangle(RectTransform, data.position, data.pressEventCamera, out globalMousePos))
         {
-            RectTransform.position = globalMousePos;
+            RectTransform.position = globalMousePos + mouseOffset;
         }
     }
 
