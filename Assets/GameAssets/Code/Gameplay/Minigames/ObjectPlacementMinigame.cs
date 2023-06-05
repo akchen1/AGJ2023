@@ -59,21 +59,15 @@ public class ObjectPlacementMinigame : MonoBehaviour, IMinigame
     #region Main Methods
     private bool CheckEndCondition()
     {
-        bool isEnd = true;
         for (int i = 0; i < objectPieces.Count; i++)
         {
             ObjectPlacementPieceUI piece = objectPieces[i];
-            RectTransform target = piece.TargetTransform;
-            if (piece.Grabbing || !RectOverlapsPoint(target, piece.RectTransform))
+            if (!piece.IsInTargetPosition)
             {
-                isEnd = false;
-                continue;
+                return false;
             }
-
-            if (snapping)
-                piece.RectTransform.position = target.position;
         }
-        return isEnd;
+        return true;
     }
     #endregion
 
