@@ -5,8 +5,12 @@ using UnityEngine;
 public class LightItUpMinigame : MonoBehaviour, IMinigame
 {
     [SerializeField] private List<InventoryItem> requiredItems;
+    [SerializeField] private List<InventoryItem> endMinigameItems; // Items to give the player upon finishing the minigame
     [SerializeField] private GameObject LightItUpUI;
     [SerializeField] private Candle candle;
+
+
+
     private bool active = false;
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
@@ -14,6 +18,7 @@ public class LightItUpMinigame : MonoBehaviour, IMinigame
     {
         active = false;
         LightItUpUI.SetActive(false);
+        HandleInventoryEvents();
         eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
     }
 
@@ -35,6 +40,19 @@ public class LightItUpMinigame : MonoBehaviour, IMinigame
         {
             StartCoroutine(DelayedFinish());
             active = false;
+        }
+    }
+
+    private void HandleInventoryEvents()
+    {
+        foreach (InventoryItem item in endMinigameItems)
+        {
+            eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(item));
+        }
+
+        foreach (InventoryItem item in requiredItems)
+        {
+            eventBrokerComponent.Publish(this, new InventoryEvents.RemoveItem(item));
         }
     }
 

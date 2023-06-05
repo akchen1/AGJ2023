@@ -19,10 +19,10 @@ public class ObjectPlacementMinigame : MonoBehaviour, IMinigame
     {
         if (requiredItem == null) return true;
         bool canStart = false;
-        eventBrokerComponent.Publish(this, new InventoryEvents.HasItem(requiredItem, callback =>
+        eventBrokerComponent.Publish(this, new InventoryEvents.HasItem(callback =>
         {
             canStart = callback;
-        }));
+        }, requiredItem));
         
         return canStart;
     }
