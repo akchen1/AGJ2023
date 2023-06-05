@@ -25,12 +25,32 @@ public class InventoryEvents
 
 	public class HasItem
 	{
-		public readonly InventoryItem Item;
+		public readonly InventoryItem[] Item;
 		public Action<bool> Callback;
-		public HasItem(InventoryItem item, Action<bool> callback) 
+		public HasItem(Action<bool> callback, params InventoryItem[] item) 
 		{
 			Item = item;
 			Callback = callback;
+		}
+	}
+
+	public class SelectItem
+	{
+		public readonly InventoryItem Item;
+		public SelectItem(InventoryItem item)
+		{
+			Item = item;
+		}
+	}
+
+	public class DragCombineItem
+	{
+		public readonly InventoryItem Item1;
+		public readonly InventoryItem Item2;
+		public DragCombineItem(InventoryItem item1, InventoryItem item2)
+		{
+			Item1 = item1;
+			Item2 = item2;
 		}
 	}
 }

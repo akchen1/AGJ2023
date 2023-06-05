@@ -83,7 +83,7 @@ public class DialogueUI : MonoBehaviour
     private void SetDialogueText(DSDialogueSO dialogue)
     {
         dialogueText.text = dialogue.Text;
-        dialogueName.text = dialogue.Character.CharacterName;
+        dialogueName.text = dialogue.Character == null ? "" : dialogue.Character.CharacterName;
     }
 
     private void CreateDialogueOptions(List<DSDialogueChoiceData> choices)

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05fd0956a99431b4697b68af31be1afb, type: 3}
-  m_Name: Candle
+  m_Name: Candle (Lit)
   m_EditorClassIdentifier: 
-  <ItemName>k__BackingField: Candle
-  <ItemIcon>k__BackingField: {fileID: -1434383729, guid: 6db616208fb2fbe459521591ada0ab5e, type: 3}
-  <ItemDescription>k__BackingField: A simple white wax candle, previously unused.
-  <InventoryInteraction>k__BackingField: {fileID: 11400000, guid: 56120df96504a8f4d90a2bceaeafa5d7, type: 2}
+  <ItemName>k__BackingField: Candle (Lit)
+  <ItemIcon>k__BackingField: {fileID: 0}
+  <ItemDescription>k__BackingField: HOT!
+  <InventoryInteraction>k__BackingField: {fileID: 0}

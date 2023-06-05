@@ -16,3 +16,4 @@ MonoBehaviour:
   <ItemIcon>k__BackingField: {fileID: 0}
   <ItemDescription>k__BackingField: A simple glass vial, useful for holding small
     amounts of liquid
+  <InventoryInteraction>k__BackingField: {fileID: 11400000, guid: fd0d04b4496f8c1429b961921b6678fb, type: 2}

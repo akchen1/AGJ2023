@@ -15,11 +15,13 @@ public class InventoryUI : MonoBehaviour
     private void OnEnable()
     {
         eventBrokerComponent.Subscribe<InventoryEvents.AddItem>(AddItemHandler);
+        eventBrokerComponent.Subscribe<InventoryEvents.RemoveItem>(RemoveItemHandler);
     }
 
     private void OnDisable()
     {
         eventBrokerComponent.Unsubscribe<InventoryEvents.AddItem>(AddItemHandler);
+        eventBrokerComponent.Unsubscribe<InventoryEvents.RemoveItem>(RemoveItemHandler);
     }
 
     private void AddItemHandler(BrokerEvent<InventoryEvents.AddItem> inEvent)
@@ -27,5 +29,18 @@ public class InventoryUI : MonoBehaviour
         InventoryItemUI itemUI = Instantiate(inventoryItemPrefab, inventoryItemParent);
         itemUI.Initialize(inEvent.Payload.Item);
         inventoryItemUIs.Add(itemUI);
+    }
+
+    private void RemoveItemHandler(BrokerEvent<InventoryEvents.RemoveItem> inEvent)
+    {
+        foreach (InventoryItemUI item in inventoryItemUIs)
+        {
+            if (item.inventoryItem == inEvent.Payload.Item)
+            {
+                inventoryItemUIs.Remove(item);
+                Destroy(item.gameObject);
+                return;
+            }
+        }
     }
 }

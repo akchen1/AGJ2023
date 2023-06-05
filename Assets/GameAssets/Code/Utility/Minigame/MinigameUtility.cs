@@ -10,10 +10,10 @@ public static class MinigameUtility
         foreach (InventoryItem item in requiredItems)
         {
             bool hasItem = true;
-            eventBrokerComponent.Publish(sender, new InventoryEvents.HasItem(item, callback =>
+            eventBrokerComponent.Publish(sender, new InventoryEvents.HasItem(callback =>
             {
                 hasItem = callback;
-            }));
+            }, item));
             if (!hasItem)
             {
                 return false;

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea47c1f477b145429f4c0ef2196ffdc, type: 3}
+  m_Name: Candle+Matchbox
+  m_EditorClassIdentifier: 
+  <RequiredItemInteraction>k__BackingField: 1
+  <RequiredItems>k__BackingField:
+  - {fileID: 11400000, guid: 48d9cccea6a175041bd8d4146a3ebbb5, type: 2}
+  - {fileID: 11400000, guid: f136711b4bf992e4a958c4162dc0a4f9, type: 2}
+  minigame: {fileID: 3787382044068407691, guid: a91c05f4f10b3994981118d0148c77da, type: 3}
+  <RequiredSceneInteraction>k__BackingField: 0
+  selectedSceneName: Prologue - Scene 3

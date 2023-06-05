@@ -9,24 +9,6 @@ public class DialogueInteraction : MonoBehaviour, IInteractable, IPointerClickHa
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
-    private bool active;
-
-    private void OnEnable()
-    {
-        eventBrokerComponent.Subscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
-    }
-
-    private void OnDisable()
-    {
-        eventBrokerComponent.Unsubscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
-    }
-
-    private void DialogueFinishHandler(BrokerEvent<DialogueEvents.DialogueFinish> obj)
-    {
-        if (!active) return;
-        eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
-    }
-
     public void Interact()
     {
         // Check first if there's another interaction event happening
@@ -35,7 +17,6 @@ public class DialogueInteraction : MonoBehaviour, IInteractable, IPointerClickHa
             if (valid)
             {
                 eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(dialogue));
-                active = true;
             }
         }));
     }
