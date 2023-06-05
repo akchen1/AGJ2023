@@ -28,6 +28,9 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 565, y: 136}
@@ -44,6 +47,9 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 952, y: 136}
@@ -59,6 +65,9 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1401, y: 136}
@@ -75,6 +84,9 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1769, y: 136}
@@ -90,6 +102,9 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 99, y: 424}
@@ -105,6 +120,9 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 539, y: 424}
@@ -120,12 +138,15 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 925, y: 424}
   - <ID>k__BackingField: 6224a6f8-6b08-4f4b-8eef-56f8f4e22231
     <Name>k__BackingField: PS3x9
-    <Text>k__BackingField: Catch you some other time, ok?
+    <Text>k__BackingField: '*whispering* Catch you some other time, ok?'
     <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
     <Item>k__BackingField: {fileID: 0}
     <HasSceneTransition>k__BackingField: 0
@@ -135,6 +156,9 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1319, y: 424}
@@ -150,6 +174,9 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 99, y: 710}
@@ -165,6 +192,9 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 482, y: 710}
@@ -180,6 +210,9 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 859, y: 710}
@@ -195,6 +228,9 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1226, y: 710}
@@ -211,6 +247,9 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 99, y: 1010}
@@ -227,6 +266,9 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 99, y: 136}

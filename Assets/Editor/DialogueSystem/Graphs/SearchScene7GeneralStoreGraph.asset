@@ -13,9 +13,116 @@ MonoBehaviour:
   m_Name: SearchScene7GeneralStoreGraph
   m_EditorClassIdentifier: 
   <FileName>k__BackingField: SearchScene7GeneralStore
-  <Groups>k__BackingField: []
-  <Nodes>k__BackingField: []
-  <OldGroupNames>k__BackingField: []
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: 8c9928f8-03c4-4706-ad61-21d41cc69309
+    <Name>k__BackingField: CharacterInteractions
+    <Position>k__BackingField: {x: -616, y: -55}
+  - <ID>k__BackingField: d11e32a9-c33e-4cad-9701-19952c12be84
+    <Name>k__BackingField: Intro
+    <Position>k__BackingField: {x: -615, y: 344}
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: b5f9455c-0896-4b33-a216-d9547e201759
+    <Name>k__BackingField: SS7GSxLeigh
+    <Text>k__BackingField: I never knew there were this many types of candy!
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8c9928f8-03c4-4706-ad61-21d41cc69309
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -591, y: 4}
+  - <ID>k__BackingField: e8ee237d-c957-4eff-b33e-7dac81bb6501
+    <Name>k__BackingField: SS7GSxBadu
+    <Text>k__BackingField: "*buzz* Something in here must make fire\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8c9928f8-03c4-4706-ad61-21d41cc69309
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -200, y: 4}
+  - <ID>k__BackingField: ca91ef09-3329-402a-924b-6aecc3eea07b
+    <Name>k__BackingField: SS7GSxMaeve
+    <Text>k__BackingField: Here, let me show you how it's done.
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8c9928f8-03c4-4706-ad61-21d41cc69309
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 180, y: 4}
+  - <ID>k__BackingField: 22c50156-04eb-4700-af00-991199e210ba
+    <Name>k__BackingField: SS7GSx2
+    <Text>k__BackingField: "Th- Thank you\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: d11e32a9-c33e-4cad-9701-19952c12be84
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -218, y: 403}
+  - <ID>k__BackingField: 0bb99326-1da4-4a53-9eab-fd1e89e46f51
+    <Name>k__BackingField: SS7GSx1
+    <Text>k__BackingField: Hello, welcome! Let me know if you need anything!
+    <Character>k__BackingField: {fileID: 11400000, guid: e530b48982dded843b15203685451451, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 22c50156-04eb-4700-af00-991199e210ba
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: d11e32a9-c33e-4cad-9701-19952c12be84
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -590, y: 403}
+  <OldGroupNames>k__BackingField:
+  - CharacterInteractions
+  - Intro
   <OldUngroupedNodeNames>k__BackingField: []
   <OldGroupedNodeNames>k__BackingField:
-    list: []
+    list:
+    - Key: CharacterInteractions
+      Value:
+      - SS7GSxLeigh
+      - SS7GSxBadu
+      - SS7GSxMaeve
+    - Key: Intro
+      Value:
+      - SS7GSx2
+      - SS7GSx1

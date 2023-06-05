@@ -24,5 +24,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: a322566a0eea6134398a1ce515e7bac5, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 1

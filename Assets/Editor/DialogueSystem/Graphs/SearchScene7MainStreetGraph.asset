@@ -13,9 +13,422 @@ MonoBehaviour:
   m_Name: SearchScene7MainStreetGraph
   m_EditorClassIdentifier: 
   <FileName>k__BackingField: SearchScene7MainStreet
-  <Groups>k__BackingField: []
-  <Nodes>k__BackingField: []
-  <OldGroupNames>k__BackingField: []
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <Name>k__BackingField: SanityInteraction
+    <Position>k__BackingField: {x: 1831, y: 5892}
+  - <ID>k__BackingField: d72ef6f5-874d-4d17-b092-5337a560e206
+    <Name>k__BackingField: CharacterInteraction
+    <Position>k__BackingField: {x: 1760.0001, y: 7231.0005}
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 9fcb7b66-6ae4-441b-98c8-0c31bbdc0341
+    <Name>k__BackingField: SS7MSx6B
+    <Text>k__BackingField: "No, that doesn\u2019t feel right."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 8ceeda5b-a136-4131-918f-675429c5c9b7
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4461, y: 6250}
+  - <ID>k__BackingField: 6cd22637-afd9-44f2-b9e6-7da022ee92d7
+    <Name>k__BackingField: SS7MSx9A
+    <Text>k__BackingField: I would stuff as much as I could.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 32a60eec-ab96-429e-88b3-edb82c1a76f0
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5594, y: 5951}
+  - <ID>k__BackingField: 281a11be-2cc8-44c1-9399-30930a6a43ce
+    <Name>k__BackingField: SS7MSx7
+    <Text>k__BackingField: "That\u2019s the spirit!"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: The more the merrier
+      <NodeID>k__BackingField: 6cd22637-afd9-44f2-b9e6-7da022ee92d7
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: Not too much, though
+      <NodeID>k__BackingField: 624f9105-e001-4080-91f8-28fd63771e3d
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 5101, y: 5966}
+  - <ID>k__BackingField: 32a60eec-ab96-429e-88b3-edb82c1a76f0
+    <Name>k__BackingField: SS7MSx11
+    <Text>k__BackingField: "Bet you couldn\u2019t beat me!"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5997, y: 5951}
+  - <ID>k__BackingField: 624f9105-e001-4080-91f8-28fd63771e3d
+    <Name>k__BackingField: SS7MSx9B
+    <Text>k__BackingField: Maybe not too much, though.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: d02924a7-6d76-4b75-8e25-4eca8f719f28
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5594, y: 6256}
+  - <ID>k__BackingField: d02924a7-6d76-4b75-8e25-4eca8f719f28
+    <Name>k__BackingField: SS7MSx12
+    <Text>k__BackingField: Psh, lame. Why not go for gold?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5997, y: 6256}
+  - <ID>k__BackingField: 98b321fa-2e24-4d58-ae8f-9b7bf89560b4
+    <Name>k__BackingField: SS7MSx10A
+    <Text>k__BackingField: "\u2026maybe a piece or two wouldn\u2019t be so bad after
+      all."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 11d59399-d037-4de0-bd22-899f25581b68
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5470, y: 6584}
+  - <ID>k__BackingField: 11d59399-d037-4de0-bd22-899f25581b68
+    <Name>k__BackingField: SS7MSx13
+    <Text>k__BackingField: "*laughs* Ooo, I\u2019ll keep my eye on you."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5894, y: 6584}
+  - <ID>k__BackingField: 8ceeda5b-a136-4131-918f-675429c5c9b7
+    <Name>k__BackingField: SS7MSx8
+    <Text>k__BackingField: Fine, suit yourself. More for the rest of us.
+    <Character>k__BackingField: {fileID: 0}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: "Although\u2026"
+      <NodeID>k__BackingField: 98b321fa-2e24-4d58-ae8f-9b7bf89560b4
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: Leave it be
+      <NodeID>k__BackingField: 914d57fd-48eb-4f37-9da4-47923f7c5095
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 5079, y: 6634}
+  - <ID>k__BackingField: 914d57fd-48eb-4f37-9da4-47923f7c5095
+    <Name>k__BackingField: SS7MSx10B
+    <Text>k__BackingField: Just not for me, I guess.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 4aa7889d-f644-472d-bb6f-cd54fc129fd2
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5484, y: 6889}
+  - <ID>k__BackingField: 4aa7889d-f644-472d-bb6f-cd54fc129fd2
+    <Name>k__BackingField: SS7MSx14
+    <Text>k__BackingField: '*no longer listening*'
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 5894, y: 6889}
+  - <ID>k__BackingField: a7e440cd-8123-4aaa-a4ca-500efad0dc09
+    <Name>k__BackingField: SS7MSx6A
+    <Text>k__BackingField: "Sure, you\u2019re right. Who\u2019s gonna know?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 281a11be-2cc8-44c1-9399-30930a6a43ce
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4509, y: 5951}
+  - <ID>k__BackingField: 4e04c716-32ce-4101-8d7d-be00f965c152
+    <Name>k__BackingField: SS7MSx1
+    <Text>k__BackingField: Hey, Leigh, you ever been to the store and tried to see
+      how much stuff you can fit in your pockets?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: fc5e4cbe-7a45-4525-921b-a5306fab7a7b
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1856, y: 6069}
+  - <ID>k__BackingField: fc5e4cbe-7a45-4525-921b-a5306fab7a7b
+    <Name>k__BackingField: SS7MSx2
+    <Text>k__BackingField: Like, if you forgot a shopping bag?
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: e155eb25-e4f2-4bb8-ab73-9c78ba537cc8
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2526, y: 6069}
+  - <ID>k__BackingField: e155eb25-e4f2-4bb8-ab73-9c78ba537cc8
+    <Name>k__BackingField: SS7MSx3
+    <Text>k__BackingField: Shopping bag? No, I mean like candy and chocolate bars
+      and toys and stuff.
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 0bb2deea-75a9-45e8-b8cd-45edab19ea60
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2906, y: 6069}
+  - <ID>k__BackingField: 0bb2deea-75a9-45e8-b8cd-45edab19ea60
+    <Name>k__BackingField: SS7MSx4
+    <Text>k__BackingField: "Like\u2026 stealing them?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: adadf6bb-0e12-4d50-aee4-d1b248365cdf
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3437, y: 6069}
+  - <ID>k__BackingField: adadf6bb-0e12-4d50-aee4-d1b248365cdf
+    <Name>k__BackingField: SS7MSx5
+    <Text>k__BackingField: "Oh c\u2019mon, like anyone is gonna notice a couple missing
+      candy bars."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Agree with Maeve
+      <NodeID>k__BackingField: a7e440cd-8123-4aaa-a4ca-500efad0dc09
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: Turn Maeve down
+      <NodeID>k__BackingField: 9fcb7b66-6ae4-441b-98c8-0c31bbdc0341
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 3850, y: 6059}
+  - <ID>k__BackingField: eb8d57ca-816d-4203-b8a5-bc9d00ddb7f4
+    <Name>k__BackingField: SS7MSxLeigh
+    <Text>k__BackingField: It feels strange to be able to walk around whenever I
+      want now.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: d72ef6f5-874d-4d17-b092-5337a560e206
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1785, y: 7290}
+  - <ID>k__BackingField: e306a5ed-ea90-4a4c-978d-f9424d3e297a
+    <Name>k__BackingField: SS7MSxMaeve
+    <Text>k__BackingField: "You know I\u2019ve got your back. It\u2019s nice out
+      today."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: d72ef6f5-874d-4d17-b092-5337a560e206
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2241, y: 7290}
+  - <ID>k__BackingField: 3a6104e3-d152-45e3-9b65-cde1116ad452
+    <Name>k__BackingField: SS7MSxBadu
+    <Text>k__BackingField: '*buzz*'
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: d72ef6f5-874d-4d17-b092-5337a560e206
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2624, y: 7290}
+  <OldGroupNames>k__BackingField:
+  - SanityInteraction
+  - CharacterInteraction
   <OldUngroupedNodeNames>k__BackingField: []
   <OldGroupedNodeNames>k__BackingField:
-    list: []
+    list:
+    - Key: SanityInteraction
+      Value:
+      - SS7MSx6B
+      - SS7MSx9A
+      - SS7MSx7
+      - SS7MSx11
+      - SS7MSx9B
+      - SS7MSx12
+      - SS7MSx10A
+      - SS7MSx13
+      - SS7MSx8
+      - SS7MSx10B
+      - SS7MSx14
+      - SS7MSx6A
+      - SS7MSx1
+      - SS7MSx2
+      - SS7MSx3
+      - SS7MSx4
+      - SS7MSx5
+    - Key: CharacterInteraction
+      Value:
+      - SS7MSxLeigh
+      - SS7MSxMaeve
+      - SS7MSxBadu

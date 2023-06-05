@@ -16,13 +16,19 @@ MonoBehaviour:
   <Groups>k__BackingField:
   - <ID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
     <Name>k__BackingField: Interactables
-    <Position>k__BackingField: {x: 3027.0002, y: 3088.0002}
+    <Position>k__BackingField: {x: 3027, y: 3088}
   - <ID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <Name>k__BackingField: SanityDecision
     <Position>k__BackingField: {x: 2936, y: 4149}
   - <ID>k__BackingField: 58565f16-ce22-4e54-a546-794895461c7f
     <Name>k__BackingField: SanityResult
     <Position>k__BackingField: {x: 2916, y: 5276}
+  - <ID>k__BackingField: 24434576-89ba-48ff-abda-146dbf3a7c23
+    <Name>k__BackingField: CharacterDialogue
+    <Position>k__BackingField: {x: 2915, y: 6319}
+  - <ID>k__BackingField: 505461a0-63dc-49df-bf12-d563f6d4f79f
+    <Name>k__BackingField: Gem
+    <Position>k__BackingField: {x: 2938, y: 7034}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 1b630c78-36b3-47d7-aed9-309aaf840eed
     <Name>k__BackingField: SS7BxWorktable
@@ -39,6 +45,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3052, y: 3147}
@@ -57,6 +64,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3052, y: 3765}
@@ -75,6 +83,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 483a232c-6a2a-4100-959e-7e6779e6a307
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5721, y: 4449}
@@ -92,6 +101,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: fbf85582-30f5-4a20-aa07-67bcf73673ef
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2961, y: 4449}
@@ -109,6 +119,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 97f582c0-bce7-4a28-8a00-4e79213b7b87
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3352, y: 4449}
@@ -127,6 +138,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: f9bdbf86-3e96-4368-bf62-eec43ebdf6d3
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3750, y: 4449}
@@ -144,6 +156,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 4b1dce8a-502e-45cf-9290-40ae3d3dbb47
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4258, y: 4449}
@@ -162,6 +175,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 4487b757-cb92-4049-aeb9-452de0124f56
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5018, y: 4449}
@@ -179,6 +193,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 87913b9f-2596-4c8f-9d86-9db71f39b39f
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 6162, y: 4449}
@@ -197,6 +212,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 86e8d71d-06db-4663-a697-2a9598cc985f
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 6548, y: 4449}
@@ -215,6 +231,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: cb03dd47-9845-4c11-823b-f3e4e6bcb8a7
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 6982, y: 4449}
@@ -228,19 +245,21 @@ MonoBehaviour:
     <NextSceneName>k__BackingField: 
     <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
-    - <Text>k__BackingField: I mean, the ritual was her idea in the first place.
+    - <Text>k__BackingField: "Agree with Badu that it should be Maeve\u2019s blood"
       <NodeID>k__BackingField: 8db471c2-67ad-4734-9808-5b13d0c912ec
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
-    - <Text>k__BackingField: "I don\u2019t really know."
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: Remain indecisive
       <NodeID>k__BackingField: 0109a87a-9375-490a-9176-1008292d4feb
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
-    - <Text>k__BackingField: "No, that doesn\u2019t seem like the right thing to
-        do."
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: Disagree with Badu
       <NodeID>k__BackingField: 5f79a130-82c8-440b-91ca-255d34f78a99
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 1
     <Position>k__BackingField: {x: 7657, y: 4449}
@@ -258,6 +277,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: c4fa2735-4201-4a79-945e-3719e2660c74
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 8312, y: 4208}
@@ -275,6 +295,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 1839dd95-8600-4ec1-b1ee-a973dc4616a3
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 8312, y: 4521}
@@ -292,6 +313,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 13b3ff6c-8099-4dcd-8687-3b0e8102d391
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 8312, y: 4834}
@@ -309,6 +331,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 8715, y: 4208}
@@ -322,19 +345,21 @@ MonoBehaviour:
     <NextSceneName>k__BackingField: 
     <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
-    - <Text>k__BackingField: I mean, the ritual was her idea in the first place.
+    - <Text>k__BackingField: Agree with Badu
       <NodeID>k__BackingField: 8db471c2-67ad-4734-9808-5b13d0c912ec
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
-    - <Text>k__BackingField: "I- I\u2019m not sure."
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: Remain indecisive
       <NodeID>k__BackingField: 6ce89321-05f4-4acc-892b-0187a8a139b8
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
-    - <Text>k__BackingField: "No, that doesn\u2019t seem like the right thing to
-        do."
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: Disagree with Badu
       <NodeID>k__BackingField: 5f79a130-82c8-440b-91ca-255d34f78a99
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 1
     <Position>k__BackingField: {x: 8730, y: 4521}
@@ -352,6 +377,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 20ec83cd-266c-48fa-b702-e523a075de76
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 9376, y: 4521}
@@ -369,6 +395,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 9763, y: 4521}
@@ -386,6 +413,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 8760, y: 4930}
@@ -403,6 +431,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3052, y: 3458}
@@ -420,6 +449,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 1af536e4-b8cf-4e75-9de4-d478a1837369
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4630, y: 4449}
@@ -437,6 +467,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 58565f16-ce22-4e54-a546-794895461c7f
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3342, y: 5967}
@@ -454,6 +485,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 8f1a1dfc-72ba-429a-b469-9eea99b76b24
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 58565f16-ce22-4e54-a546-794895461c7f
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2941, y: 5967}
@@ -471,6 +503,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 64236525-137a-4e05-9209-6c3717edce41
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 58565f16-ce22-4e54-a546-794895461c7f
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2948, y: 5335}
@@ -488,6 +521,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 9a4a5a40-979d-4188-81d6-82da098010cd
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 58565f16-ce22-4e54-a546-794895461c7f
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2948, y: 5653}
@@ -505,6 +539,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 58565f16-ce22-4e54-a546-794895461c7f
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3342, y: 5335}
@@ -522,6 +557,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 58565f16-ce22-4e54-a546-794895461c7f
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3342, y: 5653}
@@ -539,6 +575,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3568, y: 3765}
@@ -556,6 +593,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4089, y: 3455}
@@ -574,6 +612,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4075, y: 3147}
@@ -592,13 +631,144 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 34711ddd-7cfc-4fff-aa95-e748296834e6
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4089, y: 3765}
+  - <ID>k__BackingField: 3dd834db-d935-4e0f-a5c1-6311714bd277
+    <Name>k__BackingField: SS7BxLeigh
+    <Text>k__BackingField: "There\u2019s all kinds of equipment here. Surely something
+      might come in handy."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 24434576-89ba-48ff-abda-146dbf3a7c23
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2940, y: 6378}
+  - <ID>k__BackingField: ed022b36-7931-435d-93f1-16cb4e274d8e
+    <Name>k__BackingField: SS7BxBadu
+    <Text>k__BackingField: "*buzz* I wonder what\u2019s behind those books."
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 24434576-89ba-48ff-abda-146dbf3a7c23
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2941, y: 6684}
+  - <ID>k__BackingField: 4f6e5c8e-3e40-479b-b0eb-aa2409df0ba1
+    <Name>k__BackingField: SS7BxMaeve
+    <Text>k__BackingField: You know, I think my dad hid something precious in here
+      somewhere.
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 24434576-89ba-48ff-abda-146dbf3a7c23
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3329, y: 6701}
+  - <ID>k__BackingField: a345f54f-31a9-4b98-b892-2069465b3fb3
+    <Name>k__BackingField: SS7Bx18
+    <Text>k__BackingField: Aha, I knew this was in here somewhere!
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: cd341bf2-47ae-460f-90f5-af9684b536bd
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 505461a0-63dc-49df-bf12-d563f6d4f79f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2963, y: 7093}
+  - <ID>k__BackingField: cd341bf2-47ae-460f-90f5-af9684b536bd
+    <Name>k__BackingField: SS7Bx19
+    <Text>k__BackingField: "Wow, it\u2019s so sparkly."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 1f9dd790-245f-4560-82b3-cdb009d92622
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 505461a0-63dc-49df-bf12-d563f6d4f79f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3354, y: 7093}
+  - <ID>k__BackingField: 1f9dd790-245f-4560-82b3-cdb009d92622
+    <Name>k__BackingField: SS7Bx20
+    <Text>k__BackingField: I think this will do nicely.
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: ece7c45b-c347-47ba-8424-9f0436b79d6b
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 505461a0-63dc-49df-bf12-d563f6d4f79f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3728, y: 7093}
+  - <ID>k__BackingField: ece7c45b-c347-47ba-8424-9f0436b79d6b
+    <Name>k__BackingField: SS7Bx21
+    <Text>k__BackingField: '*buzzes loudly*'
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 505461a0-63dc-49df-bf12-d563f6d4f79f
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 4096, y: 7093}
   <OldGroupNames>k__BackingField:
   - Interactables
   - SanityDecision
   - SanityResult
+  - CharacterDialogue
+  - Gem
   <OldUngroupedNodeNames>k__BackingField: []
   <OldGroupedNodeNames>k__BackingField:
     list:
@@ -640,3 +810,14 @@ MonoBehaviour:
       - SS7BxIndecisive1
       - SS7BxAgree2
       - SS7BxIndecisive2
+    - Key: CharacterDialogue
+      Value:
+      - SS7BxLeigh
+      - SS7BxBadu
+      - SS7BxMaeve
+    - Key: Gem
+      Value:
+      - SS7Bx18
+      - SS7Bx19
+      - SS7Bx20
+      - SS7Bx21

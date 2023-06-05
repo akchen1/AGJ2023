@@ -10,20 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cabbddd164ab042e29b24f33ca0c86c0, type: 3}
-  m_Name: PS4xCabinetDrawers
+  m_Name: SS7MSx10A
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: PS4xCabinetDrawers
+  <DialogueName>k__BackingField: SS7MSx10A
   <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "Odds and ends my parents have collected. I can\u2019t really
-    remember them ever using any of these."
+  <Text>k__BackingField: "\u2026maybe a piece or two wouldn\u2019t be so bad after
+    all."
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4b097dceb30f8164285291b00f756fbd, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 0
-  <IsStartingDialogue>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0

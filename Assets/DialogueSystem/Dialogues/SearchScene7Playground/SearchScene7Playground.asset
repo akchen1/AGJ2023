@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b024264143c488cbee1d884c720f40, type: 3}
+  m_Name: SearchScene7Playground
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: SearchScene7Playground
+  <DialogueGroups>k__BackingField:
+    list:
+    - Key: {fileID: 11400000, guid: b3b6ded439ca76a4dad22dfd379fcd63, type: 2}
+      Value:
+      - {fileID: 11400000, guid: ea15633804c3f004ca5e131545e37907, type: 2}
+      - {fileID: 11400000, guid: 68083e73e5fb3f34ba21d9a37fe8c680, type: 2}
+      - {fileID: 11400000, guid: 855df327d767a094c94463a0eca1bddd, type: 2}
+    - Key: {fileID: 11400000, guid: c1939835893f1ce4fbfcae745932d717, type: 2}
+      Value:
+      - {fileID: 11400000, guid: d81a4f740c6426e488875c47ccac7821, type: 2}
+      - {fileID: 11400000, guid: 424896c78d828e54ba6edcc60783c5df, type: 2}
+      - {fileID: 11400000, guid: 592fa029d6f37574d9c289bcbcfdf845, type: 2}
+    - Key: {fileID: 11400000, guid: ea5511cf81932c041802c31db750f532, type: 2}
+      Value:
+      - {fileID: 11400000, guid: f9cca0f1e3004f849ba2cf2cfc2b95bd, type: 2}
+      - {fileID: 11400000, guid: 6501e24c342bb984ab1ff6c73d40d441, type: 2}
+      - {fileID: 11400000, guid: 6bf8c70515af16644ab3119492543150, type: 2}
+      - {fileID: 11400000, guid: cd35c49d7f832064898838dc20160356, type: 2}
+      - {fileID: 11400000, guid: 76dc51c01f612874da8f8ebe8791f595, type: 2}
+      - {fileID: 11400000, guid: f60dc30a46dae764e995f0ebaeccd7d9, type: 2}
+      - {fileID: 11400000, guid: ab308471426cafd40bf28ce21e78ef0a, type: 2}
+      - {fileID: 11400000, guid: 5e464a68f8dac3b46a671779ba95a9ab, type: 2}
+      - {fileID: 11400000, guid: 78500f4e87dc6a741ad122bd8c6612b9, type: 2}
+      - {fileID: 11400000, guid: 945a1afdc9e6ac442b7deed80c2b29f0, type: 2}
+      - {fileID: 11400000, guid: 64f15295d56cd1c4584bfb630bc98814, type: 2}
+      - {fileID: 11400000, guid: bf80042bc9ec97c4dbee5746db2a5e9e, type: 2}
+      - {fileID: 11400000, guid: a3078f250da85ed4bb07ed187c2227ed, type: 2}
+      - {fileID: 11400000, guid: 206d79e912541b54c8c62fda9d838532, type: 2}
+      - {fileID: 11400000, guid: 0bb24ad55286f7e46a1de21b0699fe77, type: 2}
+      - {fileID: 11400000, guid: f8a546a0b7301e74480364635cbf283f, type: 2}
+      - {fileID: 11400000, guid: cf0a164f36e2e964e985a4959e1efe01, type: 2}
+  <UngroupedDialogues>k__BackingField: []
