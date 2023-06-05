@@ -14,5 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <FileName>k__BackingField: SearchScene7MainStreet
   <DialogueGroups>k__BackingField:
-    list: []
+    list:
+    - Key: {fileID: 11400000, guid: b406a5f3028c53a48856446960429b2b, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 3ffc625c874b24e40920f91c55d21fad, type: 2}
+      - {fileID: 11400000, guid: ff9a55b8197f5914fba560cfd280d17d, type: 2}
+      - {fileID: 11400000, guid: 125db76631e447847bf7adbfcddba200, type: 2}
+      - {fileID: 11400000, guid: 1a2d7d468205dd84bb88292ecbba150e, type: 2}
+      - {fileID: 11400000, guid: db642615b34db7f469bfc01d436444d1, type: 2}
+      - {fileID: 11400000, guid: f71c431431710424fa1df40365d6a0d0, type: 2}
+      - {fileID: 11400000, guid: 4505f42a49cf0e2459528005e84398a2, type: 2}
+      - {fileID: 11400000, guid: 4b097dceb30f8164285291b00f756fbd, type: 2}
+      - {fileID: 11400000, guid: 5f1cd46859850c14493888c77a7f340d, type: 2}
+      - {fileID: 11400000, guid: f14391e823dfe8e4f90ef63599299e72, type: 2}
+      - {fileID: 11400000, guid: 2928d45fd38ba704c872afd28cfd792e, type: 2}
+      - {fileID: 11400000, guid: 438727f3b9e8c5d40a7900524345300a, type: 2}
+      - {fileID: 11400000, guid: 7a40f63ddfc2159439c74c6cef634794, type: 2}
+      - {fileID: 11400000, guid: e9b494111f10da94885696c0c41e7ab9, type: 2}
+      - {fileID: 11400000, guid: 2a5001b8bf6ab8e4d939e0c4206ecbab, type: 2}
+      - {fileID: 11400000, guid: 5134fb2564077f847ad8db58173be0c5, type: 2}
+      - {fileID: 11400000, guid: 655f85c6279ef344e9aafa07071e8063, type: 2}
+    - Key: {fileID: 11400000, guid: a3d253ab591c9b74c8a32650d8fc303c, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 5b435331649519940b6dbb947ae501fd, type: 2}
+      - {fileID: 11400000, guid: 92132ea16f0a07b4a83ed1b4e6db37ac, type: 2}
+      - {fileID: 11400000, guid: cdb5f3614f06fd1478c7ac149b93a4a8, type: 2}
   <UngroupedDialogues>k__BackingField: []

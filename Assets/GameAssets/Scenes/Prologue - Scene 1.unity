@@ -303,6 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1977186602}
+  snapping: 1
 --- !u!114 &107820926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -570,6 +571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1394310713}
+  snapping: 1
 --- !u!114 &243540629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,6 +677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1777692648}
+  snapping: 1
 --- !u!114 &313856660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,6 +886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 570611068}
+  snapping: 1
 --- !u!114 &500809623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -988,6 +992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1806627804}
+  snapping: 1
 --- !u!114 &537299297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1622,6 +1627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 577216500}
+  snapping: 1
 --- !u!114 &958963296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1932,6 +1938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1137534074}
+  snapping: 1
 --- !u!114 &1179362094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2075,6 +2082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1907150738}
+  snapping: 1
 --- !u!114 &1210793317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2292,6 +2300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 452430916}
+  snapping: 1
 --- !u!114 &1329829552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2515,6 +2524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1617643492}
+  snapping: 1
 --- !u!114 &1355486543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2756,6 +2766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1220050644}
+  snapping: 1
 --- !u!114 &1432664883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2861,6 +2872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1973969243}
+  snapping: 1
 --- !u!114 &1570845048
 MonoBehaviour:
   m_ObjectHideFlags: 0

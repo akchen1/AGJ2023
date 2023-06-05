@@ -20,17 +20,20 @@ MonoBehaviour:
   <AudioClip>k__BackingField: {fileID: 0}
   <Text>k__BackingField: Are you sure?
   <Choices>k__BackingField:
-  - <Text>k__BackingField: I mean, the ritual was her idea in the first place.
+  - <Text>k__BackingField: Agree with Badu
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 91e2f182f81215a43b113fac0e4d43f2, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
-  - <Text>k__BackingField: "I- I\u2019m not sure."
+    <SanityType>k__BackingField: 0
+  - <Text>k__BackingField: Remain indecisive
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: b3742948b04a295479d1aadcbafae716, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
-  - <Text>k__BackingField: "No, that doesn\u2019t seem like the right thing to do."
+    <SanityType>k__BackingField: 0
+  - <Text>k__BackingField: Disagree with Badu
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: d76a15c7f8f66fc4fa0b5a2bfcbf6ae7, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0

@@ -17,10 +17,14 @@ MonoBehaviour:
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
+  <AudioClip>k__BackingField: {fileID: 0}
   <Text>k__BackingField: What are you doing out there? Get back inside and do your
     chores!
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: a35f8e48d4f1e6b40b4b298346226601, type: 2}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 1

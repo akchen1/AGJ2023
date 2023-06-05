@@ -30,6 +30,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: ba601106-66c4-4ff0-b5ba-5c70fea4031e
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: -212, y: 1217}
@@ -47,6 +48,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: ed65a653-4d77-43dd-833c-07cf42bfd373
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 241, y: 1217}
@@ -65,6 +67,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: baccbd2b-4fe5-4172-829a-cddbd0330e69
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 614, y: 1217}
@@ -82,6 +85,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 75957830-de06-4f91-9660-16dd9d297826
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1231, y: 1217}
@@ -99,6 +103,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 8364e079-ea62-45b3-a857-7f2729be3e1a
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1608, y: 1217}
@@ -116,6 +121,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 51d44b84-b3ff-47ab-b0d3-5b3c3b4f3c8d
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1983, y: 1217}
@@ -133,6 +139,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 35d52364-c024-419e-917f-753ecd0b799f
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2370, y: 1217}
@@ -152,6 +159,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 5d63f873-553f-4baf-8ca6-54fccbc53898
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3979, y: 1217}
@@ -169,6 +177,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 588a07ab-0254-483c-8183-a4d9972c5903
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4648, y: 1217}
@@ -188,6 +197,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 3bd5bea7-8c20-43c1-86d2-3ef8d51f34fc
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5032, y: 1217}
@@ -205,6 +215,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: e66bb439-02eb-45c8-8df5-8c2eb7e0432b
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5719, y: 1217}
@@ -222,6 +233,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 6111, y: 1217}
@@ -240,6 +252,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 7efc261a-cdc0-46fb-baf5-20f366c22639
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: -285, y: 1551}
@@ -257,6 +270,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: d2674c5b-288f-4baa-a86d-969c3a0b27e1
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 502, y: 1551}
@@ -274,6 +288,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: ee251faa-fe50-4b14-8fd6-2b9fe8a237ab
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1258, y: 1551}
@@ -291,6 +306,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: f94e149d-06b2-4e1a-a868-c5845e2adef3
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2020, y: 1551}
@@ -308,6 +324,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2405, y: 1551}
@@ -325,6 +342,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: dfec2c76-9c60-46c1-a19a-b865380488d0
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1633, y: 1551}
@@ -342,6 +360,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 6ec6db2e-1482-4540-bccb-6f4ac129e943
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 881, y: 1551}
@@ -359,6 +378,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 6f7ebf71-b6dd-4379-9308-ab5dad295cc6
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 110, y: 1551}
@@ -376,6 +396,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 4fb48793-a94c-4b3c-b2ee-4fe67fb0e228
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: -654, y: 1551}
@@ -394,6 +415,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 3af32663-233b-4aa5-b8fd-414de5162842
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: -654, y: 1217}
@@ -412,6 +434,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 2de36016-e9de-4a52-bb9f-ceb024cda6f2
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2755, y: 1217}
@@ -430,6 +453,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 740dd3d7-03c8-4df3-b0bc-2db71b266826
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3414, y: 1217}
