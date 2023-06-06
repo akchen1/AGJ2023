@@ -110,9 +110,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f903c2eb621d8418d88f8dad81b13dc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OffSetVector: {x: 0, y: 2, z: 0}
   mask:
     serializedVersion: 2
     m_Bits: 0
   target: {fileID: 7199157781805307252}
   onlyOnClick: 1
   use2D: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64

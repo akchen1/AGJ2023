@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 05778f52f35e81b4c91075c62045e9a4
+guid: 8f50dfb62daa93649ad08232e6687150
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,8 +45,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 7
-  spritePivot: {x: 0.5, y: 0}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -67,10 +67,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,30 +102,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -141,61 +117,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: play_0
+      name: frontidle_0
       rect:
         serializedVersion: 2
-<<<<<<< HEAD:Assets/GameAssets/Art/Sprites/Characters/Leigh/play.png.meta
-        x: 18
-        y: 16
-        width: 356
-        height: 569
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-=======
         x: 0
         y: 0
         width: 360
         height: 800
       alignment: 9
       pivot: {x: 0.5, y: 0.1}
->>>>>>> origin:Assets/GameAssets/Art/Sprites/backidle.png.meta
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed7ad219763ebd8449d72ca2167c1eaf
-      internalID: -1292229756
+      spriteID: 4ee4e4289eea5ce43afe13ee0a9b7067
+      internalID: 1781468050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: play_1
+      name: frontidle_1
       rect:
         serializedVersion: 2
-<<<<<<< HEAD:Assets/GameAssets/Art/Sprites/Characters/Leigh/play.png.meta
-        x: 406
-        y: 15
-        width: 355
-        height: 567
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-=======
         x: 360
         y: 0
         width: 360
         height: 800
       alignment: 9
       pivot: {x: 0.5, y: 0.1}
->>>>>>> origin:Assets/GameAssets/Art/Sprites/backidle.png.meta
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68c2eef1b08273b4aad35fd2487b5aae
-      internalID: 761066539
+      spriteID: 8fa5e6b36eb1b874eb6f16a26199cd01
+      internalID: -363209234
       vertices: []
       indices: 
       edges: []
@@ -211,8 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      play_0: -1292229756
-      play_1: 761066539
+      frontidle_0: 1781468050
+      frontidle_1: -363209234
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
