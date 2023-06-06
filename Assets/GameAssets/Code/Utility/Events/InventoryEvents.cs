@@ -7,19 +7,19 @@ public class InventoryEvents
 {
 	public class AddItem
 	{
-		public readonly InventoryItem Item;
-		public AddItem(InventoryItem item)
+		public readonly InventoryItem[] Items;
+		public AddItem(params InventoryItem[] items)
 		{
-			Item = item;
+			Items = items;
 		}
 	}
 
 	public class RemoveItem
 	{
-		public readonly InventoryItem Item;
-		public RemoveItem(InventoryItem item)
+		public readonly InventoryItem[] Items;
+		public RemoveItem(params InventoryItem[] items)
 		{
-			Item = item;
+			Items = items;
 		}
 	}
 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public RectTransform RectTransform { get; private set; }
-    public bool Grabbing { get; private set; }
+    public bool Grabbing { get; set; }
 
     [SerializeField] private bool keepInBounds;
     [SerializeField] private Collider2D bounds;

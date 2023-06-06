@@ -45,15 +45,8 @@ public class LightItUpMinigame : MonoBehaviour, IMinigame
 
     private void HandleInventoryEvents()
     {
-        foreach (InventoryItem item in endMinigameItems)
-        {
-            eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(item));
-        }
-
-        foreach (InventoryItem item in requiredItems)
-        {
-            eventBrokerComponent.Publish(this, new InventoryEvents.RemoveItem(item));
-        }
+        eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(endMinigameItems.ToArray()));
+        eventBrokerComponent.Publish(this, new InventoryEvents.RemoveItem(requiredItems.ToArray()));
     }
 
     private IEnumerator DelayedFinish()
