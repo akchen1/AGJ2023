@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cabbddd164ab042e29b24f33ca0c86c0, type: 3}
-  m_Name: PS2x7
+  m_Name: PS2x13A
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: PS2x7
-  <Character>k__BackingField: {fileID: 11400000, guid: 490d5d6ce57886a4c80a8057c06ad4a6, type: 2}
+  <DialogueName>k__BackingField: PS2x13A
+  <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: What are you doing out there? Get back inside and do your
-    chores!
+  <Text>k__BackingField: "Don\u2019t worry, Badu I know you never meant to hurt it. "
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a35f8e48d4f1e6b40b4b298346226601, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 832bcc18853442f4fac40e03b9b778d4, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

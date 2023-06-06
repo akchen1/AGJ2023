@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cabbddd164ab042e29b24f33ca0c86c0, type: 3}
-  m_Name: PS2x13
+  m_Name: PS2x3A
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: PS2x13
-  <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+  <DialogueName>k__BackingField: PS2x3A
+  <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "Don\u2019t worry, Badu I know you never meant to hurt it.
-    You\u2019re just looking out for me."
+  <Text>k__BackingField: "They don\u2019t understand you like I do, Leigh. "
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: d8852163f017cb94a9c9fb9d73e7802d, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1eae3d3b55bd45346b5e804e64679c41, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
