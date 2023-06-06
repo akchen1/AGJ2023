@@ -53,4 +53,15 @@ MonoBehaviour:
       - {fileID: 11400000, guid: e5a5eae8f14ac114dabb9b6c12ab11b8, type: 2}
       - {fileID: 11400000, guid: 9a8f92904488e6d4182be5fd24546744, type: 2}
       - {fileID: 11400000, guid: af28d1fda60ec6641bc44f8d8e2d0016, type: 2}
+    - Key: {fileID: 11400000, guid: 2d01995e841d9354c8645352ccb586bb, type: 2}
+      Value:
+      - {fileID: 11400000, guid: cf18a118b8907af42b6b9af6dab62f06, type: 2}
+      - {fileID: 11400000, guid: b85b62091ac603c4f88e1715c4f1d46e, type: 2}
+      - {fileID: 11400000, guid: 3bb51d64da31ee94daacdab4852f9996, type: 2}
+    - Key: {fileID: 11400000, guid: 56fcff31db60cd9418fb4407f0613444, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 2ccf1786782eae141bc22dd43ea5052d, type: 2}
+      - {fileID: 11400000, guid: 6af549d48d2a4ec43a5a070bde2195e2, type: 2}
+      - {fileID: 11400000, guid: c100eebf6f9ab004f86bf3b8ec81a3b1, type: 2}
+      - {fileID: 11400000, guid: a263caa02432da44e9639542f4a2e40f, type: 2}
   <UngroupedDialogues>k__BackingField: []

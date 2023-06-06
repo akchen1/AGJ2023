@@ -19,7 +19,7 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 208, y: -189}
   - <ID>k__BackingField: 25892ddf-c434-46c7-9eb5-eda9857882b8
     <Name>k__BackingField: Part2
-    <Position>k__BackingField: {x: 208, y: 1432}
+    <Position>k__BackingField: {x: 208.00003, y: 1432}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 4672fcc9-520e-4c04-956a-b6ab9293361a
     <Name>k__BackingField: PS2x1
@@ -30,9 +30,13 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 233, y: -130}
@@ -45,9 +49,13 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 233, y: 174}
@@ -60,9 +68,13 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: cad34518-6bb1-40a9-88ac-ab4e7baadbdd
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 233, y: 490}
@@ -74,9 +86,13 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 5c9caf8a-519b-412f-82ed-0e7de25a0acd
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 771, y: 490}
@@ -89,9 +105,13 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1159, y: 490}
@@ -103,9 +123,13 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1720, y: 490}
@@ -118,9 +142,13 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: b0e62caa-2c4d-4ec6-8a70-fa4828d8b168
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 233, y: 800}
@@ -132,9 +160,13 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 1264a8bb-5601-41d6-88ac-e57b562c4b91
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 771, y: 800}
@@ -146,9 +178,13 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1159, y: 800}
@@ -160,9 +196,13 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 64e034b4-094a-45ca-90cb-786a56c12af9
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 233, y: 1110}
@@ -175,9 +215,13 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 859984cf-2cc0-464c-8fb6-4237e11d7b2f
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 658, y: 1110}
@@ -191,9 +235,13 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1072, y: 1110}
@@ -206,9 +254,13 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 74c97a6e-5a75-4ef0-9a26-513247d9c929
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 25892ddf-c434-46c7-9eb5-eda9857882b8
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 233, y: 1491}
@@ -221,23 +273,31 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 53a636ab-e4b9-44d4-ad0c-6c308ce00ba5
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 25892ddf-c434-46c7-9eb5-eda9857882b8
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 810, y: 1491}
   - <ID>k__BackingField: 1c56ab34-4c89-49aa-8c23-92157ffb6de3
     <Name>k__BackingField: PS2x16
-    <Text>k__BackingField: "Don\u2019t worry, LEIGH. I do."
+    <Text>k__BackingField: "Don\u2019t worry, Leigh. I do."
     <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
     <Item>k__BackingField: {fileID: 0}
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 25892ddf-c434-46c7-9eb5-eda9857882b8
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1656, y: 1491}
@@ -249,9 +309,13 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 1c56ab34-4c89-49aa-8c23-92157ffb6de3
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 25892ddf-c434-46c7-9eb5-eda9857882b8
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1254, y: 1491}
@@ -263,12 +327,52 @@ MonoBehaviour:
     <HasSceneTransition>k__BackingField: 0
     <NextSceneIndex>k__BackingField: 0
     <NextSceneName>k__BackingField: Prologue - Scene 3
+    <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
       <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
     <GroupID>k__BackingField: 25892ddf-c434-46c7-9eb5-eda9857882b8
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 233, y: 1792}
+  - <ID>k__BackingField: 66fa0726-8cec-47fa-988f-43bb37e0d140
+    <Name>k__BackingField: PS2x13
+    <Text>k__BackingField: '*A cat yowls in pain*'
+    <Character>k__BackingField: {fileID: 0}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1556, y: 800}
+  - <ID>k__BackingField: cee82f01-16cb-47a9-b786-0d61f50b77d9
+    <Name>k__BackingField: PS2x14
+    <Text>k__BackingField: '*A gasp rings out*'
+    <Character>k__BackingField: {fileID: 0}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1952, y: 800}
   <OldGroupNames>k__BackingField:
   - Part1
   - Part2
@@ -289,6 +393,8 @@ MonoBehaviour:
       - PS2x10
       - PS2x11
       - PS2x12
+      - PS2x13
+      - PS2x14
     - Key: Part2
       Value:
       - PS2x13

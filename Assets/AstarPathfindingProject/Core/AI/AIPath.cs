@@ -63,6 +63,9 @@ namespace Pathfinding {
 	/// </summary>
 	[AddComponentMenu("Pathfinding/AI/AIPath (2D,3D)")]
 	public partial class AIPath : AIBase, IAstarAI {
+		public Vector2 NormalizedVector2d;
+
+
 		/// <summary>
 		/// How quickly the agent accelerates.
 		/// Positive values represent an acceleration in world units per second squared.
@@ -382,6 +385,7 @@ namespace Pathfinding {
 
 			// Normalized direction of where the agent is looking
 			var forwards = movementPlane.ToPlane(simulatedRotation * (orientation == OrientationMode.YAxisForward ? Vector3.up : Vector3.forward));
+			
 
 			// Check if we have a valid path to follow and some other script has not stopped the character
 			bool stopped = isStopped || (reachedDestination && whenCloseToDestination == CloseToDestinationMode.Stop);
@@ -404,6 +408,7 @@ namespace Pathfinding {
 			}
 
 			velocity2D = MovementUtilities.ClampVelocity(velocity2D, maxSpeed, slowdown, slowWhenNotFacingTarget && enableRotation, forwards);
+			NormalizedVector2d = velocity2D.normalized;
 
 			ApplyGravity(deltaTime);
 

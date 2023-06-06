@@ -18,6 +18,11 @@
 	padding: var(--ds-metrics-window-pixels-8);
 }
 
+.ds-node__label > .unity-base-field__label {
+	min-width: 0px;
+}
+
+
 /* INPUTS */
 
 .ds-node__textfield > .unity-text-field__input
@@ -28,6 +33,8 @@
 	max-width: var(--ds-metrics-window-pixels-240);
 	min-width: var(--ds-metrics-window-pixels-160);
 	padding: var(--ds-metrics-window-pixels-8);
+	height: auto;
+	white-space: normal;
 }
 
 .ds-node__textfield__hidden > .unity-text-field__input

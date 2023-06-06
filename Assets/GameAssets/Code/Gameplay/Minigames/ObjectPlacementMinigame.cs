@@ -8,8 +8,8 @@ public class ObjectPlacementMinigame : MonoBehaviour, IMinigame
 {
     [SerializeField] private GameObject minigameUI; // UI to set active
     [SerializeField] private List<ObjectPlacementPieceUI> objectPieces; // Object pieces
-    [SerializeField] private bool snapping; // Snaps to correct position
-    [SerializeField] private InventoryItem requiredItem;    // Start condition
+    [SerializeField] private List<InventoryItem> requiredItems;    // Start condition
+    [SerializeField] private List<InventoryItem> obtainedItems;    // Start condition
     [SerializeField] private GameObject finishedObject; // Object to set active after finishing the minigame
     private bool active;
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
@@ -17,12 +17,12 @@ public class ObjectPlacementMinigame : MonoBehaviour, IMinigame
     #region IMinigame Methods
     public bool StartCondition()
     {
-        if (requiredItem == null) return true;
+        if (requiredItems.Count == 0) return true;
         bool canStart = false;
-        eventBrokerComponent.Publish(this, new InventoryEvents.HasItem(requiredItem, callback =>
+        eventBrokerComponent.Publish(this, new InventoryEvents.HasItem(callback =>
         {
             canStart = callback;
-        }));
+        }, requiredItems.ToArray()));
         
         return canStart;
     }
@@ -31,13 +31,14 @@ public class ObjectPlacementMinigame : MonoBehaviour, IMinigame
     {
         active = false;
         minigameUI.SetActive(false);
-        finishedObject.SetActive(true);
+        if (finishedObject != null)
+            finishedObject.SetActive(true);
 
         eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
         eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
-        if (requiredItem != null)
-            eventBrokerComponent.Publish(this, new InventoryEvents.RemoveItem(requiredItem));
+        HandleInventoryEvents();
     }
+
 
     public void Initialize()
     {
@@ -52,36 +53,38 @@ public class ObjectPlacementMinigame : MonoBehaviour, IMinigame
     {
         if (!active) return;
         if (CheckEndCondition())
-            Finish();
+            StartCoroutine(DelayedFinish());
     }
 
     #region Main Methods
-    private bool CheckEndCondition()
+    protected virtual bool CheckEndCondition()
     {
-        bool isEnd = true;
         for (int i = 0; i < objectPieces.Count; i++)
         {
             ObjectPlacementPieceUI piece = objectPieces[i];
-            RectTransform target = piece.TargetTransform;
-            if (piece.Grabbing || !RectOverlapsPoint(target, piece.RectTransform))
+            if (!piece.IsInTargetPosition)
             {
-                isEnd = false;
-                continue;
+                return false;
             }
-
-            if (snapping)
-                piece.RectTransform.position = target.position;
         }
-        return isEnd;
+        return true;
     }
     #endregion
 
     #region Utility Methods
-    private bool RectOverlapsPoint(RectTransform rectTrans1, RectTransform rectTrans2)
+    protected virtual IEnumerator DelayedFinish()
     {
-        Rect rect1 = new Rect(rectTrans1.localPosition.x, rectTrans1.localPosition.y, rectTrans1.rect.width, rectTrans1.rect.height);
-        Rect rect2 = new Rect(rectTrans2.localPosition.x, rectTrans2.localPosition.y, rectTrans2.rect.width/2, rectTrans2.rect.height/2);
-        return rect1.Overlaps(rect2);
+        active = false;
+        yield return new WaitForSeconds(2f);
+        Finish();
+    }
+
+    private void HandleInventoryEvents()
+    {
+        if (obtainedItems.Count != 0)
+            eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(obtainedItems.ToArray()));
+        if (requiredItems.Count != 0)
+            eventBrokerComponent.Publish(this, new InventoryEvents.RemoveItem(requiredItems.ToArray()));
     }
     #endregion
 }

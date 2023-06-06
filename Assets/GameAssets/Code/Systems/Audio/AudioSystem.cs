@@ -24,8 +24,8 @@ public class AudioSystem : MonoBehaviour
 		eventBrokerComponent.Subscribe<AudioEvents.ChangeMusicVolume>(ChangeMusicVolumeHandler);
 		eventBrokerComponent.Subscribe<AudioEvents.ChangeSFXVolume>(ChangeSFXVolumeHandler);
 
-		float musicLevel = PlayerPrefs.GetFloat("MusicVolume", Constants.Audio.DefaultAudioLevel);
-		float sfxLevel = PlayerPrefs.GetFloat("SFXVolume", Constants.Audio.DefaultAudioLevel);
+		float musicLevel = PlayerPrefs.GetFloat(Constants.Audio.MusicVolumePP, Constants.Audio.DefaultAudioLevel);
+		float sfxLevel = PlayerPrefs.GetFloat(Constants.Audio.SFXVolumePP, Constants.Audio.DefaultAudioLevel);
 
 		musicVolume = musicLevel;
 		sfxVolume = sfxLevel;
@@ -45,12 +45,16 @@ public class AudioSystem : MonoBehaviour
 	{
 		musicVolume = inEvent.Payload.NewVolume;
 		musicSource.volume = musicVolume;
+
+		PlayerPrefs.SetFloat(Constants.Audio.MusicVolumePP, musicVolume);
 	}
 
 	private void ChangeSFXVolumeHandler(BrokerEvent<AudioEvents.ChangeSFXVolume> inEvent)
 	{
 		sfxVolume = inEvent.Payload.NewVolume;
 		sfxSource.volume = sfxVolume;
+
+		PlayerPrefs.SetFloat(Constants.Audio.SFXVolumePP, musicVolume);
 	}
 
 	private void PlayMusicHandler(BrokerEvent<AudioEvents.PlayMusic> inEvent)

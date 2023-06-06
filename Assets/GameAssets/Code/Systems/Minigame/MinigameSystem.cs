@@ -29,6 +29,7 @@ public class MinigameSystem : MonoBehaviour
             return;
         }
         activeMinigame = inEvent.Payload.minigame;
+        
         activeMinigame.Initialize();
     }
 

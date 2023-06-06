@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Candle
   m_EditorClassIdentifier: 
   <ItemName>k__BackingField: Candle
-  <ItemIcon>k__BackingField: {fileID: 0}
+  <ItemIcon>k__BackingField: {fileID: -1434383729, guid: 6db616208fb2fbe459521591ada0ab5e, type: 3}
   <ItemDescription>k__BackingField: A simple white wax candle, previously unused.
+  <InventoryInteraction>k__BackingField: {fileID: 11400000, guid: 56120df96504a8f4d90a2bceaeafa5d7, type: 2}

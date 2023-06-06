@@ -15,3 +15,4 @@ MonoBehaviour:
   <ItemName>k__BackingField: Twine
   <ItemIcon>k__BackingField: {fileID: 0}
   <ItemDescription>k__BackingField: 
+  <InventoryInteraction>k__BackingField: {fileID: 11400000, guid: d14e76ad49cda854a96d75dd5aaac5ce, type: 2}

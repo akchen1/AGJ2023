@@ -7,6 +7,16 @@ public class MatchContainer : MonoBehaviour, IBeginDragHandler, IDragHandler
 {
     [SerializeField] private GameObject matchPrefab;
     [SerializeField] private Transform matchParent;
+
+    private void OnEnable()
+    {
+        
+    }
+
+    private void OnDisable()
+    {
+        
+    }
     public void OnBeginDrag(PointerEventData eventData)
     {
         GameObject match = Instantiate(matchPrefab, matchParent);

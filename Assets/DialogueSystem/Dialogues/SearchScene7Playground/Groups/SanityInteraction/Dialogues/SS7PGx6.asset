@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabbddd164ab042e29b24f33ca0c86c0, type: 3}
+  m_Name: SS7PGx6
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: SS7PGx6
+  <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+  <Item>k__BackingField: {fileID: 0}
+  <HasSceneTransition>k__BackingField: 0
+  <NextSceneName>k__BackingField: 
+  <AudioClip>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: Wow, crush the whole thing?
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: Double down
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: ab308471426cafd40bf28ce21e78ef0a, type: 2}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: 0
+  - <Text>k__BackingField: Take a step back
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 78500f4e87dc6a741ad122bd8c6612b9, type: 2}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: 0
+  <DialogueType>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0

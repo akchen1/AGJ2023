@@ -58,6 +58,9 @@ public static class Constants
 	{
 		public const float MusicFadeSpeed = 2.5f;
 		public const float DefaultAudioLevel = 0.25f;
+
+		public const string MusicVolumePP = "MusicVolume";
+		public const string SFXVolumePP = "SFXVolume";
 	}
 	#endregion Audio
 
@@ -67,6 +70,7 @@ public static class Constants
 		public const int DefaultSanityLevel = 0;
 		public const int MinimumSanityLevel = -10;
 		public const int MaximumSanityLevel = 10;
+		public enum SanityType { Neutral = 0 , Negative = -1 , Positive = 1 }
 	}
 	#endregion Sanity
 }
