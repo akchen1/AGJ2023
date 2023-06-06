@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cabbddd164ab042e29b24f33ca0c86c0, type: 3}
-  m_Name: PS1x3
+  m_Name: PS1x1C
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: PS1x3
-  <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+  <DialogueName>k__BackingField: PS1x1C
+  <Character>k__BackingField: {fileID: 0}
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "It wasn\u2019t me, I swear! Badu and I were-\r"
+  <Text>k__BackingField: '*something crashes to the floor*'
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e4386ff7b3ac9b24b9891928e2dbfe7a, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c59301dbfa5bf1548a9fd6dcea433f24, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

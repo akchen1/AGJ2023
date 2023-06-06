@@ -17,10 +17,14 @@ MonoBehaviour:
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
+  <AudioClip>k__BackingField: {fileID: 0}
   <Text>k__BackingField: "I tried to tell mom it wasn\u2019t me. She never really
     believed me."
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
     <NextDialogue>k__BackingField: {fileID: 0}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
