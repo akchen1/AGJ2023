@@ -2,8 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class ShovelMinigame : MonoBehaviour, IMinigame
+public class ShovelMinigame : MonoBehaviour, IMinigame, IPointerClickHandler
 {
     private bool active;
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
@@ -29,6 +30,7 @@ public class ShovelMinigame : MonoBehaviour, IMinigame
     #region IMinigame Methods
     public void Initialize()
     {
+        Debug.Log("iu");
         currentLevel = 0;
         currentProgress = levels[0].levelRequirement;
         barSlider.VerticalBarSpeed = levels[0].barSpeed;
@@ -51,16 +53,16 @@ public class ShovelMinigame : MonoBehaviour, IMinigame
 
     private void MouseClickHandler(BrokerEvent<InputEvents.MouseClick> obj)
     {
-        if (!active || !barSlider.Active) return;
+        //if (!active || !barSlider.Active) return;
 
-        StartCoroutine(PauseSlider(1.5f));
-        float value = GetSliderValue();
-        DecreaseProgress(value);
-        if (!CheckIfNextLevel()) return;
-        IncreaseLevel();
-        PlayAnimation();
-        if (!CheckEndCondition()) return;
-        StartCoroutine(DelayedFinish());
+        //StartCoroutine(PauseSlider(1.5f));
+        //float value = GetSliderValue();
+        //DecreaseProgress(value);
+        //if (!CheckIfNextLevel()) return;
+        //IncreaseLevel();
+        //PlayAnimation();
+        //if (!CheckEndCondition()) return;
+        //StartCoroutine(DelayedFinish());
     }
 
     private bool CheckEndCondition()
@@ -112,6 +114,20 @@ public class ShovelMinigame : MonoBehaviour, IMinigame
         barSlider.Active = false;
         yield return new WaitForSeconds(2f);
         Finish();
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (!active || !barSlider.Active) return;
+
+        StartCoroutine(PauseSlider(1.5f));
+        float value = GetSliderValue();
+        DecreaseProgress(value);
+        if (!CheckIfNextLevel()) return;
+        IncreaseLevel();
+        PlayAnimation();
+        if (!CheckEndCondition()) return;
+        StartCoroutine(DelayedFinish());
     }
 
     [System.Serializable]

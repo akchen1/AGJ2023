@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2b740c7df73471d4a92b50d4e6f8ced2
+guid: af4f2ba96c9b1fb4fbaaf7b4ee35b814
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -67,10 +67,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,7 +102,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -114,11 +114,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 16384
+    buildTarget: iPhone
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,11 +126,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 16384
+    buildTarget: WebGL
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -141,43 +141,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rightidle_0
+      name: transform_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 360
-        height: 800
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        y: 1820
+        width: 1241.3334
+        height: 1820
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3213b36989436147a35c50633c11787
-      internalID: -1736634698
+      spriteID: 82718646b808c6a409e7670c104cf4a5
+      internalID: -376527414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rightidle_1
+      name: transform_1
       rect:
         serializedVersion: 2
-        x: 360
-        y: 0
-        width: 360
-        height: 800
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 1241
+        y: 1820
+        width: 1241.3334
+        height: 1820
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb29ab44bb7d0d847a95e427a1e83102
-      internalID: 1846516188
+      spriteID: 392b5a9db44aa5d40866dea0cfb50d52
+      internalID: -706190496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transform_2
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 1820
+        width: 1241.3334
+        height: 1820
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70ac8e310121fe4b8ed189eff066b31
+      internalID: -979754328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transform_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1241.3334
+        height: 1820
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6b1d3d759f4554ca4e2be4856d36fd
+      internalID: -403654710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transform_4
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 0
+        width: 1241.3334
+        height: 1820
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08e544b1a857764182fd0e4692c0f6a
+      internalID: 248321705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: transform_5
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 0
+        width: 1241.3334
+        height: 1820
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801b85e846b6b2341b25854c6244548d
+      internalID: -246755345
       vertices: []
       indices: 
       edges: []
@@ -193,8 +277,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      rightidle_0: -1736634698
-      rightidle_1: 1846516188
+      transform_3: -403654710
+      transform_1: -706190496
+      transform_5: -246755345
+      transform_2: -979754328
+      transform_4: 248321705
+      transform_0: -376527414
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

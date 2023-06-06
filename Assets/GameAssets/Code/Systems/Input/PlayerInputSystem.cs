@@ -28,7 +28,8 @@ public class PlayerInputSystem
         if (inEvent.Payload.Active)
         {
             EnableInput();
-        } else
+        }
+        else
         {
             DisableInput();
         }
