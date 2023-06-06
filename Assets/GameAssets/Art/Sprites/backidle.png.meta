@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4950aec1069881d428aaae15d7a91013
+guid: 41fb57f7f6b105d458e47c3b2fb5ea69
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,8 +45,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rightwalk_0
+      name: backidle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bdb3d9bf254b4c49ba4b14587a5dcd0
-      internalID: -386700145
+      spriteID: 05fe9f387fff5ec4b80156cf0442bd74
+      internalID: 1636289200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rightwalk_1
+      name: backidle_1
       rect:
         serializedVersion: 2
         x: 360
@@ -152,50 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 886d6fc2253454748a2f51dcb56f0ac8
-      internalID: -1136728759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rightwalk_2
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 0
-        width: 360
-        height: 800
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f3ec721e9036304cbe5ae0259049bd7
-      internalID: 1512087410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rightwalk_3
-      rect:
-        serializedVersion: 2
-        x: 1080
-        y: 0
-        width: 360
-        height: 800
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c660f0bd737e0744c8aee98b1fae6559
-      internalID: -1157580650
+      spriteID: 79e746998c59eed49a1a54d430fcf2ce
+      internalID: 1161462485
       vertices: []
       indices: 
       edges: []
@@ -211,10 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      rightwalk_3: -1157580650
-      rightwalk_0: -386700145
-      rightwalk_2: 1512087410
-      rightwalk_1: -1136728759
+      backidle_0: 1636289200
+      backidle_1: 1161462485
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
