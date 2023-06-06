@@ -10,18 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cabbddd164ab042e29b24f33ca0c86c0, type: 3}
-  m_Name: PS4x3
+  m_Name: PS4xBottles2
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: PS4x3
-  <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+  <DialogueName>k__BackingField: PS4xBottles2
+  <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "Right, of course, how could I forget Badu\u2026 "
+  <Text>k__BackingField: He seems to enjoy playing with his bottles more than he
+    ever does with me.
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 20629cb5ea46228498e020ade8430480, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 0}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

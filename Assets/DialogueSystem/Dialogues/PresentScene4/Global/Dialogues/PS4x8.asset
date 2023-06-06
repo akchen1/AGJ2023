@@ -15,8 +15,8 @@ MonoBehaviour:
   <DialogueName>k__BackingField: PS4x8
   <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
   <Item>k__BackingField: {fileID: 0}
-  <HasSceneTransition>k__BackingField: 0
-  <NextSceneName>k__BackingField: 
+  <HasSceneTransition>k__BackingField: 1
+  <NextSceneName>k__BackingField: Playground - Scene 5
   <AudioClip>k__BackingField: {fileID: 0}
   <Text>k__BackingField: "Hmph, fine. Let\u2019s go!"
   <Choices>k__BackingField:
