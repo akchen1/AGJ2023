@@ -34,7 +34,7 @@
 	min-width: var(--ds-metrics-window-pixels-160);
 	padding: var(--ds-metrics-window-pixels-8);
 	height: auto;
-	white-space: normal;
+	/*white-space: normal;*/
 }
 
 .ds-node__textfield__hidden > .unity-text-field__input

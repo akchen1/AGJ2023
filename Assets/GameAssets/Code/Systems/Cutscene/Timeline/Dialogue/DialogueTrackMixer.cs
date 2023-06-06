@@ -24,7 +24,7 @@ public class DialogueTrackMixer : PlayableBehaviour
                 ScriptPlayable<DialogueClipStartBehaviour> inputPlayable = (ScriptPlayable<DialogueClipStartBehaviour>)playable.GetInput(i);
 
                 DialogueClipStartBehaviour input = inputPlayable.GetBehaviour();
-                currentSpeaker = input.Dialogue.Character.CharacterName;
+                currentSpeaker = input.Dialogue.Character?.CharacterName;
                 currentText = input.Dialogue.Text;
                 currentAlpha = inputWeight;
             }

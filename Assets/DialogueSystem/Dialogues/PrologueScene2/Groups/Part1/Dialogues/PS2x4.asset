@@ -21,7 +21,7 @@ MonoBehaviour:
   <Text>k__BackingField: "I\u2019m sure someone will, someday."
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 383942b72992fe744b92e1258e4fcf15, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e34803dd588412f40ba10c5b1e687194, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
