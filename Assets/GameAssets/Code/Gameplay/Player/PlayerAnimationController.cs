@@ -9,7 +9,6 @@ public class PlayerAnimationController : MonoBehaviour
     //There is a frame at the start of the script that it has not reached the end of the path.
     private bool firstLoad;
     //Which was the last walk animation.
-    private string lastWalkAnimation;
 
     private bool RunOnce;
 
@@ -18,7 +17,6 @@ public class PlayerAnimationController : MonoBehaviour
         animator = GetComponent<Animator>();
         firstLoad = false;
         RunOnce = true;
-        lastWalkAnimation = "None";
     }
 
     void Update()

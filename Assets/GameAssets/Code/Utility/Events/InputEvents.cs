@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class InputEvents
 {
@@ -22,5 +23,14 @@ public class InputEvents
         {
             Active = active;
         }
+    }
+
+    public class GetInputState
+    {
+        public GetInputState(Action<bool> allowMove)
+        {
+            AllowMove = allowMove;
+        }
+        public readonly Action<bool> AllowMove;
     }
 }

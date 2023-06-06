@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Linq;
+using System;
+
 
 namespace Pathfinding {
 	/// <summary>
@@ -13,6 +15,9 @@ namespace Pathfinding {
 	[HelpURL("http://arongranberg.com/astar/documentation/stable/class_pathfinding_1_1_target_mover.php")]
 	public class TargetMover : MonoBehaviour {
 		/// <summary>Mask for the raycast placement</summary>
+		private bool boolOffSet = false;
+		public bool AllowMove = true;
+		public Vector3 OffSetVector =  new Vector3 (0,2f,0);
 		public LayerMask mask;
 
 		public Transform target;
@@ -22,7 +27,10 @@ namespace Pathfinding {
 		public bool onlyOnClick;
 		public bool use2D;
 
+		public LayerMask layerMask;
+
 		Camera cam;
+
 
 		public void Start () {
 			//Move target to start on player.
@@ -37,8 +45,15 @@ namespace Pathfinding {
 		}
 
 		public void OnGUI () {
-			if (onlyOnClick && cam != null && Event.current.type == EventType.MouseDown && Event.current.clickCount == 1) {
-				UpdateTargetPosition();
+			if(AllowMove){
+				if (onlyOnClick && cam != null && Event.current.type == EventType.MouseDown && Event.current.clickCount == 1) 
+				{
+					Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+					RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity, layerMask);
+					if (hit)
+						boolOffSet = true;
+					UpdateTargetPosition();
+				}
 			}
 		}
 
@@ -54,8 +69,12 @@ namespace Pathfinding {
 			bool positionFound = false;
 
 			if (use2D) {
-				newPosition = cam.ScreenToWorldPoint(Input.mousePosition);
+				if(boolOffSet)
+					newPosition = cam.ScreenToWorldPoint(Input.mousePosition)- OffSetVector;
+				else
+					newPosition = cam.ScreenToWorldPoint(Input.mousePosition);
 				newPosition.z = 0;
+				boolOffSet = false;
 				positionFound = true;
 			} else {
 				// Fire a ray through the scene at the mouse position and place the target where it hits
