@@ -52,19 +52,10 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 
 	public bool StartCondition()
 	{
-		int numItems = 0;
-		foreach (InventoryItem item in neededItems)
-		{
-			eventBrokerComponent.Publish(this, new InventoryEvents.HasItem(item, callback =>
-			{
-				if (callback)
-				{
-					numItems += 1;
-				}
-			}));
-		}
+		bool hasItems = false;
+		eventBrokerComponent.Publish(this, new InventoryEvents.HasItem((success) => hasItems = success, neededItems.ToArray()));
 
-		return numItems == neededItems.Count;
+		return hasItems;
 	}
 
 	private void SpawnBlood()
