@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cabbddd164ab042e29b24f33ca0c86c0, type: 3}
-  m_Name: PS2x11
+  m_Name: PS2x7A
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: PS2x11
-  <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+  <DialogueName>k__BackingField: PS2x7A
+  <Character>k__BackingField: {fileID: 11400000, guid: 490d5d6ce57886a4c80a8057c06ad4a6, type: 2}
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "No, it was an accident! Badu didn\u2019t mean it like that-"
+  <Text>k__BackingField: 'What are you doing out there? '
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: f6a8cb0506fca4b4681a0959b130b496, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: bb6bf5a6c299a824c8846cf337909ca8, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 0
-  <IsStartingDialogue>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 1

@@ -17,6 +17,9 @@ public class TimelineDialogueSystem : MonoBehaviour
         text.text = dialogueText;
         text.color = dialogueColor;
         textBackground.color = dialogueColor;
+
+        text.alignment = speaker == "" || speaker == null ? TextAlignmentOptions.Center : TextAlignmentOptions.Left;
+
     }
 
 }
