@@ -2056,6 +2056,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 390930315}
     m_Modifications:
+    - target: {fileID: 849454408060493932, guid: 46f3d908e19b0b84a801ebd0a3ed925d, type: 3}
+      propertyPath: data.dataString
+      value: UEsDBBQAAAgIAACIn+t3rv/jvAIAAMMFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VN9v2jAQ/leQnwdKKATY2waUblJbVDb1YfTBOAexcOzIPwq04n/v2UlIyrYICefuvu/uvjvnnXBpCmBW6YXm6b1KgXztEH8mXzqN8w6OdKfkir9BHfPMU5v5IBpinqjlCu2xhxmVg9WcfZM74YMjNDrJt0rn83QHU2WsQfOWCgPo0sp6tETTe4cc8a878ZATnvojf3rD0yTqnPHIQFrQrdCoF8fjaDxKBv0a0xv3I3ySYQXtJr3JJB4NhvNuPAgsTjJB8wJS31JDdpP04gk+yaSmGvb6ASCx7So26vlETAnBTVU1saciqPJET16TlFNUIJTpBcmA7zLr6drAx+3WgK3k0fQ04xqFLBnJd1Wqm1OzL+t7pcKF9KGekvL+L283Du6tVvldnTWOfAabcbbH+hg1tiV+2zz7XLaTByr2dCPgOQP5oBZaOZmi02rnoc5Af9a8XhqbZsD2jb0s9croikb1etb1pH0P59D7cSp4vqlc+LoSKugc1gM0zuQHlhuWx1RRaPU1/Dbwi+7aW1Y5brk2Fl1Vj9IXt1FO+1AyD4r5XpydKi1BtxkKkFTY0xJ57PX8rnz/R91Sf6Gq7JWvvidXkGBu4qPoyrVUh2ZWBn66vFgqLu0KqGZZi89k6nAPJnt0VnAJzRS84wFVnCopy90z/4CtnN5S1oJZOFqnYUYtDduPNeGSpG0oKhoQ0gnh9zF04cn/YBf+9+JVzijmFcFMHhRWhsZP/y9+D3aOp5+3nCSMTqLoJoKkP0iQvBsB9DdsELMoGaej4ZCEa8Alak7FshStGhWukGx6kbjy9Tevs9C0CNcu1fSw4G+5Mk0kl1u1YhpAPpYMl2ZBYxL8OKTzlGObK7CWy7B85H1NhGJ7SNcXonUQdn60mq4bljUp+Kuy3rIm0/CRWxNvvlyrpYZXDgefvCY7k/MHUEsDBBQAAAgIAACIn+t02Xs2bQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jO00FFQSi9KLMgoBooYgjilmSkgdrSSWXKipYGBsUGqmZGJWVpisq5BaqpRUrKJYbKBmUWKuampUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACIn+t3rv/jvAIAAMMFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACIn+t02Xs2bQAAAHgAAAAJACQAAAAAAAAAAAAAAAkDAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAwQMAAAAA
+      objectReference: {fileID: 0}
+    - target: {fileID: 849454408060493932, guid: 46f3d908e19b0b84a801ebd0a3ed925d, type: 3}
+      propertyPath: data.file_cachedStartup
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 849454408060493933, guid: 46f3d908e19b0b84a801ebd0a3ed925d, type: 3}
       propertyPath: m_Name
       value: A_
@@ -2271,7 +2279,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1461147824
