@@ -397,7 +397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690040, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_RootOrder
@@ -405,11 +405,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.79
+      value: 7.86
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.28
+      value: -0.87
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4219,7 +4219,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1926956830}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 9b733eb0999ee2f42a92ccdd93951140, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 02b9b1480bceead4f8bf7c960dbb75f5, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1

@@ -19,10 +19,10 @@ MonoBehaviour:
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
   <Text>k__BackingField: For the first time, I wondered if maybe someone else could
-    be there for me, just like Badu always was.
+    be there for me.
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1a19e04845fc1bf44af32c3bab4f9e1e, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
