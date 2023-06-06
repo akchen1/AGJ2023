@@ -11,6 +11,7 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 	[SerializeField] private int bloodNeeded;
 
 	[SerializeField, Header("UI")] private GameObject panel;
+	[SerializeField] private Slider bloodSlider;
 
 	[SerializeField, Header("Vial")] private GameObject vial;
 
@@ -47,6 +48,7 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 		timer = Random.Range(bloodSpawnTimer - bloodSpawnTimerOffset, bloodSpawnTimer + bloodSpawnTimerOffset);
 
 		totalBlood = 0;
+		bloodSlider.value = 0;
 		gameRunning = true;
 	}
 
@@ -73,6 +75,7 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 		Destroy(blood);
 
 		totalBlood += 1;
+		bloodSlider.value += 1;
 	}
 
 	private void OnBloodOutOfBounds(GameObject blood)
