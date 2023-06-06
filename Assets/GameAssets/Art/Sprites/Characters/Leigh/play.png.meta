@@ -144,58 +144,19 @@ TextureImporter:
       name: play_0
       rect:
         serializedVersion: 2
-<<<<<<< HEAD:Assets/GameAssets/Art/Sprites/Characters/Leigh/play.png.meta
-        x: 18
-        y: 16
-        width: 356
-        height: 569
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-=======
         x: 0
         y: 0
-        width: 360
-        height: 800
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
->>>>>>> origin:Assets/GameAssets/Art/Sprites/backidle.png.meta
+        width: 0
+        height: 0
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ed7ad219763ebd8449d72ca2167c1eaf
-      internalID: -1292229756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: play_1
-      rect:
-        serializedVersion: 2
-<<<<<<< HEAD:Assets/GameAssets/Art/Sprites/Characters/Leigh/play.png.meta
-        x: 406
-        y: 15
-        width: 355
-        height: 567
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-=======
-        x: 360
-        y: 0
-        width: 360
-        height: 800
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
->>>>>>> origin:Assets/GameAssets/Art/Sprites/backidle.png.meta
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68c2eef1b08273b4aad35fd2487b5aae
-      internalID: 761066539
+      spriteID: abf32263da3f8a430800000000000000
+      internalID: 3794550611322748858
       vertices: []
       indices: 
       edges: []
@@ -203,7 +164,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -211,8 +172,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      play_0: -1292229756
-      play_1: 761066539
+      play_0: 3794550611322748858
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
