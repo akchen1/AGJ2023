@@ -7,21 +7,21 @@ using UnityEngine;
 [RequireComponent(typeof(DraggableUI))]
 public class ObjectPlacementPieceUI : MonoBehaviour
 {
-    [field: SerializeField] public RectTransform TargetTransform { get; private set; }
-    [SerializeField] private bool snapping = true;
+    [field: SerializeField] public RectTransform TargetTransform { get; protected set; }
+    [SerializeField] protected bool snapping = true;
 
-    private RectTransform RectTransform { get { return draggable.RectTransform; } }
-    private bool Grabbing { get { return draggable.Grabbing; } }
-    public bool IsInTargetPosition { get; private set; } = false;
+    protected RectTransform RectTransform { get { return draggable.RectTransform; } }
+    protected bool Grabbing { get { return draggable.Grabbing; } }
+    public bool IsInTargetPosition { get; protected set; } = false;
 
-    private DraggableUI draggable;
+    protected DraggableUI draggable;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         draggable = GetComponent<DraggableUI>();
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         IsInTargetPosition = CheckOverlapTarget();
 
@@ -38,7 +38,7 @@ public class ObjectPlacementPieceUI : MonoBehaviour
         return true;
     }
 
-    protected void Snap()
+    protected virtual void Snap()
     {
         if (!IsInTargetPosition) return;
         RectTransform.position = TargetTransform.position;

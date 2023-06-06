@@ -1091,8 +1091,9 @@ MonoBehaviour:
   - {fileID: 958963295}
   - {fileID: 1432664882}
   - {fileID: 313856659}
-  snapping: 1
-  requiredItem: {fileID: 11400000, guid: b81b63199b127e64fb3c167e885670cd, type: 2}
+  requiredItems:
+  - {fileID: 11400000, guid: b81b63199b127e64fb3c167e885670cd, type: 2}
+  obtainedItems: []
   finishedObject: {fileID: 1853555388}
 --- !u!114 &569393450
 MonoBehaviour:

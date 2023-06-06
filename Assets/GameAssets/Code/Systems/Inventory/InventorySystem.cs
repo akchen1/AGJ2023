@@ -35,16 +35,23 @@ public class InventorySystem
 
     private void AddItemHandler(BrokerEvent<InventoryEvents.AddItem> inEvent)
     {
-		if (inventory.Contains(inEvent.Payload.Item)) return;
-		inventory.Add(inEvent.Payload.Item);
+		foreach (InventoryItem item in inEvent.Payload.Items)
+		{
+            if (inventory.Contains(item)) continue;
+            inventory.Add(item);
+        }
+		
     }
 
 	private void RemoveItemHandler(BrokerEvent<InventoryEvents.RemoveItem> inEvent)
 	{
-		if (inventory.Contains(inEvent.Payload.Item))
+		foreach (InventoryItem item in inEvent.Payload.Items)
 		{
-			inventory.Remove(inEvent.Payload.Item);
-		}
+            if (inventory.Contains(item))
+            {
+                inventory.Remove(item);
+            }
+        }
 	}
 
     private void HasItemHandler(BrokerEvent<InventoryEvents.HasItem> inEvent)
