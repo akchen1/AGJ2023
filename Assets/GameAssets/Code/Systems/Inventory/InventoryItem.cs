@@ -17,12 +17,15 @@ public class InventoryItem : ScriptableObject, IInteractable
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     public void OnSelectInteraction()
     {
+        if (InventoryInteraction != null && InventoryInteraction.OverrideDefaultClickInteraction)
+        {
+            InventoryInteraction.OnClickInteraction();
+            return;
+        }
         eventBrokerComponent.Publish(this, new InteractionEvents.Interact(this, (valid) =>
         {
-            if (valid)
-            {
-                Interact();
-            }
+            if (!valid) return;
+            Interact();
         }));
     }
 

@@ -53,4 +53,14 @@ public class InventoryEvents
 			Item2 = item2;
 		}
 	}
+
+	public class ToggleInventoryVisibility
+	{
+		public readonly bool Visible;
+
+		public ToggleInventoryVisibility(bool visible)
+		{
+			Visible = visible;
+		}
+	}
 }
