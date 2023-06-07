@@ -34,6 +34,7 @@ public class InteractionSystem
             return;
         }
         Debug.Log("interacting with " + inEvent.Sender.ToString());
+        eventBrokerComponent.Publish(this, new InventoryEvents.ToggleInventoryVisibility(false));
         currentInteraction = inEvent.Payload.Interactable;
         inEvent.Payload.Response?.Invoke(true);
     }

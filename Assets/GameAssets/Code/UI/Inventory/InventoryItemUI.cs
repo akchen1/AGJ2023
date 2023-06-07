@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class InventoryItemUI : MonoBehaviour, IPointerClickHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
-    private Image itemIcon;
+    [SerializeField] private Image itemIcon;
     public InventoryItem inventoryItem { get; private set; }
 
     private bool selected;
@@ -17,7 +17,7 @@ public class InventoryItemUI : MonoBehaviour, IPointerClickHandler, IDragHandler
     private static Canvas canvas;
     private void Awake()
     {
-        itemIcon = GetComponent<Image>();
+        //itemIcon = GetComponent<Image>();
         if (canvas == null )
         {
             canvas = FindInParents<Canvas>(gameObject);
