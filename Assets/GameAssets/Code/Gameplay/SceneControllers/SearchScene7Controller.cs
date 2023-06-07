@@ -25,8 +25,6 @@ public class SearchScene7Controller : SceneController
 	[SerializeField, Header("General Store")] private CinemachineVirtualCamera generalStoreCam;
 	[SerializeField] private PlayableAsset generalStoreStartingCutscene;
 
-	[SerializeField, Header("Playground")] private CinemachineVirtualCamera playgroundCam;
-
 	EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
 	private void ChangeSubsceneHandler(BrokerEvent<Scene7Events.ChangeSubscene> inEvent)
@@ -67,7 +65,6 @@ public class SearchScene7Controller : SceneController
 		forestCam.enabled = subscene == Constants.Scene7SubScenes.Forest;
 		livingRoomCam.enabled = subscene == Constants.Scene7SubScenes.LivingRoom;
 		generalStoreCam.enabled = subscene == Constants.Scene7SubScenes.GeneralStore;
-		playgroundCam.enabled = subscene == Constants.Scene7SubScenes.Playground;
 	}
 
 	private IEnumerator FadeBetweenCams()
