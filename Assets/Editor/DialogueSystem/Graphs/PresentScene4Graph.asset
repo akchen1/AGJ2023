@@ -148,8 +148,7 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 547, y: 916}
   - <ID>k__BackingField: a78e6bae-058d-476d-91d0-e3f3763088f7
     <Name>k__BackingField: PS4x1
-    <Text>k__BackingField: Whaddya know, I was just coming to look for you! Fancy
-      a trip to the playground?
+    <Text>k__BackingField: Whaddya know, I was just coming to look for you!
     <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
     <Item>k__BackingField: {fileID: 0}
     <HasSceneTransition>k__BackingField: 0
@@ -158,7 +157,7 @@ MonoBehaviour:
     <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
-      <NodeID>k__BackingField: a54eaeab-ea27-4ec0-923d-1cd1bd85c3f3
+      <NodeID>k__BackingField: 21d76867-f847-4d98-9726-31ef60a2e680
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
       <SanityType>k__BackingField: 0
@@ -185,8 +184,7 @@ MonoBehaviour:
     <Position>k__BackingField: {x: -103, y: 1367}
   - <ID>k__BackingField: 27341b27-7cdf-4fed-8a81-53cd74189a94
     <Name>k__BackingField: PS4x3
-    <Text>k__BackingField: "Right, of course, how could I forget Badu\u2026 Hey,
-      Leigh, do they always have to follow you around?"
+    <Text>k__BackingField: "Right, of course, how could I forget Badu\u2026 "
     <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
     <Item>k__BackingField: {fileID: 0}
     <HasSceneTransition>k__BackingField: 0
@@ -195,7 +193,7 @@ MonoBehaviour:
     <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 8646ad0a-71d9-4c38-b2ab-552e032160d6
+      <NodeID>k__BackingField: 7e9481f4-f8a8-4d50-b000-da3939fd74c2
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
       <SanityType>k__BackingField: 0
@@ -280,9 +278,9 @@ MonoBehaviour:
     <Text>k__BackingField: "Hmph, fine. Let\u2019s go!"
     <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
     <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
+    <HasSceneTransition>k__BackingField: 1
     <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
+    <NextSceneName>k__BackingField: Playground - Scene 5
     <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
@@ -312,6 +310,79 @@ MonoBehaviour:
     <GroupID>k__BackingField: da71f1ea-4e4d-410f-b60e-904d91f47725
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: -629, y: 605}
+  - <ID>k__BackingField: b5f410fb-aeae-404d-874f-16f5b3db56b3
+    <Name>k__BackingField: PS4xBottles1
+    <Text>k__BackingField: Dad hardly leaves his room.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: df33e86e-087c-40f0-801e-cc6297e8d69d
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: da71f1ea-4e4d-410f-b60e-904d91f47725
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 106, y: 401}
+  - <ID>k__BackingField: df33e86e-087c-40f0-801e-cc6297e8d69d
+    <Name>k__BackingField: PS4xBottles2
+    <Text>k__BackingField: He seems to enjoy playing with his bottles more than he
+      ever does with me.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: da71f1ea-4e4d-410f-b60e-904d91f47725
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 532, y: 401}
+  - <ID>k__BackingField: 21d76867-f847-4d98-9726-31ef60a2e680
+    <Name>k__BackingField: PS4x1B
+    <Text>k__BackingField: Fancy a trip to the playground?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: a54eaeab-ea27-4ec0-923d-1cd1bd85c3f3
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -323, y: 1656}
+  - <ID>k__BackingField: 7e9481f4-f8a8-4d50-b000-da3939fd74c2
+    <Name>k__BackingField: PS4x3B
+    <Text>k__BackingField: Hey, Leigh, do they always have to follow you around?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 8646ad0a-71d9-4c38-b2ab-552e032160d6
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 586, y: 1541}
   <OldGroupNames>k__BackingField:
   - Interactions
   <OldUngroupedNodeNames>k__BackingField:
@@ -323,6 +394,8 @@ MonoBehaviour:
   - PS4x6
   - PS4x7
   - PS4x8
+  - PS4x1B
+  - PS4x3B
   <OldGroupedNodeNames>k__BackingField:
     list:
     - Key: Interactions
@@ -335,3 +408,5 @@ MonoBehaviour:
       - PS4xBadu5
       - PS4xBadu4
       - PS4xPortrait
+      - PS4xBottles1
+      - PS4xBottles2

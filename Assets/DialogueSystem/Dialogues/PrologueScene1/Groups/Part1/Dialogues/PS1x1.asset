@@ -17,12 +17,13 @@ MonoBehaviour:
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: MainMenu
-  <Text>k__BackingField: 'For my whole life, I can''t remember ever being alone.
-
-    Maybe
-    lonely, but not alone.'
+  <AudioClip>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: For my whole life, I can't remember ever being alone.
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c59301dbfa5bf1548a9fd6dcea433f24, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 379215bc7d606f54f890c08b8752390c, type: 2}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 1

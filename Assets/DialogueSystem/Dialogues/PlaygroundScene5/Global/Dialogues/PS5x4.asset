@@ -18,11 +18,10 @@ MonoBehaviour:
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "Sometimes we don\u2019t mind it. Mom didn\u2019t let us
-    do it very often, so I guess Badu isn\u2019t used to it."
+  <Text>k__BackingField: "Sometimes we don\u2019t mind it. "
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8264fa9894c8eb74bb0cdfd25b311e88, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 46ca7aed7761f184ca03c083022ae913, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

@@ -18,8 +18,7 @@ MonoBehaviour:
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "*laughs again* Don\u2019t worry, I promise not to bother
-    your moth there. Got a second truck? Scooch over."
+  <Text>k__BackingField: '*laughs again*'
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
     <NextDialogue>k__BackingField: {fileID: 0}

@@ -16,10 +16,10 @@ MonoBehaviour:
   <Groups>k__BackingField:
   - <ID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
     <Name>k__BackingField: Part1
-    <Position>k__BackingField: {x: 208.00002, y: -189}
+    <Position>k__BackingField: {x: 208, y: -189}
   - <ID>k__BackingField: 25892ddf-c434-46c7-9eb5-eda9857882b8
     <Name>k__BackingField: Part2
-    <Position>k__BackingField: {x: 208.00002, y: 1432}
+    <Position>k__BackingField: {x: 208, y: 1432}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 4672fcc9-520e-4c04-956a-b6ab9293361a
     <Name>k__BackingField: PS2x1A
@@ -259,24 +259,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2246, y: 490}
-  - <ID>k__BackingField: e9ee18f9-a96e-47ad-885d-e2d37cd3d604
-    <Name>k__BackingField: PS2x5B
-    <Text>k__BackingField: "You know I\u2019m here just for you, right?"
-    <Character>k__BackingField: {fileID: 0}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 354573e7-5dc8-45c9-8902-841bc70bf7b6
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1807, y: 490}
   - <ID>k__BackingField: b0e62caa-2c4d-4ec6-8a70-fa4828d8b168
     <Name>k__BackingField: PS2x8
     <Text>k__BackingField: "I\u2019m almost done playing, Mom-"
@@ -404,24 +386,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 1462, y: 1110}
-  - <ID>k__BackingField: 16f09b1b-0d8c-402c-8bbf-764e3ae8d37c
-    <Name>k__BackingField: PS2x12C
-    <Text>k__BackingField: "You\u2019ll fix this later!"
-    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2006, y: 1110}
   - <ID>k__BackingField: 74c97a6e-5a75-4ef0-9a26-513247d9c929
     <Name>k__BackingField: PS2x14
     <Text>k__BackingField: "Your mother simply can\u2019t resist being so cruel,
@@ -495,6 +459,42 @@ MonoBehaviour:
     <GroupID>k__BackingField: 25892ddf-c434-46c7-9eb5-eda9857882b8
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 813, y: 1491}
+  - <ID>k__BackingField: e9ee18f9-a96e-47ad-885d-e2d37cd3d604
+    <Name>k__BackingField: PS2x5B
+    <Text>k__BackingField: "You know I\u2019m here just for you, right?"
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 354573e7-5dc8-45c9-8902-841bc70bf7b6
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1807, y: 490}
+  - <ID>k__BackingField: 16f09b1b-0d8c-402c-8bbf-764e3ae8d37c
+    <Name>k__BackingField: PS2x12C
+    <Text>k__BackingField: "You\u2019ll fix this later!"
+    <Character>k__BackingField: {fileID: 11400000, guid: 490d5d6ce57886a4c80a8057c06ad4a6, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: e61cb955-d70e-4764-a9a3-ebca40d80fe9
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2006, y: 1110}
   <OldGroupNames>k__BackingField:
   - Part1
   - Part2
@@ -514,7 +514,6 @@ MonoBehaviour:
       - PS2x4
       - PS2x5A
       - PS2x6
-      - PS2x5B
       - PS2x8
       - PS2x9
       - PS2x13
@@ -522,6 +521,7 @@ MonoBehaviour:
       - PS2x7B
       - PS2x12A
       - PS2x12B
+      - PS2x5B
       - PS2x12C
     - Key: Part2
       Value:

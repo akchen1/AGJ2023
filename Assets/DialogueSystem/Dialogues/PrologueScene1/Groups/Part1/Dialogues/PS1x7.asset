@@ -17,9 +17,13 @@ MonoBehaviour:
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
+  <AudioClip>k__BackingField: {fileID: 0}
   <Text>k__BackingField: You have to admit, it was pretty fun, right?
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 06d53b1328bf1a445acd18323f5ae4d7, type: 2}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 1

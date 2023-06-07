@@ -2,34 +2,49 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class PresentScene4Part1Controller : MonoBehaviour
 {
-    [SerializeField] private UnityEngine.Object badu;
+    [SerializeField] private DialogueInteraction badu;
+    [SerializeField] private AnimatorController baduMothFly;
     [SerializeField] private GameObject bedroomDoor;
+
+    private bool isTalkingWithBadu = false;
 
     EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
     private void OnEnable()
     {
+        eventBrokerComponent.Subscribe<InteractionEvents.Interact>(InteractHandler);
         eventBrokerComponent.Subscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
     }
 
-    
-
     private void OnDisable()
     {
+        eventBrokerComponent.Unsubscribe<InteractionEvents.Interact>(InteractHandler);
         eventBrokerComponent.Unsubscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
+    }
+
+    private void InteractHandler(BrokerEvent<InteractionEvents.Interact> inEvent)
+    {
+        if (!(inEvent.Sender is UnityEngine.Object)) return;
+        UnityEngine.Object sender = (UnityEngine.Object)inEvent.Sender;
+        Debug.Log(sender);
+        Debug.Log(badu);
+        if (sender == badu)
+        {
+            bedroomDoor.GetComponent<DialogueInteraction>().enabled = false;
+            bedroomDoor.GetComponent<SceneChangeInteraction>().enabled = true;
+            isTalkingWithBadu = true;
+        }
     }
 
     private void InteractEndHandler(BrokerEvent<InteractionEvents.InteractEnd> inEvent)
     {
-        UnityEngine.Object sender = (UnityEngine.Object)inEvent.Sender;
-        if (sender == badu.GetComponent<DialogueInteraction>())
-        {
-            bedroomDoor.GetComponent<DialogueInteraction>().enabled = false;
-            bedroomDoor.GetComponent<SceneChangeInteraction>().enabled = true;
-        }
+        if (!isTalkingWithBadu) return;
+        badu.GetComponent<Animator>().runtimeAnimatorController = baduMothFly;
+        isTalkingWithBadu = false;
     }
 }

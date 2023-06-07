@@ -17,10 +17,14 @@ MonoBehaviour:
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
+  <AudioClip>k__BackingField: {fileID: 0}
   <Text>k__BackingField: "Again with Badu? You can\u2019t blame your imaginary friend
     forever, Leigh."
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: ec500d262d7049e4c923421a898bb04b, type: 2}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0

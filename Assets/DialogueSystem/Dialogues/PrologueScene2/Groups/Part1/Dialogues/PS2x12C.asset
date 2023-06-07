@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PS2x12C
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: PS2x12C
-  <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+  <Character>k__BackingField: {fileID: 11400000, guid: 490d5d6ce57886a4c80a8057c06ad4a6, type: 2}
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 

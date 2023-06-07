@@ -185,6 +185,22 @@ MonoBehaviour:
   m_Clips: []
   m_Markers:
     m_Objects: []
+--- !u!114 &-2270108325158773550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9181d068cd2f18843b1e1fd24f382343, type: 3}
+  m_Name: Player Input Marker Emitter
+  m_EditorClassIdentifier: 
+  m_Time: 7
+  retroactive: 0
+  emiteOnce: 0
+  <Enable>k__BackingField: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +236,22 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 9a064abc80ef0e749b72399f38a51a59, type: 2}
+--- !u!114 &3215883439478015347
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9181d068cd2f18843b1e1fd24f382343, type: 3}
+  m_Name: Player Input Marker Emitter
+  m_EditorClassIdentifier: 
+  m_Time: 0
+  retroactive: 0
+  emiteOnce: 0
+  <Enable>k__BackingField: 0
 --- !u!114 &3415835163046798861
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -297,10 +329,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b33c080cc27dc78479ee6d73f07d9e52, type: 3}
   m_Name: Scene Change Marker Emitter
   m_EditorClassIdentifier: 
-  m_Time: 6.9
+  m_Time: 7
   retroactive: 0
   emiteOnce: 0
-  selectedSceneIndex: 3
+  selectedSceneName: Prologue - Scene 2
 --- !u!114 &6523718212899179944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -325,6 +357,8 @@ MonoBehaviour:
   m_Markers:
     m_Objects:
     - {fileID: 5425574096890380684}
+    - {fileID: 3215883439478015347}
+    - {fileID: -2270108325158773550}
 --- !u!74 &8044814598443718458
 AnimationClip:
   m_ObjectHideFlags: 0

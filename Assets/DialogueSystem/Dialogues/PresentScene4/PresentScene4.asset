@@ -25,6 +25,8 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 02183354a36f5844b8b5d8dd2857e4e6, type: 2}
       - {fileID: 11400000, guid: cad30949eb9f13847b687a35cfe5c1f9, type: 2}
       - {fileID: 11400000, guid: 34fa954cff7a2d04284a7f74320f7e49, type: 2}
+      - {fileID: 11400000, guid: 10d3de2045a4c7f45bea4268d9e995a7, type: 2}
+      - {fileID: 11400000, guid: f7b55f64f4994b641bbcd4634479aea5, type: 2}
   <UngroupedDialogues>k__BackingField:
   - {fileID: 11400000, guid: a5aa7d03f63e078438ebaf053f026971, type: 2}
   - {fileID: 11400000, guid: 457aea78327947042aae923ea776400b, type: 2}
@@ -34,3 +36,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e472ba863b7cc1c40923e7666594a446, type: 2}
   - {fileID: 11400000, guid: 2839062030beec94da8c03fe2951e61c, type: 2}
   - {fileID: 11400000, guid: 30756111f5589454bb54e93b28c0028d, type: 2}
+  - {fileID: 11400000, guid: 0e315b0ca54a8ee4493e3fdd537bfa66, type: 2}
+  - {fileID: 11400000, guid: 20629cb5ea46228498e020ade8430480, type: 2}

@@ -18,11 +18,10 @@ MonoBehaviour:
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "Right, of course, how could I forget Badu\u2026 Hey, Leigh,
-    do they always have to follow you around?"
+  <Text>k__BackingField: "Right, of course, how could I forget Badu\u2026 "
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 084e1ae2b3aa2db438a453ccc37e0773, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 20629cb5ea46228498e020ade8430480, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

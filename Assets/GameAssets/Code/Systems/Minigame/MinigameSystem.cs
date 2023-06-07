@@ -28,6 +28,7 @@ public class MinigameSystem : MonoBehaviour
             Debug.LogError("A minigame is already going on");
             return;
         }
+        eventBrokerComponent.Publish(this, new InputEvents.SetInputState(false));
         activeMinigame = inEvent.Payload.minigame;
         
         activeMinigame.Initialize();
@@ -40,6 +41,7 @@ public class MinigameSystem : MonoBehaviour
             Debug.LogError("Unable to end minigame that has not been started");
             return;
         }
+        eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
 
         //activeMinigame.Finish();
         activeMinigame = null;

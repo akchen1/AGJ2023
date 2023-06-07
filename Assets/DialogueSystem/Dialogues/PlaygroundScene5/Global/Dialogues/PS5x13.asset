@@ -18,12 +18,11 @@ MonoBehaviour:
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "I can be there for you, Leigh. And you can make even more
-    friends! But not if Badu keeps getting you into trouble. Wouldn\u2019t you like
-    that?"
+  <Text>k__BackingField: I can be there for you, Leigh. And you can make even more
+    friends!
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 61ac2633a9799524e99af0a0a8d73432, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 90bae45167dcf3540b650188ed314cdc, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
