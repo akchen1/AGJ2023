@@ -10,20 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cabbddd164ab042e29b24f33ca0c86c0, type: 3}
-  m_Name: BSxScroll3
+  m_Name: BSxScroll1B
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: BSxScroll3
-  <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+  <DialogueName>k__BackingField: BSxScroll1B
+  <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "You don\u2019t have to use it."
+  <Text>k__BackingField: "See, \u2018split demon\u2019. That just means Badu will
+    go their way and you can go yours. "
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 61227a949f06caf4390e3eb2a0ea85ca, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e299b431d0c7cf445aa46a99e40ac67c, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 0
-  <IsStartingDialogue>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0

@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Linq;
 using System;
-
+using UnityEngine.EventSystems;
 
 namespace Pathfinding {
 	/// <summary>
@@ -46,7 +46,7 @@ namespace Pathfinding {
 
 		public void OnGUI () {
 			if(AllowMove){
-				if (onlyOnClick && cam != null && Event.current.type == EventType.MouseDown && Event.current.clickCount == 1) 
+				if (onlyOnClick && cam != null && Event.current.type == EventType.MouseDown && Event.current.clickCount == 1 && !EventSystem.current.IsPointerOverGameObject()) 
 				{
 					Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 					RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity, layerMask);

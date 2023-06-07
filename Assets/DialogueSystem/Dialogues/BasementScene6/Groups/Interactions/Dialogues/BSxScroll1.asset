@@ -18,12 +18,10 @@ MonoBehaviour:
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "Aha, I knew I remembered seeing this! See, \u2018split
-    demon\u2019. That just means Badu will go their way and you can go yours. That\u2019s
-    not so bad, right?"
+  <Text>k__BackingField: Aha, I knew I remembered seeing this!
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 84dd9de2484fc4a4cb19d2ddea1a681a, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: cb965885e839809449bfd7ae50a07956, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

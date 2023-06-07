@@ -21,7 +21,7 @@ MonoBehaviour:
   <Text>k__BackingField: I- Well, I guess-
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a8fcc6ddfe511474cab64ea907cced0f, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 0}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

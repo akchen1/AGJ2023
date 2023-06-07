@@ -35,7 +35,6 @@ public class ObjectPlacementMinigame : MonoBehaviour, IMinigame
             finishedObject.SetActive(true);
 
         eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
-        eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
         HandleInventoryEvents();
     }
 
