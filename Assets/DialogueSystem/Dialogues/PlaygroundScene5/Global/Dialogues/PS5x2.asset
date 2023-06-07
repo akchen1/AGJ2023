@@ -18,11 +18,10 @@ MonoBehaviour:
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "Oh yes, it\u2019s nice. Badu doesn\u2019t like the sun
-    very much, though."
+  <Text>k__BackingField: "Oh yes, it\u2019s nice. "
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6ffdd8cc837f6364899d641f03c5445f, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0e2c7f33a43a5844887baa0233383775, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

@@ -19,10 +19,10 @@ MonoBehaviour:
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
   <Text>k__BackingField: "When we play together, it\u2019s always Badu this, Badu
-    that, blah, blah. Don\u2019t you want other friends?"
+    that, blah, blah. "
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: aca057e4b7c9f054bb01fa70e2801dea, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: d1a43b4f5a5fad24d81932a507d8210e, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

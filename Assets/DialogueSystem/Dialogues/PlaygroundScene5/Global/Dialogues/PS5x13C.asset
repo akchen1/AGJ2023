@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cabbddd164ab042e29b24f33ca0c86c0, type: 3}
-  m_Name: PS5x11
+  m_Name: PS5x13C
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: PS5x11
+  <DialogueName>k__BackingField: PS5x13C
   <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: 'Something tells me Badu would be just fine. '
+  <Text>k__BackingField: "Wouldn\u2019t you like that?"
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 688b02481df0ee243b7a7bb98e1b4417, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 61ac2633a9799524e99af0a0a8d73432, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
