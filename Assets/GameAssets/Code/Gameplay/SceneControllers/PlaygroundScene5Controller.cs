@@ -58,11 +58,6 @@ public class PlaygroundScene5Controller : MonoBehaviour
         }
     }
 
-    private void Test(PlayableDirector obj)
-    {
-        throw new NotImplementedException();
-    }
-
     // Update is called once per frame
     void Update()
     {

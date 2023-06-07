@@ -18,11 +18,10 @@ MonoBehaviour:
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "Told ya it would be cool. Now, I think I remember seeing
-    something over here\u2026"
+  <Text>k__BackingField: 'Told ya it would be cool. '
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 23c29c9540adfe84f8df54a8b0960d9e, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9a53f735d7c6f8b4882211e4f0e03be1, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

@@ -18,11 +18,10 @@ MonoBehaviour:
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "She clearly won\u2019t give up. You know I just want what\u2019s
-    best for you. You say she\u2019s your friend, why not play along?"
+  <Text>k__BackingField: "She clearly won\u2019t give up."
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: d75113a40e51de548a296fa3296f4bd9, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6acdddbff2d26f54783fee26271907ff, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

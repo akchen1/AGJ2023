@@ -18,11 +18,10 @@ MonoBehaviour:
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: Sweet! I think I can make out some of these, we should have
-    no problem getting what we need.
+  <Text>k__BackingField: 'Sweet! I think I can make out some of these. '
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0f2ea8dfe951ef54298f85b7cf7f66bc, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: d1573d6161f1ae54d8e2e9a520782368, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

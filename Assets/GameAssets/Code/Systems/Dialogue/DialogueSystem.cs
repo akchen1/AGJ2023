@@ -46,7 +46,7 @@ public class DialogueSystem
         }
 
         // Check if there is a scene transition event
-        if (currentDialogue.HasSceneTransition) // Assuming Bootstrap is 0
+        if (currentDialogue.HasSceneTransition)
         {
             eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(currentDialogue.NextSceneName));
         }
@@ -54,14 +54,15 @@ public class DialogueSystem
         // Set next dialogue node to current dialogue. If null, that means dialogue is over
         currentDialogue = currentDialogue.Choices?[0]?.NextDialogue;
         // Fire callback
-        inEvent.Payload.NextDialogueNode?.Invoke(currentDialogue);
 
+        inEvent.Payload.NextDialogueNode?.Invoke(currentDialogue);
         if (currentDialogue == null)
         {
+            eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
             eventBrokerComponent.Publish(this, new DialogueEvents.DialogueFinish());
             eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
-            eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
         }
+
     }
 
     private void SelectDialogueOptionHandler(BrokerEvent<DialogueEvents.SelectDialogueOption> inEvent)
