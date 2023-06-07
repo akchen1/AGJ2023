@@ -23,6 +23,7 @@ public class SearchScene7Controller : SceneController
 	[SerializeField, Header("Living Room")] private CinemachineVirtualCamera livingRoomCam;
 
 	[SerializeField, Header("General Store")] private CinemachineVirtualCamera generalStoreCam;
+	[SerializeField] private PlayableAsset generalStoreStartingCutscene;
 
 	[SerializeField, Header("Playground")] private CinemachineVirtualCamera playgroundCam;
 
@@ -41,6 +42,8 @@ public class SearchScene7Controller : SceneController
 				break;
 
 			case Constants.Scene7SubScenes.GeneralStore:
+				HandleCameras(Constants.Scene7SubScenes.GeneralStore);
+				playableDirector?.Play(generalStoreStartingCutscene);
 				break;
 
 			case Constants.Scene7SubScenes.Basement:
@@ -97,7 +100,6 @@ public class SearchScene7Controller : SceneController
 		HandleCameras(Constants.Scene7SubScenes.MainStreet);
 		fadeToBlack.gameObject.SetActive(false);
 		playableDirector?.Play(mainStreetStartingCutscene);
-
 	}
 
 	private void OnEnable()
