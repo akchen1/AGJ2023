@@ -12,6 +12,16 @@ public class DialogueTrack : TrackAsset
 {
     public override Playable CreateTrackMixer(PlayableGraph graph, GameObject go, int inputCount)
     {
+
+        foreach (TimelineClip clip in GetClips())
+        {
+            DialogueClip dialogueClip = clip.asset as DialogueClip;
+            if (dialogueClip != null)
+            {
+                dialogueClip.StartTime = clip.start;
+                dialogueClip.EndTime = clip.end;
+            }
+        }
         return ScriptPlayable<DialogueTrackMixer>.Create(graph, inputCount);
     }
 }

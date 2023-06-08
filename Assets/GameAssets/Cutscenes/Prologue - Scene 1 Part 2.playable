@@ -236,6 +236,9 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 9a064abc80ef0e749b72399f38a51a59, type: 2}
+  canSkipDialogue: 1
+  StartTime: 0
+  EndTime: 3
 --- !u!114 &3215883439478015347
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -504,3 +507,6 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: ebbcba5d06475b24089b3dca0c04edbd, type: 2}
+  canSkipDialogue: 1
+  StartTime: 3
+  EndTime: 6

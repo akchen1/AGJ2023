@@ -200,8 +200,6 @@ PlayableDirector:
     value: {fileID: 1521110075}
   - key: {fileID: 423493646788987906, guid: 1968951b6acdb5e46a00849da48832cb, type: 2}
     value: {fileID: 1521110076}
-  - key: {fileID: 5729065482556309173, guid: 1968951b6acdb5e46a00849da48832cb, type: 2}
-    value: {fileID: 2105090587}
   - key: {fileID: 836017744580223036, guid: 1968951b6acdb5e46a00849da48832cb, type: 2}
     value: {fileID: 51706542}
   - key: {fileID: -6945899330871335767, guid: 1968951b6acdb5e46a00849da48832cb, type: 2}
@@ -214,6 +212,8 @@ PlayableDirector:
     value: {fileID: 733133285}
   - key: {fileID: -5422568915518489682, guid: 1968951b6acdb5e46a00849da48832cb, type: 2}
     value: {fileID: 51706542}
+  - key: {fileID: -6922884406166079608, guid: 1968951b6acdb5e46a00849da48832cb, type: 2}
+    value: {fileID: 2098341354}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &141926940
@@ -852,8 +852,8 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 21.1
-    OrthographicSize: 11
+    FieldOfView: 60
+    OrthographicSize: 8.2
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -1301,7 +1301,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2127699226}
+    m_TransformParent: {fileID: 2098341353}
     m_Modifications:
     - target: {fileID: 8229779336760689926, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_Name
@@ -1321,19 +1321,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.63
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1475,6 +1475,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2098341352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2098341353}
+  - component: {fileID: 2098341354}
+  m_Layer: 0
+  m_Name: BaduContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2098341353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098341352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.63, y: 4.01, z: -4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1980003888}
+  m_Father: {fileID: 2127699226}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2098341354
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098341352}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!95 &2105090587 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8229779336760689927, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
@@ -1566,7 +1619,7 @@ Transform:
   - {fileID: 382016722}
   - {fileID: 2022831111}
   - {fileID: 1391762633}
-  - {fileID: 1980003888}
+  - {fileID: 2098341353}
   - {fileID: 733133284}
   - {fileID: 51706541}
   m_Father: {fileID: 0}

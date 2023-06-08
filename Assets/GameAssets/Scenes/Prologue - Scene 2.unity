@@ -693,6 +693,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Badu
       objectReference: {fileID: 0}
+    - target: {fileID: 8229779336760689927, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8472ea8b7ee586d4f9fb4b83a2d8083c, type: 2}
     - target: {fileID: 8229779336760690040, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -1176,7 +1180,7 @@ PlayableDirector:
   m_GameObject: {fileID: 799072986}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: ece47bec2d0103040909ed04f1db3558, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 9e5e62ad8eb02294086febd6aeaf1971, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1

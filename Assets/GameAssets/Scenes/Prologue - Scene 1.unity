@@ -367,6 +367,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Badu
       objectReference: {fileID: 0}
+    - target: {fileID: 8229779336760689927, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8472ea8b7ee586d4f9fb4b83a2d8083c, type: 2}
     - target: {fileID: 8229779336760690040, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -377,11 +381,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690040, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_Size.x
-      value: 8.28
+      value: 8.275556
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690040, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_Size.y
-      value: 12.1866665
+      value: 12.133333
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690040, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_Sprite
@@ -397,7 +401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690040, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_RootOrder
@@ -4219,7 +4223,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1926956830}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 02b9b1480bceead4f8bf7c960dbb75f5, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 9b733eb0999ee2f42a92ccdd93951140, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
