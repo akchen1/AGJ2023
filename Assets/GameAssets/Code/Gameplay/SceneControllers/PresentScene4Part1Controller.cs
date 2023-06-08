@@ -1,14 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class PresentScene4Part1Controller : MonoBehaviour
 {
     [SerializeField] private DialogueInteraction badu;
-    [SerializeField] private AnimatorController baduMothFly;
+    [SerializeField] private RuntimeAnimatorController baduMothFly;
     [SerializeField] private GameObject bedroomDoor;
 
     private bool isTalkingWithBadu = false;

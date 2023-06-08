@@ -3,7 +3,6 @@ using DS.ScriptableObjects;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem.iOS;
 using UnityEngine.SceneManagement;
 
 [CreateAssetMenu]
