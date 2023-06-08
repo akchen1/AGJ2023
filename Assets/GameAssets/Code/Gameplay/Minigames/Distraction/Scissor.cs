@@ -9,6 +9,7 @@ public class Scissor :  MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
     private RectTransform rectTransform;
     private Canvas canvas;
     private CanvasGroup canvasGroup;
+    private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -44,6 +45,8 @@ public class Scissor :  MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
                 go.GetComponent<Image>().enabled = false;
             }
             other.transform.parent.GetComponent<Rigidbody2D>().isKinematic = false;
+            eventBrokerComponent.Publish(this, new DistractionEvent.Start());
         }
     }
+
 }

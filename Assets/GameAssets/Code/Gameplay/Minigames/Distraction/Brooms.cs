@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Brooms : MonoBehaviour
 {
+    private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
+    public bool finished = false;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.gameObject.name);
         if (other.gameObject.name == "Oil")
         {
-            Debug.Log("Finish Game");
+            eventBrokerComponent.Publish(this, new DistractionEvent.Finished());
         }
     }
+
 }

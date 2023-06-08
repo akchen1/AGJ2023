@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enabled: 1
   _mainSceneProvider:
-    rid: 6374957601826013184
+    rid: 2929843531050909696
   _mainSceneLoadedHandler:
-    rid: 6374957601826013187
+    rid: 2929843531050909697
   _playmodeExitedHandler:
-    rid: 6374957601826013186
+    rid: 2929843531050909698
   references:
     version: 2
     RefIds:
-    - rid: 6374957601826013184
+    - rid: 2929843531050909696
       type: {class: FirstSceneInBuildSettings, ns: SaG.MainSceneAutoLoading.MainSceneProviders, asm: SaG.MainSceneAutoLoading.Editor}
-    - rid: 6374957601826013186
+    - rid: 2929843531050909697
+      type: {class: LoadAllLoadedScenes, ns: SaG.MainSceneAutoLoading.MainSceneLoadedHandlers, asm: SaG.MainSceneAutoLoading.Editor}
+    - rid: 2929843531050909698
       type: {class: RestoreSceneManagerSetup, ns: SaG.MainSceneAutoLoading.PlaymodeExitedHandlers, asm: SaG.MainSceneAutoLoading.Editor}
-    - rid: 6374957601826013187
-      type: {class: DelegateToInSceneImplementations, ns: SaG.MainSceneAutoLoading.MainSceneLoadedHandlers, asm: SaG.MainSceneAutoLoading.Editor}
