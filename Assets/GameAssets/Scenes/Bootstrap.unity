@@ -555,6 +555,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 625671695}
   sfxSource: {fileID: 625671697}
+  mainMenuTrack: {fileID: 0}
+  click: {fileID: 8300000, guid: 23c12b6f8001cfc4d81a9bf90a4598e2, type: 3}
+  pieceLift: {fileID: 8300000, guid: 8e26bc8b223398d4c978a869a925c7cc, type: 3}
+  piecePlace: {fileID: 8300000, guid: 6204f25c6430ad94d9826668fc769fe2, type: 3}
+  pieceRotate: {fileID: 8300000, guid: 45c64cc00e54dbb4499610915a158c0f, type: 3}
+  scrollClose: {fileID: 8300000, guid: 3121304f7d06fc842b50bc176386549c, type: 3}
+  scrollFlip: {fileID: 8300000, guid: 9564f1c636371664e95939f1de4ea020, type: 3}
+  scrollOpen: {fileID: 8300000, guid: 1ed39186ee7b2ec42b54b5ef4ae3bb16, type: 3}
 --- !u!1 &464725709
 GameObject:
   m_ObjectHideFlags: 0
