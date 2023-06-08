@@ -9,6 +9,16 @@ public class AudioSystem : MonoBehaviour
 	[SerializeField] private AudioSource musicSource;
 	[SerializeField] private AudioSource sfxSource;
 
+	[SerializeField, Header("Music")] private AudioClip mainMenuTrack;
+
+	[SerializeField, Header("SFX")] private AudioClip click;
+	[SerializeField] private AudioClip pieceLift;
+	[SerializeField] private AudioClip piecePlace;
+	[SerializeField] private AudioClip pieceRotate;
+	[SerializeField] private AudioClip scrollClose;
+	[SerializeField] private AudioClip scrollFlip;
+	[SerializeField] private AudioClip scrollOpen;
+
 	private float musicVolume;
 	private float sfxVolume;
 
@@ -16,6 +26,20 @@ public class AudioSystem : MonoBehaviour
 	private Dictionary<string, AudioClip> sfx = new Dictionary<string, AudioClip>();
 
 	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
+
+	private void Awake()
+	{
+		// Set up music and sfx dictionaries
+		//music.Add(Constants.Audio.Music.MainMenu, mainMenuTrack);
+
+		sfx.Add(Constants.Audio.SFX.Click, click);
+		sfx.Add(Constants.Audio.SFX.PieceLift, pieceLift);
+		sfx.Add(Constants.Audio.SFX.PiecePlace, piecePlace);
+		sfx.Add(Constants.Audio.SFX.PieceRotate, pieceRotate);
+		sfx.Add(Constants.Audio.SFX.ScrollClose, scrollClose);
+		sfx.Add(Constants.Audio.SFX.ScrollFlip, scrollFlip);
+		sfx.Add(Constants.Audio.SFX.ScrollOpen, scrollOpen);
+	}
 
 	private void OnEnable()
     {

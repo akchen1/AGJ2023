@@ -15,16 +15,19 @@ public class MainMenu : MonoBehaviour
 
 	private void OnStartButtonPressed()
 	{
+		eventBroker.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.Click));
 		eventBroker.Publish(this, new SceneEvents.SceneChange(Constants.SceneNames.PrologueScene1));
 	}
 
 	private void OnCreditsButtonPressed()
 	{
+		eventBroker.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.Click));
 		creditsPanel.SetActive(true);
 	}
 
 	private void OnBackButtonPressed()
 	{
+		eventBroker.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.Click));
 		creditsPanel.SetActive(false);
 	}
 

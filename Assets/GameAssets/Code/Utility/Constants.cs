@@ -63,6 +63,22 @@ public static class Constants
 
 		public const string MusicVolumePP = "MusicVolume";
 		public const string SFXVolumePP = "SFXVolume";
+
+		public struct Music
+		{
+			public const string MainMenu = "MainMenu";
+		}
+
+		public struct SFX
+		{
+			public const string Click = "Click";
+			public const string PieceLift = "PieceLift";
+			public const string PiecePlace = "PiecePlace";
+			public const string PieceRotate = "PieceRotate";
+			public const string ScrollClose = "ScrollClose";
+			public const string ScrollFlip = "ScrollFlip";
+			public const string ScrollOpen = "ScrollOpen";
+		}
 	}
 	#endregion Audio
 
