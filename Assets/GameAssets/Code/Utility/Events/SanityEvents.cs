@@ -7,21 +7,21 @@ public class SanityEvents
 {
 	public class ChangeSanity
 	{
-		public ChangeSanity(int amount)
+		public ChangeSanity(Constants.Sanity.SanityType sanityType)
 		{
-			Amount = amount;
+            SanityType = sanityType;
 		}
 
-		public readonly int Amount;
-	}
+		public readonly Constants.Sanity.SanityType SanityType;
+    }
 
 	public class GetSanity
 	{
-		public GetSanity(Action<int> processData)
+		public GetSanity(Action<float> processData)
 		{
 			ProcessData = processData;
 		}
 
-		public readonly Action<int> ProcessData;
+		public readonly Action<float> ProcessData;
 	}
 }

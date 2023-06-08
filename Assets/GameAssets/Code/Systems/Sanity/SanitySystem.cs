@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Constants.Sanity;
 
 [System.Serializable]
 public class SanitySystem 
@@ -17,7 +18,7 @@ public class SanitySystem
         eventBrokerComponent.Subscribe<SanityEvents.ChangeSanity>(ChangeSanityHandler);
 		eventBrokerComponent.Subscribe<SanityEvents.GetSanity>(GetSanityHandler);
 
-		currentSanity = Constants.Sanity.DefaultSanityLevel;
+		currentSanity = DefaultSanityLevel;
     }
 
 	~SanitySystem()
@@ -28,11 +29,22 @@ public class SanitySystem
 
     private void ChangeSanityHandler(BrokerEvent<SanityEvents.ChangeSanity> inEvent)
     {
-		currentSanity = Mathf.Clamp(currentSanity + inEvent.Payload.Amount, Constants.Sanity.MinimumSanityLevel, Constants.Sanity.MaximumSanityLevel);
+		SanityType sanityType = inEvent.Payload.SanityType;
+
+		if (sanityType == SanityType.Neutral) return;
+		int change = 0;
+		if (sanityType == SanityType.Negative)
+		{
+			change = -1;
+		} else if (sanityType == SanityType.Positive)
+		{
+			change = 1;
+		}
+		currentSanity = Mathf.Clamp(currentSanity + change, MinimumSanityLevel, MaximumSanityLevel);
     }
 
 	private void GetSanityHandler(BrokerEvent<SanityEvents.GetSanity> inEvent)
 	{
-		inEvent.Payload.ProcessData.DynamicInvoke(currentSanity);
+		inEvent.Payload.ProcessData?.Invoke(sanityCurve.Evaluate(currentSanity));
 	}
 }

@@ -23,11 +23,13 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: Break the branch
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 02e1fb4062345b24288ca83cf546ff06, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: -1
   - <Text>k__BackingField: Pick a different branch
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 259055a27b0e0584784c8d7de3a45db4, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: 1
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0

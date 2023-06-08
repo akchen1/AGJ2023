@@ -16,13 +16,13 @@ MonoBehaviour:
   <Groups>k__BackingField:
   - <ID>k__BackingField: c67dee56-b232-4509-839c-e8243b438b42
     <Name>k__BackingField: CharacterInteractions
-    <Position>k__BackingField: {x: 61.00003, y: -74.99997}
+    <Position>k__BackingField: {x: 60.999794, y: -74.99972}
   - <ID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
     <Name>k__BackingField: SanityDecision
-    <Position>k__BackingField: {x: 44.000004, y: 347}
+    <Position>k__BackingField: {x: -203.99968, y: 347}
   - <ID>k__BackingField: d45c56f1-23d8-4f69-813a-358b6fd33bcf
     <Name>k__BackingField: SceneInteractions
-    <Position>k__BackingField: {x: 42, y: -555}
+    <Position>k__BackingField: {x: 41.999794, y: -554.9997}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 0c4da8cb-f80a-4034-b796-20f18cdaa90c
     <Name>k__BackingField: SS7LRxLeigh
@@ -78,149 +78,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: c67dee56-b232-4509-839c-e8243b438b42
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 919, y: -16}
-  - <ID>k__BackingField: 6e927fb9-5e2d-494c-9627-c291f2adfd06
-    <Name>k__BackingField: SS7LRx2
-    <Text>k__BackingField: I never really noticed that this knife was in here.
-    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 5713a359-ba4d-4471-b46c-608a58778239
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 521, y: 659}
-  - <ID>k__BackingField: 951b717b-8811-41fe-b4bf-57848b58dde9
-    <Name>k__BackingField: SS7LRx1
-    <Text>k__BackingField: "Yeesh, this place gives me the creeps. I\u2019m waiting
-      outside."
-    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 6e927fb9-5e2d-494c-9627-c291f2adfd06
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 69, y: 659}
-  - <ID>k__BackingField: 5713a359-ba4d-4471-b46c-608a58778239
-    <Name>k__BackingField: SS7LRx3
-    <Text>k__BackingField: "You could have hurt yourself. Your parents certainly
-      weren\u2019t very cautious, were they?"
-    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 5053dc88-46f4-42d0-a858-247fcb6a788a
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 928, y: 659}
-  - <ID>k__BackingField: 5053dc88-46f4-42d0-a858-247fcb6a788a
-    <Name>k__BackingField: SS7LRx4
-    <Text>k__BackingField: "I guess not\u2026"
-    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 63639038-0246-448f-8cb7-4419e9153aca
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1535, y: 659}
-  - <ID>k__BackingField: de5b259a-7b45-4e10-b27c-ade96c42b804
-    <Name>k__BackingField: SS7LRx6
-    <Text>k__BackingField: "\u2026"
-    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 3eeb4108-3028-454b-a7c0-9ba4cc882aeb
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 2445, y: 659}
-  - <ID>k__BackingField: 3eeb4108-3028-454b-a7c0-9ba4cc882aeb
-    <Name>k__BackingField: SS7LRx7
-    <Text>k__BackingField: Would you join me in smashing something?
-    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Join Badu and break something
-      <NodeID>k__BackingField: 511aa58a-7d75-460d-aed1-0bfb2fd33c31
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    - <Text>k__BackingField: Decline Badu
-      <NodeID>k__BackingField: 510198bc-a7fb-4bae-b3d1-92dec9a4c5fe
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
-    <DialogueType>k__BackingField: 1
-    <Position>k__BackingField: {x: 2837, y: 646}
-  - <ID>k__BackingField: 511aa58a-7d75-460d-aed1-0bfb2fd33c31
-    <Name>k__BackingField: SS7LRx8A
-    <Text>k__BackingField: Just like old times. Not so bad, right, Leigh?
-    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Agree with Badu
-      <NodeID>k__BackingField: 3b3bf3d3-4512-48c9-bdf6-cd52aa54f55a
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    - <Text>k__BackingField: Be neutral
-      <NodeID>k__BackingField: 731d2c98-6a7a-4a0c-8e89-6a3413c1b37b
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    - <Text>k__BackingField: Disagree with Badu
-      <NodeID>k__BackingField: 830d4c59-f383-47f6-9ed9-393bd7333ced
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
-    <DialogueType>k__BackingField: 1
-    <Position>k__BackingField: {x: 3400, y: 646}
   - <ID>k__BackingField: 3b3bf3d3-4512-48c9-bdf6-cd52aa54f55a
     <Name>k__BackingField: SS7LRx9A
     <Text>k__BackingField: "Maybe you\u2019re onto something here."
@@ -367,25 +224,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4243, y: 718}
-  - <ID>k__BackingField: 63639038-0246-448f-8cb7-4419e9153aca
-    <Name>k__BackingField: SS7LRx5
-    <Text>k__BackingField: "It\u2019s a good thing I was around all this time. Mmm,
-      so many bad memories."
-    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: de5b259a-7b45-4e10-b27c-ade96c42b804
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1929, y: 659}
   - <ID>k__BackingField: 09e44fbf-cbf0-4da1-838e-82d59bbf1df4
     <Name>k__BackingField: SS7LRxDeadCat
     <Text>k__BackingField: "Sorry, Binky. I know Badu didn\u2019t mean it."
@@ -422,6 +260,168 @@ MonoBehaviour:
     <GroupID>k__BackingField: d45c56f1-23d8-4f69-813a-358b6fd33bcf
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 67, y: -496}
+  - <ID>k__BackingField: 6e927fb9-5e2d-494c-9627-c291f2adfd06
+    <Name>k__BackingField: SS7LRx2
+    <Text>k__BackingField: I never really noticed that this knife was in here.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 5713a359-ba4d-4471-b46c-608a58778239
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 273, y: 683}
+  - <ID>k__BackingField: 951b717b-8811-41fe-b4bf-57848b58dde9
+    <Name>k__BackingField: SS7LRx1
+    <Text>k__BackingField: "Yeesh, this place gives me the creeps. I\u2019m waiting
+      outside."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 6e927fb9-5e2d-494c-9627-c291f2adfd06
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -179, y: 683}
+  - <ID>k__BackingField: 5713a359-ba4d-4471-b46c-608a58778239
+    <Name>k__BackingField: SS7LRx3
+    <Text>k__BackingField: "You could have hurt yourself. Your parents certainly
+      weren\u2019t very cautious, were they?"
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 5053dc88-46f4-42d0-a858-247fcb6a788a
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 680, y: 683}
+  - <ID>k__BackingField: 5053dc88-46f4-42d0-a858-247fcb6a788a
+    <Name>k__BackingField: SS7LRx4
+    <Text>k__BackingField: "I guess not\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 63639038-0246-448f-8cb7-4419e9153aca
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1287, y: 683}
+  - <ID>k__BackingField: 63639038-0246-448f-8cb7-4419e9153aca
+    <Name>k__BackingField: SS7LRx5
+    <Text>k__BackingField: "It\u2019s a good thing I was around all this time. Mmm,
+      so many bad memories."
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: de5b259a-7b45-4e10-b27c-ade96c42b804
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1681, y: 683}
+  - <ID>k__BackingField: de5b259a-7b45-4e10-b27c-ade96c42b804
+    <Name>k__BackingField: SS7LRx6
+    <Text>k__BackingField: "\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 3eeb4108-3028-454b-a7c0-9ba4cc882aeb
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2167, y: 683}
+  - <ID>k__BackingField: 3eeb4108-3028-454b-a7c0-9ba4cc882aeb
+    <Name>k__BackingField: SS7LRx7
+    <Text>k__BackingField: Would you join me in smashing something?
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Join Badu and break something
+      <NodeID>k__BackingField: 511aa58a-7d75-460d-aed1-0bfb2fd33c31
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: -1
+    - <Text>k__BackingField: Decline Badu
+      <NodeID>k__BackingField: 510198bc-a7fb-4bae-b3d1-92dec9a4c5fe
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2535, y: 643}
+  - <ID>k__BackingField: 511aa58a-7d75-460d-aed1-0bfb2fd33c31
+    <Name>k__BackingField: SS7LRx8A
+    <Text>k__BackingField: Just like old times. Not so bad, right, Leigh?
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Agree with Badu
+      <NodeID>k__BackingField: 3b3bf3d3-4512-48c9-bdf6-cd52aa54f55a
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: -1
+    - <Text>k__BackingField: Be neutral
+      <NodeID>k__BackingField: 731d2c98-6a7a-4a0c-8e89-6a3413c1b37b
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: Disagree with Badu
+      <NodeID>k__BackingField: 830d4c59-f383-47f6-9ed9-393bd7333ced
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 1
+    <GroupID>k__BackingField: ccdb3316-ae7e-4af9-ad11-d8934835c7f7
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 3245, y: 606}
   <OldGroupNames>k__BackingField:
   - CharacterInteractions
   - SanityDecision
@@ -436,13 +436,6 @@ MonoBehaviour:
       - SS7LRxBadu
     - Key: SanityDecision
       Value:
-      - SS7LRx2
-      - SS7LRx1
-      - SS7LRx3
-      - SS7LRx4
-      - SS7LRx6
-      - SS7LRx7
-      - SS7LRx8A
       - SS7LRx9A
       - SS7LRx10A
       - SS7LRx9B
@@ -451,7 +444,14 @@ MonoBehaviour:
       - SS7LRx8B
       - 9D
       - SS7LRx10B
+      - SS7LRx2
+      - SS7LRx1
+      - SS7LRx3
+      - SS7LRx4
       - SS7LRx5
+      - SS7LRx6
+      - SS7LRx7
+      - SS7LRx8A
     - Key: SceneInteractions
       Value:
       - SS7LRxDeadCat

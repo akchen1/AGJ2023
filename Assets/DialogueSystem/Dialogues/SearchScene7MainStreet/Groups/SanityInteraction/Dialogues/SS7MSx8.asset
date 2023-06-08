@@ -22,12 +22,12 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: "Although\u2026"
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4505f42a49cf0e2459528005e84398a2, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
-    <SanityType>k__BackingField: 0
+    <SanityType>k__BackingField: -1
   - <Text>k__BackingField: Leave it be
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: f14391e823dfe8e4f90ef63599299e72, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 1

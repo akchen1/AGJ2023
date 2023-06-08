@@ -1,0 +1,239 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce95c50c4663d4a14a54883ccc78975b, type: 3}
+  m_Name: EndingScene10Graph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: EndingScene10
+  <Groups>k__BackingField: []
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: d86ed175-e2f4-490d-878c-3d71ed89b05b
+    <Name>k__BackingField: ES10x1
+    <Text>k__BackingField: Need I say anything more, my old friend?
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: "You know what I\u2019m going to do."
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: -1
+    - <Text>k__BackingField: Am I sure about this?
+      <NodeID>k__BackingField: 0d1e0b13-05e8-4f65-b58a-50ba0cf94768
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 68, y: 156}
+  - <ID>k__BackingField: d53753fd-d523-45a2-aaa7-a9e90fce402d
+    <Name>k__BackingField: ES10x8
+    <Text>k__BackingField: Think about what YOU want, remember?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Right, what I want.
+      <NodeID>k__BackingField: 06a299e3-bd3f-414e-9cda-62b2500dcd54
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: "I know\u2026 but Badu has always been here with me\u2026"
+      <NodeID>k__BackingField: a7b9c44b-5fcc-43ef-ae92-b136123c201a
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 3985, y: 266}
+  - <ID>k__BackingField: 0d1e0b13-05e8-4f65-b58a-50ba0cf94768
+    <Name>k__BackingField: ES10x2
+    <Text>k__BackingField: "Think of what we\u2019ve been through together."
+    <Character>k__BackingField: {fileID: 0}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: "Maybe\u2026 but would Maeve want this?"
+      <NodeID>k__BackingField: 6615c98b-28d5-4842-ba75-db1d4fee6587
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: How could I keep you all to myself?
+      <NodeID>k__BackingField: d86ed175-e2f4-490d-878c-3d71ed89b05b
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 722, y: 156}
+  - <ID>k__BackingField: 6615c98b-28d5-4842-ba75-db1d4fee6587
+    <Name>k__BackingField: ES10x3
+    <Text>k__BackingField: When have I ever steered you wrong, Leigh?
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: "You\u2019re usually right."
+      <NodeID>k__BackingField: 0d1e0b13-05e8-4f65-b58a-50ba0cf94768
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: "But to split you into someone else\u2026"
+      <NodeID>k__BackingField: 15af3d3d-9bf0-402e-accb-5157cf212661
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1311, y: 256}
+  - <ID>k__BackingField: 06a299e3-bd3f-414e-9cda-62b2500dcd54
+    <Name>k__BackingField: ES10x9
+    <Text>k__BackingField: I know you know what YOU want to do, Leigh.
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Am I sure about this?
+      <NodeID>k__BackingField: d53753fd-d523-45a2-aaa7-a9e90fce402d
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: Yeah, I know exactly what to do.
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 4637, y: 382}
+  - <ID>k__BackingField: a7b9c44b-5fcc-43ef-ae92-b136123c201a
+    <Name>k__BackingField: ES10x7
+    <Text>k__BackingField: "I know Badu is important to you, but I don\u2019t know
+      if splitting them to others is a great idea."
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Badu is my friend, too, but I get what you mean.
+      <NodeID>k__BackingField: d53753fd-d523-45a2-aaa7-a9e90fce402d
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: "Badu is my friend\u2026 they don\u2019t mean us any
+        harm."
+      <NodeID>k__BackingField: 80fb018d-35e4-481d-9ed2-102858238246
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 3353, y: 133}
+  - <ID>k__BackingField: 80fb018d-35e4-481d-9ed2-102858238246
+    <Name>k__BackingField: ES10x6
+    <Text>k__BackingField: "Hey\u2026 we\u2019re friends, right?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: "I- I guess so\u2026"
+      <NodeID>k__BackingField: 49779847-90d0-49ff-acf6-9c80abe37977
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: Yeah, I would say so.
+      <NodeID>k__BackingField: a7b9c44b-5fcc-43ef-ae92-b136123c201a
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2865, y: 180}
+  - <ID>k__BackingField: 49779847-90d0-49ff-acf6-9c80abe37977
+    <Name>k__BackingField: ES10x5
+    <Text>k__BackingField: "\u2026what should I do? They\u2019re both my friends\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: "But Badu has always been there\u2026"
+      <NodeID>k__BackingField: 15af3d3d-9bf0-402e-accb-5157cf212661
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: "But Maeve has helped me so much\u2026"
+      <NodeID>k__BackingField: 80fb018d-35e4-481d-9ed2-102858238246
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 2307, y: 266}
+  - <ID>k__BackingField: 15af3d3d-9bf0-402e-accb-5157cf212661
+    <Name>k__BackingField: ES10x4
+    <Text>k__BackingField: Leigh?
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: "\u2026"
+      <NodeID>k__BackingField: 49779847-90d0-49ff-acf6-9c80abe37977
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: "I\u2019m here, old friend."
+      <NodeID>k__BackingField: 6615c98b-28d5-4842-ba75-db1d4fee6587
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1876, y: 180}
+  <OldGroupNames>k__BackingField: []
+  <OldUngroupedNodeNames>k__BackingField:
+  - ES10x1
+  - ES10x8
+  - ES10x2
+  - ES10x3
+  - ES10x9
+  - ES10x7
+  - ES10x6
+  - ES10x5
+  - ES10x4
+  <OldGroupedNodeNames>k__BackingField:
+    list: []

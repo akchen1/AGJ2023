@@ -22,12 +22,12 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: Double down
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: ab308471426cafd40bf28ce21e78ef0a, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
-    <SanityType>k__BackingField: 0
+    <SanityType>k__BackingField: -1
   - <Text>k__BackingField: Take a step back
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 78500f4e87dc6a741ad122bd8c6612b9, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 1

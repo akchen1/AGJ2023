@@ -16,7 +16,6 @@ public class Bootstrap : MonoBehaviour
     private PlayerInputSystem playerInputSystem;
 
     private SceneUtility sceneUtility;
-    public AnimationCurve sanityCurve;
 
     private void Awake()
     {

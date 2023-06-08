@@ -19,7 +19,7 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 3027, y: 3088}
   - <ID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <Name>k__BackingField: SanityDecision
-    <Position>k__BackingField: {x: 2936, y: 4149}
+    <Position>k__BackingField: {x: 2936.0005, y: 4149.0005}
   - <ID>k__BackingField: 58565f16-ce22-4e54-a546-794895461c7f
     <Name>k__BackingField: SanityResult
     <Position>k__BackingField: {x: 2916, y: 5276}
@@ -216,53 +216,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 6548, y: 4449}
-  - <ID>k__BackingField: 86e8d71d-06db-4663-a697-2a9598cc985f
-    <Name>k__BackingField: SS7Bx10
-    <Text>k__BackingField: "*snickers* Maybe she\u2019s not so bad after all. That\u2019s
-      useful. You wouldn\u2019t cut yourself and use your own blood, would you, Leigh?"
-    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: cb03dd47-9845-4c11-823b-f3e4e6bcb8a7
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 6982, y: 4449}
-  - <ID>k__BackingField: cb03dd47-9845-4c11-823b-f3e4e6bcb8a7
-    <Name>k__BackingField: SS7Bx11
-    <Text>k__BackingField: "Well\u2026"
-    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: "Agree with Badu that it should be Maeve\u2019s blood"
-      <NodeID>k__BackingField: 8db471c2-67ad-4734-9808-5b13d0c912ec
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    - <Text>k__BackingField: Remain indecisive
-      <NodeID>k__BackingField: 0109a87a-9375-490a-9176-1008292d4feb
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    - <Text>k__BackingField: Disagree with Badu
-      <NodeID>k__BackingField: 5f79a130-82c8-440b-91ca-255d34f78a99
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
-    <DialogueType>k__BackingField: 1
-    <Position>k__BackingField: {x: 7657, y: 4449}
   - <ID>k__BackingField: 8db471c2-67ad-4734-9808-5b13d0c912ec
     <Name>k__BackingField: SS7Bx12A
     <Text>k__BackingField: I mean, the ritual was her idea in the first place.
@@ -347,19 +300,19 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: Agree with Badu
       <NodeID>k__BackingField: 8db471c2-67ad-4734-9808-5b13d0c912ec
-      <HasSanityThreshold>k__BackingField: 0
+      <HasSanityThreshold>k__BackingField: 1
       <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
+      <SanityType>k__BackingField: -1
     - <Text>k__BackingField: Remain indecisive
       <NodeID>k__BackingField: 6ce89321-05f4-4acc-892b-0187a8a139b8
-      <HasSanityThreshold>k__BackingField: 0
+      <HasSanityThreshold>k__BackingField: 1
       <SanityThreshold>k__BackingField: 0
       <SanityType>k__BackingField: 0
     - <Text>k__BackingField: Disagree with Badu
       <NodeID>k__BackingField: 5f79a130-82c8-440b-91ca-255d34f78a99
-      <HasSanityThreshold>k__BackingField: 0
+      <HasSanityThreshold>k__BackingField: 1
       <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
+      <SanityType>k__BackingField: 1
     <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
     <DialogueType>k__BackingField: 1
     <Position>k__BackingField: {x: 8730, y: 4521}
@@ -763,6 +716,53 @@ MonoBehaviour:
     <GroupID>k__BackingField: 505461a0-63dc-49df-bf12-d563f6d4f79f
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 4096, y: 7093}
+  - <ID>k__BackingField: 86e8d71d-06db-4663-a697-2a9598cc985f
+    <Name>k__BackingField: SS7Bx10
+    <Text>k__BackingField: "*snickers* Maybe she\u2019s not so bad after all. That\u2019s
+      useful. You wouldn\u2019t cut yourself and use your own blood, would you, Leigh?"
+    <Character>k__BackingField: {fileID: 11400000, guid: 04cb33099e790ef488524ebd701ebbe3, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: cb03dd47-9845-4c11-823b-f3e4e6bcb8a7
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 6932, y: 4449}
+  - <ID>k__BackingField: cb03dd47-9845-4c11-823b-f3e4e6bcb8a7
+    <Name>k__BackingField: SS7Bx11
+    <Text>k__BackingField: "Well\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: "Agree with Badu that it should be Maeve\u2019s blood"
+      <NodeID>k__BackingField: 8db471c2-67ad-4734-9808-5b13d0c912ec
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: -1
+    - <Text>k__BackingField: Remain indecisive
+      <NodeID>k__BackingField: 0109a87a-9375-490a-9176-1008292d4feb
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: Disagree with Badu
+      <NodeID>k__BackingField: 5f79a130-82c8-440b-91ca-255d34f78a99
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 1
+    <GroupID>k__BackingField: 4aa23fe9-402a-426e-a5d7-c5163df0dc34
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 7574, y: 4449}
   <OldGroupNames>k__BackingField:
   - Interactables
   - SanityDecision
@@ -791,8 +791,6 @@ MonoBehaviour:
       - SS7Bx6
       - SS7Bx8
       - SS7Bx9
-      - SS7Bx10
-      - SS7Bx11
       - SS7Bx12A
       - SS7Bx12B
       - SS7Bx12C
@@ -802,6 +800,8 @@ MonoBehaviour:
       - SS7Bx17
       - SS7Bx15
       - SS7Bx5
+      - SS7Bx10
+      - SS7Bx11
     - Key: SanityResult
       Value:
       - SS7BxDisagree2
