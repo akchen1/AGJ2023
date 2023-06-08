@@ -22,12 +22,12 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: Join Badu and break something
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9d65fb6a9f95cda4cb868751ac376ed4, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
-    <SanityType>k__BackingField: 0
+    <SanityType>k__BackingField: -1
   - <Text>k__BackingField: Decline Badu
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 000e9a226dc0c914f956beb9900c0189, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 1

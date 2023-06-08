@@ -16,13 +16,13 @@ MonoBehaviour:
   <Groups>k__BackingField:
   - <ID>k__BackingField: daf60f5e-8ab8-416d-a7b0-ab29ea24daa5
     <Name>k__BackingField: CharacterInteractions
-    <Position>k__BackingField: {x: -608, y: 786}
+    <Position>k__BackingField: {x: -607.99976, y: 785.99994}
   - <ID>k__BackingField: 24f74cf1-0810-4e7b-982b-65e141901c2d
     <Name>k__BackingField: SceneInteractions
-    <Position>k__BackingField: {x: -644.00006, y: 1227}
+    <Position>k__BackingField: {x: -644, y: 1227}
   - <ID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
     <Name>k__BackingField: SanityInteraction
-    <Position>k__BackingField: {x: -640, y: 1662}
+    <Position>k__BackingField: {x: -900, y: 1662.0001}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 17639ce6-86fb-4ae3-bac9-8142cde8309f
     <Name>k__BackingField: SS7PGxLeigh
@@ -133,124 +133,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 24f74cf1-0810-4e7b-982b-65e141901c2d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: -619, y: 1286}
-  - <ID>k__BackingField: 9d9af95b-f444-476d-a67b-e16a0be4426e
-    <Name>k__BackingField: SS7PGx1
-    <Text>k__BackingField: I guess somebody was using this bucket after all.
-    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: -615, y: 1845}
-  - <ID>k__BackingField: 9bde8b8a-dfb3-4570-904a-4ddab1f7fc2e
-    <Name>k__BackingField: SS7PGx2
-    <Text>k__BackingField: And they left this castle all on its own? *giggles*
-    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: -239, y: 1845}
-  - <ID>k__BackingField: 3ac38bc5-93c7-4f7e-a7ef-7a3df8134c25
-    <Name>k__BackingField: SS7PGx3
-    <Text>k__BackingField: What?
-    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 7591f3ac-b476-4eb7-86b5-0b3897e011f5
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 147, y: 1845}
-  - <ID>k__BackingField: 7591f3ac-b476-4eb7-86b5-0b3897e011f5
-    <Name>k__BackingField: SS7PGx4
-    <Text>k__BackingField: "It sure would be easy to just\u2026 nudge it over\u2026"
-    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Join Maeve
-      <NodeID>k__BackingField: 6afbd579-2583-4742-a011-7b1ea4453192
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    - <Text>k__BackingField: Disagree with Maeve
-      <NodeID>k__BackingField: bf878924-ad17-4a5d-950f-7b426842f9bd
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
-    <DialogueType>k__BackingField: 1
-    <Position>k__BackingField: {x: 563, y: 1845}
-  - <ID>k__BackingField: 6afbd579-2583-4742-a011-7b1ea4453192
-    <Name>k__BackingField: SS7PGx5A
-    <Text>k__BackingField: Jump on it! Knock it over!
-    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 37a9308d-b550-44e8-b060-13e66e66b5db
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1079, y: 1792}
-  - <ID>k__BackingField: 37a9308d-b550-44e8-b060-13e66e66b5db
-    <Name>k__BackingField: SS7PGx6
-    <Text>k__BackingField: Wow, crush the whole thing?
-    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Double down
-      <NodeID>k__BackingField: d4d8a890-7dc6-46ac-8ff6-905c0aa1f432
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    - <Text>k__BackingField: Take a step back
-      <NodeID>k__BackingField: d81917b8-187f-46cb-9754-ab70836c3c0e
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
-    <DialogueType>k__BackingField: 1
-    <Position>k__BackingField: {x: 1483, y: 1735}
   - <ID>k__BackingField: d4d8a890-7dc6-46ac-8ff6-905c0aa1f432
     <Name>k__BackingField: SS7PGx7A
     <Text>k__BackingField: Bring it down!
@@ -323,47 +205,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2328, y: 2025}
-  - <ID>k__BackingField: bf878924-ad17-4a5d-950f-7b426842f9bd
-    <Name>k__BackingField: SS7PGx5B
-    <Text>k__BackingField: It seems like they put a lot of work into it, though.
-    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: dcfaccbc-9959-4b3d-a07e-b8b1fd873fd7
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1079, y: 2122}
-  - <ID>k__BackingField: dcfaccbc-9959-4b3d-a07e-b8b1fd873fd7
-    <Name>k__BackingField: SS7PGx10
-    <Text>k__BackingField: But they just left it here. How can they be mad?
-    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: Agree with Maeve
-      <NodeID>k__BackingField: a684b2dc-04ca-426d-92ab-4a102523cf96
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    - <Text>k__BackingField: Hold your ground
-      <NodeID>k__BackingField: b0ad2907-5e69-4c63-a228-9200891f1ac2
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
-    <DialogueType>k__BackingField: 1
-    <Position>k__BackingField: {x: 1483, y: 2368}
   - <ID>k__BackingField: a684b2dc-04ca-426d-92ab-4a102523cf96
     <Name>k__BackingField: SS7PGx11A
     <Text>k__BackingField: I suppose you have a point there.
@@ -455,6 +296,165 @@ MonoBehaviour:
     <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2771, y: 2699}
+  - <ID>k__BackingField: 9d9af95b-f444-476d-a67b-e16a0be4426e
+    <Name>k__BackingField: SS7PGx1
+    <Text>k__BackingField: I guess somebody was using this bucket after all.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -875, y: 1823}
+  - <ID>k__BackingField: 9bde8b8a-dfb3-4570-904a-4ddab1f7fc2e
+    <Name>k__BackingField: SS7PGx2
+    <Text>k__BackingField: And they left this castle all on its own? *giggles*
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -499, y: 1823}
+  - <ID>k__BackingField: 3ac38bc5-93c7-4f7e-a7ef-7a3df8134c25
+    <Name>k__BackingField: SS7PGx3
+    <Text>k__BackingField: What?
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 7591f3ac-b476-4eb7-86b5-0b3897e011f5
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -113, y: 1823}
+  - <ID>k__BackingField: 6afbd579-2583-4742-a011-7b1ea4453192
+    <Name>k__BackingField: SS7PGx5A
+    <Text>k__BackingField: Jump on it! Knock it over!
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 37a9308d-b550-44e8-b060-13e66e66b5db
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 819, y: 1770}
+  - <ID>k__BackingField: bf878924-ad17-4a5d-950f-7b426842f9bd
+    <Name>k__BackingField: SS7PGx5B
+    <Text>k__BackingField: It seems like they put a lot of work into it, though.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: dcfaccbc-9959-4b3d-a07e-b8b1fd873fd7
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 819, y: 2100}
+  - <ID>k__BackingField: 7591f3ac-b476-4eb7-86b5-0b3897e011f5
+    <Name>k__BackingField: SS7PGx4
+    <Text>k__BackingField: "It sure would be easy to just\u2026 nudge it over\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Join Maeve
+      <NodeID>k__BackingField: 6afbd579-2583-4742-a011-7b1ea4453192
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: -1
+    - <Text>k__BackingField: Disagree with Maeve
+      <NodeID>k__BackingField: bf878924-ad17-4a5d-950f-7b426842f9bd
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 1
+    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 257, y: 1823}
+  - <ID>k__BackingField: 37a9308d-b550-44e8-b060-13e66e66b5db
+    <Name>k__BackingField: SS7PGx6
+    <Text>k__BackingField: Wow, crush the whole thing?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Double down
+      <NodeID>k__BackingField: d4d8a890-7dc6-46ac-8ff6-905c0aa1f432
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: -1
+    - <Text>k__BackingField: Take a step back
+      <NodeID>k__BackingField: d81917b8-187f-46cb-9754-ab70836c3c0e
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1265, y: 1721}
+  - <ID>k__BackingField: dcfaccbc-9959-4b3d-a07e-b8b1fd873fd7
+    <Name>k__BackingField: SS7PGx10
+    <Text>k__BackingField: But they just left it here. How can they be mad?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Agree with Maeve
+      <NodeID>k__BackingField: a684b2dc-04ca-426d-92ab-4a102523cf96
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: -1
+    - <Text>k__BackingField: Hold your ground
+      <NodeID>k__BackingField: b0ad2907-5e69-4c63-a228-9200891f1ac2
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 1329, y: 2251}
   <OldGroupNames>k__BackingField:
   - CharacterInteractions
   - SceneInteractions
@@ -474,20 +474,20 @@ MonoBehaviour:
       - SS7PGxToy1
     - Key: SanityInteraction
       Value:
-      - SS7PGx1
-      - SS7PGx2
-      - SS7PGx3
-      - SS7PGx4
-      - SS7PGx5A
-      - SS7PGx6
       - SS7PGx7A
       - SS7PGx8
       - SS7PGx7B
       - SS7PGx9
-      - SS7PGx5B
-      - SS7PGx10
       - SS7PGx11A
       - SS7PGx12
       - SS7PGx11B
       - SS7PGx13
       - SS7PGx14
+      - SS7PGx1
+      - SS7PGx2
+      - SS7PGx3
+      - SS7PGx5A
+      - SS7PGx5B
+      - SS7PGx4
+      - SS7PGx6
+      - SS7PGx10

@@ -23,15 +23,18 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: Crush the eggs
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: b779c3e9c8d90bd4094f78dbd7062590, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: -1
   - <Text>k__BackingField: Leave the eggs
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 93fd9f863b8b6154e8fa97fc4f6c7b73, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: 0
   - <Text>k__BackingField: Put the nest on a different branch
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 90fea8124adb8d84fbee42c7151fe3a2, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: 1
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0

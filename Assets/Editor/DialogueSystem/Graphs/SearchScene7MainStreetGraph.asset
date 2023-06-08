@@ -19,7 +19,7 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 1831, y: 5892}
   - <ID>k__BackingField: d72ef6f5-874d-4d17-b092-5337a560e206
     <Name>k__BackingField: CharacterInteraction
-    <Position>k__BackingField: {x: 1760.0001, y: 7231.0005}
+    <Position>k__BackingField: {x: 1760, y: 7231}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 9fcb7b66-6ae4-441b-98c8-0c31bbdc0341
     <Name>k__BackingField: SS7MSx6B
@@ -57,29 +57,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5594, y: 5951}
-  - <ID>k__BackingField: 281a11be-2cc8-44c1-9399-30930a6a43ce
-    <Name>k__BackingField: SS7MSx7
-    <Text>k__BackingField: "That\u2019s the spirit!"
-    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: The more the merrier
-      <NodeID>k__BackingField: 6cd22637-afd9-44f2-b9e6-7da022ee92d7
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    - <Text>k__BackingField: Not too much, though
-      <NodeID>k__BackingField: 624f9105-e001-4080-91f8-28fd63771e3d
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
-    <DialogueType>k__BackingField: 1
-    <Position>k__BackingField: {x: 5101, y: 5966}
   - <ID>k__BackingField: 32a60eec-ab96-429e-88b3-edb82c1a76f0
     <Name>k__BackingField: SS7MSx11
     <Text>k__BackingField: "Bet you couldn\u2019t beat me!"
@@ -171,29 +148,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5894, y: 6584}
-  - <ID>k__BackingField: 8ceeda5b-a136-4131-918f-675429c5c9b7
-    <Name>k__BackingField: SS7MSx8
-    <Text>k__BackingField: Fine, suit yourself. More for the rest of us.
-    <Character>k__BackingField: {fileID: 0}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: "Although\u2026"
-      <NodeID>k__BackingField: 98b321fa-2e24-4d58-ae8f-9b7bf89560b4
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    - <Text>k__BackingField: Leave it be
-      <NodeID>k__BackingField: 914d57fd-48eb-4f37-9da4-47923f7c5095
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
-    <DialogueType>k__BackingField: 1
-    <Position>k__BackingField: {x: 5079, y: 6634}
   - <ID>k__BackingField: 914d57fd-48eb-4f37-9da4-47923f7c5095
     <Name>k__BackingField: SS7MSx10B
     <Text>k__BackingField: Just not for me, I guess.
@@ -335,14 +289,14 @@ MonoBehaviour:
     <Choices>k__BackingField:
     - <Text>k__BackingField: Agree with Maeve
       <NodeID>k__BackingField: a7e440cd-8123-4aaa-a4ca-500efad0dc09
-      <HasSanityThreshold>k__BackingField: 0
+      <HasSanityThreshold>k__BackingField: 1
       <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
+      <SanityType>k__BackingField: -1
     - <Text>k__BackingField: Turn Maeve down
       <NodeID>k__BackingField: 9fcb7b66-6ae4-441b-98c8-0c31bbdc0341
-      <HasSanityThreshold>k__BackingField: 0
+      <HasSanityThreshold>k__BackingField: 1
       <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
+      <SanityType>k__BackingField: 1
     <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
     <DialogueType>k__BackingField: 1
     <Position>k__BackingField: {x: 3850, y: 6059}
@@ -402,6 +356,52 @@ MonoBehaviour:
     <GroupID>k__BackingField: d72ef6f5-874d-4d17-b092-5337a560e206
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2624, y: 7290}
+  - <ID>k__BackingField: 281a11be-2cc8-44c1-9399-30930a6a43ce
+    <Name>k__BackingField: SS7MSx7
+    <Text>k__BackingField: "That\u2019s the spirit!"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: The more the merrier
+      <NodeID>k__BackingField: 6cd22637-afd9-44f2-b9e6-7da022ee92d7
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: -1
+    - <Text>k__BackingField: Not too much, though
+      <NodeID>k__BackingField: 624f9105-e001-4080-91f8-28fd63771e3d
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 4988, y: 5965}
+  - <ID>k__BackingField: 8ceeda5b-a136-4131-918f-675429c5c9b7
+    <Name>k__BackingField: SS7MSx8
+    <Text>k__BackingField: Fine, suit yourself. More for the rest of us.
+    <Character>k__BackingField: {fileID: 0}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: "Although\u2026"
+      <NodeID>k__BackingField: 98b321fa-2e24-4d58-ae8f-9b7bf89560b4
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: -1
+    - <Text>k__BackingField: Leave it be
+      <NodeID>k__BackingField: 914d57fd-48eb-4f37-9da4-47923f7c5095
+      <HasSanityThreshold>k__BackingField: 1
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 4941, y: 6559}
   <OldGroupNames>k__BackingField:
   - SanityInteraction
   - CharacterInteraction
@@ -412,13 +412,11 @@ MonoBehaviour:
       Value:
       - SS7MSx6B
       - SS7MSx9A
-      - SS7MSx7
       - SS7MSx11
       - SS7MSx9B
       - SS7MSx12
       - SS7MSx10A
       - SS7MSx13
-      - SS7MSx8
       - SS7MSx10B
       - SS7MSx14
       - SS7MSx6A
@@ -427,6 +425,8 @@ MonoBehaviour:
       - SS7MSx3
       - SS7MSx4
       - SS7MSx5
+      - SS7MSx7
+      - SS7MSx8
     - Key: CharacterInteraction
       Value:
       - SS7MSxLeigh

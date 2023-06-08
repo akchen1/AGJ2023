@@ -22,13 +22,13 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: Join Maeve
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 76dc51c01f612874da8f8ebe8791f595, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
-    <SanityType>k__BackingField: 0
+    <SanityType>k__BackingField: -1
   - <Text>k__BackingField: Disagree with Maeve
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 64f15295d56cd1c4584bfb630bc98814, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
-    <SanityType>k__BackingField: 0
+    <SanityType>k__BackingField: 1
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0

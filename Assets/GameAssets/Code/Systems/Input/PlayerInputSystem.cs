@@ -12,6 +12,7 @@ public class PlayerInputSystem
     public PlayerInputSystem()
     {
         eventBrokerComponent.Subscribe<InputEvents.SetInputState>(SetInputStateHandler);
+        eventBrokerComponent.Subscribe<InputEvents.GetMousePosition>(GetMousePositionHandler);
         inputActions.Player.MouseClick.performed += OnMouseClick;
         EnableInput();
     }
@@ -19,8 +20,14 @@ public class PlayerInputSystem
     ~PlayerInputSystem()
     {
         eventBrokerComponent.Unsubscribe<InputEvents.SetInputState>(SetInputStateHandler);
+        eventBrokerComponent.Unsubscribe<InputEvents.GetMousePosition>(GetMousePositionHandler);
         inputActions.Player.MouseClick.performed -= OnMouseClick;
         DisableInput();
+    }
+
+    private void GetMousePositionHandler(BrokerEvent<InputEvents.GetMousePosition> inEvent)
+    {
+        inEvent.Payload.Position?.Invoke(inputActions.Player.MousePosition.ReadValue<Vector2>());
     }
 
     private void SetInputStateHandler(BrokerEvent<InputEvents.SetInputState> inEvent)

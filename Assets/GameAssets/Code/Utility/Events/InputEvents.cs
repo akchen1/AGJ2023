@@ -15,6 +15,15 @@ public class InputEvents
         }
     }
 
+    public class GetMousePosition
+    {
+        public readonly Action<Vector2> Position;
+        public GetMousePosition(Action<Vector2> position)
+        {
+            Position = position;
+        }
+    }
+
     public class SetInputState
     {
         public readonly bool Active;

@@ -22,12 +22,12 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: The more the merrier
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: ff9a55b8197f5914fba560cfd280d17d, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
-    <SanityType>k__BackingField: 0
+    <SanityType>k__BackingField: -1
   - <Text>k__BackingField: Not too much, though
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: db642615b34db7f469bfc01d436444d1, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 1

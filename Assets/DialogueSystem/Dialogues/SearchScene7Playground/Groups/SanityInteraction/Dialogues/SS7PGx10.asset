@@ -22,12 +22,12 @@ MonoBehaviour:
   <Choices>k__BackingField:
   - <Text>k__BackingField: Agree with Maeve
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: a3078f250da85ed4bb07ed187c2227ed, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
-    <SanityType>k__BackingField: 0
+    <SanityType>k__BackingField: -1
   - <Text>k__BackingField: Hold your ground
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0bb24ad55286f7e46a1de21b0699fe77, type: 2}
-    <HasSanityThreshold>k__BackingField: 0
+    <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 1
