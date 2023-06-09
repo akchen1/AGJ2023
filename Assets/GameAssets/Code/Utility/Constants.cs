@@ -77,7 +77,10 @@ public static class Constants
 			public const string LivingRoom = "LivingRoom";
 			public const string Prologue = "Prologue";
 			public const string RecordPlayer = "RecordPlayer";
-
+			public const string Basement = "Basement";
+			public const string GeneralStore = "GeneralStore";
+			public const string MainStreet = "MainStreet";
+			public const string Playtime = "Playtime";
 		}
 
 		public struct SFX
@@ -107,7 +110,10 @@ public static class Constants
 			public const string GemCollect = "GemCollect";
 			public const string DialTurn = "DialTurn";
 			public const string BoxOpen = "boxOpen";
-
+			public const string BottleHit = "BottleHit";
+			public const string BroomCrash = "BroomCrash";
+			public const string Shears = "Shears";
+			public const string ToyCarRoll = "ToyCarRoll";
 		}
 	}
 	#endregion Audio

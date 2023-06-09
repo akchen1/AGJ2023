@@ -10,7 +10,12 @@ public class PresentScene4Part1Controller : MonoBehaviour
 
     EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
-    private void OnEnable()
+	private void Start()
+	{
+		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.LivingRoom, true));
+	}
+
+	private void OnEnable()
     {
         eventBrokerComponent.Subscribe<InteractionEvents.Interact>(InteractHandler);
         eventBrokerComponent.Subscribe<InteractionEvents.InteractEnd>(InteractEndHandler);

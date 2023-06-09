@@ -16,7 +16,7 @@ public class PrologueScene1Controller : SceneController
     private void Start()
     {
         playableDirector.Play(startingCutscene);
-		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.Prologue));
+		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.Prologue, true));
     }
 
     private void OnEnable()
