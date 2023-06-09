@@ -22,13 +22,14 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
     #region IMinigame Methods
     public void Finish()
     {
-        gameObject.SetActive(false);
+        fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 1f);
+        fadeToBlack.gameObject.SetActive(true);
         eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
     }
 
     public void Initialize()
     {
-        StartCoroutine(Fade());
+        panel.SetActive(true);
     }
 
     public bool StartCondition()
@@ -46,9 +47,8 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
         StartCoroutine(WaitSequence(inEvent));
     }
     private void Finished(BrokerEvent<DistractionEvent.Finished> inEvent)
-    {
-        StartCoroutine(Fade());
-        finished = true;
+    {   finished = true;
+        Finish();
     }
     private IEnumerator WaitSequence(BrokerEvent<DistractionEvent.Start> inEvent)
     {
@@ -62,11 +62,7 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
         }
         if(!finished)
         {
-            StartCoroutine(Fade());
-            Destroy(panel.gameObject);
-            GameObject instantiatedObject = Instantiate(distractionMinigamePrefab, canvas.transform);
-            instantiatedObject.transform.SetAsFirstSibling();
-            panel = instantiatedObject;
+            StartCoroutine(ResetMinigame());
         }
     }
     private void OnEnable() {
@@ -88,35 +84,34 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
         eventBrokerComponent.Unsubscribe<InputEvents.SetInputState>(GetInputStateHandler);
     }
 
-	private IEnumerator Fade()
+	private IEnumerator ResetMinigame()
 	{
-        fadeToBlack.gameObject.SetActive(true);
-        if(!finished)
-            panel.SetActive(false);
 		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 0);
+        fadeToBlack.gameObject.SetActive(true);
 
 		while (fadeToBlack.color.a < 1f)
 		{
-			fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a + (Time.deltaTime * 5f));
+			fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a + (Time.deltaTime * 2f));
 			yield return null;
 		}
 
 		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 1f);
 
-        if(!finished)
-            panel.SetActive(true);
+        Destroy(panel.gameObject);
+        GameObject instantiatedObject = Instantiate(distractionMinigamePrefab, canvas.transform);
+        instantiatedObject.transform.SetAsFirstSibling();
+        panel = instantiatedObject;
 
 		yield return new WaitForSeconds(1f);
 
 		while (fadeToBlack.color.a > 0f)
 		{
-			fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a - (Time.deltaTime * 3f));
+			fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a - (Time.deltaTime * 2f));
 			yield return null;
 		}
 
 		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 0f);
 		fadeToBlack.gameObject.SetActive(false);
-
 	}
 
     private void GetInputStateHandler(BrokerEvent<InputEvents.SetInputState> inEvent)

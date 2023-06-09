@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Holder : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public Color defaultColor = Color.white; // Set this to the holder's original color
+    public Color defaultColor;// Set this to the holder's original color
     public Color hoverColor = Color.green; // Set this to the color you want when hovering
     public bool isHovering = false;
 
@@ -15,7 +15,6 @@ public class Holder : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         image = GetComponent<Image>();
         
     }
-
     public void OnPointerEnter(PointerEventData eventData)
     {
         isHovering = true;
