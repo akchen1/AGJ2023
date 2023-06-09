@@ -31,6 +31,11 @@ public class MainMenu : MonoBehaviour
 		creditsPanel.SetActive(false);
 	}
 
+	private void Start()
+	{
+		eventBroker.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.MainMenu));
+	}
+
 	private void OnEnable()
 	{
 		startButton.onClick.AddListener(OnStartButtonPressed);

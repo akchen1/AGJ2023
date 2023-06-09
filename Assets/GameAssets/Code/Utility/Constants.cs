@@ -71,6 +71,13 @@ public static class Constants
 		public struct Music
 		{
 			public const string MainMenu = "MainMenu";
+			public const string Clearing = "Clearing";
+			public const string EndingTree = "EndingTree";
+			public const string Forest = "Forest";
+			public const string LivingRoom = "LivingRoom";
+			public const string Prologue = "Prologue";
+			public const string RecordPlayer = "RecordPlayer";
+
 		}
 
 		public struct SFX
@@ -82,6 +89,19 @@ public static class Constants
 			public const string ScrollClose = "ScrollClose";
 			public const string ScrollFlip = "ScrollFlip";
 			public const string ScrollOpen = "ScrollOpen";
+			public const string DrawerOpen = "DrawerOpen";
+			public const string DrawerClose = "DrawerClose";
+			public const string BucketCollect = "BucketCollect";
+			public const string CandleCollect = "CandleCollect";
+			public const string Dig = "Dig";
+			public const string MatchLight = "MatchLight";
+			public const string MatchStrike = "MatchStrike";
+			public const string MatchboxCollect = "MatchboxCollect";
+			public const string MatchboxOpen = "MatchboxOpen";
+			public const string ShovelCollect = "ShovelCollect";
+			public const string TwineCollect = "TwineCollect";
+			public const string VaseShatter = "VaseShatter";
+			public const string VialCollect = "VialCollect";
 		}
 	}
 	#endregion Audio
