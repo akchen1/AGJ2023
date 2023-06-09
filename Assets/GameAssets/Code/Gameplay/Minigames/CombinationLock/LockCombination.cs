@@ -1,18 +1,59 @@
 using System.Collections;
 using System.Collections.Generic;
+using DS.ScriptableObjects;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.UI;
 
-public class LockCombination : MonoBehaviour
+public class LockCombination : MonoBehaviour, IMinigame
 {
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     private string number1;
     private string number2;
     private string number3;
     private string number4;
+    private bool solved;
+    [SerializeField] private DSDialogueSO dialogue;
+    [SerializeField] private PlayableAsset gemCollectCutscene;
+    [SerializeField] private string CorrectLockCombination = "1234";
+    [SerializeField] private string EnteredLockCombination;
+    [SerializeField] private GameObject panel;
+    [SerializeField] private GameObject gem;
+    [SerializeField] private GameObject backgroundButton;
+    [SerializeField] private GameObject minigameStarter;
+    [SerializeField] private GameObject box;
+    [SerializeField] private PlayableDirector playableDirector;
+    
 
-    public string CorrectLockCombination = "1234";
-    public string EnteredLockCombination;
+
+
+   #region IMinigame Methods
+    public void Finish()
+    {
+        if(solved){
+            eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+            eventBrokerComponent.Publish(this, new CutsceneEvents.PlayCutscene(gemCollectCutscene));
+            playableDirector.Play(gemCollectCutscene);
+            panel.SetActive(false);
+            box.SetActive(false);
+            minigameStarter.SetActive(false);
+        }
+        else{
+            eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+            panel.SetActive(false);
+        }
+    }
+
+    public void Initialize()
+    {
+        panel.SetActive(true);
+    }
+
+    public bool StartCondition()
+    {
+        return true;
+    }
+    #endregion
 
     public void CheckCorrect()
     {
@@ -30,7 +71,10 @@ public class LockCombination : MonoBehaviour
         EnteredLockCombination = number1 + number2 + number3 + number4;
         if(CorrectLockCombination == EnteredLockCombination)
         {
-            GameObject.Find("Box").GetComponent<BoxController>().OpenBox();
+            solved = true;
+            box.GetComponent<BoxController>().OpenBox();
+            eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.BoxOpen));
+            gem.SetActive(true);
         }
     }
 }

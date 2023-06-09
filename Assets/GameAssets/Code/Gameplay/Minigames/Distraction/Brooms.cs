@@ -5,12 +5,12 @@ using UnityEngine;
 public class Brooms : MonoBehaviour
 {
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
-    private bool RunOnce = true;
+    private bool onlyOnce = true;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "Oil")
+        if (collision.gameObject.name == "Oil" && onlyOnce)
         {
-
+            onlyOnce = false;
             StartCoroutine(WaitUntilFall());
         }
     }

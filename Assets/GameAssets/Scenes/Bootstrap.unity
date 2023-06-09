@@ -584,6 +584,9 @@ MonoBehaviour:
   vialCollect: {fileID: 8300000, guid: 28042bbcf847173408908fd4beee72c1, type: 3}
   branchBreak: {fileID: 8300000, guid: 26f2005a2cd9c3441ba1bb8965169c74, type: 3}
   branchCollect: {fileID: 8300000, guid: a797587f267b6b94b94f247d45f7155a, type: 3}
+  gemCollect: {fileID: 8300000, guid: 15461cb171cc45a439b7b44b5e52c2a3, type: 3}
+  dialTurn: {fileID: 8300000, guid: 97081552e0148f44cbc8466a80e93ac4, type: 3}
+  boxOpen: {fileID: 8300000, guid: b6d2b2c828a8abe46b97a3ad126fdec0, type: 3}
 --- !u!1 &464725709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,6 +1269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb3337c1d7a8e6a488ff62cac1a5df80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveTarget: {fileID: 0}
 --- !u!4 &870238525
 Transform:
   m_ObjectHideFlags: 0

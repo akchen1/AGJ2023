@@ -40,6 +40,9 @@ public class AudioSystem : MonoBehaviour
 	[SerializeField] private AudioClip vialCollect;
 	[SerializeField] private AudioClip branchBreak;
 	[SerializeField] private AudioClip branchCollect;
+	[SerializeField] private AudioClip gemCollect;
+	[SerializeField] private AudioClip dialTurn;
+	[SerializeField] private AudioClip boxOpen;
 
 	private float musicVolume;
 	private float sfxVolume;
@@ -85,6 +88,11 @@ public class AudioSystem : MonoBehaviour
 		sfx.Add(Constants.Audio.SFX.VialCollect, vialCollect);
 		sfx.Add(Constants.Audio.SFX.BranchBreak, branchBreak);
 		sfx.Add(Constants.Audio.SFX.BranchCollect, branchCollect);
+		sfx.Add(Constants.Audio.SFX.GemCollect, gemCollect);
+		sfx.Add(Constants.Audio.SFX.DialTurn, dialTurn);
+		sfx.Add(Constants.Audio.SFX.BoxOpen, boxOpen);
+		
+		
 	}
 
 	private void OnEnable()
