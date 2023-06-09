@@ -10,6 +10,9 @@ using DS.ScriptableObjects;
 
 public class SearchScene7Controller : SceneController
 {
+	[Header("testing")]
+	public InventoryItem[] startingitems;
+
 	[SerializeField] GameObject Player;
 
 	[SerializeField] private PlayableDirector playableDirector;
@@ -51,7 +54,12 @@ public class SearchScene7Controller : SceneController
 		currentSubScene.Enable();
 	}
 
-	private SubSceneController GetNextSubscene(Constants.Scene7SubScenes subscene)
+    private void GetBloodSanityResultHandler(BrokerEvent<Scene7Events.GetBloodSanityResult> obj)
+    {
+		obj.Payload.SanityType?.Invoke(BasementSubsceneController.sanityEventResult);
+    }
+
+    private SubSceneController GetNextSubscene(Constants.Scene7SubScenes subscene)
 	{
 		switch (subscene)
 		{
@@ -103,6 +111,7 @@ public class SearchScene7Controller : SceneController
 
 	private void Start()
 	{
+		eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(startingitems));
 		fadeToBlack.gameObject.SetActive(false);
 		currentSubScene = MainStreetSubSceneController;
 		currentSubScene.Enable();
@@ -118,10 +127,20 @@ public class SearchScene7Controller : SceneController
     private void OnEnable()
 	{
 		eventBrokerComponent.Subscribe<Scene7Events.ChangeSubscene>(ChangeSubsceneHandler);
+		eventBrokerComponent.Subscribe<Scene7Events.GetBloodSanityResult>(GetBloodSanityResultHandler);
 	}
 
-	private void OnDisable()
+    private void OnDisable()
 	{
 		eventBrokerComponent.Unsubscribe<Scene7Events.ChangeSubscene>(ChangeSubsceneHandler);
-	}
+        eventBrokerComponent.Unsubscribe<Scene7Events.GetBloodSanityResult>(GetBloodSanityResultHandler);
+    }
+
+    private void Update()
+    {
+        if (currentSubScene != null)
+		{
+			currentSubScene.Update();
+		}
+    }
 }

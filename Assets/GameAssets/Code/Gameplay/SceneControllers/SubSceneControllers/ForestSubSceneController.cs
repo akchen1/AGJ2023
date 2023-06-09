@@ -10,7 +10,9 @@ public class ForestSubSceneController : SubSceneController
     [SerializeField] private DSDialogueSO sanityDialogue;
     [SerializeField] private GameObject branchBundle;
 
+
     private bool isSanityDialogue = false;
+    
     public override void Enable()
     {
         base.Enable();
@@ -30,5 +32,12 @@ public class ForestSubSceneController : SubSceneController
     private void StartDialogueHandler(BrokerEvent<DialogueEvents.StartDialogue> inEvent)
     {
         isSanityDialogue = inEvent.Payload.StartingDialogue == sanityDialogue;
+    }
+
+    public override void Update()
+    {
+        base.Update();
+
+        
     }
 }

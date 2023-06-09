@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b024264143c488cbee1d884c720f40, type: 3}
+  m_Name: ForestScene8
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: ForestScene8
+  <DialogueGroups>k__BackingField:
+    list: []
+  <UngroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: 961a9af38dba4da4e904b9f6071ba6a2, type: 2}
+  - {fileID: 11400000, guid: 8516f3368441d4e4e8481c53d5615419, type: 2}
+  - {fileID: 11400000, guid: f4673e8bae380f843b75743df03d0a18, type: 2}
+  - {fileID: 11400000, guid: 94d579a839e5f4a4e8fc4f3a6f3b34ef, type: 2}
+  - {fileID: 11400000, guid: 7c186b07a0f014a41819d5dedceaa3f6, type: 2}
+  - {fileID: 11400000, guid: 7b13ecd6cad5b3041941fd0b7378766b, type: 2}
+  - {fileID: 11400000, guid: aae9996bbd60b4748977ab99e94eeba1, type: 2}
+  - {fileID: 11400000, guid: 3563344296c683248adea0126a1f9abb, type: 2}
+  - {fileID: 11400000, guid: f8828a98b973520498b84f865e3d17d0, type: 2}
+  - {fileID: 11400000, guid: 0e709b77974b3284593c13b0cfe1a04c, type: 2}
+  - {fileID: 11400000, guid: 3aae853740fde0f4387c6405ea85e5b9, type: 2}
+  - {fileID: 11400000, guid: 7cf7d6a09e0d72e4485b7c646eb2dfb9, type: 2}
+  - {fileID: 11400000, guid: d50bc1b0d04b37a4ebfb0a4465a69eaa, type: 2}
+  - {fileID: 11400000, guid: c7d8ad74d5cef8041886f2aa4eec3ce9, type: 2}
+  - {fileID: 11400000, guid: 7c87a2f3971742847852ea593be48f87, type: 2}
+  - {fileID: 11400000, guid: ce57af9ed495de64e8aaf6b186369314, type: 2}
+  - {fileID: 11400000, guid: 44ac3cc986cccf04e8d4e93e16e5d928, type: 2}
+  - {fileID: 11400000, guid: deaf3abeca1dbee408c16e4666e98949, type: 2}
