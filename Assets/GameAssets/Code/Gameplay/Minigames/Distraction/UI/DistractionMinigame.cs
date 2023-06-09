@@ -12,7 +12,8 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     [SerializeField] GameObject distractionMinigamePrefab;
     [SerializeField] Canvas canvas;
-    [SerializeField, Header("Cutscene")] private PlayableAsset hideCutscene;
+    [SerializeField, Header("Cutscene")] private PlayableAsset minigameStartCutscene;
+     [SerializeField] private PlayableAsset hideCutscene;
     [SerializeField]private PlayableAsset shopKeeperCutscene;
     [SerializeField] private PlayableDirector playableDirector;
     [SerializeField] private Image fadeToBlack;
@@ -25,10 +26,14 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
         fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 1f);
         fadeToBlack.gameObject.SetActive(true);
         eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+        playableDirector.Play(shopKeeperCutscene);
+        panel.SetActive(false);
+        gameObject.SetActive(false);
     }
 
     public void Initialize()
     {
+        playableDirector.Play(minigameStartCutscene);
         panel.SetActive(true);
     }
 
@@ -101,11 +106,11 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
 
         while (fadeToBlack.color.a > 0f)
         {
-            fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a - (Time.deltaTime * 2f));
-            yield return null;
+          fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a - (Time.deltaTime * 2f));
+          yield return null;
         }
 
         fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 0f);
         fadeToBlack.gameObject.SetActive(false);
-    }
+	  }
 }

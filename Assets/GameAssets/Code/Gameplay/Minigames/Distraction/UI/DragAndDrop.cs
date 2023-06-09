@@ -11,6 +11,8 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     private Canvas canvas;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
+    private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
+    private bool canInteract = true;
 
     private void Awake()
     {
@@ -24,17 +26,20 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        transform.GetComponent<Rigidbody2D>().isKinematic = true;
-        transform.GetComponent<Collider2D>().enabled = false;
-        if(transform.childCount > 0)
-        {
-            transform.GetChild(0).GetChild(0).GetComponent<Rigidbody2D>().isKinematic = true;
+        if(canInteract)
+            {
+            transform.GetComponent<Rigidbody2D>().isKinematic = true;
+            transform.GetComponent<Collider2D>().enabled = false;
+            if(transform.childCount > 0)
+            {
+                transform.GetChild(0).GetChild(0).GetComponent<Rigidbody2D>().isKinematic = true;
+            }
+            isDragging = true;
+            originalParent = transform.parent;
+            originalPosition = rectTransform.anchoredPosition;
+            transform.SetParent(canvas.transform);
+            canvasGroup.blocksRaycasts = false;
         }
-        isDragging = true;
-        originalParent = transform.parent;
-        originalPosition = rectTransform.anchoredPosition;
-        transform.SetParent(canvas.transform);
-        canvasGroup.blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -77,5 +82,16 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         }
         transform.GetComponent<Rigidbody2D>().isKinematic = false;
         transform.GetComponent<Collider2D>().enabled = true;
+    }
+    private void GetInputStateHandler(BrokerEvent<InputEvents.SetInputState> inEvent)
+    {
+        canInteract = inEvent.Payload.Active;
+    }
+    private void OnEnable() {
+        eventBrokerComponent.Subscribe<InputEvents.SetInputState>(GetInputStateHandler);
+    }
+
+    private void OnDisable() {
+        eventBrokerComponent.Unsubscribe<InputEvents.SetInputState>(GetInputStateHandler);
     }
 }
