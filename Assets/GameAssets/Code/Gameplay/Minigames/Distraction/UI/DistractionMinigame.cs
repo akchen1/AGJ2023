@@ -14,6 +14,7 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
     [SerializeField] GameObject distractionMinigamePrefab;
     [SerializeField] Canvas canvas;
     [SerializeField, Header("Cutscene")] private PlayableAsset hideCutscene;
+    [SerializeField]private PlayableAsset shopKeeperCutscene;
     [SerializeField] private PlayableDirector playableDirector;
     [SerializeField] private Image fadeToBlack;
     [SerializeField, Header("UI")] private GameObject panel;
