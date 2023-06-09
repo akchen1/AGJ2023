@@ -36,7 +36,7 @@ public class Bootstrap : MonoBehaviour
     {
         //cutsceneSystem = new CutsceneSystem();
         inventorySystem = new InventorySystem();
-        interactionSystem = new InteractionSystem();
+        interactionSystem = new InteractionSystem(this);
         //sanitySystem = new SanitySystem();
         dialogueSystem = new DialogueSystem();
         playerInputSystem = new PlayerInputSystem();

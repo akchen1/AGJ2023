@@ -9,6 +9,7 @@ public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandle
     [SerializeField] private InventoryItem item;
     [SerializeField] private bool destroyOnInteract = false;
     [SerializeField] private bool allowDragClick = false;
+    [SerializeField] private bool mustBeInRange = false;
 
     [SerializeField] private DSDialogueSO itemObtainedDialogue;
 
@@ -22,6 +23,10 @@ public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandle
         if (itemObtainedDialogue != null)
         {
             eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(itemObtainedDialogue));
+        }
+        if (mustBeInRange)
+        {
+            eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
         }
         if (destroyOnInteract)
             Destroy(this.gameObject);
@@ -40,6 +45,18 @@ public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandle
     public void OnPointerClick(PointerEventData eventData)
     {
         if (!allowDragClick && dragging) return;
-        Interact();
+        if (mustBeInRange)
+        {
+            eventBrokerComponent.Publish(this, new InteractionEvents.Interact(this, valid =>
+            {
+                if (valid)
+                {
+                    Interact();
+                }
+            }));
+        } else
+        {
+            Interact();
+        }
     }
 }

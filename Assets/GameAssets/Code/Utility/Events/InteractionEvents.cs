@@ -21,4 +21,9 @@ public class InteractionEvents
     {
 
     }
+
+    public class CancelPendingInteraction
+    {
+
+    }
 }
