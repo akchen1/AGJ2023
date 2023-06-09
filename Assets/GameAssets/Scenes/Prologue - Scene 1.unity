@@ -693,6 +693,18 @@ MonoBehaviour:
             m_StringArgument: Toggle
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1253767576}
+          m_TargetAssemblyTypeName: PrologueScene1Controller, Assembly-CSharp
+          m_MethodName: ToggleRecordPlayer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!95 &202228446
 Animator:
   serializedVersion: 4
@@ -4186,6 +4198,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: b81b63199b127e64fb3c167e885670cd, type: 2}
   destroyOnInteract: 1
   allowDragClick: 0
+  itemObtainedDialogue: {fileID: 0}
 --- !u!61 &1904735365
 BoxCollider2D:
   m_ObjectHideFlags: 0
