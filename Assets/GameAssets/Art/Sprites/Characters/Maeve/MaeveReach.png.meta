@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: af4f2ba96c9b1fb4fbaaf7b4ee35b814
+guid: 7abe13a75f3181045a5b990a8ea69a0b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -141,127 +141,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: transform_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1820
-        width: 1241.3334
-        height: 1820
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82718646b808c6a409e7670c104cf4a5
-      internalID: -376527414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: transform_1
-      rect:
-        serializedVersion: 2
-        x: 1241
-        y: 1820
-        width: 1241.3334
-        height: 1820
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 392b5a9db44aa5d40866dea0cfb50d52
-      internalID: -706190496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: transform_2
-      rect:
-        serializedVersion: 2
-        x: 2482
-        y: 1820
-        width: 1241.3334
-        height: 1820
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d70ac8e310121fe4b8ed189eff066b31
-      internalID: -979754328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: transform_3
+      name: MaeveReach_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1241.3334
-        height: 1820
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 246
+        height: 1000
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db6b1d3d759f4554ca4e2be4856d36fd
-      internalID: -403654710
+      spriteID: 2f47c6d484f29114cba9f90c9090306f
+      internalID: -1735011481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: transform_4
+      name: MaeveReach_1
       rect:
         serializedVersion: 2
-        x: 1241
+        x: 246
         y: 0
-        width: 1241.3334
-        height: 1820
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
+        width: 246
+        height: 1000
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f08e544b1a857764182fd0e4692c0f6a
-      internalID: 248321705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: transform_5
-      rect:
-        serializedVersion: 2
-        x: 2482
-        y: 0
-        width: 1241.3334
-        height: 1820
-      alignment: 9
-      pivot: {x: 0.5, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 801b85e846b6b2341b25854c6244548d
-      internalID: -246755345
+      spriteID: d736c2c025db45d44a085be088818093
+      internalID: 1983836711
       vertices: []
       indices: 
       edges: []
@@ -277,12 +193,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      transform_3: -403654710
-      transform_1: -706190496
-      transform_5: -246755345
-      transform_2: -979754328
-      transform_4: 248321705
-      transform_0: -376527414
+      MaeveReach_0: -1735011481
+      MaeveReach_1: 1983836711
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
