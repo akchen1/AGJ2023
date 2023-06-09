@@ -13,4 +13,14 @@ public class PlayerEvents
         }
         public readonly Action<Vector3> Position;
     }
+
+    public class SetPlayerPosition
+    {
+        public readonly Vector3 Position;
+
+        public SetPlayerPosition(Vector3 position)
+        {
+            Position = position;
+        }
+    }
 }
