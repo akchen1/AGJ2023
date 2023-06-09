@@ -10,8 +10,8 @@ public class Scissor :  MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
     private Canvas canvas;
     private CanvasGroup canvasGroup;
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
-    private float initalWaitTime = 4f;
-    private float addTime = 2.5f;
+    private float initalWaitTime = 3f;
+    private float addTime = 2f;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -30,12 +30,14 @@ public class Scissor :  MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
     public void OnDrag(PointerEventData eventData)
     {
         // Move the UI element according to the pointer position
+        gameObject.GetComponent<Animator>().enabled = true;
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         // Enable raycasting on the UI element to restore normal interaction
+        gameObject.GetComponent<Animator>().enabled = false;
         canvasGroup.blocksRaycasts = true;
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -53,7 +55,12 @@ public class Scissor :  MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
 
             eventBrokerComponent.Publish(this, new DistractionTimerEvent.SetDistracitonTime(waitTime));
             eventBrokerComponent.Publish(this, new DistractionEvent.Start());
-            other.transform.parent.GetComponent<Rigidbody2D>().isKinematic = false;
+            Transform balloon = other.transform.parent;
+            //Add Base Change
+
+            //
+            balloon.GetComponents<Image>()[0].enabled = true;
+            balloon.GetComponent<Rigidbody2D>().isKinematic = false;
             gameObject.SetActive(false);
         }
     }

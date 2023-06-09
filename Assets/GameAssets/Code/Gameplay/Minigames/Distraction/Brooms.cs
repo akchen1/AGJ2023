@@ -5,12 +5,21 @@ using UnityEngine;
 public class Brooms : MonoBehaviour
 {
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
-    private void OnTriggerEnter2D(Collider2D other)
+    private bool RunOnce = true;
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.gameObject.name == "Oil")
+        if (collision.gameObject.name == "Oil")
         {
-            eventBrokerComponent.Publish(this, new DistractionEvent.Finished());
+
+            StartCoroutine(WaitUntilFall());
         }
     }
-
+    private IEnumerator WaitUntilFall()
+    {
+        while (transform.eulerAngles.z > 310f)
+        {
+            yield return null;
+        }
+        eventBrokerComponent.Publish(this, new DistractionEvent.Finished());
+    }
 }

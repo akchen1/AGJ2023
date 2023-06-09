@@ -24,9 +24,12 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("Hello");
         transform.GetComponent<Rigidbody2D>().isKinematic = true;
         transform.GetComponent<Collider2D>().enabled = false;
+        if(transform.childCount > 0)
+        {
+            transform.GetChild(0).GetChild(0).GetComponent<Rigidbody2D>().isKinematic = true;
+        }
         isDragging = true;
         originalParent = transform.parent;
         originalPosition = rectTransform.anchoredPosition;
@@ -41,6 +44,10 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if(transform.childCount > 0)
+        {
+            transform.GetChild(0).GetChild(0).GetComponent<Rigidbody2D>().isKinematic = false;
+        }
         canvasGroup.blocksRaycasts = true;
         originalParent.GetComponent<Holder>().isHovering = false;
         GameObject otherHolder = eventData.pointerCurrentRaycast.gameObject;
