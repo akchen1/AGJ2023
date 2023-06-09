@@ -13,5 +13,11 @@ MonoBehaviour:
   m_Name: Shovel
   m_EditorClassIdentifier: 
   <ItemName>k__BackingField: Shovel
-  <ItemIcon>k__BackingField: {fileID: 0}
+  <ItemIcon>k__BackingField: {fileID: 21300000, guid: 6b91871864ec80b4faffbb8f65858065, type: 3}
   <ItemDescription>k__BackingField: A sturdy shovel, reliable for all digging needs
+  <InventoryInteraction>k__BackingField: {fileID: 11400000, guid: 55c1c1f91c2d26142b4120542f7e2cb3, type: 2}
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  <HasInteractionDistance>k__BackingField: 0

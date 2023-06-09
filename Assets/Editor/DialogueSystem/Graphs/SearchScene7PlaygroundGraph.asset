@@ -16,13 +16,13 @@ MonoBehaviour:
   <Groups>k__BackingField:
   - <ID>k__BackingField: daf60f5e-8ab8-416d-a7b0-ab29ea24daa5
     <Name>k__BackingField: CharacterInteractions
-    <Position>k__BackingField: {x: -607.99976, y: 785.99994}
+    <Position>k__BackingField: {x: -608, y: 786}
   - <ID>k__BackingField: 24f74cf1-0810-4e7b-982b-65e141901c2d
     <Name>k__BackingField: SceneInteractions
     <Position>k__BackingField: {x: -644, y: 1227}
   - <ID>k__BackingField: 0ebac2fa-aebc-4aba-a40e-37610ad8b9a7
     <Name>k__BackingField: SanityInteraction
-    <Position>k__BackingField: {x: -900, y: 1662.0001}
+    <Position>k__BackingField: {x: -900, y: 1662}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 17639ce6-86fb-4ae3-bac9-8142cde8309f
     <Name>k__BackingField: SS7PGxLeigh
@@ -307,7 +307,7 @@ MonoBehaviour:
     <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 9bde8b8a-dfb3-4570-904a-4ddab1f7fc2e
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
       <SanityType>k__BackingField: 0
@@ -325,7 +325,7 @@ MonoBehaviour:
     <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 3ac38bc5-93c7-4f7e-a7ef-7a3df8134c25
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
       <SanityType>k__BackingField: 0

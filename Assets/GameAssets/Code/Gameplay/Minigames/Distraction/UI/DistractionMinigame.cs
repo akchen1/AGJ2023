@@ -9,7 +9,6 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
 {
     private bool finished;
     private float waitTime;
-    private bool canInteract;
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     [SerializeField] GameObject distractionMinigamePrefab;
     [SerializeField] Canvas canvas;
@@ -35,10 +34,7 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
 
     public bool StartCondition()
     {
-        if(canInteract)
-            return true;
-        else
-            return false;
+        return true;
     }
     #endregion
 
@@ -70,7 +66,6 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
         eventBrokerComponent.Subscribe<DistractionEvent.Start>(StartSequence);
         eventBrokerComponent.Subscribe<DistractionEvent.Finished>(Finished);
         eventBrokerComponent.Subscribe<DistractionTimerEvent.SetDistracitonTime>(SetWaitTimer);
-        eventBrokerComponent.Subscribe<InputEvents.SetInputState>(GetInputStateHandler);
     }
 
     private void SetWaitTimer(BrokerEvent<DistractionTimerEvent.SetDistracitonTime> inEvent)
@@ -82,41 +77,35 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
         eventBrokerComponent.Unsubscribe<DistractionEvent.Start>(StartSequence);
         eventBrokerComponent.Unsubscribe<DistractionEvent.Finished>(Finished);
         eventBrokerComponent.Unsubscribe<DistractionTimerEvent.SetDistracitonTime>(SetWaitTimer);
-        eventBrokerComponent.Unsubscribe<InputEvents.SetInputState>(GetInputStateHandler);
     }
 
-	private IEnumerator ResetMinigame()
-	{
-		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 0);
+    private IEnumerator ResetMinigame()
+    {
+        fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 0);
         fadeToBlack.gameObject.SetActive(true);
 
-		while (fadeToBlack.color.a < 1f)
-		{
-			fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a + (Time.deltaTime * 2f));
-			yield return null;
-		}
+        while (fadeToBlack.color.a < 1f)
+        {
+            fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a + (Time.deltaTime * 2f));
+            yield return null;
+        }
 
-		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 1f);
+        fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 1f);
 
         Destroy(panel.gameObject);
         GameObject instantiatedObject = Instantiate(distractionMinigamePrefab, canvas.transform);
         instantiatedObject.transform.SetAsFirstSibling();
         panel = instantiatedObject;
 
-		yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1f);
 
-		while (fadeToBlack.color.a > 0f)
-		{
-			fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a - (Time.deltaTime * 2f));
-			yield return null;
-		}
+        while (fadeToBlack.color.a > 0f)
+        {
+            fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a - (Time.deltaTime * 2f));
+            yield return null;
+        }
 
-		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 0f);
-		fadeToBlack.gameObject.SetActive(false);
-	}
-
-    private void GetInputStateHandler(BrokerEvent<InputEvents.SetInputState> inEvent)
-    {
-        canInteract =  inEvent.Payload.Active;
+        fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 0f);
+        fadeToBlack.gameObject.SetActive(false);
     }
 }

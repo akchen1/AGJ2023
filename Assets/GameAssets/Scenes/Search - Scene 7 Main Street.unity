@@ -548,6 +548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 166775791}
   - component: {fileID: 166775792}
+  - component: {fileID: 166775793}
   m_Layer: 0
   m_Name: General Store Cam
   m_TagString: Untagged
@@ -590,14 +591,14 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 343840540}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 6.675936
+    OrthographicSize: 8.2
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
-    ModeOverride: 0
+    ModeOverride: 1
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
@@ -609,6 +610,21 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1351426702}
+--- !u!114 &166775793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166775790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BoundingShape2D: {fileID: 1057135118}
+  m_Damping: 0.5
+  m_MaxWindowSize: -1
 --- !u!1 &195441692
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +743,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.31984532, y: -0.30454654}
+  m_Offset: {x: 0.7, y: -0.29}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -738,7 +754,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0903933, y: 1.652443}
+  m_Size: {x: 2.98, y: 1.52}
   m_EdgeRadius: 0
 --- !u!114 &195441697
 MonoBehaviour:
@@ -755,6 +771,7 @@ MonoBehaviour:
   distractionMinigamePrefab: {fileID: 3908627891333047733, guid: 6c53eda635e0a464182a878567b45305, type: 3}
   canvas: {fileID: 1053618988}
   hideCutscene: {fileID: 11400000, guid: fe0f7442f57cbfe48872573d17260ed2, type: 2}
+  shopKeeperCutscene: {fileID: 0}
   playableDirector: {fileID: 1926956831}
   fadeToBlack: {fileID: 1053369984}
   panel: {fileID: 1178137095}
@@ -1134,6 +1151,57 @@ Transform:
   m_Father: {fileID: 5251805799546917738}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &355322129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 355322130}
+  - component: {fileID: 355322131}
+  m_Layer: 0
+  m_Name: SanityDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &355322130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355322129}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5143665101558936127}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &355322131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355322129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490ec6b3a25fe8249a940c45df8a0494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: 28eedd7caea1f7148884e0aab79a0aad, type: 2}
+  canInteractMultipleTimes: 0
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  <HasInteractionDistance>k__BackingField: 0
 --- !u!1 &414139781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,6 +1483,7 @@ GameObject:
   - component: {fileID: 472213674}
   - component: {fileID: 472213673}
   - component: {fileID: 472213675}
+  - component: {fileID: 472213676}
   m_Layer: 6
   m_Name: Badu-moth
   m_TagString: Untagged
@@ -1430,12 +1499,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472213671}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.77, y: -20.62, z: -0.17509118}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 2097173793}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &472213673
 MonoBehaviour:
@@ -1449,13 +1518,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 490ec6b3a25fe8249a940c45df8a0494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 95769c4efbef1684983a5cd1651e7df4, type: 2}
+  dialogue: {fileID: 11400000, guid: 855df327d767a094c94463a0eca1bddd, type: 2}
   canInteractMultipleTimes: 1
   <InteractionDistance>k__BackingField:
-    UseConstant: 1
+    UseConstant: 0
     ConstantValue: 0
-    Variable: {fileID: 0}
-  <HasInteractionDistance>k__BackingField: 0
+    Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
+  <HasInteractionDistance>k__BackingField: 1
 --- !u!212 &472213674
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1534,6 +1603,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7630973, y: 0.4764824}
   m_EdgeRadius: 0
+--- !u!95 &472213676
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472213671}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 57e852b03a046084885ad7108e6895ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &481412228
 GameObject:
   m_ObjectHideFlags: 0
@@ -2927,6 +3016,57 @@ Transform:
   m_Father: {fileID: 308177799}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &766181407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 766181408}
+  - component: {fileID: 766181409}
+  m_Layer: 0
+  m_Name: SanityDialouge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &766181408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766181407}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5251805799546917738}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &766181409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766181407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490ec6b3a25fe8249a940c45df8a0494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: f9cca0f1e3004f849ba2cf2cfc2b95bd, type: 2}
+  canInteractMultipleTimes: 1
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  <HasInteractionDistance>k__BackingField: 0
 --- !u!1001 &766729201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2934,6 +3074,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 415481790}
     m_Modifications:
+    - target: {fileID: 7833653368974668622, guid: 8c33839e1248a994398a1ce5f8a38877, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7833653368974668623, guid: 8c33839e1248a994398a1ce5f8a38877, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3788,6 +3932,111 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 0}
   <HasInteractionDistance>k__BackingField: 0
+--- !u!1 &953025896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 953025897}
+  - component: {fileID: 953025899}
+  - component: {fileID: 953025898}
+  m_Layer: 0
+  m_Name: Shopkeeper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &953025897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953025896}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.6, y: -1.65, z: 0.17509118}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4164870327645882046}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &953025898
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953025896}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 128e49d1a4a4ea84fb8721ff7714097f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &953025899
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953025896}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 953348829, guid: aae302eca4cea5243a8681d62c250c97, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &960911553
 GameObject:
   m_ObjectHideFlags: 0
@@ -4253,6 +4502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1057135116}
   - component: {fileID: 1057135117}
+  - component: {fileID: 1057135118}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -4327,6 +4577,35 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &1057135118
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057135115}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 40, y: 16.40625}
+    newSize: {x: 40, y: 16.40625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -20, y: 8.203125}
+      - {x: -20, y: -8.203125}
+      - {x: 20, y: -8.203125}
+      - {x: 20, y: 8.203125}
 --- !u!1 &1129900616
 GameObject:
   m_ObjectHideFlags: 0
@@ -4436,7 +4715,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ec44e52455bb5de4da491a48b1d6febc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4925,11 +5204,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199157781805307252, guid: eb784dc342250784a99853dddd63a79a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 51.2
       objectReference: {fileID: 0}
     - target: {fileID: 7199157781805307252, guid: eb784dc342250784a99853dddd63a79a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 12.9
       objectReference: {fileID: 0}
     - target: {fileID: 7199157781805307252, guid: eb784dc342250784a99853dddd63a79a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5292,6 +5571,8 @@ MonoBehaviour:
   MainStreetSubSceneController:
     subsceneCamera: {fileID: 2070171492}
     subsceneTeleportMarker: {fileID: 2124269751}
+    clayItem: {fileID: 11400000, guid: 7cd749c20530cae41b181e42e292b871, type: 2}
+    clayDialogue: {fileID: 766181409}
   BasementSubsceneController:
     subsceneCamera: {fileID: 1474424952}
     subsceneTeleportMarker: {fileID: 414139782}
@@ -5304,6 +5585,8 @@ MonoBehaviour:
   LivingRoomSubSceneController:
     subsceneCamera: {fileID: 1765260822}
     subsceneTeleportMarker: {fileID: 795046986}
+    pocketKnife: {fileID: 11400000, guid: 81adb7114a46c754d8b177107c636103, type: 2}
+    onKnifeObtainedDialogue: {fileID: 355322131}
   GeneralStoreSubSceneController:
     subsceneCamera: {fileID: 166775792}
     subsceneTeleportMarker: {fileID: 486427089}
@@ -5328,18 +5611,18 @@ PrefabInstance:
     - target: {fileID: 8229779336760689927, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 8472ea8b7ee586d4f9fb4b83a2d8083c, type: 2}
+      objectReference: {fileID: 9100000, guid: 0178002bee54371409f82ee270800b26, type: 2}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.005577
+      value: 7.39
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3126869
+      value: 1.95
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5430,6 +5713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1351426702}
   - component: {fileID: 1351426703}
+  - component: {fileID: 1351426704}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -5464,6 +5748,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1351426704
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351426701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_LookaheadTime: 0
+  m_LookaheadSmoothing: 0
+  m_LookaheadIgnoreY: 0
+  m_XDamping: 1
+  m_YDamping: 1
+  m_ZDamping: 1
+  m_TargetMovementOnly: 1
+  m_ScreenX: 0.5
+  m_ScreenY: 0.5
+  m_CameraDistance: 10
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 0
+  m_DeadZoneDepth: 0
+  m_UnlimitedSoftZone: 0
+  m_SoftZoneWidth: 0.8
+  m_SoftZoneHeight: 0.8
+  m_BiasX: 0
+  m_BiasY: 0
+  m_CenterOnActivate: 1
+  m_GroupFramingMode: 2
+  m_AdjustmentMode: 0
+  m_GroupFramingSize: 0.8
+  m_MaxDollyIn: 5000
+  m_MaxDollyOut: 5000
+  m_MinimumDistance: 1
+  m_MaximumDistance: 5000
+  m_MinimumFOV: 3
+  m_MaximumFOV: 60
+  m_MinimumOrthoSize: 1
+  m_MaximumOrthoSize: 5000
 --- !u!1 &1402338537
 GameObject:
   m_ObjectHideFlags: 0
@@ -5825,11 +6152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3955062394875495140, guid: c3086fc414f66c94fbadb677578bb244, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 38.72
+      value: 52.4
       objectReference: {fileID: 0}
     - target: {fileID: 3955062394875495140, guid: c3086fc414f66c94fbadb677578bb244, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -33.03
+      value: 17.6
       objectReference: {fileID: 0}
     - target: {fileID: 3955062394875495140, guid: c3086fc414f66c94fbadb677578bb244, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7139,7 +7466,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.1490078, y: -5.355625}
+  m_Offset: {x: -4.05, y: -7.58}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7297,11 +7624,11 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 6.675936
+    OrthographicSize: 5.4
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
-    ModeOverride: 0
+    ModeOverride: 1
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
@@ -7464,8 +7791,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 415481790}
     m_Modifications:
     - target: {fileID: 849454408060493932, guid: 46f3d908e19b0b84a801ebd0a3ed925d, type: 3}
+      propertyPath: scanOnStartup
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 849454408060493932, guid: 46f3d908e19b0b84a801ebd0a3ed925d, type: 3}
       propertyPath: data.dataString
-      value: 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
+      value: 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
+      objectReference: {fileID: 0}
+    - target: {fileID: 849454408060493932, guid: 46f3d908e19b0b84a801ebd0a3ed925d, type: 3}
+      propertyPath: data.cacheStartup
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 849454408060493933, guid: 46f3d908e19b0b84a801ebd0a3ed925d, type: 3}
       propertyPath: m_Name
@@ -8095,7 +8430,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998475572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 48.230003, y: -23.270002, z: -0.17509118}
+  m_LocalPosition: {x: 97.98, y: -37.84, z: -0.17509118}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8192,13 +8527,97 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 490ec6b3a25fe8249a940c45df8a0494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 817beb5a3930e434681a661cf4033617, type: 2}
+  dialogue: {fileID: 11400000, guid: 68083e73e5fb3f34ba21d9a37fe8c680, type: 2}
   canInteractMultipleTimes: 1
   <InteractionDistance>k__BackingField:
-    UseConstant: 1
+    UseConstant: 0
     ConstantValue: 0
-    Variable: {fileID: 0}
-  <HasInteractionDistance>k__BackingField: 0
+    Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
+  <HasInteractionDistance>k__BackingField: 1
+--- !u!1 &2001206762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2001206763}
+  - component: {fileID: 2001206764}
+  m_Layer: 0
+  m_Name: countertrimmed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2001206763
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001206762}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.61, y: -1.07, z: 0.17509118}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4164870327645882046}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2001206764
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001206762}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 9c13005201b8cfe4e8657f3107432994, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6.0266666, y: 3.4133334}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &2007438043
 GameObject:
   m_ObjectHideFlags: 0
@@ -8398,6 +8817,7 @@ GameObject:
   - component: {fileID: 2050200027}
   - component: {fileID: 2050200028}
   - component: {fileID: 2050200029}
+  - component: {fileID: 2050200030}
   m_Layer: 6
   m_Name: Cat Grave
   m_TagString: Untagged
@@ -8491,6 +8911,32 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+--- !u!61 &2050200030
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050200026}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.8, y: 2.25}
+    newSize: {x: 1.44, y: 1.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.8, y: 2.25}
+  m_EdgeRadius: 0
 --- !u!1 &2051143821
 GameObject:
   m_ObjectHideFlags: 0
@@ -8685,7 +9131,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070171491}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 43.5, y: -22.7, z: -10}
+  m_LocalPosition: {x: 52.4, y: 17.6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8776,6 +9222,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 308177799}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2097173792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097173793}
+  m_Layer: 0
+  m_Name: BaduContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2097173793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097173792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 93.45, y: -32.95, z: -0.17509118}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 472213672}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2108491916
 GameObject:
@@ -9013,7 +9491,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124269750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.2, y: 15, z: 0}
+  m_LocalPosition: {x: 103.9, y: -3.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9328,8 +9806,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4164870327370327890}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.5456, y: -3.9193, z: 0.17509118}
-  m_LocalScale: {x: 1.6088, y: 3.0814, z: 1}
+  m_LocalPosition: {x: -19.15, y: -5.8872, z: 0.17509118}
+  m_LocalScale: {x: 1.6088, y: 4.5755706, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4164870327645882046}
@@ -9469,6 +9947,8 @@ Transform:
   - {fileID: 195441693}
   - {fileID: 166775791}
   - {fileID: 486427089}
+  - {fileID: 953025897}
+  - {fileID: 2001206763}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9496,7 +9976,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4164870328313502711}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.344, y: 3.161, z: 0.17509118}
+  m_LocalPosition: {x: -5.04, y: 4.3, z: 0.17509118}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9649,7 +10129,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4164870328910443562}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.73, y: 4.98, z: 0.17509118}
+  m_LocalPosition: {x: -12.8, y: 7.42, z: 0.17509118}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9761,7 +10241,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.3955307, y: -0.086336136}
+  m_Offset: {x: 1.74, y: -0.12}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9772,7 +10252,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1391754, y: 0.6753731}
+  m_Size: {x: 2.8, y: 0.74}
   m_EdgeRadius: 0
 --- !u!1 &5143665100652831588
 GameObject:
@@ -9943,6 +10423,7 @@ Transform:
   - {fileID: 5143665100652831592}
   - {fileID: 1765260821}
   - {fileID: 795046986}
+  - {fileID: 355322130}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9965,6 +10446,7 @@ Transform:
   - {fileID: 218863922}
   - {fileID: 934363170}
   - {fileID: 2010639341}
+  - {fileID: 766181408}
   m_Father: {fileID: 1802785588}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10087,10 +10569,10 @@ MonoBehaviour:
   allowDragClick: 0
   itemObtainedDialogue: {fileID: 0}
   <InteractionDistance>k__BackingField:
-    UseConstant: 1
+    UseConstant: 0
     ConstantValue: 0
-    Variable: {fileID: 0}
-  <HasInteractionDistance>k__BackingField: 0
+    Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
+  <HasInteractionDistance>k__BackingField: 1
 --- !u!58 &5251805800761174663
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -16,6 +16,8 @@ public class ShovelMinigame : MonoBehaviour, IMinigame, IPointerClickHandler
     [SerializeField] private Animator shovelAnimator;
     [SerializeField] private int currentLevel = 0;
     [SerializeField] private float currentProgress;
+    [SerializeField] private List<InventoryItem> requiredItems;
+    [SerializeField] private List<InventoryItem> endMinigameItems; // Items to give the player upon finishing the minigame
 
     private void OnEnable()
     {
@@ -47,6 +49,7 @@ public class ShovelMinigame : MonoBehaviour, IMinigame, IPointerClickHandler
     {
         barSlider.gameObject.SetActive(false);
         active = false;
+        HandleInventoryEvents();
         eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
     }
     #endregion
@@ -129,7 +132,11 @@ public class ShovelMinigame : MonoBehaviour, IMinigame, IPointerClickHandler
         if (!CheckEndCondition()) return;
         StartCoroutine(DelayedFinish());
     }
-
+    private void HandleInventoryEvents()
+    {
+        eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(endMinigameItems.ToArray()));
+        eventBrokerComponent.Publish(this, new InventoryEvents.RemoveItem(requiredItems.ToArray()));
+    }
     [System.Serializable]
     private class ShovelLevels
     {

@@ -21,7 +21,7 @@ MonoBehaviour:
   <Text>k__BackingField: I guess somebody was using this bucket after all.
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6501e24c342bb984ab1ff6c73d40d441, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

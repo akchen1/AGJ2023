@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: Candle (Lit)
   m_EditorClassIdentifier: 
   <ItemName>k__BackingField: Candle (Lit)
-  <ItemIcon>k__BackingField: {fileID: 0}
+  <ItemIcon>k__BackingField: {fileID: 21300000, guid: 0c9d55522bb90f344b04d009084b366c, type: 3}
   <ItemDescription>k__BackingField: HOT!
   <InventoryInteraction>k__BackingField: {fileID: 0}
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  <HasInteractionDistance>k__BackingField: 0
