@@ -9,6 +9,9 @@ public class Scissor :  MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
     private RectTransform rectTransform;
     private Canvas canvas;
     private CanvasGroup canvasGroup;
+    private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
+    private float initalWaitTime = 4f;
+    private float addTime = 2.5f;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -39,11 +42,21 @@ public class Scissor :  MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
     {
         if (other.gameObject.name == "BalloonString")
         {
+            float waitTime = initalWaitTime;
             GameObject[] targetObjects = GameObject.FindGameObjectsWithTag("Holder");
             foreach(GameObject go in targetObjects){
                 go.GetComponent<Image>().enabled = false;
+                go.transform.GetChild(0).gameObject.GetComponent<DragAndDrop>().enabled = false;
+                if(go.GetComponent<RightChild>().Check())
+                    waitTime += addTime;
             }
+
+            eventBrokerComponent.Publish(this, new DistractionTimerEvent.SetDistracitonTime(waitTime));
+            eventBrokerComponent.Publish(this, new DistractionEvent.Start());
             other.transform.parent.GetComponent<Rigidbody2D>().isKinematic = false;
+            gameObject.SetActive(false);
         }
     }
+
+
 }

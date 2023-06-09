@@ -1,13 +1,19 @@
 {
     "name": "AstarPathfindingProjectEditor",
+    "rootNamespace": "",
     "references": [
         "AstarPathfindingProject",
         "PackageToolsEditor"
     ],
-    "optionalUnityReferences": [],
     "includePlatforms": [
         "Editor"
     ],
     "excludePlatforms": [],
-    "allowUnsafeCode": false
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

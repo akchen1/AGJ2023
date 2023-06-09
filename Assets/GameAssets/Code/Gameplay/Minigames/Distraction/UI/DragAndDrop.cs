@@ -18,10 +18,13 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
     }
-
+    private void Start() {
+        
+    }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        Debug.Log("Hello");
         transform.GetComponent<Rigidbody2D>().isKinematic = true;
         transform.GetComponent<Collider2D>().enabled = false;
         isDragging = true;
