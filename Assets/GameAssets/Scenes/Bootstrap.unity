@@ -582,6 +582,8 @@ MonoBehaviour:
   twineCollect: {fileID: 8300000, guid: 337b7bee98fb1a441aec014ca02ed7c3, type: 3}
   vaseShatter: {fileID: 8300000, guid: 9c11abeb30967c7409b52054d2ba6a41, type: 3}
   vialCollect: {fileID: 8300000, guid: 28042bbcf847173408908fd4beee72c1, type: 3}
+  branchBreak: {fileID: 8300000, guid: 26f2005a2cd9c3441ba1bb8965169c74, type: 3}
+  branchCollect: {fileID: 8300000, guid: a797587f267b6b94b94f247d45f7155a, type: 3}
 --- !u!1 &464725709
 GameObject:
   m_ObjectHideFlags: 0
