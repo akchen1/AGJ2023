@@ -18,6 +18,8 @@ public class InventoryInteraction : ScriptableObject, IInteractable
 
 
     [field: SerializeField] public bool RequiredSceneInteraction { get; private set; } = false;
+    [field: SerializeField] public bool HasInteractionDistance { get; set; } = false;
+
     [HideInInspector]
     public string selectedSceneName;
 

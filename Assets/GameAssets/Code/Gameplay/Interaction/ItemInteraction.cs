@@ -9,7 +9,6 @@ public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandle
     [SerializeField] private InventoryItem item;
     [SerializeField] private bool destroyOnInteract = false;
     [SerializeField] private bool allowDragClick = false;
-    [SerializeField] private bool mustBeInRange = false;
 
     [SerializeField] private DSDialogueSO itemObtainedDialogue;
 
@@ -18,6 +17,7 @@ public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandle
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
     [field: SerializeField] public FloatReference InteractionDistance { get; set; }
+    [field: SerializeField] public bool HasInteractionDistance { get; set; } = false;
 
     public void Interact()
     {
@@ -26,7 +26,7 @@ public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandle
         {
             eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(itemObtainedDialogue));
         }
-        if (mustBeInRange)
+        if (HasInteractionDistance)
         {
             eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
         }
@@ -47,7 +47,7 @@ public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandle
     public void OnPointerClick(PointerEventData eventData)
     {
         if (!allowDragClick && dragging) return;
-        if (mustBeInRange)
+        if (HasInteractionDistance)
         {
             eventBrokerComponent.Publish(this, new InteractionEvents.Interact(this, valid =>
             {

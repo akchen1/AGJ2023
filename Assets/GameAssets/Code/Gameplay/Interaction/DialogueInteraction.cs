@@ -10,6 +10,7 @@ public class DialogueInteraction : MonoBehaviour, IInteractable, IPointerClickHa
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
     [field: SerializeField] public FloatReference InteractionDistance { get; set; }
+    [field: SerializeField] public bool HasInteractionDistance { get; set; } = false;
 
     public void Interact()
     {
