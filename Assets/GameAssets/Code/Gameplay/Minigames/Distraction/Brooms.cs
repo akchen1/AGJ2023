@@ -11,15 +11,7 @@ public class Brooms : MonoBehaviour
         if (collision.gameObject.name == "Oil" && onlyOnce)
         {
             onlyOnce = false;
-            StartCoroutine(WaitUntilFall());
+            eventBrokerComponent.Publish(this, new DistractionEvent.Finished());
         }
-    }
-    private IEnumerator WaitUntilFall()
-    {
-        while (transform.eulerAngles.z > 310f)
-        {
-            yield return null;
-        }
-        eventBrokerComponent.Publish(this, new DistractionEvent.Finished());
     }
 }

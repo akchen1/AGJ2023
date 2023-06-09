@@ -8,8 +8,6 @@ public class DialogueInteraction : MonoBehaviour, IInteractable, IPointerClickHa
     [SerializeField] private DSDialogueSO dialogue;
     [SerializeField] private bool canInteractMultipleTimes = true;
     private int interactCount = 0;
-
-    private bool canInteract = true;
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
     [field: SerializeField] public FloatReference InteractionDistance { get; set; }
@@ -18,7 +16,6 @@ public class DialogueInteraction : MonoBehaviour, IInteractable, IPointerClickHa
     public void Interact()
     {
         if (!canInteractMultipleTimes && interactCount > 0) return;
-        if(canInteract){
             // Check first if there's another interaction event happening
             eventBrokerComponent.Publish(this, new InteractionEvents.Interact(this, (valid) =>
             {
@@ -33,21 +30,10 @@ public class DialogueInteraction : MonoBehaviour, IInteractable, IPointerClickHa
             {
                 gameObject.layer = 0;
             }
-        }
     }
-
     public void OnPointerClick(PointerEventData eventData)
     {
         Interact();
     }
-    private void GetInputStateHandler(BrokerEvent<InputEvents.SetInputState> inEvent)
-    {
-        canInteract = inEvent.Payload.Active;
-    }
-    private void OnEnable() {
-        eventBrokerComponent.Subscribe<InputEvents.SetInputState>(GetInputStateHandler);
-    }
-    private void OnDisable() {
-        eventBrokerComponent.Unsubscribe<InputEvents.SetInputState>(GetInputStateHandler);
-    }
+
 }
