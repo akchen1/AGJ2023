@@ -10,6 +10,7 @@ public class SceneChangeInteraction : MonoBehaviour, IInteractable, IPointerClic
     public string selectedSceneName;
 
     [field: SerializeField] public FloatReference InteractionDistance { get; set; }
+    [field: SerializeField] public bool HasInteractionDistance { get; set; } = false;
 
 
     [SerializeField] private bool unloadPrevious = true;

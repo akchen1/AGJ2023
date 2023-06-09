@@ -3523,8 +3523,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460423882}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.34, y: 0.84, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.66, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4034,6 +4034,7 @@ MonoBehaviour:
     UseConstant: 0
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
+  <HasInteractionDistance>k__BackingField: 1
   unloadPrevious: 1
 --- !u!4 &1568553691
 Transform:
@@ -5289,6 +5290,7 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 3
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
+  <HasInteractionDistance>k__BackingField: 1
 --- !u!1 &1788912420
 GameObject:
   m_ObjectHideFlags: 0
