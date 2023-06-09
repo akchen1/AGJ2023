@@ -16,6 +16,12 @@ MonoBehaviour:
   <RequiredItems>k__BackingField:
   - {fileID: 11400000, guid: 48d9cccea6a175041bd8d4146a3ebbb5, type: 2}
   - {fileID: 11400000, guid: f136711b4bf992e4a958c4162dc0a4f9, type: 2}
+  <OverrideDefaultClickInteraction>k__BackingField: 0
   minigame: {fileID: 3787382044068407691, guid: a91c05f4f10b3994981118d0148c77da, type: 3}
-  <RequiredSceneInteraction>k__BackingField: 0
-  selectedSceneName: Prologue - Scene 3
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 4
+    Variable: {fileID: 0}
+  <RequiredSceneInteraction>k__BackingField: 1
+  <HasInteractionDistance>k__BackingField: 0
+  selectedSceneName: Clearing - Scene 9

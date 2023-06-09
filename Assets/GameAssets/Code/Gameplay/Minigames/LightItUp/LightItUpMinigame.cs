@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LightItUpMinigame : MonoBehaviour, IMinigame
 {
@@ -8,8 +9,6 @@ public class LightItUpMinigame : MonoBehaviour, IMinigame
     [SerializeField] private List<InventoryItem> endMinigameItems; // Items to give the player upon finishing the minigame
     [SerializeField] private GameObject LightItUpUI;
     [SerializeField] private Candle candle;
-
-
 
     private bool active = false;
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
@@ -30,6 +29,12 @@ public class LightItUpMinigame : MonoBehaviour, IMinigame
 
     public bool StartCondition()
     {
+        Debug.Log(SceneManager.GetActiveScene().name);
+        if (SceneManager.GetActiveScene().name != Constants.SceneNames.ClearingScene9)
+        {
+            // TODO: Start dialogue
+            return false;
+        }
         return requiredItems.CheckIfHasAllRequiredItems(this);
     }
 

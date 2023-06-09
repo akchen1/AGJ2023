@@ -14,4 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ItemName>k__BackingField: Broken Vase
   <ItemIcon>k__BackingField: {fileID: 0}
-  <ItemDescription>k__BackingField: 
+  <ItemDescription>k__BackingField: Pieces of a vase.
+  <InventoryInteraction>k__BackingField: {fileID: 0}
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  <HasInteractionDistance>k__BackingField: 0

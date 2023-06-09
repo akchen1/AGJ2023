@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ItemName>k__BackingField: Matchbox
   <ItemIcon>k__BackingField: {fileID: 21300000, guid: 63b18622ba5ae7b48b13a1946b4696d1, type: 3}
-  <ItemDescription>k__BackingField: 
+  <ItemDescription>k__BackingField: "A small box of matches labeled \u2018Safety
+    Matches\u2019; seems appropriate for kids."
   <InventoryInteraction>k__BackingField: {fileID: 11400000, guid: 56120df96504a8f4d90a2bceaeafa5d7, type: 2}
   <InteractionDistance>k__BackingField:
     UseConstant: 1

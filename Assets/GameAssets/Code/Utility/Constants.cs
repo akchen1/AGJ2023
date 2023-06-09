@@ -20,11 +20,7 @@ public static class Constants
 		public const string MainstreetScene6Part1 = "MainStreet - Scene 6 - Part 1";
 		public const string BasementScene6Part2 = "Basement - Scene 6 - Part 2";
 		public const string SearchScene7MainStreet = "Search - Scene 7 Main Street";
-		public const string SearchScene7Basement = "Search - Scene 7 Basement";
-		public const string SearchScene7Forest = "Search - Scene 7 Forest";
-		public const string SearchScene7GeneralStore = "Search - Scene 7 General Store";
-		public const string SearchScene7LivingRoom = "Search - Scene 7 Living Room";
-		public const string SearchScene7Playground = "Search - Scene 7 Playground";
+		public const string ClearingScene9 = "Clearing - Scene 9";
 	}
 
 	// Used in SceneChangeMarkerEmitter Editor script to select scenes from dropdown
@@ -41,11 +37,7 @@ public static class Constants
 			SceneNames.MainstreetScene6Part1,
 			SceneNames.BasementScene6Part2,
             SceneNames.SearchScene7MainStreet,
-			SceneNames.SearchScene7Basement,
-			SceneNames.SearchScene7Forest,
-			SceneNames.SearchScene7GeneralStore,
-			SceneNames.SearchScene7LivingRoom,
-			SceneNames.SearchScene7Playground,
+			SceneNames.ClearingScene9
 		};
 
 	public enum Scene7SubScenes

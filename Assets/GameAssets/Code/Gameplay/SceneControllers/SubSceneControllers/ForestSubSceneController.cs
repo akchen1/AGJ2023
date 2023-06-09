@@ -10,6 +10,8 @@ public class ForestSubSceneController : SubSceneController
     [SerializeField] private DSDialogueSO sanityDialogue;
     [SerializeField] private GameObject branchBundle;
 
+    [SerializeField] DSDialogueSO allComponentsDialogue;
+    [SerializeField] GameObject clearingSceneInteraction;
 
     private bool isSanityDialogue = false;
     
@@ -18,6 +20,16 @@ public class ForestSubSceneController : SubSceneController
         base.Enable();
         eventBrokerComponent.Subscribe<DialogueEvents.StartDialogue>(StartDialogueHandler);
         eventBrokerComponent.Subscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
+        Debug.Log("h");
+        eventBrokerComponent.Publish(this, new Scene7Events.HasCombinedItems(result =>
+        {
+            Debug.Log(result);
+            if (result)
+            {
+                eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(allComponentsDialogue));
+                clearingSceneInteraction.SetActive(true);
+            };
+        }));
     }
 
     private void DialogueFinishHandler(BrokerEvent<DialogueEvents.DialogueFinish> inEvent)
