@@ -1,3 +1,5 @@
+using DS.ScriptableObjects;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +10,7 @@ public class ScrollManual : MonoBehaviour, IMinigame
     [SerializeField] private GameObject scrollUI;
 
     [SerializeField] private InventoryItem candle;
+    [SerializeField] private InventoryItem matchBox;
     [SerializeField] private InventoryItem vial;
     [SerializeField] private InventoryItem weath;
     [SerializeField] private InventoryItem gem;
@@ -24,17 +27,42 @@ public class ScrollManual : MonoBehaviour, IMinigame
     [SerializeField] private Sprite backSideCondition2;
     [SerializeField] private Image closeButton;
 
+    [SerializeField] private DSDialogueSO completedItemsDialogue;
+    private static bool hasTriggeredCompletedItemsDialogue;
+    private bool isInDialogue;
+
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
     public void Finish()
     {
-        scrollUI.SetActive(false);
-        eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+        if (!hasTriggeredCompletedItemsDialogue)
+        {
+            eventBrokerComponent.Publish(this, new Scene7Events.HasCombinedItems(result =>
+            {
+                if (!result) return;
+                scrollUI.SetActive(false);
+                eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(completedItemsDialogue));
+                isInDialogue = true;
+                hasTriggeredCompletedItemsDialogue = true;
+                StartCoroutine(WaitForDialogueToFinish());
+            }));
+        }
+        if (!isInDialogue)
+        {
+            eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+            Destroy(this.gameObject);
+        }
+        
+    }
+
+    private void DialogueFinishHandler(BrokerEvent<DialogueEvents.DialogueFinish> obj)
+    {
+        isInDialogue = false;
     }
 
     public void Initialize()
     {
-        bool hasCandle = HasItem(candle);
+        bool hasCandle = HasItem(candle) && HasItem(matchBox);
         bool hasVial = HasItem(vial);
         bool hasWreath = HasItem(weath);
         bool hasGem = HasItem(gem);
@@ -67,5 +95,14 @@ public class ScrollManual : MonoBehaviour, IMinigame
             hasItem = callback;
         }, item));
         return hasItem;
+    }
+
+    private IEnumerator WaitForDialogueToFinish()
+    {
+        eventBrokerComponent.Subscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
+        yield return new WaitUntil(() => !isInDialogue);
+        eventBrokerComponent.Unsubscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
+        eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+        Destroy(this.gameObject);
     }
 }

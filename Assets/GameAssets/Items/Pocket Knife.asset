@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: Pocket Knife
   m_EditorClassIdentifier: 
   <ItemName>k__BackingField: Pocket Knife
-  <ItemIcon>k__BackingField: {fileID: 0}
+  <ItemIcon>k__BackingField: {fileID: 21300000, guid: bb9913754a9ea094eb1a6bc017d3fbeb, type: 3}
   <ItemDescription>k__BackingField: An average pocket knife with a surprisingly sharp
     blade.
   <InventoryInteraction>k__BackingField: {fileID: 11400000, guid: fd0d04b4496f8c1429b961921b6678fb, type: 2}
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  <HasInteractionDistance>k__BackingField: 0

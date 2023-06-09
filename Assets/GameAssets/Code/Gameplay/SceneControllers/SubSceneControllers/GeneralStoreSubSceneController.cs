@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,15 +6,22 @@ using UnityEngine;
 [System.Serializable]
 public class GeneralStoreSubSceneController : SubSceneController
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private InventoryInteraction matches;
+    [SerializeField] private InventoryInteraction twine;
+    public override void Enable()
     {
-        
+        base.Enable();
+        eventBrokerComponent.Subscribe<MinigameEvents.EndMinigame>(EndMinigameHandler);
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Disable() 
+    { 
+        base.Disable();
+        eventBrokerComponent.Unsubscribe<MinigameEvents.EndMinigame>(EndMinigameHandler);
+    }
+
+    private void EndMinigameHandler(BrokerEvent<MinigameEvents.EndMinigame> obj)
     {
-        
+        matches.InteractionDistance.ConstantValue = 4f;
     }
 }

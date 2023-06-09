@@ -21,9 +21,9 @@ MonoBehaviour:
   <Text>k__BackingField: And they left this castle all on its own? *giggles*
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 0}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6bf8c70515af16644ab3119492543150, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 0
-  <IsStartingDialogue>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0

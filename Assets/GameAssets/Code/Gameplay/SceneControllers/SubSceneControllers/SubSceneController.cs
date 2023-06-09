@@ -26,4 +26,8 @@ public class SubSceneController
 		isActive = false;
 	}
 
+	public virtual void Update()
+	{
+
+	}
 }

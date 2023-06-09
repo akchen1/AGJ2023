@@ -1,3 +1,4 @@
+using DS.ScriptableObjects;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,7 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
 	[SerializeField] private List<InventoryItem> neededItems;
+	[SerializeField] private InventoryItem vialOfBlood;
 	[SerializeField] private int bloodNeeded;
 
 	[SerializeField, Header("UI")] private GameObject panel;
@@ -23,6 +25,10 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 	[SerializeField] private float bloodFallSpeed;
 	[SerializeField] private Transform bloodHolder;
 
+	[SerializeField, Header("Starting Dialogue Options")] private DSDialogueSO negativeDialogue;
+	[SerializeField] private DSDialogueSO neutralDialogue;
+	[SerializeField] private DSDialogueSO positiveDialogue;
+
 	private bool gameRunning = false;
 	private int totalBlood;
 
@@ -32,27 +38,39 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 
 	public void Finish()
 	{
+		eventBrokerComponent.Unsubscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
+
 		foreach(GameObject blood in bloodList)
 		{
 			Destroy(blood);
 		}
 
-		gameRunning = false;
+        eventBrokerComponent.Publish(this, new InventoryEvents.RemoveItem(neededItems.ToArray()));
+		eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(vialOfBlood));
+
+        gameRunning = false;
 		panel.SetActive(false);
 		eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+		Destroy(this.gameObject);
 	}
 
 	public void Initialize()
 	{
-		panel.SetActive(true);
-		timer = Random.Range(bloodSpawnTimer - bloodSpawnTimerOffset, bloodSpawnTimer + bloodSpawnTimerOffset);
-
-		totalBlood = 0;
-		bloodSlider.value = 0;
-		gameRunning = true;
+		eventBrokerComponent.Subscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
+		StartStartingDialogue();
 	}
 
-	public bool StartCondition()
+    private void DialogueFinishHandler(BrokerEvent<DialogueEvents.DialogueFinish> obj)
+    {
+        panel.SetActive(true);
+        timer = Random.Range(bloodSpawnTimer - bloodSpawnTimerOffset, bloodSpawnTimer + bloodSpawnTimerOffset);
+
+        totalBlood = 0;
+        bloodSlider.value = 0;
+        gameRunning = true;
+    }
+
+    public bool StartCondition()
 	{
 		bool hasItems = false;
 		eventBrokerComponent.Publish(this, new InventoryEvents.HasItem((success) => hasItems = success, neededItems.ToArray()));
@@ -110,4 +128,21 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 
 		vial.transform.position = Input.mousePosition;
     }
+
+	private void StartStartingDialogue()
+	{
+		eventBrokerComponent.Publish(this, new Scene7Events.GetBloodSanityResult(sanityType =>
+		{
+			DSDialogueSO dialogue = neutralDialogue;
+			if (sanityType == Constants.Sanity.SanityType.Negative)
+			{
+				dialogue = negativeDialogue;
+			}
+			else if (sanityType == Constants.Sanity.SanityType.Positive)
+			{
+				dialogue = positiveDialogue;
+			}
+			eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(dialogue));
+		}));
+	}
 }

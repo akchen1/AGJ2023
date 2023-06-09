@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: Candle
   m_EditorClassIdentifier: 
   <ItemName>k__BackingField: Candle
-  <ItemIcon>k__BackingField: {fileID: -1434383729, guid: 6db616208fb2fbe459521591ada0ab5e, type: 3}
+  <ItemIcon>k__BackingField: {fileID: 21300000, guid: 009f63822ee6b00409c024444f9d398f, type: 3}
   <ItemDescription>k__BackingField: A simple white wax candle, previously unused.
   <InventoryInteraction>k__BackingField: {fileID: 11400000, guid: 56120df96504a8f4d90a2bceaeafa5d7, type: 2}
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  <HasInteractionDistance>k__BackingField: 0

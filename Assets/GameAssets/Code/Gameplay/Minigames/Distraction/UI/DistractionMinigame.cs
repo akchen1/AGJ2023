@@ -84,33 +84,33 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
         eventBrokerComponent.Unsubscribe<DistractionTimerEvent.SetDistracitonTime>(SetWaitTimer);
     }
 
-	private IEnumerator ResetMinigame()
-	{
-		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 0);
+    private IEnumerator ResetMinigame()
+    {
+        fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 0);
         fadeToBlack.gameObject.SetActive(true);
 
-		while (fadeToBlack.color.a < 1f)
-		{
-			fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a + (Time.deltaTime * 2f));
-			yield return null;
-		}
+        while (fadeToBlack.color.a < 1f)
+        {
+            fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a + (Time.deltaTime * 2f));
+            yield return null;
+        }
 
-		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 1f);
+        fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 1f);
 
         Destroy(panel.gameObject);
         GameObject instantiatedObject = Instantiate(distractionMinigamePrefab, canvas.transform);
         instantiatedObject.transform.SetAsFirstSibling();
         panel = instantiatedObject;
 
-		yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1f);
 
-		while (fadeToBlack.color.a > 0f)
-		{
-			fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a - (Time.deltaTime * 2f));
-			yield return null;
-		}
+        while (fadeToBlack.color.a > 0f)
+        {
+          fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a - (Time.deltaTime * 2f));
+          yield return null;
+        }
 
-		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 0f);
-		fadeToBlack.gameObject.SetActive(false);
-	}
+        fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 0f);
+        fadeToBlack.gameObject.SetActive(false);
+	  }
 }

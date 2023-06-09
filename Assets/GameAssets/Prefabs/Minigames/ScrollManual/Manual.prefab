@@ -491,7 +491,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollUI: {fileID: 5760530410179900248}
-  candle: {fileID: 11400000, guid: 0ef24c124aabcbe489bbf406f7ad2ab7, type: 2}
+  candle: {fileID: 11400000, guid: 48d9cccea6a175041bd8d4146a3ebbb5, type: 2}
+  matchBox: {fileID: 11400000, guid: f136711b4bf992e4a958c4162dc0a4f9, type: 2}
   vial: {fileID: 11400000, guid: 063cb76fc16de3a409d470f333789232, type: 2}
   weath: {fileID: 11400000, guid: 42130195c55c9754b8670900391558ac, type: 2}
   gem: {fileID: 11400000, guid: a0667da986d93b94789634435bc87154, type: 2}
@@ -504,7 +505,8 @@ MonoBehaviour:
   sideB: {fileID: 5760530411468450201}
   backSideCondition1: {fileID: 21300000, guid: a14017079cd4eae47bbabe6d3552b5e6, type: 3}
   backSideCondition2: {fileID: 21300000, guid: 90e510d83b6ed19458be6ae11f3bf9b5, type: 3}
-  closeButton: {fileID: 0}
+  closeButton: {fileID: 7519870352657703500}
+  completedItemsDialogue: {fileID: 11400000, guid: 0e709b77974b3284593c13b0cfe1a04c, type: 2}
 --- !u!1 &5760530410819307651
 GameObject:
   m_ObjectHideFlags: 0

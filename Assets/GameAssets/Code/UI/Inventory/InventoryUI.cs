@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class InventoryUI : MonoBehaviour
 {
@@ -43,14 +44,19 @@ public class InventoryUI : MonoBehaviour
 
     private void RemoveItemHandler(BrokerEvent<InventoryEvents.RemoveItem> inEvent)
     {
+        List<InventoryItemUI> uiToRemove = new List<InventoryItemUI>();
         foreach (InventoryItemUI item in inventoryItemUIs)
         {
             if (inEvent.Payload.Items.Contains(item.inventoryItem))
             {
-                inventoryItemUIs.Remove(item);
-                Destroy(item.gameObject);
-                return;
+                uiToRemove.Add(item);
             }
+        }
+
+        for (int i = uiToRemove.Count - 1; i >= 0; i--)
+        {
+            inventoryItemUIs.Remove(uiToRemove[i]);
+            Destroy(uiToRemove[i].gameObject);
         }
     }
 
