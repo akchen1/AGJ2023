@@ -35,6 +35,7 @@ public class SearchScene7Controller : SceneController
 
 
     [SerializeField, Header("General Store")] private GeneralStoreSubSceneController GeneralStoreSubSceneController;
+	[SerializeField] PlayableAsset generalStoreStartingCutscene;
 
 	[SerializeField] private PlaygroundSubSceneController PlaygroundSubSceneController;
 
@@ -67,6 +68,7 @@ public class SearchScene7Controller : SceneController
 				return MainStreetSubSceneController;
 
 			case Constants.Scene7SubScenes.GeneralStore:
+				playableDirector.Play(generalStoreStartingCutscene);
 				return GeneralStoreSubSceneController;
 
 			case Constants.Scene7SubScenes.Basement:

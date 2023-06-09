@@ -41,33 +41,6 @@ MonoBehaviour:
   retroactive: 0
   emiteOnce: 0
   <Enable>k__BackingField: 1
---- !u!114 &-3078303156830301899
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b22792c3b570444eb18cb78c2af3a74, type: 3}
-  m_Name: Audio Track
-  m_EditorClassIdentifier: 
-  m_Version: 3
-  m_AnimClip: {fileID: 0}
-  m_Locked: 0
-  m_Muted: 0
-  m_CustomPlayableFullTypename: 
-  m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
-  m_Children: []
-  m_Clips: []
-  m_Markers:
-    m_Objects: []
-  m_TrackProperties:
-    volume: 1
-    stereoPan: 0
-    spatialBlend: 0
 --- !u!114 &-1585902083789737475
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,7 +72,6 @@ MonoBehaviour:
   m_Version: 0
   m_Tracks:
   - {fileID: 6246892410244875571}
-  - {fileID: -3078303156830301899}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
@@ -119,6 +91,9 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 362a4ea6a8e99614cb173c46497ba135, type: 2}
+  canSkipDialogue: 0
+  StartTime: 0
+  EndTime: 1.266667
 --- !u!114 &5542582268945584998
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,6 +107,9 @@ MonoBehaviour:
   m_Name: DialogueClip(Clone)(Clone)
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: e53a5fedac5abb7489059ee9db92ce3b, type: 2}
+  canSkipDialogue: 0
+  StartTime: 1.2666670000000002
+  EndTime: 2.533334
 --- !u!114 &6246892410244875571
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -190,7 +168,25 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4

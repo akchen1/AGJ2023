@@ -28,7 +28,6 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
         eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
         playableDirector.Play(shopKeeperCutscene);
         panel.SetActive(false);
-        gameObject.SetActive(false);
     }
 
     public void Initialize()
