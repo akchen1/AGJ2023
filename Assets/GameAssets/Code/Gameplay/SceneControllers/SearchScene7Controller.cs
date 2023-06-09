@@ -114,6 +114,7 @@ public class SearchScene7Controller : SceneController
 	private void Start()
 	{
 		eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(startingitems));
+		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.MainStreet, true));
 		fadeToBlack.gameObject.SetActive(false);
 		currentSubScene = MainStreetSubSceneController;
 		currentSubScene.Enable();

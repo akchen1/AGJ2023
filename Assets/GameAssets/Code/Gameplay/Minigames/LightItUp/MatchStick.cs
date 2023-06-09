@@ -19,6 +19,8 @@ public class MatchStick : MonoBehaviour, IEndDragHandler, IBeginDragHandler
 
     private bool isLit = false;
 
+	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
+
     private void Awake()
     {
         rbody = GetComponent<Rigidbody2D>();
@@ -63,7 +65,7 @@ public class MatchStick : MonoBehaviour, IEndDragHandler, IBeginDragHandler
         if (angle <= maxAngle && velocity >= minVelocity)
         {
             animator.SetTrigger("Lit");
-            Debug.Log("is ligte");
+			eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.MatchLight));
             isLit = true;
         }
     }

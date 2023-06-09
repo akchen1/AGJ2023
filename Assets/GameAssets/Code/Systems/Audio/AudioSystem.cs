@@ -16,7 +16,10 @@ public class AudioSystem : MonoBehaviour
 	[SerializeField] private AudioClip livingRoom;
 	[SerializeField] private AudioClip prologue;
 	[SerializeField] private AudioClip recordPlayer;
-
+	[SerializeField] private AudioClip basement;
+	[SerializeField] private AudioClip generalStore;
+	[SerializeField] private AudioClip mainStreet;
+	[SerializeField] private AudioClip playtime;
 
 	[SerializeField, Header("SFX")] private AudioClip click;
 	[SerializeField] private AudioClip pieceLift;
@@ -43,6 +46,11 @@ public class AudioSystem : MonoBehaviour
 	[SerializeField] private AudioClip gemCollect;
 	[SerializeField] private AudioClip dialTurn;
 	[SerializeField] private AudioClip boxOpen;
+	[SerializeField] private AudioClip bottleHit;
+	[SerializeField] private AudioClip broomCrash;
+	[SerializeField] private AudioClip shears;
+	[SerializeField] private AudioClip toyCarRoll;
+	[SerializeField] private AudioClip bloodDrop;
 
 	private float musicVolume;
 	private float sfxVolume;
@@ -65,6 +73,10 @@ public class AudioSystem : MonoBehaviour
 		music.Add(Constants.Audio.Music.LivingRoom, livingRoom);
 		music.Add(Constants.Audio.Music.Prologue, prologue);
 		music.Add(Constants.Audio.Music.RecordPlayer, recordPlayer);
+		music.Add(Constants.Audio.Music.Basement, basement);
+		music.Add(Constants.Audio.Music.GeneralStore, generalStore);
+		music.Add(Constants.Audio.Music.MainStreet, mainStreet);
+		music.Add(Constants.Audio.Music.Playtime, playtime);
 
 		sfx.Add(Constants.Audio.SFX.Click, click);
 		sfx.Add(Constants.Audio.SFX.PieceLift, pieceLift);
@@ -91,8 +103,12 @@ public class AudioSystem : MonoBehaviour
 		sfx.Add(Constants.Audio.SFX.GemCollect, gemCollect);
 		sfx.Add(Constants.Audio.SFX.DialTurn, dialTurn);
 		sfx.Add(Constants.Audio.SFX.BoxOpen, boxOpen);
-		
-		
+		sfx.Add(Constants.Audio.SFX.BottleHit, bottleHit);
+		sfx.Add(Constants.Audio.SFX.BroomCrash, broomCrash);
+		sfx.Add(Constants.Audio.SFX.Shears, shears);
+		sfx.Add(Constants.Audio.SFX.ToyCarRoll, toyCarRoll);
+		sfx.Add(Constants.Audio.SFX.BloodDrop, bloodDrop);
+
 	}
 
 	private void OnEnable()

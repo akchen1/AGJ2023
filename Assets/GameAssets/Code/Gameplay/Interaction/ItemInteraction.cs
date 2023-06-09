@@ -7,7 +7,8 @@ using UnityEngine.EventSystems;
 public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandler, IBeginDragHandler, IEndDragHandler
 {
     [SerializeField] private InventoryItem item;
-    [SerializeField] private bool destroyOnInteract = false;
+	[SerializeField] public string PickupAudio;
+	[SerializeField] private bool destroyOnInteract = false;
     [SerializeField] private bool allowDragClick = false;
 
     [SerializeField] private DSDialogueSO itemObtainedDialogue;
@@ -21,6 +22,11 @@ public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandle
 
     public void Interact()
     {
+		if (PickupAudio != null)
+		{
+			eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(PickupAudio));
+		}
+
         eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(item));
         if (itemObtainedDialogue != null)
         {

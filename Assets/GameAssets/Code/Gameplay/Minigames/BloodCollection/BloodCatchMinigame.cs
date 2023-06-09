@@ -89,6 +89,7 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 
 	private void OnBloodCollected(GameObject blood)
 	{
+		eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.BloodDrop));
 		bloodList.Remove(blood);
 		Destroy(blood);
 

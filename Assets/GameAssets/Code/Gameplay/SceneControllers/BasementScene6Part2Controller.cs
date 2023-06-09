@@ -34,7 +34,8 @@ public class BasementScene6Part2Controller : MonoBehaviour
     void Start()
     {
         eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(startingDialoguePart1));
-        currentDialogue = startingDialoguePart1;
+		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.Basement, true));
+		currentDialogue = startingDialoguePart1;
     }
 
     private void OnEnable()
