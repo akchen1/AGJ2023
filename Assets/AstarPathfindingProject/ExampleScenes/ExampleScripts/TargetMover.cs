@@ -17,6 +17,7 @@ namespace Pathfinding {
 		/// <summary>Mask for the raycast placement</summary>
 		private bool boolOffSet = false;
 		public bool AllowMove = true;
+		public GameObject hitGameObject = null;
 		public Vector3 OffSetVector =  new Vector3 (0,2f,0);
 		public LayerMask mask;
 
@@ -51,7 +52,13 @@ namespace Pathfinding {
 					Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 					RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity, layerMask);
 					if (hit)
+					{
 						boolOffSet = true;
+						hitGameObject = hit.collider.gameObject;
+					} else
+					{
+                        hitGameObject = null;
+					}
 					UpdateTargetPosition();
 				}
 			}
