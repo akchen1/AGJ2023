@@ -10,6 +10,7 @@ public class Brooms : MonoBehaviour
     {
         if (collision.gameObject.name == "Oil" && onlyOnce)
         {
+			eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.BroomCrash));
             onlyOnce = false;
             eventBrokerComponent.Publish(this, new DistractionEvent.Finished());
         }
