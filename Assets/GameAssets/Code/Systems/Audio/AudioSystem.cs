@@ -42,6 +42,9 @@ public class AudioSystem : MonoBehaviour
 	private float musicVolume;
 	private float sfxVolume;
 
+	private AudioClip oldMusic;
+	private float oldTime;
+
 	private Dictionary<string, AudioClip> music = new Dictionary<string, AudioClip>();
 	private Dictionary<string, AudioClip> sfx = new Dictionary<string, AudioClip>();
 
@@ -86,6 +89,8 @@ public class AudioSystem : MonoBehaviour
         eventBrokerComponent.Subscribe<AudioEvents.PlaySFX>(PlaySFXHandler);
 		eventBrokerComponent.Subscribe<AudioEvents.ChangeMusicVolume>(ChangeMusicVolumeHandler);
 		eventBrokerComponent.Subscribe<AudioEvents.ChangeSFXVolume>(ChangeSFXVolumeHandler);
+		eventBrokerComponent.Subscribe<AudioEvents.PlayTemporaryMusic>(PlayTemporaryMusicHandler);
+		eventBrokerComponent.Subscribe<AudioEvents.StopTemporaryMusic>(StopTemporaryMusicHandler);
 
 		float musicLevel = PlayerPrefs.GetFloat(Constants.Audio.MusicVolumePP, Constants.Audio.DefaultAudioLevel);
 		float sfxLevel = PlayerPrefs.GetFloat(Constants.Audio.SFXVolumePP, Constants.Audio.DefaultAudioLevel);
@@ -96,12 +101,14 @@ public class AudioSystem : MonoBehaviour
 		sfxSource.volume = sfxLevel;
 	}
 
-    private void OnDisable()
+	private void OnDisable()
     {
         eventBrokerComponent.Unsubscribe<AudioEvents.PlayMusic>(PlayMusicHandler);
         eventBrokerComponent.Unsubscribe<AudioEvents.PlaySFX>(PlaySFXHandler);
 		eventBrokerComponent.Unsubscribe<AudioEvents.ChangeMusicVolume>(ChangeMusicVolumeHandler);
 		eventBrokerComponent.Unsubscribe<AudioEvents.ChangeSFXVolume>(ChangeSFXVolumeHandler);
+		eventBrokerComponent.Unsubscribe<AudioEvents.PlayTemporaryMusic>(PlayTemporaryMusicHandler);
+		eventBrokerComponent.Unsubscribe<AudioEvents.StopTemporaryMusic>(StopTemporaryMusicHandler);
 	}
 
 	private void ChangeMusicVolumeHandler(BrokerEvent<AudioEvents.ChangeMusicVolume> inEvent)
@@ -144,7 +151,19 @@ public class AudioSystem : MonoBehaviour
 		}
     }
 
-	private void PlayMusic(string song)
+	private void PlayTemporaryMusicHandler(BrokerEvent<AudioEvents.PlayTemporaryMusic> inEvent)
+	{
+		oldMusic = musicSource.clip;
+		oldTime = musicSource.time;
+		StartCoroutine(FadeToSong(inEvent.Payload.MusicName));
+	}
+
+	private void StopTemporaryMusicHandler(BrokerEvent<AudioEvents.StopTemporaryMusic> inEvent)
+	{
+		StartCoroutine(FadeToSong(oldMusic, oldTime));
+	}
+
+	private void PlayMusic(string song, float time = 0f)
 	{
 		if (music.ContainsKey(song))
 		{
@@ -152,6 +171,7 @@ public class AudioSystem : MonoBehaviour
 			musicSource.clip = music[song];
 			musicSource.loop = true;
 			musicSource.Play();
+			musicSource.time = time;
 		}
 		else
 		{
@@ -159,7 +179,16 @@ public class AudioSystem : MonoBehaviour
 		}
 	}
 
-	private IEnumerator FadeToSong(string song)
+	private void PlayMusic(AudioClip song, float time = 0f)
+	{
+		musicSource.Stop();
+		musicSource.clip = song;
+		musicSource.loop = true;
+		musicSource.Play();
+		musicSource.time = time;
+	}
+
+	private IEnumerator FadeToSong(string song, float time = 0f)
 	{
 		while (musicSource.volume > 0)
 		{
@@ -167,7 +196,24 @@ public class AudioSystem : MonoBehaviour
 			yield return null;
 		}
 
-		PlayMusic(song);
+		PlayMusic(song, time);
+
+		while (musicSource.volume < musicVolume)
+		{
+			musicSource.volume += Constants.Audio.MusicFadeSpeed * Time.deltaTime;
+			yield return null;
+		}
+	}
+
+	private IEnumerator FadeToSong(AudioClip song, float time = 0f)
+	{
+		while (musicSource.volume > 0)
+		{
+			musicSource.volume -= Constants.Audio.MusicFadeSpeed * Time.deltaTime;
+			yield return null;
+		}
+
+		PlayMusic(song, time);
 
 		while (musicSource.volume < musicVolume)
 		{

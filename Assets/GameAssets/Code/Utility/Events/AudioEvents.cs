@@ -16,6 +16,21 @@ public class AudioEvents
 		public readonly bool Transition;
 	}
 
+	public class PlayTemporaryMusic
+	{
+		public PlayTemporaryMusic(string musicName)
+		{
+			MusicName = musicName;
+		}
+
+		public readonly string MusicName;
+	}
+
+	public class StopTemporaryMusic
+	{
+		public StopTemporaryMusic() { }
+	}
+
 	public class PlaySFX
 	{
 		public PlaySFX(string sfxName)
