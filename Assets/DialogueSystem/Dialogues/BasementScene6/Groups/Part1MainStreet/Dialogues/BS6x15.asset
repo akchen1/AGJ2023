@@ -18,11 +18,10 @@ MonoBehaviour:
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: But they certainly could. And maybe already did. Do you
-    want to take the blame for all that?
+  <Text>k__BackingField: 'But they certainly could. And maybe already did. '
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e8038f1cf479cdd459b688bcfc26b904, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 006e012f405bd5f48988006191335ed5, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

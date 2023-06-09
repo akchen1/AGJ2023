@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cabbddd164ab042e29b24f33ca0c86c0, type: 3}
-  m_Name: BS6x7
+  m_Name: BS6x7B
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: BS6x7
+  <DialogueName>k__BackingField: BS6x7B
   <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "Don\u2019t worry, we won\u2019t hurt them or anything. "
+  <Text>k__BackingField: "Just give them a fresh start. Doesn\u2019t that seem reasonable?"
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 93e3d71ba8ca0b941857d143d4431f09, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a670a6053df80954b82a3413a9efdc1a, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

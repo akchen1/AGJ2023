@@ -18,12 +18,10 @@ MonoBehaviour:
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "Ya, he\u2019s got a bunch of stuff! He keeps them in his
-    workshop in the basement. He should be out right now, so it\u2019ll be easy for
-    us to sneak in."
+  <Text>k__BackingField: "Ya, he\u2019s got a bunch of stuff!"
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: d8ccb5ac2ea7ebf4ca81bde25f7e53a3, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e7148adb7078d0d44ba726c8d2e88b13, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0

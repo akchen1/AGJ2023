@@ -18,11 +18,10 @@ MonoBehaviour:
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: "My Dad is a collector of sorts. Relics, rituals, artifacts;
-    you name it, he\u2019s probably got it."
+  <Text>k__BackingField: 'My Dad is a collector of sorts. '
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 161df2348b0994144a1e1d4eb5698131, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0e560b5a0c8fd764b99be4a71c27b6a1, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
