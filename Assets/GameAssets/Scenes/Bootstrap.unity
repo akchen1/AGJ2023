@@ -591,10 +591,11 @@ MonoBehaviour:
   gemCollect: {fileID: 8300000, guid: 15461cb171cc45a439b7b44b5e52c2a3, type: 3}
   dialTurn: {fileID: 8300000, guid: 97081552e0148f44cbc8466a80e93ac4, type: 3}
   boxOpen: {fileID: 8300000, guid: b6d2b2c828a8abe46b97a3ad126fdec0, type: 3}
-  bottleHit: {fileID: 0}
-  broomCrash: {fileID: 0}
-  shears: {fileID: 0}
-  toyCarRoll: {fileID: 0}
+  bottleHit: {fileID: 8300000, guid: 39c66ed165356b44a84b7b5fd7fc43f9, type: 3}
+  broomCrash: {fileID: 8300000, guid: e830f1d35c706e24b96d084e19782ab9, type: 3}
+  shears: {fileID: 8300000, guid: 38b30d5d2d7697c46a3d782a1354188d, type: 3}
+  toyCarRoll: {fileID: 8300000, guid: e9cfddf86f283cd48baa497fc0af1aaf, type: 3}
+  bloodDrop: {fileID: 8300000, guid: 99b8dfcaadcc3b64a989855ec20f7809, type: 3}
 --- !u!1 &464725709
 GameObject:
   m_ObjectHideFlags: 0

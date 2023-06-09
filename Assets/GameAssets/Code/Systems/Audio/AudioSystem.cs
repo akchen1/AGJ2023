@@ -50,6 +50,7 @@ public class AudioSystem : MonoBehaviour
 	[SerializeField] private AudioClip broomCrash;
 	[SerializeField] private AudioClip shears;
 	[SerializeField] private AudioClip toyCarRoll;
+	[SerializeField] private AudioClip bloodDrop;
 
 	private float musicVolume;
 	private float sfxVolume;
@@ -106,7 +107,7 @@ public class AudioSystem : MonoBehaviour
 		sfx.Add(Constants.Audio.SFX.BroomCrash, broomCrash);
 		sfx.Add(Constants.Audio.SFX.Shears, shears);
 		sfx.Add(Constants.Audio.SFX.ToyCarRoll, toyCarRoll);
-
+		sfx.Add(Constants.Audio.SFX.BloodDrop, bloodDrop);
 
 	}
 

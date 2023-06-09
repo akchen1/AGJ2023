@@ -114,6 +114,7 @@ public static class Constants
 			public const string BroomCrash = "BroomCrash";
 			public const string Shears = "Shears";
 			public const string ToyCarRoll = "ToyCarRoll";
+			public const string BloodDrop = "BloodDrop";
 		}
 	}
 	#endregion Audio
