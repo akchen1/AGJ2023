@@ -462,6 +462,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 48d9cccea6a175041bd8d4146a3ebbb5, type: 2}
   destroyOnInteract: 1
   allowDragClick: 0
+  itemObtainedDialogue: {fileID: 0}
 --- !u!58 &995278929
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -579,6 +580,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: d711e05907bb9f14884eb035bdf308e8, type: 2}
   destroyOnInteract: 1
   allowDragClick: 0
+  itemObtainedDialogue: {fileID: 0}
 --- !u!58 &1071595605
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -799,6 +801,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 19b530fc151647f4993e263fe086782e, type: 2}
   destroyOnInteract: 1
   allowDragClick: 0
+  itemObtainedDialogue: {fileID: 0}
 --- !u!58 &1187448321
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1076,6 +1079,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: f136711b4bf992e4a958c4162dc0a4f9, type: 2}
   destroyOnInteract: 1
   allowDragClick: 0
+  itemObtainedDialogue: {fileID: 0}
 --- !u!58 &2074202155
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1461,6 +1465,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7942126711986869058, guid: 4902f649e59b2af47bc422a82a15098f, type: 3}
+      propertyPath: minigame
+      value: 
+      objectReference: {fileID: 1484776873}
     - target: {fileID: 7942126711986869059, guid: 4902f649e59b2af47bc422a82a15098f, type: 3}
       propertyPath: m_Name
       value: Drawer
@@ -1513,5 +1521,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7942126711986869086, guid: 4902f649e59b2af47bc422a82a15098f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4902f649e59b2af47bc422a82a15098f, type: 3}
