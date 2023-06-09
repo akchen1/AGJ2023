@@ -772,6 +772,9 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: b18e8344414ecc9448f04c3c03a612b5, type: 2}
+  canSkipDialogue: 1
+  StartTime: 21
+  EndTime: 25
 --- !u!114 &-3521765014011921834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -785,6 +788,9 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: fa8198463e89184469d707c3e3289b52, type: 2}
+  canSkipDialogue: 1
+  StartTime: 12
+  EndTime: 16
 --- !u!114 &-3243215774809562141
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -798,6 +804,9 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 4edaa47a7df8b794781102720eb8b57e, type: 2}
+  canSkipDialogue: 1
+  StartTime: 0
+  EndTime: 4
 --- !u!74 &-2493713027689852377
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -943,6 +952,9 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: d8852163f017cb94a9c9fb9d73e7802d, type: 2}
+  canSkipDialogue: 1
+  StartTime: 8
+  EndTime: 12
 --- !u!114 &-282982739155688128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -956,6 +968,9 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 832bcc18853442f4fac40e03b9b778d4, type: 2}
+  canSkipDialogue: 1
+  StartTime: 4
+  EndTime: 8
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1019,6 +1034,9 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: fff90445436c05140a919bd3b4802e72, type: 2}
+  canSkipDialogue: 1
+  StartTime: 16
+  EndTime: 20
 --- !u!114 &6342217230173751793
 MonoBehaviour:
   m_ObjectHideFlags: 1

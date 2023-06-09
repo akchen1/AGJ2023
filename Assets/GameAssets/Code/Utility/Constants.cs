@@ -17,6 +17,8 @@ public static class Constants
 		public const string PresentScene4Part1 = "Present - Scene 4 - Part 1";
 		public const string PresentScene4Part2 = "Present - Scene 4 - Part 2";
 		public const string PlaygroundScene5 = "Playground - Scene 5";
+		public const string MainstreetScene6Part1 = "MainStreet - Scene 6 - Part 1";
+		public const string BasementScene6Part2 = "Basement - Scene 6 - Part 2";
 		public const string SearchScene7MainStreet = "Search - Scene 7 Main Street";
 		public const string SearchScene7Basement = "Search - Scene 7 Basement";
 		public const string SearchScene7Forest = "Search - Scene 7 Forest";
@@ -36,6 +38,8 @@ public static class Constants
 			SceneNames.PresentScene4Part1, 
 			SceneNames.PresentScene4Part2,
 			SceneNames.PlaygroundScene5,
+			SceneNames.MainstreetScene6Part1,
+			SceneNames.BasementScene6Part2,
             SceneNames.SearchScene7MainStreet,
 			SceneNames.SearchScene7Basement,
 			SceneNames.SearchScene7Forest,
@@ -63,6 +67,42 @@ public static class Constants
 
 		public const string MusicVolumePP = "MusicVolume";
 		public const string SFXVolumePP = "SFXVolume";
+
+		public struct Music
+		{
+			public const string MainMenu = "MainMenu";
+			public const string Clearing = "Clearing";
+			public const string EndingTree = "EndingTree";
+			public const string Forest = "Forest";
+			public const string LivingRoom = "LivingRoom";
+			public const string Prologue = "Prologue";
+			public const string RecordPlayer = "RecordPlayer";
+
+		}
+
+		public struct SFX
+		{
+			public const string Click = "Click";
+			public const string PieceLift = "PieceLift";
+			public const string PiecePlace = "PiecePlace";
+			public const string PieceRotate = "PieceRotate";
+			public const string ScrollClose = "ScrollClose";
+			public const string ScrollFlip = "ScrollFlip";
+			public const string ScrollOpen = "ScrollOpen";
+			public const string DrawerOpen = "DrawerOpen";
+			public const string DrawerClose = "DrawerClose";
+			public const string BucketCollect = "BucketCollect";
+			public const string CandleCollect = "CandleCollect";
+			public const string Dig = "Dig";
+			public const string MatchLight = "MatchLight";
+			public const string MatchStrike = "MatchStrike";
+			public const string MatchboxCollect = "MatchboxCollect";
+			public const string MatchboxOpen = "MatchboxOpen";
+			public const string ShovelCollect = "ShovelCollect";
+			public const string TwineCollect = "TwineCollect";
+			public const string VaseShatter = "VaseShatter";
+			public const string VialCollect = "VialCollect";
+		}
 	}
 	#endregion Audio
 

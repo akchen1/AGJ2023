@@ -13,4 +13,19 @@ public class CutsceneEvents
 			Cutscene = cutscene;
 		}
 	}
+
+	public class TryNextDialogue
+	{
+
+	}
+
+	public class SetRaycastTarget
+	{
+		public readonly bool Active;
+
+		public SetRaycastTarget(bool active)
+		{
+			Active = active;
+		}
+	}
 }

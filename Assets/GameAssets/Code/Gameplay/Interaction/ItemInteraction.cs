@@ -1,3 +1,4 @@
+using DS.ScriptableObjects;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,8 @@ public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandle
     [SerializeField] private bool destroyOnInteract = false;
     [SerializeField] private bool allowDragClick = false;
 
+    [SerializeField] private DSDialogueSO itemObtainedDialogue;
+
     private bool dragging = false;
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
@@ -16,6 +19,10 @@ public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandle
     public void Interact()
     {
         eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(item));
+        if (itemObtainedDialogue != null)
+        {
+            eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(itemObtainedDialogue));
+        }
         if (destroyOnInteract)
             Destroy(this.gameObject);
     }

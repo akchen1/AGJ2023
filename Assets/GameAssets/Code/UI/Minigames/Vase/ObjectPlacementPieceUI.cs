@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
-using UnityEditor.U2D.Path;
 using UnityEngine;
 
 [RequireComponent(typeof(DraggableUI))]
