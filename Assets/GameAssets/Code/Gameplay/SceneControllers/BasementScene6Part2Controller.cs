@@ -66,12 +66,15 @@ public class BasementScene6Part2Controller : MonoBehaviour
         }
         else if (currentDialogue == postScrollInspectDialgouePart1)
         {
+            baduAnimator.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
             baduAnimator.SetBool("isBadu", true);
             eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(postScrollInspectDialoguePart2));
             currentDialogue = postScrollInspectDialoguePart2;
         }
         else if (currentDialogue == postScrollInspectDialoguePart2)
         {
+            baduAnimator.transform.localScale = Vector3.one;
+
             baduAnimator.SetBool("isBadu", false);
             currentDialogue = null;
             basementStairs.SetActive(true);

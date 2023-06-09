@@ -1370,6 +1370,7 @@ MonoBehaviour:
     UseConstant: 0
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
+  <HasInteractionDistance>k__BackingField: 1
 --- !u!212 &569393451
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4202,12 +4203,12 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: b81b63199b127e64fb3c167e885670cd, type: 2}
   destroyOnInteract: 1
   allowDragClick: 0
-  mustBeInRange: 1
   itemObtainedDialogue: {fileID: 0}
   <InteractionDistance>k__BackingField:
     UseConstant: 0
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
+  <HasInteractionDistance>k__BackingField: 1
 --- !u!61 &1904735365
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class Scene7Interaction : MonoBehaviour, IInteractable, IPointerClickHand
 {
 	[SerializeField] private Constants.Scene7SubScenes subscene;
     [field: SerializeField] public FloatReference InteractionDistance { get; set; }
+    [field: SerializeField] public bool HasInteractionDistance { get; set; } = false;
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 

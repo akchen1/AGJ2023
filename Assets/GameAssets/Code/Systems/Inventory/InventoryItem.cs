@@ -13,6 +13,7 @@ public class InventoryItem : ScriptableObject, IInteractable
     [field: SerializeField] public string ItemDescription { get; private set; }
     [field: SerializeField] public InventoryInteraction InventoryInteraction { get; private set; }
     [field: SerializeField] public FloatReference InteractionDistance { get; set; }
+    [field: SerializeField] public bool HasInteractionDistance { get; set; } = false;
 
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();

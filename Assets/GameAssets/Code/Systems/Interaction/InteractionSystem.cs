@@ -82,6 +82,7 @@ public class InteractionSystem
     
     private bool CheckInRange(BrokerEvent<InteractionEvents.Interact> inEvent)
     {
+        if (!inEvent.Payload.Interactable.HasInteractionDistance) return true;
         bool inRange = false;
         eventBrokerComponent.Publish(this, new PlayerEvents.GetPlayerPosition(position =>
         {
