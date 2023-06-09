@@ -1726,6 +1726,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minigame: {fileID: 1308633778}
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 4
+    Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
 --- !u!61 &1155927135
 BoxCollider2D:
   m_ObjectHideFlags: 0

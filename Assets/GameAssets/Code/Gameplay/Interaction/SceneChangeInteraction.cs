@@ -9,6 +9,9 @@ public class SceneChangeInteraction : MonoBehaviour, IInteractable, IPointerClic
     [HideInInspector]
     public string selectedSceneName;
 
+    [field: SerializeField] public FloatReference InteractionDistance { get; set; }
+
+
     [SerializeField] private bool unloadPrevious = true;
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 

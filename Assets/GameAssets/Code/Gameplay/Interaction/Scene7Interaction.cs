@@ -8,8 +8,9 @@ using UnityEngine.EventSystems;
 public class Scene7Interaction : MonoBehaviour, IInteractable, IPointerClickHandler
 {
 	[SerializeField] private Constants.Scene7SubScenes subscene;
+    [field: SerializeField] public FloatReference InteractionDistance { get; set; }
 
-	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
+    private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
 	private bool active;
 

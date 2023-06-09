@@ -17,6 +17,8 @@ public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandle
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
+    [field: SerializeField] public FloatReference InteractionDistance { get; set; }
+
     public void Interact()
     {
         eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(item));

@@ -10,6 +10,9 @@ public class MinigameInteraction : MonoBehaviour, IInteractable, IPointerClickHa
 {
     [SerializeField] private GameObject minigame;
 
+    [field: SerializeField] public FloatReference InteractionDistance { get; set; }
+
+
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
     public void Interact()
