@@ -555,7 +555,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 625671695}
   sfxSource: {fileID: 625671697}
-  mainMenuTrack: {fileID: 0}
+  mainMenuTrack: {fileID: 8300000, guid: 9e6fe76b9c23b9f418e0cb6845268c7c, type: 3}
+  clearing: {fileID: 8300000, guid: eca390a8b01f4544798cce0013a62d6e, type: 3}
+  endingTree: {fileID: 8300000, guid: 91a337dda079d2446b753a588a071581, type: 3}
+  forest: {fileID: 8300000, guid: 76a36fcec4690864390cf9bccc6c9dbc, type: 3}
+  livingRoom: {fileID: 8300000, guid: aa9288abebaac104484f4e8baab4bba5, type: 3}
+  prologue: {fileID: 8300000, guid: b86daedbf129ea54b81fff3398161ca6, type: 3}
+  recordPlayer: {fileID: 8300000, guid: 5e0ca28dceb7a8b4a87f8a1c9cf6a024, type: 3}
   click: {fileID: 8300000, guid: 23c12b6f8001cfc4d81a9bf90a4598e2, type: 3}
   pieceLift: {fileID: 8300000, guid: 8e26bc8b223398d4c978a869a925c7cc, type: 3}
   piecePlace: {fileID: 8300000, guid: 6204f25c6430ad94d9826668fc769fe2, type: 3}
@@ -563,6 +569,19 @@ MonoBehaviour:
   scrollClose: {fileID: 8300000, guid: 3121304f7d06fc842b50bc176386549c, type: 3}
   scrollFlip: {fileID: 8300000, guid: 9564f1c636371664e95939f1de4ea020, type: 3}
   scrollOpen: {fileID: 8300000, guid: 1ed39186ee7b2ec42b54b5ef4ae3bb16, type: 3}
+  drawerOpen: {fileID: 8300000, guid: 5f63d81b2bd4fef40a514b30b108bffd, type: 3}
+  drawerClose: {fileID: 8300000, guid: 14eb8f27b322d6f44bc7326ecc204718, type: 3}
+  bucketCollect: {fileID: 8300000, guid: a81f58f7bda9c7442b195aedb011dc61, type: 3}
+  candleCollect: {fileID: 8300000, guid: 5872c03fae9a24e47b86689be5b2cbc3, type: 3}
+  dig: {fileID: 8300000, guid: 207bb01dd26c6604b955b7554a9d2299, type: 3}
+  matchLight: {fileID: 8300000, guid: ac64c7558ca0d2544bd5d239fc0f29eb, type: 3}
+  matchStrike: {fileID: 8300000, guid: 93de02dbc53abbe40bfd6af26a3a3d71, type: 3}
+  matchboxCollect: {fileID: 8300000, guid: 8ed5fcf4af8bee042b38098f97bb10e7, type: 3}
+  matchboxOpen: {fileID: 8300000, guid: 8283148c3fb35104180c1fe682dbe0ea, type: 3}
+  shovelCollect: {fileID: 8300000, guid: 346c74a89d0afc5469e13b6e2926bbe5, type: 3}
+  twineCollect: {fileID: 8300000, guid: 337b7bee98fb1a441aec014ca02ed7c3, type: 3}
+  vaseShatter: {fileID: 8300000, guid: 9c11abeb30967c7409b52054d2ba6a41, type: 3}
+  vialCollect: {fileID: 8300000, guid: 28042bbcf847173408908fd4beee72c1, type: 3}
 --- !u!1 &464725709
 GameObject:
   m_ObjectHideFlags: 0

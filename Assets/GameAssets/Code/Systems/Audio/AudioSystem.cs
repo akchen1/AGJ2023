@@ -10,6 +10,13 @@ public class AudioSystem : MonoBehaviour
 	[SerializeField] private AudioSource sfxSource;
 
 	[SerializeField, Header("Music")] private AudioClip mainMenuTrack;
+	[SerializeField] private AudioClip clearing;
+	[SerializeField] private AudioClip endingTree;
+	[SerializeField] private AudioClip forest;
+	[SerializeField] private AudioClip livingRoom;
+	[SerializeField] private AudioClip prologue;
+	[SerializeField] private AudioClip recordPlayer;
+
 
 	[SerializeField, Header("SFX")] private AudioClip click;
 	[SerializeField] private AudioClip pieceLift;
@@ -18,6 +25,19 @@ public class AudioSystem : MonoBehaviour
 	[SerializeField] private AudioClip scrollClose;
 	[SerializeField] private AudioClip scrollFlip;
 	[SerializeField] private AudioClip scrollOpen;
+	[SerializeField] private AudioClip drawerOpen;
+	[SerializeField] private AudioClip drawerClose;
+	[SerializeField] private AudioClip bucketCollect;
+	[SerializeField] private AudioClip candleCollect;
+	[SerializeField] private AudioClip dig;
+	[SerializeField] private AudioClip matchLight;
+	[SerializeField] private AudioClip matchStrike;
+	[SerializeField] private AudioClip matchboxCollect;
+	[SerializeField] private AudioClip matchboxOpen;
+	[SerializeField] private AudioClip shovelCollect;
+	[SerializeField] private AudioClip twineCollect;
+	[SerializeField] private AudioClip vaseShatter;
+	[SerializeField] private AudioClip vialCollect;
 
 	private float musicVolume;
 	private float sfxVolume;
@@ -30,7 +50,13 @@ public class AudioSystem : MonoBehaviour
 	private void Awake()
 	{
 		// Set up music and sfx dictionaries
-		//music.Add(Constants.Audio.Music.MainMenu, mainMenuTrack);
+		music.Add(Constants.Audio.Music.MainMenu, mainMenuTrack);
+		music.Add(Constants.Audio.Music.Clearing, clearing);
+		music.Add(Constants.Audio.Music.EndingTree, endingTree);
+		music.Add(Constants.Audio.Music.Forest, forest);
+		music.Add(Constants.Audio.Music.LivingRoom, livingRoom);
+		music.Add(Constants.Audio.Music.Prologue, prologue);
+		music.Add(Constants.Audio.Music.RecordPlayer, recordPlayer);
 
 		sfx.Add(Constants.Audio.SFX.Click, click);
 		sfx.Add(Constants.Audio.SFX.PieceLift, pieceLift);
@@ -39,6 +65,19 @@ public class AudioSystem : MonoBehaviour
 		sfx.Add(Constants.Audio.SFX.ScrollClose, scrollClose);
 		sfx.Add(Constants.Audio.SFX.ScrollFlip, scrollFlip);
 		sfx.Add(Constants.Audio.SFX.ScrollOpen, scrollOpen);
+		sfx.Add(Constants.Audio.SFX.DrawerOpen, drawerOpen);
+		sfx.Add(Constants.Audio.SFX.DrawerClose, drawerClose);
+		sfx.Add(Constants.Audio.SFX.BucketCollect, bucketCollect);
+		sfx.Add(Constants.Audio.SFX.CandleCollect, candleCollect);
+		sfx.Add(Constants.Audio.SFX.Dig, dig);
+		sfx.Add(Constants.Audio.SFX.MatchLight, matchLight);
+		sfx.Add(Constants.Audio.SFX.MatchStrike, matchStrike);
+		sfx.Add(Constants.Audio.SFX.MatchboxCollect, matchboxCollect);
+		sfx.Add(Constants.Audio.SFX.MatchboxOpen, matchboxOpen);
+		sfx.Add(Constants.Audio.SFX.ShovelCollect, shovelCollect);
+		sfx.Add(Constants.Audio.SFX.TwineCollect, twineCollect);
+		sfx.Add(Constants.Audio.SFX.VaseShatter, vaseShatter);
+		sfx.Add(Constants.Audio.SFX.VialCollect, vialCollect);
 	}
 
 	private void OnEnable()
