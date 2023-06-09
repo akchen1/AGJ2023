@@ -38,6 +38,8 @@ public class AudioSystem : MonoBehaviour
 	[SerializeField] private AudioClip twineCollect;
 	[SerializeField] private AudioClip vaseShatter;
 	[SerializeField] private AudioClip vialCollect;
+	[SerializeField] private AudioClip branchBreak;
+	[SerializeField] private AudioClip branchCollect;
 
 	private float musicVolume;
 	private float sfxVolume;
@@ -81,6 +83,8 @@ public class AudioSystem : MonoBehaviour
 		sfx.Add(Constants.Audio.SFX.TwineCollect, twineCollect);
 		sfx.Add(Constants.Audio.SFX.VaseShatter, vaseShatter);
 		sfx.Add(Constants.Audio.SFX.VialCollect, vialCollect);
+		sfx.Add(Constants.Audio.SFX.BranchBreak, branchBreak);
+		sfx.Add(Constants.Audio.SFX.BranchCollect, branchCollect);
 	}
 
 	private void OnEnable()

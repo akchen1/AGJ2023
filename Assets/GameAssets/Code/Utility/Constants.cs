@@ -102,6 +102,8 @@ public static class Constants
 			public const string TwineCollect = "TwineCollect";
 			public const string VaseShatter = "VaseShatter";
 			public const string VialCollect = "VialCollect";
+			public const string BranchBreak = "BranchBreak";
+			public const string BranchCollect = "BranchCollect";
 		}
 	}
 	#endregion Audio
