@@ -19,10 +19,10 @@ MonoBehaviour:
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
   <Text>k__BackingField: "Leigh, the older you get, the worse it\u2019s going to
-    get. You told me about the cat situation-"
+    get. "
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3d65b6a92f8ca284199fa1377f0460ff, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 833fb5fd9df6ba44d9c9b97c649a1984, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
