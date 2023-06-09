@@ -51,8 +51,10 @@ namespace Pathfinding {
 				{
 					Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 					RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity, layerMask);
-					if (hit)
+					if (EventSystem.current.IsPointerOverGameObject() && hit.collider == null) return;
+					if (hit.collider != null)
 					{
+						Debug.Log(hit.collider.name);
 						boolOffSet = true;
 						hitGameObject = hit.collider.gameObject;
 					} else

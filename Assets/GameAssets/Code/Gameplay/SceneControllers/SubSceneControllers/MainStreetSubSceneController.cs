@@ -39,6 +39,11 @@ public class MainStreetSubSceneController : SubSceneController
         }));
         eventBrokerComponent.Unsubscribe<InventoryEvents.AddItem>(AddItemHandler);
         eventBrokerComponent.Unsubscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
+
+    }
+
+    ~MainStreetSubSceneController()
+    {
         eventBrokerComponent.Unsubscribe<Scene7Events.HasCombinedItems>(HasCombinedItemsHandler);
 
     }
@@ -79,7 +84,12 @@ public class MainStreetSubSceneController : SubSceneController
             eventBrokerComponent.Publish(this, new InventoryEvents.HasItem(has =>
             {
                 // have main item go next
-                if (has) return;
+                if (has)
+                {
+                    return;
+                }
+                Debug.Log("dont have " + item);
+
                 isCombined = false; // dont have main item
                 // Do we have componenets
                 if (item.Components.Count == 0) return;
@@ -87,6 +97,8 @@ public class MainStreetSubSceneController : SubSceneController
                 eventBrokerComponent.Publish(this, new InventoryEvents.HasItem(has =>
                 {
                     if (has) return; // we have components
+                    Debug.Log("dont have sub item for  " + item);
+
                     hasComponents = false;
 
                 }, item.Components.ToArray()));

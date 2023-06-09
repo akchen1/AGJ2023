@@ -6,8 +6,8 @@ using UnityEngine;
 [System.Serializable]
 public class GeneralStoreSubSceneController : SubSceneController
 {
-    [SerializeField] private InventoryInteraction matches;
-    [SerializeField] private InventoryInteraction twine;
+    [SerializeField] private ItemInteraction matches;
+    [SerializeField] private ItemInteraction twine;
     public override void Enable()
     {
         base.Enable();
@@ -22,6 +22,7 @@ public class GeneralStoreSubSceneController : SubSceneController
 
     private void EndMinigameHandler(BrokerEvent<MinigameEvents.EndMinigame> obj)
     {
-        matches.InteractionDistance.ConstantValue = 4f;
+        matches.InteractionDistance.ConstantValue = 5f;
+        twine.InteractionDistance.ConstantValue = 15f;
     }
 }

@@ -27,7 +27,13 @@ public class Scene7Interaction : MonoBehaviour, IInteractable, IPointerClickHand
 
 	public void Interact()
 	{
-		eventBrokerComponent.Publish(this, new Scene7Events.ChangeSubscene(subscene));
+		eventBrokerComponent.Publish(this, new InteractionEvents.Interact(this, valid =>
+		{
+			if (valid)
+			{
+				eventBrokerComponent.Publish(this, new Scene7Events.ChangeSubscene(subscene));
+			}
+		}));
 	}
 
 	public void OnPointerClick(PointerEventData eventData)

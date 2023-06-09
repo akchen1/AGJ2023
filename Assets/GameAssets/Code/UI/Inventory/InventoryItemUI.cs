@@ -49,7 +49,9 @@ public class InventoryItemUI : MonoBehaviour, IPointerClickHandler, IDragHandler
         Image image = dragIcon.AddComponent<Image>();
 
         image.sprite = itemIcon.sprite;
-        image.SetNativeSize();
+        image.preserveAspect = itemIcon.preserveAspect;
+        
+        //image.SetNativeSize();
 
         SetDraggedPosition(eventData);
 

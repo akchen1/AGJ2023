@@ -53,6 +53,7 @@ public class SearchScene7Controller : SceneController
 		currentSubScene.Disable();
 		currentSubScene = GetNextSubscene(subscene);
 		currentSubScene.Enable();
+		eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
 	}
 
     private void GetBloodSanityResultHandler(BrokerEvent<Scene7Events.GetBloodSanityResult> obj)
@@ -113,11 +114,11 @@ public class SearchScene7Controller : SceneController
 
 	private void Start()
 	{
-		eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(startingitems));
+		//eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(startingitems));
 		fadeToBlack.gameObject.SetActive(false);
 		currentSubScene = MainStreetSubSceneController;
 		currentSubScene.Enable();
-		//PlayStartingDialogue();
+		PlayStartingDialogue();
 	}
 
     private void PlayStartingDialogue()
