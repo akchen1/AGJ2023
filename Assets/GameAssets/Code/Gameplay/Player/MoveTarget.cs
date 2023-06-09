@@ -46,8 +46,16 @@ public class MoveTarget : MonoBehaviour
     }
     private void OnEnable() {
         eventBrokerComponent.Subscribe<InputEvents.SetInputState>(GetInputStateHandler);
+        eventBrokerComponent.Subscribe<PlayerEvents.SetPlayerPosition>(SetPlayerPositionHandler);
     }
+
     private void OnDisable() {
         eventBrokerComponent.Unsubscribe<InputEvents.SetInputState>(GetInputStateHandler);
+        eventBrokerComponent.Unsubscribe<PlayerEvents.SetPlayerPosition>(SetPlayerPositionHandler);
     }
+    private void SetPlayerPositionHandler(BrokerEvent<PlayerEvents.SetPlayerPosition> obj)
+    {
+        transform.position = obj.Payload.Position;
+    }
+
 }

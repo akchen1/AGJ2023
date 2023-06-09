@@ -5,25 +5,38 @@ using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.UI;
 using Cinemachine;
+using static UnityEngine.Rendering.VolumeComponent;
+using DS.ScriptableObjects;
 
 public class SearchScene7Controller : SceneController
 {
+	[SerializeField] GameObject Player;
+
 	[SerializeField] private PlayableDirector playableDirector;
 	[SerializeField] private Image fadeToBlack;
 	[SerializeField] private float transitionSpeedMultiplier;
 	[SerializeField] private float transitionTime;
 
-	[SerializeField, Header("Main Street")] CinemachineVirtualCamera mainStreetCam;
-	[SerializeField] private PlayableAsset mainStreetStartingCutscene;
+	[SerializeField] private DialogueInteraction startingDialogue;
 
-	[SerializeField, Header("Basement")] private CinemachineVirtualCamera basementCam;
+	[SerializeField, Header("Main Street")]
+    private MainStreetSubSceneController MainStreetSubSceneController;
 
-	[SerializeField, Header("Forest")] private CinemachineVirtualCamera forestCam;
+    [SerializeField, Header("Basement")]
+	private BasementSubsceneController BasementSubsceneController;
 
-	[SerializeField, Header("Living Room")] private CinemachineVirtualCamera livingRoomCam;
+	[SerializeField, Header("Forest")] private ForestSubSceneController ForestSubSceneController;
 
-	[SerializeField, Header("General Store")] private CinemachineVirtualCamera generalStoreCam;
-	[SerializeField] private PlayableAsset generalStoreStartingCutscene;
+
+    [SerializeField, Header("Living Room")] private LivingRoomSubSceneController LivingRoomSubSceneController;
+
+
+    [SerializeField, Header("General Store")] private GeneralStoreSubSceneController GeneralStoreSubSceneController;
+
+	[SerializeField] private PlaygroundSubSceneController PlaygroundSubSceneController;
+
+	private SubSceneController currentSubScene;
+    private Vector3 previousMainStreetLocation;
 
 	EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
@@ -32,39 +45,35 @@ public class SearchScene7Controller : SceneController
 		Constants.Scene7SubScenes subscene = inEvent.Payload.Subscene;
 
 		StartCoroutine(FadeBetweenCams());
-		HandleCameras(subscene);
 
-		switch (inEvent.Payload.Subscene)
-		{
-			case Constants.Scene7SubScenes.MainStreet:
-				break;
-
-			case Constants.Scene7SubScenes.GeneralStore:
-				HandleCameras(Constants.Scene7SubScenes.GeneralStore);
-				playableDirector?.Play(generalStoreStartingCutscene);
-				break;
-
-			case Constants.Scene7SubScenes.Basement:
-				break;
-
-			case Constants.Scene7SubScenes.Forest:
-				break;
-
-			case Constants.Scene7SubScenes.LivingRoom:
-				break;
-
-			case Constants.Scene7SubScenes.Playground:
-				break;
-		}
+		currentSubScene.Disable();
+		currentSubScene = GetNextSubscene(subscene);
+		currentSubScene.Enable();
 	}
 
-	private void HandleCameras(Constants.Scene7SubScenes subscene)
+	private SubSceneController GetNextSubscene(Constants.Scene7SubScenes subscene)
 	{
-		mainStreetCam.enabled = subscene == Constants.Scene7SubScenes.MainStreet;
-		basementCam.enabled = subscene == Constants.Scene7SubScenes.Basement;
-		forestCam.enabled = subscene == Constants.Scene7SubScenes.Forest;
-		livingRoomCam.enabled = subscene == Constants.Scene7SubScenes.LivingRoom;
-		generalStoreCam.enabled = subscene == Constants.Scene7SubScenes.GeneralStore;
+		switch (subscene)
+		{
+			case Constants.Scene7SubScenes.MainStreet:
+				return MainStreetSubSceneController;
+
+			case Constants.Scene7SubScenes.GeneralStore:
+				return GeneralStoreSubSceneController;
+
+			case Constants.Scene7SubScenes.Basement:
+				return BasementSubsceneController;
+
+			case Constants.Scene7SubScenes.Forest:
+				return ForestSubSceneController;
+
+			case Constants.Scene7SubScenes.LivingRoom:
+				return LivingRoomSubSceneController;
+
+			case Constants.Scene7SubScenes.Playground:
+				return PlaygroundSubSceneController;
+		}
+		return null;
 	}
 
 	private IEnumerator FadeBetweenCams()
@@ -94,12 +103,19 @@ public class SearchScene7Controller : SceneController
 
 	private void Start()
 	{
-		HandleCameras(Constants.Scene7SubScenes.MainStreet);
 		fadeToBlack.gameObject.SetActive(false);
-		playableDirector?.Play(mainStreetStartingCutscene);
+		currentSubScene = MainStreetSubSceneController;
+		currentSubScene.Enable();
+		//PlayStartingDialogue();
 	}
 
-	private void OnEnable()
+    private void PlayStartingDialogue()
+    {
+		IInteractable interactable = startingDialogue.GetComponent<IInteractable>();
+        interactable.Interact();
+    }
+
+    private void OnEnable()
 	{
 		eventBrokerComponent.Subscribe<Scene7Events.ChangeSubscene>(ChangeSubsceneHandler);
 	}

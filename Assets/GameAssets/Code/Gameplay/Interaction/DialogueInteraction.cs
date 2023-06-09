@@ -6,7 +6,10 @@ using UnityEngine.EventSystems;
 public class DialogueInteraction : MonoBehaviour, IInteractable, IPointerClickHandler
 {
     [SerializeField] private DSDialogueSO dialogue;
-    private bool canInteract;
+    [SerializeField] private bool canInteractMultipleTimes = true;
+    private int interactCount = 0;
+
+    private bool canInteract = true;
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
     [field: SerializeField] public FloatReference InteractionDistance { get; set; }
@@ -14,6 +17,7 @@ public class DialogueInteraction : MonoBehaviour, IInteractable, IPointerClickHa
 
     public void Interact()
     {
+        if (!canInteractMultipleTimes && interactCount > 0) return;
         if(canInteract){
             // Check first if there's another interaction event happening
             eventBrokerComponent.Publish(this, new InteractionEvents.Interact(this, (valid) =>
@@ -21,8 +25,14 @@ public class DialogueInteraction : MonoBehaviour, IInteractable, IPointerClickHa
                 if (valid)
                 {
                     eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(dialogue));
+                    interactCount++;
                 }
             }));
+
+            if (!canInteractMultipleTimes && interactCount > 0) 
+            {
+                gameObject.layer = 0;
+            }
         }
     }
 
