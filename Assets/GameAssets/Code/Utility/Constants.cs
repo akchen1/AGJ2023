@@ -104,6 +104,10 @@ public static class Constants
 			public const string VialCollect = "VialCollect";
 			public const string BranchBreak = "BranchBreak";
 			public const string BranchCollect = "BranchCollect";
+			public const string GemCollect = "GemCollect";
+			public const string DialTurn = "DialTurn";
+			public const string BoxOpen = "boxOpen";
+
 		}
 	}
 	#endregion Audio

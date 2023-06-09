@@ -6,15 +6,14 @@ using UnityEngine.UI;
 public class ButtonScroll : MonoBehaviour
 {
     private ScrollRect scrollRect;
-    public float scrollSpeed = 200f;
-    public float scrollDistance = 50f;
-
     private bool isScrolling = false;
     private Vector2 targetScrollPosition;
-
     private int direction = 0;
-    public int ID;
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
+    [SerializeField] private LockCombination lockCombination;
+    [SerializeField] private float scrollSpeed = 200f;
+    [SerializeField] private float scrollDistance = 50f;
+    [SerializeField] private int ID;
 
     void Start()
     {
@@ -57,7 +56,7 @@ public class ButtonScroll : MonoBehaviour
                     contentPosition.y -= firstChild.rect.height;
                     scrollRect.content.anchoredPosition = contentPosition;
                 }
-                transform.parent.parent.parent.GetComponent<LockCombination>().CheckCorrect();
+                lockCombination.CheckCorrect();
                 isScrolling = false;
             }
         }
@@ -71,6 +70,7 @@ public class ButtonScroll : MonoBehaviour
             Vector2 currentScrollPosition = scrollRect.content.anchoredPosition;
             targetScrollPosition = currentScrollPosition + new Vector2(0f, -scrollDistance);
             direction = 1;
+            eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.DialTurn));
 
             // Start scrolling
             isScrolling = true;
@@ -85,6 +85,7 @@ public class ButtonScroll : MonoBehaviour
             Vector2 currentScrollPosition = scrollRect.content.anchoredPosition;
             targetScrollPosition = currentScrollPosition + new Vector2(0f, scrollDistance);
             direction = -1;
+            eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.DialTurn));
 
             // Start scrolling
             isScrolling = true;

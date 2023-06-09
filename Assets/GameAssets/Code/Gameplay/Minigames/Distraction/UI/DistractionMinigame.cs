@@ -9,11 +9,11 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
 {
     private bool finished;
     private float waitTime;
-    private bool canInteract;
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     [SerializeField] GameObject distractionMinigamePrefab;
     [SerializeField] Canvas canvas;
-    [SerializeField, Header("Cutscene")] private PlayableAsset hideCutscene;
+    [SerializeField, Header("Cutscene")] private PlayableAsset minigameStartCutscene;
+     [SerializeField] private PlayableAsset hideCutscene;
     [SerializeField]private PlayableAsset shopKeeperCutscene;
     [SerializeField] private PlayableDirector playableDirector;
     [SerializeField] private Image fadeToBlack;
@@ -26,19 +26,20 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
         fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 1f);
         fadeToBlack.gameObject.SetActive(true);
         eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+        playableDirector.Play(shopKeeperCutscene);
+        panel.SetActive(false);
+        gameObject.SetActive(false);
     }
 
     public void Initialize()
     {
+        playableDirector.Play(minigameStartCutscene);
         panel.SetActive(true);
     }
 
     public bool StartCondition()
     {
-        if(canInteract)
-            return true;
-        else
-            return false;
+        return true;
     }
     #endregion
 
@@ -70,7 +71,6 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
         eventBrokerComponent.Subscribe<DistractionEvent.Start>(StartSequence);
         eventBrokerComponent.Subscribe<DistractionEvent.Finished>(Finished);
         eventBrokerComponent.Subscribe<DistractionTimerEvent.SetDistracitonTime>(SetWaitTimer);
-        eventBrokerComponent.Subscribe<InputEvents.SetInputState>(GetInputStateHandler);
     }
 
     private void SetWaitTimer(BrokerEvent<DistractionTimerEvent.SetDistracitonTime> inEvent)
@@ -82,7 +82,6 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
         eventBrokerComponent.Unsubscribe<DistractionEvent.Start>(StartSequence);
         eventBrokerComponent.Unsubscribe<DistractionEvent.Finished>(Finished);
         eventBrokerComponent.Unsubscribe<DistractionTimerEvent.SetDistracitonTime>(SetWaitTimer);
-        eventBrokerComponent.Unsubscribe<InputEvents.SetInputState>(GetInputStateHandler);
     }
 
 	private IEnumerator ResetMinigame()
@@ -114,9 +113,4 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
 		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 0f);
 		fadeToBlack.gameObject.SetActive(false);
 	}
-
-    private void GetInputStateHandler(BrokerEvent<InputEvents.SetInputState> inEvent)
-    {
-        canInteract =  inEvent.Payload.Active;
-    }
 }
