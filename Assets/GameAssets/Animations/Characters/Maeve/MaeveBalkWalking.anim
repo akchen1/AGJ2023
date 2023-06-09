@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MaeveBackIdle
+  m_Name: MaeveBalkWalking
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,9 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1446117433, guid: 893a279e0a33f474d9ba173d4ef2e332, type: 3}
+      value: {fileID: -1503288955, guid: 8121dc57c16505d4c81c6d01321484a3, type: 3}
     - time: 0.2
-      value: {fileID: -518976984, guid: 893a279e0a33f474d9ba173d4ef2e332, type: 3}
+      value: {fileID: -1972284798, guid: 8121dc57c16505d4c81c6d01321484a3, type: 3}
+    - time: 0.4
+      value: {fileID: 1382649908, guid: 8121dc57c16505d4c81c6d01321484a3, type: 3}
+    - time: 0.6
+      value: {fileID: 859564001, guid: 8121dc57c16505d4c81c6d01321484a3, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -42,14 +46,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1446117433, guid: 893a279e0a33f474d9ba173d4ef2e332, type: 3}
-    - {fileID: -518976984, guid: 893a279e0a33f474d9ba173d4ef2e332, type: 3}
+    - {fileID: -1503288955, guid: 8121dc57c16505d4c81c6d01321484a3, type: 3}
+    - {fileID: -1972284798, guid: 8121dc57c16505d4c81c6d01321484a3, type: 3}
+    - {fileID: 1382649908, guid: 8121dc57c16505d4c81c6d01321484a3, type: 3}
+    - {fileID: 859564001, guid: 8121dc57c16505d4c81c6d01321484a3, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.4
+    m_StopTime: 0.8
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
