@@ -562,6 +562,10 @@ MonoBehaviour:
   livingRoom: {fileID: 8300000, guid: aa9288abebaac104484f4e8baab4bba5, type: 3}
   prologue: {fileID: 8300000, guid: b86daedbf129ea54b81fff3398161ca6, type: 3}
   recordPlayer: {fileID: 8300000, guid: 5e0ca28dceb7a8b4a87f8a1c9cf6a024, type: 3}
+  basement: {fileID: 8300000, guid: 1bb62024bfaa2154fbe26ccaab202b88, type: 3}
+  generalStore: {fileID: 8300000, guid: 06237b5a52b47bd488715198aa82e4d7, type: 3}
+  mainStreet: {fileID: 8300000, guid: 003b73c6906d09f42a27fc8d5fec11ac, type: 3}
+  playtime: {fileID: 8300000, guid: ab087879b8df99744b0bdf5eb742050c, type: 3}
   click: {fileID: 8300000, guid: 23c12b6f8001cfc4d81a9bf90a4598e2, type: 3}
   pieceLift: {fileID: 8300000, guid: 8e26bc8b223398d4c978a869a925c7cc, type: 3}
   piecePlace: {fileID: 8300000, guid: 6204f25c6430ad94d9826668fc769fe2, type: 3}
@@ -587,6 +591,11 @@ MonoBehaviour:
   gemCollect: {fileID: 8300000, guid: 15461cb171cc45a439b7b44b5e52c2a3, type: 3}
   dialTurn: {fileID: 8300000, guid: 97081552e0148f44cbc8466a80e93ac4, type: 3}
   boxOpen: {fileID: 8300000, guid: b6d2b2c828a8abe46b97a3ad126fdec0, type: 3}
+  bottleHit: {fileID: 8300000, guid: 39c66ed165356b44a84b7b5fd7fc43f9, type: 3}
+  broomCrash: {fileID: 8300000, guid: e830f1d35c706e24b96d084e19782ab9, type: 3}
+  shears: {fileID: 8300000, guid: 38b30d5d2d7697c46a3d782a1354188d, type: 3}
+  toyCarRoll: {fileID: 8300000, guid: e9cfddf86f283cd48baa497fc0af1aaf, type: 3}
+  bloodDrop: {fileID: 8300000, guid: 99b8dfcaadcc3b64a989855ec20f7809, type: 3}
 --- !u!1 &464725709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1690,6 +1699,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 420505137}
     m_Modifications:
+    - target: {fileID: 9158256072305581914, guid: e4f69e35425c520488e69ec6cfd3723f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -46.268066
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158256072305581914, guid: e4f69e35425c520488e69ec6cfd3723f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 51.56604
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158256072687243820, guid: e4f69e35425c520488e69ec6cfd3723f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -46.268066
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158256072687243820, guid: e4f69e35425c520488e69ec6cfd3723f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 51.56604
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158256073340898866, guid: e4f69e35425c520488e69ec6cfd3723f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158256073340898866, guid: e4f69e35425c520488e69ec6cfd3723f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9158256073643695698, guid: e4f69e35425c520488e69ec6cfd3723f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

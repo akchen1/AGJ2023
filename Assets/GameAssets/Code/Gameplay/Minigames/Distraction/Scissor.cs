@@ -52,7 +52,7 @@ public class Scissor :  MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
                 if(go.GetComponent<RightChild>().Check())
                     waitTime += addTime;
             }
-
+			eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.Shears));
             eventBrokerComponent.Publish(this, new DistractionTimerEvent.SetDistracitonTime(waitTime));
             eventBrokerComponent.Publish(this, new DistractionEvent.Start());
             Transform balloon = other.transform.parent;
