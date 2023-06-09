@@ -325,6 +325,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: 34fa954cff7a2d04284a7f74320f7e49, type: 2}
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 6
+    Variable: {fileID: 0}
 --- !u!61 &149742970
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -527,6 +531,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: 1f1f3513415330945a25a229a71c6132, type: 2}
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 4
+    Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
 --- !u!1 &220943584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2621,6 +2629,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: 10d3de2045a4c7f45bea4268d9e995a7, type: 2}
+  <InteractionDistance>k__BackingField:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
 --- !u!212 &1128960732
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3669,6 +3681,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: daa28d5573f028c4da8f7a087788337d, type: 2}
+  <InteractionDistance>k__BackingField:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
 --- !u!70 &1500384585
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4728,6 +4744,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: 7e9342a926d911a48a12551de6dca30d, type: 2}
+  <InteractionDistance>k__BackingField:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
 --- !u!212 &1947858018
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4808,6 +4828,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedSceneName: Present - Scene 4 - Part 2
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
   unloadPrevious: 1
 --- !u!1001 &1971866391
 PrefabInstance:

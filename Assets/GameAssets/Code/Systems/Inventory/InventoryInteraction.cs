@@ -14,6 +14,7 @@ public class InventoryInteraction : ScriptableObject, IInteractable
     [field:SerializeField] public bool OverrideDefaultClickInteraction { get; private set; } = false;
 
     [SerializeField] private GameObject minigame;
+    [field: SerializeField] public FloatReference InteractionDistance { get; set; }
 
 
     [field: SerializeField] public bool RequiredSceneInteraction { get; private set; } = false;

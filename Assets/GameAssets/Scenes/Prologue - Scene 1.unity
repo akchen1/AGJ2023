@@ -1354,6 +1354,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minigame: {fileID: 86575440}
+  <InteractionDistance>k__BackingField:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
 --- !u!212 &569393451
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1871,7 +1875,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &775285093
 Transform:
   m_ObjectHideFlags: 0
@@ -4186,6 +4190,12 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: b81b63199b127e64fb3c167e885670cd, type: 2}
   destroyOnInteract: 1
   allowDragClick: 0
+  mustBeInRange: 1
+  itemObtainedDialogue: {fileID: 0}
+  <InteractionDistance>k__BackingField:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
 --- !u!61 &1904735365
 BoxCollider2D:
   m_ObjectHideFlags: 0

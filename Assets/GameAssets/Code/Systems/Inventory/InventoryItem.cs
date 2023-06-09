@@ -11,8 +11,9 @@ public class InventoryItem : ScriptableObject, IInteractable
     [field: SerializeField] public string ItemName { get; private set; }
     [field: SerializeField] public Sprite ItemIcon { get; private set; }
     [field: SerializeField] public string ItemDescription { get; private set; }
-
     [field: SerializeField] public InventoryInteraction InventoryInteraction { get; private set; }
+    [field: SerializeField] public FloatReference InteractionDistance { get; set; }
+
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     public void OnSelectInteraction()

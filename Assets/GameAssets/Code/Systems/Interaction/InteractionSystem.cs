@@ -43,7 +43,7 @@ public class InteractionSystem
             return;
         }
 
-        if (CheckInRange((UnityEngine.Object)inEvent.Sender))
+        if (CheckInRange(inEvent))
         {
             StartInteraction(inEvent);
         } else
@@ -80,20 +80,20 @@ public class InteractionSystem
         inEvent.Payload.Response?.Invoke(true);
     }
     
-    private bool CheckInRange(UnityEngine.Object interactable)
+    private bool CheckInRange(BrokerEvent<InteractionEvents.Interact> inEvent)
     {
         bool inRange = false;
         eventBrokerComponent.Publish(this, new PlayerEvents.GetPlayerPosition(position =>
         {
-            float distance = (interactable.GetComponent<Transform>().position - position).magnitude;
-            inRange = distance <= Constants.Interaction.minInteractionDistance;
+            float distance = (((UnityEngine.Object)inEvent.Sender).GetComponent<Transform>().position - position).magnitude;
+            inRange = distance <= inEvent.Payload.Interactable.InteractionDistance;
         }));
         return inRange;
     }
 
     private IEnumerator WaitForInRange(BrokerEvent<InteractionEvents.Interact> inEvent)
     {
-        yield return new WaitUntil(() => CheckInRange((UnityEngine.Object)inEvent.Sender));
+        yield return new WaitUntil(() => CheckInRange(inEvent));
         StartInteraction(inEvent);
     }
 
