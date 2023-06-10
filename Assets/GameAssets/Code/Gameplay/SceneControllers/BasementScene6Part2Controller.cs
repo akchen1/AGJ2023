@@ -23,6 +23,9 @@ public class BasementScene6Part2Controller : MonoBehaviour
 
     [SerializeField] private GameObject openedScroll;
     [SerializeField] private GameObject basementStairs;
+	[SerializeField] private GameObject originalVial;
+	[SerializeField] private GameObject interactableVial;
+	[SerializeField] private GameObject interactableBox;
 
     private DSDialogueSO currentDialogue;
     private bool isInspectingScroll = false;
@@ -79,6 +82,9 @@ public class BasementScene6Part2Controller : MonoBehaviour
             baduAnimator.SetBool("isBadu", false);
             currentDialogue = null;
             basementStairs.SetActive(true);
+			interactableVial.SetActive(true);
+			originalVial.SetActive(true);
+			interactableBox.SetActive(true);
         }
     }
 
