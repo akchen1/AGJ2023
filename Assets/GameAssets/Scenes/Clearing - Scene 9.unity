@@ -489,7 +489,7 @@ GameObject:
   - component: {fileID: 621927473}
   - component: {fileID: 621927476}
   - component: {fileID: 621927475}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Big Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
