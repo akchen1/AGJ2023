@@ -7,8 +7,9 @@ public class PresentScene4Part1Controller : MonoBehaviour
     [SerializeField] private GameObject bedroomDoor;
 
     private bool isTalkingWithBadu = false;
+	private bool recordPlayerPlaying = false;
 
-    EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
+	EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
 	private void Start()
 	{
@@ -47,4 +48,18 @@ public class PresentScene4Part1Controller : MonoBehaviour
         badu.GetComponent<Animator>().runtimeAnimatorController = baduMothFly;
         isTalkingWithBadu = false;
     }
+
+	public void ToggleRecordPlayer()
+	{
+		if (!recordPlayerPlaying)
+		{
+			eventBrokerComponent.Publish(this, new AudioEvents.PlayTemporaryMusic(Constants.Audio.Music.RecordPlayer));
+		}
+		else
+		{
+			eventBrokerComponent.Publish(this, new AudioEvents.StopTemporaryMusic());
+		}
+
+		recordPlayerPlaying = !recordPlayerPlaying;
+	}
 }
