@@ -10,7 +10,9 @@ public class PauseMenu : MonoBehaviour
 	[SerializeField] private GameObject pausePanel;
 	[SerializeField] private Slider sfxSlider;
 	[SerializeField] private Slider musicSlider;
-	[SerializeField] private Button resumeButton;
+	[SerializeField] private Button titleButton;
+	[SerializeField] private Button pauseButton;
+	[SerializeField] private Button unPauseButton;
 
 	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
@@ -19,9 +21,14 @@ public class PauseMenu : MonoBehaviour
 		pausePanel.SetActive(!pausePanel.activeSelf);
 	}
 
-	private void OnResumeButtonPressed()
+	private void OnPauseButtonPressed()
 	{
 		pausePanel.SetActive(!pausePanel.activeSelf);
+	}
+
+	private void OnTitleButtonPressed()
+	{
+		eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(Constants.SceneNames.MainMenu, true));
 	}
 
 	private void OnMusicSliderValueChanged(float value)
@@ -41,7 +48,9 @@ public class PauseMenu : MonoBehaviour
 		sfxSlider.onValueChanged.AddListener(OnSFXSliderValueChanged);
 		musicSlider.onValueChanged.AddListener(OnMusicSliderValueChanged);
 
-		resumeButton.onClick.AddListener(OnResumeButtonPressed);
+		titleButton.onClick.AddListener(OnTitleButtonPressed);
+		pauseButton.onClick.AddListener(OnPauseButtonPressed);
+		unPauseButton.onClick.AddListener(OnPauseButtonPressed);
 
 		sfxSlider.value = PlayerPrefs.GetFloat(Constants.Audio.SFXVolumePP, Constants.Audio.DefaultAudioLevel);
 		musicSlider.value = PlayerPrefs.GetFloat(Constants.Audio.MusicVolumePP, Constants.Audio.DefaultAudioLevel);
@@ -51,7 +60,9 @@ public class PauseMenu : MonoBehaviour
 	{
 		eventBrokerComponent.Unsubscribe<PauseEvents.TogglePause>(TogglePauseHandler);
 
-		resumeButton.onClick.RemoveListener(OnResumeButtonPressed);
+		titleButton.onClick.RemoveListener(OnTitleButtonPressed);
+		pauseButton.onClick.RemoveListener(OnPauseButtonPressed);
+		unPauseButton.onClick.RemoveListener(OnPauseButtonPressed);
 
 		sfxSlider.onValueChanged.RemoveListener(OnSFXSliderValueChanged);
 		musicSlider.onValueChanged.RemoveListener(OnMusicSliderValueChanged);
