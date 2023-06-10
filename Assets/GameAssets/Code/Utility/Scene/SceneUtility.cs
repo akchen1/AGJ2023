@@ -41,6 +41,7 @@ public class SceneUtility
         bootstrap.StartCoroutine(WaitForSceneLoad(() =>
         {
             SetActiveScene(inEvent.Payload.SceneName);
+            eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
         }));
     }
 
