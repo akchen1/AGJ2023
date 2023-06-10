@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Time: 3
   retroactive: 0
   emiteOnce: 0
-  selectedSceneName: Basement - Scene 6 - Part 2
+  selectedSceneName: MainStreet - Scene 6 - Part 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
