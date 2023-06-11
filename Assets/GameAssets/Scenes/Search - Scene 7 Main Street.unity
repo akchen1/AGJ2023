@@ -1304,6 +1304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 593fad9097013a24b832d439dea7bd4a, type: 2}
+  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
   itemObtainedDialogue: {fileID: 11400000, guid: 279f390d41a26834584bcf0b1db44fe9, type: 2}
@@ -4697,6 +4698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 4141ace33f2959f47941774f03b9f727, type: 2}
+  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
   itemObtainedDialogue: {fileID: 0}
@@ -9129,6 +9131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 4141ace33f2959f47941774f03b9f727, type: 2}
+  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
   itemObtainedDialogue: {fileID: 0}
@@ -10692,6 +10695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: d711e05907bb9f14884eb035bdf308e8, type: 2}
+  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
   itemObtainedDialogue: {fileID: 0}
@@ -11096,6 +11100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: f136711b4bf992e4a958c4162dc0a4f9, type: 2}
+  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
   itemObtainedDialogue: {fileID: 0}
@@ -11229,6 +11234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 19b530fc151647f4993e263fe086782e, type: 2}
+  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
   itemObtainedDialogue: {fileID: 0}
@@ -11645,6 +11651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: b8046a6cad45a604288694aaddee7dde, type: 2}
+  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
   itemObtainedDialogue: {fileID: 0}
