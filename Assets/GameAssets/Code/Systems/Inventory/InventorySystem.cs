@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,17 +17,17 @@ public class InventorySystem
 		eventBrokerComponent.Subscribe<InventoryEvents.HasItem>(HasItemHandler);
 		eventBrokerComponent.Subscribe<InventoryEvents.SelectItem>(SelectItemHandler);
 		eventBrokerComponent.Subscribe<InventoryEvents.DragCombineItem>(DragCombineItemHandler);
+		eventBrokerComponent.Subscribe<GameStateEvents.RestartGame>(RestartGameHandler);
 	}
 
-    
-
-    ~InventorySystem() 
+	~InventorySystem() 
     {
         eventBrokerComponent.Unsubscribe<InventoryEvents.AddItem>(AddItemHandler);
 		eventBrokerComponent.Unsubscribe<InventoryEvents.RemoveItem>(RemoveItemHandler);
 		eventBrokerComponent.Unsubscribe<InventoryEvents.HasItem>(HasItemHandler);
 		eventBrokerComponent.Unsubscribe<InventoryEvents.SelectItem>(SelectItemHandler);
 		eventBrokerComponent.Unsubscribe<InventoryEvents.DragCombineItem>(DragCombineItemHandler);
+		eventBrokerComponent.Unsubscribe<GameStateEvents.RestartGame>(RestartGameHandler);
 	}
 
     private void AddItemHandler(BrokerEvent<InventoryEvents.AddItem> inEvent)
@@ -72,7 +73,6 @@ public class InventorySystem
 
     private void DragCombineItemHandler(BrokerEvent<InventoryEvents.DragCombineItem> inEvent)
     {
-		Debug.Log("drag combine called");
 		InventoryItem item1 = inEvent.Payload.Item1;
 		InventoryItem item2 = inEvent.Payload.Item2;
 
@@ -90,8 +90,14 @@ public class InventorySystem
 		item.InventoryInteraction.Interact();
     }
 
-  //  private bool ContainsRequiredItems(InventoryItem item)
-  //  {
-		//return inventory.Contains(item.InventoryInteraction.RequiredItem);
-  //  }
+	private void RestartGameHandler(BrokerEvent<GameStateEvents.RestartGame> inEvent)
+	{
+		inventory = new List<InventoryItem>();
+		selectedItem = null;
+	}
+
+	//  private bool ContainsRequiredItems(InventoryItem item)
+	//  {
+	//return inventory.Contains(item.InventoryInteraction.RequiredItem);
+	//  }
 }

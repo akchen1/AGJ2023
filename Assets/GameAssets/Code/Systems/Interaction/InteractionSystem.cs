@@ -37,7 +37,6 @@ public class InteractionSystem
     {
         if (currentInteraction != null)
         {
-            Debug.Log("Player is already interacting with an object " + currentInteraction.ToString());
             inEvent.Payload.Response?.Invoke(false);
 
             return;
@@ -69,12 +68,10 @@ public class InteractionSystem
     private void InteractEndHandler(BrokerEvent<InteractionEvents.InteractEnd> obj)
     {
         currentInteraction = null;
-        Debug.Log("interaction over " + obj.Sender.ToString());
     }
 
     private void StartInteraction(BrokerEvent<InteractionEvents.Interact> inEvent)
     {
-        Debug.Log("interacting with " + inEvent.Sender.ToString());
         eventBrokerComponent.Publish(this, new InventoryEvents.ToggleInventoryVisibility(false));
         currentInteraction = inEvent.Payload.Interactable;
         inEvent.Payload.Response?.Invoke(true);
