@@ -16,7 +16,7 @@ public class Scene9Controller : SceneController
     private void Start()
     {
         playableDirector.Play(startingCutscene);
-		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.Prologue));
+		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.Clearing));
     }
 
     private void OnEnable()
