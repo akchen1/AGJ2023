@@ -763,7 +763,69 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    barSpeed: 1
+    barSpeed: 0.75
+  - levelRequirement: 1
+    levelCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5319
+        value: 0
+        inSlope: 0
+        outSlope: 9998.341
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.532
+        value: 1
+        inSlope: 9998.341
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.67
+        value: 1
+        inSlope: 0
+        outSlope: -10004.303
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.6701
+        value: 0
+        inSlope: -10004.303
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    barSpeed: 1.15
   - levelRequirement: 1
     levelCurve:
       serializedVersion: 2
@@ -826,68 +888,6 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     barSpeed: 1.5
-  - levelRequirement: 1
-    levelCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.5319
-        value: 0
-        inSlope: 0
-        outSlope: 9998.341
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.532
-        value: 1
-        inSlope: 9998.341
-        outSlope: 0
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.67
-        value: 1
-        inSlope: 0
-        outSlope: -10004.303
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.6701
-        value: 0
-        inSlope: -10004.303
-        outSlope: 0
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    barSpeed: 2
   mudAnimators:
   - {fileID: 9197448642276262824}
   - {fileID: 9197448641579659034}
@@ -895,6 +895,8 @@ MonoBehaviour:
   shovelAnimator: {fileID: 9197448641312447499}
   currentLevel: 0
   currentProgress: 0
+  requiredItems: []
+  endMinigameItems: []
 --- !u!1 &9197448642723304983
 GameObject:
   m_ObjectHideFlags: 0

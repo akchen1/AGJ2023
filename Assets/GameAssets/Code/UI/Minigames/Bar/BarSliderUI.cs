@@ -36,7 +36,6 @@ public class BarSliderUI : MonoBehaviour
         Vector2 scaled01 = sliderDisplacement;
         scaled01.x = (sliderDisplacement.x + width) / (width * 2f);
         scaled01.y = (sliderDisplacement.y + height) / (height * 2f);
-        Debug.Log(scaled01);
         return scaled01;
     }
 

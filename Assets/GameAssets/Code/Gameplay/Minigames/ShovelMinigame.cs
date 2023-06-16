@@ -32,7 +32,6 @@ public class ShovelMinigame : MonoBehaviour, IMinigame, IPointerClickHandler
     #region IMinigame Methods
     public void Initialize()
     {
-        Debug.Log("iu");
         currentLevel = 0;
         currentProgress = levels[0].levelRequirement;
         barSlider.VerticalBarSpeed = levels[0].barSpeed;
