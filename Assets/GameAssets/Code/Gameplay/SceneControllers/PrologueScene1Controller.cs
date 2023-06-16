@@ -33,18 +33,4 @@ public class PrologueScene1Controller : SceneController
     {
         playableDirector.Play(endCutscene);
     }
-
-	public void ToggleRecordPlayer()
-	{
-		if (!recordPlayerPlaying)
-		{
-			eventBrokerComponent.Publish(this, new AudioEvents.PlayTemporaryMusic(Constants.Audio.Music.RecordPlayer));
-		}
-		else
-		{
-			eventBrokerComponent.Publish(this, new AudioEvents.StopTemporaryMusic());
-		}
-
-		recordPlayerPlaying = !recordPlayerPlaying;
-	}
 }
