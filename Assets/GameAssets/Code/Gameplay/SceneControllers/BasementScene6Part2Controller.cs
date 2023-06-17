@@ -23,6 +23,7 @@ public class BasementScene6Part2Controller : MonoBehaviour
 
     [SerializeField] private GameObject openedScroll;
     [SerializeField] private GameObject basementStairs;
+    [SerializeField] private GameObject leaveInteractionGO;
 
     private DSDialogueSO currentDialogue;
     private bool isInspectingScroll = false;
@@ -95,6 +96,7 @@ public class BasementScene6Part2Controller : MonoBehaviour
             currentDialogue = onScrollCompletedDialogue;
             isPlayingMinigame = false;
             openedScroll.SetActive(false);
+            leaveInteractionGO.SetActive(true);
         }
     }
     private void StartMinigameHandler(BrokerEvent<MinigameEvents.StartMinigame> inEvent)

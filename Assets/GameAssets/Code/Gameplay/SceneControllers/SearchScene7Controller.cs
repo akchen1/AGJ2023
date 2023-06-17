@@ -42,6 +42,9 @@ public class SearchScene7Controller : SceneController
 	private SubSceneController currentSubScene;
     private Vector3 previousMainStreetLocation;
 
+	private DialogueInteraction dialogueAfterSceneChange = null;
+	private bool fading  = false;
+
 	EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
 	private void ChangeSubsceneHandler(BrokerEvent<Scene7Events.ChangeSubscene> inEvent)
@@ -54,6 +57,7 @@ public class SearchScene7Controller : SceneController
 		currentSubScene = GetNextSubscene(subscene);
 		currentSubScene.Enable();
 		eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
+		StartCoroutine(PlayDialogue());
 	}
 
     private void GetBloodSanityResultHandler(BrokerEvent<Scene7Events.GetBloodSanityResult> obj)
@@ -66,6 +70,7 @@ public class SearchScene7Controller : SceneController
 		switch (subscene)
 		{
 			case Constants.Scene7SubScenes.MainStreet:
+				dialogueAfterSceneChange = startingDialogue;
 				return MainStreetSubSceneController;
 
 			case Constants.Scene7SubScenes.GeneralStore:
@@ -89,6 +94,7 @@ public class SearchScene7Controller : SceneController
 
 	private IEnumerator FadeBetweenCams()
 	{
+		fading = true;
 		fadeToBlack.gameObject.SetActive(true);
 		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 0);
 
@@ -101,6 +107,7 @@ public class SearchScene7Controller : SceneController
 		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 1f);
 
 		yield return new WaitForSeconds(transitionTime);
+		fading = false;
 
 		while (fadeToBlack.color.a > 0f)
 		{
@@ -114,18 +121,23 @@ public class SearchScene7Controller : SceneController
 
 	private void Start()
 	{
-		eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(startingitems));
 		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.MainStreet, true));
+		eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(startingitems));
 		fadeToBlack.gameObject.SetActive(false);
-		currentSubScene = MainStreetSubSceneController;
+		currentSubScene = BasementSubsceneController;
 		currentSubScene.Enable();
-		PlayStartingDialogue();
 	}
 
-    private void PlayStartingDialogue()
+    private IEnumerator PlayDialogue()
     {
-		IInteractable interactable = startingDialogue.GetComponent<IInteractable>();
-        interactable.Interact();
+		while(fading)
+			yield return null;
+		if(dialogueAfterSceneChange != null)
+		{
+			IInteractable interactable = dialogueAfterSceneChange.GetComponent<IInteractable>();
+			interactable.Interact();
+			dialogueAfterSceneChange = null;
+		}
     }
 
     private void OnEnable()
