@@ -46,6 +46,8 @@ public class PresentScene4Part1Controller : MonoBehaviour
     {
         if (!isTalkingWithBadu) return;
         badu.GetComponent<Animator>().runtimeAnimatorController = baduMothFly;
+		badu.GetComponent<CapsuleCollider2D>().enabled = false;
+		badu.GetComponent<CircleCollider2D>().enabled = true;
         isTalkingWithBadu = false;
     }
 
