@@ -1224,6 +1224,7 @@ MonoBehaviour:
   startingCutscene: {fileID: 11400000, guid: 6a4db0dbd2ecca243b7e35f52a32d944, type: 2}
   endCutscene: {fileID: 0}
   playableDirector: {fileID: 1565500090}
+  completedRitualSetupDialogue: {fileID: 0}
 --- !u!1001 &1555899288
 PrefabInstance:
   m_ObjectHideFlags: 0

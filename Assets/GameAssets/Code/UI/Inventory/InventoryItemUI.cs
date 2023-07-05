@@ -88,7 +88,7 @@ public class InventoryItemUI : MonoBehaviour, IPointerClickHandler, IDragHandler
         {
             Debug.Log("Hit " + result.gameObject.name);
             hitItem = result.gameObject.GetComponent<InventoryItemUI>();
-            if (hitItem != null )
+            if (hitItem != null && hitItem != this)
             {
                 eventBrokerComponent.Publish(this, new InventoryEvents.DragCombineItem(inventoryItem, hitItem.inventoryItem));
                 return;

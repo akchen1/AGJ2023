@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandler, IBeginDragHandler, IEndDragHandler
+public class ItemInteraction : MonoBehaviour, IInteractableWorld, IPointerClickHandler, IBeginDragHandler, IEndDragHandler
 {
     [SerializeField] private InventoryItem item;
 	[SerializeField] public string PickupAudio;
@@ -53,16 +53,7 @@ public class ItemInteraction : MonoBehaviour, IInteractable, IPointerClickHandle
     public void OnPointerClick(PointerEventData eventData)
     {
         if (!allowDragClick && dragging) return;
-        if (HasInteractionDistance)
-        {
-            eventBrokerComponent.Publish(this, new InteractionEvents.Interact(this, valid =>
-            {
-                if (valid)
-                {
-                    Interact();
-                }
-            }));
-        } else
+        if (gameObject.Interact())
         {
             Interact();
         }

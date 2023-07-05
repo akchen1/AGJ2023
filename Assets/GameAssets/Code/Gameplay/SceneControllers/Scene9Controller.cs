@@ -1,3 +1,4 @@
+using DS.ScriptableObjects;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,6 +10,9 @@ public class Scene9Controller : SceneController
     [SerializeField] private PlayableAsset startingCutscene;
     [SerializeField] private PlayableAsset endCutscene;
     [SerializeField] private PlayableDirector playableDirector;
+
+    [SerializeField] private DSDialogueSO completedRitualSetupDialogue;
+
     EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
 	private bool recordPlayerPlaying = false;
@@ -31,6 +35,6 @@ public class Scene9Controller : SceneController
 
     private void EndMinigameHandler(BrokerEvent<MinigameEvents.EndMinigame> inEvent)
     {
-        //playableDirector.Play(endCutscene);
+        eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(completedRitualSetupDialogue));
     }
 }

@@ -3,13 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.Rendering.VolumeComponent;
 
 [System.Serializable]
 public class InteractionSystem
 {
     // Only one interaction event can occur at once.
-    private IInteractable currentInteraction;
+    private UnityEngine.Object currentInteraction;
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
@@ -42,7 +41,7 @@ public class InteractionSystem
             return;
         }
 
-        if (CheckInRange(inEvent))
+        if (inEvent.Payload.InteractType == Constants.Interaction.InteractionType.Virtual || CheckInRange(inEvent))
         {
             StartInteraction(inEvent);
         } else
@@ -79,12 +78,13 @@ public class InteractionSystem
     
     private bool CheckInRange(BrokerEvent<InteractionEvents.Interact> inEvent)
     {
-        if (!inEvent.Payload.Interactable.HasInteractionDistance) return true;
+        IInteractableWorld worldInteraction = inEvent.Payload.Interactable.GetComponent<IInteractableWorld>();
+        if (!worldInteraction.HasInteractionDistance) return true;
         bool inRange = false;
         eventBrokerComponent.Publish(this, new PlayerEvents.GetPlayerPosition(position =>
         {
             float distance = (((UnityEngine.Object)inEvent.Sender).GetComponent<Transform>().position - position).magnitude;
-            inRange = distance <= inEvent.Payload.Interactable.InteractionDistance;
+            inRange = distance <= worldInteraction.InteractionDistance;
         }));
         return inRange;
     }

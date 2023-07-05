@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [CreateAssetMenu]
-public class InventoryInteraction : ScriptableObject, IInteractable
+public class InventoryInteraction : ScriptableObject, IInteractableVirtual
 {
     [field: SerializeField] public bool RequiredItemInteraction { get; private set; } = false;
     [field: SerializeField] public List<InventoryItem> RequiredItems { get; private set; }
@@ -14,11 +14,8 @@ public class InventoryInteraction : ScriptableObject, IInteractable
     [field:SerializeField] public bool OverrideDefaultClickInteraction { get; private set; } = false;
 
     [SerializeField] private GameObject minigame;
-    [field: SerializeField] public FloatReference InteractionDistance { get; set; }
-
 
     [field: SerializeField] public bool RequiredSceneInteraction { get; private set; } = false;
-    [field: SerializeField] public bool HasInteractionDistance { get; set; } = false;
 
     [HideInInspector]
     public string selectedSceneName;
@@ -40,14 +37,9 @@ public class InventoryInteraction : ScriptableObject, IInteractable
 
     public void Interact()
     {
-        eventBrokerComponent.Publish(this, new InteractionEvents.Interact(this, valid =>
-        {
-            if (valid)
-            {
-                GameObject createdMinigame = Instantiate(minigame, FindObjectOfType<Canvas>().transform);
-                eventBrokerComponent.Publish(this, new MinigameEvents.StartMinigame(createdMinigame.GetComponent<IMinigame>()));
-            }
-        }));
+        GameObject createdMinigame = Instantiate(minigame, FindObjectOfType<Canvas>().transform);
+        IMinigame iMinigame = createdMinigame.GetComponent<IMinigame>();
+        iMinigame.Interact(this, Constants.Interaction.InteractionType.Virtual);
     }
 
     private bool CheckRequirements()

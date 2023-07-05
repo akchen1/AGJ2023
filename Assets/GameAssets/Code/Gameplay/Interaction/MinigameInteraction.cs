@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
 
-public class MinigameInteraction : MonoBehaviour, IInteractable, IPointerClickHandler
+public class MinigameInteraction : MonoBehaviour, IInteractableWorld, IPointerClickHandler
 {
     [SerializeField] private GameObject minigame;
 
@@ -18,18 +18,7 @@ public class MinigameInteraction : MonoBehaviour, IInteractable, IPointerClickHa
 
     public void Interact()
     {
-        IMinigame iMinigame = minigame.GetComponent<IMinigame>();
-        // Check if conditions are met
-        if (!iMinigame.StartCondition()) return;
-        
-        // Check if there's another interaction event happening
-        eventBrokerComponent.Publish(this, new InteractionEvents.Interact(this, (valid) =>
-        {
-            if (valid)
-            {
-                eventBrokerComponent.Publish(this, new MinigameEvents.StartMinigame(minigame.GetComponent<IMinigame>()));
-            }
-        }));
+        minigame.GetComponent<IMinigame>().Interact(this);
     }
 
     public void OnPointerClick(PointerEventData eventData)

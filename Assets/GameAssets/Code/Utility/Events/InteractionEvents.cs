@@ -7,13 +7,15 @@ public class InteractionEvents
 {
     public class Interact
     {
-        public readonly IInteractable Interactable;
+        public readonly UnityEngine.Object Interactable;
         public Action<bool> Response;
+        public readonly Constants.Interaction.InteractionType InteractType;
 
-        public Interact(IInteractable interactable, Action<bool> response)
+        public Interact(UnityEngine.Object interactable, Action<bool> response, Constants.Interaction.InteractionType interactType = Constants.Interaction.InteractionType.World)
         {
             Interactable = interactable;
             Response = response;
+            InteractType = interactType;
         }
     }
 

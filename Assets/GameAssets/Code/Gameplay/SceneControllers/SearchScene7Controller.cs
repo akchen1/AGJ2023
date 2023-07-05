@@ -1,12 +1,10 @@
+using DS.ScriptableObjects;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.UI;
-using Cinemachine;
-using static UnityEngine.Rendering.VolumeComponent;
-using DS.ScriptableObjects;
 
 public class SearchScene7Controller : SceneController
 {
@@ -20,7 +18,8 @@ public class SearchScene7Controller : SceneController
 	[SerializeField] private float transitionSpeedMultiplier;
 	[SerializeField] private float transitionTime;
 
-	[SerializeField] private DialogueInteraction startingDialogue;
+	//[SerializeField] private DialogueInteraction startingDialogue;
+	[SerializeField] private DSDialogueSO startingDialogue;
 
 	[SerializeField, Header("Main Street")]
     private MainStreetSubSceneController MainStreetSubSceneController;
@@ -124,8 +123,7 @@ public class SearchScene7Controller : SceneController
 
     private void PlayStartingDialogue()
     {
-		IInteractable interactable = startingDialogue.GetComponent<IInteractable>();
-        interactable.Interact();
+		startingDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
     }
 
     private void OnEnable()

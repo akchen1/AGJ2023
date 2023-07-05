@@ -120,4 +120,11 @@ public static class Constants
 		public enum SanityType { Neutral = 0 , Negative = -1 , Positive = 1 }
 	}
     #endregion Sanity
+
+    #region Interaction
+	public struct Interaction
+	{
+		public enum InteractionType { World, Virtual }
+	}
+    #endregion
 }

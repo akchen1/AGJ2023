@@ -5,15 +5,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class InventoryItem : ScriptableObject, IInteractable
+public class InventoryItem : ScriptableObject, IInteractableVirtual
 {
     [field: Header("Item Information")]
     [field: SerializeField] public string ItemName { get; private set; }
     [field: SerializeField] public Sprite ItemIcon { get; private set; }
     [field: SerializeField] public string ItemDescription { get; private set; }
     [field: SerializeField] public InventoryInteraction InventoryInteraction { get; private set; }
-    [field: SerializeField] public FloatReference InteractionDistance { get; set; }
-    [field: SerializeField] public bool HasInteractionDistance { get; set; } = false;
 
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
@@ -24,17 +22,13 @@ public class InventoryItem : ScriptableObject, IInteractable
             InventoryInteraction.OnClickInteraction();
             return;
         }
-        eventBrokerComponent.Publish(this, new InteractionEvents.Interact(this, (valid) =>
-        {
-            if (!valid) return;
-            Interact();
-        }));
+        Interact();
     }
 
     public void Interact()
     {
         DSDialogueSO itemDescription = CreateInstance<DSDialogueSO>();
         itemDescription.Text = ItemDescription;
-        eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(itemDescription));
+        itemDescription.Interact(this, Constants.Interaction.InteractionType.Virtual);
     }
 }
