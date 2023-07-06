@@ -33,7 +33,7 @@ public class ObjectPlacementMinigameTest : MonoBehaviour, IMinigame
         Debug.Log("running");
         if (desiredBounds.OverlapPoint(placementObject.transform.position))
         {
-            eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+            this.EndMinigame();
             active = false;
         }
     }

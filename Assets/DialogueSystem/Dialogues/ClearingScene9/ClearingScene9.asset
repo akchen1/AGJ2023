@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b024264143c488cbee1d884c720f40, type: 3}
+  m_Name: ClearingScene9
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: ClearingScene9
+  <DialogueGroups>k__BackingField:
+    list: []
+  <UngroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: 61df11abbee8a364ea2f569bff5140d3, type: 2}
+  - {fileID: 11400000, guid: 4fb37623aa3804f49a18b29f2ea1d2b3, type: 2}
+  - {fileID: 11400000, guid: d18f80332740ebe458ae8b1a7fd3997f, type: 2}
+  - {fileID: 11400000, guid: 660292efb787771408cebae11ccfef0f, type: 2}
+  - {fileID: 11400000, guid: 692950ae8f749a548ac79c9df0b8d1da, type: 2}
+  - {fileID: 11400000, guid: 217a4b323cacb1c4b9de133556dc12ed, type: 2}
+  - {fileID: 11400000, guid: 71b6ed9fe0651ee42a1b75dbd4af92c5, type: 2}
+  - {fileID: 11400000, guid: 303e8a40a1feb3b48890767e63763916, type: 2}
+  - {fileID: 11400000, guid: 33b38cadf714c2c458314af7840a279c, type: 2}
+  - {fileID: 11400000, guid: 861dc6922ab8bb748be04303d2161417, type: 2}
+  - {fileID: 11400000, guid: 3f7a7482046048a4a83bdcaa9b6a4be8, type: 2}
+  - {fileID: 11400000, guid: aea83c7c78553ab4696a937e1b3852ae, type: 2}

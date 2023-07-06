@@ -29,7 +29,7 @@ public class MinigameSystem : MonoBehaviour
             return;
         }
         eventBrokerComponent.Publish(this, new InputEvents.SetInputState(false));
-        activeMinigame = inEvent.Payload.minigame;
+        activeMinigame = inEvent.Payload.Minigame;
         
         activeMinigame.Initialize();
     }

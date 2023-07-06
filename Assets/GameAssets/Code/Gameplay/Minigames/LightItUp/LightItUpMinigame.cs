@@ -18,7 +18,7 @@ public class LightItUpMinigame : MonoBehaviour, IMinigame
         active = false;
         LightItUpUI.SetActive(false);
         HandleInventoryEvents();
-        eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+        this.EndMinigame();
     }
 
     public void Initialize()

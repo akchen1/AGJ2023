@@ -31,7 +31,7 @@ public class LockCombination : MonoBehaviour, IMinigame
     public void Finish()
     {
         if(solved){
-            eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+            this.EndMinigame();
             eventBrokerComponent.Publish(this, new CutsceneEvents.PlayCutscene(gemCollectCutscene));
             playableDirector.Play(gemCollectCutscene);
             panel.SetActive(false);
@@ -39,7 +39,7 @@ public class LockCombination : MonoBehaviour, IMinigame
             minigameStarter.SetActive(false);
         }
         else{
-            eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+            this.EndMinigame();
             panel.SetActive(false);
         }
     }

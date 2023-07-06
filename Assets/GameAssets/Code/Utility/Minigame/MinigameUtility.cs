@@ -28,4 +28,9 @@ public static class MinigameUtility
         Rect rect2 = new Rect(rectTrans2.position.x, rectTrans2.position.y, 1f, 1f);
         return rect1.Overlaps(rect2);
     }
+
+    public static void EndMinigame(this IMinigame minigame)
+    {
+        eventBrokerComponent.Publish(minigame, new MinigameEvents.EndMinigame(minigame));
+    }
 }

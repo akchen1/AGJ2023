@@ -7,6 +7,7 @@ using UnityEngine;
 [CustomPropertyDrawer(typeof(FloatReference))]
 [CustomPropertyDrawer(typeof(StringReference))]
 [CustomPropertyDrawer(typeof(BooleanReference))]
+[CustomPropertyDrawer(typeof(ScrollStateReference))]
 public class VariableReferenceDrawer : PropertyDrawer
 {
     /// <summary>

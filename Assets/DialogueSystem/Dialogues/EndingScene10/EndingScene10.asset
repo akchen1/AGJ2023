@@ -14,7 +14,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <FileName>k__BackingField: EndingScene10
   <DialogueGroups>k__BackingField:
-    list: []
+    list:
+    - Key: {fileID: 11400000, guid: 437b505b1990ebe44a8c1a5e0cac110b, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 8de04be0a9405f945a219582bc311cc9, type: 2}
+      - {fileID: 11400000, guid: 1024bba7ec6ec61438ebeafb9bd15d78, type: 2}
+      - {fileID: 11400000, guid: 08154de3a780cc64aaff6af82639516c, type: 2}
+      - {fileID: 11400000, guid: c014b1926c41dd943ae0810385fc0947, type: 2}
+      - {fileID: 11400000, guid: 945e03d2f9018244a9cd87bc87209f3b, type: 2}
+      - {fileID: 11400000, guid: aed17e334a8a2e84ba88c6fe49279271, type: 2}
+      - {fileID: 11400000, guid: 9ec088e5af4c2d3498d0c5d38b393557, type: 2}
+      - {fileID: 11400000, guid: 82bef375cc1428a41bee3067a09709f9, type: 2}
+      - {fileID: 11400000, guid: 383c649c9f672ae469eac6abd6d2537c, type: 2}
+      - {fileID: 11400000, guid: e60a7f5af025b6a4c9acba7d02d52c4d, type: 2}
+      - {fileID: 11400000, guid: 4570d49769aba6c4ea6bd888eb92fc45, type: 2}
+    - Key: {fileID: 11400000, guid: d07128bcdcd031b4992971bc76081b88, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 83cfc736e12ce7b4daeb61eef9338293, type: 2}
+      - {fileID: 11400000, guid: 1e2d66d19299dce469c469180e494277, type: 2}
+      - {fileID: 11400000, guid: cd81d95128ce6984fae6ac053dbf873f, type: 2}
+      - {fileID: 11400000, guid: d389326ae0fd7e644b6e906df7877639, type: 2}
+      - {fileID: 11400000, guid: fa4ea5ffaf96da94bb69432827fba917, type: 2}
+      - {fileID: 11400000, guid: 55baabc9c04cad045b8be4cf13c93e59, type: 2}
+      - {fileID: 11400000, guid: 21ae0a5509836e14bac6449ceb227251, type: 2}
+      - {fileID: 11400000, guid: 852ae69cf843d0042bdb1a9cb0eb7ed4, type: 2}
+      - {fileID: 11400000, guid: ad9e2b3217f0c174682c9601b7e5714b, type: 2}
+      - {fileID: 11400000, guid: bc24af2b366bcb8429fd9603201b6feb, type: 2}
+      - {fileID: 11400000, guid: c1be0d06c402f814090adddcf049bd46, type: 2}
+      - {fileID: 11400000, guid: 9b66f7a9f22d4dc40a2ec724b9c04a45, type: 2}
+      - {fileID: 11400000, guid: c17cf2bc017093d4f9381ebf5ae931af, type: 2}
+      - {fileID: 11400000, guid: 8e6b3e778eb5fea499385247b8a18fbe, type: 2}
+      - {fileID: 11400000, guid: 8291a217943d1844aa6f0250775028f4, type: 2}
+      - {fileID: 11400000, guid: bb730e5245c1d744fbe42cfd2e4b2f86, type: 2}
   <UngroupedDialogues>k__BackingField:
   - {fileID: 11400000, guid: e4c767ce91bbb514886df6b094ffe82e, type: 2}
   - {fileID: 11400000, guid: f83cc325e3431ad4cbc08519e3eaeaba, type: 2}

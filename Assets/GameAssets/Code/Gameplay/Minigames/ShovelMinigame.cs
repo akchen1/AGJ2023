@@ -49,7 +49,7 @@ public class ShovelMinigame : MonoBehaviour, IMinigame, IPointerClickHandler
         barSlider.gameObject.SetActive(false);
         active = false;
         HandleInventoryEvents();
-        eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+        this.EndMinigame();
     }
     #endregion
 

@@ -83,7 +83,8 @@ public class InteractionSystem
         bool inRange = false;
         eventBrokerComponent.Publish(this, new PlayerEvents.GetPlayerPosition(position =>
         {
-            float distance = (((UnityEngine.Object)inEvent.Sender).GetComponent<Transform>().position - position).magnitude;
+            Collider2D collider = ((UnityEngine.Object)inEvent.Sender).GetComponent<Collider2D>();
+            float distance = (collider.bounds.center - position).magnitude;
             inRange = distance <= worldInteraction.InteractionDistance;
         }));
         return inRange;

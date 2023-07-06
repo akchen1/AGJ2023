@@ -10,10 +10,12 @@ public class RitualMinigame : MonoBehaviour, IMinigame
 
     private int currentLevel = 0;
     private bool active = false;
+    private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     public void Finish()
     {
         minigame.SetActive(false);
         active = false;
+        this.EndMinigame();
     }
 
     public void Initialize()

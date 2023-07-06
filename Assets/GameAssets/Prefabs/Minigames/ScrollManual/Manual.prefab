@@ -507,6 +507,10 @@ MonoBehaviour:
   backSideCondition2: {fileID: 21300000, guid: 90e510d83b6ed19458be6ae11f3bf9b5, type: 3}
   closeButton: {fileID: 7519870352657703500}
   completedItemsDialogue: {fileID: 11400000, guid: 0e709b77974b3284593c13b0cfe1a04c, type: 2}
+  scrollStateReference:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: eff099716ff493d41acfc765e2e21d12, type: 2}
 --- !u!1 &5760530410819307651
 GameObject:
   m_ObjectHideFlags: 0

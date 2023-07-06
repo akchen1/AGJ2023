@@ -50,7 +50,7 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 
         gameRunning = false;
 		panel.SetActive(false);
-		eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+		this.EndMinigame();
 		Destroy(this.gameObject);
 	}
 
