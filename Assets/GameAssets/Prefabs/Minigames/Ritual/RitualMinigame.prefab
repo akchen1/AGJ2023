@@ -1504,6 +1504,12 @@ MonoBehaviour:
     - {fileID: 948767121782516711}
   - ritualItems:
     - {fileID: 948767121978614665}
+  requiredItems:
+  - {fileID: 11400000, guid: 0ef24c124aabcbe489bbf406f7ad2ab7, type: 2}
+  - {fileID: 11400000, guid: 7cd749c20530cae41b181e42e292b871, type: 2}
+  - {fileID: 11400000, guid: a0667da986d93b94789634435bc87154, type: 2}
+  - {fileID: 11400000, guid: 063cb76fc16de3a409d470f333789232, type: 2}
+  - {fileID: 11400000, guid: 42130195c55c9754b8670900391558ac, type: 2}
 --- !u!222 &4315720976426891087
 CanvasRenderer:
   m_ObjectHideFlags: 0

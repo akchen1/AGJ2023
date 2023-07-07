@@ -270,6 +270,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0ef24c124aabcbe489bbf406f7ad2ab7, type: 2}
   LightItUpUI: {fileID: 6645194803575592101}
   candle: {fileID: 3787382044135070367}
+  invalidSceneDialogue: {fileID: 11400000, guid: 3a66fa88b74a8a145bcf4cbf4ff6ca02, type: 2}
 --- !u!1 &3787382044135070340
 GameObject:
   m_ObjectHideFlags: 0

@@ -35,7 +35,7 @@ public class RequiredItemsMinigame : MonoBehaviour, IMinigame
     private void Update()
     {
         if (!active) return;
-        if (requiredItems.CheckIfHasAllRequiredItems(this))
+        if (requiredItems.CheckInInventory(this))
         {
             Finish();
         }

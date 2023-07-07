@@ -63,11 +63,11 @@ public class ScrollManual : MonoBehaviour, IMinigame
 
     public void Initialize()
     {
-        bool hasCandle = HasItem(candle) && HasItem(matchBox);
-        bool hasVial = HasItem(vial);
-        bool hasWreath = HasItem(weath);
-        bool hasGem = HasItem(gem);
-        bool hasClay = HasItem(clay);
+        bool hasCandle = scrollStateReference == ScrollState.RitualComplete || (HasItem(candle) && HasItem(matchBox));
+        bool hasVial = scrollStateReference == ScrollState.RitualComplete || HasItem(vial);
+        bool hasWreath = scrollStateReference == ScrollState.RitualComplete || HasItem(weath);
+        bool hasGem = scrollStateReference == ScrollState.RitualComplete || HasItem(gem);
+        bool hasClay = scrollStateReference == ScrollState.RitualComplete || HasItem(clay);
 
         candleIcon.SetActive(hasCandle);
         vialIcon.SetActive(hasVial);

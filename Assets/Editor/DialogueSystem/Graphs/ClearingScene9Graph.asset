@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: ClearingScene9Graph
   m_EditorClassIdentifier: 
   <FileName>k__BackingField: ClearingScene9
-  <Groups>k__BackingField: []
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: b0d52d5b-1ea1-47cf-a1c5-6dfb2b9c04ad
+    <Name>k__BackingField: ItemInteractions
+    <Position>k__BackingField: {x: -126, y: 68}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: aeb0838d-cfca-489b-9acb-c38b9654271d
     <Name>k__BackingField: CSS9x1
@@ -233,7 +236,27 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: -70, y: 1231}
-  <OldGroupNames>k__BackingField: []
+  - <ID>k__BackingField: 785429f7-f66b-4ade-92a0-81b7b46d8829
+    <Name>k__BackingField: CS9xMatchCandleInvalid
+    <Text>k__BackingField: "Maybe I should wait\u2026 I don\u2019t want hot wax dripping
+      on me."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: b0d52d5b-1ea1-47cf-a1c5-6dfb2b9c04ad
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -101, y: 127}
+  <OldGroupNames>k__BackingField:
+  - ItemInteractions
   <OldUngroupedNodeNames>k__BackingField:
   - CSS9x1
   - CSS9x2
@@ -248,4 +271,7 @@ MonoBehaviour:
   - CSS9x12
   - CSS9x8
   <OldGroupedNodeNames>k__BackingField:
-    list: []
+    list:
+    - Key: ItemInteractions
+      Value:
+      - CS9xMatchCandleInvalid

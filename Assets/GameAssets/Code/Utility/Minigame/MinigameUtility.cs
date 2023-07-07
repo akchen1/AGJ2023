@@ -5,22 +5,6 @@ using UnityEngine;
 public static class MinigameUtility
 {
     static EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
-    public static bool CheckIfHasAllRequiredItems(this List<InventoryItem> requiredItems, object sender)
-    {
-        foreach (InventoryItem item in requiredItems)
-        {
-            bool hasItem = true;
-            eventBrokerComponent.Publish(sender, new InventoryEvents.HasItem(callback =>
-            {
-                hasItem = callback;
-            }, item));
-            if (!hasItem)
-            {
-                return false;
-            }
-        }
-        return true;
-    }
 
     public static bool RectOverlapsPoint(this RectTransform rectTrans1, RectTransform rectTrans2)
     {
