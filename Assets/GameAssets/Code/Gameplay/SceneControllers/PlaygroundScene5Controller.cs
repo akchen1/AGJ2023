@@ -11,16 +11,17 @@ public class PlaygroundScene5Controller : MonoBehaviour
     [SerializeField] private DSDialogueSO onMaeveLeaveDialogue;
     [SerializeField] private DSDialogueSO onLeighLeaveDialogue;
 
-    [SerializeField] private PlayableDirector maeveLeaveCutscene;
-    [SerializeField] private PlayableDirector leighLeaveCutscene;
-    [SerializeField] private PlayableDirector baduLeaveCutscene;
+    [SerializeField] private PlayableDirector director;
+    [SerializeField] private PlayableAsset maeveLeaveCutscene;
+    [SerializeField] private PlayableAsset leighLeaveCutscene;
+    [SerializeField] private PlayableAsset baduLeaveCutscene;
 
     private DSDialogueSO currentDialogue;
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     void Start()
     {
-        eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(startingDialogue));
+        startingDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
 		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.Playtime, true));
 		currentDialogue = startingDialogue;
     }
@@ -40,28 +41,30 @@ public class PlaygroundScene5Controller : MonoBehaviour
         if (currentDialogue == startingDialogue)
         {
             // Trigger Maeve leave
-            maeveLeaveCutscene.Play();
-            maeveLeaveCutscene.stopped += (obj) => { 
-                eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(onMaeveLeaveDialogue));
-                currentDialogue = onMaeveLeaveDialogue;
-            };
+            director.Play(maeveLeaveCutscene);
+            director.stopped += OnMaeveLeaveCutsceneStopped;
             // Start onMaeveLeave dialogue
         } else if (currentDialogue == onMaeveLeaveDialogue)
         {
-            leighLeaveCutscene.Play();
-            leighLeaveCutscene.stopped += (obj) => {
-                eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(onLeighLeaveDialogue));
-                currentDialogue = onLeighLeaveDialogue;
-            };
+            director.Play(leighLeaveCutscene);
+            director.stopped += OnLeighLeaveCutsceneStopped;
         }  else if (currentDialogue == onLeighLeaveDialogue)
         {
-            baduLeaveCutscene.Play();
+            director.Play(baduLeaveCutscene);
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnLeighLeaveCutsceneStopped(PlayableDirector obj)
     {
-        
+        onLeighLeaveDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
+        currentDialogue = onLeighLeaveDialogue;
+        director.stopped -= OnLeighLeaveCutsceneStopped;
+    }
+
+    private void OnMaeveLeaveCutsceneStopped(PlayableDirector obj)
+    {
+        onMaeveLeaveDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
+        currentDialogue = onMaeveLeaveDialogue;
+        director.stopped -= OnMaeveLeaveCutsceneStopped;
     }
 }

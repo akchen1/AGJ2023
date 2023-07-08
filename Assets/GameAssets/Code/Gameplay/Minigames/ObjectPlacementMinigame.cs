@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,13 +32,27 @@ public class ObjectPlacementMinigame : MonoBehaviour, IMinigame
     {
         active = false;
         minigameUI.SetActive(false);
+        bool isCompleted = CheckEndCondition();
+        this.EndMinigame(isCompleted);
+        if (!isCompleted)
+        {
+            ResetPieces();
+            return;
+        }
         if (finishedObject != null)
             finishedObject.SetActive(true);
 
-        this.EndMinigame();
         HandleInventoryEvents();
+
     }
 
+    private void ResetPieces()
+    {
+        foreach (ObjectPlacementPieceUI piece in objectPieces)
+        {
+            piece.ResetPiece();
+        }
+    }
 
     public void Initialize()
     {

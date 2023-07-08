@@ -1,12 +1,17 @@
+using DS.ScriptableObjects;
+using System;
 using UnityEngine;
 
 public class PresentScene4Part1Controller : MonoBehaviour
 {
-    [SerializeField] private DialogueInteraction badu;
+
+    [SerializeField] private GameObject badu;
+    [SerializeField] private GameObject recordPlayer;
+
     [SerializeField] private RuntimeAnimatorController baduMothFly;
     [SerializeField] private GameObject bedroomDoor;
+    private Animator recordPlayerAnimator;
 
-    private bool isTalkingWithBadu = false;
 	private bool recordPlayerPlaying = false;
 
 	EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
@@ -14,41 +19,20 @@ public class PresentScene4Part1Controller : MonoBehaviour
 	private void Start()
 	{
 		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.LivingRoom, true));
+        recordPlayerAnimator = recordPlayer.GetComponent<Animator>();
 	}
 
-	private void OnEnable()
+    public void BaduInteractionStarted()
     {
-        eventBrokerComponent.Subscribe<InteractionEvents.Interact>(InteractHandler);
-        eventBrokerComponent.Subscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
+        bedroomDoor.GetComponent<DialogueInteraction>().enabled = false;
+        bedroomDoor.GetComponent<SceneChangeInteraction>().enabled = true;
     }
 
-    private void OnDisable()
+    public void BaduInteractionEnded()
     {
-        eventBrokerComponent.Unsubscribe<InteractionEvents.Interact>(InteractHandler);
-        eventBrokerComponent.Unsubscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
-    }
-
-    private void InteractHandler(BrokerEvent<InteractionEvents.Interact> inEvent)
-    {
-        if (!(inEvent.Sender is UnityEngine.Object)) return;
-        UnityEngine.Object sender = (UnityEngine.Object)inEvent.Sender;
-        Debug.Log(sender);
-        Debug.Log(badu);
-        if (sender == badu)
-        {
-            bedroomDoor.GetComponent<DialogueInteraction>().enabled = false;
-            bedroomDoor.GetComponent<SceneChangeInteraction>().enabled = true;
-            isTalkingWithBadu = true;
-        }
-    }
-
-    private void InteractEndHandler(BrokerEvent<InteractionEvents.InteractEnd> inEvent)
-    {
-        if (!isTalkingWithBadu) return;
         badu.GetComponent<Animator>().runtimeAnimatorController = baduMothFly;
-		badu.GetComponent<CapsuleCollider2D>().enabled = false;
-		badu.GetComponent<CircleCollider2D>().enabled = true;
-        isTalkingWithBadu = false;
+        badu.GetComponent<CapsuleCollider2D>().enabled = false;
+        badu.GetComponent<CircleCollider2D>().enabled = true;
     }
 
 	public void ToggleRecordPlayer()
@@ -61,7 +45,9 @@ public class PresentScene4Part1Controller : MonoBehaviour
 		{
 			eventBrokerComponent.Publish(this, new AudioEvents.StopTemporaryMusic());
 		}
-
-		recordPlayerPlaying = !recordPlayerPlaying;
+        recordPlayerPlaying = !recordPlayerPlaying;
+        recordPlayerAnimator.SetTrigger("Toggle");
+        recordPlayer.GetComponent<DialogueInteraction>().enabled = !recordPlayerPlaying;
+        recordPlayer.GetComponent<EmptyInteraction>().enabled = recordPlayerPlaying;
 	}
 }

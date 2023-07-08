@@ -637,6 +637,12 @@ MonoBehaviour:
     ConstantValue: 3
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &120415270
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1227,6 +1233,12 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 0}
   <HasInteractionDistance>k__BackingField: 0
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &230839680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,6 +1325,12 @@ MonoBehaviour:
     ConstantValue: 5
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &230839684
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1882,6 +1900,12 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 0}
   <HasInteractionDistance>k__BackingField: 0
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &407709973
 GameObject:
   m_ObjectHideFlags: 0
@@ -2345,6 +2369,12 @@ MonoBehaviour:
     ConstantValue: 3
     Variable: {fileID: 0}
   <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &472213671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,6 +2430,12 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &472213674
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3628,6 +3664,12 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 0}
   <HasInteractionDistance>k__BackingField: 0
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &766729201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4585,6 +4627,12 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 0}
   <HasInteractionDistance>k__BackingField: 0
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &945368462
 GameObject:
   m_ObjectHideFlags: 0
@@ -5831,7 +5879,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ec44e52455bb5de4da491a48b1d6febc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6581,6 +6629,12 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!70 &1223718161
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -6814,13 +6868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abc1c6e20022aa94e865ec5599401fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingitems:
-  - {fileID: 11400000, guid: 4109a1a426b864c4e84946798c5ac693, type: 2}
-  - {fileID: 11400000, guid: 81adb7114a46c754d8b177107c636103, type: 2}
-  - {fileID: 11400000, guid: f136711b4bf992e4a958c4162dc0a4f9, type: 2}
-  - {fileID: 11400000, guid: 7cd749c20530cae41b181e42e292b871, type: 2}
-  - {fileID: 11400000, guid: 48d9cccea6a175041bd8d4146a3ebbb5, type: 2}
-  - {fileID: 11400000, guid: 19b530fc151647f4993e263fe086782e, type: 2}
+  startingitems: []
   Player: {fileID: 343840530}
   playableDirector: {fileID: 1926956831}
   fadeToBlack: {fileID: 1053369984}
@@ -7070,6 +7118,12 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!58 &1318754049
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8391,6 +8445,12 @@ MonoBehaviour:
     ConstantValue: 8
     Variable: {fileID: 0}
   <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &1600863217
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9603,6 +9663,12 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1647930591
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11156,6 +11222,12 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2001206762
 GameObject:
   m_ObjectHideFlags: 0
@@ -11429,6 +11501,12 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 0}
   <HasInteractionDistance>k__BackingField: 0
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2050200026
 GameObject:
   m_ObjectHideFlags: 0
@@ -11535,6 +11613,12 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &2050200030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11641,6 +11725,12 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
   birdNestChoiceDialogueNode: {fileID: 11400000, guid: 538653edb311e4e4088d857481ef195c, type: 2}
   branchBundle: {fileID: 2164314320063562592}
 --- !u!212 &2051143825
@@ -13245,6 +13335,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1053618989}
     m_Modifications:
+    - target: {fileID: 4034869546649922236, guid: 54d02c478c06ae34bb901d346aa66be3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8753207024761186846, guid: 54d02c478c06ae34bb901d346aa66be3, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.0009765625

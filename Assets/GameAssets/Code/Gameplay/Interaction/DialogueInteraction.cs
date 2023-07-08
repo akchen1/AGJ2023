@@ -2,6 +2,7 @@ using UnityEngine;
 using DS.ScriptableObjects;
 using System;
 using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
 public class DialogueInteraction : MonoBehaviour, IInteractableWorld, IPointerClickHandler
 {
@@ -13,6 +14,9 @@ public class DialogueInteraction : MonoBehaviour, IInteractableWorld, IPointerCl
 
     [field: SerializeField] public FloatReference InteractionDistance { get; set; }
     [field: SerializeField] public bool HasInteractionDistance { get; set; } = false;
+
+    [SerializeField] private UnityEvent dialogueStarted;
+    [SerializeField] private UnityEvent dialogueEnded;
 
     protected bool isInteracting;
 
@@ -28,12 +32,14 @@ public class DialogueInteraction : MonoBehaviour, IInteractableWorld, IPointerCl
 
     protected virtual void DialogueFinishHandler(BrokerEvent<DialogueEvents.DialogueFinish> obj)
     {
+        if (!isInteracting) return;
         if (isInteracting && destroyOnDialogueFinish)
         {
             Destroy(gameObject);
             return;
         }
         isInteracting = false;
+        dialogueEnded?.Invoke();
     }
 
     public void Interact()
@@ -44,6 +50,7 @@ public class DialogueInteraction : MonoBehaviour, IInteractableWorld, IPointerCl
         {
             isInteracting = true;
             interactCount++;
+            dialogueStarted?.Invoke();
         }
         if (!canInteractMultipleTimes && interactCount > 0)
         {

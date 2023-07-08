@@ -32,8 +32,8 @@ public class SceneChangeInteraction : MonoBehaviour, IInteractableWorld, IPointe
     {
         if (gameObject.Interact())
         {
+            gameObject.EndInteract();
             eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(selectedSceneName, unloadPrevious));
-
         }
     }
 

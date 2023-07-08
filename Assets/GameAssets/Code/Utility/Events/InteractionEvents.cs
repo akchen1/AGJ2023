@@ -19,6 +19,16 @@ public class InteractionEvents
         }
     }
 
+    public class InteractionStarted
+    {
+        public readonly object Interactable;
+
+        public InteractionStarted(object interactable)
+        {
+            Interactable = interactable;
+        }
+    }
+
     public class InteractEnd
     {
 

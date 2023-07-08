@@ -284,6 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1847248021}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &56618801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,6 +467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1611703343}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &73842075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,6 +627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 651759131}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &115820950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,6 +1102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1721838368}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &375582144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1205,6 +1209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1881914931}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &397425382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1311,6 +1316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1924559446}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &400721239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1417,6 +1423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 160380825}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &469814584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1599,6 +1606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1657297905}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &598581518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1674,7 +1682,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 231.92, y: 404.89}
+  m_AnchoredPosition: {x: 340, y: 407}
   m_SizeDelta: {x: 244.69995, y: 209.46997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &618486465
@@ -1705,6 +1713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 933894877}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &618486467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1887,6 +1896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 297831264}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &692503691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2289,7 +2299,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 478.64, y: 374.03}
+  m_AnchoredPosition: {x: -539, y: 383}
   m_SizeDelta: {x: 283.90894, y: 237.96997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &900414086
@@ -2320,6 +2330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 66933553}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &900414088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2856,6 +2867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1061907247}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &1130284007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3197,6 +3209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 551968857}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &1319181900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3865,6 +3878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 831660446}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &1511493858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3977,6 +3991,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 849454408060493935, guid: 46f3d908e19b0b84a801ebd0a3ed925d, type: 3}
   m_PrefabInstance: {fileID: 1512507479}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1536876856 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8229779336760689926, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
+  m_PrefabInstance: {fileID: 725279334}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1536876858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536876856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac210bd6913387f4ebd4961629c98c6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1568553688
 GameObject:
   m_ObjectHideFlags: 0
@@ -4371,7 +4402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -512, y: 406.73}
+  m_AnchoredPosition: {x: 502, y: 355}
   m_SizeDelta: {x: 248.93506, y: 213.14001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1629735177
@@ -4402,6 +4433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1651693333}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &1629735179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4778,6 +4810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 210892920}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &1696351035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4933,6 +4966,16 @@ PlayableDirector:
     value: {fileID: 1782092522}
   - key: {fileID: -1372236296891863814, guid: 5342fa82ad9ce23418a6e36421155f71, type: 2}
     value: {fileID: 1179090259}
+  - key: {fileID: 8716730429791550567, guid: 5342fa82ad9ce23418a6e36421155f71, type: 2}
+    value: {fileID: 1536876858}
+  - key: {fileID: 6057779082990038829, guid: d403b5ecb56c8124ca3bbc85a73f8405, type: 2}
+    value: {fileID: 1041809834}
+  - key: {fileID: -8193512232899340598, guid: d403b5ecb56c8124ca3bbc85a73f8405, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -3699858577387128726, guid: e18da6ced4a8bfc4f8a3c7598b4d94d3, type: 2}
+    value: {fileID: 1536876858}
+  - key: {fileID: -8483560116160160337, guid: d403b5ecb56c8124ca3bbc85a73f8405, type: 2}
+    value: {fileID: 1536876858}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1769099585
@@ -5290,6 +5333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minigame: {fileID: 1937667123}
+  canInteractMultipleTimes: 0
   <InteractionDistance>k__BackingField:
     UseConstant: 1
     ConstantValue: 3
@@ -5363,6 +5407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1776464240}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &1788912424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5852,6 +5897,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 738782406}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &2022942048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5958,6 +6004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1436315551}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &2028700835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6064,6 +6111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1500941266}
   snapping: 1
+  lockInPlace: 1
 --- !u!114 &2034325718
 MonoBehaviour:
   m_ObjectHideFlags: 0

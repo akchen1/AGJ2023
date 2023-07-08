@@ -17,9 +17,11 @@ public class MinigameEvents
     public class EndMinigame
     {
         public readonly IMinigame Minigame;
-        public EndMinigame(IMinigame minigame)
+        public readonly bool Completed;
+        public EndMinigame(IMinigame minigame, bool completed = true)
         {
             Minigame = minigame;
+            Completed = completed;
         }
     }
 }

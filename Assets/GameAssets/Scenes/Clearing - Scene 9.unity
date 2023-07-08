@@ -1450,14 +1450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e372e016b291cf4dbc58ea42c68025b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingItems:
-  - {fileID: 11400000, guid: 4109a1a426b864c4e84946798c5ac693, type: 2}
-  - {fileID: 11400000, guid: 48d9cccea6a175041bd8d4146a3ebbb5, type: 2}
-  - {fileID: 11400000, guid: 7cd749c20530cae41b181e42e292b871, type: 2}
-  - {fileID: 11400000, guid: a0667da986d93b94789634435bc87154, type: 2}
-  - {fileID: 11400000, guid: f136711b4bf992e4a958c4162dc0a4f9, type: 2}
-  - {fileID: 11400000, guid: 063cb76fc16de3a409d470f333789232, type: 2}
-  - {fileID: 11400000, guid: 42130195c55c9754b8670900391558ac, type: 2}
+  startingItems: []
   startingCutscene: {fileID: 11400000, guid: 6a4db0dbd2ecca243b7e35f52a32d944, type: 2}
   closedScrollCutscene: {fileID: 11400000, guid: aedec0d437a1d154c8abaa6d4287f2e6, type: 2}
   playableDirector: {fileID: 1565500090}

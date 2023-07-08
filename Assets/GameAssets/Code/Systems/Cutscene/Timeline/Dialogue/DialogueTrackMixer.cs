@@ -36,6 +36,7 @@ public class DialogueTrackMixer : PlayableBehaviour
         string currentText = "";
         string currentSpeaker = "";
         float currentAlpha = 0f;
+        bool showNextButton = false;
 
         if (!timelineDialogueSystem) return;
 
@@ -52,6 +53,7 @@ public class DialogueTrackMixer : PlayableBehaviour
                 currentSpeaker = input.Dialogue.Character?.CharacterName;
                 currentText = input.Dialogue.Text;
                 currentAlpha = inputWeight;
+                showNextButton = input.waitForPlayerInput || input.canSkipDialogue;
                 currentBehaviour = input;
 
                 if (currentBehaviour.waitForPlayerInput && rootPlayable.GetTime() - (currentBehaviour.EndTime - currentBehaviour.EaseOutTime) > 0.01f)
@@ -60,7 +62,7 @@ public class DialogueTrackMixer : PlayableBehaviour
                 }
             }
         }
-        timelineDialogueSystem.SetDialogue(currentSpeaker, currentText, new Color(1, 1, 1, currentAlpha));
+        timelineDialogueSystem.SetDialogue(currentSpeaker, currentText, new Color(1, 1, 1, currentAlpha), showNextButton);
     }
 
 

@@ -13,8 +13,8 @@ public static class MinigameUtility
         return rect1.Overlaps(rect2);
     }
 
-    public static void EndMinigame(this IMinigame minigame)
+    public static void EndMinigame(this IMinigame minigame, bool completed = true)
     {
-        eventBrokerComponent.Publish(minigame, new MinigameEvents.EndMinigame(minigame));
+        eventBrokerComponent.Publish(minigame, new MinigameEvents.EndMinigame(minigame, completed));
     }
 }

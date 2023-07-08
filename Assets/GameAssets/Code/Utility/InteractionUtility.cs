@@ -50,4 +50,9 @@ public static class InteractionUtility
         }, interactionType));
         return status;
     }
+
+    public static void EndInteract(this Object interactionObject)
+    {
+        eventBrokerComponent.Publish(interactionObject, new InteractionEvents.InteractEnd());
+    }
 }

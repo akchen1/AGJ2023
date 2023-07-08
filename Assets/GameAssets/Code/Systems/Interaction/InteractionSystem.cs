@@ -74,6 +74,7 @@ public class InteractionSystem
         eventBrokerComponent.Publish(this, new InventoryEvents.ToggleInventoryVisibility(false));
         currentInteraction = inEvent.Payload.Interactable;
         inEvent.Payload.Response?.Invoke(true);
+        eventBrokerComponent.Publish(this, new InteractionEvents.InteractionStarted(currentInteraction));
     }
     
     private bool CheckInRange(BrokerEvent<InteractionEvents.Interact> inEvent)
