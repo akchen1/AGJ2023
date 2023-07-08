@@ -34,7 +34,6 @@ public class SearchScene7Controller : SceneController
 
 
     [SerializeField, Header("General Store")] private GeneralStoreSubSceneController GeneralStoreSubSceneController;
-	[SerializeField] PlayableAsset generalStoreStartingCutscene;
 
 	[SerializeField] private PlaygroundSubSceneController PlaygroundSubSceneController;
 
@@ -47,12 +46,13 @@ public class SearchScene7Controller : SceneController
 	{
 		Constants.Scene7SubScenes subscene = inEvent.Payload.Subscene;
 
-		StartCoroutine(FadeBetweenCams());
-
-		currentSubScene.Disable();
-		currentSubScene = GetNextSubscene(subscene);
-		currentSubScene.Enable();
-		eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
+		StartCoroutine(FadeBetweenCams(() =>
+		{
+            eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
+            currentSubScene.Disable();
+            currentSubScene = GetNextSubscene(subscene);
+            currentSubScene.Enable();
+        }));
 	}
 
     private void GetBloodSanityResultHandler(BrokerEvent<Scene7Events.GetBloodSanityResult> obj)
@@ -68,7 +68,6 @@ public class SearchScene7Controller : SceneController
 				return MainStreetSubSceneController;
 
 			case Constants.Scene7SubScenes.GeneralStore:
-				playableDirector.Play(generalStoreStartingCutscene);
 				return GeneralStoreSubSceneController;
 
 			case Constants.Scene7SubScenes.Basement:
@@ -86,7 +85,7 @@ public class SearchScene7Controller : SceneController
 		return null;
 	}
 
-	private IEnumerator FadeBetweenCams()
+	private IEnumerator FadeBetweenCams(Action onScreenBlack = null)
 	{
 		fadeToBlack.gameObject.SetActive(true);
 		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 0);
@@ -99,6 +98,7 @@ public class SearchScene7Controller : SceneController
 
 		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 1f);
 
+		onScreenBlack?.Invoke();
 		yield return new WaitForSeconds(transitionTime);
 
 		while (fadeToBlack.color.a > 0f)

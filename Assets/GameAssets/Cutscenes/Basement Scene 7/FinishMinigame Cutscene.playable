@@ -127,8 +127,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 6af549d48d2a4ec43a5a070bde2195e2, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 3.648000000000001
   EndTime: 6.6480000000000015
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &-5819618757727253963
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -325,7 +328,25 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -352,7 +373,25 @@ MonoBehaviour:
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -406,8 +445,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: c100eebf6f9ab004f86bf3b8ec81a3b1, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 9.647999999999996
   EndTime: 12.647999999999996
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &-3827519860425008676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -501,8 +543,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 2ccf1786782eae141bc22dd43ea5052d, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 0.648
   EndTime: 3.648
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &3215883439478015347
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -559,5 +604,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: c100eebf6f9ab004f86bf3b8ec81a3b1, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 6.6480000000000015
   EndTime: 9.648000000000001
+  EaseInTime: 0.5
+  EaseOutTime: 0.5

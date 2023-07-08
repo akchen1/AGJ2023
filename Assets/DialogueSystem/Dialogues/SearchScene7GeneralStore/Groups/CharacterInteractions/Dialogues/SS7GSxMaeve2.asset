@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cabbddd164ab042e29b24f33ca0c86c0, type: 3}
-  m_Name: SS7GSxMaeve
+  m_Name: SS7GSxMaeve2
   m_EditorClassIdentifier: 
-  <DialogueName>k__BackingField: SS7GSxMaeve
-  <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+  <DialogueName>k__BackingField: SS7GSxMaeve2
+  <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
   <AudioClip>k__BackingField: {fileID: 0}
-  <Text>k__BackingField: I see what we need! Let me show you how it's done.
+  <Text>k__BackingField: So, how do we do this?
   <Choices>k__BackingField:
   - <Text>k__BackingField: 
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4a5a2297e1c20e840b812147b92b1a45, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: bca6fd7caf78f69439a1dd64ae2600f4, type: 2}
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
   <DialogueType>k__BackingField: 0
-  <IsStartingDialogue>k__BackingField: 1
+  <IsStartingDialogue>k__BackingField: 0

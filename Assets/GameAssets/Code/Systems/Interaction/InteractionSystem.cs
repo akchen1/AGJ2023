@@ -8,7 +8,7 @@ using UnityEngine;
 public class InteractionSystem
 {
     // Only one interaction event can occur at once.
-    private UnityEngine.Object currentInteraction;
+    private object currentInteraction;
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
@@ -78,7 +78,7 @@ public class InteractionSystem
     
     private bool CheckInRange(BrokerEvent<InteractionEvents.Interact> inEvent)
     {
-        IInteractableWorld worldInteraction = inEvent.Payload.Interactable.GetComponent<IInteractableWorld>();
+        IInteractableWorld worldInteraction = ((UnityEngine.Object)inEvent.Payload.Interactable).GetComponent<IInteractableWorld>();
         if (!worldInteraction.HasInteractionDistance) return true;
         bool inRange = false;
         eventBrokerComponent.Publish(this, new PlayerEvents.GetPlayerPosition(position =>
@@ -93,7 +93,9 @@ public class InteractionSystem
     private IEnumerator WaitForInRange(BrokerEvent<InteractionEvents.Interact> inEvent)
     {
         yield return new WaitUntil(() => CheckInRange(inEvent));
-        StartInteraction(inEvent);
+        IInteractableWorld interactable = inEvent.Payload.Interactable as IInteractableWorld;
+        if (interactable == null) yield break;
+        interactable.Interact();
     }
 
 }

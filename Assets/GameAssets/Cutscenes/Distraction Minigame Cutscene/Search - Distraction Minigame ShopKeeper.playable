@@ -387,8 +387,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: b4418b6f25bea884884b683377578b09, type: 2}
   canSkipDialogue: 0
+  waitForPlayerInput: 0
   StartTime: 2.75
   EndTime: 5.75
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!74 &-6325935482260413884
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -1130,7 +1133,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 5.25
+        time: 3
         value: 1
         inSlope: 0
         outSlope: 0
@@ -1139,7 +1142,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 6.25
+        time: 4
         value: 0
         inSlope: 0
         outSlope: 0
@@ -1175,7 +1178,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 6.25
+    m_StopTime: 4
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -1195,7 +1198,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 5.25
+        time: 3
         value: 1
         inSlope: 0
         outSlope: 0
@@ -1204,7 +1207,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 6.25
+        time: 4
         value: 0
         inSlope: 0
         outSlope: 0
@@ -1268,9 +1271,12 @@ MonoBehaviour:
   m_Name: DialogueClip(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 67be0ff1ef916d84681954fce1e78b49, type: 2}
-  canSkipDialogue: 0
+  canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 5.75
   EndTime: 8.75
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &5019363191766389516
 MonoBehaviour:
   m_ObjectHideFlags: 1

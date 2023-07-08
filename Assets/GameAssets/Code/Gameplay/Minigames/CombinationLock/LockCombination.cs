@@ -13,7 +13,7 @@ public class LockCombination : MonoBehaviour, IMinigame
     private string number3;
     private string number4;
     private bool solved;
-    [SerializeField] private DSDialogueSO dialogue;
+    [SerializeField] private InventoryItem gemItem;
     [SerializeField] private PlayableAsset gemCollectCutscene;
     [SerializeField] private string CorrectLockCombination = "1234";
     [SerializeField] private string EnteredLockCombination;
@@ -31,17 +31,14 @@ public class LockCombination : MonoBehaviour, IMinigame
     public void Finish()
     {
         if(solved){
-            this.EndMinigame();
-            eventBrokerComponent.Publish(this, new CutsceneEvents.PlayCutscene(gemCollectCutscene));
             playableDirector.Play(gemCollectCutscene);
-            panel.SetActive(false);
+            gemItem.AddToInventory(this);
             box.SetActive(false);
             minigameStarter.SetActive(false);
         }
-        else{
-            this.EndMinigame();
-            panel.SetActive(false);
-        }
+        this.EndMinigame();
+        panel.SetActive(false);
+        eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
     }
 
     public void Initialize()
@@ -75,6 +72,7 @@ public class LockCombination : MonoBehaviour, IMinigame
             box.GetComponent<BoxController>().OpenBox();
             eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.BoxOpen));
             gem.SetActive(true);
+            Invoke("Finish", 1.5f);
         }
     }
 }

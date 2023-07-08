@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 public static class InteractionUtility
 {
     private static EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
-    public static bool Interact(this DSDialogueSO dialogue, Object sender, Constants.Interaction.InteractionType interactionType = Constants.Interaction.InteractionType.World)
+    public static bool Interact(this DSDialogueSO dialogue, object sender, Constants.Interaction.InteractionType interactionType = Constants.Interaction.InteractionType.World)
     {
         bool status = false;
         eventBrokerComponent.Publish(sender, new InteractionEvents.Interact(sender, (valid) =>
@@ -18,7 +18,7 @@ public static class InteractionUtility
         }, interactionType));
         return status;
     }
-    public static bool Interact(this IMinigame minigame, Object sender, Constants.Interaction.InteractionType interactionType = Constants.Interaction.InteractionType.World)
+    public static bool Interact(this IMinigame minigame, object sender, Constants.Interaction.InteractionType interactionType = Constants.Interaction.InteractionType.World)
     {
         // Check if conditions are met
         if (!minigame.StartCondition()) return false;

@@ -59,7 +59,7 @@ MonoBehaviour:
     <Position>k__BackingField: {x: -200, y: 4}
   - <ID>k__BackingField: ca91ef09-3329-402a-924b-6aecc3eea07b
     <Name>k__BackingField: SS7GSxMaeve
-    <Text>k__BackingField: Here, let me show you how it's done.
+    <Text>k__BackingField: I see what we need! Let me show you how it's done.
     <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
     <Item>k__BackingField: {fileID: 0}
     <HasSceneTransition>k__BackingField: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
     <AudioClip>k__BackingField: {fileID: 0}
     <Choices>k__BackingField:
     - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 8d884ed7-db3f-4d63-812e-15bdde50fb28
       <HasSanityThreshold>k__BackingField: 0
       <SanityThreshold>k__BackingField: 0
       <SanityType>k__BackingField: 0
@@ -111,6 +111,43 @@ MonoBehaviour:
     <GroupID>k__BackingField: d11e32a9-c33e-4cad-9701-19952c12be84
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: -590, y: 403}
+  - <ID>k__BackingField: 8d884ed7-db3f-4d63-812e-15bdde50fb28
+    <Name>k__BackingField: SS7GSxMaeve2
+    <Text>k__BackingField: So, how do we do this?
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 3f041a53-947a-44bb-851d-e414588566b4
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8c9928f8-03c4-4706-ad61-21d41cc69309
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 599, y: 4}
+  - <ID>k__BackingField: 3f041a53-947a-44bb-851d-e414588566b4
+    <Name>k__BackingField: SS7GSxMaeve3
+    <Text>k__BackingField: "The shopkeeper is in the way. We need a distraction of
+      some kind\u2026"
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8c9928f8-03c4-4706-ad61-21d41cc69309
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 973, y: 4}
   <OldGroupNames>k__BackingField:
   - CharacterInteractions
   - Intro
@@ -122,6 +159,8 @@ MonoBehaviour:
       - SS7GSxLeigh
       - SS7GSxBadu
       - SS7GSxMaeve
+      - SS7GSxMaeve2
+      - SS7GSxMaeve3
     - Key: Intro
       Value:
       - SS7GSx2

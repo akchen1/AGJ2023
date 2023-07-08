@@ -14,14 +14,14 @@ public class NoConditionMinigame : MonoBehaviour, IMinigame
         minigameUI.SetActive(false);
 
         this.EndMinigame();
-        eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
+        //eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
     }
 
     public void Initialize()
     {
         active = true;
         minigameUI.SetActive(true);
-        eventBrokerComponent.Publish(this, new InputEvents.SetInputState(false));
+        //eventBrokerComponent.Publish(this, new InputEvents.SetInputState(false));
     }
 
     public bool StartCondition()

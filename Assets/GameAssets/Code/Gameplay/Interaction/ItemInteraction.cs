@@ -10,6 +10,7 @@ public class ItemInteraction : MonoBehaviour, IInteractableWorld, IPointerClickH
 	[SerializeField] public string PickupAudio;
 	[SerializeField] private bool destroyOnInteract = false;
     [SerializeField] private bool allowDragClick = false;
+    [SerializeField] private bool ignoreInteractionSystem = false;
 
     [SerializeField] private DSDialogueSO itemObtainedDialogue;
 
@@ -23,19 +24,16 @@ public class ItemInteraction : MonoBehaviour, IInteractableWorld, IPointerClickH
     public void Interact()
     {
 		if (PickupAudio != null)
-		{
-			eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(PickupAudio));
-		}
+            eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(PickupAudio));
 
         eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(item));
+
         if (itemObtainedDialogue != null)
-        {
             eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(itemObtainedDialogue));
-        }
-        if (HasInteractionDistance)
-        {
+
+        if (!ignoreInteractionSystem)
             eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
-        }
+
         if (destroyOnInteract)
             Destroy(this.gameObject);
     }
@@ -53,7 +51,7 @@ public class ItemInteraction : MonoBehaviour, IInteractableWorld, IPointerClickH
     public void OnPointerClick(PointerEventData eventData)
     {
         if (!allowDragClick && dragging) return;
-        if (gameObject.Interact())
+        if (ignoreInteractionSystem || gameObject.Interact())
         {
             Interact();
         }

@@ -36,24 +36,18 @@ public class ScrollManual : MonoBehaviour, IMinigame
 
     public void Finish()
     {
-        if (!hasTriggeredCompletedItemsDialogue)
+        if (!hasTriggeredCompletedItemsDialogue && scrollStateReference == ScrollState.ItemsObtained)
         {
-            eventBrokerComponent.Publish(this, new Scene7Events.HasCombinedItems(result =>
-            {
-                if (!result) return;
-                scrollUI.SetActive(false);
-                eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(completedItemsDialogue));
-                isInDialogue = true;
-                hasTriggeredCompletedItemsDialogue = true;
-                StartCoroutine(WaitForDialogueToFinish());
-            }));
-        }
-        if (!isInDialogue)
+            scrollUI.SetActive(false);
+            eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(completedItemsDialogue));
+            isInDialogue = true;
+            hasTriggeredCompletedItemsDialogue = true;
+            StartCoroutine(WaitForDialogueToFinish());
+        } else
         {
             this.EndMinigame();
             Destroy(this.gameObject);
-        }
-        
+        }        
     }
 
     private void DialogueFinishHandler(BrokerEvent<DialogueEvents.DialogueFinish> obj)
@@ -80,11 +74,7 @@ public class ScrollManual : MonoBehaviour, IMinigame
             sideB.sprite = backSideCondition2;
         } else if (scrollStateReference == ScrollState.ItemsObtained)
         {
-            if (hasCandle && hasVial && hasWreath && hasGem && hasClay)
-            {
-                sideB.sprite = backSideCondition1;
-            }
-
+            sideB.sprite = backSideCondition1;
         }
 
         scrollUI.SetActive(true);
@@ -115,4 +105,4 @@ public class ScrollManual : MonoBehaviour, IMinigame
     }
 
 }
-public enum ScrollState { Blank, ItemsObtained, RitualComplete }
+public enum ScrollState { Blank, ComponentsObtained, ItemsObtained, RitualComplete }

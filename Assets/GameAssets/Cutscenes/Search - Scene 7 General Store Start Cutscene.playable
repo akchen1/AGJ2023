@@ -38,9 +38,12 @@ MonoBehaviour:
   m_Name: DialogueClip(Clone)(Clone)
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: a2ab6bc9dcf3ac64ebac8bc7096729e9, type: 2}
-  canSkipDialogue: 0
+  canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 5
   EndTime: 9
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &-6022603458990848005
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -57,6 +60,28 @@ MonoBehaviour:
   retroactive: 0
   emiteOnce: 0
   <Enable>k__BackingField: 1
+--- !u!114 &-2769859380712703632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b3f20b1aa40494a8185a6a1e0ea5c4, type: 3}
+  m_Name: Animator Parameter Marker Emitter
+  m_EditorClassIdentifier: 
+  m_Time: 0
+  retroactive: 0
+  emiteOnce: 0
+  ParameterValues:
+  - ParameterName: idle
+    ParameterType: 9
+    ParameterStringValue: 
+    ParameterBoolValue: 1
+    ParameterFloatValue: 0
+    ParameterIntValue: 0
 --- !u!114 &-1585902083789737475
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -89,6 +114,7 @@ MonoBehaviour:
   m_Tracks:
   - {fileID: 6246892410244875571}
   - {fileID: 4025938999839799159}
+  - {fileID: 7994947618816748209}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
@@ -132,9 +158,12 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 3492eb1c78aad404aa88bc8f84209329, type: 2}
-  canSkipDialogue: 0
+  canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 1
   EndTime: 5
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &6246892410244875571
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -337,6 +366,30 @@ MonoBehaviour:
   m_OpenClipOffsetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_ApplyOffsets: 0
+--- !u!114 &7994947618816748209
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c02d354f91cc65d42b66bfde509fcfcb, type: 3}
+  m_Name: Animator Marker Track
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips: []
+  m_Markers:
+    m_Objects:
+    - {fileID: -2769859380712703632}
 --- !u!74 &8829163612084640571
 AnimationClip:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using Cinemachine;
 using DS.ScriptableObjects;
 using System;
 using System.Collections;
@@ -16,15 +17,16 @@ public class MainStreetSubSceneController : SubSceneController
     [SerializeField] private List<CombinedRitualItem> combinedRitualItems;
     [SerializeField] private DSDialogueSO uncombinedDialogue;
     [SerializeField] private DSDialogueSO combinedDialogue;
-    private bool hasComponents = false;
-    private bool isCombined = false;
-    
+    private bool componentsObtained;
+    private bool itemsObtained;
+    [SerializeField] private ScrollStateReference scrollStateReference;
+    private static bool hasTriggeredComponentsObtainedDialogue = false;
+    private static bool hasTriggeredItemsObtainedDialogue = false;
     public override void Enable()
     {
         base.Enable();
         eventBrokerComponent.Subscribe<InventoryEvents.AddItem>(AddItemHandler);
         eventBrokerComponent.Subscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
-        eventBrokerComponent.Subscribe<Scene7Events.HasCombinedItems>(HasCombinedItemsHandler);
         CheckEnterDialogues();
     }
 
@@ -42,12 +44,6 @@ public class MainStreetSubSceneController : SubSceneController
 
     }
 
-    ~MainStreetSubSceneController()
-    {
-        eventBrokerComponent.Unsubscribe<Scene7Events.HasCombinedItems>(HasCombinedItemsHandler);
-
-    }
-
     private void AddItemHandler(BrokerEvent<InventoryEvents.AddItem> obj)
     {
         foreach (InventoryItem item in obj.Payload.Items)
@@ -60,11 +56,6 @@ public class MainStreetSubSceneController : SubSceneController
         }
     }
 
-    private void HasCombinedItemsHandler(BrokerEvent<Scene7Events.HasCombinedItems> obj)
-    {
-        obj.Payload.Result?.Invoke(isCombined);
-    }
-
     private void InteractEndHandler(BrokerEvent<InteractionEvents.InteractEnd> obj)
     {
         if (obtainedClay)
@@ -74,44 +65,29 @@ public class MainStreetSubSceneController : SubSceneController
         }
     }
 
+    
+
     private void CheckEnterDialogues()
     {
-        isCombined = true;
-        hasComponents = true;
+        itemsObtained = true;
+        componentsObtained = true;
         foreach (CombinedRitualItem item in combinedRitualItems)
         {
-            // Do we have main item
-            eventBrokerComponent.Publish(this, new InventoryEvents.HasItem(has =>
-            {
-                // have main item go next
-                if (has)
-                {
-                    return;
-                }
-                Debug.Log("dont have " + item);
-
-                isCombined = false; // dont have main item
-                // Do we have componenets
-                if (item.Components.Count == 0) return;
-
-                eventBrokerComponent.Publish(this, new InventoryEvents.HasItem(has =>
-                {
-                    if (has) return; // we have components
-                    Debug.Log("dont have sub item for  " + item);
-
-                    hasComponents = false;
-
-                }, item.Components.ToArray()));
-            }, item.Item));
-
+            if (item.Item.CheckInInventory(this)) continue;
+            itemsObtained = false;
+            if (item.Components.Count > 0 && item.Components.CheckInInventory(this)) continue;
+            componentsObtained = false;
         }
-
-        if (!isCombined && hasComponents)
+        if (itemsObtained && !hasTriggeredItemsObtainedDialogue)
         {
-            eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(uncombinedDialogue));
-        } else if (isCombined)
+            scrollStateReference.Variable.SetValue(ScrollState.ItemsObtained);
+            hasTriggeredItemsObtainedDialogue = true;
+            combinedDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
+        } else if (!itemsObtained && componentsObtained && !hasTriggeredComponentsObtainedDialogue)
         {
-            eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(combinedDialogue));
+            scrollStateReference.Variable.SetValue(ScrollState.ComponentsObtained);
+            hasTriggeredComponentsObtainedDialogue = true;
+            uncombinedDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
         }
     }
 
