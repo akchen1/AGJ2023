@@ -21,7 +21,7 @@ public static class Constants
 		public const string BasementScene6Part2 = "Basement - Scene 6 - Part 2";
 		public const string SearchScene7MainStreet = "Search - Scene 7 Main Street";
 		public const string ClearingScene9 = "Clearing - Scene 9";
-		public const string EndingScene = "EndScene";
+		public const string EndingScene = "EndScreen";
 	}
 
 	// Used in SceneChangeMarkerEmitter Editor script to select scenes from dropdown
