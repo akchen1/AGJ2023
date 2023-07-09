@@ -6,16 +6,22 @@ public class MinigameEvents
 {
     public class StartMinigame
     {
-        public readonly IMinigame minigame;
+        public readonly IMinigame Minigame;
 
         public StartMinigame(IMinigame minigame)
         {
-            this.minigame = minigame;
+            Minigame = minigame;
         }
     }
 
     public class EndMinigame
     {
-
+        public readonly IMinigame Minigame;
+        public readonly bool Completed;
+        public EndMinigame(IMinigame minigame, bool completed = true)
+        {
+            Minigame = minigame;
+            Completed = completed;
+        }
     }
 }

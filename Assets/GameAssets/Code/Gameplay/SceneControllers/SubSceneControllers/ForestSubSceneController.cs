@@ -7,43 +7,27 @@ using UnityEngine;
 [System.Serializable]
 public class ForestSubSceneController : SubSceneController
 {
-    [SerializeField] private DSDialogueSO sanityDialogue;
-    [SerializeField] private GameObject branchBundle;
+    [Header("Obtained all items references")]
+    [Tooltip("Dialogue to trigger once all items have been collected and player enters forest")]
+    [SerializeField] private DSDialogueSO allItemsDialogue;
+    [SerializeField] private GameObject clearingSceneInteraction;
 
-    [SerializeField] DSDialogueSO allComponentsDialogue;
-    [SerializeField] GameObject clearingSceneInteraction;
+    [Header("Scroll reference")]
+    [SerializeField] [Tooltip("Reference to scroll state scriptable object")] 
+    private ScrollStateReference scrollStateReference;
 
-    private bool isSanityDialogue = false;
-    
+    private static bool hasTriggeredAllItemsObtained = false;   // Makes sure all items dialogue only triggers once
+
     public override void Enable()
     {
         base.Enable();
-        eventBrokerComponent.Subscribe<DialogueEvents.StartDialogue>(StartDialogueHandler);
-        eventBrokerComponent.Subscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
-        Debug.Log("h");
-        eventBrokerComponent.Publish(this, new Scene7Events.HasCombinedItems(result =>
-        {
-            Debug.Log(result);
-            if (result)
-            {
-                eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(allComponentsDialogue));
-                clearingSceneInteraction.SetActive(true);
-            };
-        }));
-    }
 
-    private void DialogueFinishHandler(BrokerEvent<DialogueEvents.DialogueFinish> inEvent)
-    {
-        if (isSanityDialogue)
+        if (!hasTriggeredAllItemsObtained && scrollStateReference.Value == ScrollState.ItemsObtained)
         {
-            branchBundle.SetActive(true);
-            isSanityDialogue = false;
+            allItemsDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
+            clearingSceneInteraction.SetActive(true);
+            hasTriggeredAllItemsObtained = true;
         }
-    }
-
-    private void StartDialogueHandler(BrokerEvent<DialogueEvents.StartDialogue> inEvent)
-    {
-        isSanityDialogue = inEvent.Payload.StartingDialogue == sanityDialogue;
     }
 
     public override void Update()

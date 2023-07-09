@@ -31,6 +31,7 @@ public class PrologueScene1Controller : SceneController
 
     private void EndMinigameHandler(BrokerEvent<MinigameEvents.EndMinigame> inEvent)
     {
+        if (!inEvent.Payload.Completed) return;
         playableDirector.Play(endCutscene);
     }
 }

@@ -57,10 +57,7 @@ public class BasementScene6Part2Controller : MonoBehaviour
         if (currentDialogue == startingDialoguePart1)
         {
             bookshelfCutscene.Play();
-            bookshelfCutscene.stopped += (obj) => {
-                eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(startingDialoguePart2));
-                currentDialogue = startingDialoguePart2;
-            };
+            bookshelfCutscene.stopped += OnBookshelfCutsceneStopped;
         } else if (currentDialogue == startingDialoguePart2)
         {
             currentDialogue = null;
@@ -77,9 +74,17 @@ public class BasementScene6Part2Controller : MonoBehaviour
             baduAnimator.transform.localScale = Vector3.one;
 
             baduAnimator.SetBool("isBadu", false);
+            baduAnimator.SetTrigger("fly");
             currentDialogue = null;
             basementStairs.SetActive(true);
         }
+    }
+
+    private void OnBookshelfCutsceneStopped(PlayableDirector obj)
+    {
+        eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(startingDialoguePart2));
+        currentDialogue = startingDialoguePart2;
+        bookshelfCutscene.stopped -= OnBookshelfCutsceneStopped;
     }
 
     private void EndMinigameHandler(BrokerEvent<MinigameEvents.EndMinigame> obj)

@@ -34,7 +34,7 @@ public class MoveTarget : MonoBehaviour
             hitObject = null;
         }
 
-        if (targetMover.hitGameObject != null && targetMover.hitGameObject.GetComponent<IInteractable>() != null)
+        if (targetMover.hitGameObject != null && targetMover.hitGameObject.GetComponent<IInteractableWorld>() != null)
         {
             hitObject = targetMover.hitGameObject;
         }

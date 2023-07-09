@@ -24,13 +24,4 @@ public class Scene7Events
 			SanityType = sanityType;
 		}
 	}
-
-	public class HasCombinedItems
-	{
-		public readonly Action<bool> Result;
-		public HasCombinedItems(Action<bool> result)
-		{
-			Result = result;
-		}
-	}
 }

@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: ca76e8b61670b4342876c77dd5aa33e1, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 89
   EndTime: 93
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &-8314686083925979842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -778,8 +781,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 1a19e04845fc1bf44af32c3bab4f9e1e, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 102
   EndTime: 106
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &-7389590979063920061
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -793,9 +799,12 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 6c2a7990bdcd20c48b0105e47aef6952, type: 2}
-  canSkipDialogue: 1
+  canSkipDialogue: 0
+  waitForPlayerInput: 0
   StartTime: 67.08333333333333
   EndTime: 71.08333333333333
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &-7320468940872306307
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -810,8 +819,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 8d0b2470447057645a3752b25fa152db, type: 2}
   canSkipDialogue: 0
+  waitForPlayerInput: 0
   StartTime: 32
   EndTime: 36
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &-7031625976842464196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -848,8 +860,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: d2d36883e261ffa43bcb048403fe2feb, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 98
   EndTime: 102
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &-6945899330871335767
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1788,8 +1803,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: ef20a5f2a366bfc478810ba2eb2d510a, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 62
   EndTime: 66
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &-4091707827166394938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1919,8 +1937,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 81e69e9f75620e34d8a14125a4c010d4, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 85
   EndTime: 89
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &-3365862697334244448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2856,8 +2877,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 2d2b0a8cdd388ee4680531fd4a35e238, type: 2}
   canSkipDialogue: 1
-  StartTime: 102
-  EndTime: 106
+  waitForPlayerInput: 0
+  StartTime: 106
+  EndTime: 110
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2967,8 +2991,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: da6dbce3f83d263439c89aba9d680b3f, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 50
   EndTime: 54
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &563264306260325436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3040,8 +3067,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 2f667484914e1624ca66046d5faa7859, type: 2}
   canSkipDialogue: 0
+  waitForPlayerInput: 0
   StartTime: 36
   EndTime: 40
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &1312356131205878076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3259,8 +3289,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 7ec6b88b0388154429c310d7c6ff94cd, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 54
   EndTime: 58
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &1598661808940233011
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3275,8 +3308,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 29155731bbe9c9c45b9830c18be869dc, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 58
   EndTime: 62
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &2257630477667071914
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5125,8 +5161,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 0c312e1a85ad84a4d8757e0d832aedc5, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 27
   EndTime: 31
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &3338491154750640451
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5256,8 +5295,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: a6de970afac771546a28eaa73cd34382, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 93
   EndTime: 97
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!74 &4513041550915575685
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -5456,8 +5498,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 2a772d5eaee849247870df0ffc60f0ca, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 0
   EndTime: 4
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!74 &5009422414808941570
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -5532,8 +5577,8 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 79
-        value: {x: 3.4399996, y: -1.4700003, z: 0}
-        inSlope: {x: 0, y: 0, z: 0}
+        value: {x: 3.4399996, y: -1.4700003, z: 1}
+        inSlope: {x: 0, y: 0, z: Infinity}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
@@ -5831,10 +5876,10 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 79
-        value: 0
-        inSlope: 0
+        value: 1
+        inSlope: Infinity
         outSlope: 0
-        tangentMode: 136
+        tangentMode: 7
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
@@ -5922,8 +5967,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 3576cc4796bf1ac499eeae08ad338db0, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 81
   EndTime: 85
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &6265746425274286003
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5960,8 +6008,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: b6f34c95d0745f2459e2df2c4062a836, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 23
   EndTime: 27
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &7069386044774391118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5998,8 +6049,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 6f5c27af9e0c5734eb600476f134e481, type: 2}
   canSkipDialogue: 0
+  waitForPlayerInput: 0
   StartTime: 40
   EndTime: 44
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &8514625766250471190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6074,8 +6128,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: b3338e20396b0e14c9c21e75f4b2dbeb, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 19
   EndTime: 23
+  EaseInTime: 0.5
+  EaseOutTime: 0.5
 --- !u!114 &8920315965871278130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6090,5 +6147,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 1423c1b7d9f510a4cbc8ae6b8a308090, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 12
   EndTime: 16
+  EaseInTime: 0.5
+  EaseOutTime: 0.5

@@ -21,6 +21,7 @@ public class DialogueOptionUI : MonoBehaviour
     public void Initialize(DSDialogueChoiceData dialogueOption, Action<DSDialogueChoiceData> onClickOption)
     {
         text.text = dialogueOption.Text;
+        if (button == null) button = GetComponent<Button>();
         button.onClick.AddListener(() => onClickOption?.Invoke(dialogueOption));
     }
 }

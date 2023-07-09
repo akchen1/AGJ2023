@@ -13,15 +13,15 @@ public class NoConditionMinigame : MonoBehaviour, IMinigame
         active = false;
         minigameUI.SetActive(false);
 
-        eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
-        eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
+        this.EndMinigame();
+        //eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
     }
 
     public void Initialize()
     {
         active = true;
         minigameUI.SetActive(true);
-        eventBrokerComponent.Publish(this, new InputEvents.SetInputState(false));
+        //eventBrokerComponent.Publish(this, new InputEvents.SetInputState(false));
     }
 
     public bool StartCondition()

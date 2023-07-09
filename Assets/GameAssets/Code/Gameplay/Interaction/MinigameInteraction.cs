@@ -6,30 +6,38 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
 
-public class MinigameInteraction : MonoBehaviour, IInteractable, IPointerClickHandler
+public class MinigameInteraction : MonoBehaviour, IInteractableWorld, IPointerClickHandler
 {
     [SerializeField] private GameObject minigame;
-
+    [SerializeField] protected bool canInteractMultipleTimes = false;
+    protected int interactCount = 0;
     [field: SerializeField] public FloatReference InteractionDistance { get; set; }
     [field: SerializeField] public bool HasInteractionDistance { get; set; } = false;
 
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
+    private void OnEnable()
+    {
+        
+    }
+
+    private void OnDisable()
+    {
+        
+    }
+
     public void Interact()
     {
-        IMinigame iMinigame = minigame.GetComponent<IMinigame>();
-        // Check if conditions are met
-        if (!iMinigame.StartCondition()) return;
-        
-        // Check if there's another interaction event happening
-        eventBrokerComponent.Publish(this, new InteractionEvents.Interact(this, (valid) =>
+        if (!canInteractMultipleTimes && interactCount > 0) return;
+        if (minigame.GetComponent<IMinigame>().Interact(this))
         {
-            if (valid)
-            {
-                eventBrokerComponent.Publish(this, new MinigameEvents.StartMinigame(minigame.GetComponent<IMinigame>()));
-            }
-        }));
+            interactCount++;
+        }
+        if (!canInteractMultipleTimes && interactCount > 0)
+        {
+            gameObject.layer = 0;
+        }
     }
 
     public void OnPointerClick(PointerEventData eventData)

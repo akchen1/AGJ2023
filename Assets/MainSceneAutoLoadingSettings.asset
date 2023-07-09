@@ -16,7 +16,7 @@ MonoBehaviour:
   _mainSceneProvider:
     rid: 2929843599823863808
   _mainSceneLoadedHandler:
-    rid: 2929843599823863811
+    rid: 4814421883981922305
   _playmodeExitedHandler:
     rid: 2929843599823863810
   references:
@@ -26,5 +26,5 @@ MonoBehaviour:
       type: {class: FirstSceneInBuildSettings, ns: SaG.MainSceneAutoLoading.MainSceneProviders, asm: SaG.MainSceneAutoLoading.Editor}
     - rid: 2929843599823863810
       type: {class: RestoreSceneManagerSetup, ns: SaG.MainSceneAutoLoading.PlaymodeExitedHandlers, asm: SaG.MainSceneAutoLoading.Editor}
-    - rid: 2929843599823863811
+    - rid: 4814421883981922305
       type: {class: DelegateToInSceneImplementations, ns: SaG.MainSceneAutoLoading.MainSceneLoadedHandlers, asm: SaG.MainSceneAutoLoading.Editor}

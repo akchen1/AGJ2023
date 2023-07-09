@@ -10,6 +10,7 @@ public class DialogueTrackMixer : PlayableBehaviour
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
     private Playable playable;
+    private Playable rootPlayable;
     private DialogueClipStartBehaviour currentBehaviour;
 
     public override void OnGraphStart(Playable playable)
@@ -17,16 +18,16 @@ public class DialogueTrackMixer : PlayableBehaviour
         base.OnGraphStart(playable);
         eventBrokerComponent.Subscribe<CutsceneEvents.TryNextDialogue>(TryNextDialogueHandler);
         this.playable = playable;
+        rootPlayable = playable.GetGraph().GetRootPlayable(0);
         eventBrokerComponent.Publish(this, new CutsceneEvents.SetRaycastTarget(true));
     }
-
+    
     public override void OnGraphStop(Playable playable)
     {
         base.OnGraphStop(playable);
         eventBrokerComponent.Unsubscribe<CutsceneEvents.TryNextDialogue>(TryNextDialogueHandler);
         eventBrokerComponent.Publish(this, new CutsceneEvents.SetRaycastTarget(false));
     }
-
 
     public override void ProcessFrame(Playable playable, FrameData info, object playerData)
     {
@@ -35,6 +36,7 @@ public class DialogueTrackMixer : PlayableBehaviour
         string currentText = "";
         string currentSpeaker = "";
         float currentAlpha = 0f;
+        bool showNextButton = false;
 
         if (!timelineDialogueSystem) return;
 
@@ -51,17 +53,29 @@ public class DialogueTrackMixer : PlayableBehaviour
                 currentSpeaker = input.Dialogue.Character?.CharacterName;
                 currentText = input.Dialogue.Text;
                 currentAlpha = inputWeight;
+                showNextButton = input.waitForPlayerInput || input.canSkipDialogue;
                 currentBehaviour = input;
+
+                if (currentBehaviour.waitForPlayerInput && rootPlayable.GetTime() - (currentBehaviour.EndTime - currentBehaviour.EaseOutTime) > 0.01f)
+                {
+                    rootPlayable.SetSpeed(0f);
+                }
             }
         }
-        timelineDialogueSystem.SetDialogue(currentSpeaker, currentText, new Color(1, 1, 1, currentAlpha));
+        timelineDialogueSystem.SetDialogue(currentSpeaker, currentText, new Color(1, 1, 1, currentAlpha), showNextButton);
     }
 
 
     private void TryNextDialogueHandler(BrokerEvent<CutsceneEvents.TryNextDialogue> inEvent)
     {
         if (currentBehaviour == null) return;
-        if (!currentBehaviour.canSkipDialogue) return;
-        playable.GetGraph().GetRootPlayable(0).SetTime((float)currentBehaviour.EndTime);
+
+        double speed = rootPlayable.GetSpeed();
+
+        if (currentBehaviour.canSkipDialogue)
+            rootPlayable.SetTime((float)currentBehaviour.EndTime);
+
+        if (speed == 0f)
+            rootPlayable.SetSpeed(1f);
     }
 }

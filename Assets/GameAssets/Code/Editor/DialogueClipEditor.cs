@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 
 [CustomEditor(typeof(DialogueClip))]
+[CanEditMultipleObjects]
 public class DialogueClipEditor : Editor
 {
     public override void OnInspectorGUI()

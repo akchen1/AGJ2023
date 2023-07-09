@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System;
 
 public class InventoryItemUI : MonoBehaviour, IPointerClickHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     [SerializeField] private Image itemIcon;
+    private RectTransform viewPort;
     public InventoryItem inventoryItem { get; private set; }
 
     private bool selected;
@@ -15,6 +17,8 @@ public class InventoryItemUI : MonoBehaviour, IPointerClickHandler, IDragHandler
 
     private GameObject dragIcon;
     private static Canvas canvas;
+
+    private Vector3[] viewPortCorners = new Vector3[4];
     private void Awake()
     {
         //itemIcon = GetComponent<Image>();
@@ -24,10 +28,13 @@ public class InventoryItemUI : MonoBehaviour, IPointerClickHandler, IDragHandler
         }
     }
 
-    public void Initialize(InventoryItem inventoryItem)
+    public void Initialize(InventoryItem inventoryItem, RectTransform viewPort)
     {
         this.inventoryItem = inventoryItem;
         itemIcon.sprite = inventoryItem.ItemIcon;
+        this.viewPort = viewPort;
+
+        viewPort.GetWorldCorners(viewPortCorners);
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -61,6 +68,19 @@ public class InventoryItemUI : MonoBehaviour, IPointerClickHandler, IDragHandler
     public void OnDrag(PointerEventData data)
     {
         SetDraggedPosition(data);
+        CheckScrollBounds();
+    }
+
+    private void CheckScrollBounds()
+    {
+        if (dragIcon.transform.position.y > viewPortCorners[2].y)
+        {
+            eventBrokerComponent.Publish(this, new InventoryEvents.ScrollInventory(false));
+        }
+        else if (dragIcon.transform.position.y < viewPortCorners[0].y)
+        {
+            eventBrokerComponent.Publish(this, new InventoryEvents.ScrollInventory(true));
+        }
     }
 
     private void SetDraggedPosition(PointerEventData data)
@@ -86,9 +106,8 @@ public class InventoryItemUI : MonoBehaviour, IPointerClickHandler, IDragHandler
         InventoryItemUI hitItem;
         foreach (RaycastResult result in results)
         {
-            Debug.Log("Hit " + result.gameObject.name);
             hitItem = result.gameObject.GetComponent<InventoryItemUI>();
-            if (hitItem != null )
+            if (hitItem != null && hitItem != this)
             {
                 eventBrokerComponent.Publish(this, new InventoryEvents.DragCombineItem(inventoryItem, hitItem.inventoryItem));
                 return;

@@ -1,26 +1,26 @@
+using DS.ScriptableObjects;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.UI;
-using Cinemachine;
-using static UnityEngine.Rendering.VolumeComponent;
-using DS.ScriptableObjects;
 
 public class SearchScene7Controller : SceneController
 {
-	[Header("testing")]
+	[Header("Testing")]
 	public InventoryItem[] startingitems;
 
+	[Header("Initialization")]
 	[SerializeField] GameObject Player;
-
+	[SerializeField] private DSDialogueSO startingDialogue;
 	[SerializeField] private PlayableDirector playableDirector;
+
+	[Header("Subscene transitions")]
 	[SerializeField] private Image fadeToBlack;
 	[SerializeField] private float transitionSpeedMultiplier;
 	[SerializeField] private float transitionTime;
 
-	[SerializeField] private DialogueInteraction startingDialogue;
 
 	[SerializeField, Header("Main Street")]
     private MainStreetSubSceneController MainStreetSubSceneController;
@@ -35,12 +35,8 @@ public class SearchScene7Controller : SceneController
 
 
     [SerializeField, Header("General Store")] private GeneralStoreSubSceneController GeneralStoreSubSceneController;
-	[SerializeField] PlayableAsset generalStoreStartingCutscene;
-
-	[SerializeField] private PlaygroundSubSceneController PlaygroundSubSceneController;
 
 	private SubSceneController currentSubScene;
-    private Vector3 previousMainStreetLocation;
 
 	EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
@@ -48,12 +44,13 @@ public class SearchScene7Controller : SceneController
 	{
 		Constants.Scene7SubScenes subscene = inEvent.Payload.Subscene;
 
-		StartCoroutine(FadeBetweenCams());
-
-		currentSubScene.Disable();
-		currentSubScene = GetNextSubscene(subscene);
-		currentSubScene.Enable();
-		eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
+		StartCoroutine(FadeBetweenCams(() =>
+		{
+            eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
+            currentSubScene.Disable();
+            currentSubScene = GetNextSubscene(subscene);
+            currentSubScene.Enable();
+        }));
 	}
 
     private void GetBloodSanityResultHandler(BrokerEvent<Scene7Events.GetBloodSanityResult> obj)
@@ -69,7 +66,6 @@ public class SearchScene7Controller : SceneController
 				return MainStreetSubSceneController;
 
 			case Constants.Scene7SubScenes.GeneralStore:
-				playableDirector.Play(generalStoreStartingCutscene);
 				return GeneralStoreSubSceneController;
 
 			case Constants.Scene7SubScenes.Basement:
@@ -80,14 +76,11 @@ public class SearchScene7Controller : SceneController
 
 			case Constants.Scene7SubScenes.LivingRoom:
 				return LivingRoomSubSceneController;
-
-			case Constants.Scene7SubScenes.Playground:
-				return PlaygroundSubSceneController;
 		}
 		return null;
 	}
 
-	private IEnumerator FadeBetweenCams()
+	private IEnumerator FadeBetweenCams(Action onScreenBlack = null)
 	{
 		fadeToBlack.gameObject.SetActive(true);
 		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 0);
@@ -100,6 +93,7 @@ public class SearchScene7Controller : SceneController
 
 		fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 1f);
 
+		onScreenBlack?.Invoke();
 		yield return new WaitForSeconds(transitionTime);
 
 		while (fadeToBlack.color.a > 0f)
@@ -124,8 +118,7 @@ public class SearchScene7Controller : SceneController
 
     private void PlayStartingDialogue()
     {
-		IInteractable interactable = startingDialogue.GetComponent<IInteractable>();
-        interactable.Interact();
+		startingDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
     }
 
     private void OnEnable()

@@ -20,6 +20,8 @@ public class DialogueTrack : TrackAsset
             {
                 dialogueClip.StartTime = clip.start;
                 dialogueClip.EndTime = clip.end;
+                dialogueClip.EaseInTime = clip.easeInDuration;
+                dialogueClip.EaseOutTime = clip.easeOutDuration;
             }
         }
         return ScriptPlayable<DialogueTrackMixer>.Create(graph, inputCount);

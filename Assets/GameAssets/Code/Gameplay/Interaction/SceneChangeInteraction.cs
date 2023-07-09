@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class SceneChangeInteraction : MonoBehaviour, IInteractable, IPointerClickHandler
+public class SceneChangeInteraction : MonoBehaviour, IInteractableWorld, IPointerClickHandler
 {
     [HideInInspector]
     public string selectedSceneName;
@@ -30,13 +30,11 @@ public class SceneChangeInteraction : MonoBehaviour, IInteractable, IPointerClic
 
     public void Interact()
     {
-        eventBrokerComponent.Publish(this, new InteractionEvents.Interact(this, valid =>
+        if (gameObject.Interact())
         {
-            if (valid)
-            {
-                eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(selectedSceneName, unloadPrevious));
-            }
-        }));
+            gameObject.EndInteract();
+            eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(selectedSceneName, unloadPrevious));
+        }
     }
 
     public void OnPointerClick(PointerEventData eventData)

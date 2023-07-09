@@ -25,7 +25,7 @@ public class DistractionMinigame : MonoBehaviour, IMinigame
     {
         fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, 1f);
         fadeToBlack.gameObject.SetActive(true);
-        eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+        this.EndMinigame();
         playableDirector.Play(shopKeeperCutscene);
         panel.SetActive(false);
     }

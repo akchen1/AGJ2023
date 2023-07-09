@@ -5,7 +5,7 @@ using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Scene7Interaction : MonoBehaviour, IInteractable, IPointerClickHandler
+public class Scene7Interaction : MonoBehaviour, IInteractableWorld, IPointerClickHandler
 {
 	[SerializeField] private Constants.Scene7SubScenes subscene;
     [field: SerializeField] public FloatReference InteractionDistance { get; set; }
@@ -27,13 +27,11 @@ public class Scene7Interaction : MonoBehaviour, IInteractable, IPointerClickHand
 
 	public void Interact()
 	{
-		eventBrokerComponent.Publish(this, new InteractionEvents.Interact(this, valid =>
+		if (gameObject.Interact())
 		{
-			if (valid)
-			{
-				eventBrokerComponent.Publish(this, new Scene7Events.ChangeSubscene(subscene));
-			}
-		}));
+            eventBrokerComponent.Publish(this, new Scene7Events.ChangeSubscene(subscene));
+
+        }
 	}
 
 	public void OnPointerClick(PointerEventData eventData)

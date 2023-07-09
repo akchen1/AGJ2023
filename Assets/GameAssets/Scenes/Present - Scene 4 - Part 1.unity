@@ -326,11 +326,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: 34fa954cff7a2d04284a7f74320f7e49, type: 2}
   canInteractMultipleTimes: 1
+  destroyOnDialogueFinish: 0
   <InteractionDistance>k__BackingField:
     UseConstant: 1
     ConstantValue: 6
     Variable: {fileID: 0}
   <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &149742970
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -367,10 +374,10 @@ GameObject:
   m_Component:
   - component: {fileID: 210106515}
   - component: {fileID: 210106519}
-  - component: {fileID: 210106518}
-  - component: {fileID: 210106517}
   - component: {fileID: 210106516}
   - component: {fileID: 210106520}
+  - component: {fileID: 210106521}
+  - component: {fileID: 210106522}
   m_Layer: 6
   m_Name: RecordPlayer
   m_TagString: Untagged
@@ -419,67 +426,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4933333, y: 1.3866667}
   m_EdgeRadius: 0
---- !u!114 &210106517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210106514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 210106518}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Toggle
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1134978600}
-          m_TargetAssemblyTypeName: PresentScene4Part1Controller, Assembly-CSharp
-          m_MethodName: ToggleRecordPlayer
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!95 &210106518
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210106514}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 030caa6eca530e34293f221d7582f636, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &210106519
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -546,11 +492,82 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: 1f1f3513415330945a25a229a71c6132, type: 2}
   canInteractMultipleTimes: 1
+  destroyOnDialogueFinish: 0
   <InteractionDistance>k__BackingField:
     UseConstant: 1
     ConstantValue: 4
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1134978600}
+        m_TargetAssemblyTypeName: PresentScene4Part1Controller, Assembly-CSharp
+        m_MethodName: ToggleRecordPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &210106521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210106514}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8533f0cd91c0c4684345a3d6739148, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <HasInteractionDistance>k__BackingField: 1
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 4
+    Variable: {fileID: 0}
+  interactionStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1134978600}
+        m_TargetAssemblyTypeName: PresentScene4Part1Controller, Assembly-CSharp
+        m_MethodName: ToggleRecordPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!95 &210106522
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210106514}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 030caa6eca530e34293f221d7582f636, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &220943584
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,7 +974,7 @@ Transform:
   - {fileID: 452980249}
   - {fileID: 725911940}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &320596321
 GameObject:
@@ -1027,6 +1044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 755669583}
   snapping: 1
+  lockInPlace: 0
 --- !u!114 &320596325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1690,7 +1708,6 @@ GameObject:
   m_Component:
   - component: {fileID: 716542057}
   - component: {fileID: 716542059}
-  - component: {fileID: 716542058}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -1713,49 +1730,6 @@ Transform:
   m_Father: {fileID: 1407430285}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &716542058
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716542056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
-  m_LookaheadTime: 0
-  m_LookaheadSmoothing: 0
-  m_LookaheadIgnoreY: 0
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
-  m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
-  m_ScreenY: 0.5
-  m_CameraDistance: 10
-  m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
-  m_DeadZoneDepth: 0
-  m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
-  m_BiasX: 0
-  m_BiasY: 0
-  m_CenterOnActivate: 1
-  m_GroupFramingMode: 2
-  m_AdjustmentMode: 0
-  m_GroupFramingSize: 0.8
-  m_MaxDollyIn: 5000
-  m_MaxDollyOut: 5000
-  m_MinimumDistance: 1
-  m_MaximumDistance: 5000
-  m_MinimumFOV: 3
-  m_MaximumFOV: 60
-  m_MinimumOrthoSize: 1
-  m_MaximumOrthoSize: 5000
 --- !u!114 &716542059
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1836,6 +1810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1452764918}
   snapping: 1
+  lockInPlace: 0
 --- !u!114 &723311940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1947,6 +1922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1155489283}
   snapping: 1
+  lockInPlace: 0
 --- !u!114 &737006726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2403,6 +2379,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939590880}
   m_CullTransparentMesh: 1
+--- !u!1 &1001572269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1001572271}
+  - component: {fileID: 1001572270}
+  m_Layer: 7
+  m_Name: Boundaries
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!60 &1001572270
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001572269}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.034248352, y: 1.308178}
+      - {x: -8.432891, y: 1.028095}
+      - {x: -8.351601, y: 0.087574005}
+      - {x: -1.8867416, y: 0.016910553}
+      - {x: -1.8619537, y: -1.0632782}
+      - {x: -0.51556534, y: -1.0256804}
+      - {x: 1.0809174, y: -1.1774788}
+      - {x: 4.394928, y: -1.1986313}
+      - {x: 6.844433, y: -1.1747856}
+      - {x: 7.9851947, y: -1.2920347}
+      - {x: 8.500534, y: -1.2787197}
+      - {x: 9.088767, y: 0.18567109}
+      - {x: 9.531315, y: 0.11467105}
+      - {x: 9.510549, y: -1.4744389}
+      - {x: 9.446442, y: -2.6432228}
+      - {x: 9.594822, y: -5.3470116}
+      - {x: -9.395988, y: -5.31876}
+      - {x: -9.386757, y: -4.1884956}
+      - {x: -7.878937, y: -4.1128883}
+      - {x: -7.04158, y: 0.07312775}
+      - {x: -9.714767, y: 0.0811615}
+      - {x: -9.696037, y: -5.4787216}
+      - {x: 9.721722, y: -5.5659027}
+      - {x: 9.745647, y: -3.77499}
+      - {x: 9.687061, y: -2.6506538}
+      - {x: 9.702539, y: -0.7806432}
+      - {x: 9.751857, y: 0.73832315}
+--- !u!4 &1001572271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001572269}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1020905448
 GameObject:
   m_ObjectHideFlags: 0
@@ -2574,6 +2634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 939590881}
   snapping: 1
+  lockInPlace: 0
 --- !u!114 &1092628068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2686,11 +2747,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: 10d3de2045a4c7f45bea4268d9e995a7, type: 2}
   canInteractMultipleTimes: 1
+  destroyOnDialogueFinish: 0
   <InteractionDistance>k__BackingField:
     UseConstant: 0
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &1128960732
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2772,7 +2840,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6def524363dbdd14681d3138faf5db61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  badu: {fileID: 1500384584}
+  badu: {fileID: 1341255093}
+  recordPlayer: {fileID: 210106514}
   baduMothFly: {fileID: 9100000, guid: 0178002bee54371409f82ee270800b26, type: 2}
   bedroomDoor: {fileID: 1947858015}
 --- !u!4 &1134978601
@@ -3079,6 +3148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 42412858}
   snapping: 1
+  lockInPlace: 0
 --- !u!114 &1342306492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3249,6 +3319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1785917591}
   snapping: 1
+  lockInPlace: 0
 --- !u!114 &1360512882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3426,6 +3497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1020905449}
   snapping: 1
+  lockInPlace: 0
 --- !u!114 &1442719146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3632,7 +3704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3682,12 +3754,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: daa28d5573f028c4da8f7a087788337d, type: 2}
-  canInteractMultipleTimes: 1
+  canInteractMultipleTimes: 0
+  destroyOnDialogueFinish: 0
   <InteractionDistance>k__BackingField:
     UseConstant: 0
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1134978600}
+        m_TargetAssemblyTypeName: PresentScene4Part1Controller, Assembly-CSharp
+        m_MethodName: BaduInteractionEnded
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1947858016}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1947858020}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!70 &1500384585
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3788,6 +3903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 244070976}
   snapping: 1
+  lockInPlace: 0
 --- !u!114 &1503858625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3894,6 +4010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 893185293}
   snapping: 1
+  lockInPlace: 0
 --- !u!114 &1511285873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4000,6 +4117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 222072392}
   snapping: 1
+  lockInPlace: 0
 --- !u!114 &1613866102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4169,7 +4287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3955062394875495140, guid: c3086fc414f66c94fbadb677578bb244, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3955062394875495140, guid: c3086fc414f66c94fbadb677578bb244, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4221,7 +4339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6459971230640332824, guid: c3086fc414f66c94fbadb677578bb244, type: 3}
       propertyPath: maxSpeed
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3086fc414f66c94fbadb677578bb244, type: 3}
@@ -4293,6 +4411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 693094129}
   snapping: 1
+  lockInPlace: 0
 --- !u!114 &1650930467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4592,7 +4711,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1786344022}
   - component: {fileID: 1786344021}
-  - component: {fileID: 1786344020}
   m_Layer: 0
   m_Name: Scene
   m_TagString: Untagged
@@ -4600,35 +4718,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!60 &1786344020
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1786344019}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 19.44, y: 10.933333}
-    newSize: {x: 19.44, y: 10.933333}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -14.580001, y: 8.20125}
-      - {x: -14.580001, y: -8.20125}
-      - {x: 14.580001, y: -8.20125}
-      - {x: 14.580001, y: 8.20125}
 --- !u!212 &1786344021
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4785,7 +4874,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1947858019}
   - component: {fileID: 1947858018}
-  - component: {fileID: 1947858017}
   - component: {fileID: 1947858016}
   - component: {fileID: 1947858020}
   m_Layer: 6
@@ -4802,7 +4890,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947858015}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -4821,25 +4909,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.39, y: 1.86}
   m_EdgeRadius: 0
---- !u!114 &1947858017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1947858015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 490ec6b3a25fe8249a940c45df8a0494, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 7e9342a926d911a48a12551de6dca30d, type: 2}
-  canInteractMultipleTimes: 1
-  <InteractionDistance>k__BackingField:
-    UseConstant: 0
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
-  <HasInteractionDistance>k__BackingField: 0
 --- !u!212 &1947858018
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5039,6 +5108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 4106289733189523253, guid: eb784dc342250784a99853dddd63a79a, type: 3}
+      propertyPath: layerMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 7199157781805307252, guid: eb784dc342250784a99853dddd63a79a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -5157,6 +5230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 1281130577}
   snapping: 1
+  lockInPlace: 0
 --- !u!114 &2085268801
 MonoBehaviour:
   m_ObjectHideFlags: 0

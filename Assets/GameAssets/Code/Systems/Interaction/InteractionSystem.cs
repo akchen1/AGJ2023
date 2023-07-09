@@ -3,13 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.Rendering.VolumeComponent;
 
 [System.Serializable]
 public class InteractionSystem
 {
     // Only one interaction event can occur at once.
-    private IInteractable currentInteraction;
+    private object currentInteraction;
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
@@ -42,7 +41,7 @@ public class InteractionSystem
             return;
         }
 
-        if (CheckInRange(inEvent))
+        if (inEvent.Payload.InteractType == Constants.Interaction.InteractionType.Virtual || CheckInRange(inEvent))
         {
             StartInteraction(inEvent);
         } else
@@ -75,16 +74,19 @@ public class InteractionSystem
         eventBrokerComponent.Publish(this, new InventoryEvents.ToggleInventoryVisibility(false));
         currentInteraction = inEvent.Payload.Interactable;
         inEvent.Payload.Response?.Invoke(true);
+        eventBrokerComponent.Publish(this, new InteractionEvents.InteractionStarted(currentInteraction));
     }
     
     private bool CheckInRange(BrokerEvent<InteractionEvents.Interact> inEvent)
     {
-        if (!inEvent.Payload.Interactable.HasInteractionDistance) return true;
+        IInteractableWorld worldInteraction = ((UnityEngine.Object)inEvent.Payload.Interactable).GetComponent<IInteractableWorld>();
+        if (!worldInteraction.HasInteractionDistance) return true;
         bool inRange = false;
         eventBrokerComponent.Publish(this, new PlayerEvents.GetPlayerPosition(position =>
         {
-            float distance = (((UnityEngine.Object)inEvent.Sender).GetComponent<Transform>().position - position).magnitude;
-            inRange = distance <= inEvent.Payload.Interactable.InteractionDistance;
+            Collider2D collider = ((UnityEngine.Object)inEvent.Sender).GetComponent<Collider2D>();
+            float distance = (collider.bounds.center - position).magnitude;
+            inRange = distance <= worldInteraction.InteractionDistance;
         }));
         return inRange;
     }
@@ -92,7 +94,9 @@ public class InteractionSystem
     private IEnumerator WaitForInRange(BrokerEvent<InteractionEvents.Interact> inEvent)
     {
         yield return new WaitUntil(() => CheckInRange(inEvent));
-        StartInteraction(inEvent);
+        IInteractableWorld interactable = inEvent.Payload.Interactable as IInteractableWorld;
+        if (interactable == null) yield break;
+        interactable.Interact();
     }
 
 }

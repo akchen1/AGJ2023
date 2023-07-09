@@ -12,6 +12,7 @@ public class TimelineDialogueSystem : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private Image textBackground;
     [SerializeField] private Image cutsceneDialogueBackground;
+    [SerializeField] private Image nextButton;
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
@@ -30,13 +31,15 @@ public class TimelineDialogueSystem : MonoBehaviour
         cutsceneDialogueBackground.raycastTarget = obj.Payload.Active;
     }
 
-    public void SetDialogue(string speaker, string dialogueText, Color dialogueColor)
+    public void SetDialogue(string speaker, string dialogueText, Color dialogueColor, bool showNext)
     {
         nameText.text = speaker;
         nameText.color = dialogueColor;
         text.text = dialogueText;
         text.color = dialogueColor;
         textBackground.color = dialogueColor;
+        nextButton.enabled = showNext;
+        nextButton.color = dialogueColor;
 
         text.alignment = speaker == "" || speaker == null ? TextAlignmentOptions.Center : TextAlignmentOptions.Left;
 

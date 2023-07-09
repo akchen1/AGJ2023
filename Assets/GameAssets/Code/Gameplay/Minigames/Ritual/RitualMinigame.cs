@@ -7,13 +7,17 @@ public class RitualMinigame : MonoBehaviour, IMinigame
 {
     [SerializeField] private GameObject minigame;
     [SerializeField] private List<RitualOrder> order;
+    [SerializeField] private List<InventoryItem> requiredItems;
 
     private int currentLevel = 0;
     private bool active = false;
+    private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     public void Finish()
     {
         minigame.SetActive(false);
         active = false;
+        requiredItems.RemoveFromInventory(this);
+        this.EndMinigame();
     }
 
     public void Initialize()
@@ -25,7 +29,8 @@ public class RitualMinigame : MonoBehaviour, IMinigame
 
     public bool StartCondition()
     {
-        return true;
+        // TODO: Add feedback if false
+        return requiredItems.CheckInInventory(this);
     }
 
     private void Update()

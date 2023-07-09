@@ -21,6 +21,7 @@ public static class Constants
 		public const string BasementScene6Part2 = "Basement - Scene 6 - Part 2";
 		public const string SearchScene7MainStreet = "Search - Scene 7 Main Street";
 		public const string ClearingScene9 = "Clearing - Scene 9";
+		public const string EndingScene = "EndScene";
 	}
 
 	// Used in SceneChangeMarkerEmitter Editor script to select scenes from dropdown
@@ -37,8 +38,9 @@ public static class Constants
 			SceneNames.MainstreetScene6Part1,
 			SceneNames.BasementScene6Part2,
             SceneNames.SearchScene7MainStreet,
-			SceneNames.ClearingScene9
-		};
+			SceneNames.ClearingScene9,
+			SceneNames.EndingScene
+        };
 
 	public enum Scene7SubScenes
 	{
@@ -47,7 +49,6 @@ public static class Constants
 		Basement = 2,
 		Forest = 3,
 		LivingRoom = 4,
-		Playground = 5,
 	}
 	#endregion
 
@@ -120,4 +121,11 @@ public static class Constants
 		public enum SanityType { Neutral = 0 , Negative = -1 , Positive = 1 }
 	}
     #endregion Sanity
+
+    #region Interaction
+	public struct Interaction
+	{
+		public enum InteractionType { World, Virtual }
+	}
+    #endregion
 }

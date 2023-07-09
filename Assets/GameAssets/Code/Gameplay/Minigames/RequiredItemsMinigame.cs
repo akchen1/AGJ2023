@@ -16,7 +16,7 @@ public class RequiredItemsMinigame : MonoBehaviour, IMinigame
         active = false;
         minigameUI.SetActive(false);
 
-        eventBrokerComponent.Publish(this, new MinigameEvents.EndMinigame());
+        this.EndMinigame();
         eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
     }
 
@@ -35,7 +35,7 @@ public class RequiredItemsMinigame : MonoBehaviour, IMinigame
     private void Update()
     {
         if (!active) return;
-        if (requiredItems.CheckIfHasAllRequiredItems(this))
+        if (requiredItems.CheckInInventory(this))
         {
             Finish();
         }
