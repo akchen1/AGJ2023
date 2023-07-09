@@ -63,4 +63,14 @@ public class InventoryEvents
 			Visible = visible;
 		}
 	}
+
+	public class ScrollInventory
+	{
+		public readonly bool Down;
+
+		public ScrollInventory(bool down)
+		{
+			Down = down;
+		}
+	}
 }

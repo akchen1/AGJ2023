@@ -8,17 +8,31 @@ using UnityEngine.Playables;
 [System.Serializable]
 public class LivingRoomSubSceneController : SubSceneController
 {
+    [Header("Drawer minigame")]
+    [Tooltip("Inventory item that triggers maeve leave cutscene")]
     [SerializeField] private InventoryItem pocketKnife;
+    [Tooltip("Dialogue to play once maeve exits the room")]
     [SerializeField] private DSDialogueSO baduSanityDialogue;
+
+    [Tooltip("Dialogue node of to either break or not break the vase")]
     [SerializeField] private DSDialogueSO sanityChoiceDialogueNode;
+
+    [Header("Cutscenes")]
     [SerializeField] private PlayableDirector director;
+    
+    [Tooltip("Triggered when pocket knife is obtained")]
     [SerializeField] private PlayableAsset maeveLeaveCutscene;
+
+    [Tooltip("Trigged when break sanity choice is chosen")]
     [SerializeField] private PlayableAsset vaseBreakCutscene;
 
+    [Header("Animators")]
     [SerializeField] private Animator baduAnimator;
+
     private bool pocketKnifeObtained = false;
     private bool isFirstInteract = true;
     private bool sanityDialogueStarted = false;
+
     public override void Enable()
     {
         base.Enable();
@@ -28,8 +42,6 @@ public class LivingRoomSubSceneController : SubSceneController
         eventBrokerComponent.Subscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
         
         baduAnimator.SetTrigger(pocketKnifeObtained ? "fly" : "idle");
-
-        
     }
 
     public override void Disable()

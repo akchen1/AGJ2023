@@ -32,7 +32,10 @@ public class LockCombination : MonoBehaviour, IMinigame
     {
         if(solved){
             playableDirector.Play(gemCollectCutscene);
-            gemItem.AddToInventory(this);
+            if (!gemItem.CheckInInventory(this))
+            {
+                gemItem.AddToInventory(this);
+            }
             box.SetActive(false);
             minigameStarter.SetActive(false);
         }
@@ -72,7 +75,7 @@ public class LockCombination : MonoBehaviour, IMinigame
             box.GetComponent<BoxController>().OpenBox();
             eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.BoxOpen));
             gem.SetActive(true);
-            Invoke("Finish", 1.5f);
+            //Invoke("Finish", 1.5f);
         }
     }
 }

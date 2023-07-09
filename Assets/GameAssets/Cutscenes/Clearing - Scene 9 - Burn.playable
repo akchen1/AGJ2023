@@ -171,6 +171,22 @@ MonoBehaviour:
   EndTime: 12
   EaseInTime: 0.5
   EaseOutTime: 0.5
+--- !u!114 &-3127533108439215621
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b33c080cc27dc78479ee6d73f07d9e52, type: 3}
+  m_Name: Scene Change Marker Emitter
+  m_EditorClassIdentifier: 
+  m_Time: 66
+  retroactive: 0
+  emiteOnce: 0
+  selectedSceneName: EndingScene
 --- !u!114 &-2162069416428024519
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -308,6 +324,7 @@ MonoBehaviour:
     m_Objects:
     - {fileID: 5069677741740119863}
     - {fileID: 6724685740799753680}
+    - {fileID: -3127533108439215621}
 --- !u!114 &5069677741740119863
 MonoBehaviour:
   m_ObjectHideFlags: 1

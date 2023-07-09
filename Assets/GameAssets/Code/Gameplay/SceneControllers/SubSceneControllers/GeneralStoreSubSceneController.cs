@@ -7,9 +7,11 @@ using UnityEngine.Playables;
 [System.Serializable]
 public class GeneralStoreSubSceneController : SubSceneController
 {
-    [SerializeField] private ItemInteraction matches;
-    [SerializeField] private ItemInteraction twine;
+    [Header("Minigame completion colliders to enable")]
+    [SerializeField] private Collider2D matchesCollider;
+    [SerializeField] private Collider2D twineCollider;
 
+    [Header("On store enter cutscene")]
     [SerializeField] private PlayableDirector playableDirector;
     [SerializeField] private PlayableAsset generalStoreStartingCutscene;
     private bool isFirstEnter = true;
@@ -32,9 +34,7 @@ public class GeneralStoreSubSceneController : SubSceneController
 
     private void EndMinigameHandler(BrokerEvent<MinigameEvents.EndMinigame> obj)
     {
-        matches.GetComponent<Collider2D>().enabled = true;
-        twine.GetComponent<Collider2D>().enabled = true;
-        //matches.InteractionDistance.ConstantValue = 5f;
-        //twine.InteractionDistance.ConstantValue = 15f;
+        matchesCollider.enabled = true;
+        twineCollider.enabled = true;
     }
 }

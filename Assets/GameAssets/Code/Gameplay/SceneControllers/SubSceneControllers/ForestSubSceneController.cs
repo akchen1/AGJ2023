@@ -7,11 +7,16 @@ using UnityEngine;
 [System.Serializable]
 public class ForestSubSceneController : SubSceneController
 {
-    [SerializeField] private DSDialogueSO allComponentsDialogue;
+    [Header("Obtained all items references")]
+    [Tooltip("Dialogue to trigger once all items have been collected and player enters forest")]
+    [SerializeField] private DSDialogueSO allItemsDialogue;
     [SerializeField] private GameObject clearingSceneInteraction;
-    [SerializeField] private ScrollStateReference scrollStateReference;
 
-    private static bool hasTriggeredAllItemsObtained = false;
+    [Header("Scroll reference")]
+    [SerializeField] [Tooltip("Reference to scroll state scriptable object")] 
+    private ScrollStateReference scrollStateReference;
+
+    private static bool hasTriggeredAllItemsObtained = false;   // Makes sure all items dialogue only triggers once
 
     public override void Enable()
     {
@@ -19,7 +24,7 @@ public class ForestSubSceneController : SubSceneController
 
         if (!hasTriggeredAllItemsObtained && scrollStateReference.Value == ScrollState.ItemsObtained)
         {
-            allComponentsDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
+            allItemsDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
             clearingSceneInteraction.SetActive(true);
             hasTriggeredAllItemsObtained = true;
         }

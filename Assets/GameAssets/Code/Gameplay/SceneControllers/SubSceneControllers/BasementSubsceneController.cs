@@ -8,6 +8,9 @@ using UnityEngine;
 public class BasementSubsceneController : SubSceneController
 {
     public Constants.Sanity.SanityType sanityEventResult { get; private set; }
+
+    [Header("Vial Item Interaction")]
+    [Tooltip("Dialogue to play when obtained vial")]
     [SerializeField] private DSDialogueSO vialStartingDialogue;
     private bool isVialDialogue = false;
 

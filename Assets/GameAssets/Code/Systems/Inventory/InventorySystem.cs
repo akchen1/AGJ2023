@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class InventorySystem 
 {
-	[SerializeField] private List<InventoryItem> inventory = new List<InventoryItem>();
+	[SerializeField] private HashSet<InventoryItem> inventory = new HashSet<InventoryItem>();
 	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
 	private InventoryItem selectedItem;
@@ -92,7 +92,7 @@ public class InventorySystem
 
 	private void RestartGameHandler(BrokerEvent<GameStateEvents.RestartGame> inEvent)
 	{
-		inventory = new List<InventoryItem>();
+		inventory = new HashSet<InventoryItem>();
 		selectedItem = null;
 	}
 

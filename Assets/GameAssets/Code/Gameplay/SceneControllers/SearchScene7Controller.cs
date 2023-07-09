@@ -8,18 +8,19 @@ using UnityEngine.UI;
 
 public class SearchScene7Controller : SceneController
 {
-	[Header("testing")]
+	[Header("Testing")]
 	public InventoryItem[] startingitems;
 
+	[Header("Initialization")]
 	[SerializeField] GameObject Player;
-
+	[SerializeField] private DSDialogueSO startingDialogue;
 	[SerializeField] private PlayableDirector playableDirector;
+
+	[Header("Subscene transitions")]
 	[SerializeField] private Image fadeToBlack;
 	[SerializeField] private float transitionSpeedMultiplier;
 	[SerializeField] private float transitionTime;
 
-	//[SerializeField] private DialogueInteraction startingDialogue;
-	[SerializeField] private DSDialogueSO startingDialogue;
 
 	[SerializeField, Header("Main Street")]
     private MainStreetSubSceneController MainStreetSubSceneController;
@@ -35,10 +36,7 @@ public class SearchScene7Controller : SceneController
 
     [SerializeField, Header("General Store")] private GeneralStoreSubSceneController GeneralStoreSubSceneController;
 
-	[SerializeField] private PlaygroundSubSceneController PlaygroundSubSceneController;
-
 	private SubSceneController currentSubScene;
-    private Vector3 previousMainStreetLocation;
 
 	EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
@@ -78,9 +76,6 @@ public class SearchScene7Controller : SceneController
 
 			case Constants.Scene7SubScenes.LivingRoom:
 				return LivingRoomSubSceneController;
-
-			case Constants.Scene7SubScenes.Playground:
-				return PlaygroundSubSceneController;
 		}
 		return null;
 	}

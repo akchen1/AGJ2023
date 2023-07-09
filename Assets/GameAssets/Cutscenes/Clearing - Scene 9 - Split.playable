@@ -883,6 +883,7 @@ MonoBehaviour:
     m_Objects:
     - {fileID: 5921474481654481425}
     - {fileID: 8772858722301898400}
+    - {fileID: 2317756933510467116}
 --- !u!114 &-374115731054217861
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1054,6 +1055,22 @@ MonoBehaviour:
     m_DisplayName: ScreenFaderClip
   m_Markers:
     m_Objects: []
+--- !u!114 &2317756933510467116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b33c080cc27dc78479ee6d73f07d9e52, type: 3}
+  m_Name: Scene Change Marker Emitter
+  m_EditorClassIdentifier: 
+  m_Time: 49
+  retroactive: 0
+  emiteOnce: 0
+  selectedSceneName: EndingScene
 --- !u!114 &5307876080619292659
 MonoBehaviour:
   m_ObjectHideFlags: 1

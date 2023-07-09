@@ -3763,19 +3763,7 @@ MonoBehaviour:
   <HasInteractionDistance>k__BackingField: 1
   dialogueStarted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1134978600}
-        m_TargetAssemblyTypeName: PresentScene4Part1Controller, Assembly-CSharp
-        m_MethodName: BaduInteractionStarted
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   dialogueEnded:
     m_PersistentCalls:
       m_Calls:
@@ -3790,6 +3778,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1947858016}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1947858020}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!70 &1500384585
 CapsuleCollider2D:
@@ -4862,7 +4874,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1947858019}
   - component: {fileID: 1947858018}
-  - component: {fileID: 1947858017}
   - component: {fileID: 1947858016}
   - component: {fileID: 1947858020}
   m_Layer: 6
@@ -4879,7 +4890,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947858015}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -4898,32 +4909,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.39, y: 1.86}
   m_EdgeRadius: 0
---- !u!114 &1947858017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1947858015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 490ec6b3a25fe8249a940c45df8a0494, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 7e9342a926d911a48a12551de6dca30d, type: 2}
-  canInteractMultipleTimes: 1
-  destroyOnDialogueFinish: 0
-  <InteractionDistance>k__BackingField:
-    UseConstant: 0
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
-  <HasInteractionDistance>k__BackingField: 0
-  dialogueStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  dialogueEnded:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!212 &1947858018
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -983,6 +983,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1312498279}
     m_Modifications:
+    - target: {fileID: 4034869546649922236, guid: 54d02c478c06ae34bb901d346aa66be3, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034869546649922236, guid: 54d02c478c06ae34bb901d346aa66be3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8753207026112921882, guid: 54d02c478c06ae34bb901d346aa66be3, type: 3}
       propertyPath: m_Name
       value: CutsceneDialogueUI
@@ -1599,7 +1607,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1565500089}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 6a4db0dbd2ecca243b7e35f52a32d944, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 354e8e44ae64f8844a0e43d5308c3ffe, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
