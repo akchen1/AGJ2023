@@ -16,9 +16,5 @@ MonoBehaviour:
   <ItemIcon>k__BackingField: {fileID: 21300000, guid: 4063e3617cacc6346ba99f638a823b3b, type: 3}
   <ItemDescription>k__BackingField: A neatly-tied wreath of meticulously-placed branches
     and twigs.
+  <ItemObtainedSFX>k__BackingField: BranchCollect
   <InventoryInteraction>k__BackingField: {fileID: 0}
-  <InteractionDistance>k__BackingField:
-    UseConstant: 1
-    ConstantValue: 0
-    Variable: {fileID: 0}
-  <HasInteractionDistance>k__BackingField: 0

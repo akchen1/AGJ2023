@@ -1934,8 +1934,8 @@ MonoBehaviour:
     m_Duration: 3.9999999999999996
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -2003,8 +2003,8 @@ MonoBehaviour:
     m_Duration: 3.999999999999999
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -2072,8 +2072,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -2141,8 +2141,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -2210,8 +2210,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -2279,8 +2279,8 @@ MonoBehaviour:
     m_Duration: 3
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -2348,8 +2348,8 @@ MonoBehaviour:
     m_Duration: 3
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -2417,8 +2417,8 @@ MonoBehaviour:
     m_Duration: 3
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -2486,8 +2486,8 @@ MonoBehaviour:
     m_Duration: 3
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -2555,8 +2555,8 @@ MonoBehaviour:
     m_Duration: 3
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -2624,8 +2624,8 @@ MonoBehaviour:
     m_Duration: 3
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -2693,8 +2693,8 @@ MonoBehaviour:
     m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -2762,8 +2762,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -2831,8 +2831,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -2900,8 +2900,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -2969,8 +2969,8 @@ MonoBehaviour:
     m_Duration: 6
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -3038,8 +3038,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -3107,8 +3107,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -3176,8 +3176,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -3245,8 +3245,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -3314,8 +3314,8 @@ MonoBehaviour:
     m_Duration: 3
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -3383,8 +3383,8 @@ MonoBehaviour:
     m_Duration: 3
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -3452,8 +3452,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -3521,8 +3521,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 582378871627249484}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:

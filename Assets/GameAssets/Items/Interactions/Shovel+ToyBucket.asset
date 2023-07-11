@@ -17,11 +17,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4141ace33f2959f47941774f03b9f727, type: 2}
   - {fileID: 11400000, guid: b8046a6cad45a604288694aaddee7dde, type: 2}
   <OverrideDefaultClickInteraction>k__BackingField: 0
+  playCombineSFX: 1
   minigame: {fileID: 7525449707423018442, guid: e2e5f34f827ed8741a1d76c41241ddc0, type: 3}
-  <InteractionDistance>k__BackingField:
-    UseConstant: 1
-    ConstantValue: 0
-    Variable: {fileID: 0}
-  <RequiredSceneInteraction>k__BackingField: 0
-  <HasInteractionDistance>k__BackingField: 0
-  selectedSceneName: Bootstrap
+  <RequiredSceneInteraction>k__BackingField: 1
+  selectedSceneName: Search - Scene 7 Main Street
+  selectedSubsceneScene: 5

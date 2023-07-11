@@ -13,7 +13,6 @@ public class SearchScene7Controller : SceneController
 
 	[Header("Initialization")]
 	[SerializeField] GameObject Player;
-	[SerializeField] private DSDialogueSO startingDialogue;
 	[SerializeField] private PlayableDirector playableDirector;
 
 	[Header("Subscene transitions")]
@@ -36,7 +35,10 @@ public class SearchScene7Controller : SceneController
 
     [SerializeField, Header("General Store")] private GeneralStoreSubSceneController GeneralStoreSubSceneController;
 
-	private SubSceneController currentSubScene;
+    [SerializeField, Header("Playground")] private PlaygroundSubSceneController PlaygroundSubSceneController;
+	[SerializeField] private Collider2D playgroundBounds;
+
+    private SubSceneController currentSubScene;
 
 	EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
@@ -76,7 +78,9 @@ public class SearchScene7Controller : SceneController
 
 			case Constants.Scene7SubScenes.LivingRoom:
 				return LivingRoomSubSceneController;
-		}
+			case Constants.Scene7SubScenes.Playground:
+				return PlaygroundSubSceneController;
+        }
 		return null;
 	}
 
@@ -109,29 +113,26 @@ public class SearchScene7Controller : SceneController
 	private void Start()
 	{
 		eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(startingitems));
-		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.MainStreet, true));
 		fadeToBlack.gameObject.SetActive(false);
-		currentSubScene = MainStreetSubSceneController;
+		currentSubScene = BasementSubsceneController;
 		currentSubScene.Enable();
-		PlayStartingDialogue();
+		//PlayStartingDialogue();
 	}
-
-    private void PlayStartingDialogue()
-    {
-		startingDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
-    }
 
     private void OnEnable()
 	{
 		eventBrokerComponent.Subscribe<Scene7Events.ChangeSubscene>(ChangeSubsceneHandler);
 		eventBrokerComponent.Subscribe<Scene7Events.GetBloodSanityResult>(GetBloodSanityResultHandler);
+		eventBrokerComponent.Subscribe<Scene7Events.GetCurrentSubScene>(GetCurrentSubSceneHandler);
 	}
 
     private void OnDisable()
 	{
 		eventBrokerComponent.Unsubscribe<Scene7Events.ChangeSubscene>(ChangeSubsceneHandler);
         eventBrokerComponent.Unsubscribe<Scene7Events.GetBloodSanityResult>(GetBloodSanityResultHandler);
+		eventBrokerComponent.Unsubscribe<Scene7Events.GetCurrentSubScene>(GetCurrentSubSceneHandler);
     }
+
 
     private void Update()
     {
@@ -139,5 +140,27 @@ public class SearchScene7Controller : SceneController
 		{
 			currentSubScene.Update();
 		}
+		CheckInPlayground();
     }
+
+    private void GetCurrentSubSceneHandler(BrokerEvent<Scene7Events.GetCurrentSubScene> obj)
+    {
+		obj.Payload.Subscene?.Invoke(currentSubScene.Subscene);
+    }
+
+	private void CheckInPlayground()
+	{
+		bool inPlayground = playgroundBounds.OverlapPoint(Player.transform.position);
+        if (inPlayground && currentSubScene == MainStreetSubSceneController)
+		{
+            currentSubScene.Disable();
+            currentSubScene = GetNextSubscene(Constants.Scene7SubScenes.Playground);
+            currentSubScene.Enable(false);
+        } else if (!inPlayground && currentSubScene == PlaygroundSubSceneController)
+		{
+            currentSubScene.Disable();
+            currentSubScene = GetNextSubscene(Constants.Scene7SubScenes.MainStreet);
+            currentSubScene.Enable(false);
+        }
+	}
 }

@@ -210,8 +210,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 06d53b1328bf1a445acd18323f5ae4d7, type: 2}
   canSkipDialogue: 0
+  waitForPlayerInput: 0
   StartTime: 38
   EndTime: 41.99999999999999
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &-3670621327990158506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -291,8 +294,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 18c0029d942bf184eaf92cacb5da8066, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 0
   EndTime: 4
+  EaseInTime: 0.5
+  EaseOutTime: 0
 --- !u!114 &-1419054465278611896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -347,8 +353,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: ec500d262d7049e4c923421a898bb04b, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 24.5
   EndTime: 28.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &277545098949603514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -363,8 +372,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 4bf5ffe8f84a5414cba1cf425327d851, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 16.5
   EndTime: 20.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &901380086911482840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -379,8 +391,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 379215bc7d606f54f890c08b8752390c, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 4
   EndTime: 8
+  EaseInTime: 0
+  EaseOutTime: 0.3
 --- !u!114 &1267290669416654999
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -417,8 +432,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 4df0b3cae9482d54f95e9ad316cedaee, type: 2}
   canSkipDialogue: 0
+  waitForPlayerInput: 0
   StartTime: 33.5
   EndTime: 37.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &2126846582096879467
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -448,7 +466,7 @@ MonoBehaviour:
     m_TimeScale: 1
     m_ParentTrack: {fileID: 2126846582096879467}
     m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseOutDuration: 0
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -516,8 +534,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 2126846582096879467}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -585,8 +603,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 2126846582096879467}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -654,8 +672,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 2126846582096879467}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -723,8 +741,8 @@ MonoBehaviour:
     m_Duration: 3.999999999999993
     m_TimeScale: 1
     m_ParentTrack: {fileID: 2126846582096879467}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -792,8 +810,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 2126846582096879467}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -861,8 +879,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 2126846582096879467}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -930,8 +948,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 2126846582096879467}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -999,8 +1017,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 2126846582096879467}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -1068,8 +1086,8 @@ MonoBehaviour:
     m_Duration: 4
     m_TimeScale: 1
     m_ParentTrack: {fileID: 2126846582096879467}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -1170,8 +1188,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 1b7eba80285166a48a173d67f01ee482, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 8.5
   EndTime: 12.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &5792457497788583943
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1227,8 +1248,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: c59301dbfa5bf1548a9fd6dcea433f24, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 12.5
   EndTime: 16.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!74 &8280628129650169047
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -1375,8 +1399,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: e4386ff7b3ac9b24b9891928e2dbfe7a, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 20.5
   EndTime: 24.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &8724018852929212648
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1391,8 +1418,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 3723dbf58905be145a58ac01b3181b9f, type: 2}
   canSkipDialogue: 1
+  waitForPlayerInput: 0
   StartTime: 28.5
   EndTime: 32.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &9014861740691616984
 MonoBehaviour:
   m_ObjectHideFlags: 1

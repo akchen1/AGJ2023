@@ -24,4 +24,14 @@ public class Scene7Events
 			SanityType = sanityType;
 		}
 	}
+
+	public class GetCurrentSubScene
+	{
+		public readonly Action<Constants.Scene7SubScenes> Subscene;
+
+		public GetCurrentSubScene(Action<Constants.Scene7SubScenes> subscene)
+		{
+			Subscene= subscene;
+		}
+	}
 }

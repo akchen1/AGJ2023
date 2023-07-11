@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ES10x2
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: ES10x2
-  <Character>k__BackingField: {fileID: 0}
+  <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 

@@ -122,6 +122,7 @@ public class ShovelMinigame : MonoBehaviour, IMinigame, IPointerClickHandler
     {
         if (!active || !barSlider.Active) return;
 
+        PlaySFX(Constants.Audio.SFX.DigBarHit);
         StartCoroutine(PauseSlider(1.5f));
         float value = GetSliderValue();
         DecreaseProgress(value);
@@ -136,6 +137,12 @@ public class ShovelMinigame : MonoBehaviour, IMinigame, IPointerClickHandler
         eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(endMinigameItems.ToArray()));
         eventBrokerComponent.Publish(this, new InventoryEvents.RemoveItem(requiredItems.ToArray()));
     }
+
+    private void PlaySFX(string sfx)
+    {
+        eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(sfx));
+    }
+
     [System.Serializable]
     private class ShovelLevels
     {

@@ -145,6 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2467410452099531223}
   - component: {fileID: 7096239340689685759}
+  - component: {fileID: 6934860946881128379}
   m_Layer: 5
   m_Name: DialogueSystemUI
   m_TagString: Untagged
@@ -191,6 +192,18 @@ MonoBehaviour:
   dialogueOptionParent: {fileID: 5574546112169016059}
   dialogueOptionPrefab: {fileID: 6366069511995825032, guid: 4624fb4f17d627b42b6b755c8d3bd1c6, type: 3}
   nextDialogueIcon: {fileID: 4541176398998186765}
+--- !u!114 &6934860946881128379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565542282600444774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d2503df3b6917b46b4cf3f6fab71da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4541176398998186765
 GameObject:
   m_ObjectHideFlags: 0

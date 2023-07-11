@@ -14,9 +14,11 @@ public class BasementSubsceneController : SubSceneController
     [SerializeField] private DSDialogueSO vialStartingDialogue;
     private bool isVialDialogue = false;
 
-    public override void Enable()
+    protected override string subSceneMusic { get => Constants.Audio.Music.Basement; }
+    public override Constants.Scene7SubScenes Subscene => Constants.Scene7SubScenes.Basement;
+    public override void Enable(bool teleportPlayer = true)
     {
-        base.Enable();
+        base.Enable(teleportPlayer);
         eventBrokerComponent.Subscribe<DialogueEvents.SelectDialogueOption>(SelectDialogueOptionHandler);
         eventBrokerComponent.Subscribe<DialogueEvents.StartDialogue>(StartDialogueHandler);
     }

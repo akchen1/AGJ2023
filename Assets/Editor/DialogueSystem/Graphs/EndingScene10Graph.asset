@@ -19,7 +19,7 @@ MonoBehaviour:
     <Position>k__BackingField: {x: 0, y: 807}
   - <ID>k__BackingField: 0e4467b9-be13-411f-a14f-664daa82cdbd
     <Name>k__BackingField: Burn
-    <Position>k__BackingField: {x: 23.999784, y: 1280.0001}
+    <Position>k__BackingField: {x: 24, y: 1280}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: d86ed175-e2f4-490d-878c-3d71ed89b05b
     <Name>k__BackingField: ES10x1
@@ -67,29 +67,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: 
     <DialogueType>k__BackingField: 1
     <Position>k__BackingField: {x: 3985, y: 266}
-  - <ID>k__BackingField: 0d1e0b13-05e8-4f65-b58a-50ba0cf94768
-    <Name>k__BackingField: ES10x2
-    <Text>k__BackingField: "Think of what we\u2019ve been through together."
-    <Character>k__BackingField: {fileID: 0}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: "Maybe\u2026 but would Maeve want this?"
-      <NodeID>k__BackingField: 6615c98b-28d5-4842-ba75-db1d4fee6587
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    - <Text>k__BackingField: How could I keep you all to myself?
-      <NodeID>k__BackingField: d86ed175-e2f4-490d-878c-3d71ed89b05b
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: 
-    <DialogueType>k__BackingField: 1
-    <Position>k__BackingField: {x: 722, y: 156}
   - <ID>k__BackingField: 6615c98b-28d5-4842-ba75-db1d4fee6587
     <Name>k__BackingField: ES10x3
     <Text>k__BackingField: When have I ever steered you wrong, Leigh?
@@ -723,19 +700,42 @@ MonoBehaviour:
     <GroupID>k__BackingField: 0e4467b9-be13-411f-a14f-664daa82cdbd
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 5940, y: 1339}
+  - <ID>k__BackingField: 0d1e0b13-05e8-4f65-b58a-50ba0cf94768
+    <Name>k__BackingField: ES10x2
+    <Text>k__BackingField: "Think of what we\u2019ve been through together."
+    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: "Maybe\u2026 but would Maeve want this?"
+      <NodeID>k__BackingField: 6615c98b-28d5-4842-ba75-db1d4fee6587
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    - <Text>k__BackingField: How could I keep you all to myself?
+      <NodeID>k__BackingField: d86ed175-e2f4-490d-878c-3d71ed89b05b
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 722, y: 156}
   <OldGroupNames>k__BackingField:
   - Split
   - Burn
   <OldUngroupedNodeNames>k__BackingField:
   - ES10x1
   - ES10x8
-  - ES10x2
   - ES10x3
   - ES10x9
   - ES10x7
   - ES10x6
   - ES10x5
   - ES10x4
+  - ES10x2
   <OldGroupedNodeNames>k__BackingField:
     list:
     - Key: Split

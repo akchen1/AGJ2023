@@ -32,10 +32,12 @@ public class LivingRoomSubSceneController : SubSceneController
     private bool pocketKnifeObtained = false;
     private bool isFirstInteract = true;
     private bool sanityDialogueStarted = false;
+    protected override string subSceneMusic { get => Constants.Audio.Music.LivingRoom; }
+    public override Constants.Scene7SubScenes Subscene => Constants.Scene7SubScenes.LivingRoom;
 
-    public override void Enable()
+    public override void Enable(bool teleportPlayer = true)
     {
-        base.Enable();
+        base.Enable(teleportPlayer);
         eventBrokerComponent.Subscribe<InventoryEvents.AddItem>(AddItemHandler);
         eventBrokerComponent.Subscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
         eventBrokerComponent.Subscribe<DialogueEvents.SelectDialogueOption>(SelectDialogueOptionHandler);

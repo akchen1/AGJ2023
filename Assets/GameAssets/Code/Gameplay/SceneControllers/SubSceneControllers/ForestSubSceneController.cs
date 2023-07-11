@@ -18,9 +18,12 @@ public class ForestSubSceneController : SubSceneController
 
     private static bool hasTriggeredAllItemsObtained = false;   // Makes sure all items dialogue only triggers once
 
-    public override void Enable()
+    protected override string subSceneMusic { get => Constants.Audio.Music.Forest; }
+    public override Constants.Scene7SubScenes Subscene => Constants.Scene7SubScenes.Forest;
+
+    public override void Enable(bool teleportPlayer = true)
     {
-        base.Enable();
+        base.Enable(teleportPlayer);
 
         if (!hasTriggeredAllItemsObtained && scrollStateReference.Value == ScrollState.ItemsObtained)
         {

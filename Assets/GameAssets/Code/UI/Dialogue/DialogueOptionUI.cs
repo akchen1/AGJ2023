@@ -12,7 +12,7 @@ public class DialogueOptionUI : MonoBehaviour
     [SerializeField] private TMP_Text text;
 
     private Button button;
-
+    private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     private void Awake()
     {
         button = GetComponent<Button>();
@@ -22,6 +22,14 @@ public class DialogueOptionUI : MonoBehaviour
     {
         text.text = dialogueOption.Text;
         if (button == null) button = GetComponent<Button>();
-        button.onClick.AddListener(() => onClickOption?.Invoke(dialogueOption));
+        button.onClick.AddListener(() => {
+            onClickOption?.Invoke(dialogueOption);
+            eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.Click));
+        });
+    }
+
+    private void OnDestroy()
+    {
+        button.onClick.RemoveAllListeners();
     }
 }

@@ -13,6 +13,7 @@ public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     private Vector3 lastPositionInBounds;
 
     private Vector3 mouseOffset;
+    private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
     private void Awake()
     {
@@ -32,6 +33,7 @@ public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         SetDraggedPosition(eventData);
         Grabbing = true;
         transform.SetAsLastSibling();
+        eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.PieceLift));
     }
 
     public void OnDrag(PointerEventData data)
@@ -59,6 +61,7 @@ public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         { 
             transform.position = lastPositionInBounds;
         }
+        eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.PiecePlace));
     }
 
     private void CheckInBounds()

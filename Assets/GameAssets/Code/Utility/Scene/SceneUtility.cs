@@ -32,19 +32,26 @@ public class SceneUtility
 
     private void SceneChangeHandler(BrokerEvent<SceneEvents.SceneChange> inEvent)
     {
+        bootstrap.StartCoroutine(ChangeScene(inEvent));
+    }
+
+    private IEnumerator ChangeScene(BrokerEvent<SceneEvents.SceneChange> inEvent)
+    {
         string currentActiveScene = SceneManager.GetActiveScene().name;
         if (inEvent.Payload.UnloadPrevious && currentScene != null)
         {
+            eventBrokerComponent.Publish(this, new TransitionEvents.FadeScreen(true, 1f));
+            yield return new WaitForSeconds(1f);
             UnloadScene(currentScene);
         }
         LoadScene(inEvent.Payload.SceneName);
         bootstrap.StartCoroutine(WaitForSceneLoad(() =>
         {
             SetActiveScene(inEvent.Payload.SceneName);
+            eventBrokerComponent.Publish(this, new TransitionEvents.FadeScreen(false, 1f));
             eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
         }));
     }
-
 
     private void LoadScene(string sceneName)
     {

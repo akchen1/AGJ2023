@@ -36,6 +36,7 @@ public class BasementScene6Part2Controller : MonoBehaviour
         eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(startingDialoguePart1));
 		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.Basement, true));
 		currentDialogue = startingDialoguePart1;
+        baduAnimator.SetTrigger("fly");
     }
 
     private void OnEnable()
@@ -77,6 +78,7 @@ public class BasementScene6Part2Controller : MonoBehaviour
             baduAnimator.SetTrigger("fly");
             currentDialogue = null;
             basementStairs.SetActive(true);
+            eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(Constants.SceneNames.SearchScene7MainStreet));
         }
     }
 

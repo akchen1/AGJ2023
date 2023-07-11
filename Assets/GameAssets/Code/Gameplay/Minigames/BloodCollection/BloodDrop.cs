@@ -7,27 +7,19 @@ public class BloodDrop : MonoBehaviour
 {
 	private Rigidbody2D rbody;
 	private Action<GameObject> onCollected;
-	private Action<GameObject> onOutOfBounds;
 
-	public void Initialize(float fallSpeed, Action<GameObject> collected, Action<GameObject> outOfBounds)
+	public void Initialize(float fallSpeed, Action<GameObject> collected)
 	{
 		GetComponent<Rigidbody2D>().gravityScale *= fallSpeed;
 
 		onCollected = collected;
-		onOutOfBounds = outOfBounds;
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.tag == "Vial")
 		{
-			onCollected.DynamicInvoke(gameObject);
+			onCollected.Invoke(gameObject);
 		}	
 	}
-
-	private void OnBecameInvisible()
-	{
-		onOutOfBounds.DynamicInvoke(gameObject);
-	}
-
 }

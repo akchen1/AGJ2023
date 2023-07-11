@@ -9,16 +9,18 @@ using UnityEngine;
 [System.Serializable]
 public class MainStreetSubSceneController : SubSceneController
 {
-    [Header("Clay minigame")]
-    [SerializeField] private InventoryItem clayItem;
-    [Tooltip("Dialogue to trigger after obtaining clay")]
-    [SerializeField] private DSDialogueSO clayDialogue;
-    [Tooltip("Decision node to either break sandcastle or not")]
-    [SerializeField] private DSDialogueSO clayDecisionNode;
-    [SerializeField] private GameObject sandCastle;
+    [SerializeField] private DSDialogueSO startingDialogue;
 
-    private bool obtainedClay = false;
-    private bool clayDialogueStarted = false;
+    //[Header("Clay minigame")]
+    //[SerializeField] private InventoryItem clayItem;
+    //[Tooltip("Dialogue to trigger after obtaining clay")]
+    //[SerializeField] private DSDialogueSO clayDialogue;
+    //[Tooltip("Decision node to either break sandcastle or not")]
+    //[SerializeField] private DSDialogueSO clayDecisionNode;
+    //[SerializeField] private GameObject sandCastle;
+
+    //private bool obtainedClay = false;
+    //private bool clayDialogueStarted = false;
 
     [Header("Ritual state")]
     [SerializeField] private List<CombinedRitualItem> combinedRitualItems;
@@ -30,17 +32,25 @@ public class MainStreetSubSceneController : SubSceneController
     
     private bool componentsObtained;
     private bool itemsObtained;
+    private bool isFirstEnter = true;
 
     private static bool hasTriggeredComponentsObtainedDialogue = false;
     private static bool hasTriggeredItemsObtainedDialogue = false;
 
-    public override void Enable()
+    protected override string subSceneMusic { get => Constants.Audio.Music.MainStreet; }
+    public override Constants.Scene7SubScenes Subscene => Constants.Scene7SubScenes.MainStreet;
+
+    public override void Enable(bool teleportPlayer = true)
     {
-        base.Enable();
-        eventBrokerComponent.Subscribe<InventoryEvents.AddItem>(AddItemHandler);
+        base.Enable(teleportPlayer);
+        //eventBrokerComponent.Subscribe<InventoryEvents.AddItem>(AddItemHandler);
         eventBrokerComponent.Subscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
-        eventBrokerComponent.Subscribe<DialogueEvents.SelectDialogueOption>(SelectDialogueOptionHandler);
-        CheckEnterDialogues();
+        //eventBrokerComponent.Subscribe<DialogueEvents.SelectDialogueOption>(SelectDialogueOptionHandler);
+        if (isFirstEnter)
+        {
+            startingDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
+            isFirstEnter = false;
+        }
     }
 
     public override void Disable()
@@ -50,46 +60,48 @@ public class MainStreetSubSceneController : SubSceneController
         {
             subsceneTeleportMarker.position = position;
         }));
-        eventBrokerComponent.Unsubscribe<InventoryEvents.AddItem>(AddItemHandler);
+        //eventBrokerComponent.Unsubscribe<InventoryEvents.AddItem>(AddItemHandler);
         eventBrokerComponent.Unsubscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
-        eventBrokerComponent.Unsubscribe<DialogueEvents.SelectDialogueOption>(SelectDialogueOptionHandler);
+        //eventBrokerComponent.Unsubscribe<DialogueEvents.SelectDialogueOption>(SelectDialogueOptionHandler);
     }
 
-    private void SelectDialogueOptionHandler(BrokerEvent<DialogueEvents.SelectDialogueOption> obj)
-    {
-        if (!clayDialogueStarted) return;
-        if (obj.Payload.Option == clayDecisionNode.Choices[0])
-        {
-            sandCastle.SetActive(false);
-        }
-    }
+    //private void SelectDialogueOptionHandler(BrokerEvent<DialogueEvents.SelectDialogueOption> obj)
+    //{
+    //    if (!clayDialogueStarted) return;
+    //    if (obj.Payload.Option == clayDecisionNode.Choices[0])
+    //    {
+    //        sandCastle.SetActive(false);
+    //    }
+    //}
 
-    private void AddItemHandler(BrokerEvent<InventoryEvents.AddItem> obj)
-    {
-        foreach (InventoryItem item in obj.Payload.Items)
-        {
-            if (item == clayItem)
-            {
-                obtainedClay = true;
-                return;
-            }
-        }
-    }
+    //private void AddItemHandler(BrokerEvent<InventoryEvents.AddItem> obj)
+    //{
+    //    foreach (InventoryItem item in obj.Payload.Items)
+    //    {
+    //        if (item == clayItem)
+    //        {
+    //            obtainedClay = true;
+    //            return;
+    //        }
+    //    }
+    //}
 
     private void InteractEndHandler(BrokerEvent<InteractionEvents.InteractEnd> obj)
     {
-        if (clayDialogueStarted)
-        {
-            clayDialogueStarted = false;
-        }
-        if (obtainedClay)
-        {
-            clayDialogueStarted = clayDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
-            obtainedClay = false;
-        }
+        //if (clayDialogueStarted)
+        //{
+        //    clayDialogueStarted = false;
+        //}
+        //if (obtainedClay)
+        //{
+        //    clayDialogueStarted = clayDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
+        //    obtainedClay = false;
+        //    return;
+        //}
+        CheckScrollDialogues();
     }
 
-    private void CheckEnterDialogues()
+    private void CheckScrollDialogues()
     {
         itemsObtained = true;
         componentsObtained = true;

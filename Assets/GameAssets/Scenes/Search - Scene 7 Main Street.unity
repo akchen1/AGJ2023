@@ -1457,7 +1457,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 593fad9097013a24b832d439dea7bd4a, type: 2}
-  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
   ignoreInteractionSystem: 0
@@ -1980,7 +1979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minigame: {fileID: 31007409}
-  canInteractMultipleTimes: 0
+  canInteractMultipleTimes: 1
   <InteractionDistance>k__BackingField:
     UseConstant: 1
     ConstantValue: 5
@@ -3501,6 +3500,7 @@ GameObject:
   - component: {fileID: 708237872}
   - component: {fileID: 708237874}
   - component: {fileID: 708237873}
+  - component: {fileID: 708237875}
   m_Layer: 6
   m_Name: CabinetClosed
   m_TagString: Untagged
@@ -3564,6 +3564,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 708237875}
+          m_TargetAssemblyTypeName: AnimationSFXEvent, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: DrawerOpen
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!61 &708237874
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3590,6 +3602,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5772686, y: 0.6402817}
   m_EdgeRadius: 0
+--- !u!114 &708237875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708237871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d2503df3b6917b46b4cf3f6fab71da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &734453643
 GameObject:
   m_ObjectHideFlags: 0
@@ -4407,14 +4431,6 @@ PrefabInstance:
     - target: {fileID: 491484341497083823, guid: 73be506f1ed229044a33d671f154d1fb, type: 3}
       propertyPath: m_Name
       value: DrawerMinigameUI
-      objectReference: {fileID: 0}
-    - target: {fileID: 491484341766276475, guid: 73be506f1ed229044a33d671f154d1fb, type: 3}
-      propertyPath: ignoreInteractionSystem
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 491484343289153200, guid: 73be506f1ed229044a33d671f154d1fb, type: 3}
-      propertyPath: ignoreInteractionSystem
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73be506f1ed229044a33d671f154d1fb, type: 3}
@@ -5350,7 +5366,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 4141ace33f2959f47941774f03b9f727, type: 2}
-  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
   ignoreInteractionSystem: 0
@@ -6956,6 +6971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1253767577}
   - component: {fileID: 1253767578}
+  - component: {fileID: 1253767579}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -6990,10 +7006,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abc1c6e20022aa94e865ec5599401fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingitems:
-  - {fileID: 11400000, guid: 593fad9097013a24b832d439dea7bd4a, type: 2}
+  startingitems: []
   Player: {fileID: 343840530}
-  startingDialogue: {fileID: 11400000, guid: 7a40f63ddfc2159439c74c6cef634794, type: 2}
   playableDirector: {fileID: 1926956831}
   fadeToBlack: {fileID: 1053369984}
   transitionSpeedMultiplier: 5
@@ -7001,10 +7015,7 @@ MonoBehaviour:
   MainStreetSubSceneController:
     subsceneCamera: {fileID: 2070171492}
     subsceneTeleportMarker: {fileID: 2124269751}
-    clayItem: {fileID: 11400000, guid: 7cd749c20530cae41b181e42e292b871, type: 2}
-    clayDialogue: {fileID: 11400000, guid: f9cca0f1e3004f849ba2cf2cfc2b95bd, type: 2}
-    clayDecisionNode: {fileID: 11400000, guid: cd35c49d7f832064898838dc20160356, type: 2}
-    sandCastle: {fileID: 934363169}
+    startingDialogue: {fileID: 11400000, guid: 7a40f63ddfc2159439c74c6cef634794, type: 2}
     combinedRitualItems:
     - Item: {fileID: 11400000, guid: 7cd749c20530cae41b181e42e292b871, type: 2}
       Components:
@@ -7060,6 +7071,40 @@ MonoBehaviour:
     twineCollider: {fileID: 4164870328910443563}
     playableDirector: {fileID: 1926956831}
     generalStoreStartingCutscene: {fileID: 11400000, guid: df67aeae7a85bbd45a908dbb8f008373, type: 2}
+  PlaygroundSubSceneController:
+    subsceneCamera: {fileID: 2070171492}
+    subsceneTeleportMarker: {fileID: 0}
+    clayItem: {fileID: 11400000, guid: 7cd749c20530cae41b181e42e292b871, type: 2}
+    clayDialogue: {fileID: 11400000, guid: f9cca0f1e3004f849ba2cf2cfc2b95bd, type: 2}
+    clayDecisionNode: {fileID: 11400000, guid: cd35c49d7f832064898838dc20160356, type: 2}
+    sandCastle: {fileID: 934363169}
+  playgroundBounds: {fileID: 5251805799546917740}
+--- !u!61 &1253767579
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253767575}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 97.40227, y: -43.19375}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 61.876984, y: 29.540478}
+  m_EdgeRadius: 0
 --- !u!1 &1300057031
 GameObject:
   m_ObjectHideFlags: 0
@@ -7427,8 +7472,8 @@ PolygonCollider2D:
     - - {x: -0.034248352, y: 1.308178}
       - {x: -8.432891, y: 1.028095}
       - {x: -8.351601, y: 0.087574005}
-      - {x: -2.121521, y: 0.03496933}
-      - {x: -2.1509094, y: -1.03619}
+      - {x: -2.63031, y: 0.026348114}
+      - {x: -2.625206, y: -0.96720123}
       - {x: -0.51556534, y: -1.0256804}
       - {x: 1.0809174, y: -1.1774788}
       - {x: 4.394928, y: -1.1986313}
@@ -7651,6 +7696,7 @@ GameObject:
   - component: {fileID: 1402338539}
   - component: {fileID: 1402338538}
   - component: {fileID: 1402338542}
+  - component: {fileID: 1402338543}
   m_Layer: 6
   m_Name: CabinetOpen
   m_TagString: Untagged
@@ -7765,7 +7811,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dffeb6d55a6908c4187d79a5629334ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7811,6 +7857,18 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+--- !u!114 &1402338543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402338537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d2503df3b6917b46b4cf3f6fab71da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1410184482
 GameObject:
   m_ObjectHideFlags: 0
@@ -7916,6 +7974,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1230821969371646697, guid: c3086fc414f66c94fbadb677578bb244, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230821969371646697, guid: c3086fc414f66c94fbadb677578bb244, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3955062394875495140, guid: c3086fc414f66c94fbadb677578bb244, type: 3}
@@ -8567,7 +8629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: 95769c4efbef1684983a5cd1651e7df4, type: 2}
-  canInteractMultipleTimes: 0
+  canInteractMultipleTimes: 1
   destroyOnDialogueFinish: 0
   <InteractionDistance>k__BackingField:
     UseConstant: 1
@@ -10684,7 +10746,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1926956830}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 7e81643cd82937448b484b34ce2317f0, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: d6551b538e2c7db4583e83957f3b64d2, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -10935,7 +10997,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 4141ace33f2959f47941774f03b9f727, type: 2}
-  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
   ignoreInteractionSystem: 0
@@ -12584,7 +12645,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: d711e05907bb9f14884eb035bdf308e8, type: 2}
-  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
   ignoreInteractionSystem: 0
@@ -12993,7 +13053,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: f136711b4bf992e4a958c4162dc0a4f9, type: 2}
-  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
   ignoreInteractionSystem: 0
@@ -13128,7 +13187,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 19b530fc151647f4993e263fe086782e, type: 2}
-  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
   ignoreInteractionSystem: 0
@@ -13442,6 +13500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5251805799546917738}
+  - component: {fileID: 5251805799546917740}
   m_Layer: 0
   m_Name: Playground
   m_TagString: Untagged
@@ -13449,6 +13508,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &5251805799546917740
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5251805799546917739}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 6.96, y: -2.3}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 61.876984, y: 29.540478}
+  m_EdgeRadius: 0
 --- !u!1 &5251805800761174656
 GameObject:
   m_ObjectHideFlags: 0
@@ -13548,7 +13633,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: b8046a6cad45a604288694aaddee7dde, type: 2}
-  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
   ignoreInteractionSystem: 0

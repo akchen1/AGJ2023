@@ -983,6 +983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 491484341497083820}
   - component: {fileID: 1484776875}
+  - component: {fileID: 7696025801122842246}
   m_Layer: 5
   m_Name: DrawerMinigameUI
   m_TagString: Untagged
@@ -1024,6 +1025,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minigameUI: {fileID: 8253004755772299330}
+  OnMinigameFinish:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7696025801122842246}
+        m_TargetAssemblyTypeName: AnimationSFXEvent, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DrawerClose
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7696025801122842246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491484341497083823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d2503df3b6917b46b4cf3f6fab71da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &491484341766276477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,10 +1158,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 81adb7114a46c754d8b177107c636103, type: 2}
-  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
-  ignoreInteractionSystem: 0
+  ignoreInteractionSystem: 1
   itemObtainedDialogue: {fileID: 0}
   <InteractionDistance>k__BackingField:
     UseConstant: 1
@@ -1411,10 +1438,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 48d9cccea6a175041bd8d4146a3ebbb5, type: 2}
-  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
-  ignoreInteractionSystem: 0
+  ignoreInteractionSystem: 1
   itemObtainedDialogue: {fileID: 0}
   <InteractionDistance>k__BackingField:
     UseConstant: 1

@@ -36,6 +36,8 @@ public class InventorySystem
 		{
             if (inventory.Contains(item)) continue;
             inventory.Add(item);
+            if (item.ItemObtainedSFX != null)
+                eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(item.ItemObtainedSFX));
         }
 		
     }

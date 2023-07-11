@@ -21,6 +21,10 @@ public class InventoryInteractionEditor : Editor
             index = index < 0 ? 0 : index;
             index = EditorGUILayout.Popup(scenes, index, Constants.SceneNamesArray);
             inventoryInteraction.selectedSceneName = Constants.SceneNamesArray[index];
+
+            if (inventoryInteraction.selectedSceneName != Constants.SceneNames.SearchScene7MainStreet) return;
+            GUIContent subScenes = new GUIContent("Subscene");
+            inventoryInteraction.selectedSubsceneScene = (Constants.Scene7SubScenes)EditorGUILayout.EnumPopup(subScenes, inventoryInteraction.selectedSubsceneScene);
         }
 
     }

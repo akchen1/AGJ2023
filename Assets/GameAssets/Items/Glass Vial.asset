@@ -16,9 +16,5 @@ MonoBehaviour:
   <ItemIcon>k__BackingField: {fileID: 21300000, guid: f9720f6d707e8824aaa10cbe98687d3b, type: 3}
   <ItemDescription>k__BackingField: A simple glass vial, useful for holding small
     amounts of liquid
+  <ItemObtainedSFX>k__BackingField: VialCollect
   <InventoryInteraction>k__BackingField: {fileID: 11400000, guid: fd0d04b4496f8c1429b961921b6678fb, type: 2}
-  <InteractionDistance>k__BackingField:
-    UseConstant: 1
-    ConstantValue: 0
-    Variable: {fileID: 0}
-  <HasInteractionDistance>k__BackingField: 0

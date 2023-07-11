@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6911632460446236680}
   - component: {fileID: 3787382044302838925}
   - component: {fileID: 3787382044302838926}
+  - component: {fileID: 6325137723881706379}
   m_Layer: 5
   m_Name: MatchBoxParent
   m_TagString: Untagged
@@ -101,6 +102,30 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 6325137723881706379}
+          m_TargetAssemblyTypeName: SFXEvent, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: MatchboxOpen
+            m_BoolArgument: 1
+          m_CallState: 2
+--- !u!114 &6325137723881706379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3683568834090326644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d2503df3b6917b46b4cf3f6fab71da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3787382043997441491
 GameObject:
   m_ObjectHideFlags: 0
