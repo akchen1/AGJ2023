@@ -16,11 +16,6 @@ public class PauseMenu : MonoBehaviour
 
 	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
-	private void TogglePauseHandler(BrokerEvent<PauseEvents.TogglePause> inEvent)
-	{
-		pausePanel.SetActive(!pausePanel.activeSelf);
-	}
-
 	private void RestartGameHandler(BrokerEvent<GameStateEvents.RestartGame> inEvnet)
 	{
 		pausePanel.SetActive(false);
@@ -29,6 +24,7 @@ public class PauseMenu : MonoBehaviour
 	private void OnPauseButtonPressed()
 	{
 		pausePanel.SetActive(!pausePanel.activeSelf);
+		eventBrokerComponent.Publish(this, new PauseEvents.TogglePause());
 	}
 
 	private void OnTitleButtonPressed()
@@ -49,7 +45,6 @@ public class PauseMenu : MonoBehaviour
 
 	private void OnEnable()
 	{
-		eventBrokerComponent.Subscribe<PauseEvents.TogglePause>(TogglePauseHandler);
 		eventBrokerComponent.Subscribe<GameStateEvents.RestartGame>(RestartGameHandler);
 
 		sfxSlider.onValueChanged.AddListener(OnSFXSliderValueChanged);
@@ -65,7 +60,6 @@ public class PauseMenu : MonoBehaviour
 
 	private void OnDisable()
 	{
-		eventBrokerComponent.Unsubscribe<PauseEvents.TogglePause>(TogglePauseHandler);
 		eventBrokerComponent.Unsubscribe<GameStateEvents.RestartGame>(RestartGameHandler);
 
 		titleButton.onClick.RemoveListener(OnTitleButtonPressed);
