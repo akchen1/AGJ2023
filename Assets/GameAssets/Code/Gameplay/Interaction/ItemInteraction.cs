@@ -24,11 +24,12 @@ public class ItemInteraction : MonoBehaviour, IInteractableWorld, IPointerClickH
     {
         eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(item));
 
+
         if (itemObtainedDialogue != null)
             eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(itemObtainedDialogue));
-
-        if (!ignoreInteractionSystem)
+        else if (!ignoreInteractionSystem)
             eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
+
 
         if (destroyOnInteract)
             Destroy(this.gameObject);

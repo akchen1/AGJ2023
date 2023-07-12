@@ -90,7 +90,8 @@ public static class Constants
 			public const string DrawerClose = "DrawerClose";
 			public const string BucketCollect = "BucketCollect";
 			public const string CandleCollect = "CandleCollect";
-			public const string ClayCollect = "ClayCollect";
+			public const string LitCandleCollect = "LitCandleCollect";
+            public const string ClayCollect = "ClayCollect";
 			public const string PocketKnifeCollect = "PocketKnifeCollect";
 			public const string Dig = "Dig";
 			public const string DigBarHit = "DigBarHit";
@@ -102,6 +103,7 @@ public static class Constants
 			public const string TwineCollect = "TwineCollect";
 			public const string VaseShatter = "VaseShatter";
 			public const string VialCollect = "VialCollect";
+			public const string BloodVialCollect = "BloodVialCollect";
 			public const string BranchBreak = "BranchBreak";
 			public const string BranchCollect = "BranchCollect";
 			public const string GemCollect = "GemCollect";

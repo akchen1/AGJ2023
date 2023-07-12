@@ -11,8 +11,6 @@ public class PrologueScene1Controller : SceneController
     [SerializeField] private PlayableDirector playableDirector;
     EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
-	private bool recordPlayerPlaying = false;
-
     private void Start()
     {
         playableDirector.Play(startingCutscene);

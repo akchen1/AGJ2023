@@ -15,5 +15,5 @@ MonoBehaviour:
   <ItemName>k__BackingField: Broken Vase
   <ItemIcon>k__BackingField: {fileID: 21300000, guid: b1ba15f2e0029bc418b002a493f9d69a, type: 3}
   <ItemDescription>k__BackingField: Pieces of a vase.
-  <ItemObtainedSFX>k__BackingField: VaseShatter
+  <ItemObtainedSFX>k__BackingField: 
   <InventoryInteraction>k__BackingField: {fileID: 0}

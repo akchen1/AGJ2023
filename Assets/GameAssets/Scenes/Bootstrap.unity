@@ -718,9 +718,9 @@ MonoBehaviour:
   generalStore: {fileID: 8300000, guid: 06237b5a52b47bd488715198aa82e4d7, type: 3}
   mainStreet: {fileID: 8300000, guid: 003b73c6906d09f42a27fc8d5fec11ac, type: 3}
   playtime: {fileID: 8300000, guid: ab087879b8df99744b0bdf5eb742050c, type: 3}
-  click: {fileID: 8300000, guid: 23c12b6f8001cfc4d81a9bf90a4598e2, type: 3}
-  pieceLift: {fileID: 8300000, guid: 8e26bc8b223398d4c978a869a925c7cc, type: 3}
-  piecePlace: {fileID: 8300000, guid: 6204f25c6430ad94d9826668fc769fe2, type: 3}
+  click: {fileID: 8300000, guid: d807f7ef536690f4fadd8d8f352a0a67, type: 3}
+  pieceLift: {fileID: 8300000, guid: e48e8196abb50ff4a90eb86d344e896c, type: 3}
+  piecePlace: {fileID: 8300000, guid: f1ed6bd4a47c2ca4eb90dffdb1adf29e, type: 3}
   pieceRotate: {fileID: 8300000, guid: 45c64cc00e54dbb4499610915a158c0f, type: 3}
   scrollClose: {fileID: 8300000, guid: 3121304f7d06fc842b50bc176386549c, type: 3}
   scrollFlip: {fileID: 8300000, guid: 9564f1c636371664e95939f1de4ea020, type: 3}
@@ -729,29 +729,31 @@ MonoBehaviour:
   drawerClose: {fileID: 8300000, guid: 14eb8f27b322d6f44bc7326ecc204718, type: 3}
   bucketCollect: {fileID: 8300000, guid: a81f58f7bda9c7442b195aedb011dc61, type: 3}
   candleCollect: {fileID: 8300000, guid: 5872c03fae9a24e47b86689be5b2cbc3, type: 3}
-  pocketKnifeCollect: {fileID: 8300000, guid: 643d2c17217d778498efeff35c90492e, type: 3}
-  clayCollect: {fileID: 8300000, guid: ad318fbd8fc1a0d438e77cd45000afe4, type: 3}
-  dig: {fileID: 8300000, guid: 207bb01dd26c6604b955b7554a9d2299, type: 3}
-  digBarHit: {fileID: 8300000, guid: 91ddf27cd71430c449cdbe86311dbc58, type: 3}
+  litCandleCollect: {fileID: 8300000, guid: 24d4a4ed59d1eda4480378ad2e65bf3b, type: 3}
+  pocketKnifeCollect: {fileID: 8300000, guid: 5ae3cee44cca90e4aa4c9aa0b8d5fbfb, type: 3}
+  clayCollect: {fileID: 8300000, guid: 80c9783970cb6c84d9fdb5ace0889449, type: 3}
+  dig: {fileID: 8300000, guid: 5e82a39bdd60caf43876b06cc6b05dfa, type: 3}
+  digBarHit: {fileID: 8300000, guid: 03da01bf495d8ed44baedf249b0da424, type: 3}
   matchLight: {fileID: 8300000, guid: ac64c7558ca0d2544bd5d239fc0f29eb, type: 3}
   matchStrike: {fileID: 8300000, guid: 93de02dbc53abbe40bfd6af26a3a3d71, type: 3}
   matchboxCollect: {fileID: 8300000, guid: 8ed5fcf4af8bee042b38098f97bb10e7, type: 3}
   matchboxOpen: {fileID: 8300000, guid: 8283148c3fb35104180c1fe682dbe0ea, type: 3}
   shovelCollect: {fileID: 8300000, guid: 346c74a89d0afc5469e13b6e2926bbe5, type: 3}
   twineCollect: {fileID: 8300000, guid: 337b7bee98fb1a441aec014ca02ed7c3, type: 3}
-  vaseShatter: {fileID: 8300000, guid: 9c11abeb30967c7409b52054d2ba6a41, type: 3}
+  vaseShatter: {fileID: 8300000, guid: ddc5001f834cb9b47aaf1988b1028ad0, type: 3}
   vialCollect: {fileID: 8300000, guid: 28042bbcf847173408908fd4beee72c1, type: 3}
+  bloodVialCollect: {fileID: 8300000, guid: 9bafe6217e6e81745aab22fab261c9d1, type: 3}
   branchBreak: {fileID: 8300000, guid: 26f2005a2cd9c3441ba1bb8965169c74, type: 3}
   branchCollect: {fileID: 8300000, guid: a797587f267b6b94b94f247d45f7155a, type: 3}
   gemCollect: {fileID: 8300000, guid: 15461cb171cc45a439b7b44b5e52c2a3, type: 3}
   dialTurn: {fileID: 8300000, guid: 97081552e0148f44cbc8466a80e93ac4, type: 3}
-  boxOpen: {fileID: 8300000, guid: b6d2b2c828a8abe46b97a3ad126fdec0, type: 3}
+  boxOpen: {fileID: 8300000, guid: 4a058ce0006e268478d4ac9105ebac73, type: 3}
   bottleHit: {fileID: 8300000, guid: 39c66ed165356b44a84b7b5fd7fc43f9, type: 3}
   broomCrash: {fileID: 8300000, guid: e830f1d35c706e24b96d084e19782ab9, type: 3}
   shears: {fileID: 8300000, guid: 38b30d5d2d7697c46a3d782a1354188d, type: 3}
   toyCarRoll: {fileID: 8300000, guid: e9cfddf86f283cd48baa497fc0af1aaf, type: 3}
   bloodDrop: {fileID: 8300000, guid: 99b8dfcaadcc3b64a989855ec20f7809, type: 3}
-  itemCombine: {fileID: 8300000, guid: 40221f5a4c30e754db05c965d92f40c9, type: 3}
+  itemCombine: {fileID: 8300000, guid: 549bd3e32a1c0fc45b6ea7411773f9bb, type: 3}
 --- !u!1 &464725709
 GameObject:
   m_ObjectHideFlags: 0

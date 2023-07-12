@@ -17,8 +17,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 4
   EndTime: 8
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &-8331606562499567611
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -36,8 +36,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 15.999999999999998
   EndTime: 20
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &-7847254410428564567
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -55,8 +55,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 20
   EndTime: 24
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &-5672402053957863608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -74,8 +74,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 12
   EndTime: 15.999999999999998
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &-5544820478257374363
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -93,8 +93,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 0
   EndTime: 4
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &-4865103178062887954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,8 +112,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 36
   EndTime: 40
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0
+  EaseOutTime: 0.3
 --- !u!114 &-4208798949187869275
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -131,8 +131,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 24
   EndTime: 28
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &-3558942125913248464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,8 +150,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 28
   EndTime: 32
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &-3522842346416105361
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -169,8 +169,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 8
   EndTime: 12
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &-3127533108439215621
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Time: 66
   retroactive: 0
   emiteOnce: 0
-  selectedSceneName: EndingScene
+  selectedSceneName: EndScreen
 --- !u!114 &-2162069416428024519
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,8 +204,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 32
   EndTime: 36
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,8 +259,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 40
   EndTime: 44
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &1980597736134865681
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -278,8 +278,8 @@ MonoBehaviour:
   waitForPlayerInput: 0
   StartTime: 48
   EndTime: 52.00000000000001
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &2474520623091876247
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -297,8 +297,8 @@ MonoBehaviour:
   waitForPlayerInput: 0
   StartTime: 58
   EndTime: 62
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &3712879954419646348
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -358,8 +358,8 @@ MonoBehaviour:
   waitForPlayerInput: 0
   StartTime: 54
   EndTime: 58
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &5617459326224779172
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -485,8 +485,8 @@ MonoBehaviour:
   waitForPlayerInput: 0
   StartTime: 62
   EndTime: 66
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &8008007597486188180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1631,5 +1631,5 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 44
   EndTime: 48
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3

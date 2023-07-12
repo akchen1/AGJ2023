@@ -17,8 +17,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 20
   EndTime: 24
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0
 --- !u!114 &-7618477636676379748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -818,8 +818,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 15.999999999999998
   EndTime: 20
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &-5749838154051290171
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -837,8 +837,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 0
   EndTime: 3.9999999999999996
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &-5580186055792674918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -856,8 +856,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 7.999999999999998
   EndTime: 11.999999999999998
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &-2313946348917271433
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -901,8 +901,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 31.999999999999996
   EndTime: 36
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -942,8 +942,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 3.9999999999999996
   EndTime: 7.999999999999998
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &1355632146211725708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -961,8 +961,8 @@ MonoBehaviour:
   waitForPlayerInput: 0
   StartTime: 42
   EndTime: 46
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &2153129290102962919
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1070,7 +1070,7 @@ MonoBehaviour:
   m_Time: 49
   retroactive: 0
   emiteOnce: 0
-  selectedSceneName: EndingScene
+  selectedSceneName: EndScreen
 --- !u!114 &5307876080619292659
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1088,8 +1088,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 36
   EndTime: 40
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &5921474481654481425
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1123,8 +1123,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 24
   EndTime: 27.999999999999996
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0
+  EaseOutTime: 0.3
 --- !u!114 &7304316343102841909
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1156,8 +1156,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 11.999999999999998
   EndTime: 15.999999999999998
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &8053361622021937086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1175,8 +1175,8 @@ MonoBehaviour:
   waitForPlayerInput: 1
   StartTime: 27.999999999999996
   EndTime: 31.999999999999996
-  EaseInTime: 0.5
-  EaseOutTime: 0.5
+  EaseInTime: 0.3
+  EaseOutTime: 0.3
 --- !u!114 &8772858722301898400
 MonoBehaviour:
   m_ObjectHideFlags: 1
