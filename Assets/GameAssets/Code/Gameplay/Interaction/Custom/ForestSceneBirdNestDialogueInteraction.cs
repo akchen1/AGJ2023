@@ -29,11 +29,14 @@ public class ForestSceneBirdNestDialogueInteraction : DialogueInteraction
         {
             // Break branch choice
             destroyOnDialogueFinish = true;
-        } else if (birdNestChoiceDialogueNode.Choices[1] == obj.Payload.Option)
+            eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.BranchBreak));
+        }
+        else if (birdNestChoiceDialogueNode.Choices[1] == obj.Payload.Option)
         {
             // Pick different branch
             destroyOnDialogueFinish = false;
             Destroy(GetComponent<BoxCollider2D>());
+            eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.BranchBreak));
         }
     }
 

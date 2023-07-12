@@ -2424,8 +2424,8 @@ PolygonCollider2D:
     - - {x: -0.034248352, y: 1.308178}
       - {x: -8.432891, y: 1.028095}
       - {x: -8.351601, y: 0.087574005}
-      - {x: -1.8867416, y: 0.016910553}
-      - {x: -1.8619537, y: -1.0632782}
+      - {x: -2.4678571, y: 0.024457514}
+      - {x: -2.473257, y: -1.0104495}
       - {x: -0.51556534, y: -1.0256804}
       - {x: 1.0809174, y: -1.1774788}
       - {x: 4.394928, y: -1.1986313}
@@ -2685,6 +2685,7 @@ GameObject:
   - component: {fileID: 1128960732}
   - component: {fileID: 1128960731}
   - component: {fileID: 1128960730}
+  - component: {fileID: 1128960733}
   m_Layer: 6
   m_Name: Bottles
   m_TagString: Untagged
@@ -2755,7 +2756,19 @@ MonoBehaviour:
   <HasInteractionDistance>k__BackingField: 1
   dialogueStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1128960733}
+        m_TargetAssemblyTypeName: SFXEvent, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: BottleHit
+          m_BoolArgument: 0
+        m_CallState: 2
   dialogueEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -2811,6 +2824,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1128960733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128960728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d2503df3b6917b46b4cf3f6fab71da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1134978599
 GameObject:
   m_ObjectHideFlags: 0

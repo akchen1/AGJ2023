@@ -1,5 +1,41 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &66639095525281862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8813314735315122215}
+  m_Layer: 5
+  m_Name: Bounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8813314735315122215
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66639095525281862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5727736636797077043}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 150.00006, y: -72.19}
+  m_SizeDelta: {x: -299.9999, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2652206691726523564
 GameObject:
   m_ObjectHideFlags: 0
@@ -30,6 +66,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8813314735315122215}
   - {fileID: 6101295906362130450}
   - {fileID: 6101295907668417645}
   - {fileID: 6101295907166613780}
@@ -112,7 +149,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5727736636797077043}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -290,7 +327,7 @@ RectTransform:
   - {fileID: 6101295907618353882}
   - {fileID: 6101295906706676758}
   m_Father: {fileID: 5727736636797077043}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -453,7 +490,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5727736636797077043}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -528,8 +565,8 @@ MonoBehaviour:
   bloodSlider: {fileID: 6101295907166613779}
   vial: {fileID: 6101295906362130451}
   bloodPrefab: {fileID: 8489576015466814386, guid: 70e5c127c9715054280f4f0b34055bd1, type: 3}
-  minBloodSpawnPos: {x: 350, y: 1200}
-  maxBloodSpawnPos: {x: 1850, y: 1200}
+  bloodSpawnBounds: {fileID: 8813314735315122215}
+  bloodBounds: {fileID: 5727736636797077043}
   bloodSpawnTimer: 3
   bloodSpawnTimerOffset: 2
   bloodFallSpeed: 10

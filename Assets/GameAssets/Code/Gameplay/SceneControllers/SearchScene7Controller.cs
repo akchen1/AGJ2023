@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.UI;
+using static MainStreetSubSceneController;
 
 public class SearchScene7Controller : SceneController
 {
@@ -13,7 +14,6 @@ public class SearchScene7Controller : SceneController
 
 	[Header("Initialization")]
 	[SerializeField] GameObject Player;
-	[SerializeField] private DSDialogueSO startingDialogue;
 	[SerializeField] private PlayableDirector playableDirector;
 
 	[Header("Subscene transitions")]
@@ -21,8 +21,21 @@ public class SearchScene7Controller : SceneController
 	[SerializeField] private float transitionSpeedMultiplier;
 	[SerializeField] private float transitionTime;
 
+    [Header("Ritual state")]
+    [SerializeField] private List<CombinedRitualItem> combinedRitualItems;
+    [Tooltip("Dialogue to trigger when all ritual components are obtained")]
+    [SerializeField] private DSDialogueSO uncombinedDialogue;
+    [Tooltip("Dialogue to trigger when ritual components are combined")]
+    [SerializeField] private DSDialogueSO combinedDialogue;
+    [SerializeField] private ScrollStateReference scrollStateReference;
 
-	[SerializeField, Header("Main Street")]
+    private bool componentsObtained;
+    private bool itemsObtained;
+
+    private static bool hasTriggeredComponentsObtainedDialogue = false;
+    private static bool hasTriggeredItemsObtainedDialogue = false;
+
+    [SerializeField, Header("Main Street")]
     private MainStreetSubSceneController MainStreetSubSceneController;
 
     [SerializeField, Header("Basement")]
@@ -36,7 +49,10 @@ public class SearchScene7Controller : SceneController
 
     [SerializeField, Header("General Store")] private GeneralStoreSubSceneController GeneralStoreSubSceneController;
 
-	private SubSceneController currentSubScene;
+    [SerializeField, Header("Playground")] private PlaygroundSubSceneController PlaygroundSubSceneController;
+	[SerializeField] private Collider2D playgroundBounds;
+
+    private SubSceneController currentSubScene;
 
 	EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
@@ -76,7 +92,9 @@ public class SearchScene7Controller : SceneController
 
 			case Constants.Scene7SubScenes.LivingRoom:
 				return LivingRoomSubSceneController;
-		}
+			case Constants.Scene7SubScenes.Playground:
+				return PlaygroundSubSceneController;
+        }
 		return null;
 	}
 
@@ -109,28 +127,31 @@ public class SearchScene7Controller : SceneController
 	private void Start()
 	{
 		eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(startingitems));
-		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.MainStreet, true));
 		fadeToBlack.gameObject.SetActive(false);
-		currentSubScene = MainStreetSubSceneController;
+		currentSubScene = BasementSubsceneController;
 		currentSubScene.Enable();
-		PlayStartingDialogue();
+		//PlayStartingDialogue();
 	}
-
-    private void PlayStartingDialogue()
-    {
-		startingDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
-    }
 
     private void OnEnable()
 	{
 		eventBrokerComponent.Subscribe<Scene7Events.ChangeSubscene>(ChangeSubsceneHandler);
 		eventBrokerComponent.Subscribe<Scene7Events.GetBloodSanityResult>(GetBloodSanityResultHandler);
+		eventBrokerComponent.Subscribe<Scene7Events.GetCurrentSubScene>(GetCurrentSubSceneHandler);
+		eventBrokerComponent.Subscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
 	}
 
     private void OnDisable()
 	{
 		eventBrokerComponent.Unsubscribe<Scene7Events.ChangeSubscene>(ChangeSubsceneHandler);
         eventBrokerComponent.Unsubscribe<Scene7Events.GetBloodSanityResult>(GetBloodSanityResultHandler);
+		eventBrokerComponent.Unsubscribe<Scene7Events.GetCurrentSubScene>(GetCurrentSubSceneHandler);
+        eventBrokerComponent.Unsubscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
+    }
+
+    private void InteractEndHandler(BrokerEvent<InteractionEvents.InteractEnd> obj)
+    {
+		CheckScrollDialogues();
     }
 
     private void Update()
@@ -139,5 +160,57 @@ public class SearchScene7Controller : SceneController
 		{
 			currentSubScene.Update();
 		}
+		CheckInPlayground();
+    }
+
+    private void GetCurrentSubSceneHandler(BrokerEvent<Scene7Events.GetCurrentSubScene> obj)
+    {
+		obj.Payload.Subscene?.Invoke(currentSubScene.Subscene);
+    }
+
+	private void CheckInPlayground()
+	{
+		bool inPlayground = playgroundBounds.OverlapPoint(Player.transform.position);
+        if (inPlayground && currentSubScene == MainStreetSubSceneController)
+		{
+            currentSubScene.Disable();
+            currentSubScene = GetNextSubscene(Constants.Scene7SubScenes.Playground);
+            currentSubScene.Enable(false);
+        } else if (!inPlayground && currentSubScene == PlaygroundSubSceneController)
+		{
+            currentSubScene.Disable();
+            currentSubScene = GetNextSubscene(Constants.Scene7SubScenes.MainStreet);
+            currentSubScene.Enable(false);
+        }
+	}
+
+    private void CheckScrollDialogues()
+    {
+        itemsObtained = true;
+        componentsObtained = true;
+        foreach (CombinedRitualItem item in combinedRitualItems)
+        {
+            if (item.Item.CheckInInventory(this)) continue;
+            itemsObtained = false;
+            if (item.Components.Count > 0 && item.Components.CheckInInventory(this)) continue;
+            componentsObtained = false;
+        }
+        if (itemsObtained && !hasTriggeredItemsObtainedDialogue && combinedDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual))
+        {
+            scrollStateReference.Variable.SetValue(ScrollState.ItemsObtained);
+            hasTriggeredItemsObtainedDialogue = true;
+        }
+        else if (!itemsObtained && componentsObtained && !hasTriggeredComponentsObtainedDialogue && uncombinedDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual))
+        {
+            scrollStateReference.Variable.SetValue(ScrollState.ComponentsObtained);
+            hasTriggeredComponentsObtainedDialogue = true;
+        }
+    }
+
+    [System.Serializable]
+    public struct CombinedRitualItem
+    {
+        public InventoryItem Item;
+        public List<InventoryItem> Components;
     }
 }

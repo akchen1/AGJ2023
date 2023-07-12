@@ -15,9 +15,13 @@ public class GeneralStoreSubSceneController : SubSceneController
     [SerializeField] private PlayableDirector playableDirector;
     [SerializeField] private PlayableAsset generalStoreStartingCutscene;
     private bool isFirstEnter = true;
-    public override void Enable()
+
+    protected override string subSceneMusic { get => Constants.Audio.Music.GeneralStore; }
+    public override Constants.Scene7SubScenes Subscene => Constants.Scene7SubScenes.GeneralStore;
+
+    public override void Enable(bool teleportPlayer = true)
     {
-        base.Enable();
+        base.Enable(teleportPlayer);
         eventBrokerComponent.Subscribe<MinigameEvents.EndMinigame>(EndMinigameHandler);
         if (isFirstEnter)
         {

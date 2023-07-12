@@ -67,6 +67,9 @@ public class MatchStick : MonoBehaviour, IEndDragHandler, IBeginDragHandler
             animator.SetTrigger("Lit");
 			eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.MatchLight));
             isLit = true;
+        } else
+        {
+            eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.MatchStrike));
         }
     }
 

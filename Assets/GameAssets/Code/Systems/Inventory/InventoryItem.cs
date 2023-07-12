@@ -11,6 +11,7 @@ public class InventoryItem : ScriptableObject, IInteractableVirtual
     [field: SerializeField] public string ItemName { get; private set; }
     [field: SerializeField] public Sprite ItemIcon { get; private set; }
     [field: SerializeField] public string ItemDescription { get; private set; }
+    [field: SerializeField] public string ItemObtainedSFX { get; private set; }
     [field: SerializeField] public InventoryInteraction InventoryInteraction { get; private set; }
 
 

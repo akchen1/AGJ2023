@@ -12,7 +12,6 @@ public class DialogueTrackMixer : PlayableBehaviour
     private Playable playable;
     private Playable rootPlayable;
     private DialogueClipStartBehaviour currentBehaviour;
-
     public override void OnGraphStart(Playable playable)
     {
         base.OnGraphStart(playable);
@@ -73,7 +72,10 @@ public class DialogueTrackMixer : PlayableBehaviour
         double speed = rootPlayable.GetSpeed();
 
         if (currentBehaviour.canSkipDialogue)
+        {
             rootPlayable.SetTime((float)currentBehaviour.EndTime);
+            eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.Click));
+        }
 
         if (speed == 0f)
             rootPlayable.SetSpeed(1f);

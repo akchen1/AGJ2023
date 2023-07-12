@@ -16,6 +16,9 @@ MonoBehaviour:
   <RequiredItems>k__BackingField:
   - {fileID: 11400000, guid: 19b530fc151647f4993e263fe086782e, type: 2}
   - {fileID: 11400000, guid: d711e05907bb9f14884eb035bdf308e8, type: 2}
+  <OverrideDefaultClickInteraction>k__BackingField: 0
+  playCombineSFX: 1
   minigame: {fileID: 5489319632697532380, guid: aea0ff09d008d134891d2e22259ea92c, type: 3}
   <RequiredSceneInteraction>k__BackingField: 0
-  selectedSceneName: 
+  selectedSceneName: Search - Scene 7 Main Street
+  selectedSubsceneScene: 0

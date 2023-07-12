@@ -18,8 +18,10 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 	[SerializeField, Header("Vial")] private GameObject vial;
 
 	[SerializeField, Header("Blood")] private GameObject bloodPrefab;
-	[SerializeField] private Vector2 minBloodSpawnPos;
-	[SerializeField] private Vector2 maxBloodSpawnPos;
+	[SerializeField] private RectTransform bloodSpawnBounds;
+	[SerializeField] private RectTransform bloodBounds;
+	private Vector2 minBloodSpawnPos;
+	private Vector2 maxBloodSpawnPos;
 	[SerializeField] private float bloodSpawnTimer;
 	[SerializeField] private float bloodSpawnTimerOffset;
 	[SerializeField] private float bloodFallSpeed;
@@ -32,7 +34,7 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 	private bool gameRunning = false;
 	private int totalBlood;
 
-	private List<GameObject> bloodList = new List<GameObject>();
+	private HashSet<RectTransform> bloodList = new HashSet<RectTransform>();
 
 	private float timer;
 
@@ -40,9 +42,9 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 	{
 		eventBrokerComponent.Unsubscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
 
-		foreach(GameObject blood in bloodList)
+		foreach(RectTransform blood in bloodList)
 		{
-			Destroy(blood);
+			Destroy(blood.gameObject);
 		}
 
         eventBrokerComponent.Publish(this, new InventoryEvents.RemoveItem(neededItems.ToArray()));
@@ -56,7 +58,12 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 
 	public void Initialize()
 	{
-		eventBrokerComponent.Subscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
+		Vector3[] worldCorners = new Vector3[4];
+		bloodSpawnBounds.GetWorldCorners(worldCorners);
+		minBloodSpawnPos = worldCorners[0];
+		maxBloodSpawnPos = worldCorners[2];
+
+        eventBrokerComponent.Subscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
 		StartStartingDialogue();
 	}
 
@@ -81,26 +88,20 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 	private void SpawnBlood()
 	{
 		Vector3 spawnPos = new Vector3(Random.Range(minBloodSpawnPos.x, maxBloodSpawnPos.x), Random.Range(minBloodSpawnPos.y, maxBloodSpawnPos.y), 0f);
-		GameObject blood = Instantiate(bloodPrefab, spawnPos, Quaternion.identity);
-		blood.transform.SetParent(bloodHolder);
-		blood.GetComponent<BloodDrop>().Initialize(bloodFallSpeed, OnBloodCollected, OnBloodOutOfBounds);
-		bloodList.Add(blood);
+		GameObject blood = Instantiate(bloodPrefab, spawnPos, Quaternion.identity, bloodHolder);
+		//blood.transform.SetParent(bloodHolder);
+		blood.GetComponent<BloodDrop>().Initialize(bloodFallSpeed, OnBloodCollected);
+		bloodList.Add(blood.GetComponent<RectTransform>());
 	}
 
 	private void OnBloodCollected(GameObject blood)
 	{
 		eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.BloodDrop));
-		bloodList.Remove(blood);
-		Destroy(blood);
+		bloodList.Remove(blood.GetComponent<RectTransform>());
+		Destroy(blood.gameObject);
 
 		totalBlood += 1;
 		bloodSlider.value += 1;
-	}
-
-	private void OnBloodOutOfBounds(GameObject blood)
-	{
-		bloodList.Remove(blood);
-		Destroy(blood);
 	}
 
     // Update is called once per frame
@@ -128,6 +129,8 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 		}
 
 		vial.transform.position = Input.mousePosition;
+
+		CheckBloodBounds();
     }
 
 	private void StartStartingDialogue()
@@ -145,5 +148,18 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 			}
 			eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(dialogue));
 		}));
+	}
+
+	private void CheckBloodBounds()
+	{
+		bloodList.RemoveWhere(blood =>
+		{
+			if (!bloodBounds.RectOverlapsPoint(blood))
+			{
+				Destroy(blood.gameObject);
+				return true;
+			}
+			return false;
+		});
 	}
 }

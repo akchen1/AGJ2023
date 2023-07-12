@@ -32,7 +32,11 @@ public class AudioSystem : MonoBehaviour
 	[SerializeField] private AudioClip drawerClose;
 	[SerializeField] private AudioClip bucketCollect;
 	[SerializeField] private AudioClip candleCollect;
+	[SerializeField] private AudioClip litCandleCollect;
+    [SerializeField] private AudioClip pocketKnifeCollect;
+	[SerializeField] private AudioClip clayCollect;
 	[SerializeField] private AudioClip dig;
+	[SerializeField] private AudioClip digBarHit;
 	[SerializeField] private AudioClip matchLight;
 	[SerializeField] private AudioClip matchStrike;
 	[SerializeField] private AudioClip matchboxCollect;
@@ -41,6 +45,7 @@ public class AudioSystem : MonoBehaviour
 	[SerializeField] private AudioClip twineCollect;
 	[SerializeField] private AudioClip vaseShatter;
 	[SerializeField] private AudioClip vialCollect;
+	[SerializeField] private AudioClip bloodVialCollect;
 	[SerializeField] private AudioClip branchBreak;
 	[SerializeField] private AudioClip branchCollect;
 	[SerializeField] private AudioClip gemCollect;
@@ -51,6 +56,7 @@ public class AudioSystem : MonoBehaviour
 	[SerializeField] private AudioClip shears;
 	[SerializeField] private AudioClip toyCarRoll;
 	[SerializeField] private AudioClip bloodDrop;
+	[SerializeField] private AudioClip itemCombine;
 
 	private float musicVolume;
 	private float sfxVolume;
@@ -89,7 +95,11 @@ public class AudioSystem : MonoBehaviour
 		sfx.Add(Constants.Audio.SFX.DrawerClose, drawerClose);
 		sfx.Add(Constants.Audio.SFX.BucketCollect, bucketCollect);
 		sfx.Add(Constants.Audio.SFX.CandleCollect, candleCollect);
+		sfx.Add(Constants.Audio.SFX.LitCandleCollect, litCandleCollect);
+		sfx.Add(Constants.Audio.SFX.PocketKnifeCollect, pocketKnifeCollect);
+		sfx.Add(Constants.Audio.SFX.ClayCollect, clayCollect);
 		sfx.Add(Constants.Audio.SFX.Dig, dig);
+		sfx.Add(Constants.Audio.SFX.DigBarHit, digBarHit);
 		sfx.Add(Constants.Audio.SFX.MatchLight, matchLight);
 		sfx.Add(Constants.Audio.SFX.MatchStrike, matchStrike);
 		sfx.Add(Constants.Audio.SFX.MatchboxCollect, matchboxCollect);
@@ -98,6 +108,7 @@ public class AudioSystem : MonoBehaviour
 		sfx.Add(Constants.Audio.SFX.TwineCollect, twineCollect);
 		sfx.Add(Constants.Audio.SFX.VaseShatter, vaseShatter);
 		sfx.Add(Constants.Audio.SFX.VialCollect, vialCollect);
+		sfx.Add(Constants.Audio.SFX.BloodVialCollect, bloodVialCollect);
 		sfx.Add(Constants.Audio.SFX.BranchBreak, branchBreak);
 		sfx.Add(Constants.Audio.SFX.BranchCollect, branchCollect);
 		sfx.Add(Constants.Audio.SFX.GemCollect, gemCollect);
@@ -108,7 +119,7 @@ public class AudioSystem : MonoBehaviour
 		sfx.Add(Constants.Audio.SFX.Shears, shears);
 		sfx.Add(Constants.Audio.SFX.ToyCarRoll, toyCarRoll);
 		sfx.Add(Constants.Audio.SFX.BloodDrop, bloodDrop);
-
+		sfx.Add(Constants.Audio.SFX.ItemCombine, itemCombine); 
 	}
 
 	private void OnEnable()

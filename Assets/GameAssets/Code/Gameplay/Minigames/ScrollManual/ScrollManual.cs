@@ -36,6 +36,7 @@ public class ScrollManual : MonoBehaviour, IMinigame
 
     public void Finish()
     {
+        eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.ScrollClose));
         if (!hasTriggeredCompletedItemsDialogue && scrollStateReference == ScrollState.ItemsObtained)
         {
             scrollUI.SetActive(false);
@@ -57,6 +58,8 @@ public class ScrollManual : MonoBehaviour, IMinigame
 
     public void Initialize()
     {
+        eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.ScrollOpen));
+
         bool hasCandle = scrollStateReference == ScrollState.RitualComplete || (HasItem(candle) && HasItem(matchBox));
         bool hasVial = scrollStateReference == ScrollState.RitualComplete || HasItem(vial);
         bool hasWreath = scrollStateReference == ScrollState.RitualComplete || HasItem(weath);

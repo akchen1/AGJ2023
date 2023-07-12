@@ -13,12 +13,15 @@ public class InventoryInteraction : ScriptableObject, IInteractableVirtual
 
     [field:SerializeField] public bool OverrideDefaultClickInteraction { get; private set; } = false;
 
+    [SerializeField] private bool playCombineSFX;
+
     [SerializeField] private GameObject minigame;
 
     [field: SerializeField] public bool RequiredSceneInteraction { get; private set; } = false;
 
     [HideInInspector]
     public string selectedSceneName;
+    [HideInInspector] public Constants.Scene7SubScenes selectedSubsceneScene;
 
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
@@ -32,6 +35,8 @@ public class InventoryInteraction : ScriptableObject, IInteractableVirtual
     public void OnClickInteraction()
     {
         if (!CheckRequirements()) return;
+        if (playCombineSFX)
+            eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.ItemCombine));
         Interact();
     }
 
@@ -44,7 +49,17 @@ public class InventoryInteraction : ScriptableObject, IInteractableVirtual
 
     private bool CheckRequirements()
     {
-        if (RequiredSceneInteraction && SceneManager.GetActiveScene().name != selectedSceneName) return false;
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (RequiredSceneInteraction && currentScene != selectedSceneName) return false;
+        if (RequiredSceneInteraction && currentScene == Constants.SceneNames.SearchScene7MainStreet)
+        {
+            bool valid = false;
+            eventBrokerComponent.Publish(this, new Scene7Events.GetCurrentSubScene(subscene =>
+            {
+                valid = subscene == selectedSubsceneScene;
+            }));
+            if (!valid) return false;
+        }
 
         if (minigame == null) return false;
         return true;

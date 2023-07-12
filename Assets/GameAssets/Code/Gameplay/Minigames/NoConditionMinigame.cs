@@ -1,27 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class NoConditionMinigame : MonoBehaviour, IMinigame
 {
     [SerializeField] private GameObject minigameUI;
 
-    private bool active = false;
+    [SerializeField] private UnityEvent OnMinigameFinish;
+
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     public void Finish()
     {
-        active = false;
         minigameUI.SetActive(false);
 
         this.EndMinigame();
-        //eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
+        OnMinigameFinish?.Invoke();
     }
 
     public void Initialize()
     {
-        active = true;
         minigameUI.SetActive(true);
-        //eventBrokerComponent.Publish(this, new InputEvents.SetInputState(false));
     }
 
     public bool StartCondition()

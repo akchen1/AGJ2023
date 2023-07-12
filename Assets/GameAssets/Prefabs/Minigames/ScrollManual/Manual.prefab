@@ -450,6 +450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5760530410554716491}
   - component: {fileID: 5760530410554716484}
+  - component: {fileID: 4067747801315242152}
   m_Layer: 5
   m_Name: Manual
   m_TagString: Untagged
@@ -511,6 +512,18 @@ MonoBehaviour:
     UseConstant: 0
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: eff099716ff493d41acfc765e2e21d12, type: 2}
+--- !u!114 &4067747801315242152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5760530410554716490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d2503df3b6917b46b4cf3f6fab71da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5760530410819307651
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +723,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 4067747801315242152}
+          m_TargetAssemblyTypeName: AnimationSFXEvent, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: ScrollFlip
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5760530411234586777
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,5 +927,17 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 4067747801315242152}
+          m_TargetAssemblyTypeName: AnimationSFXEvent, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: ScrollFlip
             m_BoolArgument: 0
           m_CallState: 2

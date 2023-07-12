@@ -7,7 +7,6 @@ using UnityEngine.EventSystems;
 public class ItemInteraction : MonoBehaviour, IInteractableWorld, IPointerClickHandler, IBeginDragHandler, IEndDragHandler
 {
     [SerializeField] private InventoryItem item;
-	[SerializeField] public string PickupAudio;
 	[SerializeField] private bool destroyOnInteract = false;
     [SerializeField] private bool allowDragClick = false;
     [SerializeField] private bool ignoreInteractionSystem = false;
@@ -23,16 +22,14 @@ public class ItemInteraction : MonoBehaviour, IInteractableWorld, IPointerClickH
 
     public void Interact()
     {
-		if (PickupAudio != null)
-            eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(PickupAudio));
-
         eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(item));
+
 
         if (itemObtainedDialogue != null)
             eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(itemObtainedDialogue));
-
-        if (!ignoreInteractionSystem)
+        else if (!ignoreInteractionSystem)
             eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
+
 
         if (destroyOnInteract)
             Destroy(this.gameObject);

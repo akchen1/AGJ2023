@@ -49,6 +49,7 @@ public static class Constants
 		Basement = 2,
 		Forest = 3,
 		LivingRoom = 4,
+		Playground = 5
 	}
 	#endregion
 
@@ -89,7 +90,11 @@ public static class Constants
 			public const string DrawerClose = "DrawerClose";
 			public const string BucketCollect = "BucketCollect";
 			public const string CandleCollect = "CandleCollect";
+			public const string LitCandleCollect = "LitCandleCollect";
+            public const string ClayCollect = "ClayCollect";
+			public const string PocketKnifeCollect = "PocketKnifeCollect";
 			public const string Dig = "Dig";
+			public const string DigBarHit = "DigBarHit";
 			public const string MatchLight = "MatchLight";
 			public const string MatchStrike = "MatchStrike";
 			public const string MatchboxCollect = "MatchboxCollect";
@@ -98,6 +103,7 @@ public static class Constants
 			public const string TwineCollect = "TwineCollect";
 			public const string VaseShatter = "VaseShatter";
 			public const string VialCollect = "VialCollect";
+			public const string BloodVialCollect = "BloodVialCollect";
 			public const string BranchBreak = "BranchBreak";
 			public const string BranchCollect = "BranchCollect";
 			public const string GemCollect = "GemCollect";
@@ -108,6 +114,7 @@ public static class Constants
 			public const string Shears = "Shears";
 			public const string ToyCarRoll = "ToyCarRoll";
 			public const string BloodDrop = "BloodDrop";
+			public const string ItemCombine = "ItemCombine";
 		}
 	}
 	#endregion Audio

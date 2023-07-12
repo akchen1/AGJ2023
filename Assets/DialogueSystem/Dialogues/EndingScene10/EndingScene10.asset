@@ -49,10 +49,10 @@ MonoBehaviour:
   <UngroupedDialogues>k__BackingField:
   - {fileID: 11400000, guid: e4c767ce91bbb514886df6b094ffe82e, type: 2}
   - {fileID: 11400000, guid: f83cc325e3431ad4cbc08519e3eaeaba, type: 2}
-  - {fileID: 11400000, guid: 6f5ca04f4e2945e4781c8c1323f60b96, type: 2}
   - {fileID: 11400000, guid: 3d25f630aa19ac343b6adbfbf54ff818, type: 2}
   - {fileID: 11400000, guid: 7e77a8d92911b5d4bb1f12f186fc6ddf, type: 2}
   - {fileID: 11400000, guid: 25394fa8efbb4bc47b14b9e48107bf62, type: 2}
   - {fileID: 11400000, guid: c0ff6b6bd1703394b941fc3192746c44, type: 2}
   - {fileID: 11400000, guid: a1856dca815984b40bf00a5fa4f69d00, type: 2}
   - {fileID: 11400000, guid: fc3b360d2f715474d840423b88f9e006, type: 2}
+  - {fileID: 11400000, guid: 6f5ca04f4e2945e4781c8c1323f60b96, type: 2}

@@ -27,7 +27,6 @@ public class Scene9Controller : SceneController
 
     EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
-	private bool recordPlayerPlaying = false;
     private void Start()
     {
         //endingSceneDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);

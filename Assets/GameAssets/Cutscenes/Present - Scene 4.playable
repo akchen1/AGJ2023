@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 2839062030beec94da8c03fe2951e61c, type: 2}
+  canSkipDialogue: 0
+  waitForPlayerInput: 0
+  StartTime: 0
+  EndTime: 0
+  EaseInTime: 0
+  EaseOutTime: 0
 --- !u!114 &-2777132892339726399
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -26,6 +32,12 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: a69feb29d1a451e438cc8c98a07c4cf7, type: 2}
+  canSkipDialogue: 0
+  waitForPlayerInput: 0
+  StartTime: 0
+  EndTime: 0
+  EaseInTime: 0
+  EaseOutTime: 0
 --- !u!114 &-2122898095009922029
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -39,6 +51,12 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 861efbf5df38df742a41d1bf522b241d, type: 2}
+  canSkipDialogue: 0
+  waitForPlayerInput: 0
+  StartTime: 0
+  EndTime: 0
+  EaseInTime: 0
+  EaseOutTime: 0
 --- !u!114 &-643159716077578572
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -67,8 +85,8 @@ MonoBehaviour:
     m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: -643159716077578572}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -136,8 +154,8 @@ MonoBehaviour:
     m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: -643159716077578572}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -205,8 +223,8 @@ MonoBehaviour:
     m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: -643159716077578572}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -274,8 +292,8 @@ MonoBehaviour:
     m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: -643159716077578572}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -343,8 +361,8 @@ MonoBehaviour:
     m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: -643159716077578572}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -412,8 +430,8 @@ MonoBehaviour:
     m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: -643159716077578572}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -481,8 +499,8 @@ MonoBehaviour:
     m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: -643159716077578572}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -550,8 +568,8 @@ MonoBehaviour:
     m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: -643159716077578572}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
+    m_EaseInDuration: 0.3
+    m_EaseOutDuration: 0.3
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
@@ -671,6 +689,12 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 084e1ae2b3aa2db438a453ccc37e0773, type: 2}
+  canSkipDialogue: 0
+  waitForPlayerInput: 0
+  StartTime: 0
+  EndTime: 0
+  EaseInTime: 0
+  EaseOutTime: 0
 --- !u!114 &4910105060061848609
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -684,6 +708,12 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: a5aa7d03f63e078438ebaf053f026971, type: 2}
+  canSkipDialogue: 0
+  waitForPlayerInput: 0
+  StartTime: 0
+  EndTime: 0
+  EaseInTime: 0
+  EaseOutTime: 0
 --- !u!114 &5106357396983242078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -697,6 +727,12 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: e472ba863b7cc1c40923e7666594a446, type: 2}
+  canSkipDialogue: 0
+  waitForPlayerInput: 0
+  StartTime: 0
+  EndTime: 0
+  EaseInTime: 0
+  EaseOutTime: 0
 --- !u!114 &5775624974988579213
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -710,6 +746,12 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 457aea78327947042aae923ea776400b, type: 2}
+  canSkipDialogue: 0
+  waitForPlayerInput: 0
+  StartTime: 0
+  EndTime: 0
+  EaseInTime: 0
+  EaseOutTime: 0
 --- !u!114 &7760026605206595254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -723,3 +765,9 @@ MonoBehaviour:
   m_Name: DialogueClip
   m_EditorClassIdentifier: 
   Dialogue: {fileID: 11400000, guid: 30756111f5589454bb54e93b28c0028d, type: 2}
+  canSkipDialogue: 0
+  waitForPlayerInput: 0
+  StartTime: 0
+  EndTime: 0
+  EaseInTime: 0
+  EaseOutTime: 0
