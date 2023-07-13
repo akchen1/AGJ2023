@@ -1082,6 +1082,12 @@ MonoBehaviour:
     ConstantValue: 4
     Variable: {fileID: 0}
   <HasInteractionDistance>k__BackingField: 1
+  onMinigameStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onMinigameFinish:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &195441696
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2042,6 +2048,12 @@ MonoBehaviour:
     ConstantValue: 5
     Variable: {fileID: 0}
   <HasInteractionDistance>k__BackingField: 1
+  onMinigameStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onMinigameFinish:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &407709976
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7131,6 +7143,7 @@ MonoBehaviour:
   GeneralStoreSubSceneController:
     subsceneCamera: {fileID: 166775792}
     subsceneTeleportMarker: {fileID: 486427089}
+    distractionMinigame: {fileID: 195441695}
     matchesCollider: {fileID: 4164870328313502712}
     twineCollider: {fileID: 4164870328910443563}
     playableDirector: {fileID: 1926956831}
@@ -7921,6 +7934,12 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+  onMinigameStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onMinigameFinish:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1402338543
 MonoBehaviour:
   m_ObjectHideFlags: 0

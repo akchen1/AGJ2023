@@ -8,6 +8,7 @@ using UnityEngine.Playables;
 public class GeneralStoreSubSceneController : SubSceneController
 {
     [Header("Minigame completion colliders to enable")]
+    [SerializeField] private MinigameInteraction distractionMinigame;
     [SerializeField] private Collider2D matchesCollider;
     [SerializeField] private Collider2D twineCollider;
 
@@ -22,21 +23,21 @@ public class GeneralStoreSubSceneController : SubSceneController
     public override void Enable(bool teleportPlayer = true)
     {
         base.Enable(teleportPlayer);
-        eventBrokerComponent.Subscribe<MinigameEvents.EndMinigame>(EndMinigameHandler);
         if (isFirstEnter)
         {
             playableDirector.Play(generalStoreStartingCutscene);
             isFirstEnter = false;
         }
+        distractionMinigame.onMinigameFinish.AddListener(EnableColliders);
     }
 
     public override void Disable() 
     { 
         base.Disable();
-        eventBrokerComponent.Unsubscribe<MinigameEvents.EndMinigame>(EndMinigameHandler);
+        distractionMinigame.onMinigameFinish.RemoveListener(EnableColliders);
     }
 
-    private void EndMinigameHandler(BrokerEvent<MinigameEvents.EndMinigame> obj)
+    public void EnableColliders()
     {
         matchesCollider.enabled = true;
         twineCollider.enabled = true;

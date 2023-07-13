@@ -33,6 +33,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
             if(transform.childCount > 0)
             {
                 transform.GetChild(0).GetChild(0).GetComponent<Rigidbody2D>().isKinematic = true;
+                transform.GetChild(0).GetChild(0).GetComponent<Collider2D>().enabled = false;
             }
             isDragging = true;
             originalParent = transform.parent;
@@ -52,6 +53,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         if(transform.childCount > 0)
         {
             transform.GetChild(0).GetChild(0).GetComponent<Rigidbody2D>().isKinematic = false;
+            transform.GetChild(0).GetChild(0).GetComponent<Collider2D>().enabled = true;
         }
         canvasGroup.blocksRaycasts = true;
         originalParent.GetComponent<Holder>().isHovering = false;
