@@ -19,7 +19,8 @@ public class PresentScene4Part1Controller : MonoBehaviour
         baduAnimator.SetBool("isBadu", true);
 
         eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.LivingRoom, true));
-	}
+        eventBrokerComponent.Publish(this, new PostProcessingEvents.SetVignette(0.15f));
+    }
 
     public void BaduInteractionStarted()
     {

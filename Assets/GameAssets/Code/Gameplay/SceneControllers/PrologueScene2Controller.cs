@@ -16,6 +16,7 @@ public class PrologueScene2Controller : SceneController
 #if UNITY_EDITOR
         eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.Prologue, true));
 #endif
+        eventBrokerComponent.Publish(this, new PostProcessingEvents.SetVignette(0.05f));
     }
 
     private void OnEnable()

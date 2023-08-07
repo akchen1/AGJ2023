@@ -1089,6 +1089,11 @@ MonoBehaviour:
   playableDirector: {fileID: 1926956831}
   fadeToBlack: {fileID: 1053369984}
   panel: {fileID: 1178137095}
+--- !u!1 &197910400 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8229779336760689926, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
+  m_PrefabInstance: {fileID: 1437453646}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &218863920
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,6 +1606,10 @@ PrefabInstance:
     - target: {fileID: 7885591579812589094, guid: ff3d5493a70889d4d86cf1455ea03b33, type: 3}
       propertyPath: m_Name
       value: Maeve (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885591579812589094, guid: ff3d5493a70889d4d86cf1455ea03b33, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff3d5493a70889d4d86cf1455ea03b33, type: 3}
@@ -2439,7 +2448,10 @@ GameObject:
   - component: {fileID: 472213673}
   - component: {fileID: 472213675}
   - component: {fileID: 472213676}
-  m_Layer: 0
+  - component: {fileID: 472213679}
+  - component: {fileID: 472213678}
+  - component: {fileID: 472213677}
+  m_Layer: 6
   m_Name: Badu-moth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2473,7 +2485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 490ec6b3a25fe8249a940c45df8a0494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 855df327d767a094c94463a0eca1bddd, type: 2}
+  dialogue: {fileID: 11400000, guid: cdb5f3614f06fd1478c7ac149b93a4a8, type: 2}
   canInteractMultipleTimes: 1
   destroyOnDialogueFinish: 0
   <InteractionDistance>k__BackingField:
@@ -2546,7 +2558,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472213671}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -2575,7 +2587,7 @@ Animator:
   m_GameObject: {fileID: 472213671}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 57e852b03a046084885ad7108e6895ee, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0178002bee54371409f82ee270800b26, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2585,6 +2597,91 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &472213677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472213671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  target: {fileID: 1010093558}
+--- !u!114 &472213678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472213671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+  radius: 0.5
+  height: 2
+  canMove: 1
+  maxSpeed: 5
+  gravity: {x: 0, y: 0, z: 0}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  centerOffsetCompatibility: NaN
+  repathRateCompatibility: NaN
+  canSearchCompability: 0
+  orientation: 1
+  enableRotation: 0
+  autoRepath:
+    mode: 2
+    period: 0.5
+    sensitivity: 10
+    maximumPeriod: 2
+    visualizeSensitivity: 0
+  targetCompatibility: {fileID: 0}
+  NormalizedVector2d: {x: 0, y: 0}
+  maxAcceleration: -2.5
+  rotationSpeed: 360
+  slowdownDistance: 0.6
+  pickNextWaypointDist: 2
+  endReachedDistance: 3
+  alwaysDrawGizmos: 0
+  slowWhenNotFacingTarget: 1
+  whenCloseToDestination: 0
+  constrainInsideGraph: 0
+--- !u!114 &472213679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472213671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
 --- !u!1 &486427088
 GameObject:
   m_ObjectHideFlags: 0
@@ -4882,10 +4979,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subscene: 0
   <InteractionDistance>k__BackingField:
-    UseConstant: 0
-    ConstantValue: 0
-    Variable: {fileID: 0}
-  <HasInteractionDistance>k__BackingField: 0
+    UseConstant: 1
+    ConstantValue: 7
+    Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
+  <HasInteractionDistance>k__BackingField: 1
 --- !u!61 &947236348
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5428,6 +5525,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1010093557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1010093558}
+  m_Layer: 0
+  m_Name: Badu Follow Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1010093558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010093557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.01, y: 3.79, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 343840540}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1027647628
 GameObject:
   m_ObjectHideFlags: 0
@@ -6602,13 +6730,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 586870535, guid: eb784dc342250784a99853dddd63a79a, type: 3}
+      propertyPath: use2D
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 586870535, guid: eb784dc342250784a99853dddd63a79a, type: 3}
+      propertyPath: onlyOnClick
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2266454162125543497, guid: eb784dc342250784a99853dddd63a79a, type: 3}
       propertyPath: m_Name
       value: Target
-      objectReference: {fileID: 0}
-    - target: {fileID: 4106289733189523253, guid: eb784dc342250784a99853dddd63a79a, type: 3}
-      propertyPath: layerMask.m_Bits
-      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 7199157781805307252, guid: eb784dc342250784a99853dddd63a79a, type: 3}
       propertyPath: m_RootOrder
@@ -7019,6 +7151,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b8046a6cad45a604288694aaddee7dde, type: 2}
   Player: {fileID: 343840530}
   playableDirector: {fileID: 1926956831}
+  mainstreetMaeve: {fileID: 1998475579}
+  mainStreetBadu: {fileID: 472213673}
   fadeToBlack: {fileID: 1053369984}
   transitionSpeedMultiplier: 5
   transitionTime: 0.5
@@ -7050,14 +7184,29 @@ MonoBehaviour:
   MainStreetSubSceneController:
     subsceneCamera: {fileID: 2070171492}
     subsceneTeleportMarker: {fileID: 2124269751}
+    baduSubsceneDialogue: {fileID: 11400000, guid: cdb5f3614f06fd1478c7ac149b93a4a8, type: 2}
+    maeveSubsceneDialogue: {fileID: 11400000, guid: 92132ea16f0a07b4a83ed1b4e6db37ac, type: 2}
+    teleportPlayer: 1
+    teleportBadu: 1
+    teleportMaeve: 0
     startingDialogue: {fileID: 11400000, guid: 7a40f63ddfc2159439c74c6cef634794, type: 2}
   BasementSubsceneController:
     subsceneCamera: {fileID: 4809142}
     subsceneTeleportMarker: {fileID: 1105130153}
+    baduSubsceneDialogue: {fileID: 11400000, guid: b85b62091ac603c4f88e1715c4f1d46e, type: 2}
+    maeveSubsceneDialogue: {fileID: 0}
+    teleportPlayer: 1
+    teleportBadu: 1
+    teleportMaeve: 0
     vialStartingDialogue: {fileID: 11400000, guid: 279f390d41a26834584bcf0b1db44fe9, type: 2}
   ForestSubSceneController:
     subsceneCamera: {fileID: 593154245}
     subsceneTeleportMarker: {fileID: 1473982433}
+    baduSubsceneDialogue: {fileID: 11400000, guid: fa2abaac0d7e66e4bb0b46ccb2c8e156, type: 2}
+    maeveSubsceneDialogue: {fileID: 11400000, guid: cab9362f0ee3cc742af714bb823a54bb, type: 2}
+    teleportPlayer: 1
+    teleportBadu: 1
+    teleportMaeve: 0
     allItemsDialogue: {fileID: 11400000, guid: deaf3abeca1dbee408c16e4666e98949, type: 2}
     clearingSceneInteraction: {fileID: 1762209973}
     scrollStateReference:
@@ -7067,6 +7216,11 @@ MonoBehaviour:
   LivingRoomSubSceneController:
     subsceneCamera: {fileID: 1765260822}
     subsceneTeleportMarker: {fileID: 795046986}
+    baduSubsceneDialogue: {fileID: 0}
+    maeveSubsceneDialogue: {fileID: 0}
+    teleportPlayer: 1
+    teleportBadu: 0
+    teleportMaeve: 0
     drawerMinigame: {fileID: 852528772}
     pocketKnife: {fileID: 11400000, guid: 81adb7114a46c754d8b177107c636103, type: 2}
     baduSanityDialogue: {fileID: 11400000, guid: 4d061398d0888ca4a8ef8ddff325ea86, type: 2}
@@ -7079,6 +7233,11 @@ MonoBehaviour:
   GeneralStoreSubSceneController:
     subsceneCamera: {fileID: 166775792}
     subsceneTeleportMarker: {fileID: 486427089}
+    baduSubsceneDialogue: {fileID: 11400000, guid: 95769c4efbef1684983a5cd1651e7df4, type: 2}
+    maeveSubsceneDialogue: {fileID: 0}
+    teleportPlayer: 1
+    teleportBadu: 1
+    teleportMaeve: 0
     distractionMinigame: {fileID: 195441695}
     matches: {fileID: 4164870328313502711}
     twine: {fileID: 4164870328910443562}
@@ -7087,6 +7246,11 @@ MonoBehaviour:
   PlaygroundSubSceneController:
     subsceneCamera: {fileID: 2070171492}
     subsceneTeleportMarker: {fileID: 0}
+    baduSubsceneDialogue: {fileID: 11400000, guid: 855df327d767a094c94463a0eca1bddd, type: 2}
+    maeveSubsceneDialogue: {fileID: 11400000, guid: 68083e73e5fb3f34ba21d9a37fe8c680, type: 2}
+    teleportPlayer: 0
+    teleportBadu: 0
+    teleportMaeve: 0
     clayItem: {fileID: 11400000, guid: 7cd749c20530cae41b181e42e292b871, type: 2}
     clayDialogue: {fileID: 11400000, guid: f9cca0f1e3004f849ba2cf2cfc2b95bd, type: 2}
     clayDecisionNode: {fileID: 11400000, guid: cd35c49d7f832064898838dc20160356, type: 2}
@@ -7995,9 +8159,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 514254856993357116, guid: c3086fc414f66c94fbadb677578bb244, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2083935528}
     - target: {fileID: 1230821969371646697, guid: c3086fc414f66c94fbadb677578bb244, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230821969371646697, guid: c3086fc414f66c94fbadb677578bb244, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1230821969371646697, guid: c3086fc414f66c94fbadb677578bb244, type: 3}
       propertyPath: m_TagString
@@ -8144,6 +8316,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Badu
       objectReference: {fileID: 0}
+    - target: {fileID: 8229779336760689926, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8229779336760689926, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8229779336760689927, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_Controller
       value: 
@@ -8199,6 +8379,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8229779336760690041, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
   m_PrefabInstance: {fileID: 1437453646}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &1437453650
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197910400}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.45333335, y: 0.48}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.45333335, y: 0.48}
+  m_EdgeRadius: 0
+--- !u!114 &1437453651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197910400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490ec6b3a25fe8249a940c45df8a0494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: b85b62091ac603c4f88e1715c4f1d46e, type: 2}
+  canInteractMultipleTimes: 1
+  destroyOnDialogueFinish: 0
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 4
+    Variable: {fileID: 0}
+  <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1446857867
 GameObject:
   m_ObjectHideFlags: 0
@@ -8674,7 +8906,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1600863214
 Transform:
   m_ObjectHideFlags: 0
@@ -10140,7 +10372,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1926956830}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 7e81643cd82937448b484b34ce2317f0, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: df67aeae7a85bbd45a908dbb8f008373, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -10663,6 +10895,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1988475814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7885591579812589094, guid: ff3d5493a70889d4d86cf1455ea03b33, type: 3}
+  m_PrefabInstance: {fileID: 296100910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1988475817
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988475814}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 2.3066666}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.3333334, y: 4.613333}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3333334, y: 4.613333}
+  m_EdgeRadius: 0
+--- !u!114 &1988475818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988475814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490ec6b3a25fe8249a940c45df8a0494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: 3bb51d64da31ee94daacdab4852f9996, type: 2}
+  canInteractMultipleTimes: 1
+  destroyOnDialogueFinish: 0
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 4
+    Variable: {fileID: 0}
+  <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1991816440
 GameObject:
   m_ObjectHideFlags: 0
@@ -10759,7 +11048,7 @@ GameObject:
   - component: {fileID: 1998475576}
   - component: {fileID: 1998475578}
   - component: {fileID: 1998475579}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Maeve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10840,7 +11129,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998475572}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -10871,7 +11160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 490ec6b3a25fe8249a940c45df8a0494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 68083e73e5fb3f34ba21d9a37fe8c680, type: 2}
+  dialogue: {fileID: 11400000, guid: 92132ea16f0a07b4a83ed1b4e6db37ac, type: 2}
   canInteractMultipleTimes: 1
   destroyOnDialogueFinish: 0
   <InteractionDistance>k__BackingField:
@@ -11568,6 +11857,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &2083935528 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7199157781805307252, guid: eb784dc342250784a99853dddd63a79a, type: 3}
+  m_PrefabInstance: {fileID: 1205824978}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2093197483
 GameObject:
   m_ObjectHideFlags: 0
@@ -12384,10 +12678,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subscene: 0
   <InteractionDistance>k__BackingField:
-    UseConstant: 0
-    ConstantValue: 0
-    Variable: {fileID: 0}
-  <HasInteractionDistance>k__BackingField: 0
+    UseConstant: 1
+    ConstantValue: 3
+    Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
+  <HasInteractionDistance>k__BackingField: 1
 --- !u!4 &4164870327645882046
 Transform:
   m_ObjectHideFlags: 0
@@ -12881,10 +13175,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subscene: 0
   <InteractionDistance>k__BackingField:
-    UseConstant: 0
-    ConstantValue: 0
+    UseConstant: 1
+    ConstantValue: 3
     Variable: {fileID: 0}
-  <HasInteractionDistance>k__BackingField: 0
+  <HasInteractionDistance>k__BackingField: 1
 --- !u!1 &5143665101558936120
 GameObject:
   m_ObjectHideFlags: 0
@@ -13128,8 +13422,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 1053618989}
     m_Modifications:
     - target: {fileID: 4034869546649922236, guid: 54d02c478c06ae34bb901d346aa66be3, type: 3}
-      propertyPath: m_Enabled
+      propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034869546649922236, guid: 54d02c478c06ae34bb901d346aa66be3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8753207024761186846, guid: 54d02c478c06ae34bb901d346aa66be3, type: 3}
       propertyPath: m_AnchoredPosition.x

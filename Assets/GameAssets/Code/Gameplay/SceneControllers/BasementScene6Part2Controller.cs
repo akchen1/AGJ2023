@@ -36,7 +36,9 @@ public class BasementScene6Part2Controller : MonoBehaviour
     {
         eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(startingDialoguePart1));
 		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.Basement, true));
-		currentDialogue = startingDialoguePart1;
+        eventBrokerComponent.Publish(this, new PostProcessingEvents.SetVignette(0.2f));
+
+        currentDialogue = startingDialoguePart1;
         baduAnimator.SetTrigger("fly");
     }
 

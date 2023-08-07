@@ -1,3 +1,4 @@
+using DS.ScriptableObjects;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -34,4 +35,44 @@ public class Scene7Events
 			Subscene= subscene;
 		}
 	}
+
+	public class SetBaduSubsceneDialogue
+	{
+		public readonly DSDialogueSO Dialogue;
+
+        public SetBaduSubsceneDialogue(DSDialogueSO dialogue)
+        {
+			Dialogue = dialogue;
+        }
+    }
+
+    public class SetMaeveSubsceneDialogue
+    {
+        public readonly DSDialogueSO Dialogue;
+
+        public SetMaeveSubsceneDialogue(DSDialogueSO dialogue)
+        {
+            Dialogue = dialogue;
+        }
+    }
+
+	public class SetBaduPosition
+	{
+		public readonly Vector3 Position;
+
+        public SetBaduPosition(Vector3 position)
+        {
+            Position = position;
+        }
+    }
+
+    public class SetMaevePosition
+    {
+        public readonly Vector3 Position;
+
+        public SetMaevePosition(Vector3 position)
+        {
+            Position = position;
+        }
+    }
 }

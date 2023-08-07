@@ -1,21 +1,22 @@
-using Pathfinding;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MoveTarget : MonoBehaviour
 {
+    public bool AllowMove = true;
+    public GameObject hitGameObject = null;
+    public Vector3 OffSetVector = new Vector3(0, 2f, 0);
+
+    public Transform target;
+
+    public LayerMask layerMask;
+
+    Camera cam;
+
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
-    private GameObject hitObject = null;
-
-    private TargetMover targetMover;
-
-    private void Awake()
-    {
-        targetMover = GetComponent<TargetMover>();
-    }
+    private enum ClickResult { None, UI, Interactable }
+    private ClickResult clickResult;
 
     void Start()
     {
@@ -23,34 +24,69 @@ public class MoveTarget : MonoBehaviour
         {
             transform.position = position;
         }));
-        hitObject = targetMover.hitGameObject;
+
+        //Cache the Main Camera
+        cam = Camera.main;
+
+        useGUILayout = false;
     }
 
-    private void Update()
+    public void OnGUI()
     {
-        if (hitObject != null && targetMover.hitGameObject == null)
+        if (!AllowMove || cam == null) return;
+        if (Event.current.type != EventType.MouseDown || Event.current.clickCount != 1) return;
+
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity, layerMask);
+
+        clickResult = ClickResult.None;
+        if (EventSystem.current.IsPointerOverGameObject() && hit.collider == null)
+        {
+            clickResult = ClickResult.UI;
+        } else if (hit.collider != null)
+        {
+            clickResult = ClickResult.Interactable;
+        }
+
+        UpdateTargetPosition();
+
+        hitGameObject = hit.collider == null ? null : hit.collider.gameObject;
+        if (clickResult != ClickResult.Interactable)
         {
             eventBrokerComponent.Publish(this, new InteractionEvents.CancelPendingInteraction());
-            hitObject = null;
-        }
-
-        if (targetMover.hitGameObject != null && targetMover.hitGameObject.GetComponent<IInteractableWorld>() != null)
-        {
-            hitObject = targetMover.hitGameObject;
         }
     }
 
-    private void GetInputStateHandler(BrokerEvent<InputEvents.SetInputState> inEvent)
+    public void UpdateTargetPosition()
     {
-        targetMover.AllowMove = inEvent.Payload.Active;
+        Vector3 targetPosition = cam.ScreenToWorldPoint(Input.mousePosition);
+        targetPosition.z = 0;
+        if (clickResult == ClickResult.Interactable)
+        {
+            targetPosition -= OffSetVector;
+        } else if (clickResult == ClickResult.UI)
+        {
+            eventBrokerComponent.Publish(this, new PlayerEvents.GetPlayerPosition(position =>
+            {
+                targetPosition = position;
+            }));
+        }
+        
+        target.position = targetPosition;
     }
+
+    private void SetInputStateHandler(BrokerEvent<InputEvents.SetInputState> inEvent)
+    {
+        AllowMove = inEvent.Payload.Active;
+    }
+
     private void OnEnable() {
-        eventBrokerComponent.Subscribe<InputEvents.SetInputState>(GetInputStateHandler);
+        eventBrokerComponent.Subscribe<InputEvents.SetInputState>(SetInputStateHandler);
         eventBrokerComponent.Subscribe<PlayerEvents.SetPlayerPosition>(SetPlayerPositionHandler);
     }
 
     private void OnDisable() {
-        eventBrokerComponent.Unsubscribe<InputEvents.SetInputState>(GetInputStateHandler);
+        eventBrokerComponent.Unsubscribe<InputEvents.SetInputState>(SetInputStateHandler);
         eventBrokerComponent.Unsubscribe<PlayerEvents.SetPlayerPosition>(SetPlayerPositionHandler);
     }
     private void SetPlayerPositionHandler(BrokerEvent<PlayerEvents.SetPlayerPosition> obj)

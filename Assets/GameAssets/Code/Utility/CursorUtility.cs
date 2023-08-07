@@ -56,6 +56,7 @@ public class CursorUtility : MonoBehaviour
 
             if (worldCollider != null && worldCollider.enabled && layer == interactablesLayer && tag == "SceneChangeInteractable")
             {
+                //Debug.Log(result.gameObject);
                 sceneChangeInteractableDetected = true;
             } else if (worldCollider != null && worldCollider.enabled && layer == interactablesLayer)
             {

@@ -16,9 +16,9 @@ public class MainStreetSubSceneController : SubSceneController
     protected override string subSceneMusic { get => Constants.Audio.Music.MainStreet; }
     public override Constants.Scene7SubScenes Subscene => Constants.Scene7SubScenes.MainStreet;
 
-    public override void Enable(bool teleportPlayer = true)
+    public override void Enable(bool overrideTeleport = false)
     {
-        base.Enable(teleportPlayer);
+        base.Enable(overrideTeleport);
 
         if (isFirstEnter)
         {

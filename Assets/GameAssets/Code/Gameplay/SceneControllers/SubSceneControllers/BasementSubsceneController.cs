@@ -16,9 +16,9 @@ public class BasementSubsceneController : SubSceneController
 
     protected override string subSceneMusic { get => Constants.Audio.Music.Basement; }
     public override Constants.Scene7SubScenes Subscene => Constants.Scene7SubScenes.Basement;
-    public override void Enable(bool teleportPlayer = true)
+    public override void Enable(bool overrideTeleport = false)
     {
-        base.Enable(teleportPlayer);
+        base.Enable(overrideTeleport);
         eventBrokerComponent.Subscribe<DialogueEvents.SelectDialogueOption>(SelectDialogueOptionHandler);
         eventBrokerComponent.Subscribe<DialogueEvents.StartDialogue>(StartDialogueHandler);
     }

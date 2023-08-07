@@ -20,9 +20,9 @@ public class GeneralStoreSubSceneController : SubSceneController
     protected override string subSceneMusic { get => Constants.Audio.Music.GeneralStore; }
     public override Constants.Scene7SubScenes Subscene => Constants.Scene7SubScenes.GeneralStore;
 
-    public override void Enable(bool teleportPlayer = true)
+    public override void Enable(bool overrideTeleport = false)
     {
-        base.Enable(teleportPlayer);
+        base.Enable(overrideTeleport);
         if (isFirstEnter)
         {
             playableDirector.Play(generalStoreStartingCutscene);
