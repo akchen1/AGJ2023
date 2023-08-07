@@ -20,6 +20,9 @@ MonoBehaviour:
   - <ID>k__BackingField: d72ef6f5-874d-4d17-b092-5337a560e206
     <Name>k__BackingField: CharacterInteraction
     <Position>k__BackingField: {x: 1760, y: 7231}
+  - <ID>k__BackingField: 799552fa-874d-4273-85d7-6156f7f61b74
+    <Name>k__BackingField: ForbiddenDialogues
+    <Position>k__BackingField: {x: 1748, y: 7640}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: 9fcb7b66-6ae4-441b-98c8-0c31bbdc0341
     <Name>k__BackingField: SS7MSx6B
@@ -402,9 +405,83 @@ MonoBehaviour:
     <GroupID>k__BackingField: 8d1b92f8-a783-408e-8c4e-b0c6e449842d
     <DialogueType>k__BackingField: 1
     <Position>k__BackingField: {x: 4941, y: 6559}
+  - <ID>k__BackingField: fa3db734-b881-47e0-98e2-f8f5b4c3be2f
+    <Name>k__BackingField: SS7MSxInvalidInventoryInteraction
+    <Text>k__BackingField: I don't think these work together.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 799552fa-874d-4273-85d7-6156f7f61b74
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1773, y: 7699}
+  - <ID>k__BackingField: a75be0c5-41c2-455c-b8b9-4486e94323f1
+    <Name>k__BackingField: SS7MSxInvalidCandleMatchbox
+    <Text>k__BackingField: "Maybe I should wait\u2026 I don't want hot wax dripping
+      on me."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 799552fa-874d-4273-85d7-6156f7f61b74
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2150, y: 7699}
+  - <ID>k__BackingField: 3608e7f8-e854-467e-999e-a3687fc23f70
+    <Name>k__BackingField: SS7MSxInvalidBucketShovel
+    <Text>k__BackingField: This doesn't seem like the right place to dig.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 799552fa-874d-4273-85d7-6156f7f61b74
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2591, y: 7699}
+  - <ID>k__BackingField: c757b13d-058a-4250-a0c4-b46e1633dffb
+    <Name>k__BackingField: SS7MSxInvalidEnterClearing
+    <Text>k__BackingField: I think we still have some searching to do.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 799552fa-874d-4273-85d7-6156f7f61b74
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 2966, y: 7699}
   <OldGroupNames>k__BackingField:
   - SanityInteraction
   - CharacterInteraction
+  - ForbiddenDialogues
   <OldUngroupedNodeNames>k__BackingField: []
   <OldGroupedNodeNames>k__BackingField:
     list:
@@ -432,3 +509,9 @@ MonoBehaviour:
       - SS7MSxLeigh
       - SS7MSxMaeve
       - SS7MSxBadu
+    - Key: ForbiddenDialogues
+      Value:
+      - SS7MSxInvalidInventoryInteraction
+      - SS7MSxInvalidCandleMatchbox
+      - SS7MSxInvalidBucketShovel
+      - SS7MSxInvalidEnterClearing

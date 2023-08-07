@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 948767121256387412}
   - component: {fileID: 948767121256387413}
   - component: {fileID: 948767121256387414}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Wreath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,6 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 948767123150669805}
   snapping: 1
+  lockInPlace: 0
   CanPlace: 0
 --- !u!1 &948767121363041642
 GameObject:
@@ -530,7 +531,7 @@ GameObject:
   - component: {fileID: 948767121762224420}
   - component: {fileID: 948767121762224421}
   - component: {fileID: 948767121762224422}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Blood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,6 +624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 948767122375291067}
   snapping: 1
+  lockInPlace: 0
   CanPlace: 0
 --- !u!1 &948767121782516705
 GameObject:
@@ -637,7 +639,7 @@ GameObject:
   - component: {fileID: 948767121782516709}
   - component: {fileID: 948767121782516710}
   - component: {fileID: 948767121782516711}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Candle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -730,6 +732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 948767121657562584}
   snapping: 1
+  lockInPlace: 0
   CanPlace: 0
 --- !u!1 &948767121955375894
 GameObject:
@@ -820,7 +823,7 @@ GameObject:
   - component: {fileID: 948767121978614671}
   - component: {fileID: 948767121978614664}
   - component: {fileID: 948767121978614665}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -914,6 +917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 948767121458249667}
   snapping: 1
+  lockInPlace: 0
   CanPlace: 0
 --- !u!1 &948767121980780783
 GameObject:
@@ -928,7 +932,7 @@ GameObject:
   - component: {fileID: 948767121980780755}
   - component: {fileID: 948767121980780780}
   - component: {fileID: 948767121980780781}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Clay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1021,6 +1025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <TargetTransform>k__BackingField: {fileID: 948767121535420391}
   snapping: 1
+  lockInPlace: 0
   CanPlace: 0
 --- !u!1 &948767121987234396
 GameObject:

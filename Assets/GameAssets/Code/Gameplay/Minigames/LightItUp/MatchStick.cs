@@ -44,7 +44,7 @@ public class MatchStick : MonoBehaviour, IEndDragHandler, IBeginDragHandler
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Matchbox")
+        if (collision.tag == "Matchbox" && !isLit)
         {
             HandleMatchbox();
         }

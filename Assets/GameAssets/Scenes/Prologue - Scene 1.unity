@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 107820925}
   - component: {fileID: 107820928}
   - component: {fileID: 107820929}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: VasePiece4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 243540628}
   - component: {fileID: 243540631}
   - component: {fileID: 243540632}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: VasePiece5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -798,7 +798,7 @@ GameObject:
   - component: {fileID: 313856659}
   - component: {fileID: 313856662}
   - component: {fileID: 313856663}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: VasePiece12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1056,7 +1056,7 @@ GameObject:
   - component: {fileID: 500809622}
   - component: {fileID: 500809625}
   - component: {fileID: 500809626}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: VasePiece1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1177,7 +1177,7 @@ GameObject:
   - component: {fileID: 537299296}
   - component: {fileID: 537299299}
   - component: {fileID: 537299300}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: VasePiece7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1322,6 +1322,12 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+  onMinigameStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onMinigameFinish:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &569393451
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2148,7 +2154,7 @@ GameObject:
   - component: {fileID: 958963295}
   - component: {fileID: 958963298}
   - component: {fileID: 958963299}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: VasePiece10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2545,7 +2551,7 @@ GameObject:
   - component: {fileID: 1179362093}
   - component: {fileID: 1179362096}
   - component: {fileID: 1179362097}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: VasePiece3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2666,7 +2672,7 @@ GameObject:
   - component: {fileID: 1210793316}
   - component: {fileID: 1210793317}
   - component: {fileID: 1210793318}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: VasePiece2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2937,7 +2943,7 @@ GameObject:
   - component: {fileID: 1329829551}
   - component: {fileID: 1329829554}
   - component: {fileID: 1329829555}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: VasePiece9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3176,7 +3182,7 @@ GameObject:
   - component: {fileID: 1355486542}
   - component: {fileID: 1355486545}
   - component: {fileID: 1355486546}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: VasePiece8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3433,7 +3439,7 @@ GameObject:
   - component: {fileID: 1432664882}
   - component: {fileID: 1432664885}
   - component: {fileID: 1432664886}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: VasePiece11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3554,7 +3560,7 @@ GameObject:
   - component: {fileID: 1570845047}
   - component: {fileID: 1570845050}
   - component: {fileID: 1570845051}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: VasePiece6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4343,7 +4349,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: b81b63199b127e64fb3c167e885670cd, type: 2}
-  PickupAudio: 
   destroyOnInteract: 1
   allowDragClick: 0
   ignoreInteractionSystem: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BSxScroll7
   m_EditorClassIdentifier: 
   <DialogueName>k__BackingField: BSxScroll7
-  <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
+  <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
   <Item>k__BackingField: {fileID: 0}
   <HasSceneTransition>k__BackingField: 0
   <NextSceneName>k__BackingField: 
@@ -25,5 +25,11 @@ MonoBehaviour:
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
+    <OnDialogueChoiceSelected>k__BackingField:
+      m_PersistentCalls:
+        m_Calls: []
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
+  <OnDialogueSelected>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []

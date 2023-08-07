@@ -225,24 +225,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: f16b7db4-0166-45fa-8447-393dd8f67200
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: -576, y: 2997}
-  - <ID>k__BackingField: 2b55826b-b30a-4370-a2da-8bc7e5211dd8
-    <Name>k__BackingField: BSx4
-    <Text>k__BackingField: Oh no, the scroll is in tatters! Now what?
-    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: 78ec1f62-67da-4874-827d-6806b30a8d15
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 1063, y: 2173}
   - <ID>k__BackingField: 0cf7d36c-89ad-4832-9224-31ceb430e19d
     <Name>k__BackingField: BSx3B
     <Text>k__BackingField: "Now, I think I remember seeing something over here\u2026"
@@ -461,25 +443,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: f16b7db4-0166-45fa-8447-393dd8f67200
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 3026, y: 2997}
-  - <ID>k__BackingField: 639d64e5-f66a-48e1-89a7-64c347aed7c7
-    <Name>k__BackingField: BSxScroll7
-    <Text>k__BackingField: "I- Well- Alright, Maeve, we- no, I\u2019ll give it a
-      shot."
-    <Character>k__BackingField: {fileID: 11400000, guid: b0b16a07c1332ef4392e9d06225c7c43, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 84accf32-7b7b-4bfd-931d-fa56e7f443e7
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: f16b7db4-0166-45fa-8447-393dd8f67200
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 3407, y: 2997}
   - <ID>k__BackingField: 84accf32-7b7b-4bfd-931d-fa56e7f443e7
     <Name>k__BackingField: BSxScroll8
     <Text>k__BackingField: 'Sweet! I think I can make out some of these. '
@@ -866,6 +829,43 @@ MonoBehaviour:
     <GroupID>k__BackingField: 973f72f1-9782-4719-b796-3d60e9907a2e
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 2539, y: 1684}
+  - <ID>k__BackingField: 2b55826b-b30a-4370-a2da-8bc7e5211dd8
+    <Name>k__BackingField: BSx4
+    <Text>k__BackingField: Oh no, the scroll is in tatters! Now what?
+    <Character>k__BackingField: {fileID: 11400000, guid: 6e7b062ba9cc83a4088d8097fe5148c5, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 78ec1f62-67da-4874-827d-6806b30a8d15
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1063, y: 2173}
+  - <ID>k__BackingField: 639d64e5-f66a-48e1-89a7-64c347aed7c7
+    <Name>k__BackingField: BSxScroll7
+    <Text>k__BackingField: "I- Well- Alright, Maeve, we- no, I\u2019ll give it a
+      shot."
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 84accf32-7b7b-4bfd-931d-fa56e7f443e7
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: f16b7db4-0166-45fa-8447-393dd8f67200
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 3407, y: 2997}
   <OldGroupNames>k__BackingField:
   - Part1MainStreet
   - Part2Basement
@@ -905,8 +905,8 @@ MonoBehaviour:
       - BSx1
       - BSx2
       - BSx3
-      - BSx4
       - BSx3B
+      - BSx4
     - Key: Part3Basement
       Value:
       - BSx2
@@ -925,6 +925,6 @@ MonoBehaviour:
       - BSxScroll9
       - BSxScroll6B
       - BSxScroll6C
-      - BSxScroll7
       - BSxScroll8
       - BSxScroll8B
+      - BSxScroll7

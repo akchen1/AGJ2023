@@ -9,7 +9,7 @@ public class Bootstrap : MonoBehaviour
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
     //private CutsceneSystem cutsceneSystem;
-    private InventorySystem inventorySystem;
+    [SerializeField] private InventorySystem inventorySystem;
     private DialogueSystem dialogueSystem;
     [SerializeField] private SanitySystem sanitySystem;
     private InteractionSystem interactionSystem;
@@ -35,7 +35,7 @@ public class Bootstrap : MonoBehaviour
     private void InitializeSystem()
     {
         //cutsceneSystem = new CutsceneSystem();
-        inventorySystem = new InventorySystem();
+        //inventorySystem = new InventorySystem();
         interactionSystem = new InteractionSystem(this);
         //sanitySystem = new SanitySystem();
         dialogueSystem = new DialogueSystem();

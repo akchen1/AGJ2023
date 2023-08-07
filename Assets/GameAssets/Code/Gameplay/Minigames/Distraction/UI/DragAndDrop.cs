@@ -30,10 +30,14 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
             {
             transform.GetComponent<Rigidbody2D>().isKinematic = true;
             transform.GetComponent<Collider2D>().enabled = false;
-            if(transform.childCount > 0)
+            if(transform.childCount > 0 && transform.GetChild(0).childCount > 0)
             {
                 transform.GetChild(0).GetChild(0).GetComponent<Rigidbody2D>().isKinematic = true;
-                transform.GetChild(0).GetChild(0).GetComponent<Collider2D>().enabled = false;
+                Collider2D childCollider = transform.GetChild(0).GetChild(0).GetComponent<Collider2D>();
+                if (childCollider != null)
+                {
+                    childCollider.enabled = false;
+                }
             }
             isDragging = true;
             originalParent = transform.parent;
@@ -50,10 +54,14 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if(transform.childCount > 0)
+        if(transform.childCount > 0 && transform.GetChild(0).childCount > 0)
         {
             transform.GetChild(0).GetChild(0).GetComponent<Rigidbody2D>().isKinematic = false;
-            transform.GetChild(0).GetChild(0).GetComponent<Collider2D>().enabled = true;
+            Collider2D childCollider = transform.GetChild(0).GetChild(0).GetComponent<Collider2D>();
+            if (childCollider != null)
+            {
+                childCollider.enabled = true;
+            }
         }
         canvasGroup.blocksRaycasts = true;
         originalParent.GetComponent<Holder>().isHovering = false;

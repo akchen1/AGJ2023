@@ -19,6 +19,8 @@ MonoBehaviour:
   <OverrideDefaultClickInteraction>k__BackingField: 0
   playCombineSFX: 1
   minigame: {fileID: 7525449707423018442, guid: e2e5f34f827ed8741a1d76c41241ddc0, type: 3}
+  invalidCombinationInteractionDialogue: {fileID: 0}
+  invalidSceneInteractionDialogue: {fileID: 11400000, guid: 8221a19e484a55c4e899ce74d8f5ab43, type: 2}
   <RequiredSceneInteraction>k__BackingField: 1
   selectedSceneName: Search - Scene 7 Main Street
   selectedSubsceneScene: 5

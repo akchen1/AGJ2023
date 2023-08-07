@@ -20,6 +20,9 @@ MonoBehaviour:
   - <ID>k__BackingField: d11e32a9-c33e-4cad-9701-19952c12be84
     <Name>k__BackingField: Intro
     <Position>k__BackingField: {x: -615, y: 344}
+  - <ID>k__BackingField: 4a6b9394-4495-465a-b997-98a464c6fc25
+    <Name>k__BackingField: Forbiddendialogues
+    <Position>k__BackingField: {x: -608.00006, y: -437.00003}
   <Nodes>k__BackingField:
   - <ID>k__BackingField: b5f9455c-0896-4b33-a216-d9547e201759
     <Name>k__BackingField: SS7GSxLeigh
@@ -111,24 +114,6 @@ MonoBehaviour:
     <GroupID>k__BackingField: d11e32a9-c33e-4cad-9701-19952c12be84
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: -590, y: 403}
-  - <ID>k__BackingField: 8d884ed7-db3f-4d63-812e-15bdde50fb28
-    <Name>k__BackingField: SS7GSxMaeve2
-    <Text>k__BackingField: So, how do we do this?
-    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
-    <Item>k__BackingField: {fileID: 0}
-    <HasSceneTransition>k__BackingField: 0
-    <NextSceneIndex>k__BackingField: 0
-    <NextSceneName>k__BackingField: 
-    <AudioClip>k__BackingField: {fileID: 0}
-    <Choices>k__BackingField:
-    - <Text>k__BackingField: 
-      <NodeID>k__BackingField: 3f041a53-947a-44bb-851d-e414588566b4
-      <HasSanityThreshold>k__BackingField: 0
-      <SanityThreshold>k__BackingField: 0
-      <SanityType>k__BackingField: 0
-    <GroupID>k__BackingField: 8c9928f8-03c4-4706-ad61-21d41cc69309
-    <DialogueType>k__BackingField: 0
-    <Position>k__BackingField: {x: 599, y: 4}
   - <ID>k__BackingField: 3f041a53-947a-44bb-851d-e414588566b4
     <Name>k__BackingField: SS7GSxMaeve3
     <Text>k__BackingField: "The shopkeeper is in the way. We need a distraction of
@@ -148,9 +133,46 @@ MonoBehaviour:
     <GroupID>k__BackingField: 8c9928f8-03c4-4706-ad61-21d41cc69309
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: 973, y: 4}
+  - <ID>k__BackingField: 8d884ed7-db3f-4d63-812e-15bdde50fb28
+    <Name>k__BackingField: SS7GSxMaeve2
+    <Text>k__BackingField: So, how do we do this?
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 3f041a53-947a-44bb-851d-e414588566b4
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 8c9928f8-03c4-4706-ad61-21d41cc69309
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 599, y: 4}
+  - <ID>k__BackingField: 6f9d54a1-8480-4511-aef9-6999f82273a4
+    <Name>k__BackingField: SS7GSxForbidden
+    <Text>k__BackingField: I shouldn't take this right in front of the Shopkeeper.
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: 4a6b9394-4495-465a-b997-98a464c6fc25
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: -583, y: -378}
   <OldGroupNames>k__BackingField:
   - CharacterInteractions
   - Intro
+  - Forbiddendialogues
   <OldUngroupedNodeNames>k__BackingField: []
   <OldGroupedNodeNames>k__BackingField:
     list:
@@ -159,9 +181,12 @@ MonoBehaviour:
       - SS7GSxLeigh
       - SS7GSxBadu
       - SS7GSxMaeve
-      - SS7GSxMaeve2
       - SS7GSxMaeve3
+      - SS7GSxMaeve2
     - Key: Intro
       Value:
       - SS7GSx2
       - SS7GSx1
+    - Key: Forbiddendialogues
+      Value:
+      - SS7GSxForbidden

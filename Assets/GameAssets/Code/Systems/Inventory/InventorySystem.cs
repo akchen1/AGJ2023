@@ -1,3 +1,4 @@
+using DS.ScriptableObjects;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,8 @@ using UnityEngine;
 public class InventorySystem 
 {
 	[SerializeField] private HashSet<InventoryItem> inventory = new HashSet<InventoryItem>();
+	[SerializeField] private DSDialogueSO invalidCombinationDialogue;
+
 	private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
 	private InventoryItem selectedItem;
@@ -78,18 +81,20 @@ public class InventorySystem
 		InventoryItem item1 = inEvent.Payload.Item1;
 		InventoryItem item2 = inEvent.Payload.Item2;
 
-		if (!item1.InventoryInteraction.RequiredItems.Contains(item2)) return;
-		if (!item2.InventoryInteraction.RequiredItems.Contains(item1)) return;
+		if (IsInvalidDragCombination(item1, item2))
+		{
+			invalidCombinationDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
+			return;
+		}
         item1.InventoryInteraction.OnDragInteraction();
-
     }
 
-    private void CheckItemInteraction(InventoryItem item)
+    private bool IsInvalidDragCombination(InventoryItem item1, InventoryItem item2)
     {
-		if (item == null) return;
-        if (item.InventoryInteraction == null) return;
-		//if (item.InventoryInteraction.RequiredItemInteraction && !ContainsRequiredItems(item)) return;
-		item.InventoryInteraction.Interact();
+		bool invalid = item1.InventoryInteraction == null || item2.InventoryInteraction == null;
+		invalid = invalid || !item1.InventoryInteraction.RequiredItems.Contains(item2) || !item2.InventoryInteraction.RequiredItems.Contains(item1);
+
+		return invalid;
     }
 
 	private void RestartGameHandler(BrokerEvent<GameStateEvents.RestartGame> inEvent)

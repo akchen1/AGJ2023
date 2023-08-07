@@ -255,6 +255,24 @@ MonoBehaviour:
     <GroupID>k__BackingField: b0d52d5b-1ea1-47cf-a1c5-6dfb2b9c04ad
     <DialogueType>k__BackingField: 0
     <Position>k__BackingField: {x: -101, y: 127}
+  - <ID>k__BackingField: bce9f7f6-9cb2-44a1-b6d2-a39dd51418be
+    <Name>k__BackingField: CS9xRitualTree
+    <Text>k__BackingField: Ok, one last step!
+    <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+    <Item>k__BackingField: {fileID: 0}
+    <HasSceneTransition>k__BackingField: 0
+    <NextSceneIndex>k__BackingField: 0
+    <NextSceneName>k__BackingField: 
+    <AudioClip>k__BackingField: {fileID: 0}
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: 
+      <NodeID>k__BackingField: 
+      <HasSanityThreshold>k__BackingField: 0
+      <SanityThreshold>k__BackingField: 0
+      <SanityType>k__BackingField: 0
+    <GroupID>k__BackingField: b0d52d5b-1ea1-47cf-a1c5-6dfb2b9c04ad
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 329, y: 127}
   <OldGroupNames>k__BackingField:
   - ItemInteractions
   <OldUngroupedNodeNames>k__BackingField:
@@ -275,3 +293,4 @@ MonoBehaviour:
     - Key: ItemInteractions
       Value:
       - CS9xMatchCandleInvalid
+      - CS9xRitualTree

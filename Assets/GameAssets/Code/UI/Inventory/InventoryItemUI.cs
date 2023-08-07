@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System;
+using DS.ScriptableObjects;
 
 public class InventoryItemUI : MonoBehaviour, IPointerClickHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
@@ -39,13 +40,15 @@ public class InventoryItemUI : MonoBehaviour, IPointerClickHandler, IDragHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (eventData.button != PointerEventData.InputButton.Left) return;
+
         selected = !selected;
         eventBrokerComponent.Publish(this, new InventoryEvents.SelectItem(inventoryItem));
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-
+        if (eventData.button != PointerEventData.InputButton.Left) return;
         if (canvas == null) return;
 
         mouseOffset = transform.position - (Vector3)eventData.position;
@@ -67,17 +70,19 @@ public class InventoryItemUI : MonoBehaviour, IPointerClickHandler, IDragHandler
 
     public void OnDrag(PointerEventData data)
     {
+        if (data.button != PointerEventData.InputButton.Left) return;
+
         SetDraggedPosition(data);
-        CheckScrollBounds();
+        CheckScrollBounds(data);
     }
 
-    private void CheckScrollBounds()
+    private void CheckScrollBounds(PointerEventData data)
     {
-        if (dragIcon.transform.position.y > viewPortCorners[2].y)
+        if (data.position.y > viewPortCorners[2].y - Constants.Inventory.InventoryScrollPadding)   // TODO: This value might need to change depending on the screen resolution
         {
             eventBrokerComponent.Publish(this, new InventoryEvents.ScrollInventory(false));
         }
-        else if (dragIcon.transform.position.y < viewPortCorners[0].y)
+        else if (data.position.y < viewPortCorners[0].y)
         {
             eventBrokerComponent.Publish(this, new InventoryEvents.ScrollInventory(true));
         }
@@ -95,9 +100,9 @@ public class InventoryItemUI : MonoBehaviour, IPointerClickHandler, IDragHandler
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Destroy(dragIcon);
+        if (eventData.button != PointerEventData.InputButton.Left) return;
 
-        if (inventoryItem.InventoryInteraction == null) return;
+        Destroy(dragIcon);
 
         GraphicRaycaster r = canvas.GetComponent<GraphicRaycaster>();
         List<RaycastResult> results = new List<RaycastResult>();

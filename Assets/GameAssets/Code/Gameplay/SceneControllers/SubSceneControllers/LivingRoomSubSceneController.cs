@@ -9,6 +9,7 @@ using UnityEngine.Playables;
 public class LivingRoomSubSceneController : SubSceneController
 {
     [Header("Drawer minigame")]
+    [SerializeField] private NoConditionMinigame drawerMinigame;
     [Tooltip("Inventory item that triggers maeve leave cutscene")]
     [SerializeField] private InventoryItem pocketKnife;
     [Tooltip("Dialogue to play once maeve exits the room")]
@@ -16,6 +17,9 @@ public class LivingRoomSubSceneController : SubSceneController
 
     [Tooltip("Dialogue node of to either break or not break the vase")]
     [SerializeField] private DSDialogueSO sanityChoiceDialogueNode;
+
+    [Header("Record Player")]
+    [SerializeField] private RecordPlayerInteraction recordPlayer;
 
     [Header("Cutscenes")]
     [SerializeField] private PlayableDirector director;
@@ -38,54 +42,34 @@ public class LivingRoomSubSceneController : SubSceneController
     public override void Enable(bool teleportPlayer = true)
     {
         base.Enable(teleportPlayer);
-        eventBrokerComponent.Subscribe<InventoryEvents.AddItem>(AddItemHandler);
-        eventBrokerComponent.Subscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
-        eventBrokerComponent.Subscribe<DialogueEvents.SelectDialogueOption>(SelectDialogueOptionHandler);
         eventBrokerComponent.Subscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
-        
+
+        drawerMinigame.OnMinigameFinish.AddListener(DrawerMinigameFinishHandler);
+        sanityChoiceDialogueNode.Choices[0].OnDialogueChoiceSelected.AddListener(BreakVaseHandler);
+
+
         baduAnimator.SetTrigger(pocketKnifeObtained ? "fly" : "idle");
     }
 
     public override void Disable()
     {
         base.Disable();
-        eventBrokerComponent.Unsubscribe<InventoryEvents.AddItem>(AddItemHandler);
-        eventBrokerComponent.Unsubscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
-        eventBrokerComponent.Unsubscribe<DialogueEvents.SelectDialogueOption>(SelectDialogueOptionHandler);
+        recordPlayer.TurnOff();
         eventBrokerComponent.Unsubscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
+        drawerMinigame.OnMinigameFinish.RemoveListener(DrawerMinigameFinishHandler);
+        sanityChoiceDialogueNode.Choices[0].OnDialogueChoiceSelected.RemoveListener(BreakVaseHandler);
     }
 
-    private void DialogueFinishHandler(BrokerEvent<DialogueEvents.DialogueFinish> obj)
+    private void BreakVaseHandler()
     {
-        if (!sanityDialogueStarted) return;
-        baduAnimator.SetBool("isBadu", false);
-        baduAnimator.SetTrigger("fly");
-        sanityDialogueStarted = false;
+        director.Play(vaseBreakCutscene);
     }
 
-    private void SelectDialogueOptionHandler(BrokerEvent<DialogueEvents.SelectDialogueOption> obj)
+    private void DrawerMinigameFinishHandler()
     {
-        if (!sanityDialogueStarted) return;
-        if (obj.Payload.Option == sanityChoiceDialogueNode.Choices[0])
-        {
-            director.Play(vaseBreakCutscene);
-        }
-    }
-
-    private void AddItemHandler(BrokerEvent<InventoryEvents.AddItem> obj)
-    {
-        foreach (InventoryItem item in obj.Payload.Items)
-        {
-            if (item == pocketKnife)
-            {
-                pocketKnifeObtained = true;
-            }
-        }
-    }
-
-    private void InteractEndHandler(BrokerEvent<InteractionEvents.InteractEnd> obj)
-    {
-        if (pocketKnifeObtained && isFirstInteract)
+        if (!isFirstInteract) return;
+        if (!pocketKnife.CheckInInventory(this)) return;
+        if (director.Interact())
         {
             director.Play(maeveLeaveCutscene);
             director.stopped += OnMaeveLeaveCutsceneFinish;
@@ -93,9 +77,17 @@ public class LivingRoomSubSceneController : SubSceneController
         }
     }
 
+
+    private void DialogueFinishHandler(BrokerEvent<DialogueEvents.DialogueFinish> obj)
+    {
+        if (!sanityDialogueStarted) return;
+        baduAnimator.SetBool("isBadu", false);
+        sanityDialogueStarted = false;
+    }
+
     private void OnMaeveLeaveCutsceneFinish(PlayableDirector obj)
     {
-        baduSanityDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
+        eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(baduSanityDialogue));
         director.stopped -= OnMaeveLeaveCutsceneFinish;
         sanityDialogueStarted = true;
     }

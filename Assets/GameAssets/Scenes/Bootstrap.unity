@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 191973084}
   - component: {fileID: 191973083}
   - component: {fileID: 191973082}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 222190023}
   - component: {fileID: 222190022}
   - component: {fileID: 222190021}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -799,6 +799,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257c07af25f4bf34aaa406e99a288dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventorySystem:
+    invalidCombinationDialogue: {fileID: 11400000, guid: a729ed56aa7826a47a52dcf057ab4e50, type: 2}
   sanitySystem:
     sanityCurve:
       serializedVersion: 2
@@ -847,10 +849,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultCursor: {fileID: 2800000, guid: 28263fbd84932b1429063f2e66825eb6, type: 3}
   interactCursor: {fileID: 2800000, guid: 3fdb3de1d8688994abb8ebbf7a006216, type: 3}
-  raycaster: {fileID: 939417202}
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 64
+  enterCursor: {fileID: 2800000, guid: 14038269243904a4da52df27e91b807c, type: 3}
+  eventSystem: {fileID: 259253091}
 --- !u!1 &499501586
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,7 +943,7 @@ GameObject:
   - component: {fileID: 562169433}
   - component: {fileID: 562169432}
   - component: {fileID: 562169431}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1430,6 +1430,7 @@ GameObject:
   - component: {fileID: 939417203}
   - component: {fileID: 939417202}
   - component: {fileID: 939417207}
+  - component: {fileID: 939417208}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -1476,7 +1477,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -1521,7 +1522,7 @@ Camera:
   far clip plane: 5000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.4
+  orthographic size: 16
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1545,7 +1546,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939417201}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 36.91, y: -32.67, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1613,6 +1614,23 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &939417208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939417201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: a535970b4ded7ba4d89aaa6f92691eed, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!1 &944636630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,6 +1763,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 420505137}
     m_Modifications:
+    - target: {fileID: 9158256072305581893, guid: e4f69e35425c520488e69ec6cfd3723f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9158256072305581914, guid: e4f69e35425c520488e69ec6cfd3723f, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -46.268066
@@ -1824,6 +1846,10 @@ PrefabInstance:
     - target: {fileID: 9158256072687243821, guid: e4f69e35425c520488e69ec6cfd3723f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9158256072687243823, guid: e4f69e35425c520488e69ec6cfd3723f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9158256073340898866, guid: e4f69e35425c520488e69ec6cfd3723f, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2101,7 +2127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1367137782}
   - component: {fileID: 1367137783}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Music Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2192,7 +2218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1719560845}
   - component: {fileID: 1719560846}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: SFX Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

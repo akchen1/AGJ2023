@@ -10,6 +10,7 @@ public class ScrollManual : MonoBehaviour, IMinigame
     [SerializeField] private GameObject scrollUI;
 
     [SerializeField] private InventoryItem candle;
+    [SerializeField] private InventoryItem litCandle;
     [SerializeField] private InventoryItem matchBox;
     [SerializeField] private InventoryItem vial;
     [SerializeField] private InventoryItem weath;
@@ -60,7 +61,7 @@ public class ScrollManual : MonoBehaviour, IMinigame
     {
         eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.ScrollOpen));
 
-        bool hasCandle = scrollStateReference == ScrollState.RitualComplete || (HasItem(candle) && HasItem(matchBox));
+        bool hasCandle = scrollStateReference == ScrollState.RitualComplete || ((HasItem(candle) && HasItem(matchBox))) || HasItem(litCandle);
         bool hasVial = scrollStateReference == ScrollState.RitualComplete || HasItem(vial);
         bool hasWreath = scrollStateReference == ScrollState.RitualComplete || HasItem(weath);
         bool hasGem = scrollStateReference == ScrollState.RitualComplete || HasItem(gem);

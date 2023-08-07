@@ -9,8 +9,8 @@ public class GeneralStoreSubSceneController : SubSceneController
 {
     [Header("Minigame completion colliders to enable")]
     [SerializeField] private MinigameInteraction distractionMinigame;
-    [SerializeField] private Collider2D matchesCollider;
-    [SerializeField] private Collider2D twineCollider;
+    [SerializeField] private GameObject matches;
+    [SerializeField] private GameObject twine;
 
     [Header("On store enter cutscene")]
     [SerializeField] private PlayableDirector playableDirector;
@@ -39,7 +39,10 @@ public class GeneralStoreSubSceneController : SubSceneController
 
     public void EnableColliders()
     {
-        matchesCollider.enabled = true;
-        twineCollider.enabled = true;
+        matches.GetComponent<DialogueInteraction>().enabled = false;
+        matches.GetComponent<ItemInteraction>().enabled = true;
+
+        twine.GetComponent<DialogueInteraction>().enabled = false;
+        twine.GetComponent<ItemInteraction>().enabled = true;
     }
 }

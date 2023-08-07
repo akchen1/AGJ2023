@@ -28,7 +28,8 @@ public class ForestSubSceneController : SubSceneController
         if (!hasTriggeredAllItemsObtained && scrollStateReference.Value == ScrollState.ItemsObtained)
         {
             allItemsDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
-            clearingSceneInteraction.SetActive(true);
+            clearingSceneInteraction.GetComponent<DialogueInteraction>().enabled = false;
+            clearingSceneInteraction.GetComponent<SceneChangeInteraction>().enabled = true;
             hasTriggeredAllItemsObtained = true;
         }
     }

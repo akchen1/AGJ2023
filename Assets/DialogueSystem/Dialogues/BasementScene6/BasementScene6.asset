@@ -46,8 +46,8 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 713543a8d76b8a94ab34b9b7c56491bf, type: 2}
       - {fileID: 11400000, guid: a6d79d79068359e48a77adad26c3b8a9, type: 2}
       - {fileID: 11400000, guid: 99b845248d4960b4097cb02e41a5311d, type: 2}
-      - {fileID: 11400000, guid: 23c29c9540adfe84f8df54a8b0960d9e, type: 2}
       - {fileID: 11400000, guid: 9a53f735d7c6f8b4882211e4f0e03be1, type: 2}
+      - {fileID: 11400000, guid: 23c29c9540adfe84f8df54a8b0960d9e, type: 2}
     - Key: {fileID: 11400000, guid: f8f3c0d09106c0b41bd56f4da8384664, type: 2}
       Value:
       - {fileID: 11400000, guid: 50669a723bba6554f81e879846894242, type: 2}
@@ -66,7 +66,7 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 0f2ea8dfe951ef54298f85b7cf7f66bc, type: 2}
       - {fileID: 11400000, guid: 6acdddbff2d26f54783fee26271907ff, type: 2}
       - {fileID: 11400000, guid: ceb70d00163023244ae995f2068f21f8, type: 2}
-      - {fileID: 11400000, guid: d75113a40e51de548a296fa3296f4bd9, type: 2}
       - {fileID: 11400000, guid: 788a2267892851440bc3a87daeaed61f, type: 2}
       - {fileID: 11400000, guid: d1573d6161f1ae54d8e2e9a520782368, type: 2}
+      - {fileID: 11400000, guid: d75113a40e51de548a296fa3296f4bd9, type: 2}
   <UngroupedDialogues>k__BackingField: []

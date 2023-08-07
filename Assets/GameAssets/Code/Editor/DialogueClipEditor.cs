@@ -14,7 +14,8 @@ public class DialogueClipEditor : Editor
         DialogueClip dialogueClip = (DialogueClip)target;
         EditorGUILayout.Space();
         EditorGUI.BeginDisabledGroup(true);
-        GUILayout.TextArea(dialogueClip.Dialogue.Character.CharacterName);
+        if (dialogueClip.Dialogue.Character != null)
+            GUILayout.TextArea(dialogueClip.Dialogue.Character.CharacterName);
         GUILayout.TextArea(dialogueClip.Dialogue.Text);
         EditorGUI.EndDisabledGroup();
     }

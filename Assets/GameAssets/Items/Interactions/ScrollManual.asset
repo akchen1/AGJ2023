@@ -16,6 +16,10 @@ MonoBehaviour:
   <RequiredItems>k__BackingField:
   - {fileID: 11400000, guid: 4109a1a426b864c4e84946798c5ac693, type: 2}
   <OverrideDefaultClickInteraction>k__BackingField: 1
+  playCombineSFX: 0
   minigame: {fileID: 5760530410554716490, guid: 7e1999bc57002ab43bb89a9e85c9ce2f, type: 3}
+  invalidCombinationInteractionDialogue: {fileID: 11400000, guid: a729ed56aa7826a47a52dcf057ab4e50, type: 2}
+  invalidSceneInteractionDialogue: {fileID: 0}
   <RequiredSceneInteraction>k__BackingField: 0
   selectedSceneName: 
+  selectedSubsceneScene: 0

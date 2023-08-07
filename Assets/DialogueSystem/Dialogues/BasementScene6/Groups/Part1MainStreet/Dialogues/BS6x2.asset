@@ -25,5 +25,11 @@ MonoBehaviour:
     <HasSanityThreshold>k__BackingField: 0
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
+    <OnDialogueChoiceSelected>k__BackingField:
+      m_PersistentCalls:
+        m_Calls: []
   <DialogueType>k__BackingField: 0
   <IsStartingDialogue>k__BackingField: 0
+  <OnDialogueSelected>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []

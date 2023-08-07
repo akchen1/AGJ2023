@@ -5,6 +5,8 @@ using UnityEngine;
 namespace DS.Data
 {
     using ScriptableObjects;
+    using UnityEngine.Events;
+
     [System.Serializable]
     public class DSDialogueChoiceData
     {
@@ -14,6 +16,8 @@ namespace DS.Data
         [field: SerializeField] public bool HasSanityThreshold { get; set; }
         [field: SerializeField] public float SanityThreshold { get; set; }
         [field: SerializeField] public Constants.Sanity.SanityType SanityType { get; set; }
+
+        [field: SerializeField] public UnityEvent OnDialogueChoiceSelected { get; set; }
     }
 }
 

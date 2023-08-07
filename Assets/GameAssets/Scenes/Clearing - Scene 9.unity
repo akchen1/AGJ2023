@@ -689,6 +689,7 @@ GameObject:
   - component: {fileID: 621927473}
   - component: {fileID: 621927476}
   - component: {fileID: 621927475}
+  - component: {fileID: 621927477}
   m_Layer: 6
   m_Name: Big Tree
   m_TagString: Untagged
@@ -809,6 +810,38 @@ MonoBehaviour:
     ConstantValue: 5
     Variable: {fileID: 0}
   <HasInteractionDistance>k__BackingField: 1
+  onMinigameStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onMinigameFinish:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &621927477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621927472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490ec6b3a25fe8249a940c45df8a0494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: e93c6433a9ba2d949aed4472d31d79b5, type: 2}
+  canInteractMultipleTimes: 1
+  destroyOnDialogueFinish: 0
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 5
+    Variable: {fileID: 0}
+  <HasInteractionDistance>k__BackingField: 1
+  dialogueStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &673340195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,7 +1491,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e372e016b291cf4dbc58ea42c68025b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingItems: []
+  ritualTree: {fileID: 621927472}
+  litCandle: {fileID: 11400000, guid: 0ef24c124aabcbe489bbf406f7ad2ab7, type: 2}
+  startingItems:
+  - {fileID: 11400000, guid: 4109a1a426b864c4e84946798c5ac693, type: 2}
+  - {fileID: 11400000, guid: 48d9cccea6a175041bd8d4146a3ebbb5, type: 2}
+  - {fileID: 11400000, guid: f136711b4bf992e4a958c4162dc0a4f9, type: 2}
+  - {fileID: 11400000, guid: 42130195c55c9754b8670900391558ac, type: 2}
+  - {fileID: 11400000, guid: 063cb76fc16de3a409d470f333789232, type: 2}
+  - {fileID: 11400000, guid: a0667da986d93b94789634435bc87154, type: 2}
+  - {fileID: 11400000, guid: 7cd749c20530cae41b181e42e292b871, type: 2}
   startingCutscene: {fileID: 11400000, guid: 6a4db0dbd2ecca243b7e35f52a32d944, type: 2}
   closedScrollCutscene: {fileID: 11400000, guid: aedec0d437a1d154c8abaa6d4287f2e6, type: 2}
   playableDirector: {fileID: 1565500090}

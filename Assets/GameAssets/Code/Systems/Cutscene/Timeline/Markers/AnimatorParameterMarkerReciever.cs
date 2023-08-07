@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Windows;
 
+[ExecuteInEditMode]
 public class AnimatorParameterMarkerReciever : MonoBehaviour, INotificationReceiver
 {
     private Animator animator;

@@ -17,6 +17,8 @@ public class InventoryInteraction : ScriptableObject, IInteractableVirtual
 
     [SerializeField] private GameObject minigame;
 
+    [SerializeField] private DSDialogueSO invalidSceneInteractionDialogue;
+
     [field: SerializeField] public bool RequiredSceneInteraction { get; private set; } = false;
 
     [HideInInspector]
@@ -50,18 +52,35 @@ public class InventoryInteraction : ScriptableObject, IInteractableVirtual
     private bool CheckRequirements()
     {
         string currentScene = SceneManager.GetActiveScene().name;
-        if (RequiredSceneInteraction && currentScene != selectedSceneName) return false;
+        if (RequiredSceneInteraction && currentScene != selectedSceneName)
+        {
+            PlayInvalidSceneInteractionDialogue();
+            return false;
+        }
+        
+        bool valid = true;
         if (RequiredSceneInteraction && currentScene == Constants.SceneNames.SearchScene7MainStreet)
         {
-            bool valid = false;
             eventBrokerComponent.Publish(this, new Scene7Events.GetCurrentSubScene(subscene =>
             {
                 valid = subscene == selectedSubsceneScene;
             }));
-            if (!valid) return false;
+        }
+        if (!valid)
+        {
+            PlayInvalidSceneInteractionDialogue();
+            return false;
         }
 
         if (minigame == null) return false;
         return true;
+    }
+
+    private void PlayInvalidSceneInteractionDialogue()
+    {
+        if (invalidSceneInteractionDialogue != null)
+        {
+            invalidSceneInteractionDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
+        }
     }
 }

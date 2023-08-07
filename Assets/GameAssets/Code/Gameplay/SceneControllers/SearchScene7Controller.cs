@@ -5,12 +5,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.UI;
-using static MainStreetSubSceneController;
 
 public class SearchScene7Controller : SceneController
 {
+#if UNITY_EDITOR
 	[Header("Testing")]
 	public InventoryItem[] startingitems;
+#endif
 
 	[Header("Initialization")]
 	[SerializeField] GameObject Player;
@@ -126,7 +127,9 @@ public class SearchScene7Controller : SceneController
 
 	private void Start()
 	{
+#if UNITY_EDITOR
 		eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(startingitems));
+#endif
 		fadeToBlack.gameObject.SetActive(false);
 		currentSubScene = BasementSubsceneController;
 		currentSubScene.Enable();
@@ -151,7 +154,8 @@ public class SearchScene7Controller : SceneController
 
     private void InteractEndHandler(BrokerEvent<InteractionEvents.InteractEnd> obj)
     {
-		CheckScrollDialogues();
+		// Let other interactions take priorty
+		Invoke("CheckScrollDialogues", 0.1f);
     }
 
     private void Update()

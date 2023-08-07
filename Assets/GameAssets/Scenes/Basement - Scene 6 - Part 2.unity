@@ -541,7 +541,8 @@ MonoBehaviour:
   postScrollInspectDialgouePart1: {fileID: 11400000, guid: a88ef0e662dc46e48b5d72a3cd43f2c5, type: 2}
   postScrollInspectDialoguePart2: {fileID: 11400000, guid: a8fcc6ddfe511474cab64ea907cced0f, type: 2}
   baduAnimator: {fileID: 1041809834}
-  bookshelfCutscene: {fileID: 1769099584}
+  director: {fileID: 1769099584}
+  bookshelfCutscene: {fileID: 11400000, guid: 5342fa82ad9ce23418a6e36421155f71, type: 2}
   openedScroll: {fileID: 1782092519}
   basementStairs: {fileID: 1568553688}
 --- !u!4 &113754249
@@ -4952,7 +4953,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1769099583}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 5342fa82ad9ce23418a6e36421155f71, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: e18da6ced4a8bfc4f8a3c7598b4d94d3, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -5339,6 +5340,12 @@ MonoBehaviour:
     ConstantValue: 3
     Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
   <HasInteractionDistance>k__BackingField: 1
+  onMinigameStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onMinigameFinish:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1788912420
 GameObject:
   m_ObjectHideFlags: 0

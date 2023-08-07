@@ -33,7 +33,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 150.00006, y: -72.19}
+  m_AnchoredPosition: {x: 150.00006, y: 81.07}
   m_SizeDelta: {x: -299.9999, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2652206691726523564
@@ -70,6 +70,7 @@ RectTransform:
   - {fileID: 6101295906362130450}
   - {fileID: 6101295907668417645}
   - {fileID: 6101295907166613780}
+  - {fileID: 4839239337152287006}
   m_Father: {fileID: 6101295907797824446}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -373,7 +374,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 6101295908362184217}
   m_HandleRect: {fileID: 0}
@@ -563,13 +564,14 @@ MonoBehaviour:
   bloodNeeded: 10
   panel: {fileID: 2652206691726523564}
   bloodSlider: {fileID: 6101295907166613779}
+  destroyZone: {fileID: 4839239337152287006}
   vial: {fileID: 6101295906362130451}
   bloodPrefab: {fileID: 8489576015466814386, guid: 70e5c127c9715054280f4f0b34055bd1, type: 3}
   bloodSpawnBounds: {fileID: 8813314735315122215}
   bloodBounds: {fileID: 5727736636797077043}
   bloodSpawnTimer: 3
   bloodSpawnTimerOffset: 2
-  bloodFallSpeed: 10
+  bloodFallSpeed: 50
   bloodHolder: {fileID: 6101295907668417645}
   negativeDialogue: {fileID: 11400000, guid: b4f040d882646df41a4ac8cba050c56b, type: 2}
   neutralDialogue: {fileID: 11400000, guid: e5a5eae8f14ac114dabb9b6c12ab11b8, type: 2}
@@ -650,3 +652,39 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &7327613471879421344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4839239337152287006}
+  m_Layer: 5
+  m_Name: DestroyZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4839239337152287006
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7327613471879421344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5727736636797077043}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: -200}
+  m_SizeDelta: {x: 0, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
