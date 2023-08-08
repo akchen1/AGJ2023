@@ -802,7 +802,6 @@ MonoBehaviour:
   inventorySystem:
     invalidCombinationDialogue: {fileID: 11400000, guid: a729ed56aa7826a47a52dcf057ab4e50, type: 2}
   sanitySystem:
-    camera: {fileID: 939417201}
     sanityCurve:
       serializedVersion: 2
       m_Curve:
@@ -2022,7 +2021,7 @@ GameObject:
   - component: {fileID: 1348618932}
   - component: {fileID: 1348618934}
   - component: {fileID: 1348618933}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2634,7 +2633,7 @@ GameObject:
   - component: {fileID: 2131114773}
   - component: {fileID: 2131114775}
   - component: {fileID: 2131114774}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
