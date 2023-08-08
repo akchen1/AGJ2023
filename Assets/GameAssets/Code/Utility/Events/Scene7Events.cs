@@ -75,4 +75,24 @@ public class Scene7Events
             Position = position;
         }
     }
+
+	public class EnableBaduMovement
+	{
+		public readonly bool Enable;
+
+		public EnableBaduMovement(bool enable)
+		{
+			Enable = enable;
+		}
+	}
+
+	public class EnableMaeveMovement
+	{
+		public readonly bool Enable;
+
+		public EnableMaeveMovement(bool enable)
+		{
+			Enable = enable;
+		}
+	}
 }

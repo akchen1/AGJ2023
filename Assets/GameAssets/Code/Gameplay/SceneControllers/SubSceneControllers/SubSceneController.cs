@@ -15,9 +15,9 @@ public class SubSceneController
 	[SerializeField] protected DSDialogueSO baduSubsceneDialogue;
 	[SerializeField] protected DSDialogueSO maeveSubsceneDialogue;
 
-	[SerializeField] private bool teleportPlayer;
-	[SerializeField] private bool teleportBadu;
-	[SerializeField] private bool teleportMaeve;
+	[SerializeField] protected bool teleportPlayer;
+	[SerializeField] protected bool teleportBadu;
+	[SerializeField] protected bool teleportMaeve;
 
     protected virtual string subSceneMusic { get; }
 

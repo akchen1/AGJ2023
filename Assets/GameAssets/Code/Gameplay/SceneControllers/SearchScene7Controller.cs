@@ -1,4 +1,5 @@
 using DS.ScriptableObjects;
+using Pathfinding;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,7 +17,7 @@ public class SearchScene7Controller : SceneController
 	[Header("Initialization")]
 	[SerializeField] GameObject Player;
 	[SerializeField] private PlayableDirector playableDirector;
-	[SerializeField] private DialogueInteraction mainstreetMaeve;
+	[SerializeField] private DialogueInteraction mainStreetMaeve;
 	[SerializeField] private DialogueInteraction mainStreetBadu;
 
 	[Header("Subscene transitions")]
@@ -83,6 +84,8 @@ public class SearchScene7Controller : SceneController
         eventBrokerComponent.Subscribe<Scene7Events.SetMaeveSubsceneDialogue>(SetMaeveSubsceneDialogueHandler);
         eventBrokerComponent.Subscribe<Scene7Events.SetMaevePosition>(SetMaevePositionHandler);
         eventBrokerComponent.Subscribe<Scene7Events.SetBaduPosition>(SetBaduPositionHandler);
+        eventBrokerComponent.Subscribe<Scene7Events.EnableBaduMovement>(EnableBaduMovementHandler);
+        eventBrokerComponent.Subscribe<Scene7Events.EnableMaeveMovement>(EnableMaeveMovementHandler);
     }
 
     private void OnDisable()
@@ -95,6 +98,8 @@ public class SearchScene7Controller : SceneController
         eventBrokerComponent.Unsubscribe<Scene7Events.SetMaeveSubsceneDialogue>(SetMaeveSubsceneDialogueHandler);
         eventBrokerComponent.Unsubscribe<Scene7Events.SetMaevePosition>(SetMaevePositionHandler);
         eventBrokerComponent.Unsubscribe<Scene7Events.SetBaduPosition>(SetBaduPositionHandler);
+        eventBrokerComponent.Unsubscribe<Scene7Events.EnableBaduMovement>(EnableBaduMovementHandler);
+        eventBrokerComponent.Unsubscribe<Scene7Events.EnableMaeveMovement>(EnableMaeveMovementHandler);
     }
 
 
@@ -109,10 +114,18 @@ public class SearchScene7Controller : SceneController
 
 
     #region Event Methods
+    private void EnableBaduMovementHandler(BrokerEvent<Scene7Events.EnableBaduMovement> inEvent)
+    {
+        mainStreetBadu.GetComponent<AIPath>().canMove = inEvent.Payload.Enable;
+    }
 
+    private void EnableMaeveMovementHandler(BrokerEvent<Scene7Events.EnableMaeveMovement> inEvent)
+    {
+        mainStreetMaeve.GetComponent<AIPath>().canMove = inEvent.Payload.Enable;
+    }
     private void SetMaevePositionHandler(BrokerEvent<Scene7Events.SetMaevePosition> inEvent)
     {
-        mainstreetMaeve.transform.position = inEvent.Payload.Position;
+        mainStreetMaeve.transform.position = inEvent.Payload.Position;
     }
 
     private void SetBaduPositionHandler(BrokerEvent<Scene7Events.SetBaduPosition> inEvent)
@@ -121,7 +134,7 @@ public class SearchScene7Controller : SceneController
     }
     private void SetMaeveSubsceneDialogueHandler(BrokerEvent<Scene7Events.SetMaeveSubsceneDialogue> inEvent)
     {
-        mainstreetMaeve.SetDialogue(inEvent.Payload.Dialogue);
+        mainStreetMaeve.SetDialogue(inEvent.Payload.Dialogue);
     }
 
     private void SetBaduSubsceneDialogueHandler(BrokerEvent<Scene7Events.SetBaduSubsceneDialogue> inEvent)
