@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabbddd164ab042e29b24f33ca0c86c0, type: 3}
+  m_Name: SS7MSxInvalidInventoryInteraction
+  m_EditorClassIdentifier: 
+  <DialogueName>k__BackingField: SS7MSxInvalidInventoryInteraction
+  <Character>k__BackingField: {fileID: 11400000, guid: 20fd73481581e6941a3eb134db2df169, type: 2}
+  <Item>k__BackingField: {fileID: 0}
+  <HasSceneTransition>k__BackingField: 0
+  <NextSceneName>k__BackingField: 
+  <AudioClip>k__BackingField: {fileID: 0}
+  <Text>k__BackingField: I don't think these work together.
+  <Choices>k__BackingField:
+  - <Text>k__BackingField: 
+    <NextDialogue>k__BackingField: {fileID: 0}
+    <HasSanityThreshold>k__BackingField: 0
+    <SanityThreshold>k__BackingField: 0
+    <SanityType>k__BackingField: 0
+    <OnDialogueChoiceSelected>k__BackingField:
+      m_PersistentCalls:
+        m_Calls: []
+  <DialogueType>k__BackingField: 0
+  <IsStartingDialogue>k__BackingField: 1
+  <OnDialogueSelected>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []

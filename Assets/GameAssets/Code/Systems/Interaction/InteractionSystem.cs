@@ -94,9 +94,10 @@ public class InteractionSystem
     private IEnumerator WaitForInRange(BrokerEvent<InteractionEvents.Interact> inEvent)
     {
         yield return new WaitUntil(() => CheckInRange(inEvent));
-        IInteractableWorld interactable = inEvent.Payload.Interactable as IInteractableWorld;
-        if (interactable == null) yield break;
-        interactable.Interact();
+        IInteractableWorld worldInteraction = ((UnityEngine.Object)inEvent.Payload.Interactable).GetComponent<IInteractableWorld>();
+        Debug.Log(inEvent.Payload.Interactable);
+        if (worldInteraction == null) yield break;
+        worldInteraction.Interact();
     }
 
 }

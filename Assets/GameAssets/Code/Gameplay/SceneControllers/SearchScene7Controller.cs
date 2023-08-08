@@ -1,20 +1,24 @@
 using DS.ScriptableObjects;
+using Pathfinding;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.UI;
-using static MainStreetSubSceneController;
 
 public class SearchScene7Controller : SceneController
 {
+#if UNITY_EDITOR
 	[Header("Testing")]
 	public InventoryItem[] startingitems;
+#endif
 
 	[Header("Initialization")]
 	[SerializeField] GameObject Player;
 	[SerializeField] private PlayableDirector playableDirector;
+	[SerializeField] private DialogueInteraction mainStreetMaeve;
+	[SerializeField] private DialogueInteraction mainStreetBadu;
 
 	[Header("Subscene transitions")]
 	[SerializeField] private Image fadeToBlack;
@@ -56,7 +60,89 @@ public class SearchScene7Controller : SceneController
 
 	EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
-	private void ChangeSubsceneHandler(BrokerEvent<Scene7Events.ChangeSubscene> inEvent)
+
+    private void Start()
+	{
+#if UNITY_EDITOR
+		eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(startingitems));
+#endif
+        eventBrokerComponent.Publish(this, new PostProcessingEvents.SetVignette(0.2f));
+
+        fadeToBlack.gameObject.SetActive(false);
+		currentSubScene = BasementSubsceneController;
+		currentSubScene.Enable();
+		//PlayStartingDialogue();
+	}
+
+    private void OnEnable()
+	{
+		eventBrokerComponent.Subscribe<Scene7Events.ChangeSubscene>(ChangeSubsceneHandler);
+		eventBrokerComponent.Subscribe<Scene7Events.GetBloodSanityResult>(GetBloodSanityResultHandler);
+		eventBrokerComponent.Subscribe<Scene7Events.GetCurrentSubScene>(GetCurrentSubSceneHandler);
+		eventBrokerComponent.Subscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
+        eventBrokerComponent.Subscribe<Scene7Events.SetBaduSubsceneDialogue>(SetBaduSubsceneDialogueHandler);
+        eventBrokerComponent.Subscribe<Scene7Events.SetMaeveSubsceneDialogue>(SetMaeveSubsceneDialogueHandler);
+        eventBrokerComponent.Subscribe<Scene7Events.SetMaevePosition>(SetMaevePositionHandler);
+        eventBrokerComponent.Subscribe<Scene7Events.SetBaduPosition>(SetBaduPositionHandler);
+        eventBrokerComponent.Subscribe<Scene7Events.EnableBaduMovement>(EnableBaduMovementHandler);
+        eventBrokerComponent.Subscribe<Scene7Events.EnableMaeveMovement>(EnableMaeveMovementHandler);
+    }
+
+    private void OnDisable()
+	{
+		eventBrokerComponent.Unsubscribe<Scene7Events.ChangeSubscene>(ChangeSubsceneHandler);
+        eventBrokerComponent.Unsubscribe<Scene7Events.GetBloodSanityResult>(GetBloodSanityResultHandler);
+		eventBrokerComponent.Unsubscribe<Scene7Events.GetCurrentSubScene>(GetCurrentSubSceneHandler);
+        eventBrokerComponent.Unsubscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
+        eventBrokerComponent.Unsubscribe<Scene7Events.SetBaduSubsceneDialogue>(SetBaduSubsceneDialogueHandler);
+        eventBrokerComponent.Unsubscribe<Scene7Events.SetMaeveSubsceneDialogue>(SetMaeveSubsceneDialogueHandler);
+        eventBrokerComponent.Unsubscribe<Scene7Events.SetMaevePosition>(SetMaevePositionHandler);
+        eventBrokerComponent.Unsubscribe<Scene7Events.SetBaduPosition>(SetBaduPositionHandler);
+        eventBrokerComponent.Unsubscribe<Scene7Events.EnableBaduMovement>(EnableBaduMovementHandler);
+        eventBrokerComponent.Unsubscribe<Scene7Events.EnableMaeveMovement>(EnableMaeveMovementHandler);
+    }
+
+
+    private void Update()
+    {
+        if (currentSubScene != null)
+		{
+			currentSubScene.Update();
+		}
+		CheckInPlayground();
+    }
+
+
+    #region Event Methods
+    private void EnableBaduMovementHandler(BrokerEvent<Scene7Events.EnableBaduMovement> inEvent)
+    {
+        mainStreetBadu.GetComponent<AIPath>().canMove = inEvent.Payload.Enable;
+    }
+
+    private void EnableMaeveMovementHandler(BrokerEvent<Scene7Events.EnableMaeveMovement> inEvent)
+    {
+        mainStreetMaeve.GetComponent<AIPath>().canMove = inEvent.Payload.Enable;
+    }
+    private void SetMaevePositionHandler(BrokerEvent<Scene7Events.SetMaevePosition> inEvent)
+    {
+        mainStreetMaeve.transform.position = inEvent.Payload.Position;
+    }
+
+    private void SetBaduPositionHandler(BrokerEvent<Scene7Events.SetBaduPosition> inEvent)
+    {
+        mainStreetBadu.transform.position = inEvent.Payload.Position;
+    }
+    private void SetMaeveSubsceneDialogueHandler(BrokerEvent<Scene7Events.SetMaeveSubsceneDialogue> inEvent)
+    {
+        mainStreetMaeve.SetDialogue(inEvent.Payload.Dialogue);
+    }
+
+    private void SetBaduSubsceneDialogueHandler(BrokerEvent<Scene7Events.SetBaduSubsceneDialogue> inEvent)
+    {
+        mainStreetBadu.SetDialogue(inEvent.Payload.Dialogue);
+    }
+
+    private void ChangeSubsceneHandler(BrokerEvent<Scene7Events.ChangeSubscene> inEvent)
 	{
 		Constants.Scene7SubScenes subscene = inEvent.Payload.Subscene;
 
@@ -73,6 +159,19 @@ public class SearchScene7Controller : SceneController
     {
 		obj.Payload.SanityType?.Invoke(BasementSubsceneController.sanityEventResult);
     }
+    private void InteractEndHandler(BrokerEvent<InteractionEvents.InteractEnd> obj)
+    {
+		// Let other interactions take priorty
+		Invoke("CheckScrollDialogues", 0.1f);
+    }
+    private void GetCurrentSubSceneHandler(BrokerEvent<Scene7Events.GetCurrentSubScene> obj)
+    {
+		obj.Payload.Subscene?.Invoke(currentSubScene.Subscene);
+    }
+
+    #endregion
+
+    #region Utility Methods
 
     private SubSceneController GetNextSubscene(Constants.Scene7SubScenes subscene)
 	{
@@ -124,65 +223,22 @@ public class SearchScene7Controller : SceneController
 		fadeToBlack.gameObject.SetActive(false);
 	}
 
-	private void Start()
-	{
-		eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(startingitems));
-		fadeToBlack.gameObject.SetActive(false);
-		currentSubScene = BasementSubsceneController;
-		currentSubScene.Enable();
-		//PlayStartingDialogue();
-	}
-
-    private void OnEnable()
-	{
-		eventBrokerComponent.Subscribe<Scene7Events.ChangeSubscene>(ChangeSubsceneHandler);
-		eventBrokerComponent.Subscribe<Scene7Events.GetBloodSanityResult>(GetBloodSanityResultHandler);
-		eventBrokerComponent.Subscribe<Scene7Events.GetCurrentSubScene>(GetCurrentSubSceneHandler);
-		eventBrokerComponent.Subscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
-	}
-
-    private void OnDisable()
-	{
-		eventBrokerComponent.Unsubscribe<Scene7Events.ChangeSubscene>(ChangeSubsceneHandler);
-        eventBrokerComponent.Unsubscribe<Scene7Events.GetBloodSanityResult>(GetBloodSanityResultHandler);
-		eventBrokerComponent.Unsubscribe<Scene7Events.GetCurrentSubScene>(GetCurrentSubSceneHandler);
-        eventBrokerComponent.Unsubscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
-    }
-
-    private void InteractEndHandler(BrokerEvent<InteractionEvents.InteractEnd> obj)
+    private void CheckInPlayground()
     {
-		CheckScrollDialogues();
-    }
-
-    private void Update()
-    {
-        if (currentSubScene != null)
-		{
-			currentSubScene.Update();
-		}
-		CheckInPlayground();
-    }
-
-    private void GetCurrentSubSceneHandler(BrokerEvent<Scene7Events.GetCurrentSubScene> obj)
-    {
-		obj.Payload.Subscene?.Invoke(currentSubScene.Subscene);
-    }
-
-	private void CheckInPlayground()
-	{
-		bool inPlayground = playgroundBounds.OverlapPoint(Player.transform.position);
+        bool inPlayground = playgroundBounds.OverlapPoint(Player.transform.position);
         if (inPlayground && currentSubScene == MainStreetSubSceneController)
-		{
+        {
             currentSubScene.Disable();
             currentSubScene = GetNextSubscene(Constants.Scene7SubScenes.Playground);
-            currentSubScene.Enable(false);
-        } else if (!inPlayground && currentSubScene == PlaygroundSubSceneController)
-		{
+            currentSubScene.Enable(true);
+        }
+        else if (!inPlayground && currentSubScene == PlaygroundSubSceneController)
+        {
             currentSubScene.Disable();
             currentSubScene = GetNextSubscene(Constants.Scene7SubScenes.MainStreet);
-            currentSubScene.Enable(false);
+            currentSubScene.Enable(true);
         }
-	}
+    }
 
     private void CheckScrollDialogues()
     {
@@ -206,6 +262,7 @@ public class SearchScene7Controller : SceneController
             hasTriggeredComponentsObtainedDialogue = true;
         }
     }
+    #endregion
 
     [System.Serializable]
     public struct CombinedRitualItem

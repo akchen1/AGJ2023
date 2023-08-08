@@ -7,7 +7,7 @@ public class NoConditionMinigame : MonoBehaviour, IMinigame
 {
     [SerializeField] private GameObject minigameUI;
 
-    [SerializeField] private UnityEvent OnMinigameFinish;
+    public UnityEvent OnMinigameFinish;
 
     private EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
     public void Finish()

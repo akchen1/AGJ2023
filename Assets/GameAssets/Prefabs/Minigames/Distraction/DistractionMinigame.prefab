@@ -579,7 +579,7 @@ GameObject:
   - component: {fileID: 8633444263031707500}
   - component: {fileID: 9212865837243316279}
   - component: {fileID: 679030629390421699}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Scissor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -861,6 +861,10 @@ PrefabInstance:
     - target: {fileID: 8498347820060335083, guid: c72f3ac6ccab2a44793eaab8ca726e73, type: 3}
       propertyPath: m_Name
       value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498347820060335083, guid: c72f3ac6ccab2a44793eaab8ca726e73, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8932199844969346124, guid: c72f3ac6ccab2a44793eaab8ca726e73, type: 3}
       propertyPath: m_Pivot.x
@@ -1749,6 +1753,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oil
       objectReference: {fileID: 0}
+    - target: {fileID: 8498347820060335083, guid: c72f3ac6ccab2a44793eaab8ca726e73, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498347820060335083, guid: c72f3ac6ccab2a44793eaab8ca726e73, type: 3}
+      propertyPath: m_TagString
+      value: Bottle
+      objectReference: {fileID: 0}
     - target: {fileID: 8932199844969346124, guid: c72f3ac6ccab2a44793eaab8ca726e73, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1900,6 +1912,10 @@ PrefabInstance:
     - target: {fileID: 8498347820060335083, guid: c72f3ac6ccab2a44793eaab8ca726e73, type: 3}
       propertyPath: m_Name
       value: CuttingBoard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498347820060335083, guid: c72f3ac6ccab2a44793eaab8ca726e73, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8932199844969346124, guid: c72f3ac6ccab2a44793eaab8ca726e73, type: 3}
       propertyPath: m_Pivot.x

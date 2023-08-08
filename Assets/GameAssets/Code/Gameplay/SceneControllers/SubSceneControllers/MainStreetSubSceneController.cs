@@ -16,15 +16,28 @@ public class MainStreetSubSceneController : SubSceneController
     protected override string subSceneMusic { get => Constants.Audio.Music.MainStreet; }
     public override Constants.Scene7SubScenes Subscene => Constants.Scene7SubScenes.MainStreet;
 
-    public override void Enable(bool teleportPlayer = true)
+    public override void Enable(bool overrideTeleport = false)
     {
-        base.Enable(teleportPlayer);
 
         if (isFirstEnter)
         {
+            teleportMaeve = false;
+            base.Enable(overrideTeleport);
+            teleportMaeve = true;
+            eventBrokerComponent.Publish(this, new Scene7Events.EnableMaeveMovement(false));
+            eventBrokerComponent.Subscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
             startingDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
             isFirstEnter = false;
+        } else
+        {
+            base.Enable(overrideTeleport);
         }
+    }
+
+    private void DialogueFinishHandler(BrokerEvent<DialogueEvents.DialogueFinish> inEvent)
+    {
+        eventBrokerComponent.Publish(this, new Scene7Events.EnableMaeveMovement(true));
+        eventBrokerComponent.Unsubscribe<DialogueEvents.DialogueFinish>(DialogueFinishHandler);
     }
 
     public override void Disable()

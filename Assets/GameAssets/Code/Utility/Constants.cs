@@ -135,4 +135,12 @@ public static class Constants
 		public enum InteractionType { World, Virtual }
 	}
     #endregion
+
+    #region Inventory
+
+	public struct Inventory
+	{
+		public const int InventoryScrollPadding = 30;
+	}
+    #endregion
 }

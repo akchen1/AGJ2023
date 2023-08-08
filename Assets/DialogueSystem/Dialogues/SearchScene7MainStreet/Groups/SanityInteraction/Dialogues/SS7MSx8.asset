@@ -25,10 +25,19 @@ MonoBehaviour:
     <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: -1
+    <OnDialogueChoiceSelected>k__BackingField:
+      m_PersistentCalls:
+        m_Calls: []
   - <Text>k__BackingField: Leave it be
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: f14391e823dfe8e4f90ef63599299e72, type: 2}
     <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 0
+    <OnDialogueChoiceSelected>k__BackingField:
+      m_PersistentCalls:
+        m_Calls: []
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0
+  <OnDialogueSelected>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []

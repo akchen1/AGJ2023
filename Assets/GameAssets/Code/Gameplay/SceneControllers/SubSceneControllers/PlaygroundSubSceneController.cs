@@ -20,9 +20,9 @@ public class PlaygroundSubSceneController : SubSceneController
     protected override string subSceneMusic => Constants.Audio.Music.Playtime;
     public override Constants.Scene7SubScenes Subscene => Constants.Scene7SubScenes.Playground;
 
-    public override void Enable(bool teleportPlayer = true)
+    public override void Enable(bool overrideTeleport = false)
     {
-        base.Enable(teleportPlayer);
+        base.Enable(overrideTeleport);
         eventBrokerComponent.Subscribe<InventoryEvents.AddItem>(AddItemHandler);
         eventBrokerComponent.Subscribe<InteractionEvents.InteractEnd>(InteractEndHandler);
         eventBrokerComponent.Subscribe<DialogueEvents.SelectDialogueOption>(SelectDialogueOptionHandler);

@@ -10,5 +10,6 @@ public class PresentScene4Part2Controller : MonoBehaviour
     void Start()
     {
         eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(startingDialogue));
+        eventBrokerComponent.Publish(this, new PostProcessingEvents.SetVignette(0.15f));
     }
 }

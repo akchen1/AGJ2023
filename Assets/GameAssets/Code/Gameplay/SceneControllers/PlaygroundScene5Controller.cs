@@ -24,6 +24,7 @@ public class PlaygroundScene5Controller : MonoBehaviour
         startingDialogue.Interact(this, Constants.Interaction.InteractionType.Virtual);
 		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.Playtime, true));
 		currentDialogue = startingDialogue;
+        eventBrokerComponent.Publish(this, new PostProcessingEvents.SetVignette(0.2f));
     }
 
     private void OnEnable()

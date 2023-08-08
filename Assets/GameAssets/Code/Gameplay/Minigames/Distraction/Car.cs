@@ -40,4 +40,12 @@ public class Car : MonoBehaviour
             isFirstPlay = false;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Bottle")
+        {
+            eventBrokerComponent.Publish(this, new AudioEvents.PlaySFX(Constants.Audio.SFX.BottleHit));
+        }
+    }
 }

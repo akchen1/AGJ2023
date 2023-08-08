@@ -63,4 +63,8 @@ public class DialogueInteraction : MonoBehaviour, IInteractableWorld, IPointerCl
         Interact();
     }
 
+    public void SetDialogue(DSDialogueSO dialogue)
+    {
+        this.dialogue = dialogue;
+    }
 }

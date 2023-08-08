@@ -8,6 +8,9 @@ TagManager:
   - Candle
   - Match
   - Holder
+  - Vial
+  - SceneChangeInteractable
+  - Bottle
   layers:
   - Default
   - TransparentFX

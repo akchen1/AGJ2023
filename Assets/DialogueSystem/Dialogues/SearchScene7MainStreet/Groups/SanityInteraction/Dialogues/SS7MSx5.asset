@@ -26,10 +26,19 @@ MonoBehaviour:
     <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: -1
+    <OnDialogueChoiceSelected>k__BackingField:
+      m_PersistentCalls:
+        m_Calls: []
   - <Text>k__BackingField: Turn Maeve down
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3ffc625c874b24e40920f91c55d21fad, type: 2}
     <HasSanityThreshold>k__BackingField: 1
     <SanityThreshold>k__BackingField: 0
     <SanityType>k__BackingField: 1
+    <OnDialogueChoiceSelected>k__BackingField:
+      m_PersistentCalls:
+        m_Calls: []
   <DialogueType>k__BackingField: 1
   <IsStartingDialogue>k__BackingField: 0
+  <OnDialogueSelected>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []

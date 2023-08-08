@@ -6,21 +6,21 @@ public class PresentScene4Part1Controller : MonoBehaviour
 {
 
     [SerializeField] private GameObject badu;
-    [SerializeField] private GameObject recordPlayer;
 
     [SerializeField] private RuntimeAnimatorController baduMothFly;
+    private Animator baduAnimator;
     [SerializeField] private GameObject bedroomDoor;
-    private Animator recordPlayerAnimator;
-
-	private bool recordPlayerPlaying = false;
 
 	EventBrokerComponent eventBrokerComponent = new EventBrokerComponent();
 
 	private void Start()
 	{
-		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.LivingRoom, true));
-        recordPlayerAnimator = recordPlayer.GetComponent<Animator>();
-	}
+        baduAnimator = badu.GetComponent<Animator>();
+        baduAnimator.SetBool("isBadu", true);
+
+        eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.LivingRoom, true));
+        eventBrokerComponent.Publish(this, new PostProcessingEvents.SetVignette(0.15f));
+    }
 
     public void BaduInteractionStarted()
     {
@@ -30,24 +30,8 @@ public class PresentScene4Part1Controller : MonoBehaviour
 
     public void BaduInteractionEnded()
     {
-        badu.GetComponent<Animator>().runtimeAnimatorController = baduMothFly;
+        baduAnimator.SetBool("isBadu", false);
         badu.GetComponent<CapsuleCollider2D>().enabled = false;
         badu.GetComponent<CircleCollider2D>().enabled = true;
     }
-
-	public void ToggleRecordPlayer()
-	{
-		if (!recordPlayerPlaying)
-		{
-			eventBrokerComponent.Publish(this, new AudioEvents.PlayTemporaryMusic(Constants.Audio.Music.RecordPlayer));
-		}
-		else
-		{
-			eventBrokerComponent.Publish(this, new AudioEvents.StopTemporaryMusic());
-		}
-        recordPlayerPlaying = !recordPlayerPlaying;
-        recordPlayerAnimator.SetTrigger("Toggle");
-        recordPlayer.GetComponent<DialogueInteraction>().enabled = !recordPlayerPlaying;
-        recordPlayer.GetComponent<EmptyInteraction>().enabled = recordPlayerPlaying;
-	}
 }

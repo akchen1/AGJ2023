@@ -1,4 +1,5 @@
 using DS.ScriptableObjects;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -39,7 +40,7 @@ public static class InteractionUtility
     public static bool Interact(this Object interactionObject)
     {
         Constants.Interaction.InteractionType interactionType = Constants.Interaction.InteractionType.Virtual;
-        if (interactionObject is IInteractableWorld)
+        if (interactionObject.GetComponent<IInteractableWorld>() != null)
         {
             interactionType = Constants.Interaction.InteractionType.World;
         }

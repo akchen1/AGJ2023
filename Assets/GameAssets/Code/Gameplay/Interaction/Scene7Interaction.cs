@@ -25,7 +25,12 @@ public class Scene7Interaction : MonoBehaviour, IInteractableWorld, IPointerClic
 		active = false;
 	}
 
-	public void Interact()
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, InteractionDistance.Value);
+    }
+
+    public void Interact()
 	{
 		if (gameObject.Interact())
 		{

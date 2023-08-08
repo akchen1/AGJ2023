@@ -19,6 +19,8 @@ MonoBehaviour:
   <OverrideDefaultClickInteraction>k__BackingField: 0
   playCombineSFX: 1
   minigame: {fileID: 3787382044068407691, guid: a91c05f4f10b3994981118d0148c77da, type: 3}
+  invalidCombinationInteractionDialogue: {fileID: 11400000, guid: a729ed56aa7826a47a52dcf057ab4e50, type: 2}
+  invalidSceneInteractionDialogue: {fileID: 11400000, guid: 3a66fa88b74a8a145bcf4cbf4ff6ca02, type: 2}
   <RequiredSceneInteraction>k__BackingField: 1
   selectedSceneName: Clearing - Scene 9
   selectedSubsceneScene: 0

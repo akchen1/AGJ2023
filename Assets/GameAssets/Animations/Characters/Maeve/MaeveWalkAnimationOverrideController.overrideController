@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MaeveWalkAnimationOverrideController
+  m_Controller: {fileID: 9100000, guid: 9adab33285a41c6429ab977aae1cb33c, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 90a2a0524dae141479a3eb5abe894be2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: faad4e361b3b61448939d6482e35a7d2, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4eb82cb2afbf16e4ba307ba4490737fb, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6c4858f60bc3617409b3f80006725f92, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 606497c0e94b4b44c9908a1eedeeba85, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 20422f5654c3ece4c9c11e9e2265b4b1, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 336ff736e23f040408f874527e725872, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 573f0ce3d7e6af94cbfcbd3ef74cfe3f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4c7cf81985e21824eb28a8709753df53, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0b4a26344f9318e428bcaaf7b6bbc749, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ba625fe71483c0f46a77ac8e5197d5dd, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1c56b170e9d94c34a86711da43821d00, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 48163f57617d1c64fba93e91958a0df3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1c56b170e9d94c34a86711da43821d00, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: bdf3f7bd4c08ffe4a985c811419287e1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1c56b170e9d94c34a86711da43821d00, type: 2}

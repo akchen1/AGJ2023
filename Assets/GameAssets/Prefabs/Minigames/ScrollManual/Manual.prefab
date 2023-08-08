@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 746854140}
   - component: {fileID: 3816274999517456129}
   - component: {fileID: 7519870352657703500}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: CloseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 7519870352657703500}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -378,7 +378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5760530410179900249
 RectTransform:
   m_ObjectHideFlags: 0
@@ -493,6 +493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollUI: {fileID: 5760530410179900248}
   candle: {fileID: 11400000, guid: 48d9cccea6a175041bd8d4146a3ebbb5, type: 2}
+  litCandle: {fileID: 11400000, guid: 0ef24c124aabcbe489bbf406f7ad2ab7, type: 2}
   matchBox: {fileID: 11400000, guid: f136711b4bf992e4a958c4162dc0a4f9, type: 2}
   vial: {fileID: 11400000, guid: 063cb76fc16de3a409d470f333789232, type: 2}
   weath: {fileID: 11400000, guid: 42130195c55c9754b8670900391558ac, type: 2}
@@ -612,7 +613,7 @@ GameObject:
   - component: {fileID: 5760530410973426800}
   - component: {fileID: 5760530410973426807}
   - component: {fileID: 5760530410973426801}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: SideA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -823,7 +824,7 @@ GameObject:
   - component: {fileID: 5760530411468450202}
   - component: {fileID: 5760530411468450201}
   - component: {fileID: 5760530411468450203}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: SideB
   m_TagString: Untagged
   m_Icon: {fileID: 0}

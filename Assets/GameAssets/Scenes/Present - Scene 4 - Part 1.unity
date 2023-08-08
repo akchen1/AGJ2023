@@ -375,9 +375,8 @@ GameObject:
   - component: {fileID: 210106515}
   - component: {fileID: 210106519}
   - component: {fileID: 210106516}
-  - component: {fileID: 210106520}
-  - component: {fileID: 210106521}
   - component: {fileID: 210106522}
+  - component: {fileID: 210106523}
   m_Layer: 6
   m_Name: RecordPlayer
   m_TagString: Untagged
@@ -478,76 +477,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &210106520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210106514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 490ec6b3a25fe8249a940c45df8a0494, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 1f1f3513415330945a25a229a71c6132, type: 2}
-  canInteractMultipleTimes: 1
-  destroyOnDialogueFinish: 0
-  <InteractionDistance>k__BackingField:
-    UseConstant: 1
-    ConstantValue: 4
-    Variable: {fileID: 11400000, guid: 8ab07fdef888a47448f2e257e55f53ad, type: 2}
-  <HasInteractionDistance>k__BackingField: 1
-  dialogueStarted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1134978600}
-        m_TargetAssemblyTypeName: PresentScene4Part1Controller, Assembly-CSharp
-        m_MethodName: ToggleRecordPlayer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  dialogueEnded:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &210106521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210106514}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a8533f0cd91c0c4684345a3d6739148, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <HasInteractionDistance>k__BackingField: 1
-  <InteractionDistance>k__BackingField:
-    UseConstant: 1
-    ConstantValue: 4
-    Variable: {fileID: 0}
-  interactionStart:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1134978600}
-        m_TargetAssemblyTypeName: PresentScene4Part1Controller, Assembly-CSharp
-        m_MethodName: ToggleRecordPlayer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!95 &210106522
 Animator:
   serializedVersion: 4
@@ -568,6 +497,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &210106523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210106514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df538bfc3c232ff4bb1fcfd4414509a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recordPlayerInteractDialogue: {fileID: 11400000, guid: 1f1f3513415330945a25a229a71c6132, type: 2}
+  <HasInteractionDistance>k__BackingField: 1
+  <InteractionDistance>k__BackingField:
+    UseConstant: 1
+    ConstantValue: 4
+    Variable: {fileID: 0}
 --- !u!1 &220943584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2866,7 +2813,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   badu: {fileID: 1341255093}
-  recordPlayer: {fileID: 210106514}
   baduMothFly: {fileID: 9100000, guid: 0178002bee54371409f82ee270800b26, type: 2}
   bedroomDoor: {fileID: 1947858015}
 --- !u!4 &1134978601
@@ -3247,6 +3193,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 7933021377846603967, guid: 7919d252c5aa5f64683092dab13d5eda, type: 2}
     value: {fileID: 1218352320}
+  - key: {fileID: -643159716077578572, guid: 0aaebadb31c9a7c4fafc24ebc731a74b, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1358380425
@@ -3682,7 +3630,7 @@ PrefabInstance:
     - target: {fileID: 8229779336760689927, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 8472ea8b7ee586d4f9fb4b83a2d8083c, type: 2}
+      objectReference: {fileID: 9100000, guid: 0878cb8b61153e44f89547cc78370826, type: 2}
     - target: {fileID: 8229779336760690040, guid: b2d9021faa0adac4a96c3c6ba9875659, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -4903,7 +4851,7 @@ GameObject:
   - component: {fileID: 1947858020}
   m_Layer: 6
   m_Name: BedroomDoor
-  m_TagString: Untagged
+  m_TagString: SceneChangeInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

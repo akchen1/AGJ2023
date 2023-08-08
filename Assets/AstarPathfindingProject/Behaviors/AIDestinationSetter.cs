@@ -18,7 +18,10 @@ namespace Pathfinding {
 		public Transform target;
 		IAstarAI ai;
 		void Start() {
-			target = GameObject.Find("Target").transform;
+			if (target == null)
+			{
+				target = GameObject.Find("Target").transform;
+			}
 		}
 
 		void OnEnable () {

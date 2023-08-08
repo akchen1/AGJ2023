@@ -19,7 +19,8 @@ public class BasementScene6Part2Controller : MonoBehaviour
 
     [SerializeField] private Animator baduAnimator;
 
-    [SerializeField] private PlayableDirector bookshelfCutscene;
+    [SerializeField] private PlayableDirector director;
+    [SerializeField] private PlayableAsset bookshelfCutscene;
 
     [SerializeField] private GameObject openedScroll;
     [SerializeField] private GameObject basementStairs;
@@ -35,7 +36,9 @@ public class BasementScene6Part2Controller : MonoBehaviour
     {
         eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(startingDialoguePart1));
 		eventBrokerComponent.Publish(this, new AudioEvents.PlayMusic(Constants.Audio.Music.Basement, true));
-		currentDialogue = startingDialoguePart1;
+        eventBrokerComponent.Publish(this, new PostProcessingEvents.SetVignette(0.2f));
+
+        currentDialogue = startingDialoguePart1;
         baduAnimator.SetTrigger("fly");
     }
 
@@ -57,8 +60,8 @@ public class BasementScene6Part2Controller : MonoBehaviour
     {
         if (currentDialogue == startingDialoguePart1)
         {
-            bookshelfCutscene.Play();
-            bookshelfCutscene.stopped += OnBookshelfCutsceneStopped;
+            director.Play(bookshelfCutscene);
+            director.stopped += OnBookshelfCutsceneStopped;
         } else if (currentDialogue == startingDialoguePart2)
         {
             currentDialogue = null;
@@ -75,7 +78,6 @@ public class BasementScene6Part2Controller : MonoBehaviour
             baduAnimator.transform.localScale = Vector3.one;
 
             baduAnimator.SetBool("isBadu", false);
-            baduAnimator.SetTrigger("fly");
             currentDialogue = null;
             basementStairs.SetActive(true);
             eventBrokerComponent.Publish(this, new SceneEvents.SceneChange(Constants.SceneNames.SearchScene7MainStreet));
@@ -86,7 +88,7 @@ public class BasementScene6Part2Controller : MonoBehaviour
     {
         eventBrokerComponent.Publish(this, new DialogueEvents.StartDialogue(startingDialoguePart2));
         currentDialogue = startingDialoguePart2;
-        bookshelfCutscene.stopped -= OnBookshelfCutsceneStopped;
+        director.stopped -= OnBookshelfCutsceneStopped;
     }
 
     private void EndMinigameHandler(BrokerEvent<MinigameEvents.EndMinigame> obj)

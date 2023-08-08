@@ -20,6 +20,16 @@ public class ItemInteraction : MonoBehaviour, IInteractableWorld, IPointerClickH
     [field: SerializeField] public FloatReference InteractionDistance { get; set; }
     [field: SerializeField] public bool HasInteractionDistance { get; set; } = false;
 
+    private void OnEnable()
+    {
+        
+    }
+
+    private void OnDisable()
+    {
+        
+    }
+
     public void Interact()
     {
         eventBrokerComponent.Publish(this, new InventoryEvents.AddItem(item));

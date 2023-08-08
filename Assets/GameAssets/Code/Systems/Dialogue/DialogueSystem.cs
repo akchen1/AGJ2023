@@ -29,6 +29,7 @@ public class DialogueSystem
     private void StartDialogueHandler(BrokerEvent<DialogueEvents.StartDialogue> inEvent)
     {
         currentDialogue = inEvent.Payload.StartingDialogue;
+        currentDialogue.OnDialogueSelected?.Invoke();
         // TODO: Deactivate Player movement
         eventBrokerComponent.Publish(this, new InputEvents.SetInputState(false));
     }
@@ -61,6 +62,9 @@ public class DialogueSystem
             eventBrokerComponent.Publish(this, new InputEvents.SetInputState(true));
             eventBrokerComponent.Publish(this, new DialogueEvents.DialogueFinish());
             eventBrokerComponent.Publish(this, new InteractionEvents.InteractEnd());
+        } else
+        {
+            currentDialogue.OnDialogueSelected?.Invoke();
         }
 
     }
@@ -72,6 +76,7 @@ public class DialogueSystem
             eventBrokerComponent.Publish(this, new SanityEvents.ChangeSanity(inEvent.Payload.Option.SanityType));
         }
         DSDialogueSO nextDialogue = inEvent.Payload.Option.NextDialogue;
+        inEvent.Payload.Option.OnDialogueChoiceSelected?.Invoke();
         currentDialogue = nextDialogue;
         inEvent.Payload.NextDialogueNode?.Invoke(nextDialogue);
     }

@@ -8,8 +8,9 @@ using UnityEngine.Playables;
 public class GeneralStoreSubSceneController : SubSceneController
 {
     [Header("Minigame completion colliders to enable")]
-    [SerializeField] private Collider2D matchesCollider;
-    [SerializeField] private Collider2D twineCollider;
+    [SerializeField] private MinigameInteraction distractionMinigame;
+    [SerializeField] private GameObject matches;
+    [SerializeField] private GameObject twine;
 
     [Header("On store enter cutscene")]
     [SerializeField] private PlayableDirector playableDirector;
@@ -19,26 +20,29 @@ public class GeneralStoreSubSceneController : SubSceneController
     protected override string subSceneMusic { get => Constants.Audio.Music.GeneralStore; }
     public override Constants.Scene7SubScenes Subscene => Constants.Scene7SubScenes.GeneralStore;
 
-    public override void Enable(bool teleportPlayer = true)
+    public override void Enable(bool overrideTeleport = false)
     {
-        base.Enable(teleportPlayer);
-        eventBrokerComponent.Subscribe<MinigameEvents.EndMinigame>(EndMinigameHandler);
+        base.Enable(overrideTeleport);
         if (isFirstEnter)
         {
             playableDirector.Play(generalStoreStartingCutscene);
             isFirstEnter = false;
         }
+        distractionMinigame.onMinigameFinish.AddListener(EnableColliders);
     }
 
     public override void Disable() 
     { 
         base.Disable();
-        eventBrokerComponent.Unsubscribe<MinigameEvents.EndMinigame>(EndMinigameHandler);
+        distractionMinigame.onMinigameFinish.RemoveListener(EnableColliders);
     }
 
-    private void EndMinigameHandler(BrokerEvent<MinigameEvents.EndMinigame> obj)
+    public void EnableColliders()
     {
-        matchesCollider.enabled = true;
-        twineCollider.enabled = true;
+        matches.GetComponent<DialogueInteraction>().enabled = false;
+        matches.GetComponent<ItemInteraction>().enabled = true;
+
+        twine.GetComponent<DialogueInteraction>().enabled = false;
+        twine.GetComponent<ItemInteraction>().enabled = true;
     }
 }

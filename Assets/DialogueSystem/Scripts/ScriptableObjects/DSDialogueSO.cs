@@ -6,6 +6,7 @@ namespace DS.ScriptableObjects
 {
     using Enumerations;
     using Data;
+    using UnityEngine.Events;
 
     [System.Serializable]
     public class DSDialogueSO : ScriptableObject
@@ -21,6 +22,7 @@ namespace DS.ScriptableObjects
         [field: SerializeField] public List<DSDialogueChoiceData> Choices { get; set; }
         [field: SerializeField] public DSDialogueType DialogueType { get; set; }
         [field: SerializeField] public bool IsStartingDialogue { get; set; }
+        [field: SerializeField] public UnityEvent OnDialogueSelected { get; set; }
 
         public void Initialize(string dialogueName, Character character, InventoryItem item, 
             bool hasSceneTransition, string nextSceneName, AudioClip audioClip, string text, List<DSDialogueChoiceData> choices, 

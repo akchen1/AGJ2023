@@ -14,6 +14,7 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 
 	[SerializeField, Header("UI")] private GameObject panel;
 	[SerializeField] private Slider bloodSlider;
+	[SerializeField] private RectTransform destroyZone;
 
 	[SerializeField, Header("Vial")] private GameObject vial;
 
@@ -154,7 +155,7 @@ public class BloodCatchMinigame : MonoBehaviour, IMinigame
 	{
 		bloodList.RemoveWhere(blood =>
 		{
-			if (!bloodBounds.RectOverlapsPoint(blood))
+			if (destroyZone.RectOverlapsPoint(blood))
 			{
 				Destroy(blood.gameObject);
 				return true;

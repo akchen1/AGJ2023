@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7199157781805307252}
   - component: {fileID: 8742634385738343678}
   - component: {fileID: 586870535}
-  - component: {fileID: 4106289733189523253}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -98,27 +97,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e4540074b5ba14a8c83c2cceeea2e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4106289733189523253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2266454162125543497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f903c2eb621d8418d88f8dad81b13dc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   AllowMove: 1
   hitGameObject: {fileID: 0}
   OffSetVector: {x: 0, y: 2, z: 0}
-  mask:
-    serializedVersion: 2
-    m_Bits: 0
   target: {fileID: 7199157781805307252}
-  onlyOnClick: 1
-  use2D: 1
   layerMask:
     serializedVersion: 2
     m_Bits: 64
